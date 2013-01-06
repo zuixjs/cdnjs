@@ -30,6 +30,38 @@
             "type": "string",
             "format": "url"
         },
+        "maintainers": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "name": {
+                    "type": "string",
+                    "required": true
+                },
+                "email": {
+                    "type": "email"
+                },
+                "web": {
+                    "type": "url"
+                }
+            }
+        },
+        "contributors": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "name": {
+                    "type": "string",
+                    "required": true
+                },
+                "email": {
+                    "type": "email"
+                },
+                "web": {
+                    "type": "url"
+                }
+            }
+        },
         "bugs": {
             "type": "string"
         },
