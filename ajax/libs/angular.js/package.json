@@ -1,14 +1,17 @@
 {
   "name": "angular.js",
-  "filename": "angular-1.0.0rc6.min.js",
-  "description": "AngularJS is an open-source JavaScript framework. Its goal is to augment browser-based applications with Model–View–Controller (MVC) capability, reduce the amount of JavaScript needed to make web applications functional.",
-  "version": "1.0.0rc6",
+  "filename": "angular.min.js",
+  "description": "AngularJS is an MVC framework for building web applications. The core features include HTML enhanced with custom component and data-binding capabilities, dependency injection and strong focus on simplicity, testability, maintainability and boiler-plate reduction.",
+  "version": "1.1.1",
   "homepage": "http://angularjs.org",
   "keywords": [
     "framework",
-    "mvc"
+    "mvc",
+    "AngularJS",
+    "angular",
+    "angular.js"
   ],
-  "maintainers": [
+  "contributors": [
     {
       "name": "Miško Hevery"
     },
@@ -25,13 +28,11 @@
       "name": "Brad Green"
     }
   ],
-  "repository": {
+  "repositories": [{
     "type": "git",
     "url": "git://github.com/angular/angular.js.git"
-  },
-  "bugs": {
-    "url": "https://github.com/angular/angular.js/issues"
-  },
+  }],
+  "bugs": "https://github.com/angular/angular.js/issues",
   "licenses": [
     {
       "type": "MIT",

@@ -1,6 +1,6 @@
 {
     "name": "json3",
-    "version": "3.2.2",
+    "version": "3.2.4",
     "filename": "json3.min.js",
     "description": "A modern JSON implementation compatible with nearly all JavaScript platforms.",
     "homepage": "http://bestiejs.github.com/json3",
@@ -30,9 +30,7 @@
             "web": "http://kitcambridge.github.com"
         }
     ],
-    "bugs": {
-        "url": "http://github.com/bestiejs/json3/issues"
-    },
+    "bugs": "http://github.com/bestiejs/json3/issues",
     "repository": {
         "type": "git",
         "url": "git://github.com/bestiejs/json3.git"
