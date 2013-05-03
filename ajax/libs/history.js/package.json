@@ -12,14 +12,14 @@
    ],
    "maintainers": [
        {
-           "name": "Andreas Bernhard",
-       } 
+           "name": "Andreas Bernhard"
+       }
    ],
    "repositories": [
        {
            "type": "git",
            "url": "https://github.com/browserstate/history.js.git" 
-       } 
+       }
    ]
 
 }
