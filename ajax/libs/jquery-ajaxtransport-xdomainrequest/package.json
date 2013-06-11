@@ -14,7 +14,7 @@
         "ie9"
     ],
     "demos": [
-      "http://jsfiddle.net/MoonScript/Q7bVG/"
+      "http://jsfiddle.net/MoonScript/Q7bVG/show/"
     ],
     "dependencies": {
       "jquery": ">=1.5"
