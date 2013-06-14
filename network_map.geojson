@@ -3,8 +3,13 @@
  	"features": [
  		{
  			"type": "Feature",
-      		"geometry": {"type": "Point", "coordinates": [47.6097, -122.3331]},
-      		"properties": {"City": "Seattle"}
+      		"geometry": {"type": "Point", "coordinates": [ -81.299554906610865, 32.354080966941915 ]},
+      		"properties": {"City": "Place 1"}
+      	},
+      	{
+ 			"type": "Feature",
+      		"geometry": {"type": "Point", "coordinates": [ -117.71088602754223, 33.523081689255775 ]},
+      		"properties": {"City": "Place 2"}
       	}
 	]
 }
