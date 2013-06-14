@@ -10,6 +10,111 @@
  			"type": "Feature",
       		"geometry": {"type": "Point", "coordinates": [ -121.8727, 37.3041 ]},
       		"properties": {"City": "San Jose"}
+      	},
+      	{
+ 			"type": "Feature",
+      		"geometry": {"type": "Point", "coordinates": [ -118.2428, 34.0522 ]},
+      		"properties": {"City": "Los Angeles"}
+      	},
+      	{
+ 			"type": "Feature",
+      		"geometry": {"type": "Point", "coordinates": [ -96.8039, 32.7828 ]},
+      		"properties": {"City": "Dallas"}
+      	},
+      	{
+ 			"type": "Feature",
+      		"geometry": {"type": "Point", "coordinates": [ -87.6500, 41.8500 ]},
+      		"properties": {"City": "Chicago"}
+      	},
+      	{
+ 			"type": "Feature",
+      		"geometry": {"type": "Point", "coordinates": [ -84.3881, 33.7489 ]},
+      		"properties": {"City": "Atlanta"}
+      	},
+      	{
+ 			"type": "Feature",
+      		"geometry": {"type": "Point", "coordinates": [ -80.1303, 25.7903 ]},
+      		"properties": {"City": "Miami"}
+      	},
+      	{
+ 			"type": "Feature",
+      		"geometry": {"type": "Point", "coordinates": [ -79.4042, 43.6481 ]},
+      		"properties": {"City": "Toronto"}
+      	},
+      	{
+ 			"type": "Feature",
+      		"geometry": {"type": "Point", "coordinates": [ -77.0300, 38.8900 ]},
+      		"properties": {"City": "Washington, DC"}
+      	},
+      	{
+ 			"type": "Feature",
+      		"geometry": {"type": "Point", "coordinates": [ -74.1728, 40.7356 ]},
+      		"properties": {"City": "Newark"}
+      	},
+      	{
+ 			"type": "Feature",
+      		"geometry": {"type": "Point", "coordinates": [ -0.1062, 51.5171 ]},
+      		"properties": {"City": "London"}
+      	},
+      	{
+ 			"type": "Feature",
+      		"geometry": {"type": "Point", "coordinates": [ 2.3470, 48.8742 ]},
+      		"properties": {"City": "Paris"}
+      	},
+      	{
+ 			"type": "Feature",
+      		"geometry": {"type": "Point", "coordinates": [ 4.8900, 52.3700 ]},
+      		"properties": {"City": "Amsterdam"}
+      	},
+      	{
+ 			"type": "Feature",
+      		"geometry": {"type": "Point", "coordinates": [ 8.6833, 50.1167 ]},
+      		"properties": {"City": "Frankfurt"}
+      	},
+      	{
+ 			"type": "Feature",
+      		"geometry": {"type": "Point", "coordinates": [ 14.4167, 50.0833 ]},
+      		"properties": {"City": "Prague"}
+      	},
+      	{
+ 			"type": "Feature",
+      		"geometry": {"type": "Point", "coordinates": [ 16.3726, 48.2088 ]},
+      		"properties": {"City": "Vienna"}
+      	},
+      	{
+ 			"type": "Feature",
+      		"geometry": {"type": "Point", "coordinates": [ 18.0700, 59.3300 ]},
+      		"properties": {"City": "Stockholm"}
+      	},
+      	{
+ 			"type": "Feature",
+      		"geometry": {"type": "Point", "coordinates": [ 21.0108, 52.2300 ]},
+      		"properties": {"City": "Warsaw"}
+      	},
+      	{
+ 			"type": "Feature",
+      		"geometry": {"type": "Point", "coordinates": [ 103.7500, 1.3667 ]},
+      		"properties": {"City": "Singapore"}
+      	},
+      	{
+ 			"type": "Feature",
+      		"geometry": {"type": "Point", "coordinates": [ 114.1667, 22.3000 ]},
+      		"properties": {"City": "Hong Kong"}
+      	},
+      	{
+ 			"type": "Feature",
+      		"geometry": {"type": "Point", "coordinates": [ 127.0000, 37.5833 ]},
+      		"properties": {"City": "Seoul"}
+      	},
+      	{
+ 			"type": "Feature",
+      		"geometry": {"type": "Point", "coordinates": [ 139.7667, 35.6833 ]},
+      		"properties": {"City": "Tokyo"}
+      	},
+      	{
+ 			"type": "Feature",
+      		"geometry": {"type": "Point", "coordinates": [ 151.2086, -33.8683 ]},
+      		"properties": {"City": "Sydney"}
       	}
 	]
 }
