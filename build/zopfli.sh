@@ -4,7 +4,7 @@ set -e
 
 git pull
 git checkout zopfli
-git merge master
+git merge master -m "test"
 
 node zopfli.js
 
