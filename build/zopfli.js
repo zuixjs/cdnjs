@@ -27,7 +27,7 @@ glob("../ajax/libs/**/package.json", function (error, matches) {
                 }
 
                 if (typeof result[3] == "undefined") { //
-                    if (!fs.exists(temp.files[i] + ".gz")) {
+                    if (!fs.existsSync(temp.files[i] + ".gz")) {
                         console.log('zopfli', temp.files[i])
                         execSync.exec('zopfli ' + temp.files[i]);
                         console.log('zopfli ended')
