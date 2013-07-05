@@ -5,8 +5,6 @@ var execSync = require('execSync');
 
 execSync.exec('git pull');
 execSync.exec('git checkout zopfli');
-return;
-
 execSync.exec('git merge master');
 glob("../ajax/libs/**/package.json", function (error, matches) {
     matches.forEach(function(element){
