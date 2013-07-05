@@ -1,6 +1,4 @@
 #!/bin/bash
-# Exit if any errors
-set -e
 
 echo Pull
 git pull
