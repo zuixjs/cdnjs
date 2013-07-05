@@ -8,7 +8,8 @@ git merge master
 
 node zopfli.js
 
-git add ../.
+cd ..
+git add .
 git commit -am "zopfli"
 git push
 git checkout master
