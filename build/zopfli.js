@@ -6,7 +6,8 @@ var execSync = require('execSync');
 execSync.exec('git pull');
 
 var exec=require('child_process').exec;
-exec('git checkout zopfli | git merge master',function(err,stdout,stderr){
+exec('git checkout zopfli',function(err,stdout,stderr){
+    execSync.exec('git merge master');
     glob("../ajax/libs/**/package.json", function (error, matches) {
         matches.forEach(function(element){
             var package = JSON.parse(fs.readFileSync(element, 'utf8'));
