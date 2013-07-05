@@ -16,10 +16,7 @@
     }
   ],
   "contributors": [
-    {
-      "name": "Felix Gnass",
-      "web": "http://fgnass.github.com/"
-    }
+    "Felix Gnass (http://fgnass.github.com/)"
   ],
   "repository": {
     "type": "git",
