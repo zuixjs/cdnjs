@@ -18,7 +18,8 @@
     "glob": "~3.1.21",
     "rss": "0.0.4",
     "underscore": "~1.4.4",
-    "execSync": "0.0.4"
+    "execSync": "0.0.4",
+    "superagent": "~0.15.2"
   },
   "devDependencies": {
     "glob": "3.1.9",

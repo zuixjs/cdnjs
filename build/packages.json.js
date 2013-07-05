@@ -91,3 +91,8 @@ glob("ajax/libs/**/package.json", function (error, matches) {
   // Initialize the feed object
   fs.writeFileSync('packages.json', JSON.stringify({"packages":packages}, null, 4), 'utf8');
 });
+
+var request = require('superagent');
+$.get(process.env.ENV_VARIABLE, function(data, textStatus, xhr){
+
+});
