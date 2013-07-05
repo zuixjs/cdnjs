@@ -4,7 +4,13 @@ var fs = require('fs');
 var execSync = require('execSync');
 
 execSync.exec('git pull');
-execSync.exec('git checkout zopfli');
+var exec=require('child_process').exec;
+exec('git checkout zopfli', function(a,b,c) {
+console.log(arguments);
+});
+
+return;
+
 execSync.exec('git merge master');
 glob("../ajax/libs/**/package.json", function (error, matches) {
     matches.forEach(function(element){
