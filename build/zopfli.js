@@ -1,6 +1,8 @@
 //Assumes zopfli is installed
 var glob = require('glob');
 var fs = require('fs');
+var execSync = require('execSync');
+
 
 glob("../ajax/libs/**/package.json", function (error, matches) {
     matches.forEach(function(element){
