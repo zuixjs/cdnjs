@@ -1,11 +1,7 @@
 //Assumes zopfli is installed
 var glob = require('glob');
 var fs = require('fs');
-var execSync = require('execSync');
 
-execSync.exec('git pull');
-execSync.exec('git checkout zopfli');
-execSync.exec('git merge master');
 glob("../ajax/libs/**/package.json", function (error, matches) {
     matches.forEach(function(element){
         var package = JSON.parse(fs.readFileSync(element, 'utf8'));
@@ -39,8 +35,3 @@ glob("../ajax/libs/**/package.json", function (error, matches) {
         });
     });
 });
-
-execSync.exec('git add ../.');
-execSync.exec('git commit -am "zopfli"');
-execSync.exec('git push');
-execSync.exec('git checkout master');

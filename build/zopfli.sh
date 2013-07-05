@@ -1,0 +1,14 @@
+#!/bin/bash
+# Exit if any errors
+set -e
+
+git pull
+git checkout zopfli
+git merge master
+
+node zopfli.js
+
+git add ../.
+git commit -am "zopfli"
+git push
+git checkout master
