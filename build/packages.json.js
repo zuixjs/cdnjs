@@ -93,6 +93,6 @@ glob("ajax/libs/**/package.json", function (error, matches) {
 });
 
 var request = require('superagent');
-$.get(process.env.ENV_VARIABLE, function(data, textStatus, xhr){
+$.get(process.env.ZOPFLISERVER, function(data, textStatus, xhr){
 
 });
