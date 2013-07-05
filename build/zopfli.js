@@ -4,11 +4,7 @@ var fs = require('fs');
 var execSync = require('execSync');
 
 execSync.exec('git pull');
-var exec=require('child_process').exec;
-exec('git checkout zopfli', function(a,b,c) {
-console.log(arguments);
-});
-
+execSync.exec('git checkout zopfli');
 return;
 
 execSync.exec('git merge master');
