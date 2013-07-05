@@ -2,14 +2,20 @@
 # Exit if any errors
 set -e
 
+echo Pull
 git pull
+echo Checkout zopfli
 git checkout zopfli
-git merge master -m "test"
+echo Merge with master
+git merge master -m "merge with master"
 
 node zopfli.js
 
 cd ..
 git add .
+echo Git Commit
 git commit -am "zopfli"
+echo Git Push
 git push
+echo Checkout master
 git checkout master
