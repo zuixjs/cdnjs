@@ -1,12 +1,12 @@
 /*
- * qTip2 - Pretty powerful tooltips - v2.0.1-111
+ * qTip2 - Pretty powerful tooltips - v2.1.0
  * http://qtip2.com
  *
  * Copyright (c) 2013 Craig Michael Thompson
  * Released under the MIT, GPL licenses
  * http://jquery.org/license
  *
- * Date: Sun Jul 7 2013 04:32 GMT+0100+0100
+ * Date: Sun Jul 7 2013 05:08 GMT+0100+0100
  * Plugins: tips modal viewport svg imagemap ie6
  * Styles: basic css3
  */
@@ -1842,7 +1842,7 @@ if(!$.ui) {
 }
 
 ;// qTip version
-QTIP.version = '2.0.1-111';
+QTIP.version = '2.1.0';
 
 // Base ID for all qTips
 QTIP.nextid = 0;
