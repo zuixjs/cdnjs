@@ -1,6 +1,6 @@
 {
   "name": "jquery-instagram",
-  "filename": "jquery.instagram.js",
+  "filename": "instagram.js",
   "version": "0.3.0",
   "description": "Instagram jQuery plugin",
   "homepage": "https://github.com/potomak/jquery-instagram",
