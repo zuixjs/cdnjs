@@ -1,7 +1,7 @@
 {
 	"name": "remoteStorage",
 	"version": "0.8.0",
-	"filename": "remotestorage.js",
+	"filename": "remotestorage.min.js",
 	"description": "Client-side Javascript library to make apps remoteStorage-compatible.",
 	"homepage": "http://remotestorage.io/",
 	"repositories": [
