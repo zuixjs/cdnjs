@@ -1,21 +1,22 @@
 {
-    "description": "Javascript audio library for the modern web.", 
+    "name": "howler", 
     "filename": "howler.min.js", 
-    "homepage": "http://howlerjs.com", 
+    "version": "1.1.11",
+    "description": "Javascript audio library for the modern web.", 
+    "homepage": "http://howlerjs.com/", 
     "keywords": [
-        "audio", 
+        "audio"
     ], 
     "maintainers": [
         {
-            "name": "James Simpson"
+            "name": "James Simpson",
+            "web": "http://goldfirestudios.com/about"
         }
     ], 
-    "name": "howler", 
     "repositories": [
         {
             "type": "git", 
             "url": "git://github.com/goldfire/howler.js.git"
         }
-    ], 
-    "version": "1.1.11"
+    ]
 }
