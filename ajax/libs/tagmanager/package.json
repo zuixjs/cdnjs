@@ -1,6 +1,7 @@
 {
     "name": "TagManager",
     "version": "3.0.0",
+    "filename": "tagmanager.js",
     "title": "Tag Manager",
     "author": {
         "name": "Max Favilli",
