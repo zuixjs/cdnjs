@@ -1,5 +1,5 @@
 {
-    "name": "Fuse.js",
+    "name": "fuse.js",
     "filename": "fuse.min.js",
     "version": "1.0.0",
     "description": "Lightweight fuzzy-search, in JavaScript",
