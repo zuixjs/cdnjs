@@ -1,5 +1,5 @@
 {
-  "name": "CommandZ",
+  "name": "commandz",
   "filename": "commandz.min.js",
   "version": "0.1.1",
   "description": "⌘Z undo and redo commands. Add commands history support to your web app.",
