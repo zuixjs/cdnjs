@@ -1,5 +1,5 @@
 {
-    "name": "screenfull",
+    "name": "screenfull.js",
     "filename": "screenfull.min.js",
     "version": "1.0.4",
     "description": "Simple wrapper for cross-browser usage of the JavaScript Fullscreen API",
