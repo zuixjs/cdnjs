@@ -39,9 +39,9 @@
   "download": "https://raw.github.com/plentz/jquery-maskmoney/master/jquery.maskMoney.js",
   "dependencies": {
     "jquery": ">=1.6"
-  }
+  },
   "repositories": [{
     "type": "git",
     "url": "git@github.com:plentz/jquery-maskmoney.git"
-  }],
+  }]
 }
