@@ -1,5 +1,5 @@
 {
-  "name": "math.js",
+  "name": "mathjs",
   "filename": "math.min.js",
   "version": "0.13.0",
   "description": "Math.js is an extensive math library for JavaScript and Node.js. It features real and complex numbers, units, matrices, a large set of mathematical functions, and a flexible expression parser.",
