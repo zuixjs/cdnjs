@@ -1,5 +1,5 @@
 //
-// oj.js v0.2.1
+// oj.js v0.2.0
 // ojjs.org
 //
 // Copyright 2013, Evan Moran
@@ -25,7 +25,7 @@
     return oj.tag.apply(this, ['oj'].concat(slice.call(arguments)).concat([{__quiet__:1}]))
   };
 
-  oj.version = '0.2.1'
+  oj.version = '0.2.0'
 
   oj.isClient = !(typeof process !== "undefined" && process !== null ? process.versions != null ? process.versions.node : 0 : 0)
 
@@ -1147,19 +1147,26 @@
 
   // Bind events to dom
   function _attributesBindEventsToDOM(events, el, inserts){
+    console.log("inserts: ", inserts);
     var ek, ev, _results = []
     for (ek in events){
       ev = events[ek]
       _a(oj.$ != null, "jquery is missing when binding a '" + ek + "' event")
-      // accumulate insert events manually since DOMNodeInserted is slow and depreciated
-      if (ek == 'insert' && inserts)
-        inserts.push(function(){ev.call(el,el)})
+      if (ek == 'insert' && inserts) {
+        console.log("load event found");
+        console.log("ev: ", ev);
+        inserts.push(function(){
+          console.log("calling onload");
+          ev.call(el,el)
+        });
+      }
       else if (oj.isArray(ev))
-        _results.push(oj.$(el)[ek].apply(this, ev))
+        _results.push(oj.$(el)[ek].apply(this, ev));
       else
-        _results.push(oj.$(el)[ek](ev))
+        _results.push(oj.$(el)[ek](ev));
+
     }
-    return _results
+    return _results;
   };
 
   // oj.toHTML: Compile directly to HTML only
