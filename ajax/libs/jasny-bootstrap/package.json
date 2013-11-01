@@ -1,7 +1,7 @@
 {
     "name": "jasny-bootstrap"
   , "description": "An extended version of Twitter Bootstrap"
-  , "version": "3.0.0-p7"
+  , "version": "3.0.1-p7"
   , "filename": "js/bootstrap.min.js"
   , "keywords": ["twitter bootstrap", "bootstrap", "css"]
   , "homepage": "http://jasny.github.com/bootstrap/"
