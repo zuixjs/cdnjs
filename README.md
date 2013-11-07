@@ -24,7 +24,7 @@ __Libraries must have notable popularity. 100 watchers on GitHub is a good examp
 2. Add your library (following the conventions of this repository)
   * 1 commit per pull request
   * 1 library per pull request
-  * The pull request must be tagged in the original repository (some exceptions apply)
+  * The files in the pull request must correspond to a tag in the original repository (some exceptions apply)
   * include a package.json in the npm format (see `test/schemata/npm-package.json` for details - it's very simple)
   * Run `npm test` to check everything is ok
 3. Send us a pull request.
