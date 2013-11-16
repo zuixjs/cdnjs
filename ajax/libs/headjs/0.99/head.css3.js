@@ -1,5 +1,5 @@
-﻿///#source 1 1 ../src/core.js
-/*!
+/*! head.core v0.99 */
+/*
  * HeadJS     The only script in your <HEAD>    
  * Author     Tero Piirainen  (tipiirai)
  * Maintainer Robert Hoffmann (itechnology)
@@ -24,8 +24,8 @@
             screensCss: { "gt": true, "gte": false, "lt": true, "lte": false, "eq": false },
             browsers  : [
                           { ie     : { min: 6, max: 11 } }
-                       //,{ chrome : { min: 8, max: 29 } }
-                       //,{ ff     : { min: 3, max: 24 } }
+                       //,{ chrome : { min: 8, max: 33 } }
+                       //,{ ff     : { min: 3, max: 26 } }
                        //,{ ios    : { min: 3, max:  6 } }
                        //,{ android: { min: 2, max:  4 } }
                        //,{ webkit : { min: 9, max: 12 } }
@@ -299,8 +299,8 @@
     }
 })(window);
 
-///#source 1 1 ../src/css3.js
-/*!
+/*! head.css3 v0.99 */
+/*
  * HeadJS     The only script in your <HEAD>    
  * Author     Tero Piirainen  (tipiirai)
  * Maintainer Robert Hoffmann (itechnology)
