@@ -28,6 +28,7 @@ __Libraries must have notable popularity. 100 watchers on GitHub is a good examp
   * include a package.json in the npm format (see `test/schemata/npm-package.json` for details - it's very simple)
   * Run `npm test` to check everything is ok
 3. Send us a pull request.
+  * If you are the author of the library, add `[author]` to the pull request title
   * Make sure you include in the pull description:
       1. Where you downloaded the script
       2. If it isn't clear, how you found the version of the script
