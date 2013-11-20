@@ -1,0 +1,29 @@
+{
+    "name": "hydna",
+    "filename": "hydna.min.js",
+    "version": "1.0.0",
+    "author": "Johan Dahlberg",
+    "description": "A small functional reactive programming lib for JavaScript.",
+    "homepage": "https://www.hydna.com",
+    "keywords": [
+        "bacon",
+        "baconjs",
+        "functional",
+        "reactive",
+        "lib",
+        "frp"
+    ],
+
+    "maintainers": [
+        {
+            "name": "Johan Dahlberg",
+            "web": "http://jfd.github.io"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/hydna/hydnajs.git"
+        }
+    ]
+}
