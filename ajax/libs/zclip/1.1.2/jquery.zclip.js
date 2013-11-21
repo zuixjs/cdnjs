@@ -373,7 +373,7 @@ var ZeroClipboard = global.ZeroClipboard = require('ZeroClipboard'),
 			copy: null,
 			beforeCopy: null,
 			afterCopy: null,
-			clickAfter: true,
+			clickAfter: true
 		},
 		unique = (function() {
 			var count = 0;
