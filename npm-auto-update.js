@@ -1,15 +1,12 @@
-"use strict";
-
-var assert = require("assert"),
-    path = require("path"),
+var path = require("path"),
     fs = require("fs-extra"),
     glob = require("glob"),
-    jsv = require("JSV").JSV.createEnvironment(),
     _ = require('lodash'),
     request = require("superagent"),
+    async = require("async"),
     tarball = require('tarball-extract');
 
-function parse(json_file, ignore_missing, ignore_parse_fail) {
+var parse = function (json_file, ignore_missing, ignore_parse_fail) {
     var content;
 
     try {
@@ -30,15 +27,8 @@ function parse(json_file, ignore_missing, ignore_parse_fail) {
     }
 }
 
-// load up those files
-var packages = glob.sync("./ajax/libs/**/package.json");
-packages = _(packages).map(function (pkg) {
-    var parsedPkg = parse(pkg);
-    return parsedPkg['npm-name'] ? parsedPkg : null;
-}).compact().value();
-
-
-_.each(packages, function(pkg) {
+var updateLibrary = function (pkg, callback) {
+    console.log('Checking versions for ' + pkg['npm-name']);
     request.get('http://registry.npmjs.org/' + pkg['npm-name'], function(result) {
         //console.log(result.body);
         _.each(result.body.versions, function(data, version) {
@@ -69,11 +59,35 @@ _.each(packages, function(pkg) {
                 });
                 console.log("Do not have this version", version);
             } else {
+                console.log("Have this version", version);
             }
             //console.log(data);
-        })
+        });
+        var npmVersion = result.body['dist-tags'].latest;
+        pkg.version = npmVersion;
+        fs.writeFileSync('ajax/libs/' + pkg.name + '/package.json', JSON.stringify(pkg, null, 4), 'utf8');
+
+        callback(null, pkg['npm-name']);
     });
+}
+
+console.log('Looking for npm enabled libraries...');
+
+// load up those files
+var packages = glob.sync("./ajax/libs/**/package.json");
+packages = _(packages).map(function (pkg) {
+    var parsedPkg = parse(pkg);
+    return parsedPkg['npm-name'] ? parsedPkg : null;
+}).compact().value();
+
+console.log('Found ' + packages.length + ' npm enabled libraries');
+var libraryUpdates = [];
+_.each(packages, function(pkg) {
+    libraryUpdates.push(function (callback) {
+      updateLibrary(pkg, callback);
+    });;
+});
+async.series(libraryUpdates, function(err, results) {
+  console.log('Script completed');
 });
 
-
-//console.log(packages);
