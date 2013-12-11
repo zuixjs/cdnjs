@@ -65,7 +65,7 @@ var updateLibrary = function (pkg, callback) {
         });
         var npmVersion = result.body['dist-tags'].latest;
         pkg.version = npmVersion;
-        fs.writeFileSync('ajax/libs/' + pkg.name + '/package.json', JSON.stringify(pkg, null, 4), 'utf8');
+        fs.writeFileSync('ajax/libs/' + pkg.name + '/package.json', JSON.stringify(pkg, null, 2), 'utf8');
 
         callback(null, pkg['npm-name']);
     });
