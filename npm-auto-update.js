@@ -6,7 +6,6 @@ var assert = require("assert"),
     glob = require("glob"),
     jsv = require("JSV").JSV.createEnvironment(),
     _ = require('lodash'),
-    npm = require("npm"),
     request = require("superagent"),
     tarball = require('tarball-extract');
 
@@ -55,20 +54,21 @@ _.each(packages, function(pkg) {
 
                     var files = data.files || [];
                     files = _.compact(files);
-                    files.push(data.main);
                     _.each(files, function(file) {
                         var oldPath = path + '/' + folderName + '/' + file;
                         var newPath = path + '/' + file;
-                        fs.renameSync(oldPath, newPath);
+                        console.log(oldPath);
+                        if(fs.existsSync(oldPath)) {
+                            fs.renameSync(oldPath, newPath);
+                        }
                     });
 
                     fs.removeSync(path + '/' + folderName);
 
                     console.log(err, result);
                 });
-                console.log("do not have this file");
+                console.log("Do not have this version", version);
             } else {
-                console.log("We already have this...")
             }
             //console.log(data);
         })
