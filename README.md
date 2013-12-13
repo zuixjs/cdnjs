@@ -35,6 +35,40 @@ __Libraries must have notable popularity. 100 stars on GitHub is a good example,
   * e.g. https://github.com/cdnjs/cdnjs/pull/541
 4. If the library doesn't already provide a minified version, our preferred minifier is [UglifyJS](http://marijnhaverbeke.nl/uglifyjs "UglifyJS")
 
+## Enabling NPM auto update
+
+We automatically update libraries that are also hosted on NPM e.g. Lodash.
+
+1. Update the package.json and configure it as below and submit a pull request.
+
+```
+ // Lodash package.json
+ // ...
+  "npmName": "lodash",
+  "npmFileMap": [{
+    "basePath": "/dist/",
+    "files": [
+      "*"
+    ]
+  }],
+  // ...
+```
+
+`npmName` should map to the name of the library on NPM
+`npmFileMap` is a white list of files to take from the NPM tarball and host on the cdn. 
+`basePath` will be ignored when copying over to the cdn
+`files` is a pattern matcher that you can select many files with
+
+The above example looks in the tarball whose structure might look like
+
+```
+- dist/lodash.js
+- dist/lodash.min.js
+- README
+```
+
+It then will look for `dist/*` which will find the two files inside the dist folder. It will now copy it over to cdnjs but without the `dist` path. Such that they will end up. `ajax/libs/lodash.js/2.0/lodash.js`
+
 ## Running the validator
 1. Install all the needed dependencies locally (you will need `node`): `npm install`
 2. Run the test suite: `npm test`
