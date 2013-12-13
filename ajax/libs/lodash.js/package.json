@@ -1,6 +1,12 @@
 {
   "name": "lodash.js",
-  "npm-name": "lodash",
+  "npmName": "lodash",
+  "npmFileMap": [{
+    "basePath": "/dist/",
+    "files": [
+      "*"
+    ]
+  }],
   "version": "2.4.1",
   "filename": "lodash.min.js",
   "description": "A utility library delivering consistency, customization, performance, & extras.",
