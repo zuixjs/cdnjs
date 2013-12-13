@@ -3,7 +3,7 @@
   "npmName": "lodash",
   "npmFileMap": [{
     "basePath": "/dist/",
-    "files": [
+    "patterns": [
       "*"
     ]
   }],
