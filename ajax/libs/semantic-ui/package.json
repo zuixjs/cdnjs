@@ -11,7 +11,7 @@
    "repositories": [
        {
            "type": "git",
-           "url": "https://github.com/Semantic-Org/Semantic-UI"
+           "url": "https://github.com/jlukic/Semantic-UI"
        }
    ]
 }
