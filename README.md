@@ -55,7 +55,7 @@ We automatically update libraries that are also hosted on NPM e.g. Lodash.
 ```
 
 `npmName` should map to the name of the library on NPM
-`npmFileMap` is a white list of files to take from the NPM tarball and host on the cdn. 
+`npmFileMap` is a white list of files to take from the NPM tarball and host on the cdn
 `basePath` will be ignored when copying over to the cdn
 `files` is a pattern matcher that you can select many files with
 
