@@ -1,5 +1,5 @@
 {
-    "name": "WebUploader",
+    "name": "webuploader",
     "filename": "webuploader.js",
     "version": "0.1.0",
     "description": "It's a new file uploader solution, with two runtimes(html5 & flash).",
