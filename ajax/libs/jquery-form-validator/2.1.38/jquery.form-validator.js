@@ -5,11 +5,54 @@
 *
 * @website http://formvalidator.net/
 * @license Dual licensed under the MIT or GPL Version 2 licenses
-* @version 2.1.9
+* @version 2.1.38
 */
 (function($) {
 
     'use strict';
+
+    var _applyErrorStyle = function($elem, conf) {
+            $elem
+                .addClass(conf.errorElementClass)
+                .removeClass('valid')
+                .parent()
+                    .addClass('has-error')
+                    .removeClass('has-success'); // twitter bs
+
+            if(conf.borderColorOnError !== '') {
+                $elem.css('border-color', conf.borderColorOnError);
+            }
+        },
+        _removeErrorStyle = function($elem, conf) {
+            $elem.each(function() {
+                _setInlineErrorMessage($(this), '', conf);
+                $(this)
+                    .removeClass('valid')
+                    .removeClass(conf.errorElementClass)
+                    .css('border-color', '')
+                    .parent()
+                        .removeClass('has-error')
+                        .removeClass('has-success')
+                        .find('.'+conf.errorMessageClass) // remove inline error message
+                            .remove();
+            });
+        },
+        _setInlineErrorMessage = function($input, mess, conf) {
+            var custom = _getInlineErrorElement($input);
+            if( custom ) {
+                custom.innerHTML = mess;
+            } else {
+                var $mess = $input.parent().find('.'+conf.errorMessageClass+'.help-block');
+                if( $mess.length == 0 ) {
+                    $mess = $('<span></span>').addClass('help-block').addClass(conf.errorMessageClass);
+                    $mess.appendTo($input.parent());
+                }
+                $mess.html(mess);
+            }
+        },
+        _getInlineErrorElement = function($input, conf) {
+            return document.getElementById($input.attr('name')+'_err_msg');
+        };
 
     /**
     * Assigns validateInputOnBlur function to elements blur event
@@ -19,10 +62,11 @@
     * @return {jQuery}
     */
     $.fn.validateOnBlur = function(language, settings) {
-        this.find('input[data-validation], textarea[data-validation]')
-            .blur(function() {
-               $(this).validateInputOnBlur(language, settings);
+        this.find('input[data-validation],textarea[data-validation]')
+            .bind('blur.validation', function() {
+                $(this).validateInputOnBlur(language, settings);
             });
+
         return this;
     };
 
@@ -39,27 +83,40 @@
             attrName = 'data-validation-help';
         }
 
+        // Remove previously added event listeners
+        this.find('.has-help-txt')
+                .valAttr('has-keyup-event', false)
+                .valAttr('backend-valid', false)
+                .valAttr('backend-invalid', false)
+                .removeClass('has-help-txt');
+
+        // Add help text listeners
         this.find('textarea,input').each(function() {
-            var $element = $(this),
-                className = 'jquery_form_help_' + $element.attr('name'),
-                help = $element.attr(attrName);
+            var $elem = $(this),
+                className = 'jquery_form_help_' + ($elem.attr('name') || '').replace( /(:|\.|\[|\])/g, "" ),
+                help = $elem.attr(attrName);
+
             if(help) {
-                $element
-                    .focus(function() {
-                        var $help = $element.parent().find('.'+className);
+                $elem
+                    .addClass('has-help-txt')
+                    .unbind('focus.help')
+                    .bind('focus.help', function() {
+                        var $help = $elem.parent().find('.'+className);
                         if($help.length == 0) {
                             $help = $('<span />')
                                         .addClass(className)
+                                        .addClass('help')
                                         .addClass('help-block') // twitter bs
                                         .text(help)
                                         .hide();
 
-                            $element.after($help);
+                            $elem.after($help);
 
                         }
                         $help.fadeIn();
                     })
-                    .blur(function() {
+                    .unbind('blur.help')
+                    .bind('blur.help', function() {
                         $(this)
                             .parent()
                             .find('.'+className)
@@ -77,85 +134,46 @@
     * that is appended to the parent element
     *
     * @param {Object} [language] Optional, will override $.formUtils.LANG
-    * @param {Object} [config] Optional, will override the default settings
+    * @param {Object} [conf] Optional, will override the default settings
     * @param {Boolean} [attachKeyupEvent] Optional
+    * @param {String} [eventContext]
     * @return {jQuery}
     */
-    $.fn.validateInputOnBlur = function(language, config, attachKeyupEvent) {
-        if(attachKeyupEvent === undefined) {
+    $.fn.validateInputOnBlur = function(language, conf, attachKeyupEvent, eventContext) {
+        if(attachKeyupEvent === undefined)
             attachKeyupEvent = true;
-        }
+        if(!eventContext)
+            eventContext = 'blur';
 
         language = $.extend($.formUtils.LANG, language || {});
-        config = $.extend($.formUtils.defaultConfig(), config || {});
-        config.errorMessagePosition = 'element';
+        _removeErrorStyle(this, conf);
 
-        var $element = this,
+        var $elem = this,
+            $form = $elem.closest("form"),
+            validationRule = $elem.attr(conf.validationRuleAttribute),
+            validation = $.formUtils.validateInput(
+                            $elem,
+                            language,
+                            $.extend({}, conf, {errorMessagePosition:'element'}),
+                            $form,
+                            eventContext
+                        );
 
-            // test if there is custom obj to hold element error msg (id = element name + err_msg)
-            elementErrMsgObj = document.getElementById($element.attr('name')+'_err_msg'),
-
-            $form = $element.closest("form"),
-
-            validationRule = $element.attr(config.validationRuleAttribute);
-
-        if( !attachKeyupEvent && validationRule == 'server' ) {
-            // do not validate server side on keyup event
-            return this;
-        }
-
-        // Remove possible error style applied by previous validation
-        $element
-            .removeClass(config.errorElementClass)
-            .css('border-color', '')
-            .parent()
-                .find('.'+config.errorMessageClass).remove();
-
-        // Twitter bs
-        $form.find('.has-error').removeClass('has-error');
-
-        // if element has custom err msg container, clear it
-        if( elementErrMsgObj != null) {
-            elementErrMsgObj.innerHTML = '';
-        }
-
-        var validation = $.formUtils.validateInput($element, language, config, $form);
+        $elem.trigger('validation', [validation===true]);
 
         if(validation === true) {
-            $element
+            $elem
                 .addClass('valid')
                 .parent()
                     .addClass('has-success'); // twitter bs
-        } else if(validation === null) {
-            $element
-                .removeClass('valid')
-                .parent()
-                    .removeClass('has-error')
-                    .removeClass('has-success');
-        } else {
-            $element
-                .addClass(config.errorElementClass)
-                .removeClass('valid')
-                .parent()
-                    .addClass('has-error')
-                    .removeClass('has-success'); // twitter bs
+        } else if(validation !== null) {
 
-            // if element has custom err msg container, use it
-            if( elementErrMsgObj != null) {
-                elementErrMsgObj.innerHTML = validation;
-            } else { // use regular span append
-                var $parent = $element.parent();
-                $parent.append('<span class="'+config.errorMessageClass+' help-block">'+validation+'</span>');
-                $parent.addClass('has-error'); // twitter bs
-            }
-
-            if(config.borderColorOnError !== '') {
-                $element.css('border-color', config.borderColorOnError);
-            }
+            _applyErrorStyle($elem, conf);
+            _setInlineErrorMessage($elem, validation, conf);
 
             if(attachKeyupEvent) {
-                $element.bind('keyup', function() {
-                    $(this).validateInputOnBlur(language, config, false);
+                $elem.bind('keyup', function() {
+                    $(this).validateInputOnBlur(language, conf, false, 'keyup');
                 });
             }
         }
@@ -187,12 +205,11 @@
      * Function that validate all inputs in a form
      *
      * @param [language]
-     * @param [config]
+     * @param [conf]
      */
-    $.fn.validateForm = function(language, config) {
+    $.fn.validateForm = function(language, conf) {
 
         language = $.extend($.formUtils.LANG, language || {});
-        config = $.extend($.formUtils.defaultConfig(), config || {});
 
         $.formUtils.isValidatingEntireForm = true;
         $.formUtils.haltValidation = false;
@@ -201,20 +218,17 @@
          * Adds message to error message stack if not already in the message stack
          *
          * @param {String} mess
-         * @para {jQuery} $element
+         * @para {jQuery} $elem
          */
-        var addErrorMessage = function(mess, $element) {
+        var addErrorMessage = function(mess, $elem) {
             // validate server side will return null as error message before the server is requested
             if(mess !== null) {
                 if ($.inArray(mess, errorMessages) < 0) {
                     errorMessages.push(mess);
                 }
-                errorInputs.push($element);
-                $element
-                    .valAttr('current-error', mess)
-                    .removeClass('valid')
-                    .parent()
-                    .removeClass('has-success');
+                errorInputs.push($elem);
+                $elem.attr('current-error', mess);
+                _applyErrorStyle($elem, conf);
             }
         },
 
@@ -235,31 +249,36 @@
          * @return {Boolean}
          */
         ignoreInput = function(name, type) {
-            if (type === 'submit' || type === 'button') {
+            if (type === 'submit' || type === 'button' || type == 'reset') {
                 return true;
             }
-            return $.inArray(name, config.ignore || []) > -1;
+            return $.inArray(name, conf.ignore || []) > -1;
         };
 
-        //
+        // Reset style and remove error class
+        $form.find('.'+conf.errorMessageClass+'.alert').remove();
+        _removeErrorStyle($form.find('.'+conf.errorElementClass+',.valid'), conf);
+
         // Validate element values
-        //
         $form.find('input,textarea,select').filter(':not([type="submit"],[type="button"])').each(function() {
-            var $element = $(this);
-            var elementType = $element.attr('type');
-            if (!ignoreInput($element.attr('name'), elementType)) {
+            var $elem = $(this);
+            var elementType = $elem.attr('type');
+            if (!ignoreInput($elem.attr('name'), elementType)) {
 
                 var validation = $.formUtils.validateInput(
-                                $element,
+                                $elem,
                                 language,
-                                config,
-                                $form
+                                conf,
+                                $form,
+                                'submit'
                             );
 
+                $elem.trigger('validation', [validation===true]);
+
                 if(validation !== true) {
-                    addErrorMessage(validation, $element);
+                    addErrorMessage(validation, $elem);
                 } else {
-                    $element
+                    $elem
                         .valAttr('current-error', false)
                         .addClass('valid')
                         .parent()
@@ -269,59 +288,30 @@
 
         });
 
-        //
-        // Reset style and remove error class
-        //
-        $form.find('.has-error').removeClass('has-error');
-        $form.find('input,textarea,select')
-            .css('border-color', '')
-            .removeClass(config.errorElementClass);
-
-        //
-        // Remove possible error messages from last validation
-        //
-        $('.' + $.split(config.errorMessageClass, ' ').join('.')).remove();
-        $('.'+config.errorMessageClass).remove();
-
-        //
         // Run validation callback
-        //
-        if( typeof config.onValidate == 'function' ) {
-            var resp = config.onValidate($form);
+        if( typeof conf.onValidate == 'function' ) {
+            var resp = conf.onValidate($form);
             if( resp && resp.element && resp.message ) {
                 addErrorMessage(resp.message, resp.element);
             }
         }
 
-        //
         // Validation failed
-        //
         if (!$.formUtils.haltValidation && errorInputs.length > 0) {
 
             // Reset form validation flag
             $.formUtils.isValidatingEntireForm = false;
 
-            // Apply error style to invalid inputs
-            $.each(errorInputs, function(i, $input) {
-                if (config.borderColorOnError !== '') {
-                    $input.css('border-color', config.borderColorOnError);
-                }
-                $input
-                    .addClass(config.errorElementClass)
-                    .parent()
-                        .addClass('has-error');
-            });
-
             // display all error messages in top of form
-            if (config.errorMessagePosition === 'top') {
+            if (conf.errorMessagePosition === 'top') {
                 var messages = '<strong>' + language.errorTitle + '</strong>';
                 $.each(errorMessages, function(i, mess) {
                     messages += '<br />* ' + mess;
                 });
 
                 // using div instead of P gives better control of css display properties
-                $form.children().eq(0).before('<div class="' + config.errorMessageClass + ' alert alert-danger">' + messages + '</div>');
-                if(config.scrollToTopOnError) {
+                $form.children().eq(0).before('<div class="' + conf.errorMessageClass + ' alert alert-danger">' + messages + '</div>');
+                if(conf.scrollToTopOnError) {
                     $(window).scrollTop($form.offset().top - 20);
                 }
             }
@@ -329,13 +319,7 @@
             // Display error message below input field
             else {
                 $.each(errorInputs, function(i, $input) {
-                    var $parent = $input.parent(),
-                        $errorSpan = $parent.find('span[class='+config.errorMessageClass+']');
-                    if ($errorSpan.length > 0) {
-                        $errorSpan.text(', '+$input.valAttr('current-error'));
-                    } else {
-                        $parent.append('<span class="'+config.errorMessageClass+' help-block">' + $input.valAttr('current-error') + '</span>');
-                    }
+                    _setInlineErrorMessage($input, $input.attr('current-error'), conf);
                 });
             }
             return false;
@@ -368,8 +352,9 @@
 
             sugs = $.split($field.attr('data-suggestions'));
 
-            if( sugs.length > 0 ) {
+            if( sugs.length > 0 && !$field.hasClass('has-suggestions') ) {
                 $.formUtils.suggest($field, sugs, settings);
+                $field.addClass('has-suggestions');
             }
         });
         return this;
@@ -408,10 +393,11 @@
 
     /**
      * Short hand function that makes the validation setup require less code
-     * @param config
+     * @param conf
      */
-    $.validate = function(config) {
-        config = $.extend({
+    $.validate = function(conf) {
+
+        var defaultConf = $.extend($.formUtils.defaultConfig(), {
             form : 'form',
             validateOnBlur : true,
             showHelpOnFocus : true,
@@ -421,62 +407,84 @@
             language : false,
             onSuccess : false,
             onError : false
-        }, config || {});
+        });
 
-        $.split(config.form, function(formQuery) {
+        conf = $.extend(defaultConf, conf || {});
+
+        // Add validation to forms
+        $.split(conf.form, function(formQuery) {
+
             var $form  = $(formQuery);
 
+            // Remove all event listeners previously added
+            $form.find('.has-help-txt')
+                .unbind('focus.validation')
+                .unbind('blur.validation');
+            $form
+                .removeClass('has-validation-callback')
+                .unbind('submit.validation')
+                .unbind('reset.validation')
+                .find('input[data-validation],textarea[data-validation]')
+                    .unbind('blur.validation')
+
             // Validate when submitted
-            $form.bind('submit', function() {
+            $form.bind('submit.validation', function() {
+                var $form = $(this);
                 if($.formUtils.isLoadingModules) {
                     setTimeout(function() {
-                        $form.trigger('submit');
+                        $form.trigger('submit.validation');
                     }, 200);
                     return false;
                 }
-                var valid = $(this).validateForm(config.language, config);
-                if( valid && typeof config.onSuccess == 'function') {
-                    var callbackResponse = config.onSuccess($form);
+                var valid = $form.validateForm(conf.language, conf);
+                if( valid && typeof conf.onSuccess == 'function') {
+                    var callbackResponse = conf.onSuccess($form);
                     if( callbackResponse === false )
                         return false;
-                } else if ( !valid && typeof config.onError == 'function' ) {
-                    config.onError($form);
+                } else if ( !valid && typeof conf.onError == 'function' ) {
+                    conf.onError($form);
                     return false;
                 } else {
                     return valid;
                 }
-            });
+            })
+            .bind('reset.validation', function() {
+                // remove messages
+                $(this).find('.'+conf.errorMessageClass+'.alert').remove();
+                _removeErrorStyle($(this).find('.'+conf.errorElementClass+',.valid'), conf);
+            })
+            .addClass('has-validation-callback');
 
-            if( config.validateOnBlur ) {
-                $form.validateOnBlur(config.language, config);
-            }
-            if( config.showHelpOnFocus ) {
+            if( conf.showHelpOnFocus ) {
                 $form.showHelpOnFocus();
             }
-            if( config.addSuggestions ) {
+            if( conf.addSuggestions ) {
                 $form.addSuggestions();
+            }
+            if( conf.validateOnBlur ) {
+                $form.validateOnBlur(conf.language, conf);
             }
         });
 
-        if( config.modules != '' ) {
-            if( typeof config.onModulesLoaded == 'function' ) {
+        if( conf.modules != '' ) {
+            if( typeof conf.onModulesLoaded == 'function' ) {
                 $.formUtils.on('load', function() {
-                    config.onModulesLoaded();
+                    conf.onModulesLoaded();
                 });
             }
-            $.formUtils.loadModules(config.modules);
+            $.formUtils.loadModules(conf.modules);
         }
     };
 
     /**
      * @deprecated
-     * @param {Object} config
+     * @param {Object} conf
      */
-    $.validationSetup = function(config) {
+    $.validationSetup = function(conf) {
         if( typeof console != 'undefined' && console.warn ) {
             window.console.warn('Using deprecated function $.validationSetup, pls use $.validate instead');
         }
-        $.validate(config);
+        $.validate(conf);
     };
 
     /**
@@ -533,6 +541,8 @@
         addValidator : function(validator) {
             // prefix with "validate_" for backward compatibility reasons
             var name = validator.name.indexOf('validate_') === 0 ? validator.name : 'validate_'+validator.name;
+            if( validator.validateOnKeyUp === undefined )
+                validator.validateOnKeyUp = true;
             this.validators[name] = validator;
         },
 
@@ -563,6 +573,8 @@
          */
         isLoadingModules : false,
 
+        loadedModules : {},
+
         /**
         * @example
         *  $.formUtils.loadModules('date, security.dev');
@@ -591,47 +603,61 @@
                 return;
             }
 
-            var loadModuleScripts = function(modules, path) {
-                var moduleList = $.split(modules),
-                    numModules = moduleList.length,
-                    moduleLoadedCallback = function() {
-                        numModules--;
-                        if( numModules == 0 ) {
-                            $.formUtils.isLoadingModules = false;
-                            if( fireEvent ) {
-                                $.formUtils.trigger('load', path);
-                            }
-                        }
-                    };
-
-                if( numModules > 0 ) {
-                    $.formUtils.isLoadingModules = true;
-                }
-
-                var cacheSuffix = '?__='+( new Date().getTime() ),
-                    appendToElement = document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0];
-
-                $.each(moduleList, function(i, modName) {
-                    modName = $.trim(modName);
-                    if( modName.length == 0 ) {
-                        moduleLoadedCallback();
-                    }
-                    else {
-                        var scriptUrl = path + modName + (modName.substr(-3) == '.js' ? '':'.js'),
-                            script = document.createElement('SCRIPT');
-                        script.type = 'text/javascript';
-                        script.onload = moduleLoadedCallback;
-                        script.src = scriptUrl + ( scriptUrl.substr(-7) == '.dev.js' ? cacheSuffix:'' );
-                        script.onreadystatechange = function() {
-                            // IE 7 fix
-                            if( this.readyState == 'complete' ) {
-                                moduleLoadedCallback();
+            var hasLoadedAnyModule = false,
+                loadModuleScripts = function(modules, path) {
+                    var moduleList = $.split(modules),
+                        numModules = moduleList.length,
+                        moduleLoadedCallback = function() {
+                            numModules--;
+                            if( numModules == 0 ) {
+                                $.formUtils.isLoadingModules = false;
+                                if( fireEvent && hasLoadedAnyModule ) {
+                                    $.formUtils.trigger('load', path);
+                                }
                             }
                         };
-                        appendToElement.appendChild( script );
+
+                    if( numModules > 0 ) {
+                        $.formUtils.isLoadingModules = true;
                     }
-                });
-            };
+
+                    var cacheSuffix = '?__='+( new Date().getTime() ),
+                        appendToElement = document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0];
+
+                    $.each(moduleList, function(i, modName) {
+                        modName = $.trim(modName);
+                        if( modName.length == 0 ) {
+                            moduleLoadedCallback();
+                        }
+                        else {
+                            var scriptUrl = path + modName + (modName.substr(-3) == '.js' ? '':'.js'),
+                                script = document.createElement('SCRIPT');
+
+                            if( scriptUrl in $.formUtils.loadedModules ) {
+                                // already loaded
+                                moduleLoadedCallback();
+                            }
+                            else {
+
+                                // Remember that this script is loaded
+                                $.formUtils.loadedModules[scriptUrl] = 1;
+                                hasLoadedAnyModule = true;
+
+                                // Load the script
+                                script.type = 'text/javascript';
+                                script.onload = moduleLoadedCallback;
+                                script.src = scriptUrl + ( scriptUrl.substr(-7) == '.dev.js' ? cacheSuffix:'' );
+                                script.onreadystatechange = function() {
+                                    // IE 7 fix
+                                    if( this.readyState == 'complete' ) {
+                                        moduleLoadedCallback();
+                                    }
+                                };
+                                appendToElement.appendChild( script );
+                            }
+                        }
+                    });
+                };
 
             if( path ) {
                 loadModuleScripts(modules, path);
@@ -668,16 +694,19 @@
         * found in the attribute data-validation. Will return true if valid,
         * error message otherwise
         *
-        * @param {jQuery} $element
+        * @param {jQuery} $elem
         * @param {Object} language ($.formUtils.LANG)
-        * @param {Object} config
+        * @param {Object} conf
         * @param {jQuery} $form
+        * @param {String} [eventContext]
         * @return {String|Boolean}
         */
-        validateInput : function($element, language, config, $form) {
+        validateInput : function($elem, language, conf, $form, eventContext) {
 
-            var value = $.trim( $element.val() || ''),
-                optional = $element.valAttr('optional'),
+            $elem.trigger('beforeValidation');
+
+            var value = $.trim( $elem.val() || ''),
+                optional = $elem.valAttr('optional'),
 
                 // test if a checkbox forces this element to be validated
                 validationDependsOnCheckedInput = false,
@@ -685,7 +714,7 @@
                 validateIfCheckedElement = false,
 
                 // get value of this element's attribute "... if-checked"
-                validateIfCheckedElementName = $element.valAttr("if-checked");
+                validateIfCheckedElementName = $elem.valAttr("if-checked");
 
             // make sure we can proceed
             if (validateIfCheckedElementName != null) {
@@ -708,16 +737,16 @@
             // if empty AND optional attribute is present
             // OR depending on a checkbox being checked AND checkbox is checked, return true
             if ((!value && optional === 'true') || (validationDependsOnCheckedInput && !validationDependentInputIsChecked)) {
-                return config.addValidClassOnAll ? true:null;
+                return conf.addValidClassOnAll ? true:null;
             }
 
-            var validationRules = $element.attr(config.validationRuleAttribute),
+            var validationRules = $elem.attr(conf.validationRuleAttribute),
 
                 // see if form element has inline err msg attribute
                 validationErrorMsg = true;
 
             if( !validationRules ) {
-                return config.addValidClassOnAll ? true:null;
+                return conf.addValidClassOnAll ? true:null;
             }
 
             $.split(validationRules, function(rule) {
@@ -731,13 +760,16 @@
                     // special change of element for checkbox_group rule
                     if ( rule == 'validate_checkbox_group' ) {
                         // set element to first in group, so error msg is set only once
-                            $element = $("[name='"+$element.attr('name')+"']:eq(0)");
+                            $elem = $("[name='"+$elem.attr('name')+"']:eq(0)");
                     }
 
-                    var isValid = validator.validatorFunction(value, $element, config, language, $form);
+                    var isValid = true;
+                    if( eventContext != 'keyup' || validator.validateOnKeyUp ) {
+                        isValid = validator.validatorFunction(value, $elem, conf, language, $form);
+                    }
 
                     if(!isValid) {
-                        validationErrorMsg =  $element.attr(config.validationErrorMsgAttribute);
+                        validationErrorMsg =  $elem.attr(conf.validationErrorMsgAttribute);
                         if( !validationErrorMsg ) {
                             validationErrorMsg = language[validator.errorMessageKey];
                             if( !validationErrorMsg )
@@ -745,6 +777,7 @@
                         }
                         return false; // breaks the iteration
                     }
+
                 } else {
                     console.warn('Using undefined validator "'+rule+'"');
                 }
@@ -841,6 +874,7 @@
         lengthRestriction : function($inputElement, $maxLengthElement) {
                 // read maxChars from counter display initial text value
            var maxChars = parseInt($maxLengthElement.text(),10),
+                charsLeft = 0,
 
                // internal function does the counting and sets display value
                countCharacters = function() {
@@ -852,8 +886,12 @@
                        $inputElement.val($inputElement.val().substring(0, maxChars));
                        $inputElement.scrollTop(currScrollTopPos);
                    }
+                   charsLeft = maxChars - numChars;
+                   if( charsLeft < 0 )
+                       charsLeft = 0;
+
                    // set counter text
-                   $maxLengthElement.text(maxChars - numChars);
+                   $maxLengthElement.text(charsLeft);
                };
 
            // bind events to this element
@@ -896,13 +934,13 @@
         /**
          * Utility function that can be used to create plugins that gives
          * suggestions when inputs is typed into
-         * @param {jQuery} $element
+         * @param {jQuery} $elem
          * @param {Array} suggestions
          * @param {Object} settings - Optional
          * @return {jQuery}
          */
-        suggest : function($element, suggestions, settings) {
-            var config =  {
+        suggest : function($elem, suggestions, settings) {
+            var conf =  {
                 css : {
                     maxHeight: '150px',
                     background: '#FFF',
@@ -917,14 +955,33 @@
                 activeSuggestionCSS : {
                     background : '#E9E9E9'
                 }
+            },
+            setSuggsetionPosition = function($suggestionContainer, $input) {
+                var offset = $input.offset();
+                $suggestionContainer.css({
+                    width : $input.outerWidth(),
+                    left : offset.left + 'px',
+                    top : (offset.top + $input.outerHeight()) +'px'
+                });
             };
 
             if(settings)
-                $.extend(config, settings);
+                $.extend(conf, settings);
 
-            config.css['position'] = 'absolute';
-            config.css['z-index'] = 9999;
-            $element.attr('autocomplete', 'off');
+            conf.css['position'] = 'absolute';
+            conf.css['z-index'] = 9999;
+            $elem.attr('autocomplete', 'off');
+
+            if( this._numSuggestionElements === 0 ) {
+                // Re-position suggestion container if window size changes
+                $(window).bind('resize', function() {
+                    $('.jquery-form-suggestions').each(function() {
+                        var $container = $(this),
+                            suggestID = $container.attr('data-suggest-container');
+                        setSuggsetionPosition($container, $('.suggestions-'+suggestID).eq(0));
+                    });
+                });
+            }
 
             this._numSuggestionElements++;
 
@@ -935,14 +992,16 @@
                 $('.jquery-form-suggestion-'+suggestionId).fadeOut('fast');
             };
 
-            $element
+            $elem
                 .data('suggestions', suggestions)
                 .valAttr('suggestion-nr', this._numSuggestionElements)
-                .bind('focus', function() {
+                .unbind('focus.suggest')
+                .bind('focus.suggest', function() {
                     $(this).trigger('keyup');
                     $.formUtils._selectedSuggestion = null;
                 })
-                .bind('keyup', function() {
+                .unbind('keyup.suggest')
+                .bind('keyup.suggest', function() {
                     var $input = $(this),
                         foundSuggestions = [],
                         val = $.trim($input.val()).toLocaleLowerCase();
@@ -982,9 +1041,12 @@
 
                     // Create suggestion container if not already exists
                     else if(foundSuggestions.length > 0 && $suggestionContainer.length == 0) {
-                        $suggestionContainer = $('<div></div>').css(config.css).appendTo('body');
-                        $suggestionContainer.addClass('jquery-form-suggestions');
-                        $suggestionContainer.addClass('jquery-form-suggestion-'+suggestionId);
+                        $suggestionContainer = $('<div></div>').css(conf.css).appendTo('body');
+                        $elem.addClass('suggestions-'+suggestionId);
+                        $suggestionContainer
+                            .attr('data-suggest-container', suggestionId)
+                            .addClass('jquery-form-suggestions')
+                            .addClass('jquery-form-suggestion-'+suggestionId);
                     }
 
                     // Show hidden container
@@ -996,12 +1058,7 @@
                     if(foundSuggestions.length > 0 && val.length != foundSuggestions[0].length) {
 
                         // put container in place every time, just in case
-                        var offset = $input.offset();
-                        $suggestionContainer.css({
-                            width : $input.outerWidth(),
-                            left : offset.left + 'px',
-                            top : (offset.top + $input.outerHeight()) +'px'
-                        });
+                        setSuggsetionPosition($suggestionContainer, $input);
 
                         // Add suggestions HTML to container
                         $suggestionContainer.html('');
@@ -1024,7 +1081,8 @@
                         });
                     }
                 })
-                .bind('keydown', function(e) {
+                .unbind('keydown.validation')
+                .bind('keydown.validation', function(e) {
                     var code = (e.keyCode ? e.keyCode : e.which),
                         suggestionId,
                         $suggestionContainer,
@@ -1078,18 +1136,19 @@
                                 .css('background', 'none')
                                 .eq($.formUtils._selectedSuggestion)
                                     .addClass('active-suggestion')
-                                    .css(config.activeSuggestionCSS);
+                                    .css(conf.activeSuggestionCSS);
 
                             e.preventDefault();
                             return false;
                         }
                     }
                 })
-                .bind('blur', function() {
+                .unbind('blur.suggest')
+                .bind('blur.suggest', function() {
                     onSelectSuggestion($(this));
                 });
 
-            return $element;
+            return $elem;
         },
 
        /**
@@ -1142,13 +1201,13 @@
     $.formUtils.addValidator({
         name : 'email',
         validatorFunction : function(email) {
-            var emailFilter = /^([a-zA-Z0-9_\.\-])+@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-            if(emailFilter.test(email)) {
-               var parts = email.split('@');
-               if(parts.length == 2) {
-                   return $.formUtils.validators.validate_domain.validatorFunction(parts[1]);
-               }
+
+            var emailParts = email.toLowerCase().split('@');
+            if( emailParts.length == 2 ) {
+                return $.formUtils.validators.validate_domain.validatorFunction(emailParts[1]) &&
+                        !(/[^\w\+\.\-]/.test(emailParts[0]));
             }
+
             return false;
         },
         errorMessage : '',
@@ -1162,28 +1221,39 @@
         name : 'domain',
         validatorFunction : function(val, $input) {
 
-            var topDomains = ['.com', '.net', '.org', '.biz', '.coop', '.info', '.museum', '.name', '.pro',
-                    '.edu', '.gov', '.int', '.mil', '.ac', '.ad', '.ae', '.af', '.ag', '.ai', '.al',
-                    '.am', '.an', '.ao', '.aq', '.ar', '.as', '.at', '.au', '.aw', '.az', '.ba', '.bb',
-                    '.bd', '.be', '.bf', '.bg', '.bh', '.bi', '.bj', '.bm', '.bn', '.bo', '.br', '.bs',
-                    '.bt', '.bv', '.bw', '.by', '.bz', '.ca', '.cc', '.cd', '.cf', '.cg', '.ch', '.ci',
-                    '.ck', '.cl', '.cm', '.cn', '.co', '.cr', '.cu', '.cv', '.cx', '.cy', '.cz', '.de',
-                    '.dj', '.dk', '.dm', '.do', '.dz', '.ec', '.ee', '.eg', '.eh', '.er', '.es', '.et',
-                    '.fi', '.fj', '.fk', '.fm', '.fo', '.fr', '.ga', '.gd', '.ge', '.gf', '.gg', '.gh',
-                    '.gi', '.gl', '.gm', '.gn', '.gp', '.gq', '.gr', '.gs', '.gt', '.gu', '.gv', '.gy',
-                    '.hk', '.hm', '.hn', '.hr', '.ht', '.hu', '.id', '.ie', '.il', '.im', '.in', '.io',
-                    '.iq', '.ir', '.is', '.it', '.je', '.jm', '.jo', '.jp', '.ke', '.kg', '.kh', '.ki',
-                    '.km', '.kn', '.kp', '.kr', '.kw', '.ky', '.kz', '.la', '.lb', '.lc', '.li', '.lk',
-                    '.lr', '.ls', '.lt', '.lu', '.lv', '.ly', '.ma', '.mc', '.md', '.me', '.mg', '.mh',
-                    '.mk', '.ml', '.mm', '.mn', '.mo', '.mp', '.mq', '.mr', '.ms', '.mt', '.mu', '.mv',
-                    '.mw', '.mx', '.my', '.mz', '.na', '.nc', '.ne', '.nf', '.ng', '.ni', '.nl', '.no',
-                    '.np', '.nr', '.nu', '.nz', '.om', '.pa', '.pe', '.pf', '.pg', '.ph', '.pk', '.pl',
-                    '.pm', '.pn', '.pr', '.ps', '.pt', '.pw', '.py', '.qa', '.re', '.ro', '.rs', '.rw',
-                    '.ru', '.sa', '.sb', '.sc', '.sd', '.se', '.sg', '.sh', '.si', '.sj', '.sk', '.sl',
-                    '.sm', '.sn', '.so', '.sr', '.st', '.sv', '.sy', '.sz', '.tc', '.td', '.tf', '.tg',
-                    '.th', '.tj', '.tk', '.tm', '.tn', '.to', '.tp', '.tr', '.tt', '.tv', '.tw', '.tz',
-                    '.ua', '.ug', '.uk', '.um', '.us', '.uy', '.uz', '.va', '.vc', '.ve', '.vg', '.vi',
-                    '.vn', '.vu', '.ws', '.wf', '.ye', '.yt', '.za', '.zm', '.zw', '.mobi', '.xxx', '.asia'],
+            var topDomains =  ['.ac', '.ad', '.ae', '.aero', '.af', '.ag', '.ai', '.al', '.am', '.an', '.ao',
+                        '.aq', '.ar', '.arpa', '.as', '.asia', '.at', '.au', '.aw', '.ax', '.az', '.ba', '.bb',
+                        '.bd', '.be', '.bf', '.bg', '.bh', '.bi', '.bike', '.biz', '.bj', '.bm', '.bn', '.bo',
+                        '.br', '.bs', '.bt', '.bv', '.bw', '.by', '.bz', '.ca', '.camera', '.cat', '.cc', '.cd',
+                        '.cf', '.cg', '.ch', '.ci', '.ck', '.cl', '.clothing', '.cm', '.cn', '.co', '.com',
+                        '.construction', '.contractors', '.coop', '.cr', '.cu', '.cv', '.cw', '.cx', '.cy', '.cz',
+                        '.de', '.diamonds', '.directory', '.dj', '.dk', '.dm', '.do', '.dz', '.ec', '.edu', '.ee',
+                        '.eg', '.enterprises', '.equipment', '.er', '.es', '.estate', '.et', '.eu', '.fi', '.fj',
+                        '.fk', '.fm', '.fo', '.fr', '.ga', '.gallery', '.gb', '.gd', '.ge', '.gf', '.gg', '.gh',
+                        '.gi', '.gl', '.gm', '.gn', '.gov', '.gp', '.gq', '.gr', '.graphics', '.gs', '.gt', '.gu',
+                        '.guru', '.gw', '.gy', '.hk', '.hm', '.hn', '.holdings', '.hr', '.ht', '.hu', '.id', '.ie',
+                        '.il', '.im', '.in', '.info', '.int', '.io', '.iq', '.ir', '.is', '.it', '.je', '.jm', '.jo',
+                        '.jobs', '.jp', '.ke', '.kg', '.kh', '.ki', '.kitchen', '.km', '.kn', '.kp', '.kr', '.kw',
+                        '.ky', '.kz', '.la', '.land', '.lb', '.lc', '.li', '.lighting', '.lk', '.lr', '.ls', '.lt',
+                        '.lu', '.lv', '.ly', '.ma', '.mc', '.md', '.me', '.menu', '.mg', '.mh', '.mil', '.mk', '.ml',
+                        '.mm', '.mn', '.mo', '.mobi', '.mp', '.mq', '.mr', '.ms', '.mt', '.mu', '.museum', '.mv',
+                        '.mw', '.mx', '.my', '.mz', '.na', '.name', '.nc', '.ne', '.net', '.nf', '.ng', '.ni',
+                        '.nl', '.no', '.np', '.nr', '.nu', '.nz', '.om', '.org', '.pa', '.pe', '.pf', '.pg', '.ph',
+                        '.photography', '.pk', '.pl', '.plumbing', '.pm', '.pn', '.post', '.pr', '.pro', '.ps', '.pt',
+                        '.pw', '.py', '.qa', '.re', '.ro', '.rs', '.ru', '.rw', '.sa', '.sb', '.sc', '.sd', '.se',
+                        '.sexy', '.sg', '.sh', '.si', '.singles', '.sj', '.sk', '.sl', '.sm', '.sn', '.so', '.sr',
+                        '.st', '.su', '.sv', '.sx', '.sy', '.sz', '.tattoo', '.tc', '.td', '.technology', '.tel', '.tf',
+                        '.tg', '.th', '.tips', '.tj', '.tk', '.tl', '.tm', '.tn', '.to', '.today', '.tp', '.tr', '.travel',
+                        '.tt', '.tv', '.tw', '.tz', '.ua', '.ug', '.uk', '.uno', '.us', '.uy', '.uz', '.va', '.vc', '.ve',
+                        '.ventures', '.vg', '.vi', '.vn', '.voyage', '.vu', '.wf', '.ws', '.xn--3e0b707e', '.xn--45brj9c',
+                        '.xn--80ao21a', '.xn--80asehdb', '.xn--80aswg', '.xn--90a3ac', '.xn--clchc0ea0b2g2a9gcd', '.xn--fiqs8s',
+                        '.xn--fiqz9s', '.xn--fpcrj9c3d', '.xn--fzc2c9e2c', '.xn--gecrj9c', '.xn--h2brj9c', '.xn--j1amh',
+                        '.xn--j6w193g', '.xn--kprw13d', '.xn--kpry57d', '.xn--l1acc', '.xn--lgbbat1ad8j', '.xn--mgb9awbf',
+                        '.xn--mgba3a4f16a', '.xn--mgbaam7a8h', '.xn--mgbayh7gpa', '.xn--mgbbh1a71e', '.xn--mgbc0a9azcg',
+                        '.xn--mgberp4a5d4ar', '.xn--mgbx4cd0ab', '.xn--ngbc5azd', '.xn--o3cw4h', '.xn--ogbpf8fl', '.xn--p1ai',
+                        '.xn--pgbs0dh', '.xn--q9jyb4c', '.xn--s9brj9c', '.xn--unup4y', '.xn--wgbh1c', '.xn--wgbl6a',
+                        '.xn--xkc2al3hye2a', '.xn--xkc2dl3a5ee0h', '.xn--yfro4i67o', '.xn--ygbi2ammx', '.xxx', '.ye',
+                        '.yt', '.za', '.zm', '.zw'],
 
                 ukTopDomains = ['co', 'me', 'ac', 'gov', 'judiciary','ltd', 'mod', 'net', 'nhs', 'nic',
                         'org', 'parliament', 'plc', 'police', 'sch', 'bl', 'british-library', 'jet','nls'],
@@ -1221,8 +1291,8 @@
             } else if (dot < 2 || dot > 57) {
                 return false;
             } else {
-                var firstChar = domain.substring(0, 1);
-                var lastChar = domain.substring(domain.length - 1, domain.length);
+                var firstChar = domain.substring(0, 1),
+                    lastChar = domain.substring(domain.length - 1, domain.length);
 
                 if (firstChar === '-' || firstChar === '.' || lastChar === '-' || lastChar === '.') {
                     return false;
@@ -1230,7 +1300,7 @@
                 if (domain.split('.').length > 3 || domain.split('..').length > 1) {
                     return false;
                 }
-                if (domain.replace(/[0-9a-z\.\-]/g, '') !== '') {
+                if (domain.replace(/[-\da-z\.]/g, '') !== '') {
                     return false;
                 }
             }
@@ -1263,7 +1333,7 @@
     */
     $.formUtils.addValidator({
         name : 'length',
-        validatorFunction : function(val, $el, config, lang) {
+        validatorFunction : function(val, $el, conf, lang) {
             var lengthAllowed = $el.valAttr('length'),
                 type = $el.attr('type');
 
@@ -1278,7 +1348,7 @@
                 lengthCheckResults = $.formUtils.numericRangeCheck(len, lengthAllowed),
                 checkResult;
 
-            switch(lengthCheckResults[0] )
+            switch(lengthCheckResults[0])
             {   // outside of allowed range
                 case "out":
                     this.errorMessage = lang.lengthBadStart + lengthAllowed + lang.lengthBadEnd;
@@ -1311,8 +1381,10 @@
     $.formUtils.addValidator({
         name : 'url',
         validatorFunction : function(url) {
-            // written by Scott Gonzalez: http://projects.scottsplayground.com/iri/ but added support for arrays in the url ?arg[]=sdfsdf
-            var urlFilter = /^(https|http|ftp):\/\/(((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:)*@)?(((\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5]))|((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?)(:\d*)?)(\/((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)+(\/(([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)*)*)?)?(\?((([a-z]|\d|\[|\]|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)|[\uE000-\uF8FF]|\/|\?)*)?(\#((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)|\/|\?)*)?$/i;
+            // written by Scott Gonzalez: http://projects.scottsplayground.com/iri/
+            // - Victor Jonsson added support for arrays in the url ?arg[]=sdfsdf
+            // - General improvements made by Stéphane Moureau <https://github.com/TraderStf>
+            var urlFilter = /^(https?|ftp):\/\/((((\w|-|\.|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:)*@)?(((\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5]))|((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])(\w|-|\.|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])(\w|-|\.|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?)(:\d*)?)(\/(((\w|-|\.|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)+(\/((\w|-|\.|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)*)*)?)?(\?((([a-z]|\d|\[|\]|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)|[\uE000-\uF8FF]|\/|\?)*)?(\#(((\w|-|\.|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)|\/|\?)*)?$/i;
             if( urlFilter.test(url) ) {
                 var domain = url.split('://')[1];
                 var domainSlashPos = domain.indexOf('/');
@@ -1332,10 +1404,12 @@
     */
     $.formUtils.addValidator({
         name : 'number',
-        validatorFunction : function(val, $el, config) {
+        validatorFunction : function(val, $el, conf) {
             if(val !== '') {
                 var allowing = $el.valAttr('allowing') || '',
-                    decimalSeparator = $el.valAttr('decimal-separator') || config.decimalSeparator;
+                    decimalSeparator = $el.valAttr('decimal-separator') || conf.decimalSeparator,
+                    allowsRange = false,
+                    begin, end;
 
                 if(allowing.indexOf('number') == -1)
                     allowing += ',number';
@@ -1344,10 +1418,17 @@
                     val = val.substr(1);
                 }
 
-                if(allowing.indexOf('number') > -1 && val.replace(/[0-9]/g, '') === '') {
+                if (allowing.indexOf('range') > -1)
+                {
+                    begin = parseFloat(allowing.substring(allowing.indexOf("[")+1, allowing.indexOf(";")));
+                    end = parseFloat(allowing.substring(allowing.indexOf(";")+1,allowing.indexOf("]")));
+                    allowsRange = true;
+                }
+
+                if(allowing.indexOf('number') > -1 && val.replace(/[0-9]/g, '') === '' && (!allowsRange || (val >= begin && val <= end)) ) {
                     return true;
                 }
-                if(allowing.indexOf('float') > -1 && val.match(new RegExp('^([0-9]+)\\'+decimalSeparator+'([0-9]+)$')) !== null) {
+                if(allowing.indexOf('float') > -1 && val.match(new RegExp('^([0-9]+)\\'+decimalSeparator+'([0-9]+)$')) !== null && (!allowsRange || (val >= begin && val <= end)) ) {
                     return true;
                 }
             }
@@ -1362,7 +1443,7 @@
      */
     $.formUtils.addValidator({
         name : 'alphanumeric',
-        validatorFunction : function(val, $el, config, language) {
+        validatorFunction : function(val, $el, conf, language) {
             var patternStart = '^([a-zA-Z0-9',
                 patternEnd = ']+)$',
                 additionalChars = $el.attr('data-validation-allowing'),
@@ -1392,7 +1473,7 @@
     */
     $.formUtils.addValidator({
         name : 'custom',
-        validatorFunction : function(val, $el, config) {
+        validatorFunction : function(val, $el, conf) {
             var regexp = new RegExp($el.valAttr('regexp'));
             return regexp.test(val);
         },
@@ -1431,7 +1512,7 @@
     */
     $.formUtils.addValidator({
         name : 'checkbox_group',
-        validatorFunction : function(val, $el, config, lang, $form) 
+        validatorFunction : function(val, $el, conf, lang, $form)
         {   // preset return var
             var checkResult = true;
             // get name of element. since it is a checkbox group, all checkboxes will have same name
@@ -1470,7 +1551,7 @@
             
         return checkResult;
         
-        } // remove comma
+        }
      //   errorMessage : '', // set above in switch statement
      //   errorMessageKey: '' // not used
     });

@@ -12,7 +12,7 @@
  *
  * @website http://formvalidator.net/#security-validators
  * @license Dual licensed under the MIT or GPL Version 2 licenses
- * @version 2.1.6
+ * @version 2.1.38
  */
 (function($) {
 
@@ -258,11 +258,13 @@
                 if( !$element.valAttr('has-keyup-event') ) {
                     $element
                         .valAttr('has-keyup-event', '1')
-                        .bind('keyup', function() {
-                            $(this)
-                                .valAttr('backend-valid', false)
-                                .valAttr('backend-invalid', false)
-                                .removeAttr(conf.validationErrorMsgAttribute);
+                        .bind('keyup', function(evt) {
+                            if( evt.keyCode != 9 && evt.keyCode != 16 ) {
+                                $(this)
+                                    .valAttr('backend-valid', false)
+                                    .valAttr('backend-invalid', false)
+                                    .removeAttr(conf.validationErrorMsgAttribute);
+                            }
                         });
                 }
 
@@ -276,6 +278,15 @@
 
     /*
      * Server validation
+     * Flow (form submission):
+     *  1) Check if the value already has been validated on the server. If so, display the validation
+     *     result and continue the validation process, otherwise continue to step 2
+     *  2) Return false as if the value is invalid and set $.formUtils.haltValidation to true
+     *  3) Disable form submission on the form being validated
+     *  4) Request the server with value and input name and add class 'validating-server-side' to the form
+     *  5) When the server responds an attribute will be added to the element
+     *      telling the validator that the input has a valid/invalid value and enable form submission
+     *  6) Run form submission again (back to step 1)
      */
     $.formUtils.addValidator({
         name : 'server',
@@ -302,6 +313,8 @@
                     .addClass('validating-server-side')
                     .addClass('on-blur');
 
+                $el.addClass('validating-server-side');
+
                 requestServer(serverURL, $el, val, conf, function() {
                     $form
                         .removeClass('validating-server-side')
@@ -309,6 +322,7 @@
                         .get(0).onsubmit = function() {};
 
                     $form.unbind('submit', disableFormSubmit);
+                    $el.removeClass('validating-server-side');
 
                     // fire submission again!
                     $form.trigger('submit');
@@ -318,16 +332,20 @@
                 return false;
 
             } else {
+                // validaiton on blur
                 $form.addClass('validating-server-side');
+                $el.addClass('validating-server-side');
                 requestServer(serverURL, $el, val, conf, function() {
                     $form.removeClass('validating-server-side');
+                    $el.removeClass('validating-server-side');
                     $el.trigger('blur');
                 });
                 return true;
             }
         },
         errorMessage : '',
-        errorMessageKey: 'badBackend'
+        errorMessageKey: 'badBackend',
+        validateOnKeyUp : false
     });
 
     $.fn.displayPasswordStrength = function(conf) {
