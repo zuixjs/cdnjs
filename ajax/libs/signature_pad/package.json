@@ -8,13 +8,6 @@
     "name": "Szymon Nowak",
     "url": "https://github.com/szimek"
   },
-  "npmName": "lodash",
-  "npmFileMap": [{
-    "basePath": "/dist/",
-    "files": [
-      "*"
-    ]
-  }],
   "repository" : {
     "type" : "git",
     "url" : "https://github.com/szimek/signature_pad.git"
