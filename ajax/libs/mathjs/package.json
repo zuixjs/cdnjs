@@ -1,6 +1,6 @@
 {
   "name": "mathjs",
-  "version": "0.17.1",
+  "version": "0.18.0",
   "filename": "math.min.js",
   "homepage": "http://mathjs.org",
   "description": "Math.js is an extensive math library for JavaScript and Node.js. It features a flexible expression parser and offers an integrated solution to work with numbers, big numbers, complex numbers, units, and matrices.",
@@ -12,7 +12,9 @@
     "Jim Garrison (https://github.com/garrison)",
     "Bart Kiers (https://github.com/bkiers)",
     "Zak Zibrat (https://github.com/palimpsests)",
-    "Bryan Cuccioli (https://github.com/bcuccioli)"
+    "Bryan Cuccioli (https://github.com/bcuccioli)",
+    "Elijah Insua (https://github.com/tmpvar)",
+    "Daniel Levin (https://github.com/daniel-levin)"
   ],
   "repository": {
     "type": "git",
