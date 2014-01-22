@@ -19,5 +19,10 @@
     "type": "git",
     "url": "git@github.com:philipwalton/html-inspector.git"
   },
-  "bugs": "https://github.com/philipwalton/html-inspector/issues"
+  "bugs": "https://github.com/philipwalton/html-inspector/issues",
+  "npmName": "html-inspector",
+  "npmFileMap": [{
+    "basePath": "/",
+    "files": ["html-inspector.js"]
+  }]
 }
