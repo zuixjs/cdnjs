@@ -39,6 +39,8 @@ __Libraries must have notable popularity. 100 stars on GitHub is a good example,
 
 We automatically update libraries that are also hosted on NPM e.g. Lodash.
 
+This script runs automatically every 4 hours
+
 1. Update the package.json and configure it as below and submit a pull request.
 
 ```
