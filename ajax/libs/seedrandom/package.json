@@ -5,8 +5,8 @@
     {
       "basePath": "/",
       "files": [
-         "seedrandom.js",
-         "seedrandom.min.js"
+        "seedrandom.js",
+        "seedrandom.min.js"
       ]
     }
   ],

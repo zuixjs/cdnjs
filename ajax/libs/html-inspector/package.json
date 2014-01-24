@@ -21,8 +21,12 @@
   },
   "bugs": "https://github.com/philipwalton/html-inspector/issues",
   "npmName": "html-inspector",
-  "npmFileMap": [{
-    "basePath": "/",
-    "files": ["html-inspector.js"]
-  }]
+  "npmFileMap": [
+    {
+      "basePath": "/",
+      "files": [
+        "html-inspector.js"
+      ]
+    }
+  ]
 }
