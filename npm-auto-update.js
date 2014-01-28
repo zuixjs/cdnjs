@@ -31,7 +31,7 @@ var parse = function (json_file, ignore_missing, ignore_parse_fail) {
 var updateLibrary = function (pkg, callback) {
     console.log('Checking versions for ' + pkg.npmName);
     request.get('http://registry.npmjs.org/' + pkg.npmName, function(result) {
-        //console.log(result.body);
+        console.log(result.body.versions);
         _.each(result.body.versions, function(data, version) {
             var path = './ajax/libs/' + pkg.name + '/' + version;
             if(!fs.existsSync(path)) {
@@ -92,4 +92,3 @@ _.each(packages, function(pkg) {
 async.series(libraryUpdates, function(err, results) {
   console.log('Script completed');
 });
-
