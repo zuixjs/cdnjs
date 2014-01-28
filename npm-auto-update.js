@@ -33,7 +33,9 @@ var updateLibrary = function (pkg, callback) {
     request.get('http://registry.npmjs.org/' + pkg.npmName, function(result) {
         _.each(result.body.versions, function(data, version) {
             var path = './ajax/libs/' + pkg.name + '/' + version;
+            console.log(path);
             if(!fs.existsSync(path)) {
+                console.log('dont have', version);
                 fs.mkdirSync(path);
                 var url = data.dist.tarball;
                 var download_file = path + '/dist.tar.gz';
