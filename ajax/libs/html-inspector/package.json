@@ -23,7 +23,7 @@
   "npmName": "html-inspector",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "html-inspector.js"
       ]
