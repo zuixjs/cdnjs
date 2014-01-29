@@ -54,6 +54,8 @@ var updateLibrary = function (pkg, callback) {
                             var files = glob.sync(path + "/" + folderName + "/" + basePath + "/" + file);
 
                             _.each(files, function(extractFilePath) {
+                                if(extractFilePath.slice(-4) == ".zip") return;
+                                if(extractFilePath.indexOf("dependencies") !== -1) return;
                                 var replacePath = folderName + "/" + basePath + "/";
                                 replacePath = replacePath.replace(/\/\//g, "/");
                                 var actualPath = extractFilePath.replace(replacePath, "");
