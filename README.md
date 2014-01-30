@@ -2,11 +2,12 @@
 
 # cdnJS Script Repository
 
-The repository mirroring all scripts on cdnjs.cloudflare.com, created and maintained by [Thomas Davis](https://twitter.com/neutralthoughts), [Ryan Kirkman](https://twitter.com/ryan_kirkman) and [Lachlan Collins](http://plus.google.com/116251728973496544370?prsrc=3)
+cdnJS is the repository mirroring all scripts on `cdnjs.cloudflare.com`, created and maintained by [Thomas Davis](https://twitter.com/neutralthoughts), [Ryan Kirkman](https://twitter.com/ryan_kirkman) and [Lachlan Collins](http://plus.google.com/116251728973496544370?prsrc=3)
 
 We will host any version of any library. Feel free to add a pull request for an older version of a library if your site still uses it.
 
 __Libraries must have notable popularity. 100 stars on GitHub is a good example, but as long as reasonably popularity can be demonstrated the library will be added.__
+
 ## Extensions, Plugins, Resources
 
 [Extensions, Plugins, Resources](https://github.com/cdnjs/cdnjs/wiki/Extensions%2C-Plugins%2C-Resources)
@@ -14,10 +15,10 @@ __Libraries must have notable popularity. 100 stars on GitHub is a good example,
 ## Conventions
 
 * Filenames should **not** include version number and be **lowercase**
-* Javascript & Css files should be minified, If the library doesn't already provide a minified version, our preferred minifier is [UglifyJS](http://marijnhaverbeke.nl/uglifyjs "UglifyJS")
-* If updating an existing library, try to keep consistent with the existing structure
+* JavaScript & CSS files should be minified. If the library doesn't already provide a minified version, our preferred minifier is [UglifyJS](http://marijnhaverbeke.nl/uglifyjs "UglifyJS")
+* If you are updating an existing library, try to keep consistent with the existing structure
 
-## Pull requests steps
+## Pull request steps
 
 1. Fork this repository
   * Install all the needed dependencies locally (you will need `node`): `npm install`
@@ -25,9 +26,9 @@ __Libraries must have notable popularity. 100 stars on GitHub is a good example,
   * 1 commit per pull request
   * 1 library per pull request
   * The files in the pull request must correspond to a tag in the original repository (some exceptions apply)
-  * include a package.json in the npm format (see `test/schemata/npm-package.json` for details - it's very simple)
-  * Run `npm test` to check everything is ok
-3. Send us a pull request.
+  * include a `package.json` in the NPM format (see `test/schemata/npm-package.json` for details - it's very simple)
+  * Run `npm test` to check everything is OK
+3. Send us your pull request
   * If you are the author of the library, add `[author]` to the pull request title
   * Make sure you include in the pull description:
       1. Where you downloaded the script
@@ -37,11 +38,9 @@ __Libraries must have notable popularity. 100 stars on GitHub is a good example,
 
 ## Enabling NPM auto update
 
-We automatically update libraries that are also hosted on NPM e.g. Lodash.
+cdnJS automatically updates libraries that are known to be hosted on NPM e.g. Lodash. This script runs automatically every 4 hours
 
-This script runs automatically every 4 hours
-
-1. Update the package.json and configure it as below and submit a pull request.
+1. Update the `package.json` with configuration details for the library and submit your pull request. An example configuration:
 
 ```
  // Lodash package.json
@@ -56,12 +55,12 @@ This script runs automatically every 4 hours
   // ...
 ```
 
-`npmName` should map to the name of the library on NPM
-`npmFileMap` is a white list of files to take from the NPM tarball and host on the cdn
-`basePath` will be ignored when copying over to the cdn
-`files` is a pattern matcher that you can select many files with
+* `npmName` should map to the name of the library on NPM
+* `npmFileMap` is a white list of files to take from the NPM tarball and host on the CDN
+* `basePath` will be ignored when copying over to the CDN
+* `files` is a pattern matcher allowing selection of multiple files
 
-The above example looks in the tarball whose structure might look like
+The above example looks in the tarball whose structure might look like this:
 
 ```
 - dist/lodash.js
@@ -69,7 +68,12 @@ The above example looks in the tarball whose structure might look like
 - README
 ```
 
-It then will look for `dist/*` which will find the two files inside the dist folder. It will now copy it over to cdnjs but without the `dist` path. Such that they will end up. `ajax/libs/lodash.js/2.0/lodash.js`
+It will look for `dist/*` inside the tarball and locate the two listed files. It will copy the listed files over to cdnJS, minus the `dist` path. The resulting files in cdnJS will be: 
+
+```
+ajax/libs/lodash.js/1.0.0/lodash.js
+ajax/libs/lodash.js/1.0.0/lodash.min.js
+```
 
 ## Running the validator
 1. Install all the needed dependencies locally (you will need `node`): `npm install`
