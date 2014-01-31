@@ -1,0 +1,15 @@
+{
+    "name": "xlsx",
+    "filename": "xlsx.js",
+    "version": "0.4.3",
+    "description": "Javascript XLSX / XLSM / XLSB (Excel 2007+) parser",
+    "homepage": "https://github.com/SheetJS/js-xlsx",
+    "keywords": ["excel", "spreadsheet", "xlsx", "xlsm", "xlsb", "parser"],
+    "author": "SheetJS",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/SheetJS/js-xlsx.git"
+        }
+    ]
+}
