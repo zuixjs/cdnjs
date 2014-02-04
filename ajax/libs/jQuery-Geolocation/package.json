@@ -1,6 +1,6 @@
 {
-  "name": " jQuery-Geolocation",
-  "filename": "jquery.geolocation.js",
+  "name": "jQuery-Geolocation",
+  "filename": "jquery.geolocation.min.js",
   "version": "1.0.50",
   "description": "jQuery plugin which acts as a simplification of the W3C Geolocation API ",
   "author": "Manuel Bieh",
