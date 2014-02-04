@@ -2,13 +2,13 @@
   "name": "sanitize.css",
   "author": "Zlatan Vasović",
   "description": "Minimal CSS normalization library",
-  "homepage": "http://github.com/ZDroid/sanitize.css",
   "keywords": [
-    "sanitize.css",
-    "sanitize",
-    "normalize"
+    "css",
+    "normalize",
+    "sanitize"
   ],
-  "version": "1.0.1",
+  "version": "2.0.0",
   "repository": "ZDroid/sanitize.css",
+  "homepage": "http://github.com/ZDroid/sanitize.css",
   "filename": "sanitize.css"
 }
