@@ -23,5 +23,13 @@
             "type": "git",
             "url": "https://github.com/flowersinthesand/portal.git" 
         } 
+    ],
+    "npmName": "portal-client",
+    "npmFileMap": [
+        {
+        	"files": [
+        	    "*.js"
+        	]
+        }
     ]
 }
