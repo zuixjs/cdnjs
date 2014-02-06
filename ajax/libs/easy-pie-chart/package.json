@@ -1,5 +1,5 @@
 {
-    "name": "Easy Pie Chart",
+    "name": "easy-pie-chart",
     "filename": "easypiechart.min.js",
     "version": "2.1.4",
     "description": "Easy pie chart is a jQuery plugin that uses the canvas element to render simple pie charts for single values.",
