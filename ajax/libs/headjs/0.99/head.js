@@ -1,5 +1,5 @@
-﻿///#source 1 1 ../src/core.js
-/*!
+/*! head.core v0.99 */
+/*
  * HeadJS     The only script in your <HEAD>    
  * Author     Tero Piirainen  (tipiirai)
  * Maintainer Robert Hoffmann (itechnology)
@@ -299,8 +299,8 @@
     }
 })(window);
 
-///#source 1 1 ../src/css3.js
-/*!
+/*! head.css3 v0.99 */
+/*
  * HeadJS     The only script in your <HEAD>    
  * Author     Tero Piirainen  (tipiirai)
  * Maintainer Robert Hoffmann (itechnology)
@@ -463,8 +463,8 @@
     api.feature();
 
 })(window);
-///#source 1 1 ../src/load.js
-/*!
+/*! head.load v0.99 */
+/*
  * HeadJS     The only script in your <HEAD>    
  * Author     Tero Piirainen  (tipiirai)
  * Maintainer Robert Hoffmann (itechnology)

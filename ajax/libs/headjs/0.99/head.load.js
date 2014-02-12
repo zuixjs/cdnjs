@@ -1,5 +1,5 @@
-﻿///#source 1 1 ../src/load.js
-/*!
+/*! head.load v0.99 */
+/*
  * HeadJS     The only script in your <HEAD>    
  * Author     Tero Piirainen  (tipiirai)
  * Maintainer Robert Hoffmann (itechnology)

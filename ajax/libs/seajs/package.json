@@ -1,7 +1,7 @@
 {
   "name": "seajs",
   "filename": "sea.js",  
-  "version": "1.3.1",
+  "version": "2.1.1",
   "description": "A Module Loader for the Web",
   "homepage": "http://seajs.org/",
   "keywords": [
