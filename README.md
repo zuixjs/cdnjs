@@ -1,4 +1,4 @@
-<a href="http://travis-ci.org/cdnjs/cdnjs"><img src="https://secure.travis-ci.org/cdnjs/cdnjs.png" alt="Build Status" style="max-width:100%;"></a>
+[![Build Status](https://travis-ci.org/cdnjs/cdnjs.png?branch=master)](https://travis-ci.org/cdnjs/cdnjs) [![Dependency Status](https://david-dm.org/cdnjs/cdnjs.png?theme=shields.io)](https://david-dm.org/cdnjs/cdnjs) [![devDependency Status](https://david-dm.org/cdnjs/cdnjs/dev-status.png?theme=shields.io)](https://david-dm.org/cdnjs/cdnjs#info=devDependencies)
 
 # cdnJS Script Repository
 
