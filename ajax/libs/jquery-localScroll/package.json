@@ -16,7 +16,7 @@
 	"dependencies": {
 		"jquery": ">=1.8",
 		"scrollTo": ">=1.4.11"
-	}
+	},
 	"maintainers": [
 		{
 			"name": "Ariel Flesler",
