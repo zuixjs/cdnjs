@@ -1,5 +1,5 @@
 {
-    "name": "InstantClick",
+    "name": "instantclick",
     "filename": "instantclick.min.js",
     "version": "2.1",
     "description": "A Javascript library that preloads pages making use of pjax.",
