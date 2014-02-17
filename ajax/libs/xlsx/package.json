@@ -1,5 +1,12 @@
 {
     "name": "xlsx",
+    "npmName": "xlsx",
+    "npmFileMap": [
+      {
+        "basePath": "/dist/",
+        "files": ["*"]
+      }
+    ],
     "filename": "xlsx.js",
     "version": "0.4.3",
     "description": "Javascript XLSX / XLSM / XLSB (Excel 2007+) parser",
