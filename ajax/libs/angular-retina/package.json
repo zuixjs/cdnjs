@@ -20,17 +20,5 @@
 		"url": "https://github.com/jrief/angular-retina/blob/master/LICENSE-MIT"
 	}],
 	"dependencies": {},
-	"devDependencies": {
-		"minimatch": "latest",
-		"lodash": "latest",
-		"karma": "latest",
-		"grunt": "latest",
-		"load-grunt-tasks": "latest",
-		"grunt-contrib-concat": "latest",
-		"grunt-contrib-jshint": "latest",
-		"grunt-contrib-uglify": "latest",
-		"grunt-ngmin": "latest",
-		"grunt-karma": "latest"
-	},
 	"keywords": ["angularjs", "ngSrc", "Retina", "high resolution image"]
 }
