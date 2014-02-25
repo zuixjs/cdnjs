@@ -1,4 +1,3 @@
-//Gmaps4Rails 2.1.2 https://github.com/apneadiving/Google-Maps-for-Rails
 (function() {
   this.Gmaps = {
     build: function(type, options) {
@@ -979,4 +978,4 @@
     return factory;
   };
 
-})
+}).call(this);
