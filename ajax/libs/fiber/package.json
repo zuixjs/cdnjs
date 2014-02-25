@@ -1,5 +1,5 @@
 {
-    "name": "Fiber",
+    "name": "fiber",
     "filename": "fiber.min.js",
     "version": "1.0.5",
     "description": "Lightweight, fast, JavaScript inheritance model",
