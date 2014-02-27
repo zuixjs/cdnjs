@@ -10,7 +10,7 @@
     }
   ],
   "filename": "xls.js",
-  "version": "0.6.9",
+  "version": "0.6.9-c",
   "description": "Javascript XLS (Excel 97-2004) parser",
   "homepage": "https://github.com/SheetJS/js-xls",
   "keywords": [
