@@ -102,6 +102,46 @@ ajax/libs/lodash.js/1.0.0/lodash.js
 ajax/libs/lodash.js/1.0.0/lodash.min.js
 ```
 
+## API
+
+You can search cdnjs via our api
+
+```
+http://api.cdnjs.com/libraries
+```
+
+Without any query parameters it will return the name and main file url of every library on cdnjs. To search use
+
+```
+http://api.cdnjs.com/libraries?search=jquery
+```
+
+If you would like more fields use the fields parameter which takes a commo seperated value
+
+```
+http://api.cdnjs.com/libraries?search=jquery&fields=version,description
+```
+
+To get a list of all files for that library use the assets field 
+
+```
+http://api.cdnjs.com/libraries?search=jquery&fields=assets
+```
+
+Other fields availabe are
+
+```
+version
+description
+homepage
+keywords
+maintainers
+assets
+```
+
+The API is served over Cloudfront with a 6 hour expiry for requests
+
+
 ## Extensions, Plugins, Resources
 
 [Extensions, Plugins, Resources](https://github.com/cdnjs/cdnjs/wiki/Extensions%2C-Plugins%2C-Resources)
