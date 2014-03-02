@@ -116,19 +116,19 @@ Without any query parameters it will return the name and main file url of every 
 http://api.cdnjs.com/libraries?search=jquery
 ```
 
-If you would like more fields use the fields parameter which takes a commo seperated value
+If you would like more data, use the fields parameter which takes comma seperated values
 
 ```
 http://api.cdnjs.com/libraries?search=jquery&fields=version,description
 ```
 
-To get a list of all files for that library use the assets field 
+To get a list of all files for that library, use the assets field 
 
 ```
 http://api.cdnjs.com/libraries?search=jquery&fields=assets
 ```
 
-Other fields availabe are
+Other fields available are;
 
 ```
 version
