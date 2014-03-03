@@ -1,6 +1,6 @@
 {
     "name": "ModelCore",
-    "filename": "ModelCore.js",
+    "filename": "ModelCore.min.js",
     "version": "1.0",
     "description": "A RESTful Javascript ORM for AngularJS",
     "homepage": "https://github.com/klederson/ModelCore/",
