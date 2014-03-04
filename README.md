@@ -30,9 +30,9 @@ You should consider the following when adding to or updating the library:
 
 * Filenames should **not** include a version number and be **lowercase**. This is OK: `useful.min.js`, but this is not: `useful-2.0.1.min.js`.
 
-* JavaScript & CSS files should be minified to reduce network and browser overhead. If the library doesn't already provide a minified version, cdnJS's preferred minifier is [UglifyJS](http://marijnhaverbeke.nl/uglifyjs "UglifyJS")
+* JavaScript & CSS files should be minified to reduce network and browser overhead. If the library doesn't already provide a minified version, cdnJS's preferred JavaScript minifier is [UglifyJS](http://marijnhaverbeke.nl/uglifyjs "UglifyJS")
 
-* If you are updating an existing library, try to keep consistent with the existing structure. There will be occasions, particularly with major version increments, where this is not practical; if there are significant changes in the file structure, please note this in your pull request.
+* If you are updating a library, try to maintain consistency with the existing structure. There will be occasions, particularly with major version increments, where this is not practical; if there are significant changes in the file structure, please note this in your pull request.
 
 
 ## Create or update `package.json`
@@ -42,6 +42,8 @@ Each library has a corresponding `package.json`, written in `npm` format (see `t
 ## Run `npm test` to check all is well
 
 If you're updating the library outside of `npm` or the GitHub browser, you should run `npm test` from the library directory to ensure everything is OK. If you run `npm test` and see no errors, all is well; resolve any errors before you raise your pull request and re-run `npm test` to ensure everything works.
+
+You may see an error about a missing readme file - you can ignore this. Libraries on cdnJS do not require a readme file.
 
 ## Pull request pre-flight checks
 
@@ -61,12 +63,14 @@ In your pull request title, tell us what you're doing. If you are the author of 
 Please include the following in your pull request:
 
 * The origin of your library files (e.g., where you downloaded it)
-* If it isn't clear, how you found the version of the script (e.g., `Source: http://github.com/example/releases/1.2.3.zip`)
+* How you found the version of the script (e.g., `Source: http://github.com/example/releases/1.2.3.zip`)
 * Evidence of popularity if the GitHub numbers don't indicate popularity.
+
+Providing the origin of your files is very helpful as the cdnJS project is peer-reviewed.
 
 ## Enabling `npm` auto update
 
-cdnJS automatically updates libraries that are known to be hosted on `npm` e.g., Lodash. This auto-update script runs automatically every 4 hours.
+cdnJS automatically updates libraries that are known to be hosted on `npm` e.g., Lodash. This auto-update script runs every 4 hours.
 
 To add an `npm` hook to a library, update the `package.json` with configuration details and submit your pull request. An example configuration:
 
@@ -84,7 +88,7 @@ To add an `npm` hook to a library, update the `package.json` with configuration 
 ```
 
 * `npmName` should map to the name of the library on `npm`
-* `npmFileMap` is a list of files to take from the `npm` tarball and host on the CDN
+* `npmFileMap` is a list of files to take from the `npm` tarball and host on cdnJS
 * `basePath` will be ignored when copying over to the CDN
 * `files` is a pattern matcher allowing selection of multiple files
 
@@ -95,7 +99,7 @@ The above example looks in the tarball whose structure might look like this:
 - dist/lodash.min.js
 ```
 
-The auto-update process will look for `dist/*` inside the named tarball and copy the JavaScript file(s) to cdnJS, minus the `dist` path. The resulting files in cdnJS will be: 
+The auto-update process will look for `dist` inside the named tarball and copy all the JavaScript file(s) to cdnJS, minus the `dist` path. The resulting files in cdnJS will be: 
 
 ```
 ajax/libs/lodash.js/1.0.0/lodash.js
@@ -104,31 +108,31 @@ ajax/libs/lodash.js/1.0.0/lodash.min.js
 
 ## API
 
-You can search cdnjs via our api
+You can search cdnJS via our API:
 
 ```
 http://api.cdnjs.com/libraries
 ```
 
-Without any query parameters it will return the name and main file url of every library on cdnjs. To search use
+Without any query parameters it will return the name and main file URL of every library on cdnJS. To search, use:
 
 ```
 http://api.cdnjs.com/libraries?search=jquery
 ```
 
-If you would like more data, use the fields parameter which takes comma seperated values
+If you would like more data, use the fields parameter which takes comma-separated values:
 
 ```
 http://api.cdnjs.com/libraries?search=jquery&fields=version,description
 ```
 
-To get a list of all files for that library, use the assets field 
+To get a list of all files for that library, use the assets field:
 
 ```
 http://api.cdnjs.com/libraries?search=jquery&fields=assets
 ```
 
-Other fields available are;
+Other fields available are:
 
 ```
 version
@@ -139,7 +143,7 @@ maintainers
 assets
 ```
 
-The API is served over Cloudfront with a 6 hour expiry for requests
+The API is served over Cloudfront with a 6 hour expiry for requests.
 
 
 ## Extensions, Plugins, Resources
