@@ -1,13 +1,15 @@
 {
   "name": "sprintf",
   "npmName": "sprintf-js",
-  "npmFileMap": [{
+  "npmFileMap": [
+    {
       "basePath": "/src/",
       "files": [
         "sprintf.js",
         "sprintf.min.js"
       ]
-  }],
+    }
+  ],
   "filename": "sprintf.min.js",
   "version": "0.0.7",
   "description": "JavaScript sprintf implementation",
