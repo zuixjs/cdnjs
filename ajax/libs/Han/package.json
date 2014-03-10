@@ -1,6 +1,6 @@
 {
   "name": "Han",
-  "filename": "han.css",
+  "filename": "han.min.css",
   "version": "2.3.0",
   "description": "The CSS typography framework optimised for Hanzi",
   "keywords": [
