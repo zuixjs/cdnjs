@@ -26,15 +26,5 @@
       "type": "git",
       "url": "git://github.com/sliptree/bootstrap-tokenfield.git"
     }
-  ]/*,
-  "npmName": "bootstrap-tokenfield",
-  "npmFileMap": [
-    {
-      "basePath": "/dist/",
-      "files": [
-        "*.min.js",
-        "css/*.min.css"
-      ]
-    }
-  ]*/
+  ]
 }
