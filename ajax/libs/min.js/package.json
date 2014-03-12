@@ -13,6 +13,8 @@
   },
   "license": "MIT",
   "keywords": [
+    "min",
+    "min.js",
     "framework",
     "micro",
     "dom",
