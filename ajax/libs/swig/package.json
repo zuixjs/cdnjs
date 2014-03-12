@@ -18,8 +18,5 @@
     "url": "http://github.com/paularmstrong/swig.git"
   },
   "author": "Paul Armstrong <paul@paularmstrongdesigns.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/paularmstrong/swig/issues"
-  }
+  "license": "MIT"
 }
