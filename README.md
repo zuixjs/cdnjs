@@ -2,7 +2,7 @@
 
 # cdnJS Script Repository
 
-cdnJS is the repository mirroring all scripts on `cdnjs.cloudflare.com`, created and maintained by [Thomas Davis](https://twitter.com/neutralthoughts), [Ryan Kirkman](https://twitter.com/ryan_kirkman) and [Lachlan Collins](http://plus.google.com/116251728973496544370?prsrc=3)
+[cdnJS](http://github.com/cdnjs/cdnjs) is the repository mirroring all scripts on `cdnjs.cloudflare.com`, created and maintained by [Thomas Davis](https://twitter.com/neutralthoughts), [Ryan Kirkman](https://twitter.com/ryan_kirkman) and [Lachlan Collins](http://plus.google.com/116251728973496544370?prsrc=3)
 
 We will host any version of any library, subject to popularity and licence permissions.
 
@@ -14,9 +14,9 @@ Please raise a pull request for an older version of a library if your site still
 
 ## Adding a new or updating an existing library
 
-cdnJS relies on user's pull requests and automatic updating via `npm` to populate libraries. To add a new library, or update an existing library outside of `npm`, start by [forking the cdnJS repo](https://github.com/cdnjs/cdnjs/fork) to your own GitHub account.
+cdnJS relies on user-submitted pull requests and automatic updating via `npm` to populate and update libraries. To add a new library, or update an existing library outside of `npm`, start by [forking the cdnJS repo](https://github.com/cdnjs/cdnjs/fork) to your own GitHub account.
 
-If you're adding/modifying outside of the GitHub browser interface, for example on the command line or with the GitHub desktop app, you will need to additionally install `node` locally. For more information on installing `node`, please refer to [nodejs.org](http://nodejs.org).
+If you're adding/modifying outside of the GitHub browser interface, for example on the command line or with the GitHub desktop application, you will need to additionally install `node` locally. For more information on installing `node`, please refer to [nodejs.org](http://nodejs.org).
 
 When you have forked the cdnJS repo, add your library to it. Libraries are stored in the `ajax/libs` directory. Each library has its own subdirectory of `ajax/libs` and each version of the library has its own subdirectory of the library directory name, for example:
 
@@ -32,18 +32,20 @@ You should consider the following when adding to or updating the library:
 
 * JavaScript & CSS files should be minified to reduce network and browser overhead. If the library doesn't already provide a minified version, cdnJS's preferred JavaScript minifier is [UglifyJS](http://marijnhaverbeke.nl/uglifyjs "UglifyJS")
 
-* If you are updating a library, try to maintain consistency with the existing structure. There will be occasions, particularly with major version increments, where this is not practical; if there are significant changes in the file structure, please note this in your pull request.
+* If you are updating a library, please try to maintain consistency with the existing file and directory structure. There will be occasions, particularly with major version increments, where this is not practical. If there are significant changes in the file structure, please note this in your pull request.
 
 
 ## Create or update `package.json`
 
-Each library has a corresponding `package.json`, written in `npm` format (see `test/schemata/npm-package.json` for details or use another `package.json` to crib from - it's very simple). When an existing library is updated, the details in `package.json` should be checked and updated where required. For example, if a new version of the library is added, the version number may need changing.
+Each library has a corresponding `package.json`, written in `npm` format (see `test/schemata/npm-package.json` for details or use another `package.json` to crib from - it's very simple). When an existing library is updated, the details in `package.json` should be updated where required. For example, if a new version of the library is added, the version number may need changing.
 
 ## Run `npm test` to check all is well
 
-If you're updating the library outside of `npm` or the GitHub browser, you should run `npm test` from the library directory to ensure everything is OK. If you run `npm test` and see no errors, all is well; resolve any errors before you raise your pull request and re-run `npm test` to ensure everything works.
+If you're updating the library outside of `npm` or the GitHub browser, you should run `npm test` from the library directory to ensure everything is OK.
 
-You may see an error about a missing readme file - you can ignore this. Libraries on cdnJS do not require a readme file.
+If you run `npm test` and see no errors, all is well; resolve any errors before you raise your pull request and re-run `npm test` to ensure everything works.
+
+You may see a warning about a missing readme file - you can ignore this. Libraries on cdnJS do not require a readme file.
 
 ## Pull request pre-flight checks
 
