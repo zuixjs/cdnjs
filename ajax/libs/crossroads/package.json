@@ -1,5 +1,6 @@
 {
     "name" : "crossroads",
+    "filename": "crossroads.min.js",
     "description" : "Flexible router which can be used in multiple environments",
     "keywords" : ["routes", "event", "observer", "routing", "router"],
     "homepage" : "http://millermedeiros.github.com/crossroads.js/",
