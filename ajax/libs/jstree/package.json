@@ -14,9 +14,7 @@
     "type": "git",
     "url": "git://github.com/vakata/jstree.git"
   },
-  "bugs": {
-    "url": "https://github.com/vakata/jstree/issues"
-  },
+  "bugs": "https://github.com/vakata/jstree/issues",
   "licenses": [
     {
       "type": "MIT",
