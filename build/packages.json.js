@@ -19,24 +19,39 @@ var exec=require('child_process').exec;
 exec('git ls-tree -r --name-only HEAD | grep **/package.json | while read filename; do   echo "$(git log -1 --since="2 weeks ago" --name-status --format="%ad" -- $filename) blahcrap"; done',function(err,stdout,stderr){
     var recentLibraries = stdout.split('blahcrap');
     recentLibraries = _.filter(recentLibraries, function(lib){
+    //console.log(lib, 'a', lib.length);
       if(lib.length > 4) {
         return true;
       };
       return false;
-    })
+    });
+
     recentLibraries = _.map(recentLibraries, function(lib){
       lib = lib.replace('\n\n', '\n');
       lib = lib.replace('\t', '\n');
       lib = lib.substr(1);
       lib = lib.split('\n');
+
+
       lib[0] = new Date(lib[0]);
-      lib = {
-        date: lib[0],
-        change: lib[1],
-        path: lib[2].replace(/(^\s+|\s+$)/g, '')
+      if(lib[2]) {
+        lib = {
+          date: lib[0],
+          change: lib[1],
+          path: lib[2].replace(/(^\s+|\s+$)/g, '')
+        }
+      } else {
+        lib = null;
       }
       return lib;
     })
+    recentLibraries = _.filter(recentLibraries, function(lib){
+    //console.log(lib, 'a', lib.length);
+      if(lib === null) {
+        return false;
+      };
+      return true;
+    });
     recentLibraries = _.sortBy(recentLibraries, function(arrayElement) {
     //element will be each array, so we just return a date from first element in it
     return arrayElement.date.getTime();
