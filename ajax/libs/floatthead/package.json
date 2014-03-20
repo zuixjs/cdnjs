@@ -22,14 +22,5 @@
   "author": "Misha Koryak",
   "license": "CC BY-SA 4.0",
   "bugs": "https://github.com/mkoryak/floatThead/issues",
-  "homepage": "https://github.com/mkoryak/floatThead",
-  "npmName": "floatthead",
-  "npmFileMap": [
-    {
-      "basePath": "/dist/",
-      "files": [
-        "*.js"
-      ]
-    }
-  ]
+  "homepage": "https://github.com/mkoryak/floatThead"
 }
