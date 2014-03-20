@@ -2,7 +2,7 @@
     "name": "fluidbox",
     "filename": "jquery.fluidbox.min.js",
     "version": "1.2.4",
-    "description": "Replicating Medium's beautiful, minimalist lightbox module",
+    "description": "Replicating Medium's beautiful, minimalist lightbox module with jQuery. Refer to project on GitHub for further information and usage instructions.",
     "homepage": "https://github.com/terrymun/Fluidbox",
     "authors": [
         {
