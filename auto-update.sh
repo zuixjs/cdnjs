@@ -4,13 +4,14 @@
 set -e
 cd /root/cdnjs
 echo Getting latest libraries
+ls
 git pull
 
 echo npm install for good measure
-npm install
+/usr/local/bin/npm install
 
 echo Starting auto update script
-node auto-update.js
+/usr/local/bin/node auto-update.js >> node.log
 
 echo Pushing new versions
 git add .
