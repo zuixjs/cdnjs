@@ -35,12 +35,10 @@ var updateLibrary = function (pkg, callback) {
             var path = './ajax/libs/' + pkg.name + '/' + version;
             console.log(path);
             if(!fs.existsSync(path)) {
-                console.log('dont have', version);
                 fs.mkdirSync(path);
                 var url = data.dist.tarball;
                 var download_file = path + '/dist.tar.gz';
                 tarball.extractTarballDownload(url , download_file, path, {}, function(err, result) {
-                    console.log('this is happening sync');
                     fs.unlinkSync(download_file);
                     var folderName = fs.readdirSync(path)[0];
 
