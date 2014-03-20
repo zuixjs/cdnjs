@@ -9,7 +9,7 @@ var hipchat = {
         from: 'Auto Update',
         message: message,
         color: color,
-        notify: 1
+        notify: 0
       };
       HC.postMessage(params, function(data) {});
     } else {
