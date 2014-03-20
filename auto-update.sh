@@ -1,7 +1,8 @@
-#!/bin/bash
+#!/bin/sh
+
 # Exit if any errors
 set -e
-
+cd /root/cdnjs
 echo Getting latest libraries
 git pull
 
