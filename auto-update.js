@@ -1,3 +1,22 @@
+var Hipchat = require('node-hipchat');
+
+var HC = new Hipchat(process.env.HIPCHAT);
+var hipchat = {
+  message: function(color, message) {
+    if (process.env.HIPCHAT) {
+      var params = {
+        room: 165440,
+        from: 'Auto Update',
+        message: message,
+        color: color,
+        notify: 1
+      };
+      HC.postMessage(params, function(data) {});
+    } else {
+      console.log('No Hipchat API Key');
+    }
+  }
+};
 var path = require("path"),
     fs = require("fs-extra"),
     glob = require("glob"),
@@ -6,7 +25,8 @@ var path = require("path"),
     async = require("async"),
     tarball = require('tarball-extract'),
     mkdirp = require('mkdirp');
-
+hipchat.message('gray', 'Auto Update Started');
+var newVersionCount = 0;
 var parse = function (json_file, ignore_missing, ignore_parse_fail) {
     var content;
 
@@ -64,6 +84,7 @@ var updateLibrary = function (pkg, callback) {
 
                     fs.removeSync(path + '/' + folderName);
                 });
+                newVersionCount++;
                 console.log("Do not have version", version, "of", pkg.npmName);
             }
         });
@@ -83,7 +104,7 @@ packages = _(packages).map(function (pkg) {
     var parsedPkg = parse(pkg);
     return parsedPkg.npmName ? parsedPkg : null;
 }).compact().value();
-
+hipchat.message('green', 'Found ' + packages.length + ' npm enabled libraries');
 console.log('Found ' + packages.length + ' npm enabled libraries');
 var libraryUpdates = [];
 _.each(packages, function(pkg) {
@@ -93,4 +114,5 @@ _.each(packages, function(pkg) {
 });
 async.series(libraryUpdates, function(err, results) {
   console.log('Script completed');
+  hipchat.message('green', 'Auto Update Completed - ' + newVersionCount + ' versions were updated');
 });
