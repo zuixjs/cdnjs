@@ -1,5 +1,6 @@
 #!/bin/sh
-
+HIPCHAT=929be185fe8405186479989d92edcd
+export HIPCHAT=929be185fe8405186479989d92edcd
 # Exit if any errors
 set -e
 cd /root/cdnjs
