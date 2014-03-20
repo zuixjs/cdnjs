@@ -6,10 +6,10 @@ cd /root/cdnjs
 echo Getting latest libraries
 git pull
 
-echo npm install for good mesure
+echo npm install for good measure
 npm install
 
-echo Starting npm script
+echo Starting auto update script
 node auto-update.js
 
 echo Pushing new versions
