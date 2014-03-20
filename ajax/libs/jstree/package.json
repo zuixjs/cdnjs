@@ -38,13 +38,15 @@
     "jquery": ">=1.9.1"
   },
   "npmName": "jstree",
-  "npmFileMap": [{
-    "basePath": "/dist/",
-    "files": [
-      "jstree.min.js",
-      "themes/**/*.png",
-      "themes/**/*.gif",
-      "themes/**/*.min.css"
-    ]
-  }]
+  "npmFileMap": [
+    {
+      "basePath": "/dist/",
+      "files": [
+        "jstree.min.js",
+        "themes/**/*.png",
+        "themes/**/*.gif",
+        "themes/**/*.min.css"
+      ]
+    }
+  ]
 }
