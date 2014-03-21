@@ -5,6 +5,9 @@
     "description": "Modernizr is a JavaScript library that detects HTML5 and CSS3 features in the user's browser.",
     "homepage": "http://www.modernizr.com/",
     "keywords": [
+       "modernizr",
+       "js",
+       "javascript",
        "css",
        "css3",
        "html",
