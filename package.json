@@ -25,7 +25,7 @@
     "tarball-extract": "~0.0",
     "uglify-js": "~2.4",
     "underscore": "~1.6",
-    "node-hipchat": "^0.4.5"
+    "node-hipchat": "~0.4"
   },
   "devDependencies": {
     "jslint": "~0.2",
