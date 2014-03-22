@@ -103,7 +103,6 @@ glob("ajax/libs/**/package.json", function (error, matches) {
     package.assets.reverse();
     packages.push(package);
   });
-  console.log(packages);
   // Initialize the feed object
   fs.writeFileSync('packages.json', JSON.stringify({"packages":packages}, null, 2), 'utf8');
 });
