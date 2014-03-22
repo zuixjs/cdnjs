@@ -2,8 +2,6 @@ var glob = require('glob');
 var fs = require('fs');
 var _ = require('underscore');
 var natcompare = require('./natcompare.js');
-/*
-REMEMBER TO PUT SLASH BACK ON exec line
 var RSS = require('rss');
 var feed = new RSS({
     title:        'cdnjs.com - library updates',
@@ -16,7 +14,7 @@ var feed = new RSS({
     author: 'cdnjs team'
 });
 var exec=require('child_process').exec;
-exec('git ls-tree -r --name-only HEAD | grep **package.json | while read filename; do   echo "$(git log -1 --since="2 weeks ago" --name-status --format="%ad" -- $filename) blahcrap"; done',function(err,stdout,stderr){
+exec('git ls-tree -r --name-only HEAD | grep **/package.json | while read filename; do   echo "$(git log -1 --since="2 weeks ago" --name-status --format="%ad" -- $filename) blahcrap"; done',function(err,stdout,stderr){
     var recentLibraries = stdout.split('blahcrap');
     recentLibraries = _.filter(recentLibraries, function(lib){
     //console.log(lib, 'a', lib.length);
@@ -79,7 +77,6 @@ exec('git ls-tree -r --name-only HEAD | grep **package.json | while read filenam
 
 })
 
-*/
 
 var packages = Array();
 
