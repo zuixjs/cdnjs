@@ -20,5 +20,12 @@
     "repository": {
         "type": "git",
         "url": "http://github.com/mbostock/d3.git"
-    }
+    },
+    "npmName": "d3",
+    "npmFileMap": [{
+        "basePath": "/",
+        "files": [
+            "d3*.js"
+        ]
+    }]
 }
