@@ -88,7 +88,7 @@ var updateLibrary = function (pkg, callback) {
                 console.log("Do not have version", version, "of", pkg.npmName);
             }
         });
-        var npmVersion = result.body['dist-tags'].latest;
+        var npmVersion = result.body['dist-tags'] && result.body['dist-tags'].latest || 0;
         pkg.version = npmVersion;
         fs.writeFileSync('ajax/libs/' + pkg.name + '/package.json', JSON.stringify(pkg, null, 2), 'utf8');
 
