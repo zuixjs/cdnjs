@@ -1,5 +1,14 @@
 {
   "name": "vis",
+  "npmName": "vis",
+  "npmFileMap": [
+    {
+      "basePath": "/dist/",
+      "files": [
+        "*"
+      ]
+    }
+  ],  
   "version": "0.7.0",
   "filename": "vis.min.js",
   "description": "A dynamic, browser-based visualization library.",
