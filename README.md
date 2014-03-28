@@ -2,7 +2,7 @@
 
 # cdnJS Script Repository
 
-[cdnJS](http://github.com/cdnjs/cdnjs) is the repository mirroring all scripts on `cdnjs.cloudflare.com`, created and maintained by [Thomas Davis](https://twitter.com/neutralthoughts), [Ryan Kirkman](https://twitter.com/ryan_kirkman) and [Lachlan Collins](http://plus.google.com/116251728973496544370?prsrc=3)
+[cdnJS](http://github.com/cdnjs/cdnjs) is the repository mirroring all scripts on `cdnjs.cloudflare.com`, created and maintained by [Thomas Davis](https://twitter.com/neutralthoughts), [Ryan Kirkman](https://twitter.com/ryan_kirkman) and [Pete Cooper](http://twitter.com/petecooper)
 
 We will host any version of any library, subject to popularity and licence permissions.
 
@@ -71,6 +71,8 @@ Please include the following in your pull request:
 Providing the origin of your files is very helpful as the cdnJS project is peer-reviewed.
 
 ## Enabling `npm` auto update
+
+__We are currently in the process of converting as many libraries to NPM auto update as possible. For a bit of fun, cdnjs will send you **$5 USD in Bitcoin for each library you convert to NPM auto-update**. If you could tag your pull request with [BC] and throw your Bitcoin address in the commit, we will send your payment through as soon as possible. If you would like to keep your BC address private, send an email to thomasalwyndavis@gmail.com with the details.__
 
 cdnJS automatically updates libraries that are known to be hosted on `npm` e.g., Lodash. This auto-update script runs every 4 hours.
 
