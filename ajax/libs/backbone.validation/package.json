@@ -1,5 +1,17 @@
 {
   "name": "backbone.validation",
+  "npmName": "backbone-validation",
+  "npmFileMap": [
+    {
+      "basePath": "/dist/",
+      "files": [
+        "backbone-validation-amd-min.js",
+        "backbone-validation-amd.js",
+        "backbone-validation-min.js",
+        "backbone-validation.js"
+	  ]
+	}
+  ],
   "filename": "backbone-validation-min.js",
   "version": "0.8.2",
   "description": "A validation plugin for Backbone.js that validates both your model as well as form input.",
