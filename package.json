@@ -14,21 +14,21 @@
   },
   "dependencies": {
     "async": "~0.2",
-    "clean-css": "~2.0",
+    "clean-css": "~2.1",
     "execSync": "~0.0",
     "fs-extra": "~0.8",
     "glob": "~3.2",
     "lodash": "~2.4",
     "mkdirp": "~0.3",
     "rss": "~0.3",
-    "superagent": "~0.16",
+    "superagent": "~0.17",
     "tarball-extract": "~0.0",
     "uglify-js": "~2.4",
     "underscore": "~1.6",
     "node-hipchat": "~0.4"
   },
   "devDependencies": {
-    "jslint": "~0.2",
+    "jslint": "~0.3",
     "JSV": "~4.0",
     "vows-si": "~0.7"
   },
