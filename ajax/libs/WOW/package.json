@@ -3,9 +3,9 @@
   "title"           : "WOW",
   "version"         : "0.1.6",
   "filename"		: "wow.min.js",
-  "description" : "",
+  "description"		: "Reveal CSS animation as you scroll down a page",
   "keywords": [],
-  "homepage"        : "",
+  "homepage"        : "http://mynameismatthieu.com/WOW/",
   "author"          : {
     "name"  : "Matthieu Aussaguel",
     "email" : "matthieu.aussaguel@gmail.com",
