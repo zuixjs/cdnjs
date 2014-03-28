@@ -74,7 +74,7 @@ Providing the origin of your files is very helpful as the cdnJS project is peer-
 
 __We are currently in the process of converting as many libraries to NPM auto update as possible. For a bit of fun, cdnjs will send you **$5 USD in Bitcoin for each library you convert to NPM auto-update**. If you could tag your pull request with [BC] and throw your Bitcoin address in the commit, we will send your payment through as soon as possible. If you would like to keep your BC address private, send an email to thomasalwyndavis@gmail.com with the details.__
 
-cdnJS automatically updates libraries that are known to be hosted on `npm` e.g., Lodash. This auto-update script runs every 4 hours.
+cdnJS automatically updates libraries that are known to be hosted on `npm` e.g., Lodash. This auto-update script runs every 15 minutes.
 
 To add an `npm` hook to a library, update the `package.json` with configuration details and submit your pull request. An example configuration:
 
