@@ -1,6 +1,5 @@
 {
   "name"            : "wow",
-  "title"           : "WOW",
   "version"         : "0.1.6",
   "filename"		: "wow.min.js",
   "description"		: "Reveal CSS animation as you scroll down a page",
