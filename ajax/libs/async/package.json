@@ -10,7 +10,7 @@
     }
   ],
   "filename": "async.min.js",
-  "version": "0.2.10",
+  "version": "0.4.0",
   "description": "Higher-order functions and common patterns for asynchronous code",
   "author": "Caolan McMahon",
   "repository": {
