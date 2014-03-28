@@ -1,7 +1,18 @@
 {
     "name": "jquery-mobile",
+    "npmName": "jquery-mobile",
+	"npmFileMap": [
+    {
+      "basePath": "/dist/",
+      "files": [
+        "*.css",
+        "*.js",
+        "*.map"
+      ]
+    }
+  ],
     "filename": "jquery.mobile.min.js",
-    "version": "1.4.1",
+    "version": "1.4.2",
     "description": "A unified, HTML5-based user interface system for all popular mobile device platforms, built on the rock-solid jQuery and jQuery UI foundation.",
     "homepage": "http://jquerymobile.com/",
     "keywords": [
