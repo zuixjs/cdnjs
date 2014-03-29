@@ -3,7 +3,7 @@
   "filename": "jstree.min.js",
   "title": "jsTree",
   "description": "jQuery tree plugin",
-  "version": "3.0.0-beta10",
+  "version": 0,
   "homepage": "http://jstree.com",
   "author": {
     "name": "Ivan Bozhanov",
