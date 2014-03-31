@@ -1,11 +1,13 @@
 {
   "name": "minitranslate",
   "filename": "minitranslate.min.js",
-  "version": "0.6",
-  "maintainers": [{
-    "name": "Bryce Dorn",
-    "web": "http://bryce.io"
-  }],
+  "version": 0,
+  "maintainers": [
+    {
+      "name": "Bryce Dorn",
+      "web": "http://bryce.io"
+    }
+  ],
   "description": "A lightweight way to change words into other words.",
   "homepage": "http://bryce.io/minitranslate",
   "repository": {
@@ -19,10 +21,12 @@
     "minitranslate"
   ],
   "npmName": "minitranslate",
-  "npmFileMap": [{
-    "basePath": "/",
-    "files": [
-      "*.js"
-    ]
-  }]
+  "npmFileMap": [
+    {
+      "basePath": "/",
+      "files": [
+        "*.js"
+      ]
+    }
+  ]
 }
