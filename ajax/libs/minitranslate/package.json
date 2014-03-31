@@ -1,7 +1,7 @@
 {
   "name": "minitranslate",
   "filename": "minitranslate.min.js",
-  "version": "0.1.7",
+  "version": "0.6",
   "maintainers": [{
     "name": "Bryce Dorn",
     "web": "http://bryce.io"
