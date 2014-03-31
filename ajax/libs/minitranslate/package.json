@@ -7,7 +7,7 @@
     "web": "http://bryce.io"
   }],
   "description": "A lightweight way to change words into other words.",
-  "homepage": "http://www.minitranslate.herokuapp.com/",
+  "homepage": "http://bryce.io/minitranslate",
   "repository": {
     "type": "git",
     "url": "git://github.com/brycedorn/jQuery.minitranslate.git"
