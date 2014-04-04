@@ -16,8 +16,5 @@
     "name": "Serkan Yersen",
     "web": "http://serkan.io"
   }],
-  "bugs": {
-    "url": "https://github.com/serkanyersen/kwargsjs/issues"
-  },
   "npmName": "kwargsjs"
 }
