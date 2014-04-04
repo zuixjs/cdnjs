@@ -15,8 +15,5 @@
   "maintainers" : [{
     "name": "Serkan Yersen",
     "web": "http://serkan.io"
-  }],
-  "bugs": {
-    "url": "https://github.com/serkanyersen/ifvisible.js/issues"
-  }
+  }]
 }
