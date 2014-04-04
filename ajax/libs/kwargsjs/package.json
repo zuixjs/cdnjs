@@ -30,7 +30,7 @@
       "web": "http://serkan.io"
     }
   ],
-  "npmName": "kwargsjs"
+  "npmName": "kwargsjs",
   "npmFileMap": [
     {
       "basePath": "/",
@@ -38,6 +38,5 @@
         "kwargs.js"
       ]
     }
-  ],
-  
+  ]  
 }
