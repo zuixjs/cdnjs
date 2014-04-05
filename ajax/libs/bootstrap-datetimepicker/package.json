@@ -1,6 +1,8 @@
 {
   "name": "bootstrap-datetimepicker",
   "filename": "js/bootstrap-datetimepicker.min.js",
+  "homepage": "http://eonasdan.github.io/bootstrap-datetimepicker/",
+  "description": "Date/time picker widget for Twitter",
   "version": "3.0.0",
   "repository": {
     "type": "git",
