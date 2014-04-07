@@ -1,0 +1,22 @@
+{
+  "name": "ng-dialog",
+  "version": "0.1.5",
+  "description": "Modals and popups provider for Angular.js applications",
+  "filename": "ng-dialog.min.js",
+  "homepage": "http://likeastore.github.io/ngDialog/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/likeastore/ngDialog.git"
+  },
+  "keywords": [
+    "angular",
+    "angularjs",
+    "ng-dialog",
+    "ngDialog",
+    "dialog",
+    "modal",
+    "popup"
+  ],
+  "author": "Dmitri Voronianski",
+  "license": "MIT"
+}

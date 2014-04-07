@@ -2,8 +2,6 @@ var glob = require('glob');
 var fs = require('fs');
 var _ = require('underscore');
 var natcompare = require('./natcompare.js');
-
-
 var RSS = require('rss');
 var feed = new RSS({
     title:        'cdnjs.com - library updates',
@@ -80,7 +78,6 @@ exec('git ls-tree -r --name-only HEAD | grep **/package.json | while read filena
 })
 
 
-
 var packages = Array();
 
 glob("ajax/libs/**/package.json", function (error, matches) {
@@ -104,5 +101,5 @@ glob("ajax/libs/**/package.json", function (error, matches) {
     packages.push(package);
   });
   // Initialize the feed object
-  fs.writeFileSync('packages.json', JSON.stringify({"packages":packages}, null, 4), 'utf8');
+  fs.writeFileSync('packages.json', JSON.stringify({"packages":packages}, null, 2), 'utf8');
 });

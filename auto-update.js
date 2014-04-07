@@ -29,7 +29,7 @@ hipchat.message('gray', 'Auto Update Started');
 var newVersionCount = 0;
 var parse = function (json_file, ignore_missing, ignore_parse_fail) {
     var content;
-
+    
     try {
         content = fs.readFileSync(json_file, 'utf8');
     } catch (err1) {
@@ -42,7 +42,7 @@ var parse = function (json_file, ignore_missing, ignore_parse_fail) {
         return JSON.parse(content);
     } catch (err2) {
         if (!ignore_parse_fail) {
-            assert.ok(0, json_file + " failed to parse");
+            //assert.ok(0, json_file + " failed to parse");
         }
         return null;
     }
@@ -88,7 +88,7 @@ var updateLibrary = function (pkg, callback) {
                 console.log("Do not have version", version, "of", pkg.npmName);
             }
         });
-        var npmVersion = result.body['dist-tags'].latest;
+        var npmVersion = result.body['dist-tags'] && result.body['dist-tags'].latest || 0;
         pkg.version = npmVersion;
         fs.writeFileSync('ajax/libs/' + pkg.name + '/package.json', JSON.stringify(pkg, null, 2), 'utf8');
 
