@@ -1,5 +1,6 @@
 {
     "name": "floatlabels.js",
+    "filename": "floatlabels.min.js",
     "description": "floatlabels.js follows the famous Float Label Pattern. Built on jQuery.",
     "version": "1.0",
     "keywords": [
@@ -12,7 +13,7 @@
             "web": "http://ohartl.de"
         }
     ],
-    "filename": "floatlabels.min.js",
+    "filename": "",
     "homepage": "http://clubdesign.github.io/floatlabels.js/",
     "author": "Marcus Pohorely ( http://www.clubdesign.at )",
     "repository": {
