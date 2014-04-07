@@ -1,6 +1,6 @@
 // Fluidbox
 // Description: Replicating the seamless lightbox transition effect seen on Medium.com, with some improvements
-// Version: 1.2.6
+// Version: 1.2.7
 // Author: Terry Mun
 // Author URI: http://terrymun.com
 
@@ -48,6 +48,7 @@
 			overlayColor: 'rgba(255,255,255,.85)',
 			debounceResize: true,
 			stackIndex: 1000,
+			stackIndexDelta: 10,
 			closeTrigger: [
 				{
 					selector: '.fluidbox-overlay',
@@ -60,6 +61,9 @@
 				}
 			]
 		}, opts);
+
+		// Ensure that the stackIndex does not become negative
+		if(settings.stackIndex < settings.stackIndexDelta) settings.stackIndexDelta = settings.stackIndex;
 
 		// Dynamically create overlay
 		$fbOverlay = $('<div />', {
@@ -178,7 +182,7 @@
 					var $fbInnerWrap = $('<div />', {
 						class: 'fluidbox-wrap',
 						css: {
-							'z-index': settings.stackIndex - 1
+							'z-index': settings.stackIndex - settings.stackIndexDelta
 						}
 					});
 
@@ -243,18 +247,25 @@
 							.removeClass('fluidbox-closed')
 							.addClass('fluidbox-opened');
 
-							// Set timer for opening
+							// Force timer to completion
 							if(timer['close']) window.clearTimeout(timer['close']);
+							if(timer['hideGhost']) window.clearTimeout(timer['hideGhost']);
+
+							// Set timer for opening
 							timer['open'] = window.setTimeout(function() {
 								// Show overlay
 								$('.fluidbox-overlay').css({ opacity: 1 });
 							}, 10);
 
 							// Change wrapper z-index, so it is above everything else
-							$wrap.css({ 'z-index': settings.stackIndex + 2 });
+							$wrap.css({ 'z-index': settings.stackIndex + settings.stackIndexDelta });
 
 							// Set thumbnail image source as background image first, preload later
-							$ghost.css({
+							// Sometimes the transitionend is not unbound properly, especially when very quick, successive clicking.
+							// We turn it off again, just in case.
+							$ghost
+							.off('webkitTransitionEnd transitionend oTransitionEnd MSTransitionEnd transitionEnd')
+							.css({
 								'background-image': 'url('+$img.attr('src')+')',
 								opacity: 1
 							});
@@ -287,16 +298,19 @@
 						if(timer['open']) window.clearTimeout(timer['open']);
 						timer['close'] = window.setTimeout(function() {
 							$('.fluidbox-overlay').remove();
-							$wrap.css({ 'z-index': settings.stackIndex - 1 });
+							$wrap.css({ 'z-index': settings.stackIndex - settings.stackIndexDelta });
 						}, 10);
 
 						// Hide overlay
 						$('.fluidbox-overlay').css({ opacity: 0 });
 						
 						// Reverse animation on wrapped elements, and restore stacking order
+						// You might want to change this value if your transition timing is longer
 						$ghost.css({ 'transform': 'translate(0,0) scale(1)' }).one('webkitTransitionEnd transitionend oTransitionEnd MSTransitionEnd transitionEnd', function (){
-							$ghost.css({ opacity: 0 });
 							$img.css({ opacity: 1 });
+							timer['hideGhost'] = window.setTimeout(function() {
+								$ghost.css({ opacity: 0 });
+							}, 250);
 						});
 					}
 
