@@ -5,7 +5,8 @@
   "description": "Quickly create responsive HTML emails that work on any device & client. Even Outlook.",
   "homepage": "http://zurb.com/ink",
   "keywords": [
-    "css",  
+    "ink",
+    "css",
     "email",
     "html",
     "zurb"
