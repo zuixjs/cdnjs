@@ -1,5 +1,5 @@
 {
-  "filename": "sortable.min.js",
+  "filename": "js/sortable.min.js",
   "name": "sortable",
   "version": "0.6.0",
   "description": "Drop-in script to make your tables sortable.",
