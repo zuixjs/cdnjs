@@ -1,6 +1,6 @@
 {
     "name": "ratchet",
-    "filename": "ratchet.min.js",
+    "filename": "js/ratchet.min.js",
     "version": "2.0.2",
     "description": "Prototype iPhone apps with simple HTML, CSS, and JS components.",
     "homepage": "https://github.com/twbs/ratchet",
