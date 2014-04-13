@@ -1,5 +1,6 @@
 {
   "name": "pickadate.js",
+  "filename": "picker.js",
   "npmName": "pickadate",
   "npmFileMap": [{
     "basePath": "/lib/",
