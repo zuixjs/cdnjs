@@ -163,8 +163,7 @@ maintainers
 assets
 ```
 
-The API is served over Cloudflare with a 6 hour expiry for requests
-
+The API is served over Cloudflare with a six-hour expiry for requests.
 
 ## Extensions, Plugins, Resources
 
