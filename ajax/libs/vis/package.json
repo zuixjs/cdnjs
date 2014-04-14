@@ -9,7 +9,7 @@
       ]
     }
   ],
-  "version": "0.7.1",
+  "version": "0.7.2",
   "filename": "vis.min.js",
   "description": "A dynamic, browser-based visualization library.",
   "homepage": "http://visjs.org/",
