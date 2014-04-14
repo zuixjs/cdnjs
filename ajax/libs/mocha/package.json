@@ -2,6 +2,16 @@
   "name": "mocha",
   "version": "1.13.0",
   "description": "simple, flexible, fun test framework",
+  "npmName": "mocha",
+  "npmFileMap": [
+    {
+      "basePath": "/",
+      "files": [
+        "mocha.js",
+        "mocha.css"
+      ]
+    }
+  ],
   "keywords": [
     "mocha",
     "test",
