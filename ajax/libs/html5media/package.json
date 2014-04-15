@@ -11,5 +11,15 @@
             "type": "git",
             "url": "https://github.com/etianen/html5media.git"
         }
+    ],
+    "npmName": "html5media",
+    "npmFileMap": [
+        {
+            "basePath": "/dist/api/",
+            "files": [
+                "*.js",
+                "*.swf"
+            ]
+        }
     ]
 }
