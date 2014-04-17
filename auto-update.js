@@ -66,14 +66,16 @@ var isValidFileMap = function(pkg){
 
 var updateLibrary = function (pkg, callback) {
     if(!isValidFileMap(pkg)){
-        console.log(pkg.npmName+" has a malicious npmFileMap, skipping!");
+        console.log(pkg.npmName+" has a malicious npmFileMap");
+        hipchat.message('red', pkg.npmName+" has a malicious npmFileMap");
         return callback(null);
     }
     console.log('Checking versions for ' + pkg.npmName);
     request.get('http://registry.npmjs.org/' + pkg.npmName, function(result) {
         _.each(result.body.versions, function(data, version) {
             if(~pkg.name.indexOf("..")){
-                console.log(pkg.npmName+" has a malicious package name, skipping! ", pkg.name);
+                console.log(pkg.npmName+" has a malicious package name:", pkg.name);
+                hipchat.message('red', pkg.npmName+" has a malicious package name: "+pkg.name);
                 return;
             }
             var libPath = path.normalize(path.join(__dirname, 'ajax', 'libs', pkg.name, version));
@@ -108,7 +110,8 @@ var updateLibrary = function (pkg, callback) {
                         _.each(fileSpec.files, function(file) {
                             var libContentsPath = path.normalize(path.join(libPath, folderName, basePath, file));
                             if(!isAllowedPath(libContentsPath)){
-                                console.log(pkg.npmName+" contains a malicious file path, skipping: ", libContentsPath);
+                                console.log(pkg.npmName+" contains a malicious file path: ", libContentsPath);
+                                hipchat.message('red', pkg.npmName+" contains a malicious file path: "+libContentsPath);
                             }
                             var files = glob.sync(libContentsPath);
 
@@ -118,7 +121,8 @@ var updateLibrary = function (pkg, callback) {
                                 var replacePath = path.normalize(path.join(folderName, basePath));
                                 var actualPath = extractFilePath.replace(replacePath, "");
                                 if(!isAllowedPath(extractFilePath, actualPath)){
-                                    console.log(pkg.npmName+" contains a malicious file path, skipping: ", extractFilePath, actualPath);
+                                    console.log(pkg.npmName+" contains a malicious file path: ", extractFilePath, actualPath);
+                                    hipchat.message('red', pkg.npmName+" contains a malicious file path: "+extractFilePath+' or '+actualPath);
                                     return;
                                 }
                                 fs.renameSync(extractFilePath, actualPath);
@@ -146,7 +150,7 @@ console.log('Looking for npm enabled libraries...');
 var packages = glob.sync("./ajax/libs/*/package.json");
 packages = _(packages).map(function (pkg) {
     var parsedPkg = parse(pkg);
-    return parsedPkg.npmName ? parsedPkg : null;
+    return (parsedPkg.npmName && parsedPkg.npmFileMap) ? parsedPkg : null;
 }).compact().value();
 hipchat.message('green', 'Found ' + packages.length + ' npm enabled libraries');
 console.log('Found ' + packages.length + ' npm enabled libraries');
