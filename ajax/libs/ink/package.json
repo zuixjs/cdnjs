@@ -1,10 +1,12 @@
 {
     "name": "ink",
     "filename": "js/ink-all.min.js",
-    "version": "2.2.1",
+    "version": "3.0.0",
     "description": "An HTML5/CSS3 framework used at SAPO for fast and efficient website design and prototyping",
     "homepage": "http://ink.sapo.pt/",
     "keywords": [
+       "ink",
+       "SAPO",
        "responsive",
        "framework",
        "ui"

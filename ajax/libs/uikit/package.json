@@ -2,7 +2,7 @@
     "name": "uikit",
     "title": "UIkit",
     "filename": "js/uikit.min.js",
-    "version": "2.1.0",
+    "version": "2.6.0",
     "description": "UIkit is a lightweight and modular front-end framework for developing fast and powerful web interfaces.",
     "homepage": "http://www.getuikit.com",
     "author": {
@@ -20,5 +20,5 @@
             "url": "https://github.com/uikit/uikit/blob/master/LICENSE.md"
         }
     ],
-    "keywords": ["css", "framework"]
+    "keywords": ["uikit", "css", "framework"]
 }
