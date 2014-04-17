@@ -1,6 +1,15 @@
 {
   "name": "gl-matrix",
-  "filename": "gl-matrix.min.js",
+  "npmName": "gl-matrix",
+  "npmFileMap": [
+    {
+      "basePath": "/dist/",
+      "files": [
+        "*.js"
+      ]
+    }
+   ],
+   "filename": "gl-matrix.min.js",
   "version": "2.2.1",
   "description": "Javascript Matrix and Vector library for High Performance WebGL apps",
   "keywords": ["math"],
