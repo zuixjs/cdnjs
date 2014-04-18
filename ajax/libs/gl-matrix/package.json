@@ -9,13 +9,13 @@
       ]
     }
    ],
-   "filename": "gl-matrix.min.js",
+   "filename": "gl-matrix-min.js",
   "version": "2.2.1",
   "description": "Javascript Matrix and Vector library for High Performance WebGL apps",
   "keywords": ["math"],
   "homepage": "https://github.com/toji/gl-matrix",
   "author": "toji",
-  "main": ["gl-matrix.min.js"],
+  "main": ["gl-matrix-min.js"],
   "repositories": [
     {
         "type": "git",
