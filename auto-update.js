@@ -49,6 +49,10 @@ var parse = function (json_file, ignore_missing, ignore_parse_fail) {
     }
 }
 
+var reEscape = function(s){
+    return s.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+}
+
 /**
  * Check if an npmFileMap object contains any path which are not normalized, and thus could allow access to parent dirs
  * @param pkg
@@ -65,7 +69,7 @@ var isValidFileMap = function(pkg){
 
     if(pkg && pkg.npmFileMap){
         return _.every(pkg.npmFileMap, function(fileSpec){
-           if(isValidPath(fileSpec.basePath || "")){
+           if(isValidPath(fileSpec.basePath || "/")){
                return _.every(fileSpec.files, isValidPath);
            }
            return false;
@@ -89,10 +93,10 @@ error.FILE_PATH = 'BadFilePath'
  * returns true if all paths are within libPath, else false
 */
 var isAllowedPathFn = function(libPath){ //is path within the lib dir? if not, they shouldnt be writing/reading there
-    libPath = path.normalize(libPath);
+    libPath = path.normalize(libPath || "/");
     return function(){
         var paths = 1 <= arguments.length ? [].slice.call(arguments, 0) : [];
-        var re = new RegExp("^"+libPath)
+        var re = new RegExp("^"+reEscape(libPath));
         return _.every(paths, function(p) {
             p = path.normalize(p);
             return p.match(re);
@@ -100,6 +104,9 @@ var isAllowedPathFn = function(libPath){ //is path within the lib dir? if not, t
     }
 };
 
+var invalidNpmName = function(name){
+    return !!~name.indexOf(".."); //doesnt contain
+}
 
 /**
  * Attempt to update the npmFileMap from extracted package.json, then using npmFileMap move required files to libPath/../
@@ -154,7 +161,7 @@ var processNewVersion = function(pkg, libPath){
  * @returns {*}
  */
 var updateLibraryVersion = function(pkg, tarballUrl, version, cb) {
-    if(~pkg.name.indexOf("..")){
+    if(invalidNpmName(pkg.name)){
         return cb(error(pkg.npmName+" has a malicious package name:"+ pkg.name, error.PKG_NAME));
     }
     var libPath = path.normalize(path.join(__dirname, 'ajax', 'libs', pkg.name, version));
@@ -229,6 +236,7 @@ exports.processNewVersion = processNewVersion;
 exports.error = error;
 exports.isAllowedPathFn = isAllowedPathFn;
 exports.isValidFileMap = isValidFileMap;
+exports.invalidNpmName = invalidNpmName;
 
 
 var args = process.argv.slice(2);
