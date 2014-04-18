@@ -23,5 +23,12 @@
            "type": "git",
            "url": "https://github.com/jeffharrell/minicart"
        }
-   ]
+   ],
+   "npmName": "minicart",
+   "npmFileMap": [{
+    "basePath": "/dist/",
+    "files": [
+      "*.min.js"
+    ]
+  }],
 }
