@@ -1,6 +1,14 @@
 {
     "name": "socket.io",
-    "filename": "socket.io.min.js",
+    "npmName": "socket.io",
+    "npmFileMap": [
+      {
+        "files": [
+          "lib/socket.io.js"
+        ]
+      }
+    ],
+    "filename": "socket.io.js",
     "version": "0.9.16",
     "description": "Browser-side code for Socket.IO. Socket.IO aims to make realtime apps possible in every browser and mobile device, blurring the differences between the different transport mechanisms.",
     "homepage": "http://socket.io",
