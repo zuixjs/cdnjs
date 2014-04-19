@@ -1,8 +1,8 @@
 {
     "name": "jasny-bootstrap"
   , "description": "Additional features and components for Bootstrap"
-  , "version": "3.1.1"
-  , "filename": "js/jasny-bootstrap.min.js"
+  , "version": "3.1.2"
+  , "filename": "css/jasny-bootstrap.min.css"
   , "keywords": ["twitter bootstrap", "bootstrap", "css"]
   , "homepage": "http://jasny.github.com/bootstrap/"
   , "author": "Arnold Daniels"
