@@ -4,7 +4,7 @@
     "version": "1.18.7",
     "author": "Jack Moore",
     "description": "Automatically adjust textarea height based on user input.",
-    "homepage": "http://www.jacklmoore.com",
+    "homepage": "http://www.jacklmoore.com/autosize",
     "keywords": [
         "form",
         "textarea",
@@ -14,13 +14,20 @@
     "maintainers": [
         {
             "name": "Jack Moore",
-            "web": "http://www.jacklmoore.com"
+            "web": "http://www.jacklmoore.com",
+            "email": "hello@jacklmoore.com"
         }
     ],
     "repositories": [
         {
             "type": "git",
             "url": "https://github.com/jackmoore/autosize.git"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://www.opensource.org/licenses/mit-license.php"
         }
     ]
 }
