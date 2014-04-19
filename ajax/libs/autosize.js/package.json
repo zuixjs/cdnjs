@@ -6,11 +6,11 @@
     "description": "Automatically adjust textarea height based on user input.",
     "homepage": "http://www.jacklmoore.com",
     "keywords": [
-      "form",
-      "textarea",
-      "ui",
-      "jQuery"
-      ],
+        "form",
+        "textarea",
+        "ui",
+        "jQuery"
+    ],
     "maintainers": [
         {
             "name": "Jack Moore",
