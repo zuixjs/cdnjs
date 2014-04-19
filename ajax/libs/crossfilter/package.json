@@ -37,5 +37,15 @@
   },
   "scripts": {
     "test": "./node_modules/.bin/vows"
-  }
+  },
+  "npmName": "crossfilter",
+  "npmFileMap": [
+    {
+      "basePath": "/",
+      "files": [
+        "crossfilter.js",
+        "crossfilter.min.js"
+      ]
+    }
+  ]
 }

@@ -65,5 +65,15 @@
     "load-grunt-tasks": "~0.2.0",
     "grunt-conventional-changelog": "~1.0.0",
     "grunt-ngdocs": "~0.1.7"
-  }
+  },
+  "npmName": "angular-ui-router",
+  "npmFileMap": [
+    {
+      "basePath": "/",
+      "files": [
+        "release/angular-ui-router.min.js",
+        "release/angular-ui-router.js"
+      ]
+    }
+  ]
 }
