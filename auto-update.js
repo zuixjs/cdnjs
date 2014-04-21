@@ -65,6 +65,7 @@ var updateLibrary = function (pkg, callback) {
                     var url = data.dist.tarball;
                     var download_file = path + '/dist.tar.gz';
                     console.log('Downloading...');
+                    try {
                     tarball.extractTarballDownload(url , download_file, path, {}, function(err, result) {
                         console.log('Downloaded');
                         fs.unlinkSync(download_file);
@@ -104,6 +105,9 @@ var updateLibrary = function (pkg, callback) {
                             callback();
                         
                     });
+                    } catch (e) {
+console.log('so erro rprone', e)
+                    }
 
                 });;
                 newVersionCount++;
