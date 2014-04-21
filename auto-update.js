@@ -58,7 +58,9 @@ var updateLibrary = function (pkg, callback) {
                 fs.mkdirSync(path);
                 var url = data.dist.tarball;
                 var download_file = path + '/dist.tar.gz';
+                console.log('Downloading...');
                 tarball.extractTarballDownload(url , download_file, path, {}, function(err, result) {
+                    console.log('Downloaded');
                     fs.unlinkSync(download_file);
                     var folderName = fs.readdirSync(path)[0];
 
@@ -77,7 +79,11 @@ var updateLibrary = function (pkg, callback) {
                                 var replacePath = folderName + "/" + basePath + "/";
                                 replacePath = replacePath.replace(/\/\//g, "/");
                                 var actualPath = extractFilePath.replace(replacePath, "");
+                                if(!fs.existsSync(extractFilePath)) {
                                 fs.renameSync(extractFilePath, actualPath);
+                                } else {
+                                    console.log('ERRRRRORRRRRR', extractFilePath, actualPath);
+                                }
                             });
                         });
                     });
