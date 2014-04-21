@@ -50,59 +50,75 @@ var parse = function (json_file, ignore_missing, ignore_parse_fail) {
 
 var updateLibrary = function (pkg, callback) {
     console.log('Checking versions for ' + pkg.npmName);
+
+    var versionUpdates = [];
+
+
     request.get('http://registry.npmjs.org/' + pkg.npmName, function(result) {
         _.each(result.body.versions, function(data, version) {
             var path = './ajax/libs/' + pkg.name + '/' + version;
             console.log(path);
             if(!fs.existsSync(path)) {
-                fs.mkdirSync(path);
-                var url = data.dist.tarball;
-                var download_file = path + '/dist.tar.gz';
-                console.log('Downloading...');
-                tarball.extractTarballDownload(url , download_file, path, {}, function(err, result) {
-                    console.log('Downloaded');
-                    fs.unlinkSync(download_file);
-                    if(err) {
-                        fs.removeSync(path + '/' + folderName);
-                        return false;
-                    }
-                    var folderName = fs.readdirSync(path)[0];
 
-                    var npmFileMap = pkg.npmFileMap;
+                versionUpdates.push(function (callback) {
+                    fs.mkdirSync(path);
+                    var url = data.dist.tarball;
+                    var download_file = path + '/dist.tar.gz';
+                    console.log('Downloading...');
+                    tarball.extractTarballDownload(url , download_file, path, {}, function(err, result) {
+                        console.log('Downloaded');
+                        fs.unlinkSync(download_file);
+                        if(err) {
+                            fs.removeSync(path + '/' + folderName);
+                            console.log('critcal');
+                            callback();
+                            return false;
+                        }
+                        var folderName = fs.readdirSync(path)[0];
 
-                    _.each(npmFileMap, function(fileSpec) {
-                        var basePath = fileSpec.basePath || "";
+                        var npmFileMap = pkg.npmFileMap;
 
-                        _.each(fileSpec.files, function(file) {
-                            var extractPath = basePath + "/" + file;
-                            var files = glob.sync(path + "/" + folderName + "/" + basePath + "/" + file);
+                        _.each(npmFileMap, function(fileSpec) {
+                            var basePath = fileSpec.basePath || "";
 
-                            _.each(files, function(extractFilePath) {
-                                if(extractFilePath.slice(-4) == ".zip") return;
-                                if(extractFilePath.indexOf("dependencies") !== -1) return;
-                                var replacePath = folderName + "/" + basePath + "/";
-                                replacePath = replacePath.replace(/\/\//g, "/");
-                                var actualPath = extractFilePath.replace(replacePath, "");
-                                if(!fs.existsSync(extractFilePath)) {
-                                fs.renameSync(extractFilePath, actualPath);
-                                } else {
-                                    console.log('ERRRRRORRRRRR', extractFilePath, actualPath);
-                                }
+                            _.each(fileSpec.files, function(file) {
+                                var extractPath = basePath + "/" + file;
+                                var files = glob.sync(path + "/" + folderName + "/" + basePath + "/" + file);
+
+                                _.each(files, function(extractFilePath) {
+                                    if(extractFilePath.slice(-4) == ".zip") return;
+                                    if(extractFilePath.indexOf("dependencies") !== -1) return;
+                                    var replacePath = folderName + "/" + basePath + "/";
+                                    replacePath = replacePath.replace(/\/\//g, "/");
+                                    var actualPath = extractFilePath.replace(replacePath, "");
+                                    if(!fs.existsSync(extractFilePath)) {
+                                    fs.renameSync(extractFilePath, actualPath);
+                                    } else {
+                                        console.log('ERRRRRORRRRRR', extractFilePath, actualPath);
+                                    }
+                                });
                             });
                         });
+
+                        fs.removeSync(path + '/' + folderName);
+                            callback();
+                        
                     });
 
-                    fs.removeSync(path + '/' + folderName);
-                });
+                });;
                 newVersionCount++;
                 console.log("Do not have version", version, "of", pkg.npmName);
             }
         });
-        var npmVersion = result.body['dist-tags'] && result.body['dist-tags'].latest || 0;
-        pkg.version = npmVersion;
-        fs.writeFileSync('ajax/libs/' + pkg.name + '/package.json', JSON.stringify(pkg, null, 2), 'utf8');
 
-        callback(null, pkg['npm-name']);
+
+        async.series(versionUpdates, function(err, results) {
+            var npmVersion = result.body['dist-tags'] && result.body['dist-tags'].latest || 0;
+            pkg.version = npmVersion;
+            fs.writeFileSync('ajax/libs/' + pkg.name + '/package.json', JSON.stringify(pkg, null, 2), 'utf8');
+
+            callback(null, pkg['npm-name']);
+        });
     });
 }
 
