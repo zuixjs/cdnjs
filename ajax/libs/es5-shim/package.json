@@ -1,7 +1,7 @@
 {
   "name": "es5-shim",
   "filename": "es5-shim.min.js",
-  "version": "2.3.0",
+  "version": "3.0.2",
   "description": "ECMAScript 5 compatibility shims for legacy JavaScript engines",
   "homepage": "https://github.com/es-shims/es5-shim",
   "keywords": [

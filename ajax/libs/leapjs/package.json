@@ -1,7 +1,7 @@
 {
   "name": "leapjs",
   "filename": "leap.min.js",
-  "version": "0.1.2",
+  "version": "0.4.3",
   "description": "A JavaScript client for the LeapMotion.",
   "homepage": "http://github.com/leapmotion/leapjs",
   "keywords": [

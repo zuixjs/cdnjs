@@ -25,6 +25,22 @@ var path = require("path"),
     async = require("async"),
     tarball = require('tarball-extract'),
     mkdirp = require('mkdirp');
+ 
+fs.mkdirParent = function(dirPath, mode, callback) {
+  //Call the standard fs.mkdir
+  fs.mkdir(dirPath, mode, function(error) {
+    //When it fail in this way, do the custom steps
+    if (error && error.errno === 34) {
+      //Create all the parents recursively
+      fs.mkdirParent(path.dirname(dirPath), mode, callback);
+      //And then the directory
+      fs.mkdirParent(dirPath, mode, callback);
+    }
+    //Manually run the callback since we used our own callback to do all these
+    callback && callback(error);
+  });
+};
+
 hipchat.message('gray', 'Auto Update Started');
 var newVersionCount = 0;
 var parse = function (json_file, ignore_missing, ignore_parse_fail) {
@@ -92,9 +108,11 @@ console.log('looping through files');
                                     var replacePath = folderName + "/" + basePath + "/";
                                     replacePath = replacePath.replace(/\/\//g, "/");
                                     var actualPath = extractFilePath.replace(replacePath, "");
+                                    console.log('checking extract', fs.existsSync(extractFilePath));
                                     if(fs.existsSync(extractFilePath)) {
-                                      
-                                      fs.renameSync(extractFilePath, actualPath);
+                                      var bla = actualPath;
+                                      fs.mkdirParent(bla.substr(2, bla.lastIndexOf('/')-1))
+					fs.renameSync(extractFilePath, actualPath);
                                     } else {
                                         console.log('ERRRRRORRRRRR', extractFilePath, actualPath);
                                     }
