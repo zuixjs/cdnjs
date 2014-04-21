@@ -81,7 +81,7 @@ var updateLibrary = function (pkg, callback) {
 
                         _.each(npmFileMap, function(fileSpec) {
                             var basePath = fileSpec.basePath || "";
-
+console.log('looping through files');
                             _.each(fileSpec.files, function(file) {
                                 var extractPath = basePath + "/" + file;
                                 var files = glob.sync(path + "/" + folderName + "/" + basePath + "/" + file);
@@ -101,7 +101,7 @@ var updateLibrary = function (pkg, callback) {
                                 });
                             });
                         });
-
+console.log('fiinished');
                         fs.removeSync(path + '/' + folderName);
                             callback();
                         
