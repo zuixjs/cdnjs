@@ -92,8 +92,9 @@ var updateLibrary = function (pkg, callback) {
                                     var replacePath = folderName + "/" + basePath + "/";
                                     replacePath = replacePath.replace(/\/\//g, "/");
                                     var actualPath = extractFilePath.replace(replacePath, "");
-                                    if(!fs.existsSync(extractFilePath)) {
-                                    fs.renameSync(extractFilePath, actualPath);
+                                    if(fs.existsSync(extractFilePath)) {
+                                      
+                                      fs.renameSync(extractFilePath, actualPath);
                                     } else {
                                         console.log('ERRRRRORRRRRR', extractFilePath, actualPath);
                                     }
