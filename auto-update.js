@@ -62,6 +62,10 @@ var updateLibrary = function (pkg, callback) {
                 tarball.extractTarballDownload(url , download_file, path, {}, function(err, result) {
                     console.log('Downloaded');
                     fs.unlinkSync(download_file);
+                    if(err) {
+                        fs.removeSync(path + '/' + folderName);
+                        return false;
+                    }
                     var folderName = fs.readdirSync(path)[0];
 
                     var npmFileMap = pkg.npmFileMap;
