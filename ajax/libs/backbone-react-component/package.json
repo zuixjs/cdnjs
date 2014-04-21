@@ -51,5 +51,15 @@
       "type": "MIT",
       "url": "https://github.com/magalhas/backbone-react-component/blob/master/LICENSE-MIT"
     }
+  ],
+  "npmName": "backbone-react-component",
+  "npmFileMap": [
+    {
+      "basePath": "/dist",
+      "files": [
+        "/backbone-react-component-min.js",
+        "/backbone-react-component.js"
+      ]
+    }
   ]
 }

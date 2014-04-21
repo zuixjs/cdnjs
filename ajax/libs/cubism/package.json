@@ -1,6 +1,6 @@
 {
   "name": "cubism",
-  "filename":"cubism.v1.min.js",
+  "filename": "cubism.v1.min.js",
   "version": "1.2.2",
   "description": "A JavaScript library for time series visualization.",
   "keywords": [
@@ -23,5 +23,15 @@
   "devDependencies": {
     "vows": "0.6.1",
     "uglify-js": "1.2.5"
-  }
+  },
+  "npmName": "cubism",
+  "npmFileMap": [
+    {
+      "basePath": "/",
+      "files": [
+        "cubism.v1.js",
+        "cubism.v1.min.js"
+      ]
+    }
+  ]
 }

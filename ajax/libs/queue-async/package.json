@@ -23,5 +23,15 @@
   },
   "scripts": {
     "test": "node_modules/.bin/vows; echo"
-  }
+  },
+  "npmName": "queue-async",
+  "npmFileMap": [
+    {
+      "basePath": "/",
+      "files": [
+        "queue.min.js",
+        "queue.js"
+      ]
+    }
+  ]
 }

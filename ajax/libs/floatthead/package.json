@@ -1,14 +1,23 @@
 {
   "name": "floatthead",
-  "version": "1.2.3",
+  "version": "1.2.6",
   "description": "locking table headers without special css",
-  "filename": "jquery.floatThead.js",
+  "filename": "jquery.floatThead.min.js",
   "dependencies": {},
   "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git://github.com/mkoryak/floatThead.git"
   },
+  "npmName": "floatthead",
+  "npmFileMap": [
+    {
+      "basePath": "/dist/",
+      "files": [
+        "*.js"
+      ]
+    }
+  ],
   "keywords": [
     "locked header",
     "floating header",
