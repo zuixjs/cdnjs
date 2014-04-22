@@ -19,52 +19,5 @@
       "type": "git",
       "url": "https://github.com/hakimel/reveal.js.git"
     }
-  ],
-  "npmName": "reveal.js",
-  "npmFileMap": [
-    {
-      "basePath": "/",
-      "files": [
-        "css/print/paper.css",
-        "css/print/pdf.css",
-        "css/reveal.css",
-        "css/reveal.min.css",
-        "css/theme/beige.css",
-        "css/theme/blood.css",
-        "css/theme/default.css",
-        "css/theme/moon.css",
-        "css/theme/night.css",
-        "css/theme/serif.css",
-        "css/theme/simple.css",
-        "css/theme/sky.css",
-        "css/theme/solarized.css",
-        "lib/css/zenburn.css",
-        "js/reveal.min.js",
-        "lib/font/league_gothic-webfont.eot",
-        "lib/font/league_gothic-webfont.svg",
-        "lib/font/league_gothic-webfont.ttf",
-        "lib/font/league_gothic-webfont.woff",
-        "js/reveal.js",
-        "lib/js/classList.js",
-        "lib/js/head.min.js",
-        "lib/js/html5shiv.js",
-        "plugin/markdown/markdown.js",
-        "plugin/markdown/marked.js",
-        "plugin/highlight/highlight.js",
-        "plugin/leap/leap.js",
-        "plugin/math/math.js",
-        "plugin/multiplex/client.js",
-        "plugin/multiplex/index.js",
-        "plugin/multiplex/master.js",
-        "plugin/notes-server/client.js",
-        "plugin/notes-server/index.js",
-        "plugin/notes/notes.js",
-        "plugin/postmessage/postmessage.js",
-        "plugin/print-pdf/print-pdf.js",
-        "plugin/remotes/remotes.js",
-        "plugin/search/search.js",
-        "plugin/zoom-js/zoom.js"
-      ]
-    }
   ]
 }

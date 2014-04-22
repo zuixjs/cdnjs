@@ -28,19 +28,5 @@
       "type": "git",
       "url": "https://github.com/es-shims/es5-shim"
     }
-  ],
-  "npmName": "es5-shim",
-  "npmFileMap": [
-    {
-      "basePath": "/",
-      "files": [
-        "es5-sham.map",
-        "es5-sham.js",
-        "es5-sham.min.js",
-        "es5-shim.js",
-        "es5-shim.map",
-        "es5-shim.min.js"
-      ]
-    }
   ]
 }
