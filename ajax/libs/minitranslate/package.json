@@ -23,10 +23,10 @@
   "npmName": "minitranslate",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "/js/",
       "files": [
-        "js/minitranslate.js",
-        "js/minitranslate.min.js"
+        "/minitranslate.js",
+        "/minitranslate.min.js"
       ]
     }
   ]

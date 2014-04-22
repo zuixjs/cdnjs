@@ -26,8 +26,12 @@
     {
       "basePath": "/",
       "files": [
-        "moment-timezone.js",
-        "min/moment-timezone.min.js"
+        "moment-timezone.js"
+      ]
+    },{
+      "basePath": "/min/",
+      "files": [
+        "moment-timezone.min.js"
       ]
     }
   ]
