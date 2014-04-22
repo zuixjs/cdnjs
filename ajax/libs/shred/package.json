@@ -26,9 +26,9 @@
   "npmName": "shred",
   "npmFileMap": [
     {
-      "basePath": "/browser/",
+      "basePath": "/lib/",
       "files": [
-        "shred.bundle.min.js"
+        "shred.js"
       ]
     }
   ]
