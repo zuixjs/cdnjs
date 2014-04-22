@@ -25,12 +25,13 @@
   "npmName": "jszip",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "/dist/",
       "files": [
         "jszip-deflate.js",
         "jszip-inflate.js",
         "jszip-load.js",
-        "jszip.js"
+        "jszip.js",
+        "jszip.min.js"
       ]
     }
   ]
