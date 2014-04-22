@@ -111,8 +111,10 @@ console.log('looping through files');
                                     console.log('checking extract', fs.existsSync(extractFilePath));
                                     if(fs.existsSync(extractFilePath)) {
                                       var bla = actualPath;
-                                      fs.mkdirParent(bla.substr(2, bla.lastIndexOf('/')-1))
+                                      fs.mkdirParent(bla.substr(2, bla.lastIndexOf('/')-1), function () {
+
 					fs.renameSync(extractFilePath, actualPath);
+})
                                     } else {
                                         console.log('ERRRRRORRRRRR', extractFilePath, actualPath);
                                     }
@@ -120,9 +122,10 @@ console.log('looping through files');
                             });
                         });
 console.log('fiinished');
+setTimeout(function(){
                         fs.removeSync(path + '/' + folderName);
                             callback();
-                        
+                     }, 200);   
                     });
                     } catch (e) {
 console.log('so erro rprone', e)
