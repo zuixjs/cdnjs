@@ -23,9 +23,7 @@
     "javascript",
     "library"
   ],
-  "bugs": {
-    "url": "https://github.com/wagerfield/parallax/issues"
-  },
+  "bugs":  "url": "https://github.com/wagerfield/parallax/issues",
   "devDependencies": {
     "gulp": "^3.6.1",
     "gulp-load-plugins": "^0.5.0",
