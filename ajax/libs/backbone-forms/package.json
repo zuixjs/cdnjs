@@ -1,7 +1,7 @@
 {
     "name": "backbone-forms",
     "filename": "backbone-forms.min.js",
-    "version": "0.12.0",
+    "version": "0.14.0",
     "description": "Form framework for BackboneJS with nested forms, editable lists and validation",
     "homepage": "https://github.com/powmedia/backbone-forms",
     "keywords": [
