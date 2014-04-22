@@ -1,5 +1,6 @@
 var Hipchat = require('node-hipchat'),
     path = require("path"),
+    assert = require("assert"),
     fs = require("fs-extra"),
     glob = require("glob"),
     _ = require('lodash'),
@@ -30,7 +31,7 @@ hipchat.message('gray', 'Auto Update Started');
 var newVersionCount = 0;
 var parse = function (json_file, ignore_missing, ignore_parse_fail) {
     var content;
-    
+
     try {
         content = fs.readFileSync(json_file, 'utf8');
     } catch (err1) {
@@ -89,9 +90,9 @@ error.PKG_NAME = 'BadPackageName'
 error.FILE_PATH = 'BadFilePath'
 
 /**
-* returns a fucntion that takes N args, where each arg is a path that must not outside of libPath.
+ * returns a fucntion that takes N args, where each arg is a path that must not outside of libPath.
  * returns true if all paths are within libPath, else false
-*/
+ */
 var isAllowedPathFn = function(libPath){ //is path within the lib dir? if not, they shouldnt be writing/reading there
     libPath = path.normalize(libPath || "/");
     return function(){
@@ -115,12 +116,18 @@ var invalidNpmName = function(name){
  * @param libPath = root folder for extracted lib
  * @returns {Array} = array of security related errors triggered during operation.
  */
-var processNewVersion = function(pkg, libPath){
-    var isAllowedPath = isAllowedPathFn(libPath);
+var processNewVersion = function(pkg, version){
+    var extractLibPath = path.join(getPackageTempPath(pkg, version), 'package');
+    var libPath = getPackagePath(pkg, version)
 
-    var newPkg = parse(path.join(libPath, 'package.json'));
-    if(isValidFileMap(newPkg)){
-        pkg.npmFileMap = newPkg.npmFileMap;
+    var isAllowedPath = isAllowedPathFn(extractLibPath);
+
+    var newPath = path.join(libPath, 'package.json')
+    if(false && fs.existsSync(newPath)){ //turn this off for now
+        var newPkg = parse(newPath);
+        if(isValidFileMap(newPkg)){
+            pkg.npmFileMap = newPkg.npmFileMap;
+        }
     }
     var npmFileMap = pkg.npmFileMap;
     var errors = [];
@@ -129,29 +136,37 @@ var processNewVersion = function(pkg, libPath){
         var basePath = fileSpec.basePath || "";
 
         _.each(fileSpec.files, function(file) {
-            var libContentsPath = path.normalize(path.join(libPath, basePath, file));
+            var libContentsPath = path.normalize(path.join(extractLibPath, basePath));
             if(!isAllowedPath(libContentsPath)){
                 errors.push(error(pkg.npmName+" contains a malicious file path: "+libContentsPath, error.FILE_PATH));
                 return
             }
-            var files = glob.sync(libContentsPath);
+            var files = glob.sync(path.join(libContentsPath, file));
+            var copyPath = path.join(libPath, basePath)
 
             _.each(files, function(extractFilePath) {
                 if(extractFilePath.match(/(dependencies|\.zip\s*$)/i)) return;
 
-                var replacePath = path.normalize(path.join('package', basePath));
-                var actualPath = extractFilePath.replace(replacePath, "");
-                if(!isAllowedPath(extractFilePath, actualPath)){
-                    errors.push(error(pkg.npmName+" contains a malicious file path: "+extractFilePath+' or '+actualPath, error.FILE_PATH));
-                    return;
-                }
-                fs.renameSync(extractFilePath, actualPath);
+                var copyPart = path.relative(libContentsPath, extractFilePath);
+                var copyPath = path.join(libPath, copyPart)
+                fs.mkdirsSync(path.dirname(copyPath))
+                //TODO remove me:
+                console.log('rename:',extractFilePath, copyPath)
+
+                fs.renameSync(extractFilePath, copyPath);
             });
         });
     });
     return errors;
 }
 
+
+var getPackageTempPath = function(pkg, version){
+    return path.normalize(path.join(__dirname, 'temp', pkg.name, version))
+}
+var getPackagePath = function(pkg, version){
+    return path.normalize(path.join(__dirname, 'ajax', 'libs', pkg.name, version));
+}
 /**
  * download and extract a tarball for a single npm version, get the files in npmFileMap and delete the rest
  * @param pkg
@@ -164,20 +179,22 @@ var updateLibraryVersion = function(pkg, tarballUrl, version, cb) {
     if(invalidNpmName(pkg.name)){
         return cb(error(pkg.npmName+" has a malicious package name:"+ pkg.name, error.PKG_NAME));
     }
-    var libPath = path.normalize(path.join(__dirname, 'ajax', 'libs', pkg.name, version));
+    var extractLibPath = getPackageTempPath(pkg, version);
+    var libPath = getPackagePath(pkg, version);
 
 
     if(!fs.existsSync(libPath)) {
-        fs.mkdirSync(libPath);
+        fs.mkdirsSync(extractLibPath);
         var url = tarballUrl;
-        var downloadFile = libPath + '/dist.tar.gz';
-        tarball.extractTarballDownload(url , downloadFile, libPath, {}, function(err, result) {
-            fs.unlinkSync(downloadFile);
-            var extractPath = path.join(libPath, 'package');
-            processNewVersion(pkg, extractPath);
-            fs.removeSync(extractPath);
-            newVersionCount++;
-            console.log("Do not have version", version, "of", pkg.npmName);
+        var downloadFile = path.join(extractLibPath, 'dist.tar.gz');
+        tarball.extractTarballDownload(url , downloadFile, extractLibPath, {}, function(err, result) {
+            if(fs.existsSync(downloadFile)){
+                processNewVersion(pkg, version);
+                newVersionCount++;
+                console.log("Do not have version", version, "of", pkg.npmName);
+            } else {
+                console.log("error downloading "+ version+ "of "+pkg.npmName+" it didnt exist: ", result, err)
+            }
             cb()
         });
     } else {
@@ -207,13 +224,13 @@ var updateLibrary = function (pkg, cb) {
             var npmVersion = result.body['dist-tags'] && result.body['dist-tags'].latest || 0;
             pkg.version = npmVersion;
             fs.writeFileSync('ajax/libs/' + pkg.name + '/package.json', JSON.stringify(pkg, null, 2), 'utf8');
-
             cb(null);
         });
     });
 }
 
 exports.run = function(){
+    fs.removeSync(path.join(__dirname, 'temp'))
     console.log('Looking for npm enabled libraries...');
 
     // load up those files
@@ -226,8 +243,9 @@ exports.run = function(){
     console.log('Found ' + packages.length + ' npm enabled libraries');
 
     async.eachSeries(packages, updateLibrary, function(err) {
-      console.log('Script completed');
-      hipchat.message('green', 'Auto Update Completed - ' + newVersionCount + ' versions were updated');
+        console.log('Script completed');
+        hipchat.message('green', 'Auto Update Completed - ' + newVersionCount + ' versions were updated');
+        fs.removeSync(path.join(__dirname, 'temp'))
     });
 }
 exports.updateLibrary = updateLibrary;
@@ -241,8 +259,8 @@ exports.invalidNpmName = invalidNpmName;
 
 var args = process.argv.slice(2);
 if(args.length > 0 && args[0] == 'run'){
-   exports.run()
+    exports.run()
 } else {
-   console.log('to start, pass the "run" arg')
+    console.log('to start, pass the "run" arg')
 }
 
