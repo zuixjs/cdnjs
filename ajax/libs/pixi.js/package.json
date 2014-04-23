@@ -27,10 +27,10 @@
   "npmName": "pixi.js",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "/bin",
       "files": [
-        "bin/pixi.js",
-        "bin/pixi.dev.js"
+        "pixi.js",
+        "pixi.dev.js"
       ]
     }
   ]
