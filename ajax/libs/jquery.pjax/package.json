@@ -3,7 +3,7 @@
     "filename": "jquery.pjax.min.js",
     "version": "1.8.0",
     "description": "pjax is a jQuery plugin that uses ajax and pushState to deliver a fast browsing experience with real permalinks, page titles, and a working back button.",
-    "homepage": "https://github.com/defunkt/jquery-pjax",
+    "homepage": "http://pjax.heroku.com",
     "keywords": [
         "ajax",
         "pjax",
