@@ -75,5 +75,11 @@
         "release/angular-ui-router.js"
       ]
     }
+  ],
+  "keywords": [
+    "angular",
+    "ui",
+    "angular-ui",
+    "ui-router"
   ]
 }

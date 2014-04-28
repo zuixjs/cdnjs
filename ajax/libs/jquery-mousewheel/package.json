@@ -1,7 +1,7 @@
 {
     "name": "jquery-mousewheel",
     "filename": "jquery.mousewheel.min.js",
-    "version": "3.1.6",
+    "version": "3.1.11",
     "description": "A jQuery plugin that adds cross-browser mouse wheel support.",
     "homepage": "https://github.com/brandonaaron/jquery-mousewheel",
     "keywords": [
