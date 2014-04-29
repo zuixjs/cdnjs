@@ -19,7 +19,6 @@
     "fs-extra": "~0.8",
     "glob": "~3.2",
     "lodash": "~2.4",
-    "mkdirp": "~0.3",
     "rss": "~0.3",
     "superagent": "~0.17",
     "tarball-extract": "~0.0",

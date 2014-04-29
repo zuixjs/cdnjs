@@ -6,8 +6,7 @@ var Hipchat = require('node-hipchat'),
     _ = require('lodash'),
     request = require("superagent"),
     async = require("async"),
-    tarball = require('tarball-extract'),
-    mkdirp = require('mkdirp');
+    tarball = require('tarball-extract')
 
 var HC = new Hipchat(process.env.HIPCHAT);
 var hipchat = {
