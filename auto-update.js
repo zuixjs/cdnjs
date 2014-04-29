@@ -117,7 +117,14 @@ var invalidNpmName = function(name){
  * @returns {Array} = array of security related errors triggered during operation.
  */
 var processNewVersion = function(pkg, version){
-    var extractLibPath = path.join(getPackageTempPath(pkg, version), 'package');
+    //sometimes the tar is extracted to a dir that isnt called 'package' - get that dir via glob
+    var extractLibPath = glob.sync(getPackageTempPath(pkg, version)+"/*/")[0];
+
+    if(!extractLibPath){
+      //even more rarely, the tar doesnt seem to get extracted at all.. which is probably a bug in that lib.
+      console.log(pkg.npmName+"@"+version+" - never got extracted! This problem usually goes away on next run. Couldnt find extract dir here: ", getPackageTempPath(pkg, version));
+      return;
+    }
     var libPath = getPackagePath(pkg, version)
 
     var isAllowedPath = isAllowedPathFn(extractLibPath);
@@ -132,6 +139,8 @@ var processNewVersion = function(pkg, version){
     var npmFileMap = pkg.npmFileMap;
     var errors = [];
 
+    var updated = false;
+
     _.each(npmFileMap, function(fileSpec) {
         var basePath = fileSpec.basePath || "";
 
@@ -144,19 +153,27 @@ var processNewVersion = function(pkg, version){
             var files = glob.sync(path.join(libContentsPath, file));
             var copyPath = path.join(libPath, basePath)
 
+            if(files.length == 0){
+              //usually old versions have this problem
+              console.log(pkg.npmName+"@"+version+" - couldnt find file in npmFileMap. Doesnt exist: ", path.join(libContentsPath, file));
+            }
+
             _.each(files, function(extractFilePath) {
-                if(extractFilePath.match(/(dependencies|\.zip\s*$)/i)) return;
+                if(extractFilePath.match(/(dependencies|\.zip\s*$)/i)){
+                  return;
+                }
 
                 var copyPart = path.relative(libContentsPath, extractFilePath);
                 var copyPath = path.join(libPath, copyPart)
                 fs.mkdirsSync(path.dirname(copyPath))
-                //TODO remove me:
-                console.log('rename:',extractFilePath, copyPath)
-
                 fs.renameSync(extractFilePath, copyPath);
+                updated = true
             });
         });
     });
+    if(updated){
+      newVersionCount++;
+    }
     return errors;
 }
 
@@ -190,10 +207,9 @@ var updateLibraryVersion = function(pkg, tarballUrl, version, cb) {
         tarball.extractTarballDownload(url , downloadFile, extractLibPath, {}, function(err, result) {
             if(fs.existsSync(downloadFile)){
                 processNewVersion(pkg, version);
-                newVersionCount++;
-                console.log("Do not have version", version, "of", pkg.npmName);
+                console.log("Do not have version", version, "of ", pkg.npmName);
             } else {
-                console.log("error downloading "+ version+ "of "+pkg.npmName+" it didnt exist: ", result, err)
+                console.log("error downloading "+ version+ " of "+pkg.npmName+" it didnt exist: ", result, err)
             }
             cb()
         });
@@ -216,7 +232,7 @@ var updateLibrary = function (pkg, cb) {
     }
     console.log('Checking versions for ' + pkg.npmName);
     request.get('http://registry.npmjs.org/' + pkg.npmName, function(result) {
-        async.eachLimit(_.pairs(result.body.versions), 5, function(p, cb){ //extract 5 at a time
+        async.eachSeries(_.pairs(result.body.versions), function(p, cb){
             var data = p[1];
             var version = p[0];
             updateLibraryVersion(pkg, data.dist.tarball, version, cb)
@@ -231,6 +247,10 @@ var updateLibrary = function (pkg, cb) {
 
 exports.run = function(){
     fs.removeSync(path.join(__dirname, 'temp'))
+
+    process.on('uncaughtException', function(){
+      fs.removeSync(path.join(__dirname, 'temp'))
+    })
     console.log('Looking for npm enabled libraries...');
 
     // load up those files
@@ -243,7 +263,7 @@ exports.run = function(){
     console.log('Found ' + packages.length + ' npm enabled libraries');
 
     async.eachSeries(packages, updateLibrary, function(err) {
-        console.log('Script completed');
+        console.log('Auto Update Completed - ' + newVersionCount + ' versions were updated');
         hipchat.message('green', 'Auto Update Completed - ' + newVersionCount + ' versions were updated');
         fs.removeSync(path.join(__dirname, 'temp'))
     });
