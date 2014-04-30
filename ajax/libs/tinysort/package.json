@@ -1,5 +1,5 @@
 {
-  "name": "TinySort",
+  "name": "tinysort",
   "filename": "jquery.tinysort.min.js",
   "description": "TinySort is a small and simple jQuery plugin that will sort any nodetype by its text- or attribute value, or by that of one of its children.",
   "version": "1.5.6",
