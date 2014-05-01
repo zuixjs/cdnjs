@@ -2,17 +2,7 @@
   "name": "angular-image-spinner",
   "filename": "angular-image-spinner.min.js",
   "description": "Angular directive for showing image spinner in the container with image",
-  "version": 0,
-  "npmName": "angular-image-spinner",
-  "npmFileMap": [
-    {
-      "basePath": "/",
-      "files": [
-        "angular-image-spinner.js",
-        "angular-image-spinner.min.js"
-      ]
-    }
-  ],
+  "version": "0.1.5",
   "files": [
     "angular-image-spinner.min.js"
   ],
