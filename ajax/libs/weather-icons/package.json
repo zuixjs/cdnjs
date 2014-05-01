@@ -1,7 +1,7 @@
 {
   "name": "weather-icons",
   "filename": "css/weather-icons.min.css",
-  "version": 0,
+  "version": "0.0.1",
   "description": "Weather Icons",
   "homepage": "http://erikflowers.github.io/weather-icons/",
   "keywords": [
@@ -9,19 +9,5 @@
     "font",
     "icons",
     "weather"
-  ],
-  "npmName": "weather-icons",
-  "npmFileMap": [
-    {
-      "basePath": "/",
-      "files": [
-        "css/weather-icons.css",
-        "css/weather-icons.min.css",
-        "fonts/weathericons-regular-webfont.eot",
-        "fonts/weathericons-regular-webfont.svg",
-        "fonts/weathericons-regular-webfont.ttf",
-        "fonts/weathericons-regular-webfont.woff"
-      ]
-    }
   ]
 }
