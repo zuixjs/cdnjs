@@ -2,7 +2,7 @@
   "filename": "i3d3.js",
   "name": "i3d3",
   "description": "D3-based plotting and histogramming library",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "license": "MIT",
   "homepage": "https://github.com/eigenhombre/i3d3",
   "keywords": [
