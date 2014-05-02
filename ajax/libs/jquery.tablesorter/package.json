@@ -8,8 +8,11 @@
     "url": "http://tablesorter.com/"
   },
   "keywords": [
+    "jquery.tablesorter",
+    "tablesorter",
     "table",
     "sort",
+    "sorter",
     "sorting",
     "alphanumeric",
     "natural"
