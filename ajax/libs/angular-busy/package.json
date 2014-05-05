@@ -2,7 +2,7 @@
   "name": "angular-busy",
   "filename": "angular-busy.min.js",
   "description": "Show busy/loading indicators on any $http or $resource request, or on any promise",
-  "version": "4.0.2",
+  "version": 0,
   "npmName": "angular-busy",
   "npmFileMap": [
     {
