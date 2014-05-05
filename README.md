@@ -2,7 +2,7 @@
 
 # cdnjs Script Repository
 
-[cdnjs](http://github.com/cdnjs/cdnjs) is the repository mirroring all scripts on `cdnjs.cloudflare.com`, created and maintained by [Thomas Davis](https://twitter.com/neutralthoughts), [Ryan Kirkman](https://twitter.com/ryan_kirkman) and [Pete Cooper](http://twitter.com/petecooper)
+[cdnjs](http://github.com/cdnjs/cdnjs) is the repository mirroring all scripts on `cdnjs.cloudflare.com`, created and maintained by [Thomas Davis](https://twitter.com/neutralthoughts), [Ryan Kirkman](https://twitter.com/ryan_kirkman), [Pete Cooper](http://twitter.com/petecooper) and [Drew Freyling](http://decompile.it/blog/)
 
 We will host any version of any library, subject to popularity and licence permissions.
 
