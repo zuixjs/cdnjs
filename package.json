@@ -13,14 +13,14 @@
     "test": "vows"
   },
   "dependencies": {
-    "async": "~0.7",
+    "async": "~0.8",
     "clean-css": "~2.1",
     "execSync": "~0.0",
     "fs-extra": "~0.8",
     "glob": "~3.2",
     "lodash": "~2.4",
     "rss": "~0.3",
-    "superagent": "~0.17",
+    "superagent": "~0.18",
     "tarball-extract": "~0.0",
     "uglify-js": "~2.4",
     "underscore": "~1.6",
