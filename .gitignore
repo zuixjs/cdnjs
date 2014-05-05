@@ -1,3 +1,4 @@
+temp/
 *.swp
 *.log
 node_modules
