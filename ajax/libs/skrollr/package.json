@@ -11,12 +11,12 @@
        "parallax",
        "mobile"
    ],
-   "maintainers": [
-       {
-           "name": "Prinzhorn",
-           "web": "https://github.com/Prinzhorn"
-       }
-   ],
+   "author":
+   {
+       "name": "Alexander Prinzhorn",
+       "email": "alexander@prinzhorn.it",
+       "web": "http://www.prinzhorn.it/"
+   },
    "repositories": [
        {
            "type": "git",
