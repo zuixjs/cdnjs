@@ -3,7 +3,7 @@
     "filename": "skrollr.min.js",
     "version": "0.6.24",
     "description": "Stand-alone parallax scrolling JavaScript library for mobile (Android, iOS, etc.) and desktop",
-    "homepage": "https://github.com/Prinzhorn/skrollr/",
+    "homepage": "http://prinzhorn.github.io/skrollr/",
     "keywords": [
        "standalone",
        "scrolling",
