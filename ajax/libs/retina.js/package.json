@@ -1,6 +1,6 @@
 {
     "name": "retina.js",
-    "filename": "retina.js",
+    "filename": "retina.min.js",
     "version": "1.0.1",
     "description": "retina.js makes it easy to serve high-resolution images to devices with retina displays.",
     "homepage": "http://retinajs.com/",
