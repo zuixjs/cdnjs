@@ -53,7 +53,7 @@
     "gulp-connect": "~1.0.7"
   "npmFileMap": [
     {
-      "basePath": "\/dist\/",
+      "basePath": "/dist/",
       "files": [
         "*.js",
 		"*.css"
