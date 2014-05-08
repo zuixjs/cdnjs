@@ -52,13 +52,13 @@
     "gulp-jade": "~0.4.2",
     "run-sequence": "~0.3.6",
     "gulp-connect": "~1.0.7"
-	},
+  },
   "npmFileMap": [
     {
       "basePath": "/dist/",
       "files": [
         "*.js",
-		"*.css"
+        "*.css"
       ]
     }
   ]
