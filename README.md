@@ -6,10 +6,6 @@
 
 We will host any version of any library, subject to popularity and licence permissions.
 
-__Libraries must have notable popularity: 100 stars or watchers on GitHub is a good example, but as long as reasonable popularity can be demonstrated the library will be added.__
-
-Evidence of popularity should be included in your pull request if the GitHub project doesn't indicate this already.
-
 Please raise a pull request for an older version of a library if your site still uses it, and also for proposals for new libraries.
 
 ## Adding a new or updating an existing library
