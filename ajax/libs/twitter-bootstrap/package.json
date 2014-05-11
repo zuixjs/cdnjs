@@ -5,18 +5,18 @@
     "description": "Javascript plugins for the Twitter Bootstrap toolkit",
     "homepage": "http://getbootstrap.com/",
     "keywords": [
-       "twitter",
-       "bootstrap"
-   ],
-   "maintainers": [
-       {
-           "name": "Twitter, Inc."
-       }
-   ],
-   "repositories": [
-       {
-           "type": "git",
-           "url": "https://github.com/twbs/bootstrap"
-       }
-   ]
+        "twitter",
+        "bootstrap"
+    ],
+    "maintainers": [
+        {
+            "name": "Twitter, Inc."
+        }
+    ],
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/twbs/bootstrap"
+        }
+    ]
 }
