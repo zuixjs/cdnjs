@@ -5,6 +5,13 @@
     "description": "Javascript plugins for the Twitter Bootstrap toolkit",
     "homepage": "http://getbootstrap.com/",
     "keywords": [
+        "css",
+        "less",
+        "mobile-first",
+        "responsive",
+        "front-end",
+        "framework",
+        "web",
         "twitter",
         "bootstrap"
     ],
