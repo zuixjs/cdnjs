@@ -82,7 +82,7 @@
   "npmFileMap": [{
     "basePath": "/js/",
     "files": [
-      "*.js"
+      "jsonld.js"
     ]
   }]
 }
