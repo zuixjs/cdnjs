@@ -27,13 +27,13 @@ When you have forked the cdnjs repo, add your library to it. Libraries are store
 You should consider the following when adding to or updating the library:
 
 * Filenames should _not_ include a version number and be _lowercase_.
-** This is OK: `useful.min.js`, but this is not: `useful-2.0.1.min.js`.
+  * This is OK: `useful.min.js`, but this is not: `useful-2.0.1.min.js`.
 
 * JavaScript & CSS files should be minified to reduce network and browser overhead.
-** If the library doesn't already provide a minified version, cdnjs's preferred JavaScript minifier is [UglifyJS](http://marijnhaverbeke.nl/uglifyjs "UglifyJS")
+  * If the library doesn't already provide a minified version, cdnjs's preferred JavaScript minifier is [UglifyJS](http://marijnhaverbeke.nl/uglifyjs "UglifyJS")
 
 * If you are updating a library, please try to maintain consistency with the existing file and directory structure.
-** There will be occasions, particularly with major version increments, where this is not practical.
+  * There will be occasions, particularly with major version increments, where this is not practical.
 
 ## Create or update `package.json`
 
@@ -67,10 +67,10 @@ In your pull request title, tell us what you're doing. If you are the author of 
 Please include the following in your pull request:
 
 * The origin of your library files
-** e.g., where you downloaded it
+  * e.g., where you downloaded it
 
 * How you found the version of the script
-** e.g., `Source: http://github.com/example/releases/1.2.3.zip`
+  * e.g., `Source: http://github.com/example/releases/1.2.3.zip`
 
 Providing the origin of your files is very helpful as the cdnjs project is peer-reviewed.
 
