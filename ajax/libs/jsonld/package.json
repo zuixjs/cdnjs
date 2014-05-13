@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "jsonld",
   "version": "0.2.8",
   "description": "A JSON-LD Processor and API implementation in JavaScript.",
