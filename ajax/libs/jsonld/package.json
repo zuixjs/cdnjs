@@ -77,12 +77,10 @@
     "transform": [
       "jsonldify"
     ]
-  }
+  },
   "npmName": "jsonld",
   "npmFileMap": [{
     "basePath": "/js/",
-    "files": [
-      "jsonld.js"
-    ]
+    "files": ["jsonld.js"]
   }]
 }
