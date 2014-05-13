@@ -1,6 +1,6 @@
 {
     "name": "nanogallery",
-    "filename": "nanogallery.min.js",
+    "filename": "jquery.nanogallery.min.js",
     "version": "4.4.0",
     "description": "Image gallery simplified. Very easy to implement image gallery plugin for jQuery. It is touch enabled, responsive, fast and it supports cloud storage. Featuring multi-level navigation in albums, lightbox, combinable hover effects on thumbnails, slideshow, fullscreen, pagination, image lazy load, themes, deep linking, browser back/forward navigation, i18n, and pulling in Flickr/Picasa/Google+/smugmug photo albums among others.",
     "homepage": "http://www.nanogallery.brisbois.fr/",
