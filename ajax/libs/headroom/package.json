@@ -1,12 +1,9 @@
 {
-  "name": "headroom.js",
+  "name": "headroom",
   "filename": "headroom.min.js",
   "version": "0.5.0",
   "description": "Give your page some headroom. Hide your header until you need it",
   "main": "dist/headroom.js",
-  "scripts": {
-    "test": "grunt test --verbose"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/WickyNilliams/headroom.js"
@@ -22,9 +19,6 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/WickyNilliams/headroom.js/issues"
-  },
-  "scripts": {
-    "test": "grunt dist --verbose"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
