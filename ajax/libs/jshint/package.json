@@ -23,6 +23,7 @@
   ],
 
   "main": "jshint.js",
+  "filename": "jshint.js",
   
   "npmName": "jshint",
 
