@@ -4,9 +4,9 @@
   "npmName": "chai",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "/",
       "files": [
-        "*"
+        "chai*.js"
       ]
     }
   ],
