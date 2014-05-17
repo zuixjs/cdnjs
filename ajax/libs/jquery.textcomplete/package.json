@@ -1,15 +1,7 @@
 {
   "name": "jquery.textcomplete",
   "npmName": "jquery-textcomplete",
-  "npmFileMap": [
-    {
-      "basePath": "/",
-      "files": [
-        "jquery.*"
-      ]
-    }
-  ],
-  "filename": "jquery.textcomplete.min.js",
+    "filename": "jquery.textcomplete.min.js",
   "version": 0,
   "description": "Introduce autocompleting power to textareas, like GitHub comment forms have.",
   "homepage": "http://yuku-t.com/jquery-textcomplete/",
