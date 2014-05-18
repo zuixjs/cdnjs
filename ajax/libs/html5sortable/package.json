@@ -19,10 +19,6 @@
     "type": "git",
     "url": "http://github.com/voidberg/html5sortable"
   },
-  "bugs": {
-    "url": "http://github.com/voidberg/html5sortable/issues",
-    "email": "andu@ctrlz.ro"
-  },
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-jshint": "~0.7.2",
