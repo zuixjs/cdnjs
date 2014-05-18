@@ -27,7 +27,7 @@
     "node-hipchat": "~0.4"
   },
   "devDependencies": {
-    "jslint": "~0.3",
+    "jslint": "~0.4",
     "JSV": "~4.0",
     "vows-si": "~0.7"
   },
