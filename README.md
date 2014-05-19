@@ -66,15 +66,12 @@ From a maintenance standpoint, it's much more straightforward to process pull re
 
 In your pull request title, tell us what you're doing. If you are the author of the library, please add `[author]` to the pull request title.
 
-Please include the following in your pull request:
+__Please include the following in your pull request:__
 
-* The origin of your library files
-  * e.g., where you downloaded it
+* The origin of your new files
+  * e.g., where you downloaded the version from
 
-* How you found the version of the script
-  * e.g., `Source: http://github.com/example/releases/1.2.3.zip`
-
-Providing the origin of your files is very helpful as the cdnjs project is peer-reviewed.
+A URL is ideal. Providing the origin of your files is very helpful as the cdnjs project is peer-reviewed. Practically speaking, it also helps us process your pull request more efficiently, which means your files go live sooner. Help us and we'll help you back.
 
 ## Enabling `npm` auto update
 
