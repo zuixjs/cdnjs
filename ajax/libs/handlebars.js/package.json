@@ -19,5 +19,19 @@
             "type": "git",
             "url": "https://github.com/wycats/handlebars.js"
         }
-    ]
+    ],
+    "npmName": "handlebars",
+    "npmFileMap": [{
+	"basePath": "/dist/",
+	"files": [
+	    "handlebars.amd.js",
+            "handlebars.amd.min.js",
+            "handlebars.js",
+            "handlebars.min.js",
+            "handlebars.runtime.amd.js",
+            "handlebars.runtime.amd.min.js",
+            "handlebars.runtime.js",
+            "handlebars.runtime.min.js"
+	]
+    }]
 }
