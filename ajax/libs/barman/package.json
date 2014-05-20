@@ -24,14 +24,5 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/dfernandez79/barman.git"
-  },
-  "npmName": "barman",
-  "npmFileMap": [
-    {
-      "basePath": "/dist/",
-      "files": [
-        "*.js"
-      ]
-    }
-  ]
+  }
 }
