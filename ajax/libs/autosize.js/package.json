@@ -4,7 +4,7 @@
   "version": "1.18.8",
   "author": "Jack Moore",
   "description": "Automatically adjust textarea height based on user input.",
-  "homepage": "http://www.jacklmoore.com",
+  "homepage": "http://www.jacklmoore.com/autosize",
   "keywords": [
     "form",
     "textarea",
