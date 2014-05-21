@@ -23,6 +23,12 @@
       "url": "https://github.com/jackmoore/autosize.git"
     }
   ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
   "npmName": "jquery-autosize",
   "npmFileMap": [
     {
