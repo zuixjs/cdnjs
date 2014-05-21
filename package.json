@@ -17,7 +17,7 @@
     "clean-css": "~2.1",
     "execSync": "~0.0",
     "fs-extra": "~0.8",
-    "glob": "~3.2",
+    "glob": "~4",
     "lodash": "~2.4",
     "rss": "~0.3",
     "superagent": "~0.18",
