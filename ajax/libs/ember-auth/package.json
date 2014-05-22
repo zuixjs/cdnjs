@@ -1,5 +1,5 @@
 {
-    "name": "ember-auth.js",
+    "name": "ember-auth",
     "filename": "ember-auth.min.js",
     "version": "9.0.7",
     "description": "Authentication framework for Ember.js.",
