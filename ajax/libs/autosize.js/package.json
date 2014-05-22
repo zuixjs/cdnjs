@@ -1,11 +1,12 @@
 {
   "name": "autosize.js",
   "filename": "jquery.autosize.min.js",
-  "version": "1.18.4",
+  "version": "1.18.8",
   "author": "Jack Moore",
   "description": "Automatically adjust textarea height based on user input.",
-  "homepage": "http://www.jacklmoore.com",
+  "homepage": "http://www.jacklmoore.com/autosize",
   "keywords": [
+    "autosize",
     "form",
     "textarea",
     "ui",
@@ -21,6 +22,12 @@
     {
       "type": "git",
       "url": "https://github.com/jackmoore/autosize.git"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
     }
   ],
   "npmName": "jquery-autosize",
