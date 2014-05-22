@@ -20,5 +20,19 @@
            "type": "git",
            "url": "https://github.com/tinymce/tinymce.git"
        }
-   ]
+   ],
+    "npmName": "tinymce",
+    "npmFileMap": [{
+        "basePath": "/",
+        "files": [
+            "tinymce.min.js",
+            "tinymce.jquery.min.js",
+            "jquery.tinymce.min.js",
+            "themes/modern/theme.min.js",
+            "skins/lightgray/*.css",
+            "skins/lightgray/img/*",
+            "skins/lightgray/fonts/*",
+            "plugins/*"
+        ]
+    }]
 }
