@@ -20,7 +20,7 @@ description: The heart of MooTools.
 
 license: MIT-style license.
 
-copyright: Copyright (c) 2006-2012 [Valerio Proietti](http://mad4milk.net/).
+copyright: Copyright (c) 2006-2014 [Valerio Proietti](http://mad4milk.net/).
 
 authors: The MooTools production team (http://mootools.net/developers/)
 
@@ -6263,8 +6263,8 @@ JSON.secure = false;
 
 JSON.decode = function(string, secure){
 	if (!string || typeOf(string) != 'string') return null;
-    
-	if (secure == null) secure = JSON.secure; 
+
+	if (secure == null) secure = JSON.secure;
 	if (secure){
 		if (JSON.parse) return JSON.parse(string);
 		if (!JSON.validate(string)) throw new Error('JSON could not decode the input; security is enabled and the value is not secure.');
@@ -6505,4 +6505,3 @@ window.addEvent('load', function(){
 });
 
 })(window, document);
-
