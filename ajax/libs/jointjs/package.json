@@ -2,6 +2,7 @@
   "name": "jointjs",
   "title": "JointJS",
   "description": "JavaScript diagramming library",
+  "filename": "joint.min.js",
   "keywords": [
     "diagram",
     "flowchart",
