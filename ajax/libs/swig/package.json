@@ -18,5 +18,12 @@
     "url": "http://github.com/paularmstrong/swig.git"
   },
   "author": "Paul Armstrong <paul@paularmstrongdesigns.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "npmName": "swig",
+  "npmFileMap": [{
+    "basePath": "/dist/",
+    "files": [
+      "swig.min.js"
+    ]
+  }]
 }
