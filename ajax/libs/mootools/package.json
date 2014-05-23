@@ -1,5 +1,6 @@
 {
-  "name": "mootools-core",
+  "name": "mootools",
+  "filename":"mootools-core-full-compat.min.js",
   "version": "1.5.0",
   "description": "MooTools is a compact, modular, Object-Oriented JavaScript framework designed for the intermediate to advanced JavaScript developer.",
   "repository": {
@@ -19,8 +20,6 @@
   ],
   "author": "MooTools Team",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mootools/mootools-core/issues"
-  },
+  "bugs": "https://github.com/mootools/mootools-core/issues",
   "homepage": "http://mootools.net"
 }
