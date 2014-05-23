@@ -29,9 +29,7 @@
     "type": "git",
     "url": "https://github.com/DavidDurman/joint.git"
   },
-  "bugs": {
-    "url": "https://github.com/DavidDurman/joint/issues"
-  },
+  "bugs": "https://github.com/DavidDurman/joint/issues",
   "license": "MPL 2.0",
   "dependencies": {
     "backbone": "~1.1.0",
