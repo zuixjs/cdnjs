@@ -43,11 +43,23 @@ Each library has a corresponding `package.json`, written in `npm` format (see `t
 
 When an existing library is updated, the details in `package.json` should be updated where required. For example, if a new version of the library is added, the version number may need changing.
 
+## Install `npm test` dependencies
+
+If you don't have vows installed do so by running `npm install -g vows`.
+
+
 ## Run `npm test` to check all is well
 
 If you're updating the library outside of `npm` or the GitHub browser, you should run `npm test` from the library directory to ensure everything is OK.
 
 If you run `npm test` and see no errors, all is well; resolve any errors before you raise your pull request and re-run `npm test` to ensure everything works.
+
+If you see an error then run `npm install` before running `npm test` 
+```
+sh: vows: command not found
+npm ERR! Test failed.  See above for more details.
+npm ERR! not ok code 0
+```
 
 ## Pull request pre-flight checks
 
