@@ -22,9 +22,9 @@
             "url"   : "http://freshbrewedcode.com/alexrobson"
         },
         {
-			"name"  : "Nicholas Cloud",
-			"email" : "WhyNotJustComment@OnMyBlog.com",
-			"url"   : "http://nicholascloud.com"
+            "name"  : "Nicholas Cloud",
+            "email" : "WhyNotJustComment@OnMyBlog.com",
+            "url"   : "http://nicholascloud.com"
         },
         {
             "name"  : "Doug Neiner",
@@ -69,5 +69,17 @@
             "type" : "GPL",
             "url" : "http://www.opensource.org/licenses/gpl-3.0.html"
         }
-    ]
+    ],
+    "npmName": "postal",
+    "npmFileMap": [{
+        "basePath": "/lib/",
+        "files": [
+            "postal.js",
+            "postal.min.js",
+            "basic/postal.basic.js",
+            "basic/postal.basic.min.js",
+            "strategies-add-on/postal.strategies.js",
+            "strategies-add-on/postal.strategies.min.js"
+        ]
+    }]
 }
