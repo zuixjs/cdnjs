@@ -1,5 +1,6 @@
 {
   "name": "dc",
+  "filename": "dc.min,js",
   "version": "1.7.0",
   "license": "Apache-2.0",
   "copyright": "2014",
