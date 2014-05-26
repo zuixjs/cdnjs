@@ -1,8 +1,8 @@
 {
   "name": "bootstrap-rtl",
   "filename": "css/bootstrap-rtl.min.css",
-  "description": "Right-to-left (RTL) theme for Boostrap 3.",
-  "version": "3.1.2",
+  "description": "Right-to-left (RTL) theme for Boostrap 3. Note: due to a versioning error at source, v3.1.2 is identical to v3.1.1. Info: https://github.com/cdnjs/cdnjs/pull/3259",
+  "version": "3.1.1",
   "homepage": "http://github.com/ratnic/bootstrap-rtl",
   "author": "Morteza Ansarinia <morteza@ratnic.se>",
   "keywords": [
