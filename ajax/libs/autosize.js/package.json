@@ -29,14 +29,5 @@
       "type": "MIT",
       "url": "http://www.opensource.org/licenses/mit-license.php"
     }
-  ],
-  "npmName": "jquery-autosize",
-  "npmFileMap": [
-    {
-      "basePath": "/",
-      "files": [
-        "jquery.autosize.min.js"
-      ]
-    }
   ]
 }
