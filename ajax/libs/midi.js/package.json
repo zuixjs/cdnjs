@@ -1,5 +1,5 @@
 {
-  "name": "midi",
+  "name": "midi.js",
   "filename" : "midi.min.js",
   "version": "0.3.0",
   "description": "Library to assist in creating HTML5 MIDI apps.",
