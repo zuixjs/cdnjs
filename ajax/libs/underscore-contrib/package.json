@@ -17,5 +17,12 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/documentcloud/underscore-contrib.git"
-    }
+    },
+    "npmName": "underscore-contrib",
+    "npmFileMap": [{
+        "basePath": "/dist/",
+        "files": [
+            "*"
+        ]
+    }]
 }
