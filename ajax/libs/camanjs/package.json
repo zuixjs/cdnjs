@@ -24,6 +24,13 @@
            "type": "git",
            "url": "https://github.com/meltingice/CamanJS" 
        } 
-   ]
+   ],
+   "npmName": "caman",
+   "npmFileMap": [{
+        "basePath": "/dist/",
+        "files": [
+            "*"
+        ]
+   }]
 
 }
