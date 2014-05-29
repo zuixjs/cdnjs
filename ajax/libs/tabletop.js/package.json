@@ -15,5 +15,13 @@
     "repository": {
       "type": "git",
       "url": "git://github.com/jsoma/tabletop.git"
-    }
+    },
+    "npmName": "tabletop",
+    "npmFileMap": [{
+        "basePath": "/src/",
+        "files": [
+            "tabletop.js",
+            "backbone.tabletopSync.js"
+        ]
+    }]
 }

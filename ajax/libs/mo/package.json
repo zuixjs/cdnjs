@@ -21,5 +21,25 @@
         "AMD",
         "oz",
         "ozjs"
-    ]
+    ],
+    "npmName": "mo",
+    "npmFileMap": [{
+        "basePath": "/",
+        "files": [
+            "browsers.js",
+            "console.js",
+            "cookie.js",
+            "domready.js",
+            "easing.js",
+            "key.js",
+            "lang.js",
+            "mainloop.js",
+            "network.js",
+            "template.js",
+            "easing/*.js",
+            "lang/*.js",
+            "network/*.js",
+            "template/*.js"
+        ]
+    }]
 }
