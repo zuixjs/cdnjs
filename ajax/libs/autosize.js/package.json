@@ -1,7 +1,7 @@
 {
   "name": "autosize.js",
   "filename": "jquery.autosize.min.js",
-  "version": "1.18.9",
+  "version": "1.18.4",
   "author": "Jack Moore",
   "description": "Automatically adjust textarea height based on user input.",
   "homepage": "http://www.jacklmoore.com/autosize",
@@ -31,11 +31,13 @@
     }
   ],
   "npmName": "jquery-autosize",
-  "npmFileMap": [{
-    "basePath": "/",
-    "files": [
+  "npmFileMap": [
+    {
+      "basePath": "/",
+      "files": [
         "jquery.autosize.js",
         "jquery.autosize.min.js"
-    ]
-  }]
+      ]
+    }
+  ]
 }
