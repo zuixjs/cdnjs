@@ -1,6 +1,6 @@
 {
     "name": "jqgrid",
-    "filename": "jquery.jqGrid.min.js",
+    "filename": "js/jquery.jqGrid.min.js",
     "version": "4.6.0",
     "description": "A customisable grid control for using with jQuery in web applications.",
     "homepage": "http://www.trirand.com/blog/",
