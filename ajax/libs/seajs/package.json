@@ -16,14 +16,16 @@
   },
   "repository": {
     "type": "git",
-    "url" : "git://github.com/seajs/seajs.git"
+    "url": "git://github.com/seajs/seajs.git"
   },
   "main": "./lib/sea-node.js",
   "npmName": "seajs",
-  "npmFileMap": [{
-    "basePath": "/dist/",
-    "files": [
+  "npmFileMap": [
+    {
+      "basePath": "/dist/",
+      "files": [
         "*"
-    ]
-  }]
+      ]
+    }
+  ]
 }
