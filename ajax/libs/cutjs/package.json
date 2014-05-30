@@ -19,10 +19,12 @@
     "url": "https://github.com/piqnt/cutjs.git"
   },
   "npmName": "cutjs",
-  "npmFileMap": [{
-    "basePath": "/dist/",
-    "files": [
-      "*.js"
-    ]
-  }]
+  "npmFileMap": [
+    {
+      "basePath": "/dist/",
+      "files": [
+        "*.js"
+      ]
+    }
+  ]
 }
