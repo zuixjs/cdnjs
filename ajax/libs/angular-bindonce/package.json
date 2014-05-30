@@ -25,5 +25,13 @@
     "binding",
     "watcher",
     "bindonce"
-  ]
+  ],
+  "npmName": "angular-bindonce",
+  "npmFileMap": [{
+    "basePath": "/",
+    "files": [
+        "bindonce.js",
+        "bindonce.min.js"
+    ]
+  }]
 }
