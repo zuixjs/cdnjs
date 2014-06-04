@@ -8,13 +8,15 @@
     "url": "http://github.com/erming/tabcomplete"
   },
   "npmName": "tabcomplete",
-  "npmFileMap": [{
-    "basePath": "/",
-    "files": [
-      "tabcomplete.js",
-      "tabcomplete.min.js"
-    ]
-  }],
+  "npmFileMap": [
+    {
+      "basePath": "/",
+      "files": [
+        "tabcomplete.js",
+        "tabcomplete.min.js"
+      ]
+    }
+  ],
   "homepage": "https://github.com/erming/tabcomplete",
   "keywords": [
     "tab",
