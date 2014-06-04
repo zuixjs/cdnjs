@@ -1,7 +1,7 @@
 {
   "name": "kwargsjs",
   "filename": "kwargs.js",
-  "version": 0,
+  "version": "1.0.1",
   "description": "Smart argument management for javascript",
   "main": "kwargs.js",
   "keywords": [

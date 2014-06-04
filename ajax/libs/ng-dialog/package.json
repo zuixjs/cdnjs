@@ -1,6 +1,6 @@
 {
   "name": "ng-dialog",
-  "version": 0,
+  "version": "0.1.6",
   "description": "Modals and popups provider for Angular.js applications",
   "filename": "ng-dialog.min.js",
   "homepage": "http://likeastore.github.io/ngDialog/",
