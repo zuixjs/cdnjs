@@ -15,5 +15,13 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jacoborus/nanobar.git"
-  }
+  },
+  "npmName": "nanobar",
+  "npmFileMap": [{
+    "basePath": "/",
+    "files": [
+        "nanobar.js",
+        "nanobar.min.js"
+    ]
+  }]
 }
