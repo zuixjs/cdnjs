@@ -46,5 +46,12 @@
   "directories": {
     "doc": "docs",
     "test": "tests"
-  }
+  },
+  "npmName": "platform",
+  "npmFileMap": [{
+    "basePath": "/",
+    "files": [
+        "platform.js"
+    ]
+  }]
 }
