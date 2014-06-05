@@ -19,5 +19,12 @@
            "type": "git",
            "url": "https://github.com/guillaumepotier/Parsley.js" 
        } 
-   ]
+   ],
+   "npmName": "parsleyjs",
+   "npmFileMap": [{
+        "basePath": "/dist/",
+        "files": [
+            "*.js"
+        ]
+   }]
 }
