@@ -17,13 +17,15 @@
   "homepage": "http://lvivski.com",
   "license": "MIT",
   "npmName": "anima",
-  "npmFileMap": [{
-    "basePath": "/",
-    "files": [
+  "npmFileMap": [
+    {
+      "basePath": "/",
+      "files": [
         "anima.js",
         "anima.min.js",
         "anima.min.js.map",
         "jquery.anima.js"
-    ]
-  }]
+      ]
+    }
+  ]
 }
