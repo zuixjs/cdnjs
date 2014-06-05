@@ -19,5 +19,13 @@
            "type": "git",
            "url": "https://github.com/HubSpot/odometer"
        }
-   ]
+   ],
+   "npmName": "odometer",
+   "npmFileMap": [{
+        "basePath": "/",
+        "files": [
+            "odometer.js",
+            "odometer.min.js"
+        ]
+   }]
 }
