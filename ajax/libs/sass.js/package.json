@@ -23,13 +23,13 @@
   "npmName": "sass.js",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "/dist",
       "files": [
-        "dist/sass.worker.js",
-        "dist/worker.js",
-        "dist/sass.min.js",
-        "dist/worker.min.js",
-        "dist/sass.js"
+        "sass.worker.js",
+        "worker.js",
+        "sass.min.js",
+        "worker.min.js",
+        "sass.js"
       ]
     }
   ]
