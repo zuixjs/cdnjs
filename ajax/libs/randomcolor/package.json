@@ -1,6 +1,6 @@
 {
   "name": "randomcolor",
-  "filename": "randomcolor.min.js",
+  "filename": "randomColor.min.js",
   "version": "0.1.1",
   "description": "A color generator for JavaScript.",
   "keywords": [
