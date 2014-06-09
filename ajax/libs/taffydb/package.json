@@ -36,5 +36,13 @@
       "email": "mcwhittemore@gmail.com"
     }
   ],
-  "license": "BSD"
+  "license": "BSD",
+  "npmName": "taffydb",
+  "npmFileMap": [{
+    "basePath": "/",
+    "files": [
+        "taffy.js",
+        "taffy-min.js"
+    ]
+  }]
 }
