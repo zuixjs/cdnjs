@@ -1,6 +1,6 @@
 {
   "name": "hover.css",
-  "filename": "hover-min.css",
+  "filename": "css/hover-min.css",
   "description": "A collection of CSS3 powered hover effects to be applied to call to actions, buttons, logos, featured images and so on.",
   "version": "1.0.8",
   "repository": {
