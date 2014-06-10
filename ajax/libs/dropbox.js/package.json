@@ -16,6 +16,15 @@
             "web": "http://www.costan.us"
         }
     ],
+    "npmName": "dropbox",
+    "npmFileMap": [{
+      "basePath": "/lib/",
+      "files": [
+        "dropbox.js",
+        "dropbox.min.js",
+        "dropbox.min.map"
+      ]
+    }],
     "repositories": [
         {
             "type": "git",
