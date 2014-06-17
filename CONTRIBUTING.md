@@ -14,9 +14,11 @@ Libraries that are actively-maintained on [npmjs](http://npmjs.org) can be confi
 
 cdnjs will host any production version of any JavaScript (JS) or Cascading Style Sheets (CSS) library, subject to appropriate licence permissions.
 
-cdnjs will host JS, CSS, SWF and library image files.
+cdnjs will host JS, CSS, SWF and library image files. Note: cdnjs does not currently serve HTML or PHP files.
 
-Note: cdnjs does not currently serve HTML or PHP files.
+New libraries should have some indicator of popularity (e.g., GitHub stars or watchers) and purpose (e.g., a jQuery plugin to display images).
+
+cdnjs maintainers and peer-reviewers need to know the origin of new libraries and updates (i.e., where you downloaded the files from).
 
 ## 2. Configure auto-update
 
