@@ -8,7 +8,7 @@
 
 cdnjs relies on user-submitted pull requests and automatic updating to populate and update libraries. With hundreds of contributors and thousands of commits, it is very important that new libraries are added to cdnjs using the correct procedure.
 
-Libraries that are actively-maintained on [npmjs](http://npmjs.org) can be configured to be _automatically_ update. Other libraries that are not on npmjs should be updated _manually_.
+Libraries that are actively-maintained on [npmjs](http://npmjs.org) can be configured to be _automatically_ updated. Other libraries that are not on npmjs should be updated _manually_.
 
 ## 1. Policy, rules and guidelines
 
