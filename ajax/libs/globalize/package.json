@@ -1,0 +1,21 @@
+{
+    "name": "globalize",
+    "filename": "globalize.min.js",
+    "version": "0.1.1",
+    "description": "JavaScript globalization and localization. Formats and parses strings, dates and numbers in over 350 cultures.",
+    "homepage": "https://github.com/jquery/globalize",
+    "keywords": [
+               "globalize",
+               "localization",
+               "globalization"
+               ],
+    "devDependencies": {
+        },
+   "repositories": [
+              {
+                         "type": "git",
+                         "url": "https://github.com/jquery/globalize"
+                     }
+          ]
+
+}

@@ -1,0 +1,10 @@
+{
+    "name": "bootswatch",
+    "filename": "css/custom/bootstrap.min.css",
+    "version": "3.1.1-1",
+    "description": "Bootswatch",
+    "homepage": "http://bootswatch.com/",
+    "keywords": [
+       "css"
+    ]
+}

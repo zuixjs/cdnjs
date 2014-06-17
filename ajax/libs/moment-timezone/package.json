@@ -1,0 +1,39 @@
+{
+  "name": "moment-timezone",
+  "filename": "moment-timezone.min.js",
+  "version": "0.0.6",
+  "description": "Timezone plugin for Moment.js.",
+  "homepage": "http://momentjs.com/timezone",
+  "keywords": [
+    "date",
+    "moment",
+    "timezone",
+    "time"
+  ],
+  "maintainers": [
+    {
+      "name": "Tim Wood"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/timrwood/moment-timezone.git"
+    }
+  ],
+  "npmName": "moment-timezone",
+  "npmFileMap": [
+    {
+      "basePath": "/",
+      "files": [
+        "moment-timezone.js"
+      ]
+    },
+    {
+      "basePath": "/min/",
+      "files": [
+        "moment-timezone.min.js"
+      ]
+    }
+  ]
+}
