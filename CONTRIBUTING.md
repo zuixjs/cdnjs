@@ -78,6 +78,14 @@ The auto-update process will locate `dist` (specified in `basePath`) and copy *.
 
 &hellip;where `x.y.z` is the library version number, extracted from the `package.json` on npmjs.
 
+### 2.4 Updating `package.json` with auto-update information
+
+When you locate a cdnjs library with a corresponding npmjs presence, the relevant `package.json` should be updated.
+
+-Refer to 5.* below for instructions on forking, updating and committing changes to cdnjs.-
+
+Coming soon - please refer to `README.md`.
+
 ## 3. Update existing library with new version
 
 Coming soon - please refer to `README.md`.
@@ -86,16 +94,22 @@ Coming soon - please refer to `README.md`.
 
 Coming soon - please refer to `README.md`.
 
-## 5. Fork the cdnjs repository
+## 5. Adding and updating cdnjs
+
+### 5.1 Fork the cdnjs repository
 
 Coming soon - please refer to `README.md`.
 
-## 6. Pre-flight checks
+### 5.2 Pre-flight checks
 
 Coming soon - please refer to `README.md`.
 
-## 7. Create a pull request
+### 5.3 Create a pull request
 
 Coming soon - please refer to `README.md`.
 
-## 8. Create an issue
+### 5.4 Pull request follow-up
+
+Coming soon - please refer to `README.md`.
+
+## 6. Create an issue
