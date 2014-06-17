@@ -1,8 +1,6 @@
 # Contributing to cdnjs Library
 
-**Please read this document before contributing to cdnjs - thank you.**
-
-## 0.0 Overview
+## 0. Overview
 
 [cdnjs](http://github.com/cdnjs/cdnjs) is the GitHub repository mirroring all library assets on [cdnjs.cloudflare.com](http://cdnjs.cloudflare.com).
 
@@ -10,7 +8,7 @@ cdnjs relies on user-submitted pull requests and automatic updating to populate 
 
 Libraries that are actively-maintained on [npmjs](http://npmjs.org) can be configured to be _automatically_ updated. Other libraries that are not on npmjs should be updated _manually_.
 
-## 1.0 Policy, rules and guidelines
+## 1. Policy, rules and guidelines
 
 cdnjs will host any production version of any JavaScript (JS) or Cascading Style Sheets (CSS) library, subject to appropriate licence permissions.
 
@@ -20,7 +18,7 @@ New libraries should have some indicator of popularity (e.g., GitHub stars or wa
 
 cdnjs maintainers and peer-reviewers need to know the origin of new libraries and updates (i.e., where you downloaded the files from).
 
-## 2.0 Configure auto-update
+## 2. Configure auto-update
 
 ### 2.1 Auto-update overview
 
@@ -82,8 +80,22 @@ The auto-update process will locate `dist` (specified in `basePath`) and copy *.
 
 ## 3. Update existing library with new version
 
-Coming soon.
+Coming soon - please refer to `README.md`.
 
 ## 4. Create a new library
 
-Coming soon.
+Coming soon - please refer to `README.md`.
+
+## 5. Fork the cdnjs repository
+
+Coming soon - please refer to `README.md`.
+
+## 6. Pre-flight checks
+
+Coming soon - please refer to `README.md`.
+
+## 7. Create a pull request
+
+Coming soon - please refer to `README.md`.
+
+## 8. Create an issue
