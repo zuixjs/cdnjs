@@ -4,11 +4,11 @@
 
 [cdnjs](http://github.com/cdnjs/cdnjs) is the repository mirroring all library assets on [cdnjs.cloudflare.com](http://cdnjs.cloudflare.com). [Thomas Davis](https://twitter.com/neutralthoughts) and [Ryan Kirkman](https://twitter.com/ryan_kirkman) created cdnjs, [Drew Freyling](http://decompile.it/blog/) and [Pete Cooper](http://petecooper.org) are maintainers.
 
-We will host any production version of any library, subject to licence permissions.
+cdnjs will host any production version of any JavaScript/CSS library, subject to licence permissions.
 
   * Beta, release candidate and alpha releases are not usually considered ready for full production status. Requests for pre-release versions of libraries _may_ be declined after peer review.
 
-Please raise a pull request for a _new_ library addition proposal. Likewise, please raise a pull request for an _older_ production version of a existing library if your site still uses it.
+Please raise a new pull request for new library additions and existing library updates, following the instructions below.
 
 ## Adding a new or updating an existing library
 
@@ -31,7 +31,7 @@ You should consider the following when adding to or updating the library:
 * Filenames should _not_ include a version number and be _lowercase_.
   * This is OK: `useful.min.js`, but this is not: `useful-2.0.1.min.js`.
 
-* JavaScript & CSS files should be minified to reduce network and browser overhead.
+* JavaScript & CSS files should be minified to reduce network traffic and browser overhead.
   * If the library doesn't already provide a minified version, cdnjs's preferred JavaScript minifier is [UglifyJS](http://marijnhaverbeke.nl/uglifyjs "UglifyJS")
 
 * If you are updating a library, please try to maintain consistency with the existing file and directory structure.
@@ -39,14 +39,17 @@ You should consider the following when adding to or updating the library:
 
 ## Create or update `package.json`
 
-Each library has a corresponding `package.json`, written in `npm` format (see `test/schemata/npm-package.json` for details or use another `package.json` to crib from - it's pretty self-explanatory).
+Each library has a corresponding `package.json`, written in `npm` format (see `test/schemata/npm-package.json` for details or use another `package.json` to crib from - it's pretty self-explanatory). When an existing library is updated, the details in `package.json` should be updated where required.
 
-When an existing library is updated, the details in `package.json` should be updated where required. For example, if a new version of the library is added, the version number may need changing.
+For example, if a new version of the library is added, the version number may need changing. Likewise, if you're adding `npm` update information to a library, this is done in `package.json`.
 
 ## Install `npm test` dependencies
 
-If you don't have vows installed do so by running `npm install -g vows`.
+If you don't have `vows` installed do so by running:
 
+```
+npm install -g vows
+```
 
 ## Run `npm test` to check all is well
 
@@ -54,9 +57,10 @@ If you're updating the library outside of `npm` or the GitHub browser, you shoul
 
 If you run `npm test` and see no errors, all is well; resolve any errors before you raise your pull request and re-run `npm test` to ensure everything works.
 
-If you see an error then run `npm install` before running `npm test` 
+If you see an error then run `npm install` before running `npm test:
+
 ```
-sh: vows: command not found
+vows: command not found
 npm ERR! Test failed.  See above for more details.
 npm ERR! not ok code 0
 ```

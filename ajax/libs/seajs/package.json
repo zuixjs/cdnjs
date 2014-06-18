@@ -1,7 +1,7 @@
 {
   "name": "seajs",
   "filename": "sea.js",
-  "version": "2.2.1",
+  "version": "2.3.0",
   "description": "A Module Loader for the Web",
   "homepage": "http://seajs.org/",
   "keywords": [
@@ -16,14 +16,16 @@
   },
   "repository": {
     "type": "git",
-    "url" : "git://github.com/seajs/seajs.git"
+    "url": "git://github.com/seajs/seajs.git"
   },
   "main": "./lib/sea-node.js",
   "npmName": "seajs",
-  "npmFileMap": [{
-    "basePath": "/dist/",
-    "files": [
+  "npmFileMap": [
+    {
+      "basePath": "/dist/",
+      "files": [
         "*"
-    ]
-  }]
+      ]
+    }
+  ]
 }
