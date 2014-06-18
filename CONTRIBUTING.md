@@ -102,8 +102,9 @@ Changes to cdnjs happen with the following process:
 * make the required changes to the forked repository
 * run the pre-flight `npm` check, resolve any errors
 * raise a pull request with appropriate information
+* remove your forked repository after the merge
 
-If these steps are followed, and everything works out, the merge process is usually efficient and your library update will go live soon afterwards.
+If these steps are followed, and everything works out, the update process is usually efficient and your library update will go live soon afterwards.
 
 ### 5.1 Fork the cdnjs repository
 
