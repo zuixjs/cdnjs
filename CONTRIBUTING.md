@@ -108,7 +108,7 @@ If these steps are followed, and everything works out, the update process is usu
 
 ### 5.1 Fork the cdnjs repository
 
-Forking the cdnjs repository is easy. Be aware that it is one of the largest repositories on GitHub (about 3GB), and this should be a consideration if you want to clone it to your computer.
+Forking the cdnjs repository is easy. Be aware that it is one of the largest repositories on GitHub (>3GB), and this should be a consideration if you choose to clone it to your computer.
 
 To fork the repository via your browser, visit this link:
 
@@ -123,6 +123,20 @@ https://github.com/your-github-username/cdnjs
 &hellip;where your-github-username is, unsurprisingly, your GitHub username.
 
 ### 5.2 Make changes to your fork
+
+Change are made to your fork of cdnjs. These changes contribute to a pull request, which may be merged after examination by the cdnjs maintainers.
+
+Changes to your fork can be made at GitHub using your browser, or on your computer using a `git` command line or graphical user interface.
+
+If you intend to make a _single, simple contribution_ to cdnjs you will likely find the browser experience more straightforward.
+
+If you intend to make _numerous contributions_ to cdnjs, you may find a local clone of your forked repository a better route.
+
+#### 5.2.1 Make changes using your browser
+
+Coming soon - please refer to `README.md`.
+
+#### 5.2.2 Make changes on a local repo clone
 
 Coming soon - please refer to `README.md`.
 
