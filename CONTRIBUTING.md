@@ -96,6 +96,15 @@ Coming soon - please refer to `README.md`.
 
 ## 5. Adding and updating cdnjs
 
+Changes to cdnjs happen with the following process:
+
+* fork the cdnjs repository to your GitHub account
+* make the required changes to the forked repository
+* run the pre-flight `npm` check, resolve any errors
+* raise a pull request with appropriate information
+
+If these steps are followed, and everything works out, the merge process is usually efficient and your library update will go live soon afterwards.
+
 ### 5.1 Fork the cdnjs repository
 
 Coming soon - please refer to `README.md`.
