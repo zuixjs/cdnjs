@@ -112,15 +112,13 @@ Forking the cdnjs repository is easy. Be aware that it is one of the largest rep
 
 To fork the repository via your browser, visit this link:
 
-```
+
 [https://github.com/cdnjs/cdnjs/fork](https://github.com/cdnjs/cdnjs/fork)
-```
+
 
 Select your GitHub account for the destination and wait for the forking process to complete. Assuming you saw no errors, you should be able to access your fork of cdnjs from your own GitHub account:
 
-```
 https://github.com/your-github-username/cdnjs
-```
 
 &hellip;where your-github-username is, unsurprisingly, your GitHub username.
 
