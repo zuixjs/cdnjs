@@ -1,0 +1,10 @@
+{
+    "name": "font-awesome",
+    "filename": "css/font-awesome.min.css",
+    "version": "4.0.3",
+    "description": "Font Awesome",
+    "homepage": "http://fontawesome.io/",
+    "keywords": [
+       "css", "font", "icons"
+    ]
+}
