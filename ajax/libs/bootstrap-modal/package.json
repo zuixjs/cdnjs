@@ -1,6 +1,6 @@
 {
     "name": "bootstrap-modal",
-    "filename": "bootstrap-modal.pack.js",
+    "filename": "js/bootstrap-modalmanager.min.js",
     "version": "2.2.5",
     "description": "Extends the default Bootstrap Modal class.",
     "homepage": "https://github.com/jschr/bootstrap-modal",
