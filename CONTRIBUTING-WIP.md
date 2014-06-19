@@ -138,7 +138,21 @@ This is not always possible with major or minor version changes, especially with
 
 #### 5.2.2 Make changes using your browser
 
-Coming soon - please refer to `README.md`.
+The GitHub website provides an easy-to-use interface to add and update simple libraries. A library containing a single or small number of text files is an ideal candidate for this route.
+
+In your fork of cdnjs, navigate to `ajax/libs`:
+
+https://github.com/your-github-username/cdnjs/tree/master/ajax/libs
+
+&hellip;where, again, `your-github-username` is your GitHub username.
+
+##### 5.2.2.1 Update a library using your browser
+
+If you are updating an existing library, find it from the list. Click on the library name; you'll find a `package.json` file and one or more numbered directories. Each directory contains that version of the library, and that version _only_.
+
+To add a new version of a library, create a new directory named after the new library version by clicking the `+` link near the top.
+
+*[INCOMPLETE]*
 
 #### 5.2.3 Make changes on a local repo clone
 
