@@ -1,6 +1,6 @@
 {
     "name": "backbone.layoutmanager",
-    "filename": "backbone.layoutmanager.js",
+    "filename": "backbone.layoutmanager.min.js",
     "version": "0.9.5",
     "description": "A layout and template manager for Backbone.js applications.",
     "homepage": "http://layoutmanager.org",
