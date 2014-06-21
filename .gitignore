@@ -1,9 +1,9 @@
-temp/
-*.swp
-*.log
-node_modules
 *~
-.DS_STORE
+*.log
+*.swp
 .DS_Store
 .htaccess
 .idea
+.md
+node_modules/
+temp/
