@@ -35,4 +35,9 @@
   "dependencies": {
     "jquery": ">=1.4"
   }
+  "npmName": "jgrowl",
+  "npmFileMap": [{
+    "basePath": "/",
+    "files": ["*.js", "*.css", "*.map"]
+  }],
 }
