@@ -21,4 +21,11 @@
            "url": "https://github.com/furf/jquery-ui-touch-punch.git"
        } 
    ]
+  "npmName": "jquery-ui-touch-punch",
+  "npmFileMap": [{
+    "basePath": "/",
+    "files": [
+      "jquery.ui.touch-punch.min.js"
+    ]
+  }],
 }
