@@ -38,6 +38,10 @@
   "npmName": "jgrowl",
   "npmFileMap": [{
     "basePath": "/",
-    "files": ["*.js", "*.css", "*.map"]
+    "files": [
+    	"*.js",
+    	"*.css",
+    	"*.map"
+    ]
   }],
 }
