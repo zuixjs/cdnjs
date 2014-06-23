@@ -1,0 +1,37 @@
+{
+    "name": "metismenu",
+    "npmName": "metismenu",
+    "npmFileMap": [
+        {
+            "basePath": "/dist/",
+            "files": [
+                "jquery.metisMenu.*"
+            ]
+        }
+    ],
+    "filename": "jquery.metisMenu.min.js",
+    "version": "1.0.3",
+    "description": "Easy menu jQuery plugin for Twitter Bootstrap 3",
+    "homepage": "https://github.com/onokumus/metisMenu",
+    "keywords": [
+        "twitter",
+        "bootstrap",
+        "twbs",
+        "jquery",
+        "menu",
+        "accordion",
+        "toggle",
+        "metis",
+        "metisMenu"
+    ],
+    "author": {
+        "name": "Osman Nuri Okumuş",
+        "email": "onokumus@gmail.com",
+        "url": " http://onokumus.com/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/onokumus/metisMenu.git"
+    },
+    "license": "MIT"
+}
