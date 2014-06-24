@@ -1,6 +1,6 @@
 {
   "name": "joyride",
-  "filename": "jquery.joyride-2.1.js",
+  "filename": "jquery.joyride.js",
   "version": "2.1.0",
   "description": "Joyride is an easy to configure jQuery site tour wizard.",
   "repository": {
