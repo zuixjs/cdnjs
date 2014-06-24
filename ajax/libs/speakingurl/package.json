@@ -98,5 +98,12 @@
     },
     "engines": {
         "node": ">=0.10.0"
-    }
+    },
+  "npmName": "speakingurl",
+  "npmFileMap": [{
+    "basePath": "/",
+    "files": [
+      "speakingurl.min.js"
+    ]
+  }]
 }
