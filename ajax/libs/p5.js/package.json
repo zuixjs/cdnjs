@@ -3,7 +3,7 @@
   "filename": "p5.min.js",
   "npmName": "p5",
   "npmFileMap": [
-   {
+    {
       "basePath": "/lib/",
       "files": [
         "p5.min.js",

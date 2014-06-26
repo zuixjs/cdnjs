@@ -35,10 +35,12 @@
   "dependencies": {},
   "devDependencies": {},
   "npmName": "jssha",
-  "npmFileMap": [{
-    "basePath": "/src/",
-    "files": [
-      "*.js"
-    ]
-  }]
+  "npmFileMap": [
+    {
+      "basePath": "/src/",
+      "files": [
+        "*.js"
+      ]
+    }
+  ]
 }
