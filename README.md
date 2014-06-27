@@ -2,7 +2,9 @@
 
 # cdnjs Library Repository
 
-[cdnjs](http://github.com/cdnjs/cdnjs) is the repository mirroring all library assets on [cdnjs.cloudflare.com](http://cdnjs.cloudflare.com). [Thomas Davis](https://twitter.com/neutralthoughts) and [Ryan Kirkman](https://twitter.com/ryan_kirkman) created cdnjs, [Drew Freyling](http://decompile.it/blog/) and [Pete Cooper](http://petecooper.org) are maintainers.
+[cdnjs](http://github.com/cdnjs/cdnjs) is the repository mirroring all library assets on [cdnjs.cloudflare.com](http://cdnjs.cloudflare.com).
+
+[Thomas Davis](https://twitter.com/neutralthoughts) and [Ryan Kirkman](https://twitter.com/ryan_kirkman) created cdnjs, [Drew Freyling](http://decompile.it/blog/), [Peter Dave Hello](http://peterdavehello.org/) and [Pete Cooper](http://petecooper.org) are maintainers. [Juan Gallardo](http://www.jgallardo.me/) is our community moderator.
 
 cdnjs will host any production version of any JavaScript/CSS library, subject to licence permissions.
 
