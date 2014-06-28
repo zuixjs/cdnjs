@@ -4,6 +4,7 @@
 .DS_Store
 .htaccess
 .idea
+.less
 .md
 node_modules/
 temp/
