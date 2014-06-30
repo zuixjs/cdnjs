@@ -27,11 +27,13 @@
     "uglifycss": "0.0.8"
   },
   "npmName": "jquery.hashcash.io",
-  "npmFileMap": [{
+  "npmFileMap": [
+    {
       "basePath": "/",
       "files": [
-          "*.js",
-          "*.css"
+        "*.js",
+        "*.css"
       ]
-  }]
+    }
+  ]
 }
