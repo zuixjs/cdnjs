@@ -1,5 +1,14 @@
 {
     "name": "sizzle",
+    "npmName": "sizzle",
+    "npmFileMap": [
+      {
+        "basePath": "/dist/",
+        "files": [
+          "*"
+        ]
+      }
+    ],
     "filename": "sizzle.min.js",
     "version": "2.0.0",
     "description": "A pure-JavaScript, bottom-up CSS selector engine designed to be easily dropped in to a host library.",
