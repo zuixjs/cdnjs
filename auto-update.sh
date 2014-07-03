@@ -15,5 +15,6 @@ echo Starting auto update script
 echo Pushing new versions
 git add .
 git commit -am "Updated packages via auto-update.js"
+git pull --rebase
 git push
 
