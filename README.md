@@ -28,7 +28,7 @@ When you have forked the cdnjs repo, add your library to it. Libraries are store
 
 ## Conventions
 
-You should consider the following when adding to or updating the library:
+You should consider the following when adding to or updating the library, so that we can keep our project neat, clean and clear:
 
 * Filenames should _not_ include a version number and be _lowercase_.
   * This is OK: `useful.min.js`, but this is not: `useful-2.0.1.min.js`.
@@ -38,6 +38,17 @@ You should consider the following when adding to or updating the library:
 
 * If you are updating a library, please try to maintain consistency with the existing file and directory structure.
   * There will be occasions, particularly with major version increments, where this is not practical.
+
+* You should sync your local repositry with our master branch as new as possible, try to make the commits' parent be new.
+ * Please use `git pull --rebase` instead of `git pull`, use `git rebase upstream/master` instead of `git merge upstream/master`, so that we can avoid of meaningless merging.
+
+* Only do one thing in one commits, don't mix different things into the same commit.
+
+* Every commits should be meaningful, don't cut one thing into multiple commits.
+
+* Inspect your work by `git diff` & `git status` before commit your change.
+
+* Inspect your commit by `git log --stat` & `git log -p` before sending a pull request.
 
 ## Create or update `package.json`
 
@@ -69,6 +80,7 @@ npm ERR! not ok code 0
 
 ## Pull request pre-flight checks
 
+* Have you comply with our conventions?
 * Have you followed the library directory structure?
 * Does a valid and accurate `package.json` exist for the library?
 * Have you minified JavaScript and CSS?
