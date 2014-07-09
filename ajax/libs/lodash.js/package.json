@@ -1,11 +1,11 @@
 {
   "name": "lodash.js",
-  "npmName": "lodash",
+  "npmName": "velocity-animate",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "",
       "files": [
-        "*"
+        "jquery.velocity.js"
       ]
     }
   ],
