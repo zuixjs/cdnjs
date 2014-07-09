@@ -9,7 +9,7 @@
   "npmName": "velocity-animate",
   "npmFileMap": [
     {
-      "basePath": "",
+      "basePath": "/",
       "files": [
         "jquery.velocity.js"
       ]
