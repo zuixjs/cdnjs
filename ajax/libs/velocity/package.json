@@ -6,6 +6,15 @@
     "name" : "Julian Shapiro",
     "homepage" : "http://julian.com/"
   },
+  "npmName": "velocity-animate",
+  "npmFileMap": [
+    {
+      "basePath": "",
+      "files": [
+        "jquery.velocity.js"
+      ]
+    }
+  ],
   "maintainers": [
     {
       "name": "Julian Shapiro",
