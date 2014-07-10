@@ -12,9 +12,10 @@ echo npm install for good measure
 echo Starting auto update script
 /usr/local/bin/node auto-update.js run >> node.log
 
-echo Pushing new versions
-git add .
-git commit -am "Updated packages via auto-update.js"
-git pull --rebase
-git push
-
+echo Pushing new versionis if there is a real changing
+if [ "`git diff -w`" != "" ]; then
+    git add .
+    git commit -am "Updated packages via auto-update.js"
+    git pull --rebase
+    git push
+fi
