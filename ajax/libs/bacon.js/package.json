@@ -1,6 +1,6 @@
 {
   "name": "bacon.js",
-  "filename": "Bacon.js",
+  "filename": "Bacon.min.js",
   "version": "0.7.17",
   "author": "Juha Paananen",
   "description": "A small functional reactive programming lib for JavaScript.",
