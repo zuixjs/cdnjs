@@ -11,7 +11,10 @@
     {
       "basePath": "/",
       "files": [
-        "jquery.velocity.js"
+        "jquery.velocity.js",
+        "jquery.velocity.min.js",
+        "velocity.ui.js",
+        "velocity.ui.min.js"
       ]
     }
   ],
