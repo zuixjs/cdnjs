@@ -1,6 +1,6 @@
 {
   "name": "jszip",
-  "filename": "jszip.js",
+  "filename": "jszip.min.js",
   "version": "2.3.0",
   "description": "Create, read and edit .zip files with Javascript",
   "homepage": "http://stuk.github.io/jszip/",
