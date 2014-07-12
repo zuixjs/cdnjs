@@ -19,10 +19,33 @@
       "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
     }
   ],
+  "bugs": "https://github.com/Reactive-Extensions/RxJS/issues",
+  "jam": {
+    "main": "dist/rx.all.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt-cli": "*",
+    "grunt": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-connect": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-qunit": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-saucelabs": "*",
+    "load-grunt-tasks": "*"
+  },
   "keywords": [
     "LINQ",
     "FRP",
     "Reactive",
-    "Events"
-  ]
+    "Events",
+    "Rx",
+    "RxJS"
+  ],
+  "main": "rx.node.js",
+  "scripts": {
+    "test": "grunt"
+  }
 }
