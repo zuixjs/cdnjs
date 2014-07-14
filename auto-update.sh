@@ -16,6 +16,7 @@ echo Starting auto update script
 /usr/local/bin/node auto-update.js run >> node.log
 
 echo Pushing new versionis if there is a real changing
+git pull --rebase
 git push
 #if [ "`git diff -w`" != "" ]; then
 #    git add .
