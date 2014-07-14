@@ -7,7 +7,7 @@ echo Getting latest libraries
 git add .
 git commit -am "new auto update"
 ls
-git pull
+git pull --rebase
 
 echo npm install for good measure
 /usr/local/bin/npm install
