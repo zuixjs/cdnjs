@@ -11,9 +11,18 @@ git pull --rebase
 
 echo npm install for good measure
 /usr/local/bin/npm install
+/usr/local/bin/npm install -g vows
 
 echo Starting auto update script
 /usr/local/bin/node auto-update.js run >> node.log
+
+echo Starting npm test
+/usr/local/bin/npm test
+
+if [ "$?" != 0 ]; then
+    echo Something wrong, force exit.
+    exit 1
+fi
 
 echo Pushing new versionis if there is a real changing
 git pull --rebase
