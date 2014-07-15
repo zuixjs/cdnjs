@@ -231,7 +231,7 @@ var updateLibrary = function (pkg, cb) {
     }
     console.log('Checking versions for ' + pkg.npmName);
     request.get('http://registry.npmjs.org/' + pkg.npmName, function(result) {
-        async.eachSeries(_.pairs(result.body.versions), function(p, cb){
+        async.eachLimit(_.pairs(result.body.versions), 8, function(p, cb){
             var data = p[1];
             var version = p[0];
             updateLibraryVersion(pkg, data.dist.tarball, version, cb)
@@ -262,7 +262,7 @@ exports.run = function(){
     hipchat.message('green', 'Found ' + packages.length + ' npm enabled libraries');
     console.log('Found ' + packages.length + ' npm enabled libraries');
 
-    async.eachSeries(packages, updateLibrary, function(err) {
+    async.eachLimit(packages, 8, updateLibrary, function(err) {
         console.log('Auto Update Completed - ' + newVersionCount + ' versions were updated');
         hipchat.message('green', 'Auto Update Completed - ' + newVersionCount + ' versions were updated');
         fs.removeSync(path.join(__dirname, 'temp'))
