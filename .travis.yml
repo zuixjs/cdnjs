@@ -12,6 +12,7 @@ env:
     - secure: "zxdgeOM+coI3Vy8EF62l1H605bhXQgBMpBBvmI8hDCaPmI2jjoUu+hZ2zJ5s\nZls3d8Bl49ancshFzTLGvBC4AExB6QZYtCNbYLM6COPq91Na7EbwOOKMNvfj\nuWIsnKTkekl0v8N/Aib794eR+YdOggc3XPK9T/C4/qh3QUC1G0g="
 before_script:
 - "travis_retry gem install --version 0.8.0 faraday"
+- "travis_retry gem install fog-json"
 - "travis_retry gem install travis-artifacts"
 after_success:
 - "node ./build/packages.json.js"
