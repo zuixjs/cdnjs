@@ -18,3 +18,6 @@ after_success:
 - "node ./build/packages.json.js"
 - "travis-artifacts upload --path packages.json --target-path /"
 - "travis-artifacts upload --path rss --target-path /"
+
+notifications:
+  hipchat: 3339f2786b483d04c81375df9d5193@cdnjs
