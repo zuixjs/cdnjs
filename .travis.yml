@@ -1,5 +1,10 @@
 ---
 language: node_js
+
+cache:
+- bundler
+- apt
+
 node_js:
 - 0.10
 
