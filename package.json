@@ -15,7 +15,7 @@
   "dependencies": {
     "async": "~0.9",
     "clean-css": "~2.2",
-    "execSync": "~0.0",
+    "execSync": "~0.0.4",
     "fs-extra": "~0.10.0",
     "glob": "~4",
     "lodash": "~2.4",
