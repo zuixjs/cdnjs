@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/cdnjs/cdnjs.png?branch=master)](https://travis-ci.org/cdnjs/cdnjs) [![Dependency Status](https://david-dm.org/cdnjs/cdnjs.png?theme=shields.io)](https://david-dm.org/cdnjs/cdnjs) [![devDependency Status](https://david-dm.org/cdnjs/cdnjs/dev-status.png?theme=shields.io)](https://david-dm.org/cdnjs/cdnjs#info=devDependencies)
+[![Build Status](https://travis-ci.org/cdnjs/cdnjs.svg?branch=master)](https://travis-ci.org/cdnjs/cdnjs) [![Dependency Status](https://david-dm.org/cdnjs/cdnjs.svg?theme=shields.io)](https://david-dm.org/cdnjs/cdnjs) [![devDependency Status](https://david-dm.org/cdnjs/cdnjs/dev-status.svg?theme=shields.io)](https://david-dm.org/cdnjs/cdnjs#info=devDependencies)
 
 # cdnjs Library Repository
 
