@@ -47,7 +47,7 @@
 1. Please try to maintain consistency with the existing file and directory structure.
  * If you think the old tructure is **wrong**, or the structure obiviouslly changed in the new verion, please add notes in the commit log or pull request comment.
 
-2. Please don't forget to update the version info in its `package.json`.
+2. Please don't forget to update the version info to the latest stable version in its `package.json`.
 
 3. Make sure the main file, as known as the `filename` property in `package.json` is correct, different versions may use different filename.
 
