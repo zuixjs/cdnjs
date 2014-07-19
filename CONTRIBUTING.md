@@ -57,6 +57,7 @@
 * If there is an official `package.json`, please try to follow the official version, the best way is just copy from the official and do a little modify on it.
 * If there is **not** an official `package.json`, please **create** it by yourself, you should refer to [doc of package.json](https://www.npmjs.org/doc/package.json.html) orother lib's `package.json`, and the data should be as close as official data as possible.
  * If you will **create** its `package.json`, the indent of it **must** be `2 spaces`, others will be fine to follow official version or to use 2 spaces.
+ * Please use [JSONLint](http://jsonlint.com/) to validate your `package.json`.
 
 3. We use the directory/folder name and `name` property in `package.json` to identify a library, so this two string should be **totally** equal.
 
