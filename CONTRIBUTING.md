@@ -8,7 +8,7 @@
 * If you are going to open a issue about your lib(means you are the author/maintainer or one of the main authors/maintainers), please add `[author]` on the issue topic, we'll give it a higher priority to process.
 
 * Please tag abiviously related people or issues or commits on the issue as cc(carbon copy).
- * For example, @PeterDaveHello / #3388 / a75df22
+ * For example, [@PeterDaveHello](https://github.com/PeterDaveHello) / [#3388](https://github.com/cdnjs/cdnjs/issues/3388) / [51e1bd713f](https://github.com/cdnjs/cdnjs/commit/51e1bd713fa31fec271bbbcf565131e77536bdf2)
 
 
 ## B. pull request
