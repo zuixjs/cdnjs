@@ -63,7 +63,15 @@
 4. You **must** do `npm test` under the root directory of this project to make sure everything is fine.
 * Please refer to [Install npm test dependencies](https://github.com/cdnjs/cdnjs/blob/master/README.md#install-npm-test-dependencies) & [Run npm test to check all is well](https://github.com/cdnjs/cdnjs/blob/master/README.md#run-npm-test-to-check-all-is-well).
 
-### d. P.S.
+### d. pre-flight checks
+
+* Have you comply with our conventions?
+* Have you followed the library directory structure?
+* Does a valid and accurate `package.json` exist for the library?
+* Have you minified JavaScript and CSS?
+* Did `npm test` check out OK?
+
+### e. P.S.
 
 1. Because of the characteristic of git, it'll be better to do the work on Unix-like environment, like linux or BSD distrobutions(not including Mac).
 
