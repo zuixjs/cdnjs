@@ -84,4 +84,9 @@
 4. It'll always be better to compare the diff before commiting and sending pull request.
  * You can use `git diff` before commting, and use `git log -p` or `git show sha1hash` to compare the difference.
 
+5. Maintainters may force take the task away if there is no response on the pull request for days.
+
+6. It'll be better to update/sync your branch again by rebase after your PR was asked to modify something.
+ * You **must** do this if your PR was opened for more than 1 week, or maintainers may take the task away.
+
 Finally, thank you so much for your contribution, hope we can make the best cdn service on the world :)
