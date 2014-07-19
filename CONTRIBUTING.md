@@ -81,5 +81,7 @@
 
 3. If the library has **official** npm package, please try to maintain it with [npm auto update](https://github.com/cdnjs/cdnjs#enabling-npm-auto-update).
 
+4. It'll always be better to compare the diff before commiting and sending pull request.
+* You can use `git diff` before commting, and use `git log -p` or `git show sha1hash` to compare the difference.
 
 Finally, thank you so much for your contribution, hope we can make the best cdn service on the world :)
