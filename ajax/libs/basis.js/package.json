@@ -23,10 +23,12 @@
     }
   ],
   "npmName": "basis-library",
-  "npmFileMap": [{
-    "basePath": "/",
-    "files": [
-      "*.js"
-    ]
-  }]
+  "npmFileMap": [
+    {
+      "basePath": "/",
+      "files": [
+        "*.js"
+      ]
+    }
+  ]
 }
