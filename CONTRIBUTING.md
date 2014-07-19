@@ -61,7 +61,7 @@
 3. We use the directory/folder name and `name` property in `package.json` to identify a library, so this two string should be **totally** equal.
 
 4. You **must** do `npm test` under the root directory of this project to make sure everything is fine.
-* Please refer to [README](https://github.com/cdnjs/cdnjs/blob/master/README.md) file([Install npm test dependencies](https://github.com/cdnjs/cdnjs/blob/master/README.md#install-npm-test-dependencies) & [Run npm test to check all is well](https://github.com/cdnjs/cdnjs/blob/master/README.md#run-npm-test-to-check-all-is-well)).
+* Please refer to [Install npm test dependencies](https://github.com/cdnjs/cdnjs/blob/master/README.md#install-npm-test-dependencies) & [Run npm test to check all is well](https://github.com/cdnjs/cdnjs/blob/master/README.md#run-npm-test-to-check-all-is-well).
 
 ### d. P.S.
 
