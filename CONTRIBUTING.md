@@ -58,7 +58,7 @@
 * If there is **not** an official `package.json`, please **create** it by yourself, you should refer to [doc of package.json](https://www.npmjs.org/doc/package.json.html) orother lib's `package.json`, and the data should be as close as official data as possible.
  * If you will **create** its `package.json`, the indent of it **must** be `2 spaces`, others will be fine to follow official version or to use 2 spaces.
 
-3. We use the directory/folder name and `name` property in `package.json` to identify a library, so this two string should be `totally` equal.
+3. We use the directory/folder name and `name` property in `package.json` to identify a library, so this two string should be **totally** equal.
 
 4. You **must** do `npm test` under the root directory of this project to make sure everything is fine.
 * Please refer to [README](https://github.com/cdnjs/cdnjs/blob/master/README.md) file([Install npm test dependencies](https://github.com/cdnjs/cdnjs/blob/master/README.md#install-npm-test-dependencies) & [Run npm test to check all is well](https://github.com/cdnjs/cdnjs/blob/master/README.md#run-npm-test-to-check-all-is-well)).
