@@ -8,7 +8,7 @@
 * If you are going to open a issue about your lib(means you are the author/maintainer or one of the main authors/maintainers), please add `[author]` on the issue topic, we'll give it a higher priority to process.
 
 * Please tag abiviously related people or issues or commits on the issue as cc(carbon copy).
-* For example, [@PeterDaveHello](https://github.com/PeterDaveHello) / [#3388](https://github.com/cdnjs/cdnjs/issues/3388) / [51e1bd713f](https://github.com/cdnjs/cdnjs/commit/51e1bd713fa31fec271bbbcf565131e77536bdf2)
+ * For example, [@PeterDaveHello](https://github.com/PeterDaveHello) / [#3388](https://github.com/cdnjs/cdnjs/issues/3388) / [51e1bd713f](https://github.com/cdnjs/cdnjs/commit/51e1bd713fa31fec271bbbcf565131e77536bdf2)
 
 
 ## B. pull request
@@ -21,11 +21,11 @@
 * If you are the author or maintainer of the lib, please just add `[author]` in th pull request's title.
 
 3. If it doesn't have officially minified files, please minify all of the main css/js files, and give them a file name as `library.min.js`.
- * cdnjs's preferred JavaScript minifier is [UglifyJS](http://marijnhaverbeke.nl/uglifyjs "UglifyJS")
- * You can also use [web-minify-helper](https://github.com/PeterDaveHello/web-minify-helper "web-minify-helper") to help you do this automatically, it supports both css and js.
+* cdnjs's preferred JavaScript minifier is [UglifyJS](http://marijnhaverbeke.nl/uglifyjs "UglifyJS")
+* You can also use [web-minify-helper](https://github.com/PeterDaveHello/web-minify-helper "web-minify-helper") to help you do this automatically, it supports both css and js.
 
 4. Filenames should**not** include a version number and be**lowercase**.
- * This is OK: `useful.min.js`, but this is not: `useful-2.0.1.min.js`.
+* This is OK: `useful.min.js`, but this is not: `useful-2.0.1.min.js`.
 
 5. Only do**one** thing or**strongly related** works in one commits, don't mix different things into the same commit.
 
@@ -42,7 +42,7 @@
 ### b. updating an exist library
 
 1. Please try to maintain consistency with the existing file and directory structure.
- * If you think the old tructure is**wrong**, or the structure obiviouslly changed in the new verion, please add notes in the commit log or pull request comment.
+* If you think the old tructure is**wrong**, or the structure obiviouslly changed in the new verion, please add notes in the commit log or pull request comment.
 
 2. Please don't forget to update the version info in its `package.json`.
 
