@@ -65,7 +65,7 @@
 
 ### d. P.S.
 
-1. Because of the characteristic, it'll be better to do the work on Unix-like environment, like linux or BSD distrobutions(not including Mac).
+1. Because of the characteristic of git, it'll be better to do the work on Unix-like environment, like linux or BSD distrobutions(not including Mac).
 
 2. If you think this doc is too simple or casual, please refer to [README](https://github.com/cdnjs/cdnjs/blob/master/README.md) file or another detail version of [CONTRIBUTING-WIP](https://github.com/cdnjs/cdnjs/blob/master/CONTRIBUTING-WIP.md) doc.
  * If there are some conflicts between these files, the priority should be like this: README > CONTRIBUTING > CONTRIBUTING-WIP, and you can help us to open a issue and discuss, fix it.
