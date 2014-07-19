@@ -30,7 +30,7 @@
 5. Only do _one_ thing or _strongly related_ works in one commits, don't mix different things into the same commit.
 
 6. Every commits should be meaningful, don't cut one thing into multiple commits, unless you are trying to fix the exist problem in the master branch.
- * Like add
+ * Like adding a lib, but it has some problem, so come with many commits to fix, that will not be allowed.
 
 7. Do _not_ do the things which is _not_ related with your commit log.
 
