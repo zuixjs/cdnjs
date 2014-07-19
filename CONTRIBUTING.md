@@ -39,6 +39,9 @@
 
 9. If you are asked to modify the commits, please use `git commit --amend`/`git rebase` to update your commits, and use `--force` parameter with git push to update the pull request.
 
+10. You **should** go back to the PR page after you sent the PR for 15~25 mins, and check if you passed the CI build, if not, please take a look at the error message and try to fix, we **won't** merge a PR with built failed.
+ * Feel free to ask for help if you have no idea.
+
 ### b. updating an exist library
 
 1. Please try to maintain consistency with the existing file and directory structure.
