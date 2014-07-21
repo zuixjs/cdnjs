@@ -39,7 +39,7 @@ You should consider the following when adding to or updating the library, so tha
 * If you are updating a library, please try to maintain consistency with the existing file and directory structure.
   * There will be occasions, particularly with major version increments, where this is not practical.
 
-* You should sync your local repositry with our master branch as new as possible, try to make the commits' parent be new.
+* You should sync your local repository with our master branch as new as possible, try to make the commits' parent be new.
  * Please use `git pull --rebase` instead of `git pull`, use `git rebase upstream/master` instead of `git merge upstream/master`, so that we can avoid of meaningless merging.
 
 * Only do one thing in one commits, don't mix different things into the same commit.
