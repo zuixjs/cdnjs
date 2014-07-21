@@ -1,10 +1,14 @@
 {
   "name": "basket.js",
   "npmName": "basket.js",
-  "npmFileMap": [{
-    "basePath": "/dist/",
-    "files": ["*"]
-  }],
+  "npmFileMap": [
+    {
+      "basePath": "/dist/",
+      "files": [
+        "*"
+      ]
+    }
+  ],
   "filename": "basket.full.min.js",
   "version": "0.5.0",
   "description": "A script and resource loader for caching & loading scripts with localStorage",
@@ -14,12 +18,16 @@
     "loading",
     "localStorage"
   ],
-  "maintainers": [{
-    "name": "Addy Osmani",
-    "web": "http://addyosmani.com/"
-  }],
-  "repositories": [{
-    "type": "git",
-    "url": "https://github.com/addyosmani/basket.js"
-  }]
+  "maintainers": [
+    {
+      "name": "Addy Osmani",
+      "web": "http://addyosmani.com/"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/addyosmani/basket.js"
+    }
+  ]
 }
