@@ -1,5 +1,14 @@
 {
   "name": "rxjs",
+  "npmName": "rx",
+  "npmFileMap": [
+    {
+      "basePath": "/dist/",
+      "files": [
+        "*"
+      ]
+    }
+  ],
   "filename": "rx.min.js",
   "title": "Reactive Extensions for JavaScript (RxJS)",
   "description": "Library for composing asynchronous and event-based operations in JavaScript",
