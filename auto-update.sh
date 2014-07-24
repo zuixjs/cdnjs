@@ -8,7 +8,7 @@ git add .
 git diff --quiet --exit-code --cached || git commit -m 'bla'
 ls
 git pull origin master
-git merge master
+git rebase master
 
 echo npm install for good measure
 /usr/local/bin/npm install
