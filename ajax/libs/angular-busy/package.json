@@ -30,11 +30,13 @@
     "indicator"
   ],
   "npmName": "angular-busy",
-  "npmFileMap": [{
+  "npmFileMap": [
+    {
       "basePath": "/dist/",
       "files": [
-          "*.js",
-          "*.css"
+        "*.js",
+        "*.css"
       ]
-  }]
+    }
+  ]
 }
