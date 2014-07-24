@@ -4,9 +4,7 @@ set -e
 cd /root/cdnjs
 echo Getting latest libraries
 
-echo 1
 git add .
-echo 2
 git commit -am "new auto update"
 ls
 git pull origin master
