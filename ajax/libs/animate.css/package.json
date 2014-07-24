@@ -19,5 +19,13 @@
             "type": "git",
             "url": "https://github.com/daneden/animate.css"
         }
-    ]
+    ],
+    "npmName": "animate.css",
+    "npmFileMap": [{
+        "basePath": "/",
+        "files": [
+            "animate.css",
+            "animate.min.css"
+        ]
+    }]
 }
