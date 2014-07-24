@@ -5,7 +5,7 @@ cd /root/cdnjs
 echo Getting latest libraries
 
 git add .
-git commit -am "new auto update"
+git diff --quiet --exit-code --cached || git commit -m 'bla'
 ls
 git pull origin master
 git merge master
@@ -26,7 +26,7 @@ if [ "$?" != 0 ]; then
 fi
 
 git add .
-git commit -am "Updated packages via NPM auto-update.js"
+git diff --quiet --exit-code --cached || git commit -am "Updated packages via NPM auto-update.js"
 echo Pushing new versionis if there is a real changing
 git push origin autoupdate
 #if [ "`git diff -w`" != "" ]; then
