@@ -14,11 +14,13 @@
   "author": "Jimmy Yuen Ho Wong <wyuenho@gmail.com>",
   "license": "MIT",
   "npmName": "backbone-pageable",
-  "npmFileMap": [{
+  "npmFileMap": [
+    {
       "basePath": "/lib/",
       "files": [
-          "backbone-pageable.js",
-          "backbone-pageable.min.js"
+        "backbone-pageable.js",
+        "backbone-pageable.min.js"
       ]
-  }]
+    }
+  ]
 }
