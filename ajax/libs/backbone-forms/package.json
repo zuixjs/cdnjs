@@ -19,8 +19,7 @@
     {
       "basePath": "/distribution/",
       "files": [
-        "*.js",
-        "**/*"
+        "*"
       ]
     }
   ]
