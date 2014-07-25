@@ -10,5 +10,10 @@
       "view"
     ],
     "homepage": "http://facebook.github.io/react",
-    "bugs": "https://github.com/facebook/react/issues"
+    "bugs": "https://github.com/facebook/react/issues",
+    "npmName": "react",
+    "npmFileMap": [{
+        "basePath": "/dist/",
+        "files": ["*.js"]
+    }]
 }
