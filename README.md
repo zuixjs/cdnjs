@@ -12,6 +12,18 @@ cdnjs will host any production version of any JavaScript/CSS library, subject to
 
 Please raise a new pull request for new library additions and existing library updates, following the instructions below.
 
+## IMPORTANT - No more manual submissions
+
+[Discussion](https://github.com/cdnjs/cdnjs/issues/3638)
+
+It's time for us to move away from manual submissions and focus solely on getting libraries updating from official sources. Everything is still flakey and we hope you can bear with us in this transition. 
+
+*All pull request should just add auto update configs to the package.json*
+
+
+
+
+
 ## Adding a new or updating an existing library
 
 cdnjs relies on user-submitted pull requests and automatic updating via `npm` to populate and update libraries.
