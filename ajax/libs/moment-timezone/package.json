@@ -28,12 +28,6 @@
       "files": [
         "moment-timezone.js"
       ]
-    },
-    {
-      "basePath": "/min/",
-      "files": [
-        "moment-timezone.min.js"
-      ]
     }
   ]
 }
