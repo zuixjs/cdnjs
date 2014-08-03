@@ -9,6 +9,14 @@ var Hipchat = require('node-hipchat'),
     tarball = require('tarball-extract'),
     colors = require('colors')
 
+colors.setTheme({
+  prompt: 'cyan',
+  info: 'grey',
+  success: 'green',
+  warn: 'yellow',
+  error: 'red'
+});
+
 var HC = new Hipchat(process.env.HIPCHAT);
 var hipchat = {
   message: function(color, message) {
