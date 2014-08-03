@@ -26,7 +26,7 @@
     {
       "basePath": "/",
       "files": [
-        "moment-timezone.js"
+        "*.js"
       ]
     }
   ]
