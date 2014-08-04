@@ -177,12 +177,17 @@ var processNewVersion = function(pkg, version){
                 var copyPath = path.join(libPath, copyPart)
                 fs.mkdirsSync(path.dirname(copyPath))
                 fs.renameSync(extractFilePath, copyPath);
-                updated = true
+                updated = true;
             });
         });
     });
     if(updated){
       newVersionCount++;
+        var libPatha =path.normalize(path.join(__dirname, 'ajax', 'libs', pkg.name, 'package.json'));
+        console.log('------------'.red, libPatha.green);    
+        pkg.version = version;
+
+        fs.writeFileSync(libPatha, JSON.stringify(pkg, null, 2) + '\n', 'utf8');
     }
     return errors;
 }
@@ -253,9 +258,6 @@ var updateLibrary = function (pkg, cb) {
         }, function(err){
         var msg = 'Library finished' + (err ? ' ' + err.error : '');
         console.log(msg);
-            var npmVersion = result.body['dist-tags'] && result.body['dist-tags'].latest || 0;
-            pkg.version = npmVersion;
-            fs.writeFileSync('ajax/libs/' + pkg.name + '/package.json', JSON.stringify(pkg, null, 2) + '\n', 'utf8');
             cb(null);
         });
     });
