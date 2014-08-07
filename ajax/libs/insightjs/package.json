@@ -32,9 +32,8 @@
     {
       "basePath": "dist/",
       "files": [
-        "insight.css",
-        "insight.min.js",
-        "insight.js"
+        "*.js",
+        "*.css"
       ]
     }
   ],
