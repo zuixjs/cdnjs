@@ -35,10 +35,14 @@ before_script:
   - "gem install --local .travis/nokogiri-1.6.3.1.gem --no-document -- --use-system-libraries > /dev/null"
   - "travis_retry gem install travis-artifacts --no-document > /dev/null"
 
-after_success:
-  - "node ./build/packages.json.js"
-  - "travis-artifacts upload --path packages.json --target-path /"
-  - "travis-artifacts upload --path rss --target-path /"
+after_success: >
+  if [[ $TRAVIS_BRANCH == 'master' && $TRAVIS_PULL_REQUEST == 'false' ]]; then
+      node ./build/packages.json.js
+      travis-artifacts upload --path packages.json --target-path /
+      travis-artifacts upload --path rss --target-path /
+  else
+      exit 0
+  fi
 
 notifications:
   hipchat: 3339f2786b483d04c81375df9d5193@cdnjs
