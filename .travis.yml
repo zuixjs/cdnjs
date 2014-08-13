@@ -25,6 +25,7 @@ install: true
 #  - npm install --production --loglevel warn
 
 before_script:
+  - 'if [ `pwd` != "/home/travis/build/cdnjs/cdnjs" ]; then exit 1; fi'
   - "gem --version"
   - "travis_retry gem install nokogiri --no-document -- --use-system-libraries > /dev/null"
   - "travis_retry gem install --version 0.8.9 faraday --no-document > /dev/null"
