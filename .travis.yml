@@ -26,6 +26,7 @@ install: true
 
 before_script:
   - "gem --version"
+  - "travis_retry gem install nokogiri --no-document -- --use-system-libraries > /dev/null"
   - "travis_retry gem install --version 0.8.9 faraday --no-document > /dev/null"
   - "travis_retry gem install fog-json --no-document > /dev/null"
   - "travis_retry gem install travis-artifacts --no-document > /dev/null"
