@@ -105,5 +105,5 @@ glob("ajax/libs/**/package.json", function (error, matches) {
     packages.push(package);
   });
   // Initialize the feed object
-  fs.writeFileSync('packages.json', JSON.stringify({"packages":packages}, null, 2), 'utf8');
+  fs.writeFileSync('packages.json', JSON.stringify({"packages":packages}), 'utf8');
 });
