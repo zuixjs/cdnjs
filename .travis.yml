@@ -27,12 +27,12 @@ install: true
 before_script:
   - 'if [ `pwd` != "/home/travis/build/cdnjs/cdnjs" ]; then exit 1; fi'
   - "gem --version"
-  - "travis_retry gem install --local .travis/multipart-post-1.2.0.gem --no-document > /dev/null"
-  - "travis_retry gem install --local .travis/faraday-0.8.9.gem --no-document > /dev/null"
-  - "travis_retry gem install --local .travis/multi_json-1.10.1.gem --no-document > /dev/null"
-  - "travis_retry gem install --local .travis/fog-json-1.0.0.gem --no-document > /dev/null"
-  - "travis_retry gem install --local .travis/mini_portile-0.6.0.gem --no-document > /dev/null"
-  - "travis_retry gem install --local .travis/nokogiri-1.6.3.1.gem --no-document -- --use-system-libraries > /dev/null"
+  - "gem install --local .travis/multipart-post-1.2.0.gem --no-document > /dev/null"
+  - "gem install --local .travis/faraday-0.8.9.gem --no-document > /dev/null"
+  - "gem install --local .travis/multi_json-1.10.1.gem --no-document > /dev/null"
+  - "gem install --local .travis/fog-json-1.0.0.gem --no-document > /dev/null"
+  - "gem install --local .travis/mini_portile-0.6.0.gem --no-document > /dev/null"
+  - "gem install --local .travis/nokogiri-1.6.3.1.gem --no-document -- --use-system-libraries > /dev/null"
   - "travis_retry gem install travis-artifacts --no-document > /dev/null"
 
 after_success:
