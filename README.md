@@ -131,10 +131,12 @@ To add an `npm` hook to a library, update the `package.json` with configuration 
   }],
 ```
 
+* Please __don't__ touch `version` number in this step, it'll be automatically updated
 * `npmName` should map to the name of the library on `npm`
 * `npmFileMap` is a list of files to take from the `npm` tarball and host on cdnjs
 * `basePath` will be ignored when copying over to the CDN
 * `files` is a pattern matcher allowing selection of multiple files
+
 
 The above example looks in the tarball whose structure might look like this:
 
