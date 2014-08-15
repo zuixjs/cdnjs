@@ -32,11 +32,12 @@
     }
   ],
   "npmName": "backbone-relational",
-  "npmFileMap": [{
+  "npmFileMap": [
+    {
       "basePath": "/",
       "files": [
-          "*.js"
+        "*.js"
       ]
-  }]
-
+    }
+  ]
 }
