@@ -1,6 +1,10 @@
 {
   "name": "pouchdb",
   "npmName": "pouchdb",
+  "npmFileMap": [{
+    "basePath": "/dist/",
+    "files": ["pouchdb.js", "pouchdb.min.js"]
+  }],
   "version": "2.2.3",
   "filename": "pouchdb.min.js",
   "description": "PouchDB is a pocket-sized database.",
