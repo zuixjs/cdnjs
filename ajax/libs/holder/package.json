@@ -22,5 +22,13 @@
             "type": "git",
             "url": "git://github.com/imsky/holder.git"
         }
-    ]
+    ],
+    "autoupdate": {
+        "source": "git",
+        "target": "https://github.com/imsky/holder.git",
+        "basePath": "",
+        "files": [
+            "holder.js"
+        ]
+    }
 }
