@@ -23,8 +23,7 @@
       "/src/json.js",
       "/src/mdown.js",
       "/src/noext.js",
-      "/src/propertyParser.js",
+      "/src/propertyParser.js"
     ]
   }
-
 }
