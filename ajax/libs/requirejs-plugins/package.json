@@ -1,6 +1,7 @@
 {
     "name": "requirejs-plugins",
-    "version": "0.25.0",
+    "version": "1.0.3",
+	"filename": "async.js",
     "description": "Small set of plugins for RequireJS. Some plugins may also work on other AMD loaders.",
     "homepage": "https://github.com/millermedeiros/requirejs-plugins",
     "repositories": [
@@ -22,8 +23,7 @@
       "/src/json.js",
       "/src/mdown.js",
       "/src/noext.js",
-      "/src/propertyParser.js",
+      "/src/propertyParser.js"
     ]
   }
-
 }
