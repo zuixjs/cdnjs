@@ -13,17 +13,9 @@
     "autoupdate": {
         "source": "git",
         "target": "https://github.com/millermedeiros/requirejs-plugins.git",
-        "basePath": "",
+        "basePath": "/src/",
         "files": [
-            "/src/async.js",
-            "/src/depend.js",
-            "/src/font.js",
-            "/src/goog.js",
-            "/src/image.js",
-            "/src/json.js",
-            "/src/mdown.js",
-            "/src/noext.js",
-            "/src/propertyParser.js"
+            "*"
         ]
     }
 }
