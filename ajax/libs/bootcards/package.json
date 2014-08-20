@@ -16,5 +16,24 @@
     "twitter",
     "bootstrap",
     "cards"
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "https://github.com/bootcards/bootcards.git",
+    "basePath": "/dist/",
+    "files": [
+        "css/bootcards-android.css",
+        "css/bootcards-android.min.css",
+        "css/bootcards-desktop.css",
+        "css/bootcards-desktop.min.css",
+        "css/bootcards-ios.css",
+        "css/bootcards-ios.min.css",
+        "fonts/icomoon.eot",
+        "fonts/icomoon.svg",
+        "fonts/icomoon.ttf",
+        "fonts/icomoon.woff",
+        "js/bootcards.js",
+        "js/bootcards.min.js"
+    ]
+  }
 }
