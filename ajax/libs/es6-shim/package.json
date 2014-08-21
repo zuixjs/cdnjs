@@ -1,4 +1,11 @@
 {
+  "npmName": "es6-shim",
+  "npmFileMap": [{
+    "files": [
+      "*.js",
+      "*.map"
+    ]
+  }],
   "author": "Paul Miller (http://paulmillr.com)",
   "filename": "es6-shim.min.js",
   "name": "es6-shim",
