@@ -19,5 +19,13 @@
       "type": "git",
       "url": "https://github.com/krisk/Fuse"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "https://github.com/krisk/Fuse.git",
+    "basePath": "src/",
+    "files": [
+      "*"
+    ]
+  }
 }
