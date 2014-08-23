@@ -26,5 +26,14 @@
     "uikit",
     "css",
     "framework"
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "https://github.com/uikit/uikit.git",
+    "basePath": "dist/",
+    "files": [
+      "*/*/*",
+      "*/*"
+    ]
+  }
 }
