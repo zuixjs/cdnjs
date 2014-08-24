@@ -16,7 +16,8 @@
   "npmFileMap": [
     {
       "files": [
-        "*.js"
+        "ramda.js",
+        "ramda.min.js"
       ]
     }
   ],
