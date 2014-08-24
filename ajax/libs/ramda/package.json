@@ -12,6 +12,10 @@
       "web": "http://fr.umio.us"
     }
   ],
+  "npmName": "ramda",
+  "npmFileMap": [{
+    "files": ["*.js"]
+  }],
   "name": "ramda",
   "description": "A practical functional library for Javascript programmers.",
   "version": "0.2.3",
