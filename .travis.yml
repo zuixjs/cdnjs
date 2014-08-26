@@ -48,3 +48,6 @@ notifications:
   hipchat: 3339f2786b483d04c81375df9d5193@cdnjs
   email:
     on_success: never
+  webhooks:
+    urls:
+      - https://webhooks.gitter.im/e/f5350a3bccfdf3d07867
