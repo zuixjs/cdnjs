@@ -32,5 +32,14 @@
     "url": "http://arshaw.com/"
   },
   "copyright": "2013 Adam Shaw",
-  "filename": "fullcalendar.min.js"
+  "filename": "fullcalendar.min.js",
+  "autoupdate": {
+    "source": "git",
+    "target": "https://github.com/arshaw/fullcalendar.git",
+    "basePath": "dist/",
+    "files": [
+      "*/*",
+      "*"
+    ]
+  }
 }
