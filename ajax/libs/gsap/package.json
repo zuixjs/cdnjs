@@ -34,5 +34,14 @@
       "type": "git",
       "url": "https://github.com/greensock/GreenSock-JS"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "https://github.com/greensock/GreenSock-JS.git",
+    "basePath": "src/minified/",
+    "files": [
+      "*/*",
+      "*"
+    ]
+  }
 }
