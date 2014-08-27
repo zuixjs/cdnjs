@@ -28,5 +28,13 @@
     "repositories": [{
         "type": "git",
         "url": "git://github.com/scottjehl/picturefill.git"
-    }]
+    }],
+    "autoupdate": {
+        "source": "git",
+        "target": "https://github.com/scottjehl/picturefill.git",
+        "basePath": "dist/",
+        "files": [
+            "*"
+        ]
+    }
 }
