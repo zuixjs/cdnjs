@@ -106,7 +106,11 @@ Please restrict your pull request to one library. You can include >1 version/rel
 
 From a maintenance standpoint, it's much more straightforward to process pull requests where there is one commit for one library.
 
-In your pull request title, tell us what you're doing. If you are the author of the library, please add `[author]` to the pull request title.
+In your pull request title, tell us what you're doing.
+
+ - If you are the author of the library, please add `[author]` to the pull request title.
+
+ - If you are adding a new lib, please add `[new]` to the pull request title.
 
 __Please include the following in your pull request:__
 
