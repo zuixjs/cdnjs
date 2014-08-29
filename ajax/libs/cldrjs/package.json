@@ -54,6 +54,7 @@
     "target": "https://github.com/rxaviers/cldrjs.git",
     "basePath": "/dist",
     "files": [
+      "cldr.js",
       "cldr.min.js",
       "/cldr/*"
     ]
