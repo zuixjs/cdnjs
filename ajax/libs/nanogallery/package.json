@@ -19,13 +19,13 @@
     "effects",
     "responsive"
   ],
-	"maintainers": [
-		{
-			"name": "Kris_B",
-			"email": "chr@brisbois.fr",
-			"url": "http://www.brisbois.fr"
-		}
-	],
+  "maintainers": [
+    {
+      "name": "Kris_B",
+      "email": "chr@brisbois.fr",
+      "url": "http://www.brisbois.fr"
+    }
+  ],
   "repositories": [
     {
       "type": "git",
