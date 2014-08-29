@@ -29,5 +29,13 @@
   },
   "scripts": {
     "test": "grunt travis"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "https://github.com/matthieua/WOW.git",
+    "basePath": "dist/",
+    "files": [
+      "*"
+    ]
   }
 }
