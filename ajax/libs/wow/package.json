@@ -14,10 +14,12 @@
     "type": "git",
     "url": "git://github.com/matthieua/WOW.git"
   },
-  "licenses": [{
-    "type": "MIT",
-    "url": "http://matthieuaussaguel.mit-license.org/"
-  }],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://matthieuaussaguel.mit-license.org/"
+    }
+  ],
   "devDependencies": {
     "grunt": "latest",
     "grunt-cli": "latest",
