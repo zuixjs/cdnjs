@@ -1,7 +1,7 @@
 {
   "name": "bootcards",
   "filename": "js/bootcards.min.js",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A cards-based UI framework for mobile and desktop apps, built on top of Bootstrap",
   "repository": {
     "type": "git",
