@@ -48,5 +48,14 @@
     "gzip-js": "0.3.2",
     "grunt-mocha": "0.3.x",
     "matchdep": "*"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "https://github.com/rxaviers/cldrjs.git",
+    "basePath": "/dist",
+    "files": [
+      "cldr.min.js",
+      "/cldr/*"
+    ]
   }
 }
