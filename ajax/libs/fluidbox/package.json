@@ -37,5 +37,14 @@
   ],
   "dependencies": {
     "jquery": ">=1.9"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "https://github.com/terrymun/Fluidbox.git",
+    "basePath": "",
+    "files": [
+      "*.js",
+      "css/fluidbox.css"
+    ]
   }
 }
