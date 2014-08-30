@@ -17,10 +17,10 @@
     "url": "git://github.com/javve/list.pagination.js.git"
   },
   "license": "MIT",
-    "maintainers": [
-      {
-        "name": "Jonny Strömberg",
-        "website": "http://jonnystromberg.com"
-      }
-    ]
+  "maintainers": [
+    {
+      "name": "Jonny Strömberg",
+      "website": "http://jonnystromberg.com"
+    }
+  ]
 }
