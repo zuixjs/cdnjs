@@ -22,5 +22,13 @@
       "name": "Jonny Strömberg",
       "website": "http://jonnystromberg.com"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "https://github.com/javve/list.pagination.js.git",
+    "basePath": "dist/",
+    "files": [
+      "*"
+    ]
+  }
 }
