@@ -10,6 +10,10 @@
   },
   "autoupdate": {
     "source": "git",
-    "target": "https://github.com/haydenbleasel/basics.git"
+    "target": "https://github.com/haydenbleasel/basics.git",
+    "basePath": "",
+    "files": [
+      "basics.css"
+    ]
   }
 }
