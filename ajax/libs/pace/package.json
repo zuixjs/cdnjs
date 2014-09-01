@@ -13,5 +13,16 @@
       "type": "git",
       "url": "https://github.com/HubSpot/pace"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "https://github.com/HubSpot/pace.git",
+    "basePath": "",
+    "files": [
+      "pace.js",
+      "pace.min.js",
+      "templates/*",
+      "themes/*/*"
+    ]
+  }
 }
