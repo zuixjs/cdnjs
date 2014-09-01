@@ -10,9 +10,6 @@ cache:
 node_js:
   - "0.10"
 
-git:
-  depth: 1
-
 install: true
 #  - npm install --production --loglevel warn
 
