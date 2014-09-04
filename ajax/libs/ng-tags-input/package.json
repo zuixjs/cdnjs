@@ -14,11 +14,13 @@
     "email": "michael@michaelbenford.net"
   },
   "npmName": "ng-tags-input",
-  "npmFileMap": [{
-    "basePath": "/build/",
-    "files": [
-      "*.js",
-      "*.css"
-    ]
-  }]
+  "npmFileMap": [
+    {
+      "basePath": "/build/",
+      "files": [
+        "*.js",
+        "*.css"
+      ]
+    }
+  ]
 }
