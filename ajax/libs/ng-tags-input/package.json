@@ -12,5 +12,13 @@
   "author": {
     "name": "Michael Benford",
     "email": "michael@michaelbenford.net"
-  }
+  },
+  "npmName": "ng-tags-input",
+  "npmFileMap": [{
+    "basePath": "/build/",
+    "files": [
+      "*.js",
+      "*.css"
+    ]
+  }]
 }
