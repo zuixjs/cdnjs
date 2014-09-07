@@ -29,5 +29,15 @@
     "grunt-contrib-uglify": "~0.4.0",
     "grunt-contrib-watch": "^0.6.1",
     "load-grunt-tasks": "~0.2.0"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "https://github.com/masayuki0812/c3.git",
+    "basePath": "",
+    "files": [
+      "c3.css",
+      "c3.js",
+      "c3.min.js"
+    ]
   }
 }
