@@ -29,7 +29,8 @@
   "npmFileMap": [
     {
       "files": [
-        "*.js",
+        "*.min.js",
+        "es6-shim.*",
         "*.map"
       ]
     }
