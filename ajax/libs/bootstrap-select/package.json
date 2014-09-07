@@ -66,6 +66,14 @@
     "bootstrap",
     "select",
     "replacement"
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "https://github.com/silviomoreto/bootstrap-select.git",
+    "basePath": "dist/",
+    "files": [
+      "*/*/*",
+      "*/*"
+    ]
+  }
 }
-
