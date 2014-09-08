@@ -1,7 +1,7 @@
 {
   "name": "pace",
   "filename": "pace.js",
-  "version": "0.5.6",
+  "version": "0.5.7",
   "description": "Automatic web page progress bar",
   "homepage": "http://github.hubspot.com/pace/",
   "keywords": [
