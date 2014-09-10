@@ -16,7 +16,7 @@
   ],
   "autoupdate": {
     "source": "git",
-    "target": "https://github.com/HubSpot/pace.git",
+    "target": "git://github.com/HubSpot/pace.git",
     "basePath": "",
     "files": [
       "pace.js",

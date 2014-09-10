@@ -86,7 +86,7 @@
   },
   "autoupdate": {
     "source": "git",
-    "target": "https://github.com/jquery/globalize.git",
+    "target": "git://github.com/jquery/globalize.git",
     "basePath": "/dist",
     "files": [
       "*/*",

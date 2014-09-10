@@ -33,7 +33,7 @@
   ],
   "autoupdate": {
     "source": "git",
-    "target": "https://github.com/happyworm/jPlayer.git",
+    "target": "git://github.com/happyworm/jPlayer.git",
     "basePath": "",
     "files": [
       "add-on/*",

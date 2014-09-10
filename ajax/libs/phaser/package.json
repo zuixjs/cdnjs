@@ -24,7 +24,7 @@
   ],
   "autoupdate": {
     "source": "git",
-    "target": "https://github.com/photonstorm/phaser.git",
+    "target": "git://github.com/photonstorm/phaser.git",
     "basePath": "build/",
     "files": [
       "*/*.js",

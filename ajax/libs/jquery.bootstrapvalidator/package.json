@@ -26,7 +26,7 @@
   ],
   "autoupdate": {
     "source": "git",
-    "target": "https://github.com/nghuuphuoc/bootstrapvalidator.git",
+    "target": "git://github.com/nghuuphuoc/bootstrapvalidator.git",
     "basePath": "dist/",
     "files": [
       "*/*/*",

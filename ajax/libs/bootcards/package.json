@@ -19,7 +19,7 @@
   ],
   "autoupdate": {
     "source": "git",
-    "target": "https://github.com/bootcards/bootcards.git",
+    "target": "git://github.com/bootcards/bootcards.git",
     "basePath": "/dist/",
     "files": [
       "*/*"

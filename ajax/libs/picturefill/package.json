@@ -33,7 +33,7 @@
   ],
   "autoupdate": {
     "source": "git",
-    "target": "https://github.com/scottjehl/picturefill.git",
+    "target": "git://github.com/scottjehl/picturefill.git",
     "basePath": "dist/",
     "files": [
       "*"
