@@ -21,10 +21,12 @@
   },
   "filename": "ie8.js",
   "npmName": "ie8",
-  "npmFileMap": [{
-    "basePath": "/build/",
-    "files": [
-      "*.js"
-    ]
-  }]
+  "npmFileMap": [
+    {
+      "basePath": "/build/",
+      "files": [
+        "*.js"
+      ]
+    }
+  ]
 }
