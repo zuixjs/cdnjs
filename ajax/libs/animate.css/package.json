@@ -22,7 +22,7 @@
   ],
   "autoupdate": {
     "source": "git",
-    "target": "https://github.com/daneden/animate.css.git",
+    "target": "git://github.com/daneden/animate.css.git",
     "basePath": "",
     "files": [
       "*.css"

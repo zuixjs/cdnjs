@@ -14,7 +14,7 @@
   ],
   "autoupdate": {
     "source": "git",
-    "target": "https://github.com/julianshapiro/velocity.git",
+    "target": "git://github.com/julianshapiro/velocity.git",
     "basePath": "/",
     "files": [
       "velocity.js",

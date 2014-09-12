@@ -23,7 +23,7 @@
     ],
     "autoupdate": {
         "source": "git",
-        "target": "https://github.com/fraywing/textAngular.git",
+        "target": "git://github.com/fraywing/textAngular.git",
         "basePath": "",
         "files": [
             "dist/textAngular.min.js",

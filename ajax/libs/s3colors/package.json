@@ -21,7 +21,7 @@
     ],
     "autoupdate": {
         "source": "git",
-        "target": "https://github.com/Shaz3e/S3-Colors.git",
+        "target": "git://github.com/Shaz3e/S3-Colors.git",
         "basePath": "",
         "files": [
             "s3-colors.css",

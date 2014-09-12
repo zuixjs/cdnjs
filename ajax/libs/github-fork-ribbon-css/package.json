@@ -29,7 +29,7 @@
   ],
   "autoupdate": {
     "source": "git",
-    "target": "https://github.com/simonwhitaker/github-fork-ribbon-css.git",
+    "target": "git://github.com/simonwhitaker/github-fork-ribbon-css.git",
     "basePath": "",
     "files": [
       "gh-fork-ribbon.css",

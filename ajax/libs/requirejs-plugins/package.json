@@ -12,7 +12,7 @@
     ],
     "autoupdate": {
         "source": "git",
-        "target": "https://github.com/millermedeiros/requirejs-plugins.git",
+        "target": "git://github.com/millermedeiros/requirejs-plugins.git",
         "basePath": "/src/",
         "files": [
             "*"

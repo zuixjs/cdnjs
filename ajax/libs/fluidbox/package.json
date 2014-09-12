@@ -40,7 +40,7 @@
   },
   "autoupdate": {
     "source": "git",
-    "target": "https://github.com/terrymun/Fluidbox.git",
+    "target": "git://github.com/terrymun/Fluidbox.git",
     "basePath": "",
     "files": [
       "*.js",

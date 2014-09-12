@@ -22,7 +22,7 @@
   ],
   "autoupdate": {
     "source": "git",
-    "target": "https://github.com/krisk/Fuse.git",
+    "target": "git://github.com/krisk/Fuse.git",
     "basePath": "src/",
     "files": [
       "*"
