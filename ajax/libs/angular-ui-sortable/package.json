@@ -39,5 +39,14 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/angular-ui/ui-sortable.git"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/angular-ui/ui-sortable.git",
+    "basePath": "",
+    "files": [
+      "sortable.js",
+      "sortable.min.js"
+    ]
   }
 }
