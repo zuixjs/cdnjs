@@ -30,14 +30,13 @@
       "url": "http://www.opensource.org/licenses/mit-license.php"
     }
   ],
-  "npmName": "jquery-autosize",
-  "npmFileMap": [
-    {
-      "basePath": "/",
-      "files": [
-        "jquery.autosize.js",
-        "jquery.autosize.min.js"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/jackmoore/autosize.git",
+    "basePath": "",
+    "files": [
+      "jquery.autosize.js",
+      "jquery.autosize.min.js"
+    ]
+  }
 }
