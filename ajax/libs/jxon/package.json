@@ -1,6 +1,6 @@
 {
   "name": "jxon",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A complete, bidirectional, JXON library",
   "filename": "index.js",
   "repository": {
@@ -15,10 +15,12 @@
     "xmldom": "~0.1.17"
   },
   "npmName": "jxon",
-  "npmFileMap": [{
-    "basePath": "/",
-    "files": [
-      "index.js"
-    ]
-  }]
+  "npmFileMap": [
+    {
+      "basePath": "/",
+      "files": [
+        "index.js"
+      ]
+    }
+  ]
 }
