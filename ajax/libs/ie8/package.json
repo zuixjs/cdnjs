@@ -1,6 +1,6 @@
 {
   "name": "ie8",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "some damn DOM fix for this damned browser",
   "homepage": "https://github.com/WebReflection/ie8",
   "keywords": [
