@@ -1,31 +1,4 @@
 {
-<<<<<<< HEAD
-    "name": "angular-route-segment",
-    "filename": "angular-route-segment.min.js",
-    "version": "1.3.3",
-    "description": "A lightweight extension for AngularJS $route service which supports tree-like nested views and routes hierarchy, and advanced loading flow handling.",
-    "homepage": "http://angular-route-segment.com/",
-    "keywords": [
-       "angular",
-       "angularjs",
-       "routing",
-       "routes",
-       "route"
-   ],
-   "author": [
-       {
-           "name": "Artem Chivchalov",
-           "url": "https://github.com/artch",
-           "email": "chivchalov@gmail.com"
-       }
-   ],
-   "repositories": [
-       {
-           "type": "git",
-           "url": "https://github.com/artch/angular-route-segment.git"
-       }
-   ]
-=======
   "name": "angular-route-segment",
   "filename": "angular-route-segment.min.js",
   "version": "1.3.3",
@@ -59,5 +32,4 @@
       "*"
     ]
   }
->>>>>>> d7c3c1ef817c6942570109fcebc7f6ed6ce95bbf
 }
