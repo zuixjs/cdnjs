@@ -4,8 +4,7 @@
   "description": "Browser Client for MSL (Mock Service Layer)",
   "version": "1.0.2",
   "homepage": "http://finraos.github.io/MSL",
-  "keywords": [
-  ],
+  "keywords": [],
   "contributors": [
     {
       "name": "Daniel Koo"
@@ -20,10 +19,12 @@
       "name": "Jake Sheppard"
     }
   ],
-  "repositories": [{
-    "type": "git",
-    "url": "git://github.com/FINRAOS/MSL.git"
-  }],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "git://github.com/FINRAOS/MSL.git"
+    }
+  ],
   "bugs": "https://github.com/FINRAOS/MSL/issues",
   "autoupdate": {
     "source": "git",
