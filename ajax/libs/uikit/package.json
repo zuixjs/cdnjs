@@ -29,11 +29,14 @@
   ],
   "autoupdate": {
     "source": "git",
-    "target": "git://github.com/uikit/uikit.git",
-    "basePath": "dist/",
+    "target": "git://github.com/uikit/bower-uikit.git",
+    "basePath": "",
     "files": [
-      "*/*/*",
-      "*/*"
+      "css/*/*",
+      "css/*",
+      "js/*/*",
+      "js/*",
+      "fonts/*"
     ]
   }
 }
