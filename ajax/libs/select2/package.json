@@ -23,5 +23,16 @@
       "type": "git",
       "url": "https://github.com/ivaynberg/select2"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/ivaynberg/select2.git",
+    "basePath": "",
+    "files": [
+      "*.js",
+      "*.css",
+      "*.gif",
+      "*.png"
+    ]
+  }
 }
