@@ -18,5 +18,14 @@
       "type": "git",
       "url": "https://github.com/Polymer/polymer.git"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/Polymer/polymer.git",
+    "basePath": "",
+    "files": [
+      "polymer.js.map",
+      "polymer.js"
+    ]
+  }
 }
