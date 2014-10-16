@@ -2,7 +2,7 @@
   "name": "KaTeX",
   "filename": "katex.min.js",
   "description": "KaTeX is a fast, easy-to-use JavaScript library for TeX math rendering on the web.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://khan.github.io/KaTeX/",
   "keywords": [
     "tex",
