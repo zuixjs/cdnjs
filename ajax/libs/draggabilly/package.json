@@ -19,5 +19,16 @@
          "type": "git",
          "url": "https://github.com/desandro/draggabilly"
      }
- ]
+ ],
+ "autoupdate":
+      {
+          "source": "git",
+          "target": "git://github.com/desandro/draggabilly.git",
+          "basePath": "/dist/",
+          "files": [
+                       "draggabilly.pkgd.js",
+                       "draggabilly.pkgd.min.js"
+                   ]
+
+      }
 }
