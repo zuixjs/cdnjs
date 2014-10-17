@@ -11,13 +11,17 @@
     "syntax",
     "highlighting"
   ],
-  "maintainers": [{
-    "name": "Blair Vanderhoof",
-    "email": "blairv@gmail.com",
-    "web": "http://blairvanderhoof.com/"
-  }],
-  "repositories": [{
-    "type": "git",
-    "url": "https://github.com/blairvanderhoof/gist-embed"
-  }]
+  "maintainers": [
+    {
+      "name": "Blair Vanderhoof",
+      "email": "blairv@gmail.com",
+      "web": "http://blairvanderhoof.com/"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/blairvanderhoof/gist-embed"
+    }
+  ]
 }
