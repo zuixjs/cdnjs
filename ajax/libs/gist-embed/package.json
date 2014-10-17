@@ -23,5 +23,13 @@
       "type": "git",
       "url": "https://github.com/blairvanderhoof/gist-embed"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/blairvanderhoof/gist-embed.git",
+    "basePath": "",
+    "files": [
+      "gist-embed.js"
+    ]
+  }
 }
