@@ -24,11 +24,11 @@
   "name": "ramda",
   "description": "A practical functional library for Javascript programmers.",
   "version": "0.7.1",
-  "homepage": "https://www.github.com/CrossEye/ramda",
+  "homepage": "https://www.github.com/ramda/ramda",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/CrossEye/ramda.git"
+    "url": "git://github.com/ramda/ramda.git"
   },
   "filename": "ramda.min.js",
   "scripts": {
