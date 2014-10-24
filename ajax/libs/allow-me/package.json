@@ -15,13 +15,14 @@
     "grunt-contrib-cssmin": "~0.10.0",
     "load-grunt-tasks": "~1.0.0"
   },
-  
   "npmName": "allow-me",
-  "npmFileMap": [{
-    "basePath": "/dist/",
-    "files": [
-      "*.js",
-      "*.css"
-    ]
-  }]
+  "npmFileMap": [
+    {
+      "basePath": "/dist/",
+      "files": [
+        "*.js",
+        "*.css"
+      ]
+    }
+  ]
 }
