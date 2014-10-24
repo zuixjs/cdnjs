@@ -20,5 +20,13 @@
       "type": "git",
       "url": "https://github.com/wout/svg.js/"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/wout/svg.js.git",
+    "basePath": "dist",
+    "files": [
+      "*"
+    ]
+  }
 }
