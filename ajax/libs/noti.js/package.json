@@ -30,7 +30,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/j-l-n/noti.js",
-    "basePath": "",
+    "basePath": "assets",
     "files": [
       "noti.js",
       "noti.min.js"
