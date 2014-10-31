@@ -2,7 +2,7 @@
   "name": "noti.js",
   "description": "easy create cross-browser web notifications, with fallback for non-supporting browsers and other features",
   "filename": "noti.min.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "j-l-n (https://github.com/j-l-n)",
   "homepage": "https://github.com/j-l-n/noti.js/",
   "main": "noti.min.js",
