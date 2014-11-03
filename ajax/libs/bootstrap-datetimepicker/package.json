@@ -14,7 +14,7 @@
     "datepicker",
     "datetimepicker",
     "timepicker",
-	"moment"
+    "moment"
   ],
   "devDependencies": {
     "uglify-js": "*",
