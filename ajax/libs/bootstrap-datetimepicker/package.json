@@ -23,5 +23,13 @@
     "mocha": "*",
     "chai": "*",
     "coffee-script": "*"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/Eonasdan/bootstrap-datetimepicker.git",
+    "basePath": "build",
+    "files": [
+      "*/*"
+    ]
   }
 }
