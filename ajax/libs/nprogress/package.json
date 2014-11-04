@@ -20,5 +20,15 @@
       "type": "git",
       "url": "https://github.com/rstacruz/nprogress.git"
     }
+  ],
+  "npmName": "nprogress",
+  "npmFileMap": [
+    {
+      "basePath": "",
+      "files": [
+        "nprogress.js",
+        "nprogress.css"
+      ]
+    }
   ]
 }
