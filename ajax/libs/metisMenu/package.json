@@ -33,8 +33,7 @@
     "target": "git://github.com/onokumus/metisMenu.git",
     "basePath": "/dist/",
     "files": [
-      "metisMenu.min.css",
-      "metisMenu.min.js"
+      "*"
     ]
   }
 }
