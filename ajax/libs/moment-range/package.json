@@ -1,4 +1,13 @@
 {
+  "npmName": "moment-range",
+  "npmFileMap": [
+    {
+      "basePath": "/lib/",
+      "files": [
+        "*"
+      ]
+    }
+  ],
   "name": "moment-range",
   "version": "1.0.5",
   "description": "Fancy date ranges for Moment.js",
