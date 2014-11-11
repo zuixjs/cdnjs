@@ -14,6 +14,14 @@
     "type": "git",
     "url": "git://github.com/linkedin/hopscotch.git"
   },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/linkedin/hopscotch.git",
+    "basePath": "dist",
+    "files": [
+      "*/*"
+    ]
+  },
   "author": "Gordon Koo",
   "license": "Apache 2.0",
   "readmeFilename": "README.md",
