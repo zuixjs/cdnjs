@@ -3,6 +3,18 @@
   "filename": "han.min.css",
   "version": "2.3.0",
   "description": "The CSS typography framework optimised for Hanzi",
+  "npmName": "han-css",
+  "npmFileMap": [{
+    "basePath": "/",
+    "files": [
+      "han.min.css",
+      "han.css",
+      "han.min.js",
+      "han.js",
+      "font/han.woff",
+      "font/han.otf"
+    ]
+  }],
   "keywords": [
     "CJK",
     "normalize",
