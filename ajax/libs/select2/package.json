@@ -34,5 +34,6 @@
       "*.gif",
       "*.png"
     ]
-  }
+  },
+  "namespace": "$.fn.select2"
 }

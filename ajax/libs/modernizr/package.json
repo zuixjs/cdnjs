@@ -44,5 +44,6 @@
     "files": [
       "modernizr.js"
     ]
-  }
+  },
+  "namespace": "Modernizr"
 }

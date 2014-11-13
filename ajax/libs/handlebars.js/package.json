@@ -35,5 +35,6 @@
         "handlebars.runtime.min.js"
       ]
     }
-  ]
+  ],
+  "namespace": "Handlebars"
 }
