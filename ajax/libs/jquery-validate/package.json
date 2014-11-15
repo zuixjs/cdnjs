@@ -9,5 +9,13 @@
     "forms",
     "validate",
     "validation"
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/jzaefferer/jquery-validation.git",
+    "basePath": "dist",
+    "files": [
+      "*"
+    ]
+  }
 }
