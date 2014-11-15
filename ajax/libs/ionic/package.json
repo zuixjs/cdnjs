@@ -17,5 +17,17 @@
     {
       "name": "MIT"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/driftyco/ionic.git",
+    "basePath": "release",
+    "files": [
+      "css/*/*",
+      "css/*",
+      "js/*/*",
+      "js/*",
+      "fonts/*"
+    ]
+  }
 }
