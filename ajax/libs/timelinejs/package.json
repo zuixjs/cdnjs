@@ -1,6 +1,6 @@
 {
   "name": "timelinejs",
-  "filename": "js/storyjs-embed.js",
+  "filename": "js/timeline-min.js",
   "version": "2.32.0",
   "description": "TimelineJS is an open-source tool that enables you to build visually-rich interactive timelines and is available in 40 languages.",
   "homepage": "http://timeline.knightlab.com/",
