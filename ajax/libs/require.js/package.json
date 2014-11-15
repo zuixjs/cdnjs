@@ -22,5 +22,13 @@
       "url": "https://github.com/jrburke/requirejs"
     }
   ],
-  "namespace": "require"
+  "namespace": "require",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/jrburke/requirejs.git",
+    "basePath": "",
+    "files": [
+      "require.js"
+    ]
+  }
 }
