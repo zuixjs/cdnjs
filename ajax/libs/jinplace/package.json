@@ -1,6 +1,6 @@
 {
   "name": "jinplace",
-  "filename": "jinplace.js",
+  "filename": "jinplace.min.js",
   "version": "1.0.0",
   "description": "A jQuery plugin for in place editing on a page, primarly controlled by HTML markup.",
   "repositories": [
