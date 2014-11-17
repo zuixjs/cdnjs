@@ -21,5 +21,14 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/eriwen/javascript-stacktrace.git"
-  }
+  },
+  "npmName": "stacktrace-js",
+  "npmFileMap": [
+    {
+      "basePath": "/dist/",
+      "files": [
+        "*"
+      ]
+    }
+  ]
 }
