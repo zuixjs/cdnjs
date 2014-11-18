@@ -30,16 +30,5 @@
       "type": "MIT",
       "url": "http://www.opensource.org/licenses/MIT"
     }
-  ],
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/happyworm/jPlayer.git",
-    "basePath": "",
-    "files": [
-      "add-on/*",
-      "jquery.jplayer/*",
-      "popcorn/player/*",
-      "skin/*/*"
-    ]
-  }
+  ]
 }
