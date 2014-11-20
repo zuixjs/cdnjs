@@ -25,5 +25,13 @@
       "type": "MIT",
       "url": "https://github.com/angular-ui/bootstrap/blob/master/LICENSE"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "https://github.com/angular-ui/bootstrap-bower.git",
+    "basePath": "",
+    "files": [
+      "*.js"
+    ]
+  }
 }
