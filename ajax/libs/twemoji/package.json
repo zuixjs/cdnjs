@@ -24,7 +24,10 @@
       "url": "https://github.com/twitter/twemoji.git"
     }
   ],
-  "licenses": ["MIT", "CC-BY-4.0"],
+  "licenses": [
+    "MIT",
+    "CC-BY-4.0"
+  ],
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/twitter/twemoji.git",
