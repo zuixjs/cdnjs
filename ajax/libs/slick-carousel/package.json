@@ -12,15 +12,10 @@
     {
       "basePath": "/slick/",
       "files": [
+        "fonts/slick.*",
         "*.js",
         "*.css",
         "ajax-loader.gif"
-      ]
-    },
-    {
-      "basePath": "/slick/fonts/",
-      "files": [
-        "slick.*"
       ]
     }
   ],
