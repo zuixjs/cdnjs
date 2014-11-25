@@ -1,7 +1,7 @@
 {
   "name": "semantic-ui",
-  "filename": "javascript/semantic.min.js",
-  "version": "0.19.3",
+  "filename": "semantic.min.js",
+  "version": "1.0.0",
   "description": "Semantic empowers designers and developers by creating a language for sharing UI",
   "homepage": "http://semantic-ui.com/",
   "keywords": [
@@ -17,12 +17,13 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/Semantic-Org/Semantic-UI",
-    "basePath": "build/packaged",
+    "basePath": "dist",
     "files": [
-      "css/*",
-      "fonts/*",
-      "images/*",
-      "javascript/*"
+      "*/*/*/*/*",
+      "*/*/*/*",
+      "*/*/*",
+      "*/*",
+      "*"
     ]
   }
 }
