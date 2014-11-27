@@ -1,7 +1,7 @@
 {
   "name": "jsonld",
   "version": "0.3.10",
-  "filename": "jsonld.js",
+  "filename": "jsonld.min.js",
   "description": "A JSON-LD Processor and API implementation in JavaScript.",
   "homepage": "http://github.com/digitalbazaar/jsonld.js",
   "author": {
