@@ -20,16 +20,14 @@
       "url": "https://github.com/jmdobry/angular-cache/blob/master/LICENSE"
     }
   ],
-  "autoupdate": {
-    "source": "git",
-    "target": "http://jmdobry.github.io/angular-cache",
-    "basePath": "",
+  "npmName": "angular-cache",
+  "npmFileMap": [{
+    "basePath": "/dist/",
     "files": [
-      "angular-cache.min.js",
-      "angular-cache.min.map",
-      "angular-cache.js"
+      "*.js",
+      "*.map"
     ]
-  },
+  }],
   "postinstall": "node node_modules/grunt-cli/bin/grunt build",
   "devDependencies": {
     "chai": "1.10.0",
