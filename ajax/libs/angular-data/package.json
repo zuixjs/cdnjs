@@ -19,6 +19,15 @@
       "url": "https://github.com/jmdobry/angular-data/blob/master/LICENSE"
     }
   ],
+  "autoupdate": {
+    "source": "git",
+    "target": "https://github.com/jmdobry/angular-data.git",
+    "basePath": "",
+    "files": [
+      "angular-data.min.js",
+      "angular-data.js"
+    ]
+  },
   "devDependencies": {
     "grunt": "0.4.5",
     "grunt-browserify": "3.2.0",
