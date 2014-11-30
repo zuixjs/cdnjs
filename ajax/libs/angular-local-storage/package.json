@@ -23,12 +23,14 @@
     "url": "https://github.com/grevory/angular-local-storage/issues"
   },
   "npmName": "angular-local-storage",
-  "npmFileMap": [{
-    "basePath": "/dist/",
-    "files": [
-      "*.js"
-    ]
-  }],
+  "npmFileMap": [
+    {
+      "basePath": "/dist/",
+      "files": [
+        "*.js"
+      ]
+    }
+  ],
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-cli": "~0.1.9",
