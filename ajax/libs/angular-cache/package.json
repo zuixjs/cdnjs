@@ -21,13 +21,15 @@
     }
   ],
   "npmName": "angular-cache",
-  "npmFileMap": [{
-    "basePath": "/dist/",
-    "files": [
-      "*.js",
-      "*.map"
-    ]
-  }],
+  "npmFileMap": [
+    {
+      "basePath": "/dist/",
+      "files": [
+        "*.js",
+        "*.map"
+      ]
+    }
+  ],
   "postinstall": "node node_modules/grunt-cli/bin/grunt build",
   "devDependencies": {
     "chai": "1.10.0",
