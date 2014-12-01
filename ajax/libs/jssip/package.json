@@ -1,6 +1,13 @@
 {
     "name"         : "jssip",
     "description"  : "JavaScript SIP library",
+    "npmName"      : "jssip",
+    "npmFileMap"   : [{
+        "basePath": "/builds/",
+        "files": [
+            "*.min.js"
+        ]
+    }],
     "version"      : "0.3.0",
     "filename"     : "jssip.min.js",
     "homepage"     : "http://jssip.net",
