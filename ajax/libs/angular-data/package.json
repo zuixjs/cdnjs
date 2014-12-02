@@ -2,7 +2,7 @@
   "name": "angular-data",
   "filename": "angular-data.min.js",
   "description": "Data store for Angular.js.",
-  "version": "1.4.3",
+  "version": "1.5.1",
   "homepage": "http://angular-data.pseudobry.com",
   "repository": {
     "type": "git",
