@@ -40,9 +40,9 @@
     {
       "basePath": "/",
       "files": [
-        "*.js",
-        "*.css",
-        "*.map"
+        "jquery.jgrowl*css",
+        "jquery.jgrowl*js",
+        "jquery.jgrowl*map"
       ]
     }
   ]
