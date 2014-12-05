@@ -20,3 +20,5 @@ ajax/libs/angular-google-maps/2.0.0-SNAPSHOT*
 ajax/libs/require.js/latest/
 ajax/libs/foggy/foggy*
 ajax/libs/mojio-js/connery/
+ajax/libs/dygraph/1.0.1-bower
+ajax/libs/dygraph/1.0.1+bower
