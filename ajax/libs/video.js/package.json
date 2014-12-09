@@ -1,7 +1,7 @@
 {
     "name": "video.js",
     "filename": "video.js",
-    "version": "4.1.0",
+    "version": "4.11.1",
     "description": "Open source HTML5 & Flash video player",
     "homepage": "http://videojs.com/",
     "keywords": [
@@ -19,5 +19,21 @@
            "type": "git",
            "url": "https://github.com/videojs/video.js"
        }
-   ]
+   ],
+   "npmName": "video.js",
+   "npmFileMap": [
+        {
+          "basePath": "/dist/video-js/",
+          "files": [
+            "video-js.css",
+            "video-js.min.css",
+            "video-js.swf",
+            "video.dev.js",
+            "video.js",
+            "lang/*",
+            "font/*"
+          ]
+
+        }
+    ]
 }
