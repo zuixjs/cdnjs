@@ -23,11 +23,13 @@
   "license": "BSD",
   "readmeFilename": "README.md",
   "npmName": "chainloading",
-  "npmFileMap": [{
-    "basePath": "/",
-    "files": [
-      "chainloading.min.js"
-    ]
-  }],
+  "npmFileMap": [
+    {
+      "basePath": "/",
+      "files": [
+        "chainloading.min.js"
+      ]
+    }
+  ],
   "filename": "chainloading.min.js"
 }
