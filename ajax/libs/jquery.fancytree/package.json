@@ -34,7 +34,12 @@
   "npmFileMap": [
     {
       "basePath": "dist/",
-      "files": ["*.min.js", "*.min.js.map", "**/*.min.css", "**/*.gif"]
+      "files": [
+        "*.min.js",
+        "*.min.js.map",
+        "**/*.min.css",
+        "**/*.gif"
+      ]
     }
   ]
 }
