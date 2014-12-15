@@ -32,10 +32,17 @@
     }
   ],
   "npmName": "jplayer",
-  "npmFileMap": [{
-    "basePath": "/dist/",
-    "files": [
-      "**"
-    ]
-  }]
+  "npmFileMap": [
+    {
+      "basePath": "/dist/",
+      "files": [
+        "**/*.css",
+        "**/*.js",
+        "**/*.jpg",
+        "**/*.png",
+        "**/*.gif",
+        "**/*.swf"
+      ]
+    }
+  ]
 }
