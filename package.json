@@ -28,7 +28,7 @@
     "colors": "~1.0"
   },
   "devDependencies": {
-    "jslint": "~0.6.2",
+    "jslint": "~0.7",
     "JSV": "~4.0.2",
     "vows-si": "~0.7.1"
   },
