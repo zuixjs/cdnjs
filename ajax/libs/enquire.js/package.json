@@ -1,13 +1,13 @@
 {
-	"name" : "enquire.js",
-	"version" : "2.0.0",
+  "name": "enquire.js",
+  "version": "2.0.0",
   "description": "Awesome Media Queries in JavaScript",
   "homepage": "http://wicky.nillia.ms/enquire.js",
   "author": {
     "name": "Nick Williams",
     "url": "http://wicky.nillia.ms"
   },
-  "filename" : "enquire.min.js",
+  "filename": "enquire.min.js",
   "keywords": [
     "media query",
     "media queries",
