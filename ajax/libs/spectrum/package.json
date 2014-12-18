@@ -25,5 +25,15 @@
   ],
   "dependencies": {
     "jquery": ">=1.7.2"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/bgrins/spectrum.git",
+    "basePath": "",
+    "files": [
+      "spectrum.css",
+      "spectrum.js",
+      "i18n/*"
+    ]
   }
 }
