@@ -23,3 +23,5 @@ ajax/libs/mojio-js/connery/
 ajax/libs/dygraph/1.0.1-bower
 ajax/libs/dygraph/1.0.1+bower
 ajax/libs/social-likes/path/
+ajax/libs/datatables/RELEASE*
+ajax/libs/datatables/BETA*
