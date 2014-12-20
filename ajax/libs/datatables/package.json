@@ -34,5 +34,15 @@
     "sort",
     "page",
     "internationalisable"
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/DataTables/DataTables.git",
+    "basePath": "media",
+    "files": [
+      "css/*",
+      "js/*",
+      "images/*"
+    ]
+  }
 }
