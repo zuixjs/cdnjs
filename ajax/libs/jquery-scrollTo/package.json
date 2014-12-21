@@ -27,5 +27,14 @@
       "type": "git",
       "url": "https://github.com/flesler/jquery.scrollTo"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/flesler/jquery.scrollTo.git",
+    "basePath": "",
+    "files": [
+      "jquery.scrollTo.js",
+      "jquery.scrollTo.min.js"
+    ]
+  }
 }
