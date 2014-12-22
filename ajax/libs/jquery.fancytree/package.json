@@ -35,9 +35,9 @@
     {
       "basePath": "dist/",
       "files": [
-        "*.min.js",
-        "*.min.js.map",
-        "**/*.min.css",
+        "*.js",
+        "*.js.map",
+        "**/*.css",
         "**/*.gif"
       ]
     }
