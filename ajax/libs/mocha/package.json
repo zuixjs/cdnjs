@@ -56,5 +56,5 @@
     "mocha.css",
     "mocha.js"
   ],
-  "filename": "mocha.js"
+  "filename": "mocha.min.js"
 }
