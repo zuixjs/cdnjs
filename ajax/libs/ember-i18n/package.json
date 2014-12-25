@@ -31,7 +31,9 @@
   "npmFileMap": [
     {
       "basePath": "/dist/",
-      "files": [ "*.js" ]
+      "files": [
+        "*.js"
+      ]
     }
   ]
 }
