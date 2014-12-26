@@ -20,12 +20,14 @@
     "dimension"
   ],
   "npmName": "orb",
-  "npmFileMap": [{
-    "basePath": "/dist/",
-    "files": [
-      "*.js",
-      "*.css",
-      "*.map"
-    ]
-  }]
+  "npmFileMap": [
+    {
+      "basePath": "/dist/",
+      "files": [
+        "*.js",
+        "*.css",
+        "*.map"
+      ]
+    }
+  ]
 }
