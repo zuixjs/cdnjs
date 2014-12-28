@@ -6,9 +6,9 @@
   "keywords": [
     "react",
     "reactjs",
-	"router",
-	"routes",
-	"routing"
+    "router",
+    "routes",
+    "routing"
   ],
   "homepage": "https://github.com/rackt/react-router",
   "bugs": "https://github.com/rackt/react-router/issues",
