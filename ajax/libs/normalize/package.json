@@ -1,11 +1,20 @@
 {
   "name": "normalize",
   "filename": "normalize.min.css",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Normalize.css makes browsers render all elements consistently and in line with modern standards.",
   "homepage": "http://necolas.github.com/normalize.css/",
   "keywords": [
     "cross browser"
+  ],
+  "npmName": "normalize.css",
+  "npmFileMap": [
+    {
+      "basePath": "",
+      "files": [
+        "normalize.css"
+      ]
+    }
   ],
   "maintainers": [
     {
