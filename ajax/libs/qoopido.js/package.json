@@ -27,18 +27,20 @@
     }
   ],
   "keywords": [
-	  "modular",
-	  "library",
-	  "toolit",
-	  "amd",
-	  "require",
-	  "dry"
+    "modular",
+    "library",
+    "toolit",
+    "amd",
+    "require",
+    "dry"
   ],
-  "npmFileMap": [{
-	  "basePath": "/dist/latest/min",
-	  "files": [
-		  "**/*"
-	  ]
-  }],
+  "npmFileMap": [
+    {
+      "basePath": "/dist/latest/min",
+      "files": [
+        "**/*"
+      ]
+    }
+  ],
   "filename": "base.js"
 }

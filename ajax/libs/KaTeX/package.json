@@ -10,10 +10,12 @@
     "khan"
   ],
   "author": "Khan Academy",
-  "repositories": [{
-    "type": "git",
-    "url": "git://github.com/Khan/KaTeX.git"
-  }],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "git://github.com/Khan/KaTeX.git"
+    }
+  ],
   "bugs": "https://github.com/Khan/KaTeX/issues",
   "licenses": [
     {
