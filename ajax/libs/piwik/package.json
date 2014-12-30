@@ -8,16 +8,15 @@
     "analytics",
     "webmaster",
     "popular"
-    ],
-  "maintainers": [
-  {
-    "name": "The Piwik Team",
-    "url": "http://piwik.org/the-piwik-team/"
-
-  }
   ],
-    "repositories": [
-    { 
+  "maintainers": [
+    {
+      "name": "The Piwik Team",
+      "url": "http://piwik.org/the-piwik-team/"
+    }
+  ],
+  "repositories": [
+    {
       "type": "git",
       "url": "https://github.com/piwik/piwik.git"
     }

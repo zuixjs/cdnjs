@@ -13,10 +13,12 @@
       "name": "Ron Valstar"
     }
   ],
-  "repositories": [{
-    "type": "git",
-    "url": "https://github.com/Sjeiti/TinySort"
-  }],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/Sjeiti/TinySort"
+    }
+  ],
   "bugs": "https://github.com/Sjeiti/TinySort/issues",
   "licenses": [
     {

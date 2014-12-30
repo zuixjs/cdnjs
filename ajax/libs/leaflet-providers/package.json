@@ -21,10 +21,12 @@
     "uglifyjs": "^2.3.6"
   },
   "npmName": "leaflet-providers",
-  "npmFileMap": [{
-    "basePath": ".",
-    "files": [
-      "*.js"
-    ]
-  }]
+  "npmFileMap": [
+    {
+      "basePath": ".",
+      "files": [
+        "*.js"
+      ]
+    }
+  ]
 }

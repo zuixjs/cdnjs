@@ -13,11 +13,13 @@
     "popular"
   ],
   "author": "brutaldesign",
-  "main": ["jquery.swipebox.min.js"],
+  "main": [
+    "jquery.swipebox.min.js"
+  ],
   "repositories": [
     {
-        "type": "git",
-        "url": "https://github.com/brutaldesign/swipebox.git"
+      "type": "git",
+      "url": "https://github.com/brutaldesign/swipebox.git"
     }
   ]
 }

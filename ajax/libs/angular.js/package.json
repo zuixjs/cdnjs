@@ -28,10 +28,12 @@
       "name": "Brad Green"
     }
   ],
-  "repositories": [{
-    "type": "git",
-    "url": "git://github.com/angular/angular.js.git"
-  }],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "git://github.com/angular/angular.js.git"
+    }
+  ],
   "bugs": "https://github.com/angular/angular.js/issues",
   "licenses": [
     {

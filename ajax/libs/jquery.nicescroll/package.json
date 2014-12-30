@@ -5,19 +5,19 @@
   "version": "3.5.1",
   "homepage": "https://github.com/inuyaksa/jquery.nicescroll",
   "keywords": [
-      "nicescroll",
-      "jquery",
-      "interface",
-      "window",
-      "dom",
-      "div",
-      "scroll",
-      "ios",
-      "mobile",
-      "desktop",
-      "scrollbar",
-      "touch",
-      "android"
+    "nicescroll",
+    "jquery",
+    "interface",
+    "window",
+    "dom",
+    "div",
+    "scroll",
+    "ios",
+    "mobile",
+    "desktop",
+    "scrollbar",
+    "touch",
+    "android"
   ],
   "maintainers": [
     {

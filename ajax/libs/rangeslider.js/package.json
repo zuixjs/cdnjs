@@ -30,7 +30,6 @@
   "bugs": {
     "url": "https://github.com/andreruffert/rangeslider.js/issues"
   },
-  
   "npmName": "rangeslider.js",
   "npmFileMap": [
     {
@@ -40,5 +39,4 @@
       ]
     }
   ]
-
 }
