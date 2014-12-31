@@ -34,14 +34,6 @@
     "ui-router",
     "css"
   ],
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/door3/angular-css",
-    "basePath": "/",
-    "files": [
-      "*.js"
-    ]
-  },
   "bugs": {
     "url": "https://github.com/door3/angular-css/issues"
   },
