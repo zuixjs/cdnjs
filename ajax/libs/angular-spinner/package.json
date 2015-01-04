@@ -9,7 +9,8 @@
       "basePath": "/",
       "files": [
         "angular-spinner.js",
-        "angular-spinner.min.js"
+        "angular-spinner.min.js",
+        "angular-spinner.min.js.map"
       ]
     }
   ],
