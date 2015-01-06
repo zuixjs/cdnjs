@@ -27,8 +27,7 @@
     "target": "git://github.com/desandro/masonry.git",
     "basePath": "dist",
     "files": [
-      "masonry.pkgd.min.js",
-      "masonry.pkgd.js"
+      "*"
     ]
   }
 }
