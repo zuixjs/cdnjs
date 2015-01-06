@@ -37,7 +37,9 @@
     "basePath": "dist",
     "files": [
       "css/*.css",
+      "css/*.map",
       "js/*.js",
+      "js/*.map",
       "fonts/*.eot",
       "fonts/*.svg",
       "fonts/*.ttf",
