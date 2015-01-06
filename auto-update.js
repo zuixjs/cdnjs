@@ -227,7 +227,7 @@ var updateLibrary = function (pkg, cb) {
         return cb(null);
     }
     var msg = 'Checking versions for ' + pkg.npmName;
-    console.log(msg);
+    console.log(msg.prompt);
     request.get('http://registry.npmjs.org/' + pkg.npmName, function(result) {
         async.eachLimit(_.pairs(result.body.versions), maxWorker, function(p, cb){
             var data = p[1];
