@@ -16,7 +16,7 @@
     "async": "~0.9",
     "clean-css": "~3.0",
     "execSync": "~1.0",
-    "fs-extra": "~0.13",
+    "fs-extra": "~0.14",
     "glob": "~4",
     "lodash": "~2.4",
     "rss": "~1.1",
@@ -33,6 +33,6 @@
   },
   "optionalDependencies": {},
   "engines": {
-    "node": "*"
+    "node": "^0.10"
   }
 }

@@ -66,13 +66,15 @@
   },
   "filename": "d3plus.min.js",
   "npmName": "d3plus",
-  "npmFileMap": [{
-    "basePath": "/",
-    "files": [
-      "d3plus.full.js",
-      "d3plus.full.min.js",
-      "d3plus.js",
-      "d3plus.min.js"
-    ]
-  }]
+  "npmFileMap": [
+    {
+      "basePath": "/",
+      "files": [
+        "d3plus.full.js",
+        "d3plus.full.min.js",
+        "d3plus.js",
+        "d3plus.min.js"
+      ]
+    }
+  ]
 }
