@@ -33,5 +33,13 @@
       "type": "git",
       "url": "https://github.com/kangax/fabric.js"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/kangax/fabric.js.git",
+    "basePath": "dist",
+    "files": [
+      "*.js"
+    ]
+  }
 }
