@@ -1,7 +1,7 @@
 {
   "name": "socket.io",
   "filename": "socket.io.min.js",
-  "version": "0.9.16",
+  "version": "1.2.1",
   "description": "Browser-side code for Socket.IO. Socket.IO aims to make realtime apps possible in every browser and mobile device, blurring the differences between the different transport mechanisms.",
   "homepage": "http://socket.io",
   "keywords": [
@@ -18,6 +18,16 @@
     {
       "type": "git",
       "url": "git://github.com/LearnBoost/Socket.IO.git"
+    }
+  ],
+  "npmName": "socket.io-client",
+  "npmFileMap": [
+    {
+      "basePath": "",
+      "files": [
+        "socket.io.js",
+        "socket.io.min.js"
+      ]
     }
   ]
 }
