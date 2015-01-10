@@ -19,5 +19,15 @@
       "type": "git",
       "url": "git://github.com/LearnBoost/Socket.IO.git"
     }
+  ],
+  "npmName": "socket.io-client",
+  "npmFileMap": [
+    {
+      "basePath": "",
+      "files": [
+        "socket.io.js",
+        "socket.io.min.js"
+      ]
+    }
   ]
 }
