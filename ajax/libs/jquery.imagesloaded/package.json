@@ -1,7 +1,7 @@
 {
   "name": "jquery.imagesloaded",
-  "filename": "jquery.imagesloaded.min.js",
-  "version": "3.0.4",
+  "filename": "imagesloaded.pkgd.min.js",
+  "version": "3.1.8",
   "description": "jQuery plugin that triggers a callback after all images have been loaded",
   "homepage": "http://desandro.github.com/imagesloaded/",
   "keywords": [
@@ -23,6 +23,15 @@
     {
       "type": "git",
       "url": "https://github.com/desandro/imagesloaded"
+    }
+  ],
+  "npmName": "imagesloaded",
+  "npmFileMap": [
+    {
+      "basePath": "/",
+      "files": [
+        "imagesloaded*.js"
+      ]
     }
   ]
 }
