@@ -36,10 +36,10 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/playlyfe/aegis.git",
-    "basePath": "/dist/",
+    "basePath": ".",
     "files": [
-      "aegis.css",
-      "aegis.min.css",
+      "dist/aegis.css",
+      "dist/aegis.min.css",
       "fonts/Lyfeicons.woff",
       "fonts/Lyfeicons.ttf",
       "fonts/Lyfeicons.svg",
