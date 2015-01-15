@@ -27,7 +27,7 @@
   ],
   "autoupdate": {
     "source": "git",
-    "target": "https://github.com/gionkunz/chartist-js.git",
+    "target": "git://github.com/gionkunz/chartist-js.git",
     "basePath": "dist",
     "files": [
       "chartist.js",
