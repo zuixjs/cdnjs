@@ -38,7 +38,9 @@
   "npmFileMap": [
     {
       "basePath": "/dist",
-      "files":["*"]
+      "files": [
+        "*"
+      ]
     }
   ],
   "filename": "geojson2svg.min.js"
