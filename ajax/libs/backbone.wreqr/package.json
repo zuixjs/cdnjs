@@ -20,5 +20,13 @@
       "type": "git",
       "url": "http://github.com/marionettejs/backbone.wreqr"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/marionettejs/backbone.wreqr.git",
+    "basePath": "lib",
+    "files": [
+      "*"
+    ]
+  }
 }
