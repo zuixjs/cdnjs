@@ -4,7 +4,12 @@
   "homepage": "https://github.com/bevacqua/rome",
   "version": "1.2.1",
   "filename": "rome.standalone.min.js",
-  "keywords": ["rome", "calendar", "date picker", "time picker"],
+  "keywords": [
+    "rome",
+    "calendar",
+    "date picker",
+    "time picker"
+  ],
   "author": {
     "name": "Nicolas Bevacqua",
     "email": "hello@bevacqua.io",
