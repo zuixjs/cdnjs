@@ -28,5 +28,13 @@
       "type": "git",
       "url": "https://github.com/flesler/jquery.localScroll"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/flesler/jquery.localScroll.git",
+    "basePath": "",
+    "files": [
+      "*.js"
+    ]
+  }
 }
