@@ -26,13 +26,13 @@
       "url": "https://github.com/epeli/underscore.string"
     }
   ],
-  "npmName": "underscore.string",
-  "npmFileMap": [
-    {
-      "basePath": "/",
-      "files": [
-        "dist/underscore.string.min.js"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/epeli/underscore.string.git",
+    "basePath": "dist",
+    "files": [
+      "*/*",
+      "*"
+    ]
+  }
 }
