@@ -27,9 +27,9 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/kunass2/scregal.js.git",
-    "basePath": "",
+    "basePath": "js",
     "files": [
-      "js/*"
+      "*"
     ]
   }
 }
