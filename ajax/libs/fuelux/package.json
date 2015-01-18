@@ -33,5 +33,15 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/ExactTarget/fuelux.git"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/ExactTarget/fuelux.git",
+    "basePath": "dist",
+    "files": [
+      "css/*",
+      "js/*",
+      "fonts/*"
+    ]
   }
 }
