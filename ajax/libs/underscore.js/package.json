@@ -21,5 +21,13 @@
       "url": "https://github.com/jashkenas/underscore/"
     }
   ],
-  "namespace": "_"
+  "namespace": "_",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/jashkenas/underscore.git",
+    "basePath": "",
+    "files": [
+      "underscore*"
+    ]
+  }
 }

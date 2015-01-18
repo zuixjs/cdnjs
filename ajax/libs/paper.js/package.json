@@ -1,7 +1,7 @@
 {
   "name": "paper.js",
   "filename": "paper-full.min.js",
-  "version": "0.9.18",
+  "version": "0.9.21",
   "description": "The Swiss Army Knife of Vector Graphics Scripting",
   "homepage": "http://paperjs.org/",
   "keywords": [
@@ -29,5 +29,16 @@
       "type": "git",
       "url": "https://github.com/paperjs/paper.js.git"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/paperjs/paper.js.git",
+    "basePath": "dist",
+    "files": [
+      "paper-full.js",
+      "paper-full.min.js",
+      "paper-core.js",
+      "paper-core.min.js"
+    ]
+  }
 }
