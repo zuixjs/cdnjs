@@ -28,7 +28,8 @@
     "basePath": "dist",
     "files": [
       "gridstack.min.css",
-      "gridstack.min.js"
+      "gridstack.min.js",
+      "gridstack.min.map"
     ]
   }
 }
