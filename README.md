@@ -55,9 +55,9 @@ You should consider the following when adding to or updating the library, so tha
 * You should sync your local repository with our master branch as new as possible, try to make the commits' parent be new.
  * Please use `git pull --rebase` instead of `git pull`, use `git rebase upstream/master` instead of `git merge upstream/master`, so that we can avoid of meaningless merging.
 
-* Only do one thing in one commits, don't mix different things into the same commit.
+* Only do one _meaningful_ thing in one commits, don't mix different things into the same commit, like add two libs in a commit.
 
-* Every commits should be meaningful, don't cut one thing into multiple commits.
+* Every commits should be meaningful, don't cut one thing into multiple commits, like add a lib in 3 commits.
 
 * Inspect your work by `git diff` & `git status` before commit your change.
 
