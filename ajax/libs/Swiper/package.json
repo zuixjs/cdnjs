@@ -35,11 +35,13 @@
     "time-grunt": "~1.0.0"
   },
   "npmName": "swiper",
-  "npmFileMap": [{
-    "basePath": "/dist/",
-    "files": [
-      "*.js",
-      "*.css"
-    ]
-  }]
+  "npmFileMap": [
+    {
+      "basePath": "/dist/",
+      "files": [
+        "*.js",
+        "*.css"
+      ]
+    }
+  ]
 }
