@@ -1,9 +1,10 @@
 {
   "name": "knockout-validation",
   "filename": "knockout.validation.min.js",
-  "version": "1.0.2",
+  "version": "2.0.1",
   "description": "A validation library for Knockout JS",
-  "homepage": "http://ericmbarnard.github.com/Knockout-Validation/",
+  "homepage": "https://github.com/Knockout-Contrib/Knockout-Validation",
+  "license": "MIT",
   "keywords": [
     "knockout",
     "mvvm",
@@ -17,12 +18,28 @@
       "name": "eric barnard",
       "email": "eric.m.barnard@gmail.com",
       "web": "http://www.ericbarnard.com/"
+    },
+    {
+      "name": "Cristian Trifan",
+      "email": "criss.trifan@gmail.com",
+      "web": "http://www.crissdev.com/"
     }
   ],
   "repositories": [
     {
       "type": "git",
-      "url": "https://github.com/ericmbarnard/Knockout-Validation.git"
+      "url": "https://github.com/Knockout-Contrib/Knockout-Validation.git"
+    }
+  ],
+  "npmName": "knockout.validation",
+  "npmFileMap": [
+    {
+      "basePath": "/dist/",
+      "files": ["*"]
+    },
+    {
+      "basePath": "",
+      "files": ["localization/*"]
     }
   ]
 }
