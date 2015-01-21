@@ -26,11 +26,8 @@
     "target": "git://github.com/fraywing/textAngular.git",
     "basePath": "",
     "files": [
-      "dist/textAngular.min.js",
-      "dist/textAngular-sanitize.min.js",
-      "src/textAngular-sanitize.js",
-      "src/textAngularSetup.js",
-      "src/textAngular.js"
+      "src/*",
+      "dist/*"
     ]
   }
 }
