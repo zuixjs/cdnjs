@@ -31,11 +31,9 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/mozilla/metrics-graphics.git",
-    "basePath": "",
+    "basePath": "dist",
     "files": [
-      "css/metricsgraphics.css",
-      "js/metricsgraphics.js",
-      "js/metricsgraphics.min.js"
+      "*"
     ]
   }
 }
