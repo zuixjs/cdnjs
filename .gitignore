@@ -35,3 +35,6 @@ ajax/libs/angular-material/0.0.2-e59e064cd0e19d841e9c252f973a9eb7e87543a2/
 ajax/libs/deck.js/latest/
 ajax/libs/jasmine/list/
 ajax/libs/underscore.string/.*
+ajax/libs/jsxgraph/RELEASE*
+ajax/libs/jsxgraph/skm*
+ajax/libs/jsxgraph/sketchometry*
