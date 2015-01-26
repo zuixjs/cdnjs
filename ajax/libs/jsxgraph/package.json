@@ -23,5 +23,14 @@
       "type": "git",
       "url": "http://git.code.sf.net/p/jsxgraph/code"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/jsxgraph/jsxgraph.git",
+    "basePath": "distrib",
+    "files": [
+      "themes/*",
+      "*.js"
+    ]
+  }
 }
