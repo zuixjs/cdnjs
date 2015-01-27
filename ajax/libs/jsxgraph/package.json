@@ -27,10 +27,9 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/jsxgraph/jsxgraph.git",
-    "basePath": "distrib",
+    "basePath": "update_cdnjs",
     "files": [
-      "themes/*",
-      "*.js"
+      "*"
     ]
   }
 }
