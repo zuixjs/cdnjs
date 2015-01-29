@@ -38,7 +38,9 @@
     "basePath": "",
     "files": [
       "riot.js",
-      "riot.min.js"
+      "riot.min.js",
+      "riot+compiler.js",
+      "riot+compiler.min.js"
     ]
   }
 }
