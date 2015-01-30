@@ -18,5 +18,14 @@
       "type": "git",
       "url": "git://github.com/goldfire/howler.js.git"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/goldfire/howler.js.git",
+    "basePath": "",
+    "files": [
+      "howler.js",
+      "howler.min.js"
+    ]
+  }
 }
