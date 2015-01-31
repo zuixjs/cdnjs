@@ -20,5 +20,17 @@
       "type": "git",
       "url": "https://github.com/johndyer/mediaelement"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/johndyer/mediaelement.git",
+    "basePath": "build",
+    "files": [
+      "*.png",
+      "*.gif",
+      "*.css",
+      "*.js",
+      "*.swf"
+    ]
+  }
 }
