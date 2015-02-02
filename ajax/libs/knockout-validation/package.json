@@ -35,11 +35,15 @@
   "npmFileMap": [
     {
       "basePath": "/dist/",
-      "files": ["*"]
+      "files": [
+        "*"
+      ]
     },
     {
       "basePath": "",
-      "files": ["localization/*"]
+      "files": [
+        "localization/*"
+      ]
     }
   ]
 }
