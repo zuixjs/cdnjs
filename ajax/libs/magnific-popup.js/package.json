@@ -35,5 +35,13 @@
       "type": "git",
       "url": "https://github.com/dimsemenov/Magnific-Popup.git"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/dimsemenov/Magnific-Popup.git",
+    "basePath": "dist",
+    "files": [
+      "*"
+    ]
+  }
 }
