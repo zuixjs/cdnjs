@@ -38,7 +38,7 @@
   ],
   "autoupdate": {
     "source": "git",
-    "target": "https://github.com/dimsemenov/Magnific-Popup.git",
+    "target": "git://github.com/dimsemenov/Magnific-Popup.git",
     "basePath": "dist",
     "files": [
       "*"
