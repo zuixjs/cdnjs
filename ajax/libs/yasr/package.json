@@ -1,7 +1,7 @@
 {
   "name": "yasr",
   "description": "Yet Another SPARQL Resultset Visualizer",
-  "version": "2.4.4",
+  "version": "2.4.6",
   "main": "src/main.js",
   "licenses": [
     {
