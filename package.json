@@ -16,7 +16,7 @@
     "async": "~0.9",
     "clean-css": "~3.0",
     "execSync": "~1.0",
-    "fs-extra": "~0.14",
+    "fs-extra": "~0.16",
     "glob": "~4",
     "lodash": "~3.0",
     "rss": "~1.1",
