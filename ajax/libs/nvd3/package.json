@@ -21,5 +21,13 @@
   "repository": {
     "type": "git",
     "url": "http://github.com/nvd3-community/nvd3.git"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/nvd3-community/nvd3.git",
+    "basePath": "build",
+    "files": [
+      "*"
+    ]
   }
 }
