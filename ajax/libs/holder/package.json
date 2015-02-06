@@ -1,7 +1,7 @@
 {
   "name": "holder",
-  "filename": "holder.js",
-  "version": "2.4.1",
+  "filename": "holder.min.js",
+  "version": "2.5.0",
   "description": "Client-side image placeholders.",
   "homepage": "http://imsky.github.io/holder/",
   "keywords": [

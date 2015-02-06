@@ -1,24 +1,35 @@
 {
   "name": "jquery.isotope",
   "filename": "isotope.pkgd.min.js",
-  "version": "2.0.0",
-  "description": "An exquisite jQuery plugin for magical layouts. Enables filtering, sorting, and dynamic layouts.",
-  "homepage": "https://github.com/desandro/isotope",
+  "version": "2.1.0",
+  "description": "Filter and sort magical layouts",
+  "homepage": "http://isotope.metafizzy.co",
   "keywords": [
     "isotope",
     "filtering",
-    "sorting"
+    "sorting",
+    "masonry",
+    "layout"
   ],
   "maintainers": [
     {
-      "name": "desandro",
+      "name": "Metafizzy",
       "web": "http://metafizzy.co/"
     }
   ],
   "repositories": [
     {
       "type": "git",
-      "url": "https://github.com/desandro/isotope"
+      "url": "https://github.com/metafizzy/isotope"
+    }
+  ],
+  "npmName": "isotope-layout",
+  "npmFileMap": [
+    {
+      "basePath": "/dist/",
+      "files": [
+        "*"
+      ]
     }
   ]
 }

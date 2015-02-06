@@ -1,7 +1,7 @@
 {
   "name": "magnific-popup.js",
   "filename": "jquery.magnific-popup.min.js",
-  "version": "0.9.9",
+  "version": "1.0.0",
   "author": "Dmitry Semenov",
   "description": "Fast, light, mobile-friendly and responsive lightbox plugin with focus on performance. Open inline HTML, ajax loaded content, image, form, iframe (YouTube and Vimeo video, Google Maps), photo gallery. Easily add in/out animation effects with help of CSS3 transitions.",
   "homepage": "http://dimsemenov.com/plugins/magnific-popup/",
@@ -35,5 +35,13 @@
       "type": "git",
       "url": "https://github.com/dimsemenov/Magnific-Popup.git"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/dimsemenov/Magnific-Popup.git",
+    "basePath": "dist",
+    "files": [
+      "*"
+    ]
+  }
 }
