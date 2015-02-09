@@ -19,5 +19,24 @@
       "type": "git",
       "url": "https://github.com/simplabs/ember-simple-auth"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/simplabs/ember-simple-auth-component.git",
+    "basePath": "",
+    "files": [
+      "simple-auth-cookie-store.amd.js",
+      "simple-auth-cookie-store.js",
+      "simple-auth-devise.amd.js",
+      "simple-auth-devise.js",
+      "simple-auth-oauth2.amd.js",
+      "simple-auth-oauth2.js",
+      "simple-auth-testing.amd.js",
+      "simple-auth-testing.js",
+      "simple-auth-torii.amd.js",
+      "simple-auth-torii.js",
+      "simple-auth.amd.js",
+      "simple-auth.js"
+    ]
+  }
 }
