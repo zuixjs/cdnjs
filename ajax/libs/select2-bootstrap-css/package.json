@@ -26,8 +26,12 @@
   ],
   "author": "Tom Terrace",
   "contributors": [
-    { "name": "Michael Hellein" },
-    { "name": "Florian Kissling" }
+    {
+      "name": "Michael Hellein"
+    },
+    {
+      "name": "Florian Kissling"
+    }
   ],
   "license": {
     "type": "MIT",
