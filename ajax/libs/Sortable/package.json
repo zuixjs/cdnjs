@@ -24,5 +24,14 @@
     "drag"
   ],
   "author": "Konstantin Lebedev <ibnRubaXa@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/rubaxa/Sortable.git",
+    "basePath": "",
+    "files": [
+      "Sortable.min.js",
+      "Sortable.js"
+    ]
+  }
 }
