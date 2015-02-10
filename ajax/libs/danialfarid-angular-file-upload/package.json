@@ -1,5 +1,13 @@
 {
   "name": "danialfarid-angular-file-upload",
+  "npmName": "ng-file-upload",
+  "npmFileMap": [{
+    "basePath": "/dist/",
+    "files": [
+      "*.js",
+      "*.swf"
+    ]
+  }],
   "version": "1.6.1",
   "filename": "angular-file-upload.min.js",
   "devDependencies": {
