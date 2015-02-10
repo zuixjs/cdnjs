@@ -27,7 +27,8 @@
     "target": "git://github.com/pusher/pusher-js.git",
     "basePath": "dist",
     "files": [
-      "*"
+      "*.js",
+      "*.swf"
     ]
   }
 }
