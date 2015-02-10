@@ -21,5 +21,13 @@
       "type": "git",
       "url": "http://github.com/pusher/pusher-js"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/pusher/pusher-js.git",
+    "basePath": "dist",
+    "files": [
+      "*"
+    ]
+  }
 }
