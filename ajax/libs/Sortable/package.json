@@ -2,7 +2,7 @@
   "name": "Sortable",
   "title": "Sortable",
   "exportName": "Sortable",
-  "version": "0.3.0",
+  "version": "1.0.1",
   "filename": "Sortable.min.js",
   "homepage": "http://rubaxa.github.io/Sortable/",
   "devDependencies": {
