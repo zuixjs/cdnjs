@@ -21,7 +21,7 @@
   ],
   "autoupdate": {
     "source": "git",
-    "target": "https://github.com/asatour/jquery-domPath.git",
+    "target": "git://github.com/asatour/jquery-domPath.git",
     "basePath": "src",
     "files": [
       "jquery.domPath.js",
