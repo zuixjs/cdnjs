@@ -19,5 +19,14 @@
     "fullPath",
     "inspect"
   ],
+  "autoupdate": {
+    "source": "git",
+    "target": "https://github.com/asatour/jquery-domPath.git",
+    "basePath": "src",
+    "files": [
+      "jquery.domPath.js",
+      "jquery.domPath.min.js"
+    ]
+  },
   "license": "MIT"
 }
