@@ -18,5 +18,14 @@
       "type": "git",
       "url": "https://github.com/ajaxorg/ace-builds/"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/ajaxorg/ace-builds.git",
+    "basePath": "src-min",
+    "files": [
+      "*/*",
+      "*"
+    ]
+  }
 }
