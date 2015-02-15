@@ -82,10 +82,12 @@
     ]
   },
   "npmName": "react-foundation-apps",
-  "npmFileMap": [{
-    "basePath": "/dist/",
-    "files": [
-      "*.js"
-    ]
-  }]
+  "npmFileMap": [
+    {
+      "basePath": "/dist/",
+      "files": [
+        "*.js"
+      ]
+    }
+  ]
 }
