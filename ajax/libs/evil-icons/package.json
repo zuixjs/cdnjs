@@ -3,13 +3,15 @@
   "filename": "evil-icons.min.js",
   "version": "1.7.1",
   "npmName": "evil-icons",
-  "npmFileMap": [{
-    "basePath": "/assets/",
-    "files": [
-      "evil-icons.min.js",
-      "evil-icons.min.css"
-    ]
-  }],
+  "npmFileMap": [
+    {
+      "basePath": "/assets/",
+      "files": [
+        "evil-icons.min.js",
+        "evil-icons.min.css"
+      ]
+    }
+  ],
   "description": "Evil Icons is a set of SVG icons designed extensively for using in modern web projects",
   "homepage": "http://evil-icons.io",
   "repository": {
@@ -36,8 +38,10 @@
     "svg",
     "vector"
   ],
-  "licenses": [{
+  "licenses": [
+    {
       "type": "MIT",
       "url": "http://www.opensource.org/licenses/MIT"
-  }]
+    }
+  ]
 }
