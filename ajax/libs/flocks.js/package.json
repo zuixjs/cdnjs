@@ -1,5 +1,9 @@
 {
-  "author": "John Haugeland",
+  "author": {
+    "name": "John Haugeland",
+    "email": "stonecypher@gmail.com",
+    "url": "http://fullof.bs/"
+  },
   "name": "flocks.js",
   "filename": "flocks.js",
   "description": "Simpler state management for React.js",
@@ -40,11 +44,6 @@
       ]
     }
   ],
-  "author": {
-    "name": "John Haugeland",
-    "email": "stonecypher@gmail.com",
-    "url": "http://fullof.bs/"
-  },
   "maintainers": [
     {
       "name": "John Hauegland",
