@@ -1,7 +1,7 @@
 {
   "name": "FlipDiv",
   "filename": "FlipDiv.min.js",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "A space efficient 3D menu with CSS transitions.",
   "homepage": "http://kireerik.github.io/FlipDiv/demo/",
   "author": {
