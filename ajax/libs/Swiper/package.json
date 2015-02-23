@@ -1,7 +1,7 @@
 {
   "name": "Swiper",
   "filename": "js/swiper.min.js",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Mobile touch slider and framework with hardware accelerated transitions",
   "main": "dist/idangerous.swiper.js",
   "repository": {
@@ -39,9 +39,7 @@
     {
       "basePath": "/dist/",
       "files": [
-        "*/*/*",
-        "*/*",
-        "*"
+        "**"
       ]
     }
   ]
