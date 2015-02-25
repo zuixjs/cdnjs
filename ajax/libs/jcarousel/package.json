@@ -30,5 +30,13 @@
   "namespace": [
     "$.jcarousel",
     "$.fn.jcarousel"
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/jsor/jcarousel.git",
+    "basePath": "dist/",
+    "files": [
+      "*.js"
+    ]
+  }
 }
