@@ -18,6 +18,7 @@
     "grunt-max-filesize": "^0.1.0",
     "grunt-uncss": "~0.3.7"
   },
+  "namespace": "lazySizes",
   "npmName": "lazysizes",
   "npmFileMap": [
     {
