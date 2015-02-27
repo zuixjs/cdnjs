@@ -15,6 +15,7 @@
   "npmName": "ramda",
   "npmFileMap": [
     {
+      "basePath": "/dist/",  
       "files": [
         "ramda.js",
         "ramda.min.js"
