@@ -28,5 +28,13 @@
         "*.js"
       ]
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/leaflet-extras/leaflet-providers.git",
+    "basePath": "",
+    "files": [
+      "leaflet-providers*.js"
+    ]
+  }
 }
