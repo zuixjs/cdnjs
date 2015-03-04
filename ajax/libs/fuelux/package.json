@@ -41,7 +41,9 @@
     "files": [
       "css/*",
       "js/*",
-      "fonts/*"
+      "fonts/*",
+      "img/*",
+      "all*.js"
     ]
   }
 }
