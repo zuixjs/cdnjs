@@ -1,7 +1,7 @@
 {
   "name": "jquery-sheetrock",
   "filename": "dist/jquery.sheetrock.min.js",
-  "version": "0.2.4",
+  "version": "0.3.0",
   "description": "Quickly connect to, query, and lazy-load data from Google Spreadsheets.",
   "homepage": "http://chriszarate.github.io/sheetrock/",
   "keywords": [
