@@ -33,7 +33,7 @@
   "npmName": "jsoneditor",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "dist/",
       "files": [
         "img/jsoneditor-icons.png",
         "jsoneditor.min.css",
