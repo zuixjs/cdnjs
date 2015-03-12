@@ -24,11 +24,10 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/eternicode/bootstrap-datepicker.git",
-    "basePath": "",
+    "basePath": "dist",
     "files": [
-      "css/*",
-      "js/*/*",
-      "js/*"
+      "*/*",
+      "*"
     ]
   }
 }
