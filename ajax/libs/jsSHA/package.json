@@ -34,13 +34,12 @@
   "homepage": "https://github.com/Caligatio/jsSHA",
   "dependencies": {},
   "devDependencies": {},
-  "npmName": "jssha",
-  "npmFileMap": [
-    {
-      "basePath": "/src/",
-      "files": [
-        "*.js"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/Caligatio/jsSHA.git",
+    "basePath": "src",
+    "files": [
+      "*.js"
+    ]
+  }
 }
