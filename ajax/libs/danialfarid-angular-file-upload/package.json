@@ -10,7 +10,7 @@
       ]
     }
   ],
-  "version": "3.1.2",
+  "version": "3.2.3",
   "filename": "angular-file-upload.min.js",
   "devDependencies": {
     "grunt": "~0.4.1",
