@@ -21,5 +21,13 @@
     {
       "url": "https://github.com/defunkt/jquery-pjax/blob/master/LICENSE"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/defunkt/jquery-pjax.git",
+    "basePath": "",
+    "files": [
+      "jquery.pjax.js"
+    ]
+  }
 }
