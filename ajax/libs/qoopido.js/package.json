@@ -36,9 +36,9 @@
   ],
   "npmFileMap": [
     {
-      "basePath": "/dist/latest/min",
+      "basePath": "/dist/latest/min/",
       "files": [
-        "**/*"
+        "**"
       ]
     }
   ],
