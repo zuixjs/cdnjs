@@ -9,7 +9,7 @@ var feed = new RSS({
     site_url:         'http://cdnjs.com/',
     feed_url:         'http://cdnjs.com/rss.xml',
     image_url:        'http://cdnjs.com/img/poweredbycloudflare.png',
-    copyright:    'Copyright © 2013 Cdnjs. All rights reserved',
+    copyright:    'Copyright © 2015 Cdnjs. All rights reserved',
     
     author: 'cdnjs team'
 });
