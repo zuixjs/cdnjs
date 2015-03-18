@@ -12,14 +12,13 @@
   ],
   "homepage": "http://github.com/eXon/react-cookie",
   "bugs": "https://github.com/eXon/react-cookie/issues",
-  "npmName": "react-cookie",
-  "npmFileMap": [
-    {
-      "basePath": "/dist/",
-      "files": [
-        "react-cookie.*"
-      ]
-    }
-  ],
-  "namespace": "reactCookie"
+  "namespace": "reactCookie",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/eXon/react-cookie.git",
+    "basePath": "dist",
+    "files": [
+      "*"
+    ]
+  }
 }
