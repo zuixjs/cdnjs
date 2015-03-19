@@ -19,7 +19,7 @@ Please raise a new pull request for new library additions and existing library u
 
 It's time for us to move away from manual submissions and focus solely on getting libraries updating from official sources. Everything is still flakey and we hope you can bear with us in this transition. 
 
-*All pull request should just add auto update configs to the package.json*
+*All pull requests should just add auto update configs to the package.json*
 
 
 
