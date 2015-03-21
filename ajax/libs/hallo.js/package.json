@@ -18,5 +18,13 @@
       "type": "git",
       "url": "https://github.com/bergie/hallo"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/bergie/hallo.git",
+    "basePath": "dist",
+    "files": [
+      "*"
+    ]
+  }
 }
