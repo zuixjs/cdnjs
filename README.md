@@ -62,7 +62,7 @@ You should consider the following when adding to or updating the library, so tha
 
 ## Create or update `package.json`
 
-Each library has a corresponding `package.json`, written in `npm` format (see `test/schemata/npm-package.json` for details or use another `package.json` to crib from - it's pretty self-explanatory). When an existing library is updated, the details in `package.json` should be updated where required.
+Each library has a corresponding `package.json`, written in `npm` format (see `test/schemata/npm-package.json` for details or use another `package.json` to crib from - it's pretty self-explanatory), and we use `filename` field in `package.json` to point to the mainfile of a lib, this field will be required. When an existing library is updated, the details in `package.json` should be updated where required.
 
 For example, if a new version of the library is added, the version number may need changing. Likewise, if you're adding `npm` update information to a library, this is done in `package.json`.
 
