@@ -8,20 +8,26 @@
     "matreshka",
     "framework"
   ],
-  "maintainers": [{
-    "name": "Andrey Gubanov"
-  }],
-  "repositories": [{
-    "type": "git",
-    "url": "https://github.com/finom/matreshka.git"
-  }],
+  "maintainers": [
+    {
+      "name": "Andrey Gubanov"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/finom/matreshka.git"
+    }
+  ],
   "npmName": "matreshka",
-  "npmFileMap": [{
-    "basePath": "/",
-    "files": [
-      "matreshka.js",
-      "matreshka.min.js",
-      "matreshka.min.map"
-    ]
-  }]
+  "npmFileMap": [
+    {
+      "basePath": "/",
+      "files": [
+        "matreshka.js",
+        "matreshka.min.js",
+        "matreshka.min.map"
+      ]
+    }
+  ]
 }
