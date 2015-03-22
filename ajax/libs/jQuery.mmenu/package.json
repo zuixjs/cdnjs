@@ -21,7 +21,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/BeSite/jQuery.mmenu.git",
-    "basePath": "src",
+    "basePath": "dist",
     "files": [
       "css/*/*/*/*",
       "css/*/*/*",
