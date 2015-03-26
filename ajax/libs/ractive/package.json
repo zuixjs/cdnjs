@@ -28,8 +28,8 @@
     {
       "basePath": "/",
       "files": [
-        "*.js",
-        "*.map"
+        "ractive*.js",
+        "ractive*.map"
       ]
     }
   ]
