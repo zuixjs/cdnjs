@@ -16,7 +16,7 @@
   "npmFileMap": [{
     "basePath": "/dist/",
     "files": [
-      "**/*"
+      "**"
     ]
   }],
   "keywords": [
