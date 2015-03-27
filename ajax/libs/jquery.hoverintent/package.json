@@ -12,10 +12,15 @@
     "jquery.hoverIntent",
     "jquery.hoverintent"
   ],
+  "author": "Brian Cherne <brian@cherne.net> (http://cherne.net/)",
   "maintainers": [
     {
       "name": "Brian Cherne",
+      "email": "brian@cherne.net",
       "web": "http://cherne.net/brian/resources/jquery.hoverIntent.html"
+    },
+    {
+      "name": "Usman Akeju"
     }
   ],
   "repositories": [
@@ -23,5 +28,14 @@
       "type": "git",
       "url": "https://github.com/briancherne/jquery-hoverIntent"
     }
-  ]
+  ],
+  "license": "MIT",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/briancherne/jquery-hoverIntent.git",
+    "basePath": "",
+    "files": [
+      "jquery.hoverIntent.js"
+    ]
+  }
 }
