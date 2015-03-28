@@ -37,10 +37,10 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/IanLunn/Hover.git",
-    "basePath": "css/",
+    "basePath": "",
     "files": [
-      "hover-min.css",
-      "hover.css"
+      "css/hover-min.css",
+      "css/hover.css"
     ]
   }
 }
