@@ -12,13 +12,12 @@
   ],
   "homepage": "https://github.com/rackt/react-router",
   "bugs": "https://github.com/rackt/react-router/issues",
-  "npmName": "react-router",
-  "npmFileMap": [
-    {
-      "basePath": "/dist/",
-      "files": [
-        "*.js"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/rackt/react-router.git",
+    "basePath": "/build/global",
+    "files": [
+      "*.js"
+    ]
+  }
 }
