@@ -20,5 +20,13 @@
       "type": "git",
       "url": "https://github.com/ejci/favico.js"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/ejci/favico.js.git",
+    "basePath": "",
+    "files": [
+      "favico.js"
+    ]
+  }
 }
