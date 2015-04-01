@@ -25,7 +25,6 @@
   "bugs": {
     "url": "https://github.com/scottschiller/SoundManager2/issues/"
   },
-  "homepage": "http://www.schillmania.com/projects/soundmanager2/",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/scottschiller/SoundManager2.git",
