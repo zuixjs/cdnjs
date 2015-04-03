@@ -36,6 +36,25 @@ When you have forked the cdnjs repo, add your library to it. Libraries are store
 /ajax/libs/jquery/2.0.0/
 ```
 
+[**@IonicaBizau**](https://github.com/IonicaBizau) wrote a NodeJS command line tool for automating the
+adding process of a new library. This tool [is named *cdnjs-importer* and it's open source](https://github.com/IonicaBizau/cdnjs-importer).
+
+The basic usage is:
+
+```sh
+$ npm install -g cdnjs-importer
+$ cdnjs-importer <library-git-path>
+```
+
+This supposes that the cdnjs repository is downloaded in the home directory (`~/`). The path to the cdnjs 
+local repository can also be specified using:
+
+```sh
+$ cdnjs-importer <library-git-path> -c path/to/cdnjs
+```
+
+For more information regarding this importer, please check out the [repository documentation](https://github.com/IonicaBizau/cdnjs-importer).
+
 ## Conventions
 
 You should consider the following when adding to or updating the library, so that we can keep our project neat, clean and clear:
