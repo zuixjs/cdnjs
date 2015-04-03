@@ -41,7 +41,9 @@
     {
       "basePath": "/",
       "files": [
-        "bignumber.min.js"
+        "bignumber.min.js",
+        "bignumber.js",
+        "bignumber.js.map"
       ]
     }
   ]
