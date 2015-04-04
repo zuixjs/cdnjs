@@ -43,11 +43,13 @@
     "svg"
   ],
   "npmName": "geojs",
-  "npmFileMap": [{
-    "basePath": "/",
-    "files": [
-      "geo*.js"
-    ]
-  }],
+  "npmFileMap": [
+    {
+      "basePath": "/",
+      "files": [
+        "geo*.js"
+      ]
+    }
+  ],
   "filename": "geo.min.js"
 }
