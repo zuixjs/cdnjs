@@ -29,5 +29,13 @@
       "type": "git",
       "url": "http://github.com/appendto/jquery-mockjax.git"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/appendto/jquery-mockjax.git",
+    "basePath": "",
+    "files": [
+      "jquery.mockjax*.js"
+    ]
+  }
 }
