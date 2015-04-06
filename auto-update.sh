@@ -15,7 +15,7 @@ echo npm install for good measure
 /usr/local/bin/npm install -g vows
 
 echo Starting auto update script
-/usr/local/bin/node auto-update.js run >> node.log
+./auto-update.js run >> node.log
 
 echo Starting npm test
 /usr/local/bin/npm test
