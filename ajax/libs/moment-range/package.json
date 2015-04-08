@@ -4,24 +4,15 @@
     {
       "basePath": "/lib/",
       "files": [
-        "*"
-      ]
-    }
-  ],
-  "name": "moment-range",
-  "version": "1.0.5",
-  "description": "Fancy date ranges for Moment.js",
-  "filename": "moment-range.min.js",
-  "homepage": "https://github.com/gf3/moment-range",
-  "npmName": "moment-range",
-  "npmFileMap": [
-    {
-      "basePath": "/lib/",
-      "files": [
         "*.js"
       ]
     }
   ],
+  "name": "moment-range",
+  "version": "1.0.7",
+  "description": "Fancy date ranges for Moment.js",
+  "filename": "moment-range.min.js",
+  "homepage": "https://github.com/gf3/moment-range",
   "keywords": [
     "date",
     "moment",

@@ -1,7 +1,7 @@
 {
   "name": "c3",
   "filename": "c3.min.js",
-  "version": "0.4.8",
+  "version": "0.4.10",
   "description": "D3-based reusable chart library",
   "homepage": "http://c3js.org",
   "main": "c3.js",
@@ -35,6 +35,7 @@
     "basePath": "",
     "files": [
       "c3.css",
+      "c3.min.css",
       "c3.js",
       "c3.min.js"
     ]

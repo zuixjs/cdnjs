@@ -60,7 +60,7 @@
     "target": "git://github.com/gkz/LiveScript.git",
     "basePath": "browser",
     "files": [
-        "*.js"
+      "*.js"
     ]
   }
 }

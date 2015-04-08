@@ -1,7 +1,7 @@
 {
   "name": "semantic-ui",
   "filename": "semantic.min.js",
-  "version": "1.4.1",
+  "version": "1.11.6",
   "description": "Semantic empowers designers and developers by creating a language for sharing UI",
   "homepage": "http://semantic-ui.com/",
   "keywords": [
@@ -14,16 +14,13 @@
       "url": "https://github.com/Semantic-Org/Semantic-UI"
     }
   ],
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/Semantic-Org/Semantic-UI",
-    "basePath": "dist",
-    "files": [
-      "*/*/*/*/*",
-      "*/*/*/*",
-      "*/*/*",
-      "*/*",
-      "*"
-    ]
-  }
+  "npmName": "semantic-ui",
+  "npmFileMap": [
+    {
+      "basePath": "/dist/",
+      "files": [
+        "**"
+      ]
+    }
+  ]
 }

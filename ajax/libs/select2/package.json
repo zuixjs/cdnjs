@@ -27,12 +27,12 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/ivaynberg/select2.git",
-    "basePath": "",
+    "basePath": "dist",
     "files": [
-      "*.js",
-      "*.css",
-      "*.gif",
-      "*.png"
+      "css/*/*",
+      "css/*",
+      "js/*/*",
+      "js/*"
     ]
   },
   "namespace": "$.fn.select2"

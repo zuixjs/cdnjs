@@ -2,7 +2,7 @@
   "name": "subkit",
   "filename": "subkit.min.js",
   "description": "Subkit library for the browser.",
-  "version": "1.0.26",
+  "version": "1.1.17",
   "homepage": "https://github.com/subkit/subkit.js",
   "keywords": [
     "subkit",
@@ -31,7 +31,7 @@
   ],
   "autoupdate": {
     "source": "git",
-    "target": "git@github.com:SubKit/subkit.js.git",
+    "target": "git://github.com/SubKit/subkit.js.git",
     "basePath": "",
     "files": [
       "subkit.min.js",
