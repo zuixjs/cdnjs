@@ -25,10 +25,7 @@
     "target": "git://github.com/components/ember.git",
     "basePath": "",
     "files": [
-      "ember.min.js",
-      "ember.prod.js",
-      "ember.js",
-      "ember.debug.js"
+      "ember*.js"
     ]
   }
 }
