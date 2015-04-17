@@ -7,10 +7,10 @@
   "keywords": [
     "websql",
     "sqlite",
-	"trace",
-	"debug",
-	"sql",
-	"profiler"
+    "trace",
+    "debug",
+    "sql",
+    "profiler"
   ],
   "autoupdate": {
     "source": "git",
@@ -18,10 +18,7 @@
     "basePath": "/dist/",
     "files": [
       "webSqlTracer.min.js",
-	  "webSqlTracer.min.js.map"
+      "webSqlTracer.min.js.map"
     ]
   }
 }
-
-
-
