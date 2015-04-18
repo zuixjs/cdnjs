@@ -18,7 +18,7 @@
     "target": "git://github.com/englishextra/16pixels.git",
     "basePath": "css/",
     "files": [
-      "*"
+      "16pixels*"
     ]
   }
 }
