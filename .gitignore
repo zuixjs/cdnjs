@@ -81,3 +81,5 @@ ajax/libs/**/*.yml
 ajax/libs/**/*.jade
 ajax/libs/**/*.nupkg
 ajax/libs/**/*.sublime-*
+ajax/libs/**/*.md
+ajax/libs/**/*.markdown
