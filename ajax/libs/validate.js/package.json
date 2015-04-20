@@ -27,17 +27,16 @@
       "url": "https://github.com/ansman/validate.js/tree/master/LICENSE.txt"
     }
   ],
-  "npmName": "validate.js",
-  "npmFileMap": [
-    {
-      "basePath": "/",
-      "files": [
-        "validate.js",
-        "validate.min.js",
-        "validate.min.map"
-      ]
-    }
-  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/ansman/validate.js.git",
+    "basePath": "",
+    "files": [
+      "validate.js",
+      "validate.min.js",
+      "validate.min.map"
+    ]
+  },
   "namespace": "validate",
   "filename": "validate.min.js"
 }
