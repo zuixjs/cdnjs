@@ -7,9 +7,9 @@
   "keywords": [
     "jit",
     "thejit",
-		"InfoVis",
-		"data",
-		"visualization"
+    "InfoVis",
+    "data",
+    "visualization"
   ],
   "authors": [
     {
@@ -44,10 +44,10 @@
     "basePath": "Jit/",
     "files": [
       "Extras/excanvas.js",
-			"jit.js"
+      "jit.js"
     ]
   },
-	"licenses": [
+  "licenses": [
     {
       "name": "BSD"
     }
