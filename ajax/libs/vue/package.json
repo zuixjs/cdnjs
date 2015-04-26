@@ -24,14 +24,13 @@
       "url": "https://github.com/yyx990803/vue.git"
     }
   ],
-  "npmName": "vue",
-  "npmFileMap": [
-    {
-      "basePath": "/dist/",
-      "files": [
-        "*.js"
-      ]
-    }
-  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/yyx990803/vue.git",
+    "basePath": "dist",
+    "files": [
+      "*"
+    ]
+  },
   "gratipay": "yyx990803"
 }
