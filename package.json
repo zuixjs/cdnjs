@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "async": "~0.9",
-    "clean-css": "~3.1",
+    "clean-css": "~3.2",
     "execSync": "~1.0",
     "fs-extra": "~0.18",
     "glob": "~5",
