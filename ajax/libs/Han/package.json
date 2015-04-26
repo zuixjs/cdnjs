@@ -13,7 +13,9 @@
         "han.min.js",
         "han.js",
         "font/han.woff",
-        "font/han.otf"
+        "font/han.otf",
+        "font/han-space.woff",
+        "font/han-space.otf"
       ]
     }
   ],
