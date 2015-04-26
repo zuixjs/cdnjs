@@ -26,5 +26,13 @@
   ],
   "dependencies": {
     "jquery": ">=1.5"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/victorjonsson/jQuery-Form-Validator.git",
+    "basePath": "form-validator",
+    "files": [
+      "*"    
+    ]
   }
 }
