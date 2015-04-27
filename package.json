@@ -28,7 +28,7 @@
     "is-there": "1.1.0"
   },
   "devDependencies": {
-    "jslint": "~0.9",
+    "jslint": ">=0.8.1",
     "JSV": "~4.0.2",
     "vows-si": "~0.7.1"
   },
