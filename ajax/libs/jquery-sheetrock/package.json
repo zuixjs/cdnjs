@@ -31,9 +31,8 @@
     "target": "git://github.com/chriszarate/sheetrock.git",
     "basePath": "",
     "files": [
-      "dist/jquery.sheetrock.min.js",
-      "dist/jquery.sheetrock.min.map",
-      "src/jquery.sheetrock.js"
+      "dist/*",
+      "src/*"
     ]
   }
 }
