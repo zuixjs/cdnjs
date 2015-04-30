@@ -6,6 +6,8 @@
 
 * Are you creating a pull request? Please take a look at [pull request](#b-pull-request) chapter.
 
+ * [issue](#a-issue)
+ 
  * [pull request](#b-pull-request)
 
   a. [common conventions](#a-common-conventions)
