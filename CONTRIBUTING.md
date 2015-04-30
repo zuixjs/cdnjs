@@ -6,19 +6,19 @@
 
 * Are you creating a pull request? Please take a look at [pull request](#b-pull-request) chapter.
 
- * [issue](#a-issue)
+ A. [issue](#a-issue)
  
- * [pull request](#b-pull-request)
+ B. [pull request](#b-pull-request)
 
-  a. [common conventions](#a-common-conventions)
+ * a. [common conventions](#a-common-conventions)
 
-  b. [Updating an existing library](#b-updating-an-existing-library)
+ * b. [Updating an existing library](#b-updating-an-existing-library)
 
-  c. [adding a new library](#c-adding-a-new-library)
+ * c. [adding a new library](#c-adding-a-new-library)
 
-  d. [pre-flight checks](#d-pre-flight-checks)
+ * d. [pre-flight checks](#d-pre-flight-checks)
 
-  e. [P.S.](#e-ps)
+ * e. [P.S.](#e-ps)
 
 ## A. issue
 
