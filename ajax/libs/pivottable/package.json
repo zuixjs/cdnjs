@@ -24,16 +24,15 @@
   },
   "homepage": "https://github.com/nicolaskruchten/pivottable",
   "filename": "pivot.min.js",
-  "npmName": "pivottable",
-  "npmFileMap": [
-    {
-      "basePath": "/dist/",
-      "files": [
-        "*.min.js",
-        "*.min.js.map",
-        "*.min.css",
-        "*.min.css.map"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/nicolaskruchten/pivottable.git",
+    "basePath": "dist",
+    "files": [
+      "*.min.js",
+      "*.min.js.map",
+      "*.min.css",
+      "*.min.css.map"
+    ]
+  }
 }
