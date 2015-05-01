@@ -42,7 +42,7 @@
     "files": [
       "css/*",
       "js/*",
-      "images/*"
+      "images/*.png"
     ]
   }
 }
