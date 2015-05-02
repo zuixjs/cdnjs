@@ -5,7 +5,7 @@
   "author": "https://github.com/angular-ui/ui-calendar/graphs/contributors",
   "license": "MIT",
   "homepage": "http://angular-ui.github.com",
-  "filename": "calendar.js",
+  "filename": "calendar.min.js",
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4",
