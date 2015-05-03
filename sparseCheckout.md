@@ -56,6 +56,6 @@ What's the origin one?
 
 The crazy 13GB/682MB haha ...
 
-This tip can also avoid sortable/Sortable issue(#3650) in case-insensitive filesystem, especially Mac OS.
+This tip can also avoid sortable/Sortable issue([#3650](https://github.com/cdnjs/cdnjs/issues/3650)) in case-insensitive filesystem, especially Mac OS.
 
 Hope you like it!
