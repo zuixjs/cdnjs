@@ -6,7 +6,8 @@
       "basePath": "/",
       "files": [
         "seedrandom.js",
-        "seedrandom.min.js"
+        "seedrandom.min.js",
+        "lib/*"
       ]
     }
   ],
