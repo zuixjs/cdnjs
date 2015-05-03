@@ -30,7 +30,9 @@ It's all done, you will only have jquery lib now, other files won't be checkedou
 
 `$ du -d 1 -h`
 > 18M     ./ajax
+
 > 587M    ./.git
+
 > 605M    .
 
 
@@ -39,11 +41,17 @@ The database behind git is only 587MB, and the whole repo is only 605MB, awsome!
 What's the origin one?
 `$ du -d 1 -h`
 > 682M    ./.git
+
 > 43M     ./scratch
+
 > 16M     ./node_modules
+
 > 12G     ./ajax
+
 > 24K     ./test
+
 > 32K     ./build
+
 > 13G     .
 
 The crazy 13GB/682MB haha ...
