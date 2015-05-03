@@ -39,7 +39,9 @@ It's all done, you will only have jquery lib now, other files won't be checkedou
 The database behind git is only 587MB, and the whole repo is only 605MB, awsome!
 
 What's the origin one?
+
 `$ du -d 1 -h`
+
 > 682M    ./.git
 
 > 43M     ./scratch
