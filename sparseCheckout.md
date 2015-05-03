@@ -8,7 +8,9 @@ Here are the steps:
 
 > Initialized empty Git repository in /home/peter/.git/
 
-2. Enable sparseCheckout: `$ git config core.sparseCheckout true`
+2. Enable sparseCheckout:
+
+`$ git config core.sparseCheckout true`
 
 3. Set what you want to checkout only, for examply, the jquery lib:
 
