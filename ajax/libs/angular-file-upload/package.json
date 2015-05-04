@@ -28,5 +28,15 @@
     "image",
     "file",
     "upload"
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/nervgh/angular-file-upload.git",
+    "basePath": "",
+    "files": [
+      "angular-file-upload.js",
+      "angular-file-upload.min.js",
+      "angular-file-upload.min.map"
+    ]
+  }
 }
