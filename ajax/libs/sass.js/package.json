@@ -20,17 +20,12 @@
       "url": "https://github.com/medialize/sass.js"
     }
   ],
-  "npmName": "sass.js",
-  "npmFileMap": [
-    {
-      "basePath": "/dist",
-      "files": [
-        "sass.worker.js",
-        "worker.js",
-        "sass.min.js",
-        "worker.min.js",
-        "sass.js"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/medialize/sass.js.git",
+    "basePath": "dist",
+    "files": [
+      "*.js"
+    ]
+  }
 }
