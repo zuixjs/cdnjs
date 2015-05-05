@@ -34,5 +34,22 @@
       "type": "git",
       "url": "https://github.com/medialize/URI.js"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git@github.com:medialize/URI.js.git",
+    "basePath": "src",
+    "files": [
+      "IPv6.js",
+      "SecondLevelDomains.js",
+      "punycode.js",
+      "URITemplate.js",
+      "jquery.URI.js",
+      "jquery.URI.min.js",
+      "URI.fragmentQuery.js",
+      "URI.fragmentURI.js",
+      "URI.js",
+      "URI.min.js"
+    ]
+  }
 }
