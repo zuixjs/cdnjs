@@ -54,6 +54,7 @@ ajax/libs/postscribe/ersion
 ajax/libs/react-router/latest/
 ajax/libs/angular-gantt/.0.6.1
 ajax/libs/jquery-form-validator/2.2
+ajax/libs/require-cs/latest/
 ajax/libs/require-css/dev-test/
 ajax/libs/require-css/release-test/
 ajax/libs/**/*.styl
