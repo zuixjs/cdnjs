@@ -1,5 +1,5 @@
 {
-  "filename": "cs.js",
+  "filename": "cs.min.js",
   "name": "require-cs",
   "version": "0.4.2",
   "description": "Load files written in CoffeeScript.",
