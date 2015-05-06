@@ -21,5 +21,13 @@
       "type": "git",
       "url": "https://github.com/jrburke/require-cs"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/jrburke/require-cs.git",
+    "basePath": "",
+    "files": [
+      "cs.js"
+    ]
+  }
 }
