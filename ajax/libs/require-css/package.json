@@ -22,5 +22,14 @@
       "type": "git",
       "url": "https://github.com/guybedford/require-css"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/guybedford/require-css.git",
+    "basePath": "",
+    "files": [
+      "css.js",
+      "css.min.js"
+    ]
+  }
 }
