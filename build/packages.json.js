@@ -81,7 +81,7 @@ exec('git ls-tree -r --name-only HEAD | grep **/package.json | while read filena
 
 var packages = Array();
 
-glob("ajax/libs/**/package.json", function (error, matches) {
+glob("ajax/libs/*/package.json", function (error, matches) {
   matches.forEach(function(element){
     var package = JSON.parse(fs.readFileSync(element, 'utf8'));
     package.assets = Array();
