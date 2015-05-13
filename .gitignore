@@ -60,6 +60,8 @@ ajax/libs/require-css/dev-test/
 ajax/libs/require-css/release-test/
 ajax/libs/ionic/testing
 ajax/libs/yamlcss/rm
+
+#ignore files that we don't support
 ajax/libs/**/*.styl
 ajax/libs/**/*.scss
 ajax/libs/**/*.mustache
