@@ -18,5 +18,14 @@
     "fabulousu",
     "sjshin-simpson",
     "ibare"
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/projectBS/MoGL.git",
+    "basePath": "",
+    "files": [
+      "mogl.js",
+      "mogl.min.js"
+    ]
+  }
 }
