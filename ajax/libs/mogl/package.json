@@ -1,10 +1,10 @@
 {
   "name": "mogl",
   "version": "r0.1",
-  "filename": "mogl.js",
+  "filename": "mogl.min.js",
   "homepage": "https://github.com/projectBS/MoGL",
   "description": "MOGL is a lightweight & high performance MObile webGL library.",
-  "main": "mogl.js",
+  "main": "mogl.min.js",
   "keywords": [
     "mobile",
     "webgl"
