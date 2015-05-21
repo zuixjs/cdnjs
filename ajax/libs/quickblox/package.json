@@ -30,5 +30,14 @@
       "type": "git",
       "url": "https://github.com/QuickBlox/quickblox-javascript-sdk.git"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "https://github.com/QuickBlox/quickblox-javascript-sdk.git",
+    "basePath": "",
+    "files": [
+      "quickblox.min.js",
+      "quickblox.js"
+    ]
+  }
 }
