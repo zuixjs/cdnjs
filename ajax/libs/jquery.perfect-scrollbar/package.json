@@ -1,7 +1,7 @@
 {
   "name": "jquery.perfect-scrollbar",
-  "filename": "perfect-scrollbar.jquery.min.js",
-  "version": "0.5.9",
+  "filename": "js/min/perfect-scrollbar.jquery.min.js",
+  "version": "0.6.2",
   "description": "minimalistic but perfect custom scrollbar plugin",
   "homepage": "http://noraesae.github.io/perfect-scrollbar",
   "keywords": [
