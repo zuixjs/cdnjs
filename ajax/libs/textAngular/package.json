@@ -26,7 +26,6 @@
     "target": "git://github.com/fraywing/textAngular.git",
     "basePath": "",
     "files": [
-      "src/*",
       "dist/*"
     ]
   }
