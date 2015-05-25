@@ -28,7 +28,7 @@
     "target": "git://github.com/typekit/webfontloader.git",
     "basePath": "",
     "files": [
-      "*.js"
+      "webfontloader.js"
     ]
   }
 }
