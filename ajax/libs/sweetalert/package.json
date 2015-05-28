@@ -1,7 +1,7 @@
 {
   "name": "sweetalert",
-  "filename": "sweet-alert.min.css",
-  "version": "0.5.0",
+  "filename": "sweetalert.min.css",
+  "version": "1.0.1",
   "description": "A beautiful replacement for JavaScript's alert.",
   "homepage": "http://tristanedwards.me/sweetalert",
   "keywords": [
