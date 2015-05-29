@@ -1,14 +1,5 @@
 {
   "name": "vis",
-  "npmName": "vis",
-  "npmFileMap": [
-    {
-      "basePath": "/dist/",
-      "files": [
-        "*"
-      ]
-    }
-  ],
   "version": "3.12.0",
   "filename": "vis.min.js",
   "description": "A dynamic, browser-based visualization library.",
@@ -29,5 +20,13 @@
     "graph",
     "network",
     "browser"
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/almende/vis.git",
+    "basePath": "dist",
+    "files": [
+      "**/*"
+    ]
+  }
 }
