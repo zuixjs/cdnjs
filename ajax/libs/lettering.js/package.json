@@ -1,7 +1,7 @@
 {
   "name": "lettering.js",
   "filename": "jquery.lettering.min.js",
-  "version": "0.6.1",
+  "version": "0.7.0",
   "description": "A lightweight, easy to use Javascript <span> injector for radical Web Typography",
   "homepage": "http://letteringjs.com/",
   "keywords": [
