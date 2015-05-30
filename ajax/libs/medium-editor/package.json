@@ -16,13 +16,13 @@
   "main": "dist/js/medium-editor.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/daviferreira/medium-editor"
+    "url": "https://github.com/yabwe/medium-editor"
   },
   "bugs": {
-    "url": "https://github.com/daviferreira/medium-editor/issues",
+    "url": "https://github.com/yabwe/medium-editor/issues",
     "email": "hi@daviferreira.com"
   },
-  "homepage": "http://daviferreira.github.io/medium-editor/",
+  "homepage": "http://yabwe.github.io/medium-editor/",
   "keywords": [
     "contenteditable",
     "editor",
