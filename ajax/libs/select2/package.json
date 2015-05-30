@@ -17,16 +17,16 @@
       "web": "https://github.com/ivaynberg"
     }
   ],
-  "bugs": "https://github.com/ivaynberg/select2/issues",
+  "bugs": "https://github.com/select2/select2/issues",
   "repositories": [
     {
       "type": "git",
-      "url": "https://github.com/ivaynberg/select2"
+      "url": "https://github.com/select2/select2"
     }
   ],
   "autoupdate": {
     "source": "git",
-    "target": "git://github.com/ivaynberg/select2.git",
+    "target": "git://github.com/select2/select2.git",
     "basePath": "dist",
     "files": [
       "css/**/*",
