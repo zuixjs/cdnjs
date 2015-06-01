@@ -89,6 +89,10 @@ fs.readFile('../new-website/public/packages.min.json', 'utf8', function(err, dat
   glob("ajax/libs/*/package.json", function (error, matches) {
     async.each(matches, function(item, callback) {
       var package = JSON.parse(fs.readFileSync(item, 'utf8'));
+      delete package.main;
+      delete package.scripts;
+      delete package.npmFileMap;
+      delete package.dependencies;
       delete package.devDependencies;
       package.assets = Array();
       var oldVersions = Array();
