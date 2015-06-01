@@ -63,14 +63,13 @@
     "test:ci": "grunt travis --verbose",
     "start": "open ./demo/index.html"
   },
-  "npmName": "medium-editor",
-  "npmFileMap": [
-    {
-      "basePath": "/dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
-  "filename": "/js/medium-editor.min.js"
+  "filename": "/js/medium-editor.min.js",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/yabwe/medium-editor.git",
+    "basePath": "dist",
+    "files": [
+      "**/*"
+    ]
+  }
 }
