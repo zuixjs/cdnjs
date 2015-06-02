@@ -24,7 +24,6 @@
   "bugs": {
     "url": "https://github.com/processing-js/processing-js/issues"
   },
-  "homepage": "http://processingjs.org",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/processing-js/processing-js.git",
