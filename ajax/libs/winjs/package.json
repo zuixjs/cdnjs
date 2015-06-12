@@ -22,16 +22,15 @@
     }
   ],
   "bugs": "https://github.com/winjs/winjs/issues",
-  "npmName": "winjs",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "css/*.css",
-        "fonts/*.ttf",
-        "js/*.js",
-        "js/en-US/*.js"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/winjs/winjs-bower.git",
+    "basePath": "",
+    "files": [
+      "css/*.css",
+      "fonts/*.ttf",
+      "js/*.js",
+      "js/en-US/*.js"
+    ]
+  }
 }
