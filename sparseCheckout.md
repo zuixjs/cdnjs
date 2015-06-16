@@ -1,4 +1,4 @@
-Currently, cdnjs's repo is too huge, so that some people can not work happily with it, here is a simple workaround for you to work with cdnjs happily, that's sparse-checkout, it can let you check out only the files you want, so that the whole directory in your computer won't need to be 11GB, but only about 1GB, very thinner, with shallow pull, it can be even thinner!
+Currently, cdnjs's repo is too huge and some people have issues with using it when it is this big. To get around the issue or repo size you can use `sparse-checkout`. It lets you check out only the files you want, so that the whole directory in your computer won't need to be 11GB, but only about 1GB (you can make this even smaller with shallow pull too!)
 
 Here are the steps:
 
@@ -28,7 +28,7 @@ If you already cloned a cdnjs repo, this time, you can set a local path to speed
 
 `$ git pull origin master --depth 10`
 
-It's all done, you will only have jquery lib now, other files won't be checkeout, let's take a look at the space it used:
+It's all done, you will only have jquery lib now and other files won't be checked out. Let's take a look at the space it used:
 
 `$ du -d 1 -h`
 > 18M     ./ajax
