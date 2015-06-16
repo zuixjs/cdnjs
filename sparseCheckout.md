@@ -2,21 +2,21 @@ Currently, cdnjs's repo is too huge, so that some people can not work happily wi
 
 Here are the steps:
 
-1. Create/Initial a empty repo and enter it:
+1.Create/Initial a empty repo and enter it:
 
 `$ git init cdnjs && cd cdnjs`
 
 > Initialized empty Git repository in /home/peter/.git/
 
-2. Enable sparseCheckout:
+2.Enable sparseCheckout:
 
 `$ git config core.sparseCheckout true`
 
-3. Set what you want to checkout only, for example, the jquery lib:
+3.Set what you want to checkout only, for example, the jquery lib:
 
 `$ echo 'ajax/libs/jquery/*' >> .git/info/sparse-checkout`
 
-4. Set your remote, for example:
+4.Set your remote, for example:
 
 `$ git remote add origin git://github.com/cdnjs/cdnjs.git`
 
@@ -24,7 +24,7 @@ If you already cloned a cdnjs repo, this time, you can set a local path to speed
 
 `$ git remote add origin ///home/peter/cdnjs.old`
 
-5. Pull things into your new repo with shallow pull, for example, set depth to 10:
+5.Pull things into your new repo with shallow pull, for example, set depth to 10:
 
 `$ git pull origin master --depth 10`
 
