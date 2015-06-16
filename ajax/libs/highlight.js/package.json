@@ -1,7 +1,7 @@
 {
   "name": "highlight.js",
   "filename": "highlight.min.js",
-  "version": "8.5",
+  "version": "8.6",
   "description": "Easy-to-use, Javascript-based syntax highlighter",
   "homepage": "http://highlightjs.org",
   "keywords": [
@@ -30,7 +30,7 @@
     "files": [
       "highlight.min.js",
       "languages/*.min.js",
-      "styles/*.min.css"
+      "styles/*"
     ]
   }
 }

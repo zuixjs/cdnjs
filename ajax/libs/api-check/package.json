@@ -1,6 +1,6 @@
 {
   "name": "api-check",
-  "version": "7.2.0",
+  "version": "7.3.0",
   "description": "Validate the api to your functions to help people use them correctly. This is pretty much React's propTypes without React.",
   "main": "./dist/api-check.js",
   "dependencies": {},
@@ -43,7 +43,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kentcdodds/apiCheck.js"
+    "url": "https://github.com/kentcdodds/api-check"
   },
   "keywords": [
     "javascript",
@@ -54,9 +54,9 @@
   "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kent.doddsfamily.us)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kentcdodds/apiCheck.js/issues"
+    "url": "https://github.com/kentcdodds/api-check/issues"
   },
-  "homepage": "https://github.com/kentcdodds/apiCheck.js",
+  "homepage": "https://github.com/kentcdodds/api-check",
   "config": {
     "ghooks": {
       "pre-commit": "npm run ci"

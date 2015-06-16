@@ -1,6 +1,6 @@
 {
   "name": "jquery-prompt21",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A minimalist jQuery prompt plugin for the 21st Century.",
   "main": "src/jquery-prompt21.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:jillix/jQuery-prompt21.git"
+    "url": "https://github.com/jillix/jQuery-prompt21.git"
   },
   "keywords": [
     "prompt21",

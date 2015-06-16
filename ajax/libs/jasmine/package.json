@@ -1,7 +1,7 @@
 {
   "name": "jasmine",
   "filename": "jasmine.min.js",
-  "version": "2.2.1",
+  "version": "2.3.4",
   "description": "DOM-less simple JavaScript testing framework",
   "homepage": "http://jasmine.github.io/",
   "keywords": [
@@ -22,7 +22,7 @@
   "repositories": [
     {
       "type": "git",
-      "url": "https://github.com/pivotal/jasmine.git"
+      "url": "https://github.com/jasmine/jasmine.git"
     }
   ],
   "autoupdate": {

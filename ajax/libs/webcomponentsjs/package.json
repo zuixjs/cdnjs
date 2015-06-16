@@ -3,7 +3,7 @@
   "title": "webcomponentsjs",
   "main": "webcomponents.js",
   "filename": "webcomponents.min.js",
-  "version": "0.6.1",
+  "version": "0.7.3",
   "homepage": "http://webcomponents.org",
   "authors": [
     "The Polymer Authors"
@@ -16,12 +16,12 @@
   "repositories": [
     {
       "type": "git",
-      "url": "git://github.com/Polymer/webcomponentsjs"
+      "url": "git://github.com/webcomponents/webcomponentsjs"
     }
   ],
   "autoupdate": {
     "source": "git",
-    "target": "git://github.com/Polymer/webcomponentsjs.git",
+    "target": "git://github.com/webcomponents/webcomponentsjs.git",
     "basePath": "",
     "files": [
       "*.js",
