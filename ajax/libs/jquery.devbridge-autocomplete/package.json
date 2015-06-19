@@ -17,10 +17,10 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/devbridge/jQuery-Autocomplete.git",
-    "basePath": "",
+    "basePath": "dist/",
     "files": [
-      "dist/jquery.autocomplete.min.js",
-      "dist/jquery.autocomplete.js"
+      "jquery.autocomplete.min.js",
+      "jquery.autocomplete.js"
     ]
   }
 }
