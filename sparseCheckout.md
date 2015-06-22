@@ -16,6 +16,20 @@ Here are the steps:
 
 `$ echo '/ajax/libs/jquery/*' >> .git/info/sparse-checkout`
 
+Here is an example of `.git/info/sparse-checkout`:
+```
+/ajax/libs/*/package.json
+/build
+/MIT-LICENSE
+/*.yml
+/*.md
+/*.json
+/*.sh
+/*.js
+```
+
+You can update your `.git/info/sparse-checkout` and then do `git reset --hard` to update the working directory to be the same as you configured.
+
 4.Set your remote, for example:
 
 `$ git remote add origin git://github.com/cdnjs/cdnjs.git`
