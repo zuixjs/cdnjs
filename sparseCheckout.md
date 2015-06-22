@@ -18,7 +18,7 @@ Here are the steps:
 
 Here is an example of `.git/info/sparse-checkout`:
 ```
-/ajax/libs/*/package.json
+/ajax/libs/jquery/*
 /build
 /MIT-LICENSE
 /*.yml
@@ -26,6 +26,7 @@ Here is an example of `.git/info/sparse-checkout`:
 /*.json
 /*.sh
 /*.js
+.gitkeep
 ```
 
 You can update your `.git/info/sparse-checkout` and then do `git reset --hard` to update the working directory to be the same as you configured.
