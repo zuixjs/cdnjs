@@ -138,6 +138,13 @@ packages.map(function (pkg) {
         }
     }
 
+    package_vows[pname + ": format check"] = function (pkg) {
+        var orig = fs.readFileSync(pkg, 'utf8'),
+            correct = JSON.stringify(JSON.parse(orig), null, 2) + '\n';
+        assert.ok(orig === correct,
+            pkg_name(pkg) + ": package.json wrong format, correct one should be like this.\n" + correct);
+    }
+
     context[pname] = package_vows;
     suite.addBatch(context);
 });
