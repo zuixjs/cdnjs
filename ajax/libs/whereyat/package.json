@@ -9,7 +9,7 @@
       ]
     }
   ],
-  "filename": "jquery.whereyat.js",
+  "filename": "jquery.whereyat.min.js",
   "version": "0.1.2",
   "scripts": {
     "test": "grunt qunit"

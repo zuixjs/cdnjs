@@ -12,7 +12,7 @@
   "version": "1.0.1",
   "description": "Select Client-side components of MeteorJS",
   "main": "mini-meteor.js",
-  "filename": "mini-meteor.js",
+  "filename": "mini-meteor.min.js",
   "directories": {
     "example": "examples"
   },

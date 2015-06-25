@@ -1,6 +1,6 @@
 {
         "name": "jquery.scroll4ever",
-        "filename": "jquery.scroll4ever.js",
+        "filename": "jquery.scroll4ever.min.js",
         "description": "A jQuery plugin for infinite scrolling",
         "version": "1.0.0",
         "author": "Luan Almeida <luanlmd@gmail.com>",
