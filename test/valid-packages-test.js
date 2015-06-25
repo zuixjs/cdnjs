@@ -120,6 +120,23 @@ packages.map(function (pkg) {
                 "', but is " + json.autoupdate.target);
         }
     }
+    package_vows[pname + ": should point filename field to minified file"] = function (pkg) {
+        var json = parse(pkg, true, true);
+        if (json.filename) {
+            var path = "./ajax/libs/" + json.name + "/"+ json.version + "/",
+                orig = json.filename.split("."),
+                min = '';
+            if (orig[orig.length - 2] !== 'min') {
+                var temp = orig,
+                    ext = temp.pop();
+                temp.push("min");
+                temp.push(ext);
+                min = temp.join(".");
+            }
+            assert.ok(min === '' || !isThere(path + min),
+                pkg_name(pkg) + ": filename field in package.json should point filename field to minified file.");
+        }
+    }
 
     context[pname] = package_vows;
     suite.addBatch(context);
