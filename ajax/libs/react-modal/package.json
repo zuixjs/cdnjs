@@ -16,7 +16,9 @@
     "test": "scripts/test --browsers Firefox --single-run",
     "start": "scripts/dev-examples"
   },
-  "authors": ["Ryan Florence"],
+  "authors": [
+    "Ryan Florence"
+  ],
   "license": "MIT",
   "devDependencies": {
     "browserify": "4.2.3",
@@ -41,12 +43,28 @@
     "react": ">=0.12.0",
     "classnames": "^1.2.0"
   },
-  "tags": ["react", "modal", "dialog"],
-  "keywords": ["react", "react-component", "modal", "dialog"],
+  "tags": [
+    "react",
+    "modal",
+    "dialog"
+  ],
+  "keywords": [
+    "react",
+    "react-component",
+    "modal",
+    "dialog"
+  ],
   "browserify-shim": {
     "react": "global:React"
   },
   "npmName": "react-modal",
-  "npmFileMap": [{"basePath": "/dist", "files": ["**/*"]}],
+  "npmFileMap": [
+    {
+      "basePath": "/dist",
+      "files": [
+        "**/*"
+      ]
+    }
+  ],
   "filename": "react-modal.min.js"
 }
