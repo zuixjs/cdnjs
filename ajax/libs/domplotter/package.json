@@ -23,12 +23,14 @@
   ],
   "filename": "domplotter.min.js",
   "npmName": "domplotter",
-  "npmFileMap": [{
-    "basePath": "/dist/",
-    "files": [
-      "*.js"
-    ]
-  }],
+  "npmFileMap": [
+    {
+      "basePath": "/dist/",
+      "files": [
+        "*.js"
+      ]
+    }
+  ],
   "devDependencies": {
     "del": "^1.1.1",
     "gulp": "^3.8.10",

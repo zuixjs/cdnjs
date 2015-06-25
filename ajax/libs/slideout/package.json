@@ -42,6 +42,8 @@
     "source": "git",
     "target": "git://github.com/Mango/slideout.git",
     "basePath": "dist",
-    "files": ["*.js"]
+    "files": [
+      "*.js"
+    ]
   }
 }

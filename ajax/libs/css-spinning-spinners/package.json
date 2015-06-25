@@ -31,6 +31,8 @@
     "source": "git",
     "target": "git://github.com/BillyNate/css-spinning-spinners.git",
     "basePath": "dist/css",
-    "files": ["*.css"]
+    "files": [
+      "*.css"
+    ]
   }
 }

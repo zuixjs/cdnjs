@@ -36,10 +36,12 @@
       "url": "https://blueimp.net"
     }
   ],
-  "repositories": [{
-    "type": "git",
-    "url": "git://github.com/blueimp/jQuery-File-Upload.git"
-  }],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "git://github.com/blueimp/jQuery-File-Upload.git"
+    }
+  ],
   "licenses": [
     {
       "type": "MIT",
