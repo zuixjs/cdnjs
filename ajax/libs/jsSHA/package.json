@@ -33,7 +33,6 @@
   },
   "homepage": "https://github.com/Caligatio/jsSHA",
   "dependencies": {},
-  "devDependencies": {},
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/Caligatio/jsSHA.git",

@@ -33,6 +33,5 @@
     "type": "git",
     "url": "git://github.com/justmaier/angular-autoFields-bootstrap.git"
   },
-  "dependencies": {},
-  "devDependencies": {}
+  "dependencies": {}
 }

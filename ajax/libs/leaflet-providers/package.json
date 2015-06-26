@@ -16,10 +16,6 @@
   "bugs": {
     "url": "https://github.com/leaflet-extras/leaflet-providers/issues"
   },
-  "devDependencies": {
-    "jshint": "~2.1.11",
-    "uglifyjs": "^2.3.6"
-  },
   "npmName": "leaflet-providers",
   "npmFileMap": [
     {

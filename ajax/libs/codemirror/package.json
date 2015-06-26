@@ -13,10 +13,6 @@
   "directories": {
     "lib": "./lib"
   },
-  "devDependencies": {
-    "node-static": "0.6.0",
-    "phantomjs": "1.9.2-5"
-  },
   "bugs": "http://github.com/codemirror/CodeMirror/issues",
   "keywords": [
     "JavaScript",

@@ -26,17 +26,6 @@
       ]
     }
   ],
-  "devDependencies": {
-    "amdefine": "latest",
-    "grunt": "latest",
-    "grunt-cli": "latest",
-    "grunt-contrib-concat": "latest",
-    "grunt-contrib-jshint": "latest",
-    "grunt-contrib-uglify": "latest",
-    "grunt-contrib-qunit": "latest",
-    "grunt-jquerymanifest": "latest",
-    "grunt-contrib-watch": "latest"
-  },
   "licenses": [
     {
       "type": "MIT",

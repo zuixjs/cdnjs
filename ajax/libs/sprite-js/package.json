@@ -22,9 +22,6 @@
     "url": "https://github.com/nihey/sprites/issues"
   },
   "homepage": "https://github.com/nihey/sprites",
-  "devDependencies": {
-    "webpack": "^1.7.3"
-  },
   "npmName": "sprite-js",
   "npmFileMap": [
     {

@@ -23,9 +23,6 @@
     "backbone": ">=1.0.0",
     "underscore": ">=1.4.4"
   },
-  "devDependencies": {
-    "phantomjs": "0.2.2"
-  },
   "jam": {
     "dependencies": {
       "backbone": ">=1.0.0",

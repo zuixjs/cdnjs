@@ -26,11 +26,6 @@
     "test": "grunt"
   },
   "dependencies": {},
-  "devDependencies": {
-    "grunt": "~0.4.4",
-    "grunt-contrib-jshint": "~0.10.0",
-    "grunt-contrib-uglify": "~0.6.0"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/maroslaw/rainyday.js.git",

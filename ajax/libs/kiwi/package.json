@@ -15,12 +15,6 @@
     "underscore": "*",
     "moment": "*"
   },
-  "devDependencies": {
-    "mocha": "*",
-    "should": "*",
-    "uglify-js": "*",
-    "jshint": "*"
-  },
   "keywords": [
     "kiwi",
     "asynchronous",

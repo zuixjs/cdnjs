@@ -19,16 +19,6 @@
     "type": "git",
     "url": "https://github.com/ded/reqwest.git"
   },
-  "devDependencies": {
-    "connect": "1.8.x",
-    "mime": "1.x.x",
-    "sink-test": ">=0.1.2",
-    "dispatch": "0.x.x",
-    "valentine": ">=1.4.7",
-    "smoosh": "0.4.0",
-    "delayed-stream": "0.0.5",
-    "bump": "0.2.3"
-  },
   "npmName": "reqwest",
   "npmFileMap": [
     {

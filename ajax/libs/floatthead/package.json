@@ -4,7 +4,6 @@
   "description": "locking table headers without special css",
   "filename": "jquery.floatThead.min.js",
   "dependencies": {},
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git://github.com/mkoryak/floatThead.git"

@@ -19,11 +19,6 @@
     "automatic"
   ],
   "dependencies": {},
-  "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-readme-generator": "~0.3.41",
-    "grunt-contrib-uglify": "~0.2.2"
-  },
   "filename": "notifxi.min.js",
   "scripts": {
     "test": "echo \"See test folder... index.html\" && exit 1"

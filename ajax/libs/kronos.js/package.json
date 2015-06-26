@@ -23,14 +23,6 @@
       "url": "https://raw.githubusercontent.com/Locu/chronology/master/LICENSE"
     }
   ],
-  "devDependencies": {
-    "browserify": "5.11.1",
-    "jshint": "2.4.3",
-    "mocha": "1.21.4",
-    "q": "1.0.1",
-    "request": "2.42.0",
-    "uglify-js": "2.4.15"
-  },
   "bugs": {
     "url": "https://github.com/Locu/chronology/issues"
   },

@@ -44,10 +44,6 @@
     "mkdirp": "0.3.5",
     "glob": "3.2.3"
   },
-  "devDependencies": {
-    "should": "*",
-    "coffee-script": "1.2"
-  },
   "files": [
     "bin",
     "images",

@@ -42,15 +42,6 @@
     "deku": "^0.4.2",
     "soundcloud-audio": "^0.1.4"
   },
-  "devDependencies": {
-    "babel": "^5.2.15",
-    "babelify": "^6.0.2",
-    "browserify": "^10.1.0",
-    "cssnext": "^1.4.0",
-    "envify": "^3.4.0",
-    "uglify-js": "^2.4.21",
-    "watchify": "^3.2.1"
-  },
   "npmName": "soundplayer-widget",
   "npmFileMap": [
     {

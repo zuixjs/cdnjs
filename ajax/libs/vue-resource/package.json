@@ -22,9 +22,6 @@
     "url": "https://github.com/vuejs/vue-resource/issues"
   },
   "homepage": "https://github.com/vuejs/vue-resource#readme",
-  "devDependencies": {
-    "webpack": "^1.8.11"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/vuejs/vue-resource.git",

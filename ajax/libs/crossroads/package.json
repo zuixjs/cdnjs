@@ -30,10 +30,6 @@
   "dependencies": {
     "signals": "<2.0"
   },
-  "devDependencies": {
-    "uglify-js": "~1.2.3",
-    "jasmine-node": "1.0.x"
-  },
   "scripts": {
     "pretest": "node build",
     "test": "node node_modules/.bin/jasmine-node dev/tests/spec"

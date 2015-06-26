@@ -47,10 +47,5 @@
       "type": "MIT",
       "url": "http://www.opensource.org/licenses/MIT"
     }
-  ],
-  "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-bump-build-git": "~1.1.1",
-    "grunt-contrib-jshint": "~0.8.0"
-  }
+  ]
 }

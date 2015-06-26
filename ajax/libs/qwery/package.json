@@ -21,12 +21,6 @@
     "type": "git",
     "url": "https://github.com/ded/qwery.git"
   },
-  "devDependencies": {
-    "sink-test": ">= 1.0.1",
-    "serve": "*",
-    "smoosh": "0.4.0",
-    "phantomjs": "0.2.3"
-  },
   "npmName": "qwery",
   "npmFileMap": [
     {

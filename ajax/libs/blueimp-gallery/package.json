@@ -45,10 +45,6 @@
       "url": "http://www.opensource.org/licenses/MIT"
     }
   ],
-  "devDependencies": {
-    "uglify-js": "2.4.0",
-    "less": "1.5.0-b3"
-  },
   "npmName": "blueimp-gallery",
   "npmFileMap": [
     {
