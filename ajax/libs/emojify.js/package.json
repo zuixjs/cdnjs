@@ -4,9 +4,6 @@
   "description": "A Javascript module to convert emoji keywords to images.",
   "main": "emojify.js",
   "filename": "emojify.min.js",
-  "scripts": {
-    "test": "grunt test-node && phantomjs tests/phantom.js"
-  },
   "repository": {
     "type": "git",
     "url": "https://hassankhan@github.com/Ranks/emojify.js.git"

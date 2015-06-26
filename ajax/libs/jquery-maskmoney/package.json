@@ -31,8 +31,5 @@
       "type": "MIT",
       "url": "https://raw.github.com/plentz/jquery-maskmoney/master/LICENSE"
     }
-  ],
-  "scripts": {
-    "test": "grunt test --verbose"
-  }
+  ]
 }

@@ -67,9 +67,6 @@
       "url": "https://github.com/jquery/globalize/blob/master/LICENSE.txt"
     }
   ],
-  "scripts": {
-    "test": "grunt"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/jquery/globalize.git",

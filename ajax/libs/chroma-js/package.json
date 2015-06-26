@@ -26,9 +26,6 @@
     "url": "git://github.com/gka/chroma.js.git"
   },
   "main": "chroma.js",
-  "scripts": {
-    "compile": "./build.sh"
-  },
   "npmName": "chroma-js",
   "npmFileMap": [
     {

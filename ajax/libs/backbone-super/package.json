@@ -19,8 +19,5 @@
         "backbone"
       ]
     }
-  },
-  "scripts": {
-    "test": "./node_modules/.bin/nodeunit tests/test.js"
   }
 }

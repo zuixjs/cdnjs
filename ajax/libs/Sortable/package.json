@@ -6,9 +6,6 @@
   "filename": "Sortable.min.js",
   "homepage": "http://rubaxa.github.io/Sortable/",
   "description": "Sortable is a minimalist JavaScript library for modern browsers and touch devices. No jQuery.",
-  "scripts": {
-    "test": "grunt"
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/rubaxa/Sortable.git"

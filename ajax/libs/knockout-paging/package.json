@@ -3,9 +3,6 @@
   "version": "0.2.1",
   "description": "Knockout paging",
   "main": "index.js",
-  "scripts": {
-    "test": "gulp test"
-  },
   "repository": {
     "type": "git",
     "url": "git@github.com/ErikSchierboom/knockout-paging.git"

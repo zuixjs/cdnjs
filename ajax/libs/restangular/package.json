@@ -36,8 +36,5 @@
       "website": "http://gon.to/"
     }
   ],
-  "dependencies": {},
-  "scripts": {
-    "test": "grunt test --verbose"
-  }
+  "dependencies": {}
 }

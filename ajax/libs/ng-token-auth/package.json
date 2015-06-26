@@ -20,9 +20,6 @@
       ]
     }
   ],
-  "scripts": {
-    "test": "karma start test/test/karma-ci.conf.coffee --single-run"
-  },
   "engines": {
     "node": ">=0.10.0"
   },

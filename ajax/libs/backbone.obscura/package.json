@@ -38,9 +38,6 @@
     "browser",
     "browserify"
   ],
-  "scripts": {
-    "test": "./node_modules/.bin/karma start --browsers Firefox --single-run"
-  },
   "dependencies": {
     "backbone-paginated-collection": "~0.3.0",
     "backbone-filtered-collection": "~0.3.0",

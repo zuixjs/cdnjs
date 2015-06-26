@@ -19,9 +19,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/tybenz/legojs.git"
-  },
-  "scripts": {
-    "build": "r.js -o build/config.js && cat src/header.js lego.min.js > /tmp/out && mv /tmp/out lego.min.js",
-    "init_bourbon": "bundle install && cd sass && bourbon install"
   }
 }

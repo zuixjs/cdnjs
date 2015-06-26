@@ -8,9 +8,6 @@
     "type": "git",
     "url": "http://github.com/Marak/Faker.js.git"
   },
-  "scripts": {
-    "test": "node_modules/.bin/mocha test/*.*.js"
-  },
   "engine": [
     "node >=0.1.90"
   ],

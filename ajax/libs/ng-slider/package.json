@@ -30,8 +30,5 @@
   "bugs": {
     "url": "https://github.com/darul75/angular-awesome-slider/issues"
   },
-  "scripts": {
-    "test": "grunt test-continuous"
-  },
   "dependencies": {}
 }

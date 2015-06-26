@@ -51,16 +51,5 @@
   "bugs": {
     "url": "http://github.com/rse/componentjs/issues"
   },
-  "files": [],
-  "scripts": {
-    "update-package-json": "npm-check-updates -u",
-    "grunt": "grunt",
-    "build": "grunt build",
-    "test": "grunt build test",
-    "cover": "grunt build cover",
-    "complexity": "grunt build complexity",
-    "release": "grunt release",
-    "snapshot": "grunt snapshot",
-    "cleanup": "grunt cleanup"
-  }
+  "files": []
 }

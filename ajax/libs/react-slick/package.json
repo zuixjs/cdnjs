@@ -4,10 +4,6 @@
   "version": "0.5.0",
   "description": " React port of slick carousel",
   "main": "index.jsx",
-  "scripts": {
-    "postinstall": "bower install",
-    "start": "./node_modules/.bin/gulp server"
-  },
   "author": "Kiran Abburi",
   "license": "MIT",
   "repository": {

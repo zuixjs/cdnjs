@@ -3,13 +3,6 @@
   "version": "1.0.1",
   "description": "Converts geojson to svg/path string given svg viewport size and maps extent.",
   "main": "src/main.js",
-  "scripts": {
-    "test": "mocha",
-    "build-debug": "browserify src/main.js --debug --standalone geojson2svg | exorcist dist/geojson2svg.js.map > dist/geojson2svg.js",
-    "build-min": "browserify src/main.js --standalone geojson2svg | uglifyjs -c > dist/geojson2svg.min.js",
-    "build": "npm run build-debug && npm run build-min",
-    "watch": "watchify src/main.js --debug --standalone geojson2svg -o dist/geojson2svg.js -v"
-  },
   "keywords": [
     "maps",
     "geojson",

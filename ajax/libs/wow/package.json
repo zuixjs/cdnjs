@@ -20,9 +20,6 @@
       "url": "http://matthieuaussaguel.mit-license.org/"
     }
   ],
-  "scripts": {
-    "test": "grunt travis"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/matthieua/WOW.git",

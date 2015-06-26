@@ -10,9 +10,6 @@
     "view"
   ],
   "style": "base.css",
-  "scripts": {
-    "test": "open test/index.html"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/rotundasoftware/backbone.collectionView.git"

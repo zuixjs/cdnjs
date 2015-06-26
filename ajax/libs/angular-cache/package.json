@@ -30,8 +30,5 @@
       ]
     }
   ],
-  "postinstall": "node node_modules/grunt-cli/bin/grunt build",
-  "scripts": {
-    "test": "grunt ci"
-  }
+  "postinstall": "node node_modules/grunt-cli/bin/grunt build"
 }

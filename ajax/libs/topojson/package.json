@@ -26,9 +26,6 @@
     "topojson": "./bin/topojson",
     "geojson": "./bin/geojson"
   },
-  "scripts": {
-    "test": "./node_modules/.bin/vows && echo"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/mbostock/topojson.git",

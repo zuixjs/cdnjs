@@ -18,17 +18,6 @@
       "url": "https://raw.githubusercontent.com/formly-js/angular-formly-templates-bootstrap/master/LICENSE"
     }
   ],
-  "scripts": {
-    "build:dist": "node node_modules/webpack/bin/webpack.js",
-    "build:minify": "node node_modules/webpack/bin/webpack.js --config webpack.config.minify.js",
-    "build": "npm run build:dist; npm run build:minify",
-    "test": "node node_modules/karma/bin/karma start karma.conf.js",
-    "test:single": "node node_modules/karma/bin/karma start karma.conf.js --single-run",
-    "test:ci": "node node_modules/karma/bin/karma start karma.conf.ci.js",
-    "watch": "node node_modules/webpack/bin/webpack.js --watch",
-    "start": "npm run watch & npm run test",
-    "release": "git push && npm publish && git push --tags"
-  },
   "description": "Angular-Formly plugin which outputs bootstrap compatible form fields.",
   "peerDependencies": {
     "angular": "^1.2.x || >= 1.4.0-beta.0 || >= 1.5.0-beta.0",

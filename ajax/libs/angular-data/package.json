@@ -29,9 +29,6 @@
       ]
     }
   ],
-  "scripts": {
-    "test": "grunt test"
-  },
   "dependencies": {
     "mout": "0.10.0"
   }

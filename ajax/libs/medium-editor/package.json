@@ -34,11 +34,6 @@
     "registry": "http://registry.npmjs.org/"
   },
   "license": "MIT",
-  "scripts": {
-    "test": "grunt test --verbose",
-    "test:ci": "grunt travis --verbose",
-    "start": "open ./demo/index.html"
-  },
   "filename": "/js/medium-editor.min.js",
   "autoupdate": {
     "source": "git",

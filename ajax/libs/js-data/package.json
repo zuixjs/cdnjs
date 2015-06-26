@@ -37,9 +37,6 @@
     "http",
     "localstorage"
   ],
-  "scripts": {
-    "test": "grunt test"
-  },
   "dependencies": {
     "yabh": "1.0.0",
     "bluebird": "^2.9.14",

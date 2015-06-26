@@ -26,9 +26,6 @@
   ],
   "repository": "git://github.com/coolony/kiwi",
   "main": "index",
-  "scripts": {
-    "test": "make test"
-  },
   "engines": {
     "node": ">= 0.6.0"
   }

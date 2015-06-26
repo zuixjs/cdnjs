@@ -12,10 +12,6 @@
   "directories": {
     "example": "examples"
   },
-  "scripts": {
-    "test": "scripts/test --browsers Firefox --single-run",
-    "start": "scripts/dev-examples"
-  },
   "authors": [
     "Ryan Florence"
   ],

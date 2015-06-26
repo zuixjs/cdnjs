@@ -30,9 +30,6 @@
     "type": "git",
     "url": "http://github.com/square/crossfilter.git"
   },
-  "scripts": {
-    "test": "./node_modules/.bin/vows"
-  },
   "npmName": "crossfilter",
   "npmFileMap": [
     {

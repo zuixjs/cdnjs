@@ -20,9 +20,5 @@
     "markdown",
     "markup",
     "html"
-  ],
-  "scripts": {
-    "test": "node test",
-    "bench": "node test --bench"
-  }
+  ]
 }

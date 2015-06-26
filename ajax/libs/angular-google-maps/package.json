@@ -7,12 +7,6 @@
     "type": "git",
     "url": "https://github.com/angular-ui/angular-google-maps.git"
   },
-  "scripts": {
-    "build": "grunt",
-    "example": "grunt example",
-    "test": "grunt",
-    "postinstall": "bower install"
-  },
   "keywords": [
     "angularjs",
     "googlemaps",

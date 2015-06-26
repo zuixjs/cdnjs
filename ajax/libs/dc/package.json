@@ -29,9 +29,6 @@
     "crossfilter": "1.x",
     "d3": "3.x"
   },
-  "scripts": {
-    "test": "./node_modules/vows/bin/vows"
-  },
   "npmName": "dc",
   "npmFileMap": [
     {

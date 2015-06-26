@@ -33,9 +33,6 @@
       "type": "MIT"
     }
   ],
-  "scripts": {
-    "test": "grunt test"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/foretagsplatsen/numbro.git",

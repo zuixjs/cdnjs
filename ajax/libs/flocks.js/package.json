@@ -72,8 +72,5 @@
   "main": "lib/flocks.js",
   "engines": {
     "node": "*"
-  },
-  "scripts": {
-    "test": "vows test/* --spec"
   }
 }

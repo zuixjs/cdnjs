@@ -27,9 +27,6 @@
   },
   "homepage": "https://github.com/agershun/alasql",
   "main": "dist/alasql.js",
-  "scripts": {
-    "test": "cd test && mocha ."
-  },
   "keywords": [
     "sql",
     "nosql",

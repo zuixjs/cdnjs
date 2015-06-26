@@ -22,9 +22,6 @@
     "url": "git://github.com/es-shims/es6-shim.git"
   },
   "main": "es6-shim",
-  "scripts": {
-    "test": "jshint es6-shim.js && mocha test/*.js test/*/*.js"
-  },
   "npmName": "es6-shim",
   "npmFileMap": [
     {

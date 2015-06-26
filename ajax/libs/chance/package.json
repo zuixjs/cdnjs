@@ -18,9 +18,6 @@
       "url": "http://chancejs.com/license/"
     }
   ],
-  "scripts": {
-    "test": "./node_modules/mocha-phantomjs/bin/mocha-phantomjs test/runner.html"
-  },
   "keywords": [
     "chance",
     "random",

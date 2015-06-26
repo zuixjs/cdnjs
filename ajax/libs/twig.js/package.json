@@ -22,9 +22,6 @@
   "bin": {
     "twigjs": "./bin/twigjs"
   },
-  "scripts": {
-    "test": "make test"
-  },
   "dependencies": {
     "walk": "2.1.x",
     "minimatch": "0.2.x"

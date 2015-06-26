@@ -7,14 +7,6 @@
   "directories": {
     "example": "example"
   },
-  "scripts": {
-    "watch-css": "./node_modules/.bin/cssnext cssnext/main.css dist/soundplayer-widget.css -w",
-    "watch-js": "watchify . -o dist/soundplayer-widget.js -v -d",
-    "build-css": "./node_modules/.bin/cssnext cssnext/main.css dist/soundplayer-widget.min.css -c",
-    "build-js": "NODE_ENV=production browserify . | uglifyjs -cm > dist/soundplayer-widget.min.js",
-    "build": "npm run build-js && npm run build-css",
-    "watch": "npm run watch-js & npm run watch-css"
-  },
   "browserify": {
     "transform": [
       [

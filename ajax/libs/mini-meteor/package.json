@@ -16,9 +16,6 @@
   "directories": {
     "example": "examples"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/chicagogrooves/mini-meteor.git"

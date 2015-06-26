@@ -31,8 +31,5 @@
         "*.js"
       ]
     }
-  ],
-  "scripts": {
-    "build": "npm install && grunt"
-  }
+  ]
 }

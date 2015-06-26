@@ -54,11 +54,6 @@
   },
   "main": "postscribe.js",
   "filename": "postscribe.min.js",
-  "scripts": {
-    "lint": "grunt jshint",
-    "tdd": "grunt watch",
-    "test": "grunt"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/krux/postscribe.git",

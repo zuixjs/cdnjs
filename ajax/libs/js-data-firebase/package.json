@@ -27,9 +27,6 @@
     "firebase"
   ],
   "main": "./dist/js-data-firebase.js",
-  "scripts": {
-    "test": "grunt test"
-  },
   "dependencies": {
     "mout": "0.11.0"
   },

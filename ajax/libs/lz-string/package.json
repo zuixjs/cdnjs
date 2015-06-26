@@ -14,7 +14,6 @@
   "bin": {
     "lz-string": "bin/bin.js"
   },
-  "scripts": {},
   "dependencies": {},
   "repository": {
     "type": "git",

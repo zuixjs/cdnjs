@@ -18,10 +18,6 @@
   "dependencies": {
     "underscore": "^1.6.0"
   },
-  "scripts": {
-    "test": "grunt test",
-    "prepublish": "grunt build && grunt doc"
-  },
   "keywords": [
     "backbone",
     "react",

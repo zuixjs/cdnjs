@@ -20,10 +20,6 @@
       "url": "https://github.com/marionettejs/backbone.babysitter/blob/master/LICENSE.md"
     }
   ],
-  "scripts": {
-    "test": "grunt jasmine",
-    "start": "grunt jasmine-server"
-  },
   "author": {
     "name": "Derick Bailey",
     "email": "marionettejs@gmail.com",

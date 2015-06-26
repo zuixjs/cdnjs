@@ -17,9 +17,6 @@
     "url": "https://github.com/mbostock/queue.git"
   },
   "main": "queue.js",
-  "scripts": {
-    "test": "node_modules/.bin/vows; echo"
-  },
   "npmName": "queue-async",
   "npmFileMap": [
     {

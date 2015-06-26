@@ -32,8 +32,5 @@
     "url": "git://github.com/ramda/ramda.git"
   },
   "filename": "ramda.min.js",
-  "scripts": {
-    "test": "grunt test"
-  },
   "dependencies": {}
 }

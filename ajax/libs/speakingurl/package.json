@@ -30,9 +30,6 @@
     "Utilities",
     "Parsers & Compilers"
   ],
-  "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
-  },
   "author": {
     "name": "Sascha Droste",
     "email": "pid@posteo.net",

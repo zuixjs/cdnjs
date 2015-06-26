@@ -38,8 +38,5 @@
     "url": "https://github.com/door3/angular-css/issues"
   },
   "main": "angular-css.js",
-  "license": "MIT",
-  "scripts": {
-    "test": "grunt test"
-  }
+  "license": "MIT"
 }

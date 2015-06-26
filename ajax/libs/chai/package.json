@@ -34,9 +34,6 @@
   },
   "bugs": "https://github.com/chaijs/chai/issues",
   "main": "./index",
-  "scripts": {
-    "test": "make test"
-  },
   "engines": {
     "node": ">= 0.4.0"
   },

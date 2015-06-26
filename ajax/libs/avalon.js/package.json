@@ -42,9 +42,6 @@
     }
   ],
   "dependencies": {},
-  "scripts": {
-    "build": "npm install && gulp"
-  },
   "commitplease": {
     "components": []
   },

@@ -19,9 +19,6 @@
     }
   ],
   "main": "dist/js-data-angular.js",
-  "scripts": {
-    "test": "grunt test"
-  },
   "peerDependencies": {
     "angular": ">=1.1.0",
     "js-data": ">=1.5.7"

@@ -22,9 +22,6 @@
   "bugs": {
     "url": "https://github.com/maroslaw/rainyday.js/issues"
   },
-  "scripts": {
-    "test": "grunt"
-  },
   "dependencies": {},
   "autoupdate": {
     "source": "git",

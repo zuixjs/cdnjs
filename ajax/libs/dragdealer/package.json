@@ -7,9 +7,6 @@
     "url": "git://github.com/skidding/dragdealer.git"
   },
   "dependencies": {},
-  "scripts": {
-    "test": "grunt test"
-  },
   "main": "src/dragdealer.js",
   "filename": "dragdealer.min.js"
 }

@@ -10,9 +10,6 @@
     "url": "https://github.com/tuupola/jquery_lazyload.git"
   },
   "author": "Mika Tuupola <tuupola@appelsiini.net>",
-  "scripts": {
-    "test": "grunt test"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/tuupola/jquery_lazyload.git",

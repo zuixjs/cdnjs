@@ -13,9 +13,6 @@
   "version": "1.2.0",
   "description": "Device detection (phone, tablet, desktop, mobile grade, os, versions)",
   "main": "mobile-detect.js",
-  "scripts": {
-    "test": "grunt jasmine_node"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/hgoebl/mobile-detect.js"

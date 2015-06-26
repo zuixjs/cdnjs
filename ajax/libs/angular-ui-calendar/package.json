@@ -7,9 +7,6 @@
   "homepage": "http://angular-ui.github.com",
   "filename": "calendar.min.js",
   "dependencies": {},
-  "scripts": {
-    "test": "grunt"
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/angular-ui/ui-calendar.git"

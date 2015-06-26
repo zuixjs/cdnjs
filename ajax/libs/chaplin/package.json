@@ -10,9 +10,5 @@
       "url": "git://github.com/chaplinjs/chaplin.git"
     }
   ],
-  "main": "build/chaplin.js",
-  "scripts": {
-    "install": "grunt clean build",
-    "test": "grunt clean prepare test"
-  }
+  "main": "build/chaplin.js"
 }
