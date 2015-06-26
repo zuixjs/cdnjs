@@ -47,14 +47,13 @@
   "scripts": {
     "test": "grunt test"
   },
-  "npmName": "numbro",
-  "npmFileMap": [
-    {
-      "basePath": "/dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/foretagsplatsen/numbro.git",
+    "basePath": "dist",
+    "files": [
+      "**/*"
+    ]
+  },
   "filename": "numbro.min.js"
 }
