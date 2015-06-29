@@ -34,16 +34,8 @@
     "target": "git://github.com/trentrichardson/jQuery-Impromptu.git",
     "basePath": "/dist/",
     "files": [
-      "jquery-impromptu.min.js",
-      "jquery-impromptu.min.css",
-      "jquery-impromptu.js",
-      "jquery-impromptu.css",
-      "themes/base.css",
-      "themes/classic-impromptu.css",
-      "themes/clean-blue.css",
-      "themes/ext-blue.css",
-      "themes/smooth.css",
-      "themes/zoo.css"
+      "**/*.js",
+      "**/*.css"
     ]
   }
 }
