@@ -41,5 +41,15 @@
   },
   "files": [
     ""
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/marcuswestin/store.js.git",
+    "basePath": "",
+    "files": [
+      "store.js",
+      "store.min.js",
+      "store+json2.min.js"
+    ]
+  }
 }
