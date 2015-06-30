@@ -20,5 +20,14 @@
       "url": "https://github.com/websanova/js-url"
     }
   ],
-  "license": "MIT, GPL"
+  "license": "MIT, GPL",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/websanova/js-url.git",
+    "basePath": "",
+    "files": [
+      "url.min.js",
+      "url.js"
+    ]
+  }
 }
