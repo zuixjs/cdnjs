@@ -183,12 +183,14 @@ To add an `npm` hook to a library, update the `package.json` with configuration 
 
 ```js
   "npmName": "lodash",
-  "npmFileMap": [{
-    "basePath": "/dist/",
-    "files": [
-      "*.js"
-    ]
-  }],
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "*.js"
+      ]
+    }
+  ]
 ```
 
 * Please __don't__ touch `version` number in this step, it'll be automatically updated
