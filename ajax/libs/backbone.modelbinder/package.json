@@ -21,5 +21,13 @@
       "type": "git",
       "url": "https://github.com/theironcook/Backbone.ModelBinder"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/theironcook/Backbone.ModelBinder.git",
+    "basePath": "",
+    "files": [
+      "*.js"
+    ]
+  }
 }
