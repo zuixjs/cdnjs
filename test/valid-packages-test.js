@@ -109,7 +109,7 @@ packages.map(function (pkg) {
             pkg_name(pkg) + ": Name property should be '" + trueName + "', not '" + json.name +"'");
     };
 
-    var targetPrefixes = new RegExp("^git://");
+    var targetPrefixes = new RegExp("^git://.+\.git$");
     package_vows[pname + ": autoupdate block is valid (if present)"] = function (pkg) {
         var json = parse(pkg, true, true);
         if (json.autoupdate) {
