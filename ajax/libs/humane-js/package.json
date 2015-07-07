@@ -20,14 +20,14 @@
       "url": "https://github.com/wavded/humane-js"
     }
   ],
-    "autoupdate": {
+  "autoupdate": {
     "source": "git",
     "target": "git://github.com/wavded/humane-js.git",
     "basePath": "",
     "files": [
       "humane.min.js",
       "humane.js",
-      "themes/*.css
+      "themes/*.css"
     ]
-  },
+  }
 }
