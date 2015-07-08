@@ -39,7 +39,7 @@
     "target": "git://github.com/dlueth/qoopido.js.git",
     "basePath": "/dist/latest/min",
     "files": [
-      "*.js"
+      "**/*.js"
     ]
   }
 }
