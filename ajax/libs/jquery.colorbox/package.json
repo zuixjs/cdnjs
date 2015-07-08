@@ -8,5 +8,14 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/jackmoore/colorbox.git"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/jackmoore/colorbox.git",
+    "basePath": "",
+    "files": [
+      "jquery.colorbox-min.js",
+      "jquery.colorbox.js"
+    ]
   }
 }
