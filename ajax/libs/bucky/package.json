@@ -29,5 +29,14 @@
       "type": "git",
       "url": "https://github.com/HubSpot/BuckyClient.git"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/HubSpot/BuckyClient.git",
+    "basePath": "",
+    "files": [
+      "bucky.min.js",
+      "bucky.js"
+    ]
+  }
 }
