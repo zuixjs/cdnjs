@@ -21,5 +21,14 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/fgnass/spin.js.git"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/fgnass/spin.js.git",
+    "basePath": "",
+    "files": [
+      "spin.js",
+      "spin.min.js"
+    ]
   }
 }
