@@ -19,5 +19,14 @@
       "type": "github",
       "url": "https://github.com/tommoor/tinycon"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/tommoor/tinycon.git",
+    "basePath": "",
+    "files": [
+      "tinycon.js",
+      "tinycon.min.js"
+    ]
+  }
 }
