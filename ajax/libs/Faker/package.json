@@ -1,8 +1,8 @@
 {
   "name": "Faker",
-  "filename": "MinFaker.js",
+  "filename": "faker.min.js",
   "description": "Generate massive amounts of fake contextual data",
-  "version": "0.7.2",
+  "version": "3.0.0",
   "author": "Marak Squires <marak.squires@gmail.com>",
   "repository": {
     "type": "git",
