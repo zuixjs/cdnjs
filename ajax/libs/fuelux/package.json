@@ -40,7 +40,7 @@
     "basePath": "dist",
     "files": [
       "css/*",
-      "js/*",
+      "js/fuelux*",
       "fonts/*",
       "img/*",
       "all*.js"
