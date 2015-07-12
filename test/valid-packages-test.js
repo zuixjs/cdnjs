@@ -101,6 +101,15 @@ packages.map(function (pkg) {
         assert.ok(isThere(filePath),
                   filePath +" does not exist but is referenced in package.json!");
     };
+    package_vows[pname + ": required file exist"] = function (pkg) {
+      var json = parse(pkg, true, true);
+      if (json.requiredFiles !== undefined) {
+        for (var i in json.requiredFiles) {
+          var filePath = "./ajax/libs/" + json.name + "/"+ json.version + "/" + json.requiredFiles[i];
+          assert.ok(isThere(filePath), filePath +" does not exist but is required!");
+        }
+      }
+    };
     package_vows[pname + ": name in package.json should be parent folder name"] = function (pkg) {
         var json = parse(pkg, true, true);
         var dirs = pkg.split("/");
