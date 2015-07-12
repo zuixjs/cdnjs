@@ -19,5 +19,13 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/ubilabs/geocomplete.git"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/ubilabs/geocomplete.git",
+    "basePath": "",
+    "files": [
+      "jquery.geocomplete*.js"
+    ]
   }
 }
