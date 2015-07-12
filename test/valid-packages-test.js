@@ -147,7 +147,7 @@ packages.map(function (pkg) {
         var orig = fs.readFileSync(pkg, 'utf8'),
             correct = JSON.stringify(JSON.parse(orig), null, 2) + '\n';
         assert.ok(orig === correct,
-            pkg_name(pkg) + ": package.json wrong format, correct one should be like this.\n" + correct);
+            pkg_name(pkg) + ": package.json wrong format, correct one should be like this.\n(Should remove the first 2 spaces of each line if you want to copy and paste this example)\n" + correct);
     }
 
     package_vows[pname + ": useless fields check"] = function (pkg) {
