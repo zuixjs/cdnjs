@@ -34,5 +34,13 @@
   "dependencies": {
     "backbone": "~1.1.0",
     "lodash": "~2.2.1"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/clientIO/joint.git",
+    "basePath": "dist",
+    "files": [
+      "**/*"
+    ]
   }
 }
