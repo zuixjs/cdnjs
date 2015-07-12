@@ -29,5 +29,8 @@
     "files": [
       "**/*"
     ]
-  }
+  },
+  "requiredFiles": [
+    "css/lightbox.min.css"
+  ]
 }
