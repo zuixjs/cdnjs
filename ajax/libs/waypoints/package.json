@@ -1,7 +1,7 @@
 {
   "name": "waypoints",
-  "filename": "waypoints.min.js",
-  "version": "2.0.5",
+  "filename": "noframework.waypoints.min.js",
+  "version": "3.1.1",
   "description": "Easily execute a function when you scroll to an element",
   "homepage": "http://imakewebthings.com/waypoints/",
   "keywords": [
