@@ -30,5 +30,8 @@
     "files": [
       "require.js"
     ]
-  }
+  },
+  "requiredFiles": [
+    "require.min.js"
+  ]
 }
