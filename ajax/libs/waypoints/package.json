@@ -23,11 +23,9 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/imakewebthings/jquery-waypoints.git",
-    "basePath": "",
+    "basePath": "lib",
     "files": [
-      "shortcuts/*/*.js",
-      "waypoints.min.js",
-      "waypoints.js"
+      "**/*"
     ]
   }
 }
