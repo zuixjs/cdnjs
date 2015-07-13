@@ -29,5 +29,9 @@
     "files": [
       "*"
     ]
-  }
+  },
+  "requiredFiles": [
+    "summernote-bs2.min.css",
+    "summernote-bs3.min.css"
+  ]
 }
