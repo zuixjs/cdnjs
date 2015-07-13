@@ -20,5 +20,14 @@
       "type": "git",
       "url": "https://github.com/piranha/keymage"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/piranha/keymage.git",
+    "basePath": "",
+    "files": [
+      "keymage.js",
+      "keymage.min.js"
+    ]
+  }
 }
