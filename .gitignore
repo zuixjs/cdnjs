@@ -11,6 +11,7 @@ temp/
 node_modules/
 
 # folders need to be ingored due to auto auto-update mechanism
+ajax/libs/waypoints/latest/
 ajax/libs/bPopup/er*
 ajax/libs/bPopup/*b*
 ajax/libs/vibrant.js/1.0
