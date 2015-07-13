@@ -1,7 +1,7 @@
 {
   "name": "geocomplete",
   "filename": "jquery.geocomplete.min.js",
-  "version": "1.4",
+  "version": "1.6.5",
   "description": "Easily convert unordered lists & other nested HTML structures into entertaining, interactive, turntable-like areas.",
   "keywords": [
     "geocomplete",
