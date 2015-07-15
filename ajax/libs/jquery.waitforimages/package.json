@@ -13,5 +13,13 @@
     "type": "git",
     "url": "https://github.com/alexanderdickson/waitForImages"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/alexanderdickson/waitForImages.git",
+    "basePath": "dist",
+    "files": [
+      "**/*"
+    ]
+  }
 }
