@@ -17,9 +17,9 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/RubyLouvre/avalon.git",
-    "basePath": "",
+    "basePath": "dist",
     "files": [
-      "dist/*"
+      "**/*"
     ]
   },
   "keywords": [
