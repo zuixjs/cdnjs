@@ -1,10 +1,15 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "name": "cookies-monster",
   "description": "Simplified HTML, CSS, JS EU Cookie Law",
   "homepage": "https://github.com/WebReflection/cookies-monster",
-  "keywords": ["EU", "law", "cookie", "cookies"],
+  "keywords": [
+    "EU",
+    "law",
+    "cookie",
+    "cookies"
+  ],
   "author": {
     "name": "Andrea Giammarchi",
     "web": "http://webreflection.blogspot.com/"
