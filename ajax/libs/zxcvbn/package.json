@@ -28,5 +28,14 @@
       "type": "git",
       "url": "git://github.com/dropbox/zxcvbn.git"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/dropbox/zxcvbn.git",
+    "basePath": "",
+    "files": [
+      "zxcvbn.js",
+      "zxcvbn-async-bower.js"
+    ]
+  }
 }
