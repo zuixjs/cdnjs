@@ -27,5 +27,13 @@
       "type": "git",
       "url": "https://github.com/leongersen/noUiSlider"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/leongersen/noUiSlider.git",
+    "basePath": "distribute",
+    "files": [
+      "**/*"
+    ]
+  }
 }
