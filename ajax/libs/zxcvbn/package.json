@@ -35,6 +35,7 @@
     "basePath": "",
     "files": [
       "zxcvbn.js",
+      "zxcvbn-async.js",
       "zxcvbn-async-bower.js"
     ]
   }
