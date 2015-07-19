@@ -16,9 +16,10 @@
   "npmName": "card",
   "npmFileMap": [
     {
-      "basePath": "lib/js",
+      "basePath": "lib",
       "files": [
-        "*.js"
+        "js/*.js",
+        "css/*.css"
       ]
     }
   ]
