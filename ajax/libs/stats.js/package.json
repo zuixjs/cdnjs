@@ -18,5 +18,13 @@
       "type": "git",
       "url": "https://github.com/mrdoob/stats.js/"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/mrdoob/stats.js.git",
+    "basePath": "src",
+    "files": [
+      "Stats.js"
+    ]
+  }
 }
