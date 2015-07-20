@@ -19,5 +19,16 @@
     {
       "type": "MIT"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/icambron/twix.js.git",
+    "basePath": "bin",
+    "files": [
+      "twix.js",
+      "locale.js",
+      "locale.min.js",
+      "twix.min.js"
+    ]
+  }
 }
