@@ -22,5 +22,14 @@
   "license": "MIT",
   "dependencies": {
     "signals": ">0.7 <2.0"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/millermedeiros/Hasher.git",
+    "basePath": "dist/js",
+    "files": [
+      "hasher.js",
+      "hasher.min.js"
+    ]
   }
 }
