@@ -18,5 +18,13 @@
       "type": "git",
       "url": "git://github.com/getsentry/raven-js.git"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/getsentry/raven-js.git",
+    "basePath": "dist",
+    "files": [
+      "**/*"
+    ]
+  }
 }
