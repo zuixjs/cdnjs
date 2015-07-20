@@ -22,5 +22,14 @@
       "type": "git",
       "url": "https://github.com/joeldbirch/superfish"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/joeldbirch/superfish.git",
+    "basePath": "dist",
+    "files": [
+      "js/superfish*.js",
+      "css/*.css"
+    ]
+  }
 }
