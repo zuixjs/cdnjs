@@ -31,5 +31,9 @@
       "js/superfish*.js",
       "css/*.css"
     ]
-  }
+  },
+  "requiredFiles": [
+    "css/megafish.min.css",
+    "css/superfish.min.css"
+  ]
 }
