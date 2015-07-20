@@ -13,5 +13,13 @@
     "type": "git",
     "url": "git://github.com/ojjs/oj.markdown.git"
   },
-  "filename": "oj.markdown.min.js"
+  "filename": "oj.markdown.min.js",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/ojjs/oj.markdown.git",
+    "basePath": "",
+    "files": [
+      "oj.markdown.js"
+    ]
+  }
 }
