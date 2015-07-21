@@ -80,7 +80,7 @@ packages.map(function (pkg) {
         });
         if (!valid) {
             assert.ok(valid,
-                [pkg_name(pkg) + " didn't parse as any known format:"].concat(
+                [pkg_name(pkg) + " is not a valid cdnjs package.json format:"].concat(
                     errors
                         .filter(function (schema) {
                             return schema !== null;
