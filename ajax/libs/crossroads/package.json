@@ -36,10 +36,10 @@
   "npmName": "crossroads",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "dist",
       "files": [
-        "dist/crossroads.js",
-        "dist/crossroads.min.js"
+        "crossroads.js",
+        "crossroads.min.js"
       ]
     }
   ]
