@@ -31,7 +31,7 @@
     "target": "git://github.com/angular-ui/bootstrap-bower.git",
     "basePath": "",
     "files": [
-      "*.js"
+      "ui-bootstrap*.js"
     ]
   }
 }
