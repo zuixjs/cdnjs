@@ -14,13 +14,12 @@
       "url": "https://github.com/Semantic-Org/Semantic-UI"
     }
   ],
-  "npmName": "semantic-ui",
-  "npmFileMap": [
-    {
-      "basePath": "/dist/",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/Semantic-Org/Semantic-UI.git",
+    "basePath": "dist",
+    "files": [
+      "**/*"
+    ]
+  }
 }
