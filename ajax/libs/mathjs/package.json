@@ -1,14 +1,5 @@
 {
   "name": "mathjs",
-  "npmName": "mathjs",
-  "npmFileMap": [
-    {
-      "basePath": "/dist/",
-      "files": [
-        "*"
-      ]
-    }
-  ],
   "version": "2.0.0",
   "filename": "math.min.js",
   "homepage": "http://mathjs.org",
@@ -40,5 +31,13 @@
     "complex",
     "matrix",
     "unit"
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/josdejong/mathjs.git",
+    "basePath": "dist",
+    "files": [
+      "**/*"
+    ]
+  }
 }
