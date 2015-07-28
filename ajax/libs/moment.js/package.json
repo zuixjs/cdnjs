@@ -6,13 +6,13 @@
       "basePath": "",
       "files": [
         "moment*.js",
-        "lang/*"
+        "locale/*"
       ]
     },
     {
       "basePath": "/min/",
       "files": [
-        "*.js"
+        "moment*.js"
       ]
     }
   ],
