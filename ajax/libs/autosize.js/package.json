@@ -1,7 +1,7 @@
 {
   "name": "autosize.js",
-  "filename": "jquery.autosize.min.js",
-  "version": "1.18.18",
+  "filename": "autosize.min.js",
+  "version": "3.0.8",
   "author": {
     "name": "Jack Moore",
     "url": "http://www.jacklmoore.com",
