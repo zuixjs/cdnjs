@@ -28,5 +28,9 @@
     "files": [
       "**/*"
     ]
-  }
+  },
+  "requiredFiles": [
+    "sweetalert.min.css",
+    "sweetalert-dev.min.js"
+  ]
 }
