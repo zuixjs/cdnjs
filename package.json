@@ -31,7 +31,6 @@
   "devDependencies": {
     "JSV": "~4.0.2",
     "jslint": ">=0.8.1",
-    "mkdirp": "^0.5.1",
     "vows-si": "~0.7.1"
   },
   "optionalDependencies": {},

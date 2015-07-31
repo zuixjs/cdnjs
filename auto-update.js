@@ -10,14 +10,13 @@ var path = require("path"),
     tarball = require('tarball-extract'),
     colors = require('colors'),
     isThere = require("is-there"),
-    mkdirp = require('mkdirp'),
     libMatch = '*';
 
 
 if(!fs.existsSync('/run/shm')) {
   tempDirPath = path.join(__dirname, 'temp');
 } else {
-  mkdirp.sync('/run/shm/cdnjs_NPM_temp');
+  fs.mkdirsSync('/run/shm/cdnjs_NPM_temp');
   tempDirPath = '/run/shm/cdnjs_NPM_temp';
 }
 
