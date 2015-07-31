@@ -11,8 +11,15 @@ var path = require("path"),
     colors = require('colors'),
     isThere = require("is-there"),
     mkdirp = require('mkdirp'),
-    libMatch = '*',
-    tempDirPath = path.join(__dirname, 'temp');
+    libMatch = '*';
+
+
+if(!fs.existsSync('/run/shm')) {
+  tempDirPath = path.join(__dirname, 'temp');
+} else {
+  mkdirp.sync('/run/shm/cdnjs_NPM_temp');
+  tempDirPath = '/run/shm/cdnjs_NPM_temp';
+}
 
 colors.setTheme({
   prompt: 'cyan',
