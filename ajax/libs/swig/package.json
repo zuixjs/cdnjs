@@ -24,7 +24,7 @@
     {
       "basePath": "/dist/",
       "files": [
-        "swig.min.js"
+        "**/*"
       ]
     }
   ]
