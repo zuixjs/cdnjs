@@ -248,10 +248,10 @@ var updateLibrary = function (pkg, cb) {
 }
 
 exports.run = function(){
-    fs.removeSync(path.join(__dirname, 'temp'))
+    fs.removeSync(path.join(__dirname, 'temp/*'))
 
     process.on('uncaughtException', function(){
-      fs.removeSync(path.join(__dirname, 'temp'))
+      fs.removeSync(path.join(__dirname, 'temp/*'))
     })
     console.log('Looking for npm enabled libraries...');
 
@@ -271,7 +271,7 @@ exports.run = function(){
     async.each(packages, updateLibrary, function(err) {
         var msg = 'Auto Update Completed - ' + newVersionCount + ' versions were updated';
         console.log(msg.prompt);
-        fs.removeSync(path.join(__dirname, 'temp'))
+        fs.removeSync(path.join(__dirname, 'temp/*'))
     });
 }
 exports.updateLibrary = updateLibrary;
