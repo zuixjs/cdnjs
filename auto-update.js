@@ -11,7 +11,8 @@ var path = require("path"),
     colors = require('colors'),
     isThere = require("is-there"),
     mkdirp = require('mkdirp'),
-    libMatch = '*';
+    libMatch = '*',
+    tempDirPath = path.join(__dirname, 'temp');
 
 colors.setTheme({
   prompt: 'cyan',
@@ -179,7 +180,7 @@ var processNewVersion = function(pkg, version){
 
 
 var getPackageTempPath = function(pkg, version){
-    return path.normalize(path.join(__dirname, 'temp', pkg.name, version))
+    return path.normalize(path.join(tempDirPath, pkg.name, version))
 }
 var getPackagePath = function(pkg, version){
     return path.normalize(path.join(__dirname, 'ajax', 'libs', pkg.name, version));
@@ -248,10 +249,10 @@ var updateLibrary = function (pkg, cb) {
 }
 
 exports.run = function(){
-    fs.removeSync(path.join(__dirname, 'temp/*'))
+    fs.removeSync(path.join(tempDirPath, '/*'))
 
     process.on('uncaughtException', function(){
-      fs.removeSync(path.join(__dirname, 'temp/*'))
+      fs.removeSync(path.join(tempDirPath, '/*'))
     })
     console.log('Looking for npm enabled libraries...');
 
@@ -271,7 +272,7 @@ exports.run = function(){
     async.each(packages, updateLibrary, function(err) {
         var msg = 'Auto Update Completed - ' + newVersionCount + ' versions were updated';
         console.log(msg.prompt);
-        fs.removeSync(path.join(__dirname, 'temp/*'))
+        fs.removeSync(path.join(tempDirPath, '/*'))
     });
 }
 exports.updateLibrary = updateLibrary;
