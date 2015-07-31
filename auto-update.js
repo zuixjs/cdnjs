@@ -169,7 +169,7 @@ var processNewVersion = function(pkg, version){
                 var copyPart = path.relative(libContentsPath, extractFilePath);
                 var copyPath = path.join(libPath, copyPart)
                 fs.mkdirsSync(path.dirname(copyPath))
-                fs.renameSync(extractFilePath, copyPath);
+                fs.copySync(extractFilePath, copyPath);
                 updated = true;
             });
         });
