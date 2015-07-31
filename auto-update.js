@@ -10,6 +10,7 @@ var path = require("path"),
     tarball = require('tarball-extract'),
     colors = require('colors'),
     isThere = require("is-there"),
+    mkdirp = require('mkdirp'),
     libMatch = '*';
 
 colors.setTheme({
@@ -148,6 +149,7 @@ var processNewVersion = function(pkg, version){
             if(files.length == 0){
               //usually old versions have this problem
               var msg = (pkg.npmName + "@" + version + " - couldnt find file in npmFileMap.") + (" Doesnt exist: " + path.join(libContentsPath, file)).info;
+              mkdirp(libPath);
               console.log(msg);
             }
 
