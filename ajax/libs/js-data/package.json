@@ -52,7 +52,7 @@
       ]
     }
   ],
-  "filename": "js-data-debug.js",
+  "filename": "js-data.min.js",
   "requiredFiles": [
     "js-data-debug.min.js"
   ]
