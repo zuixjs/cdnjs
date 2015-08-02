@@ -22,5 +22,13 @@
     "one-direction",
     "touch",
     "items"
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/darsain/sly.git",
+    "basePath": "dist",
+    "files": [
+      "**/*"
+    ]
+  }
 }
