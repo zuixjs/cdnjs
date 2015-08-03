@@ -1,6 +1,6 @@
 {
   "name": "angular-i18n",
-  "filename": "angular-locale_en-us.js",
+  "filename": "angular-locale_en-us.min.js",
   "description": "Locales for AngularJS",
   "version": "1.2.15",
   "homepage": "http://angularjs.org",
