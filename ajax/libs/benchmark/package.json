@@ -17,7 +17,10 @@
     "Kit Cambridge <github@kitcambridge.be> (http://kitcambridge.be/)"
   ],
   "bugs": "https://github.com/bestiejs/benchmark.js/issues",
-  "repository": "bestiejs/benchmark.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bestiejs/benchmark.js.git"
+  },
   "npmName": "benchmark",
   "npmFileMap": [
     {
