@@ -18,7 +18,7 @@
     "clean-css": "~3.3",
     "colors": "~1.1",
     "execSync": "~1.0",
-    "fs-extra": "~0.22.1",
+    "fs-extra": "~0.23.0",
     "glob": "~5",
     "is-there": "4.0.0",
     "lodash": "^3.9",
