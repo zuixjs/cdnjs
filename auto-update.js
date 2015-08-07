@@ -11,7 +11,8 @@ var path = require("path"),
     colors = require('colors'),
     isThere = require("is-there"),
     libMatch = '*',
-    stable = require('semver-stable');
+    stable = require('semver-stable'),
+    semver = require('semver');
 
 
 if(!fs.existsSync('/run/shm')) {
@@ -178,7 +179,7 @@ var processNewVersion = function(pkg, version){
       newVersionCount++;
         var libPatha =path.normalize(path.join(__dirname, 'ajax', 'libs', pkg.name, 'package.json'));
         console.log('------------'.red, libPatha.green);    
-        if (stable.is(version)) {
+        if (stable.is(version) && semver.gt(version, pkg.version)) {
           pkg.version = version;
 
           fs.writeFileSync(libPatha, JSON.stringify(pkg, null, 2) + '\n', 'utf8');
