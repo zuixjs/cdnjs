@@ -261,9 +261,6 @@ var updateLibrary = function (pkg, cb) {
 exports.run = function(){
     fs.removeSync(path.join(tempDirPath, '/*'))
 
-    process.on('uncaughtException', function(){
-      fs.removeSync(path.join(tempDirPath, '/*'))
-    })
     console.log('Looking for npm enabled libraries...');
 
     // load up those files
