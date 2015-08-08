@@ -31,5 +31,13 @@
     "WebSockets",
     "WebWorkers",
     "Geolocation"
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/Reactive-Extensions/rxjs-dom.git",
+    "basePath": "dist",
+    "files": [
+      "**/*"
+    ]
+  }
 }
