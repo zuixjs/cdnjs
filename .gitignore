@@ -101,7 +101,6 @@ ajax/libs/*/*/**/*.plist
 ajax/libs/*/*/**/*.handlebars
 ajax/libs/*/*/**/*.gs
 ajax/libs/*/*/**/*.php
-ajax/libs/*/*/**/*.txt
 ajax/libs/*/*/**/*.ls
 ajax/libs/*/*/**/*.less
 ajax/libs/*/*/**/*LICENSE
