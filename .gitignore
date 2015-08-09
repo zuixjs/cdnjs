@@ -94,6 +94,7 @@ ajax/libs/*/*/**/*.html
 ajax/libs/*/*/**/*.nupkg
 ajax/libs/*/*/**/*.amd
 ajax/libs/*/*/**/*.zip
+ajax/libs/*/*/**/*.gz
 ajax/libs/*/*/**/*.rb
 ajax/libs/*/*/**/*.xap
 ajax/libs/*/*/**/*.tmSnippet
