@@ -1,6 +1,6 @@
 {
   "name": "onsen",
-  "version": "1.2.0-beta",
+  "version": "1.3.8",
   "filename": "js/onsenui.min.js",
   "description": "HTML5 UI Framework for building Cordova, PhoneGap hybrid mobile apps.",
   "homepage": "http://onsen.io/",
