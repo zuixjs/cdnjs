@@ -14,6 +14,12 @@
     "type": "git",
     "url": "git://github.com/SocketCluster/socketcluster-client.git"
   },
+  "keywords": [
+    "websocket",
+    "realtime",
+    "cluster",
+    "client"
+  ],
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/SocketCluster/socketcluster-client.git",
