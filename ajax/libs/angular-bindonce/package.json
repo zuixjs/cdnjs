@@ -26,14 +26,12 @@
     "watcher",
     "bindonce"
   ],
-  "npmName": "angular-bindonce",
-  "npmFileMap": [
-    {
-      "basePath": "/",
-      "files": [
-        "bindonce.js",
-        "bindonce.min.js"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/Pasvaz/bindonce.git",
+    "basePath": "",
+    "files": [
+      "bindonce*.js"
+    ]
+  }
 }
