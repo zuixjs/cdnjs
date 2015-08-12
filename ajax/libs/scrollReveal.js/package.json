@@ -14,5 +14,13 @@
       "type": "MIT",
       "url": "https://github.com/julianlloyd/scrollReveal.js/blob/master/LICENSE.md"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/julianlloyd/scrollReveal.js.git",
+    "basePath": "dist",
+    "files": [
+      "**/*"
+    ]
+  }
 }
