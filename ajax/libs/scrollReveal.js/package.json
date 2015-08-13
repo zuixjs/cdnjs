@@ -1,7 +1,7 @@
 {
   "name": "scrollReveal.js",
   "filename": "scrollReveal.min.js",
-  "version": "0.1.2",
+  "version": "2.3.2",
   "description": "Declarative on-scroll reveal animations",
   "author": "Julian Lloyd",
   "homepage": "https://github.com/julianlloyd/scrollReveal.js",
