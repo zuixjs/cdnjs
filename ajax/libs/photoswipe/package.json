@@ -1,7 +1,7 @@
 {
   "name": "photoswipe",
-  "filename": "code.photoswipe.min.js",
-  "version": "3.0.5",
+  "filename": "photoswipe.min.js",
+  "version": "4.1.0",
   "description": "Image Gallery for mobile and touch devices.",
   "homepage": "http://www.photoswipe.com/",
   "keywords": [
