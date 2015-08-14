@@ -6,11 +6,28 @@
   "homepage": "http://www.photoswipe.com/",
   "keywords": [
     "image",
-    "gallery"
+    "gallery",
+    "lightbox",
+    "photo",
+    "touch",
+    "swipe",
+    "zoom"
   ],
   "maintainers": [
     {
       "name": "Computerlove"
     }
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/dimsemenov/PhotoSwipe.git",
+    "basePath": "dist",
+    "files": [
+      "**/*"
+    ]
+  },
+  "requiredFiles": [
+    "photoswipe.min.css",
+    "default-skin/default-skin.min.css"
   ]
 }
