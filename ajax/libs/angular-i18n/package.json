@@ -31,8 +31,5 @@
     "files": [
       "angular-locale_*.js"
     ]
-  },
-  "requiredFile": [
-    "angular-locale_*.min.js"
-  ]
+  }
 }
