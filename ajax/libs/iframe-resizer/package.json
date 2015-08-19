@@ -30,7 +30,7 @@
   "repositories": [
     {
       "type": "git",
-      "url": "https://davidjbradshaw/iframe-resizer"
+      "url": "https://github.com/davidjbradshaw/iframe-resizer"
     }
   ],
   "autoupdate": {
