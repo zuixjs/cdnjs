@@ -10,7 +10,7 @@
     "reactjs",
     "jsx"
   ],
-  "homepage": "http://github.com/eXon/react-cookie",
+  "homepage": "https://github.com/eXon/react-cookie",
   "bugs": "https://github.com/eXon/react-cookie/issues",
   "namespace": "reactCookie",
   "autoupdate": {

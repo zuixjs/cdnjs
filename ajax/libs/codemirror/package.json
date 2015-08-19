@@ -13,7 +13,7 @@
   "directories": {
     "lib": "./lib"
   },
-  "bugs": "http://github.com/codemirror/CodeMirror/issues",
+  "bugs": "https://github.com/codemirror/CodeMirror/issues",
   "keywords": [
     "JavaScript",
     "CodeMirror",
