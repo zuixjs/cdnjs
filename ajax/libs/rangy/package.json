@@ -1,7 +1,7 @@
 {
   "name": "rangy",
-  "filename": "rangy-core.js",
-  "version": "1.2.3",
+  "filename": "rangy-core.min.js",
+  "version": "1.3.0",
   "description": "A cross-browser JavaScript range and selection library.",
   "homepage": "http://code.google.com/p/rangy/",
   "keywords": [
