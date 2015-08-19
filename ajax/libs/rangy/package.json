@@ -25,5 +25,13 @@
       "type": "svn",
       "url": "http://rangy.googlecode.com/svn/trunk/"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/timdown/rangy.git",
+    "basePath": "lib",
+    "files": [
+      "rangy*.js"
+    ]
+  }
 }
