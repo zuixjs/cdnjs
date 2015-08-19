@@ -22,8 +22,8 @@
   ],
   "repositories": [
     {
-      "type": "svn",
-      "url": "http://rangy.googlecode.com/svn/trunk/"
+      "type": "git",
+      "url": "https://github.com/timdown/rangy"
     }
   ],
   "autoupdate": {
