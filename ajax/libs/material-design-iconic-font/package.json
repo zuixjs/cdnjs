@@ -20,5 +20,9 @@
       "css/*",
       "fonts/*"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zavoloklom/material-design-iconic-font.git"
   }
 }

@@ -20,5 +20,9 @@
     "files": [
       "jqModal*.js"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/briceburg/jqModal.git"
   }
 }

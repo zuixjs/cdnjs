@@ -15,5 +15,9 @@
       "name": "Rodney Rehm",
       "web": "http://rodneyrehm.de"
     }
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/medialize/jQuery-contextMenu/"
+  }
 }

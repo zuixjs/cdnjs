@@ -35,5 +35,9 @@
       "spectrum.js",
       "i18n/*"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bgrins/spectrum.git"
   }
 }

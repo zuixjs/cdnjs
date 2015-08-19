@@ -18,5 +18,9 @@
       "css/*.css",
       "font/*"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/erikflowers/weather-icons.git"
   }
 }
