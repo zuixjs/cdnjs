@@ -20,5 +20,14 @@
       "type": "git",
       "url": "https://github.com/koggdal/ocanvas"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/koggdal/ocanvas.git",
+    "basePath": "build/dist/latest",
+    "files": [
+      "ocanvas.min.js",
+      "ocanvas.js"
+    ]
+  }
 }
