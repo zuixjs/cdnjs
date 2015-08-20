@@ -33,7 +33,7 @@
       "css/*"
     ]
   },
-  "requiredFile": [
+  "requiredFiles": [
     "css/onsen*.min.css"
   ]
 }
