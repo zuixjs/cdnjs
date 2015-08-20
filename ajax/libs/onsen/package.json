@@ -32,8 +32,5 @@
       "js/*",
       "css/*"
     ]
-  },
-  "requiredFiles": [
-    "css/onsen*.min.css"
-  ]
+  }
 }
