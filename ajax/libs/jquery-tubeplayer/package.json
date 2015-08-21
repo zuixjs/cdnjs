@@ -7,5 +7,19 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/nirvanatikku/jQuery-TubePlayer-Plugin"
+  },
+  "keywords": [
+    "youtube",
+    "media",
+    "vedio",
+    "player"
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/nirvanatikku/jQuery-TubePlayer-Plugin.git",
+    "basePath": "",
+    "files": [
+      "jQuery.tubeplayer*.js"
+    ]
   }
 }
