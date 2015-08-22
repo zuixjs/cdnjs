@@ -9,9 +9,6 @@
   },
   "author": "Globo.com",
   "license": "BSD",
-  "bugs": {
-    "url": "https://github.com/globocom/clappr/issues"
-  },
   "browser": {
     "zepto": "clappr-zepto"
   },

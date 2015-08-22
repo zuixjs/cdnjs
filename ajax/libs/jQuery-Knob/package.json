@@ -14,9 +14,6 @@
   ],
   "author": "Anthony Terrien",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/aterrien/jQuery-Knob/issues"
-  },
   "homepage": "https://github.com/aterrien/jQuery-Knob#readme",
   "autoupdate": {
     "source": "git",

@@ -24,9 +24,6 @@
     "type": "git",
     "url": "https://github.com/fengyuanchen/cropper.git"
   },
-  "bugs": {
-    "url": "https://github.com/fengyuanchen/cropper/issues"
-  },
   "license": {
     "type": "MIT",
     "url": "https://github.com/fengyuanchen/cropper/blob/master/LICENSE.md"

@@ -9,9 +9,6 @@
     "type": "git",
     "url": "https://github.com/michaelvillar/dynamics.js"
   },
-  "bugs": {
-    "url": "https://github.com/michaelvillar/dynamics.js/issues"
-  },
   "filename": "dynamics.min.js",
   "keywords": [
     "animation",

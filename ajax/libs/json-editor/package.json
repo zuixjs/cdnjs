@@ -9,9 +9,6 @@
     "email": "jeremy@jeremydorn.com",
     "url": "http://jeremydorn.com"
   },
-  "bugs": {
-    "url": "https://github.com/jdorn/json-editor/issues"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/jdorn/json-editor.git"
@@ -23,9 +20,6 @@
     "editor"
   ],
   "license": "MIT",
-  "engines": {
-    "node": ">= 0.8.0"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/jdorn/json-editor.git",
