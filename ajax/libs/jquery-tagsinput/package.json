@@ -21,5 +21,13 @@
       "name": "XOXCO",
       "web": "https://github.com/xoxco/jQuery-Tags-Input"
     }
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/xoxco/jQuery-Tags-Input.git",
+    "basePath": "dist",
+    "files": [
+      "**/*"
+    ]
+  }
 }
