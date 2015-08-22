@@ -12,6 +12,10 @@
   ],
   "homepage": "https://github.com/davidmz/apng-canvas",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidmz/apng-canvas"
+  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/davidmz/apng-canvas.git",
