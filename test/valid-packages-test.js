@@ -114,8 +114,10 @@ packages.map(function (pkg) {
         var json = parse(pkg, true, true);
         var dirs = pkg.split("/");
         var trueName = dirs[dirs.length - 2];
-        assert.ok(trueName == json.name,
-            pkg_name(pkg) + ": Name property should be '" + trueName + "', not '" + json.name +"'");
+        if (!fs.lstatSync("./ajax/libs/" + trueName).isSymbolicLink()) {
+            assert.ok(trueName == json.name,
+                pkg_name(pkg) + ": Name property should be '" + trueName + "', not '" + json.name +"'");
+        }
     };
 
     var targetPrefixes = new RegExp("^git://.+\.git$");
