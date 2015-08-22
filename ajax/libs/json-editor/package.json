@@ -1,0 +1,37 @@
+{
+  "name": "json-editor",
+  "title": "JSONEditor",
+  "description": "JSON Schema based editor",
+  "version": "0.7.22",
+  "filename": "jsoneditor.min.js",
+  "author": {
+    "name": "Jeremy Dorn",
+    "email": "jeremy@jeremydorn.com",
+    "url": "http://jeremydorn.com"
+  },
+  "bugs": {
+    "url": "https://github.com/jdorn/json-editor/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jdorn/json-editor.git"
+  },
+  "keywords": [
+    "json",
+    "schema",
+    "jsonschema",
+    "editor"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/jdorn/json-editor.git",
+    "basePath": "dist",
+    "files": [
+      "**/*"
+    ]
+  }
+}
