@@ -171,7 +171,7 @@ packages.map(function (pkg) {
         var orig = fs.readFileSync(pkg, 'utf8'),
             correct = JSON.stringify(JSON.parse(orig), null, 2) + '\n';
         assert.ok(orig === correct,
-            pkg_name(pkg) + ": package.json wrong format, correct one should be like this.\n(Remove the first 2 spaces of each line and include blank line at end if you copy and paste this example)\n" + correct +"\n");
+            pkg_name(pkg) + ": package.json wrong indent, please use our tool: tools/fixFormat.js to fix it for you, here is an example: (Please ignore the first 2 spaces and the wildcard symbol in autoupadte config due to a bug)\n" + correct +"\n");
     }
 
     package_vows[pname + ": useless fields check"] = function (pkg) {
