@@ -4,8 +4,11 @@
   "version": "1.0.2",
   "author": "YuzuJS",
   "license": "MIT",
-  "repository": "git://github.com/YuzuJS/setImmediate.git",
   "filename": "setImmediate.min.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YuzuJS/setImmediate"
+  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/YuzuJS/setImmediate.git",
