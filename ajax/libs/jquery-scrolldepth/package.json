@@ -11,9 +11,6 @@
     "type": "git",
     "url": "https://github.com/robflaherty/jquery-scrolldepth.git"
   },
-  "moduleType": [
-    "globals"
-  ],
   "keywords": [
     "analytics",
     "google-analytics",
