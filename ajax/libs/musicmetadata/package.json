@@ -1,6 +1,6 @@
 {
   "name": "musicmetadata",
-  "filename": "musicmetadata.js",
+  "filename": "musicmetadata.min.js",
   "version": "0.3.11",
   "description": "Streaming music metadata parser for node and the browser.",
   "keywords": [
