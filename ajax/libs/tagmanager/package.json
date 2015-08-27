@@ -37,5 +37,17 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/max-favilli/tagmanager"
-  }
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/max-favilli/tagmanager.git",
+    "basePath": "",
+    "files": [
+      "tagmanager.js",
+      "tagmanager.css"
+    ]
+  },
+  "requiredFiles": [
+    "tagmanager.min.css"
+  ]
 }
