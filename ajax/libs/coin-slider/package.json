@@ -19,5 +19,17 @@
     "url": "http://workshop.rs",
     "email": "devet.sest@gmail.com"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/kopipejst/coin-slider.git",
+    "basePath": "",
+    "files": [
+      "coin-slider.js",
+      "coin-slider-styles.css"
+    ]
+  },
+  "requiredFiles": [
+    "coin-slider-styles.min.css"
+  ]
 }
