@@ -9,12 +9,6 @@
     "type": "git",
     "url": "git://github.com/revolunet/angular-carousel.git"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://revolunet.mit-license.org"
-    }
-  ],
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/revolunet/angular-carousel.git",
@@ -22,5 +16,6 @@
     "files": [
       "*"
     ]
-  }
+  },
+  "license": "MIT"
 }

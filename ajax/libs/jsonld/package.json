@@ -13,12 +13,6 @@
     "type": "git",
     "url": "https://github.com/digitalbazaar/jsonld.js"
   },
-  "licenses": [
-    {
-      "type": "BSD",
-      "url": "https://github.com/digitalbazaar/jsonld.js/raw/master/LICENSE"
-    }
-  ],
   "keywords": [
     "JSON",
     "Linked Data",
@@ -35,5 +29,9 @@
         "jsonld.js"
       ]
     }
-  ]
+  ],
+  "license": {
+    "type": "BSD",
+    "url": "https://github.com/digitalbazaar/jsonld.js/raw/master/LICENSE"
+  }
 }

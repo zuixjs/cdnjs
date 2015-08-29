@@ -19,12 +19,6 @@
       "web": "http://formly-js.github.io/angular-formly/"
     }
   ],
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://raw.githubusercontent.com/formly-js/angular-formly/master/LICENSE"
-    }
-  ],
   "npmName": "angular-formly",
   "npmFileMap": [
     {
@@ -34,5 +28,6 @@
         "*.map"
       ]
     }
-  ]
+  ],
+  "license": "MIT"
 }

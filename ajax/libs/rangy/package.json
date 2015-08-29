@@ -16,12 +16,6 @@
     "email": "tim@timdown.co.uk",
     "url": "http://timdown.co.uk/"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://opensource.org/licenses/mit-license.php"
-    }
-  ],
   "repositories": [
     {
       "type": "git",
@@ -35,5 +29,6 @@
     "files": [
       "rangy*.js"
     ]
-  }
+  },
+  "license": "MIT"
 }

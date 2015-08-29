@@ -28,10 +28,5 @@
       "url": "https://github.com/knalli/angular-vertxbus"
     }
   ],
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/knalli/angular-vertxbus/blob/master/LICENSE"
-    }
-  ]
+  "license": "MIT"
 }
