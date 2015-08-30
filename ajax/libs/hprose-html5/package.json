@@ -49,10 +49,5 @@
       "hprose-html5.js"
     ]
   },
-  "license": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/andot/hprose/blob/master/MIT-LICENSE.txt"
-    }
-  ]
+  "license": "MIT"
 }
