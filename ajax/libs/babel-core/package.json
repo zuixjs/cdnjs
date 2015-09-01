@@ -68,7 +68,7 @@
     "to-fast-properties": "^1.0.0",
     "trim-right": "^1.0.0"
   },
-  "npmName": "jquery",
+  "npmName": "babel-core",
   "npmFileMap": [
     {
       "basePath": "",
