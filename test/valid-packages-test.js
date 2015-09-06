@@ -120,7 +120,7 @@ packages.map(function (pkg) {
         }
     };
 
-    package_vows[pname + ": do not use repositories if there is only one repo"] = function (pkg) {
+    package_vows[pname + ": validate type of repository/repositories"] = function (pkg) {
         var json = parse(pkg, true, true);
             assert.ok(
                 (
@@ -129,9 +129,19 @@ packages.map(function (pkg) {
                 ),
             "There is only one repo in " + json.name + "'s package.json, please use repository object instead of repositories array."
             );
+            assert.ok(!Array.isArray(json.repository), "repository should not be an array, please use repositories instead if there are multiple repos in " + json.name + "'s package.json");
     };
 
-    package_vows[pname + ": make sure repository field follow npm package.json format"] = function (pkg) {
+     package_vows[pname + ": do not use repositories if there is only one repo"] = function (pkg) {
+        var json = parse(pkg, true, true);
+            assert.ok(
+                (
+                    (json.repositories === undefined) ||
+                    (Array.isArray(json.repositories) && json.repositories.length > 1)
+                ),
+            "There is only one repo in " + json.name + "'s package.json, please use repository object instead of repositories array."
+            );
+    };   package_vows[pname + ": make sure repository field follow npm package.json format"] = function (pkg) {
         var json = parse(pkg, true, true);
             if (json.repositories === undefined && json.repository !== undefined) {
                 json.repositories = [];
