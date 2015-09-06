@@ -5,7 +5,7 @@
   "homepage": "https://muut.com/riotjs/",
   "repository": {
     "type": "git",
-    "url": "git://github.com/muut/riotjs"
+    "url": "git://github.com/riot/riot"
   },
   "author": "Muut, Inc. and other contributors",
   "license": "MIT",
@@ -37,7 +37,7 @@
   "filename": "riot.min.js",
   "autoupdate": {
     "source": "git",
-    "target": "git://github.com/muut/riotjs.git",
+    "target": "git://github.com/riot/riot.git",
     "basePath": "",
     "files": [
       "riot.js",
