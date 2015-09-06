@@ -13,6 +13,7 @@
     "type": "git",
     "url": "https://github.com/ws1/wuzzle"
   },
+  "license": "MIT",
   "filename": "wuzzle.min.css",
   "autoupdate": {
     "source": "git",
