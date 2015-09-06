@@ -1,11 +1,11 @@
 {
   "name": "breezejs",
-  "npmName": "breezejs",
+  "npmName": "breezejs-client",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "build",
       "files": [
-        "*.min.js"
+        "**/*"
       ]
     }
   ],
