@@ -7,7 +7,10 @@
   "bin": "./bin/marked",
   "man": "./man/marked.1",
   "preferGlobal": true,
-  "repository": "git://github.com/chjj/marked.git",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chjj/marked.git"
+  },
   "homepage": "https://github.com/chjj/marked",
   "keywords": [
     "markdown",

@@ -9,6 +9,9 @@
     "css"
   ],
   "version": "1.1.0",
-  "repository": "ws1/wuzzle",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ws1/wuzzle"
+  },
   "filename": "wuzzle.min.css"
 }
