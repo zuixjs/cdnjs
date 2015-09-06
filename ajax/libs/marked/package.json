@@ -16,5 +16,13 @@
     "markdown",
     "markup",
     "html"
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/chjj/marked.git",
+    "basePath": "lib",
+    "files": [
+      "marked.js"
+    ]
+  }
 }
