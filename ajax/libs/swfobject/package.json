@@ -16,10 +16,8 @@
       "name": "aran.rhee"
     }
   ],
-  "repositories": [
-    {
-      "type": "svn",
-      "url": "http://swfobject.googlecode.com/svn/trunk/"
-    }
-  ]
+  "repository": {
+    "type": "svn",
+    "url": "http://swfobject.googlecode.com/svn/trunk/"
+  }
 }

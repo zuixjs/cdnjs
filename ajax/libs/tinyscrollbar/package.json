@@ -14,10 +14,8 @@
       "web": "http://baijs.nl"
     }
   ],
-  "repositories": [
-    {
-      "type": "plain file",
-      "url": "http://baijs.nl/tinyscrollbar/js/jquery.tinyscrollbar.min.js"
-    }
-  ]
+  "repository": {
+    "type": "plain file",
+    "url": "http://baijs.nl/tinyscrollbar/js/jquery.tinyscrollbar.min.js"
+  }
 }

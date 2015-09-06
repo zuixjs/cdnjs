@@ -17,12 +17,6 @@
       "email": "maniac@softwaremaniacs.org"
     }
   ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/isagalaev/highlight.js"
-    }
-  ],
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/highlightjs/cdn-release.git",
@@ -32,5 +26,9 @@
       "languages/*.min.js",
       "styles/*"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/isagalaev/highlight.js"
   }
 }

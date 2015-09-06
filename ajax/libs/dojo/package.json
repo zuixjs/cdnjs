@@ -19,10 +19,8 @@
     "AFL-2.1",
     "BSD"
   ],
-  "repositories": [
-    {
-      "type": "svn",
-      "url": "http://svn.dojotoolkit.org/src/view/anon/all/trunk"
-    }
-  ]
+  "repository": {
+    "type": "svn",
+    "url": "http://svn.dojotoolkit.org/src/view/anon/all/trunk"
+  }
 }
