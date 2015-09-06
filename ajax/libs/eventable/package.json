@@ -10,5 +10,13 @@
   },
   "dependencies": {
     "underscore": "~1.4.4"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/madebymany/eventable.git",
+    "basePath": "",
+    "files": [
+      "eventable*"
+    ]
   }
 }
