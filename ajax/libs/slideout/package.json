@@ -2,7 +2,7 @@
   "name": "slideout",
   "repository": {
     "type": "git",
-    "url": "git@github.com:mango/slideout.git"
+    "url": "git://github.com/mango/slideout.git"
   },
   "description": "A touch slideout navigation menu for your mobile web apps.",
   "author": "Guille Paz <guille87paz@gmail.com>",
