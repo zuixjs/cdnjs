@@ -120,6 +120,18 @@ packages.map(function (pkg) {
         }
     };
 
+    package_vows[pname + ": do not use repositories if there is only one repo"] = function (pkg) {
+        var json = parse(pkg, true, true);
+            assert.ok(
+                (
+                    (json.repositories === undefined) ||
+                    (Array.isArray(json.repositories) && json.repositories.length > 1)
+                ),
+            "There is only one repo in " + json.name + "'s package.json, please use repository object instead of repositories array."
+            );
+    };
+
+
     var targetPrefixes = new RegExp("^git://.+\.git$");
     package_vows[pname + ": autoupdate block is valid (if present)"] = function (pkg) {
         var json = parse(pkg, true, true),
