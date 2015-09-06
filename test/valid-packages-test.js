@@ -131,6 +131,22 @@ packages.map(function (pkg) {
             );
     };
 
+    package_vows[pname + ": make sure repository field follow npm package.json format"] = function (pkg) {
+        var json = parse(pkg, true, true);
+            if (json.repositories === undefined && json.repository !== undefined) {
+                json.repositories = [];
+                json.repositories[0] = json.repository;
+            }
+            for (var repo in json.repositories) {
+                assert.ok(
+                    (
+                        (json.repositories[repo].type !== undefined) &&
+                        (json.repositories[repo].url  !== undefined)
+                    ),
+                "There repository field in " + json.name + "'s package.json should follow npm's format, must have type and url field."
+                );
+            }
+    };
 
     var targetPrefixes = new RegExp("^git://.+\.git$");
     package_vows[pname + ": autoupdate block is valid (if present)"] = function (pkg) {
