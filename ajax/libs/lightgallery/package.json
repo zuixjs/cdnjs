@@ -25,23 +25,12 @@
     "type": "git",
     "url": "https://github.com/sachinchoolur/lightGallery.git"
   },
-  "requiredFiles": [
-    "css/lightGallery.min.css"
-  ],
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/sachinchoolur/lightGallery.git",
-    "basePath": "light-gallery",
+    "basePath": "dist",
     "files": [
-      "css/lightGallery.css",
-      "fonts/Slide-icons.dev.svg",
-      "fonts/Slide-icons.eot",
-      "fonts/Slide-icons.svg",
-      "fonts/Slide-icons.ttf",
-      "fonts/Slide-icons.woff",
-      "img/loading.gif",
-      "js/lightGallery.js",
-      "js/lightGallery.min.js"
+      "**/*"
     ]
   },
   "license": "MIT"
