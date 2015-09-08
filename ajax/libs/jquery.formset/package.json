@@ -23,5 +23,13 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/elo80ka/django-dynamic-formset"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/elo80ka/django-dynamic-formset.git",
+    "basePath": "src/",
+    "files": [
+      "jquery.formset*.js"
+    ]
   }
 }
