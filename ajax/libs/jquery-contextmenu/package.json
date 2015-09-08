@@ -31,5 +31,9 @@
   },
   "requiredFiles": [
     "jquery.contextMenu.min.css"
+  ],
+  "licenses": [
+    "MIT",
+    "GPL-3.0"
   ]
 }
