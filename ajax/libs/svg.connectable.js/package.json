@@ -6,9 +6,9 @@
   "npmName": "svg.connectable.js",
   "npmFileMap": [
     {
-      "basePath": "/src/",
+      "basePath": "dist",
       "files": [
-        "*.js"
+        "**/*"
       ]
     }
   ],
