@@ -8,6 +8,11 @@
     "type": "git",
     "url": "git://github.com/esvit/ng-table.git"
   },
+  "keywords": [
+    "ng-table",
+    "table",
+    "angularjs"
+  ],
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/esvit/ng-table.git",
