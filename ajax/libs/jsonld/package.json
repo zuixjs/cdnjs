@@ -30,8 +30,5 @@
       ]
     }
   ],
-  "license": {
-    "type": "BSD",
-    "url": "https://github.com/digitalbazaar/jsonld.js/raw/master/LICENSE"
-  }
+  "license": "BSD-3-Clause"
 }
