@@ -11,13 +11,9 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/esvit/ng-table.git",
-    "basePath": "",
+    "basePath": "dist",
     "files": [
-      "ng-table.js",
-      "ng-table.css",
-      "ng-table.min.js",
-      "ng-table.min.css",
-      "ng-table.map"
+      "ng-table*.+(js|css|map)"
     ]
   }
 }
