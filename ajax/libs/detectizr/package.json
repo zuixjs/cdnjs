@@ -25,5 +25,13 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/barisaydinoglu/Detectizr"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/barisaydinoglu/Detectizr.git",
+    "basePath": "dist",
+    "files": [
+      "**/*"
+    ]
   }
 }
