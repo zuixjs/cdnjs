@@ -8,8 +8,8 @@
     "target": "git://github.com/DDMAL/diva.js.git",
     "basePath": "/build/",
     "files": [
-      "js/diva.min.js",
-      "css/diva.min.js",
+      "js/**/*diva*",
+      "css/**/*diva*",
       "img/**/*"
     ]
   },
