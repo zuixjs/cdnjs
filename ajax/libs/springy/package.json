@@ -17,5 +17,13 @@
     "graph",
     "layout",
     "visualization"
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/dhotson/springy.git",
+    "basePath": "",
+    "files": [
+      "springy*.js"
+    ]
+  }
 }
