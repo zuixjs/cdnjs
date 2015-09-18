@@ -11,6 +11,7 @@ temp/
 node_modules/
 
 # folders need to be ingored due to auto auto-update mechanism
+ajax/libs/diva.js/RELEASE-*/
 ajax/libs/sbt/IBMSBT-20140312/
 ajax/libs/angular-bootstrap-colorpicker/push/
 ajax/libs/weather-icons/1.1endpoint
