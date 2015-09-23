@@ -15,10 +15,7 @@
     "target": "git://github.com/bryanbraun/anchorjs.git",
     "basePath": "",
     "files": [
-      "anchor.css",
-      "anchor.min.css",
-      "anchor.js",
-      "anchor.min.js"
+      "anchor*.+(css|js)"
     ]
   }
 }
