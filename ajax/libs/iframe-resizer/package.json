@@ -32,7 +32,7 @@
     "target": "git://github.com/davidjbradshaw/iframe-resizer.git",
     "basePath": "js/",
     "files": [
-      "*.+(js|map)"
+      "!(index)*.+(js|map)"
     ]
   },
   "repository": {
