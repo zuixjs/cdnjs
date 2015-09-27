@@ -14,11 +14,9 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/HubSpot/tether.git",
-    "basePath": "",
+    "basePath": "dist",
     "files": [
-      "tether.js",
-      "tether.min.js",
-      "/css/*"
+      "**/tether*"
     ]
   },
   "repository": {
