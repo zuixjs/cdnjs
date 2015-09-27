@@ -14,5 +14,13 @@
     "type": "git",
     "url": "https://github.com/HubSpot/messenger"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/HubSpot/messenger.git",
+    "basePath": "build",
+    "files": [
+      "**/messenger*"
+    ]
+  }
 }
