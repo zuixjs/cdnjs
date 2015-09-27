@@ -21,9 +21,11 @@ async.each(packages, function(item, callback) {
   delete pkg.issues;
   delete pkg.files;
   delete pkg.ignore;
+  delete pkg.typescript;
   delete pkg.engines;
   delete pkg.engine;
   delete pkg.browserify;
+  delete pkg.browser;
   delete pkg.jam;
   delete pkg.bugs;
   delete pkg.jest;
