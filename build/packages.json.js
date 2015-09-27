@@ -3,6 +3,7 @@
 var async = require('async');
 var glob = require('glob');
 var fs = require('fs');
+var sriToolbox = require("sri-toolbox");
 var _ = require('underscore');
 var natcompare = require('./natcompare.js');
 var RSS = require('rss');
@@ -124,8 +125,22 @@ fs.readFile('../new-website/public/packages.min.json', 'utf8', function(err, dat
           temp.files = glob.sync(version + "/**/*", {nodir:true});
           for (var i = 0; i < temp.files.length; i++){
             var filespec = temp.files[i];
+
+            var fileContent = fs.readFileSync(temp.files[i], { encoding: "ascii" });
+            var splitTemp = temp.files[i].split('.');
+            switch (splitTemp[splitTemp.length - 1]) {
+              case 'css':
+              case 'js':
+                var integrity = sriToolbox.generate({algorithms: ["sha384"]}, fileContent);
+                break;
+              default:
+                var integrity = '';
+            }
+            delete fileContent;
+            delete splitTemp;
             temp.files[i] = {
-              name: filespec.replace(version + "/", "")
+              name: filespec.replace(version + "/", ""),
+              integrity: integrity
             };
           }
         }
