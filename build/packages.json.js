@@ -87,7 +87,6 @@ var packages = Array();
 
 fs.readFile('../new-website/public/packages.min.json.lzma', function(err, raw) {
   lzma.decompress(raw, function(data) {
-    data = data.toString();
     data = JSON.parse(data);
     glob("ajax/libs/*/package.json", function (error, matches) {
       async.each(matches, function(item, callback) {
