@@ -16,11 +16,9 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/HubSpot/tooltip.git",
-    "basePath": "",
+    "basePath": "dist",
     "files": [
-      "css/*.css",
-      "tooltip.js",
-      "tooltip.min.js"
+      "**/*"
     ]
   },
   "repository": {
