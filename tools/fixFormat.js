@@ -23,6 +23,8 @@ async.each(packages, function(item, callback) {
   delete pkg.ignore;
   delete pkg.engines;
   delete pkg.engine;
+  delete pkg.browserify;
+  delete pkg.jam;
   fs.writeFileSync(item, JSON.stringify(pkg, null, 2) + '\n', 'utf8');
   callback();
 });
