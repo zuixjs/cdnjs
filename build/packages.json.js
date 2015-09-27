@@ -85,7 +85,7 @@ exec('git ls-tree -r --name-only HEAD | grep **/package.json | while read filena
 
 var packages = Array();
 
-fs.readFile('../new-website/public/packages.min.json.lzma', function(err, raw) {
+fs.readFile('../new-website/public/packages.min.json.xz', function(err, raw) {
   lzma.decompress(raw, function(data) {
     data = JSON.parse(data);
     glob("ajax/libs/*/package.json", function (error, matches) {
