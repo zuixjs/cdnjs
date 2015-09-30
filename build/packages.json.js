@@ -161,7 +161,7 @@ fs.readFile('../new-website/public/packages.min.json.xz', function(err, raw) {
       // Initialize the feed object
       fs.writeFileSync('../cdnjs.debug.packages.json', JSON.stringify({"packages":packages}, null, 2), 'utf8');
       lzma.compress(JSON.stringify({"packages":packages}), function(result) {
-        fs.writeFileSync('../new-website/public/packages.min.json.lzma', result);
+        fs.writeFileSync('../new-website/public/packages.min.json.xz', result);
       });
     });
   });
