@@ -133,7 +133,7 @@ fs.readFile('../new-website/public/packages.min.json.xz', function(err, raw) {
               switch (splitTemp[splitTemp.length - 1]) {
                 case 'css':
                 case 'js':
-                  var integrity = sriToolbox.generate({algorithms: ["sha384"]}, fileContent);
+                  var integrity = sriToolbox.generate({algorithms: ["sha256"]}, fileContent);
                   break;
                 default:
                   var integrity = '';
