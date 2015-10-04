@@ -221,6 +221,9 @@ var updateLibraryVersion = function(pkg, tarballUrl, version, cb) {
                 var msg = "Do not have version " + version + " of " + pkg.npmName;
                 console.log(msg.warn);
             } else {
+                if ('Server respond 404' == result.error) {
+                    fs.mkdirsSync('./ajax/libs/' + pkg.name + '/' + version);
+                }
                 var msg = "error downloading " + version + " of " + pkg.npmName + " it didnt exist: " + result + err;
                 console.log(msg.error);
             }
