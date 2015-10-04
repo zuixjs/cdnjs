@@ -16,10 +16,9 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/fastly/epoch.git",
-    "basePath": "",
+    "basePath": "dist",
     "files": [
-      "epoch.min.js",
-      "epoch.min.css"
+      "**/*"
     ]
   },
   "repository": {
