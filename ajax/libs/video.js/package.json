@@ -17,15 +17,9 @@
   "npmName": "video.js",
   "npmFileMap": [
     {
-      "basePath": "/dist/video-js/",
+      "basePath": "dist",
       "files": [
-        "video-js.css",
-        "video-js.min.css",
-        "video-js.swf",
-        "video.dev.js",
-        "video.js",
-        "lang/*",
-        "font/*"
+        "**/*.+(js|css|map|woff|ttf|svg|eot|swf)"
       ]
     }
   ],
