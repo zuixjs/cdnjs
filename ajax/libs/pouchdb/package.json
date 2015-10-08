@@ -60,5 +60,6 @@
     "transform": [
       "./node_modules/es3ify"
     ]
-  }
+  },
+  "license": "Apache-2.0"
 }

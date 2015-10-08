@@ -32,5 +32,6 @@
       "plottable.js",
       "plottable.min.js"
     ]
-  }
+  },
+  "license": "MIT"
 }

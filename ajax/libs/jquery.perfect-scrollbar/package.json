@@ -30,5 +30,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/noraesae/perfect-scrollbar"
-  }
+  },
+  "license": "MIT"
 }

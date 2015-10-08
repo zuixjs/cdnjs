@@ -22,5 +22,6 @@
     "websockets"
   ],
   "author": "Hamilton Chapman",
-  "homepage": "https://github.com/pusher/pusher-angular"
+  "homepage": "https://github.com/pusher/pusher-angular",
+  "license": "MIT"
 }

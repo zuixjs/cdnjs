@@ -29,5 +29,6 @@
       "rimg.js",
       "rimg.min.js"
     ]
-  }
+  },
+  "license": "BSD-2-Clause"
 }

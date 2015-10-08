@@ -18,5 +18,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/SlexAxton/yepnope.js"
+  },
+  "license": {
+    "type": "New BSD",
+    "url": "https://github.com/SlexAxton/yepnope.js/blob/master/LICENSE.md"
   }
 }

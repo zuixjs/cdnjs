@@ -17,5 +17,6 @@
     "files": [
       "angucomplete-alt.min.js"
     ]
-  }
+  },
+  "license": "MIT"
 }

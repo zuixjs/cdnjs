@@ -32,5 +32,9 @@
         "graphiql*"
       ]
     }
-  ]
+  ],
+  "license": {
+    "type": "customized",
+    "url": "https://github.com/graphql/graphiql/raw/master/LICENSE"
+  }
 }

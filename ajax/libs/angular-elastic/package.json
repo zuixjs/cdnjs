@@ -27,5 +27,6 @@
     "files": [
       "elastic*.js"
     ]
-  }
+  },
+  "license": "MIT"
 }

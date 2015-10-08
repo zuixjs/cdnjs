@@ -35,5 +35,6 @@
     "respimage",
     "include",
     "include"
-  ]
+  ],
+  "license": "MIT"
 }

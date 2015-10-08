@@ -31,5 +31,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/baconjs/bacon.js.git"
-  }
+  },
+  "license": "MIT"
 }

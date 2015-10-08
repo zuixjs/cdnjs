@@ -27,5 +27,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/mattbryson/TouchSwipe-Jquery-Plugin.git"
-  }
+  },
+  "licenses": [
+    "MIT",
+    "GPL-2.0"
+  ]
 }
