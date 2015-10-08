@@ -7,7 +7,6 @@
     "type": "git",
     "url": "git://github.com/aFarkas/lazysizes.git"
   },
-  "browser": "lazysizes.min.js",
   "namespace": "lazySizes",
   "npmName": "lazysizes",
   "npmFileMap": [

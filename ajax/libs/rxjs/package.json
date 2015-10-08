@@ -22,9 +22,6 @@
     "type": "git",
     "url": "https://github.com/Reactive-Extensions/RxJS.git"
   },
-  "jam": {
-    "main": "dist/rx.all.js"
-  },
   "dependencies": {},
   "keywords": [
     "LINQ",

@@ -23,16 +23,6 @@
     "object-assign": "^2.0.0",
     "react-responsive-mixin": "^0.3.1"
   },
-  "browserify": {
-    "transform": [
-      [
-        "reactify",
-        {
-          "es6": true
-        }
-      ]
-    ]
-  },
   "npmName": "react-slick",
   "npmFileMap": [
     {
