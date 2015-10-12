@@ -17,5 +17,13 @@
   "dependencies": {
     "jquery": ">= 1.9.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/luis-almeida/unveil.git",
+    "basePath": "",
+    "files": [
+      "jquery.unveil*.js"
+    ]
+  }
 }
