@@ -34,8 +34,7 @@
     "target": "git://github.com/terrymun/Fluidbox.git",
     "basePath": "dist",
     "files": [
-      "**/*.min.js",
-      "**/*.min.css"
+      "**/*"
     ]
   },
   "repository": {
