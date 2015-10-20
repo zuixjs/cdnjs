@@ -4,12 +4,6 @@
   "filename": "remotestorage.min.js",
   "description": "Client-side Javascript library to make apps remoteStorage-compatible.",
   "homepage": "http://remotestorage.io/",
-  "maintainers": [
-    {
-      "name": "Niklas Cathor",
-      "url": "nil.niklas@googlemail.com"
-    }
-  ],
   "licenses": [
     {
       "type": "AGPL",
@@ -17,6 +11,7 @@
     },
     "MIT"
   ],
+  "license": "MIT",
   "keywords": [
     "remoteStorage",
     "unhosted",
@@ -31,5 +26,13 @@
     "type": "git",
     "url": "https://github.com/remotestorage/remotestorage.js"
   },
-  "license": "MIT"
+  "npmName": "remotestoragejs",
+  "npmFileMap": [
+    {
+      "basePath": "release/stable",
+      "files": [
+        "*.js"
+      ]
+    }
+  ]
 }
