@@ -4,10 +4,7 @@
   "filename": "remotestorage.min.js",
   "description": "Client-side Javascript library to make apps remoteStorage-compatible.",
   "homepage": "http://remotestorage.io/",
-  "licenses": [
-    "AGPL-3.0",
-    "MIT"
-  ],
+  "license": "MIT",
   "keywords": [
     "remoteStorage",
     "unhosted",
