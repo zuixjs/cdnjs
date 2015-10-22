@@ -14,16 +14,6 @@
     "name": "Jackson Tian",
     "email": "shyvo1987@gmail.com"
   },
-  "contributors": [
-    {
-      "name": "Jackson Tian",
-      "email": "shyvo1987@gmail.com"
-    },
-    {
-      "name": "fengmk2",
-      "email": "fengmk2@gmail.com"
-    }
-  ],
   "dependencies": {
     "debug": "2.1.3"
   },
