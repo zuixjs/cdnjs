@@ -23,8 +23,7 @@
     "target": "git://github.com/BeSite/jQuery.mmenu.git",
     "basePath": "dist",
     "files": [
-      "css/**/*",
-      "js/**/*"
+      "**/*"
     ]
   },
   "repository": {
