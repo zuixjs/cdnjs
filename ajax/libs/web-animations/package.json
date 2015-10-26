@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://github.com/web-animations/web-animations-js.git"
   },
-  "license": "Apache2",
+  "license": "Apache-2.0",
   "keywords": [
     "html",
     "animation",
