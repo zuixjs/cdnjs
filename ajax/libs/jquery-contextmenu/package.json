@@ -23,14 +23,10 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/swisnl/jQuery-contextMenu.git",
-    "basePath": "src/",
+    "basePath": "dist",
     "files": [
-      "jquery.contextMenu*.+(js|css)",
-      "images/*.png"
+      "**/*"
     ]
   },
-  "requiredFiles": [
-    "jquery.contextMenu.min.css"
-  ],
   "license": "MIT"
 }
