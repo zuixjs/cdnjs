@@ -247,6 +247,13 @@ Without any query parameters it will return the name and main file URL of every 
 https://api.cdnjs.com/libraries?search=jquery
 ```
 
+API will reture minified result by default, if you wanna have a human readable result, try `output=human` like this:
+
+```
+https://api.cdnjs.com/libraries?output=human
+https://api.cdnjs.com/libraries?search=jquery&output=human
+```
+
 If you would like more data, use the fields parameter which takes comma-separated values:
 
 ```
