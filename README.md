@@ -282,6 +282,3 @@ The API is served over Cloudflare with a six-hour expiry for requests.
 ## Extensions, Plugins, Resources
 
 [Extensions, Plugins, Resources](https://github.com/cdnjs/cdnjs/wiki/Extensions%2C-Plugins%2C-Resources)
-
-### Bot
-The bot account is called `the-cdnjs-curator`
