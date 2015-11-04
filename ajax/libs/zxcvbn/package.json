@@ -19,11 +19,9 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/dropbox/zxcvbn.git",
-    "basePath": "",
+    "basePath": "dist",
     "files": [
-      "zxcvbn.js",
-      "zxcvbn-async.js",
-      "zxcvbn-async-bower.js"
+      "**/*"
     ]
   },
   "license": "MIT",
