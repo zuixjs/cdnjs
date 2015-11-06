@@ -4,11 +4,11 @@
 
   // Export to Node
   if (typeof module === 'object' && module.exports)
-    module.exports = factory(root)
+    module.exports = factory(root, root.oj || require('oj'))
 
   // Export to RequireJS
   else if (typeof define === 'function' && define.amd)
-    define(function(){return factory(root)})
+    define(['oj'], function(oj){return factory(root, oj) })
 
   // Export to OJ
   else
