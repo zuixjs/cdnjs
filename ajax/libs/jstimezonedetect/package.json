@@ -19,5 +19,14 @@
   "repository": {
     "type": "hg",
     "url": "https://bitbucket.org/pellepim/jstimezonedetect"
-  }
+  },
+  "npmName": "jstimezonedetect",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "*.js"
+      ]
+    }
+  ]
 }
