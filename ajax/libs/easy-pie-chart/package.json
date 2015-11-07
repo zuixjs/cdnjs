@@ -1,7 +1,7 @@
 {
   "name": "easy-pie-chart",
   "filename": "jquery.easypiechart.min.js",
-  "version": "2.1.4",
+  "version": "2.1.6",
   "description": "Easy pie chart is a jQuery plugin that uses the canvas element to render simple pie charts for single values.",
   "homepage": "http://rendro.github.io/easy-pie-chart/",
   "keywords": [
