@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 /*
     (hapi)nes WebSocket Client (https://github.com/hapijs/nes)
@@ -6,57 +6,54 @@
     BSD Licensed
 */
 
+;
+
+function _typeof(obj) { return obj && typeof Symbol !== "undefined" && obj.constructor === Symbol ? "symbol" : typeof obj; }
 
 (function (root, factory) {
 
     // $lab:coverage:off$
 
-    if (typeof exports === 'object' && typeof module === 'object') {
-        module.exports = factory();                 // Export if used as a module
-    }
-    else if (typeof define === 'function' && define.amd) {
-        define(factory);
-    }
-    else if (typeof exports === 'object') {
-        exports.nes = factory();
-    }
-    else {
-        root.nes = factory();
-    }
+    if ((typeof exports === 'undefined' ? 'undefined' : _typeof(exports)) === 'object' && (typeof module === 'undefined' ? 'undefined' : _typeof(module)) === 'object') {
+        module.exports = factory(); // Export if used as a module
+    } else if (typeof define === 'function' && define.amd) {
+            define(factory);
+        } else if ((typeof exports === 'undefined' ? 'undefined' : _typeof(exports)) === 'object') {
+            exports.nes = factory();
+        } else {
+            root.nes = factory();
+        }
 
     // $lab:coverage:on$
-
-})(this, () => {
+})(undefined, function () {
 
     // Utilities
 
-    const ignore = function () { };
-    const WS = /* $lab:coverage:off$ */ (typeof WebSocket === 'undefined' ? require('ws') : WebSocket); /* $lab:coverage:on$ */       // Using require vs proper UMD binding as we assume WebSocket is available through native bindings in all environments
+    var ignore = function ignore() {};
+    var WS = /* $lab:coverage:off$ */typeof WebSocket === 'undefined' ? require('ws') : WebSocket; /* $lab:coverage:on$ */ // Using require vs proper UMD binding as we assume WebSocket is available through native bindings in all environments
 
-    const parse = function (message, next) {
+    var parse = function parse(message, next) {
 
-        let obj = null;
-        let error = null;
+        var obj = null;
+        var error = null;
 
         try {
             obj = JSON.parse(message);
-        }
-        catch (err) {
+        } catch (err) {
             error = err;
         }
 
         return next(error, obj);
     };
 
-    const stringify = function (message, next) {
+    var stringify = function stringify(message, next) {
 
-        let string = null;
-        let error = null;
+        var string = null;
+        var error = null;
 
         try {
             string = JSON.stringify(message);
-        }
-        catch (err) {
+        } catch (err) {
             error = err;
         }
 
@@ -65,7 +62,7 @@
 
     // Client
 
-    const Client = function (url, options) {
+    var Client = function Client(url, options) {
 
         options = options || {};
 
@@ -73,27 +70,27 @@
 
         this._url = url;
         this._settings = options;
-        this._heartbeatTimeout = false;             // Server heartbeat configuration
+        this._heartbeatTimeout = false; // Server heartbeat configuration
 
         // State
 
         this._ws = null;
         this._reconnection = null;
-        this._ids = 0;                              // Id counter
-        this._requests = {};                        // id -> { callback, timeout }
-        this._subscriptions = {};                   // path -> [callbacks]
+        this._ids = 0; // Id counter
+        this._requests = {}; // id -> { callback, timeout }
+        this._subscriptions = {}; // path -> [callbacks]
         this._heartbeat = null;
 
         // Events
 
-        this.onError = console.error;               // General error callback (only when an error cannot be associated with a request)
-        this.onConnect = ignore;                    // Called whenever a connection is established
-        this.onDisconnect = ignore;                 // Called whenever a connection is lost: function(willReconnect)
+        this.onError = console.error; // General error callback (only when an error cannot be associated with a request)
+        this.onConnect = ignore; // Called whenever a connection is established
+        this.onDisconnect = ignore; // Called whenever a connection is lost: function(willReconnect)
         this.onUpdate = ignore;
 
         // Public properties
 
-        this.id = null;                             // Assigned when hello response is received
+        this.id = null; // Assigned when hello response is received
     };
 
     Client.prototype.connect = function (options, callback) {
@@ -103,19 +100,19 @@
             options = {};
         }
 
-        if (options.reconnect !== false) {                  // Defaults to true
-            this._reconnection = {                          // Options: reconnect, delay, maxDelay
+        if (options.reconnect !== false) {
+            // Defaults to true
+            this._reconnection = { // Options: reconnect, delay, maxDelay
                 wait: 0,
-                delay: options.delay || 1000,               // 1 second
-                maxDelay: options.maxDelay || 5000,         // 5 seconds
-                retries: options.retries || Infinity,       // Unlimited
+                delay: options.delay || 1000, // 1 second
+                maxDelay: options.maxDelay || 5000, // 5 seconds
+                retries: options.retries || Infinity, // Unlimited
                 settings: {
                     auth: options.auth,
                     timeout: options.timeout
                 }
             };
-        }
-        else {
+        } else {
             this._reconnection = null;
         }
 
@@ -123,44 +120,45 @@
     };
 
     Client.prototype._connect = function (options, initial, callback) {
+        var _this = this;
 
-        let sentCallback = false;
-        const timeoutHandler = () => {
+        var sentCallback = false;
+        var timeoutHandler = function timeoutHandler() {
 
             sentCallback = true;
-            this._ws.close();
+            _this._ws.close();
             callback(new Error('Connection timed out'));
-            this._cleanup();
+            _this._cleanup();
             if (initial) {
-                return this._reconnect();
+                return _this._reconnect();
             }
         };
 
-        const timeout = (options.timeout ? setTimeout(timeoutHandler, options.timeout) : null);
+        var timeout = options.timeout ? setTimeout(timeoutHandler, options.timeout) : null;
 
-        const ws = new WS(this._url, this._settings.ws);      // Settings used by node.js only
+        var ws = new WS(this._url, this._settings.ws); // Settings used by node.js only
         this._ws = ws;
 
-        ws.onopen = () => {
+        ws.onopen = function () {
 
             clearTimeout(timeout);
 
             if (!sentCallback) {
                 sentCallback = true;
-                return this._hello(options.auth, (err) => {
+                return _this._hello(options.auth, function (err) {
 
                     if (err) {
-                        this.disconnect();                  // Stop reconnection when the hello message returns error
+                        _this.disconnect(); // Stop reconnection when the hello message returns error
                         return callback(err);
                     }
 
-                    this.onConnect();
+                    _this.onConnect();
                     return callback();
                 });
             }
         };
 
-        ws.onerror = (err) => {
+        ws.onerror = function (err) {
 
             clearTimeout(timeout);
 
@@ -169,19 +167,19 @@
                 return callback(err);
             }
 
-            return this.onError(err);
+            return _this.onError(err);
         };
 
-        ws.onclose = () => {
+        ws.onclose = function () {
 
-            this._cleanup();
-            this.onDisconnect(!!this._reconnection);
-            this._reconnect();
+            _this._cleanup();
+            _this.onDisconnect(!!_this._reconnection);
+            _this._reconnect();
         };
 
-        ws.onmessage = (message) => {
+        ws.onmessage = function (message) {
 
-            return this._onMessage(message);
+            return _this._onMessage(message);
         };
     };
 
@@ -193,8 +191,7 @@
             return;
         }
 
-        if (this._ws.readyState === WS.OPEN ||
-            this._ws.readyState === WS.CONNECTING) {
+        if (this._ws.readyState === WS.OPEN || this._ws.readyState === WS.CONNECTING) {
 
             this._ws.close();
         }
@@ -202,7 +199,7 @@
 
     Client.prototype._cleanup = function () {
 
-        const ws = this._ws;
+        var ws = this._ws;
         if (!ws) {
             return;
         }
@@ -218,13 +215,13 @@
 
         // Flush pending requests
 
-        const error = new Error('Request failed - server disconnected');
+        var error = new Error('Request failed - server disconnected');
 
-        const ids = Object.keys(this._requests);
-        for (let i = 0; i < ids.length; ++i) {
-            const id = ids[i];
-            const request = this._requests[id];
-            const callback = request.callback;
+        var ids = Object.keys(this._requests);
+        for (var i = 0; i < ids.length; ++i) {
+            var id = ids[i];
+            var request = this._requests[id];
+            var callback = request.callback;
             clearTimeout(request.timeout);
             delete this._requests[id];
             callback(error);
@@ -232,6 +229,7 @@
     };
 
     Client.prototype._reconnect = function () {
+        var _this2 = this;
 
         // Reconnect
 
@@ -243,19 +241,19 @@
             --this._reconnection.retries;
             this._reconnection.wait = this._reconnection.wait + this._reconnection.delay;
 
-            const timeout = Math.min(this._reconnection.wait, this._reconnection.maxDelay);
-            setTimeout(() => {
+            var timeout = Math.min(this._reconnection.wait, this._reconnection.maxDelay);
+            setTimeout(function () {
 
-                if (!this._reconnection) {
+                if (!_this2._reconnection) {
                     return;
                 }
 
-                this._connect(this._reconnection.settings, false, (err) => {
+                _this2._connect(_this2._reconnection.settings, false, function (err) {
 
                     if (err) {
-                        this.onError(err);
-                        this._cleanup();
-                        return this._reconnect();
+                        _this2.onError(err);
+                        _this2._cleanup();
+                        return _this2._reconnect();
                     }
                 });
             }, timeout);
@@ -271,7 +269,7 @@
             };
         }
 
-        const request = {
+        var request = {
             type: 'request',
             method: options.method || 'GET',
             path: options.path,
@@ -284,7 +282,7 @@
 
     Client.prototype.message = function (message, callback) {
 
-        const request = {
+        var request = {
             type: 'message',
             message: message
         };
@@ -293,49 +291,50 @@
     };
 
     Client.prototype._send = function (request, track, callback) {
+        var _this3 = this;
 
         callback = callback || ignore;
 
-        if (!this._ws ||
-            this._ws.readyState !== WS.OPEN) {
+        if (!this._ws || this._ws.readyState !== WS.OPEN) {
 
             return callback(new Error('Failed to send message - server disconnected'));
         }
 
         request.id = ++this._ids;
 
-        stringify(request, (err, encoded) => {
+        stringify(request, function (err, encoded) {
 
             if (err) {
                 return callback(err);
             }
 
             if (track) {
-                const record = {
-                    callback: callback,
-                    timeout: null
-                };
+                (function () {
+                    var record = {
+                        callback: callback,
+                        timeout: null
+                    };
 
-                if (this._settings.timeout) {
-                    record.timeout = setTimeout(() => {
+                    if (_this3._settings.timeout) {
+                        record.timeout = setTimeout(function () {
 
-                        record.callback = null;
-                        record.timeout = null;
+                            record.callback = null;
+                            record.timeout = null;
 
-                        return callback(new Error('Request timed out'));
-                    }, this._settings.timeout);
-                }
+                            return callback(new Error('Request timed out'));
+                        }, _this3._settings.timeout);
+                    }
 
-                this._requests[request.id] = record;
+                    _this3._requests[request.id] = record;
+                })();
             }
 
             try {
-                this._ws.send(encoded);
-            }
-            catch (err) {
+                _this3._ws.send(encoded);
+            } catch (err) {
                 if (track) {
-                    clearTimeout(this._requests[request.id].timeout);
-                    delete this._requests[request.id];
+                    clearTimeout(_this3._requests[request.id].timeout);
+                    delete _this3._requests[request.id];
                 }
 
                 return callback(err);
@@ -345,7 +344,7 @@
 
     Client.prototype._hello = function (auth, callback) {
 
-        const request = {
+        var request = {
             type: 'hello'
         };
 
@@ -353,7 +352,7 @@
             request.auth = auth;
         }
 
-        const subs = this.subscriptions();
+        var subs = this.subscriptions();
         if (subs.length) {
             request.subs = subs;
         }
@@ -368,13 +367,12 @@
 
     Client.prototype.subscribe = function (path, handler) {
 
-        if (!path ||
-            path[0] !== '/') {
+        if (!path || path[0] !== '/') {
 
             return handler(new Error('Invalid path'));
         }
 
-        const subs = this._subscriptions[path];
+        var subs = this._subscriptions[path];
         if (subs) {
             if (subs.indexOf(handler) === -1) {
                 subs.push(handler);
@@ -385,43 +383,40 @@
 
         this._subscriptions[path] = [handler];
 
-        if (!this._ws ||
-            this._ws.readyState !== WS.OPEN) {
+        if (!this._ws || this._ws.readyState !== WS.OPEN) {
 
             return;
         }
 
-        const request = {
+        var request = {
             type: 'sub',
             path: path
         };
 
-        return this._send(request, false, (err) => {
+        return this._send(request, false, function (err) {
 
-            return handler(err);                                // Only called if send failed to transmit
+            return handler(err); // Only called if send failed to transmit
         });
     };
 
     Client.prototype.unsubscribe = function (path, handler) {
 
-        if (!path ||
-            path[0] !== '/') {
+        if (!path || path[0] !== '/') {
 
             return handler(new Error('Invalid path'));
         }
 
-        const subs = this._subscriptions[path];
+        var subs = this._subscriptions[path];
         if (!subs) {
             return;
         }
 
-        let sync = false;
+        var sync = false;
         if (!handler) {
             delete this._subscriptions[path];
             sync = true;
-        }
-        else {
-            const pos = subs.indexOf(handler);
+        } else {
+            var pos = subs.indexOf(handler);
             if (pos === -1) {
                 return;
             }
@@ -433,37 +428,34 @@
             }
         }
 
-        if (!sync ||
-            !this._ws ||
-            this._ws.readyState !== WS.OPEN) {
+        if (!sync || !this._ws || this._ws.readyState !== WS.OPEN) {
 
             return;
         }
 
-        const request = {
+        var request = {
             type: 'unsub',
             path: path
         };
 
-        return this._send(request, false);      // Ignoring errors as the subscription handlers are already removed
+        return this._send(request, false); // Ignoring errors as the subscription handlers are already removed
     };
 
     Client.prototype._onMessage = function (message) {
+        var _this4 = this;
 
         this._beat();
 
-        parse(message.data, (err, update) => {
+        parse(message.data, function (err, update) {
 
             if (err) {
-                return this.onError(err);
+                return _this4.onError(err);
             }
 
             // Recreate error
 
-            let error = null;
-            if (update.statusCode &&
-                update.statusCode >= 400 &&
-                update.statusCode <= 599) {
+            var error = null;
+            if (update.statusCode && update.statusCode >= 400 && update.statusCode <= 599) {
 
                 error = new Error(update.payload.message || update.payload.error);
                 error.statusCode = update.statusCode;
@@ -474,40 +466,40 @@
             // Ping
 
             if (update.type === 'ping') {
-                return this._send({ type: 'ping' }, false);         // Ignore errors
+                return _this4._send({ type: 'ping' }, false); // Ignore errors
             }
 
             // Broadcast and update
 
             if (update.type === 'update') {
-                return this.onUpdate(update.message);
+                return _this4.onUpdate(update.message);
             }
 
             // Publish
 
             if (update.type === 'pub') {
-                return this._notifyHandlers(update.path, null, update.message);
+                return _this4._notifyHandlers(update.path, null, update.message);
             }
 
             // Subscriptions
 
             if (update.type === 'sub') {
-                return this._notifyHandlers(update.path, error);
+                return _this4._notifyHandlers(update.path, error);
             }
 
             // Lookup callback (message must include an id from this point)
 
-            const request = this._requests[update.id];
+            var request = _this4._requests[update.id];
             if (!request) {
-                return this.onError(new Error('Received response for unknown request'));
+                return _this4.onError(new Error('Received response for unknown request'));
             }
 
-            const callback = request.callback;
+            var callback = request.callback;
             clearTimeout(request.timeout);
-            delete this._requests[update.id];
+            delete _this4._requests[update.id];
 
             if (!callback) {
-                return;                     // Response received after timeout
+                return; // Response received after timeout
             }
 
             // Response
@@ -525,20 +517,21 @@
             // Authentication
 
             if (update.type === 'hello') {
-                this.id = update.socket;
+                _this4.id = update.socket;
                 if (update.heartbeat) {
-                    this._heartbeatTimeout = update.heartbeat.interval + update.heartbeat.timeout;
-                    this._beat();           // Call again once timeout is set
+                    _this4._heartbeatTimeout = update.heartbeat.interval + update.heartbeat.timeout;
+                    _this4._beat(); // Call again once timeout is set
                 }
 
                 return callback(error);
             }
 
-            return this.onError(new Error('Received unknown response type: ' + update.type));
+            return _this4.onError(new Error('Received unknown response type: ' + update.type));
         });
     };
 
     Client.prototype._beat = function () {
+        var _this5 = this;
 
         if (!this._heartbeatTimeout) {
             return;
@@ -546,21 +539,21 @@
 
         clearTimeout(this._heartbeat);
 
-        this._heartbeat = setTimeout(() => {
+        this._heartbeat = setTimeout(function () {
 
-            this._ws.close();
+            _this5._ws.close();
         }, this._heartbeatTimeout);
     };
 
     Client.prototype._notifyHandlers = function (path, err, message) {
 
-        const handlers = this._subscriptions[path];
+        var handlers = this._subscriptions[path];
         if (handlers) {
             if (err) {
-                delete this._subscriptions[path];                        // Error means no longer subscribed
+                delete this._subscriptions[path]; // Error means no longer subscribed
             }
 
-            for (let i = 0; i < handlers.length; ++i) {
+            for (var i = 0; i < handlers.length; ++i) {
                 handlers[i](err, message);
             }
         }
