@@ -40,7 +40,7 @@
     "jquery.cycle2.hash.min.js",
     "jquery.cycle2.ie-fade.min.js",
     "jquery.cycle2.loader.min.js",
-    "jquery.cycle2.min.js",
+    "jquery.cycle2.core.min.js",
     "jquery.cycle2.pager.min.js",
     "jquery.cycle2.prevnext.min.js",
     "jquery.cycle2.progressive.min.js",
