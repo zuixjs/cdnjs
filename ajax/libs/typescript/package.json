@@ -5,6 +5,8 @@
   "version": "1.0.0",
   "description": "TypeScript is a typed superset of JavaScript that compiles to plain JavaScript",
   "homepage": "http://www.typescriptlang.org",
+  "author": "Microsoft Corp.",
+  "license": "Apache-2.0",
   "keywords": [
     "compiler",
     "language"
