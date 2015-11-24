@@ -18,12 +18,13 @@
   "author": "Ben Pickles",
   "license": "MIT",
   "homepage": "https://github.com/benpickles/peity",
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/benpickles/peity.git",
-    "basePath": "",
-    "files": [
-      "jquery.peity*.js"
-    ]
-  }
+  "npmName": "peity",
+  "npmFileMap": [
+    {
+      "basePath": "",
+      "files": [
+        "jquery.peity*.js"
+      ]
+    }
+  ]
 }
