@@ -19,7 +19,7 @@
     "node-uuid": ">= 1.4.0",
     "etp-avro": "latest"
   },
-  "npmName": "jquery",
+  "npmName": "etp",
   "npmFileMap": [
     {
       "basePath": "lib/browser",
