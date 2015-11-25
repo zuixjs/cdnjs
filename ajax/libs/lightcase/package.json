@@ -22,9 +22,7 @@
     "target": "git://github.com/cbopp-art/lightcase.git",
     "basePath": "src/",
     "files": [
-      "js/lightcase*.js",
-      "css/lightcase*.css",
-      "fonts/lightcase.+(eot|svg|ttf|woff)"
+      "@(js|css|fonts)/*lightcase*"
     ]
   },
   "requiredFiles": [
