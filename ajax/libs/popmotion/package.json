@@ -2,7 +2,7 @@
   "name": "popmotion",
   "version": "4.0.0",
   "filename": "popmotion.global.min.js",
-  "description": "A 12kb JavaScript motion engine. Handles animation, physics, and input tracking.",
+  "description": "The JavaScript motion engine. Handles animation, physics, and input tracking.",
   "author": "Matt Perry <sirhound@popmotion.io>",
   "homepage": "http://popmotion.io",
   "repository": {

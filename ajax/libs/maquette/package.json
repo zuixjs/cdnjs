@@ -1,6 +1,6 @@
 {
   "name": "maquette",
-  "description": "Minimalistic Virtual DOM implementation with support for animated transitions",
+  "description": "Minimalistic Virtual DOM implementation with support for animated transitions.",
   "homepage": "http://johan-gorter.github.io/maquette/",
   "keywords": [
     "virtual",

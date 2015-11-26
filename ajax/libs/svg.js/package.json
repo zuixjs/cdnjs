@@ -2,7 +2,7 @@
   "name": "svg.js",
   "filename": "svg.min.js",
   "version": "2.2.1",
-  "description": "A lightweight JavaScript library for manipulating and animating svg using an uncluttered syntax.",
+  "description": "A lightweight library for manipulating and animating SVG.",
   "homepage": "http://svgjs.com/",
   "keywords": [
     "vector",

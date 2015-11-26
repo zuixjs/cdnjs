@@ -1,7 +1,7 @@
 {
   "name": "smokejs",
   "version": "3.0.1",
-  "description": "Smoke is the most complete jQuery Plugin and designed for use with Bootstrap 3",
+  "description": "Smoke form validation and components for Bootstrap",
   "filename": "js/smoke.min.js",
   "license": "LGPL",
   "author": "Alfredo Barron",

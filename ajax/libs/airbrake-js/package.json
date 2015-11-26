@@ -1,7 +1,7 @@
 {
   "name": "airbrake-js",
   "version": "0.5.6",
-  "description": "Notify Airbrake of JavaScript exceptions",
+  "description": "Notify Airbrake on JavaScript exceptions",
   "repository": {
     "type": "git",
     "url": "https://github.com/airbrake/airbrake-js.git"

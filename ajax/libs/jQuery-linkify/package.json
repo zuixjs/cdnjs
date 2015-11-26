@@ -1,6 +1,6 @@
 {
   "name": "jQuery-linkify",
-  "description": "Find URLs in plain text and return HTML for discovered links.",
+  "description": "Intelligent link recognition, made easy",
   "filename": "jquery.linkify.min.js",
   "author": "SoapBox Innovations, Inc.",
   "repository": {

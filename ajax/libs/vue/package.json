@@ -3,7 +3,7 @@
   "filename": "vue.min.js",
   "version": "1.0.10",
   "license": "MIT",
-  "description": "Simple, Fast & Composable MVVM for building interative interfaces",
+  "description": "Simple, Fast & Composable MVVM for building interactive interfaces",
   "homepage": "http://vuejs.org",
   "keywords": [
     "mvvm",

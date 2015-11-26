@@ -2,7 +2,7 @@
   "name": "mermaid",
   "filename": "mermaid.min.js",
   "version": "0.5.6",
-  "description": "Generation of diagrams and flowcharts from text in a similar manner as markdown.",
+  "description": "Markdownish syntax for generating flowcharts, sequence diagrams, class diagrams and gantt charts.",
   "homepage": "https://github.com/knsv/mermaid",
   "keywords": [
     "mermaid",

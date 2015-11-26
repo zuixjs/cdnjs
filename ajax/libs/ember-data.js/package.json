@@ -2,7 +2,7 @@
   "name": "ember-data.js",
   "filename": "ember-data.min.js",
   "version": "2.2.1",
-  "description": "A data persistence library for Ember.js.",
+  "description": "A data layer for your Ember applications.",
   "homepage": "https://github.com/emberjs/data",
   "keywords": [
     "ember",
