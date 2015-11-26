@@ -5,7 +5,7 @@
   "filename": "jquery.keyframes.min.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jQueryKeyframes/jQuery.Keyframes.git"
+    "url": "https://github.com/Keyframes/jQuery.Keyframes.git"
   },
   "keywords": [
     "animation",
@@ -15,7 +15,7 @@
   ],
   "author": "krazyjakee",
   "license": "MIT",
-  "homepage": "https://github.com/jQueryKeyframes/jQuery.Keyframes",
+  "homepage": "https://github.com/Keyframes/jQuery.Keyframes",
   "dependencies": {
     "jquery": "latest",
     "prefixfree": "git://github.com/LeaVerou/prefixfree.git#gh-pages"
