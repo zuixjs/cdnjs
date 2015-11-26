@@ -5,14 +5,14 @@
   "author": "SoapBox Innovations, Inc.",
   "repository": {
     "type": "git",
-    "url": "http://github.com/HitSend/jQuery-linkify.git"
+    "url": "http://github.com/SoapBox/linkifyjs.git"
   },
   "keywords": [
     "url",
     "jquery",
     "linkify"
   ],
-  "homepage": "https://github.com/HitSend/jQuery-linkify/",
+  "homepage": "https://github.com/SoapBox/linkifyjs/",
   "version": "1.1.7",
   "license": "MIT",
   "autoupdate": {
