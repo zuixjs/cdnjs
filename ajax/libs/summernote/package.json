@@ -24,9 +24,6 @@
       "**/*"
     ]
   },
-  "requiredFiles": [
-    "summernote-bs3.min.css"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/summernote/summernote.git"
