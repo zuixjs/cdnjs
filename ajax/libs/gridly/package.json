@@ -2,10 +2,6 @@
   "name": "gridly",
   "version": "1.1.0",
   "description": "The minimal (~157 bytes) grid system for modern browsers.",
-  "main": "lib/gridly.css",
-  "directories": {
-    "example": "example"
-  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/IonicaBizau/gridly.git"
@@ -19,9 +15,6 @@
   ],
   "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/IonicaBizau/gridly/issues"
-  },
   "homepage": "https://github.com/IonicaBizau/gridly#readme",
   "dependencies": {
     "uglifycss": "^0.0.18"
