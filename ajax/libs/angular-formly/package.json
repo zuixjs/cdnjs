@@ -1,7 +1,7 @@
 {
   "name": "angular-formly",
   "filename": "formly.min.js",
-  "version": "7.3.5",
+  "version": "7.3.6",
   "description": "AngularJS directive which takes JSON representing a form and renders to HTML",
   "repository": {
     "type": "git",
