@@ -215,6 +215,14 @@ packages.map(function (pkg) {
     package_vows[pname + ": useless fields check"] = function (pkg) {
         var json = parse(pkg, true, true);
         var json_fix = JSON.parse(JSON.stringify(json));
+        delete json_fix.eslintConfig;
+        delete json_fix.styles;
+        delete json_fix.install;
+        delete json_fix.typescript;
+        delete json_fix.browserify;
+        delete json_fix.browser;
+        delete json_fix.jam;
+        delete json_fix.jest;
         delete json_fix.scripts;
         delete json_fix.devDependencies;
         delete json_fix.main;
