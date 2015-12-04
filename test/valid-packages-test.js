@@ -237,7 +237,7 @@ packages.map(function (pkg) {
         delete json_fix.directories;
 
         assert.ok(json === json_fix,
-            pkg_name(pkg) + ": we don't need scripts, main, cnotributors, bugs, issues, files, ignore, engine(s) and (dev|peer)Dependencies,directories fields in package.json");
+            pkg_name(pkg) + ": we don't need eslintConfig, styles, install, typescript, browserify, browser, jam, jest, scripts, devDependencies, main, peerDependencies, contributors, bugs, issues, files, ignore, engines, engine, directories fields in package.json");
     }
     context[pname] = package_vows;
     suite.addBatch(context);
