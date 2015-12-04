@@ -214,7 +214,7 @@ packages.map(function (pkg) {
 
     package_vows[pname + ": useless fields check"] = function (pkg) {
         var json = parse(pkg, true, true);
-        var json_fix = json;
+        var json_fix = JSON.parse(JSON.stringify(json));
         delete json_fix.scripts;
         delete json_fix.devDependencies;
         delete json_fix.main;
