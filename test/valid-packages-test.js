@@ -226,9 +226,10 @@ packages.map(function (pkg) {
         delete json_fix.ignore;
         delete json_fix.engines;
         delete json_fix.engine;
+        delete json_fix.directories;
 
         assert.ok(json === json_fix,
-            pkg_name(pkg) + ": we don't need scripts, main, cnotributors, bugs, issues, files, ignore, engine(s) and (dev|peer)Dependencies fields in package.json");
+            pkg_name(pkg) + ": we don't need scripts, main, cnotributors, bugs, issues, files, ignore, engine(s) and (dev|peer)Dependencies,directories fields in package.json");
     }
     context[pname] = package_vows;
     suite.addBatch(context);
