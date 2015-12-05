@@ -26,11 +26,9 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/nervgh/angular-file-upload.git",
-    "basePath": "",
+    "basePath": "dist",
     "files": [
-      "angular-file-upload.js",
-      "angular-file-upload.min.js",
-      "angular-file-upload.min.map"
+      "**/*"
     ]
   },
   "license": "MIT"
