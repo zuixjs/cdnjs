@@ -41,6 +41,14 @@ async.each(packages, function(item, callback) {
     pkg.authors = pkg.author;
     delete pkg.author;
   }
+  if ((pkg.licenses != undefined) && !Array.isArray(pkg.licenses)) {
+    pkg.license = pkg.licenses;
+    delete pkg.licenses;
+  }
+  if ((pkg.license != undefined) && Array.isArray(pkg.license)) {
+    pkg.licenses = pkg.license;
+    delete pkg.license;
+  }
   fs.writeFileSync(item, JSON.stringify(pkg, null, 2) + '\n', 'utf8');
   callback();
 });
