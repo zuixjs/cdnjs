@@ -3,7 +3,6 @@
   "filename": "pdfmake.min.js",
   "version": "0.1.20",
   "homepage": "https://bpampuch.github.io/pdfmake",
-  "authors": "Bartek Pampuch <bartosz.pampuch@gmail.com>",
   "description": "Client/server side PDF printing in pure JavaScript",
   "keywords": [
     "pdf",
@@ -23,5 +22,6 @@
     "files": [
       "**/*"
     ]
-  }
+  },
+  "author": "Bartek Pampuch <bartosz.pampuch@gmail.com>"
 }

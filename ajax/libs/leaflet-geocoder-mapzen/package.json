@@ -14,10 +14,6 @@
     "pelias",
     "mapzen"
   ],
-  "author": [
-    "Harish Krishna",
-    "Lou Huang <lou@mapzen.com>"
-  ],
   "license": "MIT",
   "homepage": "https://github.com/mapzen/leaflet-geocoder",
   "npmName": "leaflet-geocoder-mapzen",
@@ -29,5 +25,9 @@
       ]
     }
   ],
-  "filename": "leaflet-geocoder-mapzen.min.js"
+  "filename": "leaflet-geocoder-mapzen.min.js",
+  "authors": [
+    "Harish Krishna",
+    "Lou Huang <lou@mapzen.com>"
+  ]
 }

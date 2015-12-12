@@ -7,7 +7,6 @@
     "type": "git",
     "url": "git://github.com/daniel-nagy/md-data-table.git"
   },
-  "authors": "Daniel Nagy",
   "homepage": "http://danielnagy.me/md-data-table",
   "license": "MIT",
   "keywords": [
@@ -23,5 +22,6 @@
         "**/*"
       ]
     }
-  ]
+  ],
+  "author": "Daniel Nagy"
 }

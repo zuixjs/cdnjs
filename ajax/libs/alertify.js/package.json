@@ -4,7 +4,6 @@
   "version": "0.5.0",
   "description": "Alertify is an unobtrusive customizable JavaScript notification system.",
   "homepage": "http://fabien-d.github.io/alertify.js/",
-  "authors": "Fabien Doiron",
   "licenses": "MIT",
   "repository": {
     "type": "git",
@@ -19,5 +18,6 @@
         "themes/*.css"
       ]
     }
-  ]
+  ],
+  "author": "Fabien Doiron"
 }
