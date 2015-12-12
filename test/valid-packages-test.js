@@ -182,7 +182,7 @@ packages.map(function (pkg) {
             }
         }
     }
-    package_vows[pname + ": should not have both multiple auto-update configs"] = function(pkg) {
+    package_vows[pname + ": should not have multiple auto-update configs"] = function(pkg) {
         var json = parse(pkg, true, true);
         assert.ok(json.autoupdate === undefined || json.npmFileMap === undefined,
             pkg_name(pkg) + ": has both git and npm auto-update config, should remove one of it");
