@@ -255,7 +255,7 @@ var updateLibrary = function (pkg, cb) {
                 var version = p[0];
                 updateLibraryVersion(pkg, data.dist.tarball, version, cb);
             }, function(err) {
-                var msg = 'Library finished' + (err ? ' ' + err.error : '');
+                var msg = 'Library "' + pkg.name + '" update finished' + (err ? ' ' + err.error : '');
                 console.log(msg);
                 cb(null);
             });
