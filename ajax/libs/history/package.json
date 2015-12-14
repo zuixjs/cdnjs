@@ -14,10 +14,12 @@
   ],
   "filename": "History.min.js",
   "npmName": "history",
-  "npmFileMap": {
-    "basePath": "umd",
-    "files": [
-      "*.js"
-    ]
-  }
+  "npmFileMap": [
+    {
+      "basePath": "umd",
+      "files": [
+        "*.js"
+      ]
+    }
+  ]
 }
