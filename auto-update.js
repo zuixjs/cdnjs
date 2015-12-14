@@ -217,15 +217,18 @@ var updateLibraryVersion = function(pkg, tarballUrl, version, cb) {
         var downloadFile = path.join(extractLibPath, 'dist.tar.gz');
         tarball.extractTarballDownload(url , downloadFile, extractLibPath, {}, function(err, result) {
             if (null == err && fs.existsSync(downloadFile)){
-                var msg = "Do not have version " + version + " of " + pkg.npmName;
+                var msg = "Found version " + version + " of " + pkg.npmName + ", now try to import it.";
                 console.log(msg.warn);
                 processNewVersion(pkg, version);
             } else {
                 if ('Server respond 404' == result.error) {
+                    var msg = "Got 404 on version " + version + " of " + pkg.npmName + ", create an empty folder for it.";
                     fs.mkdirsSync('./ajax/libs/' + pkg.name + '/' + version);
+                    console.log(msg.warn);
+                } else {
+                    var msg = "error downloading " + version + " of " + pkg.npmName + " it didnt exist: " + result.error;
+                    console.log(msg.error);
                 }
-                var msg = "error downloading " + version + " of " + pkg.npmName + " it didnt exist: " + result.error;
-                console.log(msg.error);
             }
             cb()
         });
