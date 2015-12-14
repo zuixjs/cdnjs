@@ -217,9 +217,9 @@ var updateLibraryVersion = function(pkg, tarballUrl, version, cb) {
         var downloadFile = path.join(extractLibPath, 'dist.tar.gz');
         tarball.extractTarballDownload(url , downloadFile, extractLibPath, {}, function(err, result) {
             if (null == err && fs.existsSync(downloadFile)){
-                processNewVersion(pkg, version);
                 var msg = "Do not have version " + version + " of " + pkg.npmName;
                 console.log(msg.warn);
+                processNewVersion(pkg, version);
             } else {
                 if ('Server respond 404' == result.error) {
                     fs.mkdirsSync('./ajax/libs/' + pkg.name + '/' + version);
