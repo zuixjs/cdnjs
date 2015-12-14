@@ -263,7 +263,7 @@ var updateLibrary = function (pkg, cb) {
                 cb(null);
             });
         } else {
-            error('Got error!', pkg.name);
+            console.log(('Got error on ' + pkg.name + ' ! Error: ' + error).error);
         }
     });
 }
