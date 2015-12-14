@@ -16,10 +16,12 @@
     "url": "https://github.com/mjackson/expect.git"
   },
   "npmName": "expect",
-  "npmFileMap": {
-    "basePath": "umd",
-    "files": [
-      "*.js"
-    ]
-  }
+  "npmFileMap": [
+    {
+      "basePath": "umd",
+      "files": [
+        "*.js"
+      ]
+    }
+  ]
 }
