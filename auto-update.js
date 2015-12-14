@@ -216,7 +216,7 @@ var updateLibraryVersion = function(pkg, tarballUrl, version, cb) {
         var url = tarballUrl;
         var downloadFile = path.join(extractLibPath, 'dist.tar.gz');
         tarball.extractTarballDownload(url , downloadFile, extractLibPath, {}, function(err, result) {
-            if(fs.existsSync(downloadFile)){
+            if (null == err && fs.existsSync(downloadFile)){
                 processNewVersion(pkg, version);
                 var msg = "Do not have version " + version + " of " + pkg.npmName;
                 console.log(msg.warn);
