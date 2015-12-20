@@ -27,9 +27,9 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/pupunzi/jquery.mb.YTPlayer.git",
-    "basePath": "inc",
+    "basePath": "dist",
     "files": [
-      "jquery.mb.YTPlayer.js"
+      "**/*"
     ]
   },
   "repository": {
