@@ -25,12 +25,14 @@
   "dependencies": {
     "through2": "^2.0.0"
   },
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/borismoore/jsrender.git",
-    "basePath": "",
-    "files": [
-      "jsrender*.+(js|map)"
-    ]
-  }
+  "npmName": "jsrender",
+  "npmFileMap": [
+    {
+      "basePath": "",
+      "files": [
+        "jsrender.min*.+(js|map)",
+        "jsrender.js"
+      ]
+    }
+  ]
 }
