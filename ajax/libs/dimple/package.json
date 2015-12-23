@@ -23,5 +23,6 @@
   },
   "authors": [
     "johnkiernander <jkiernander@pmsi-consulting.com>"
-  ]
+  ],
+  "description": "An object-oriented charting API for d3"
 }
