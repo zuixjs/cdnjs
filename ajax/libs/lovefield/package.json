@@ -24,5 +24,8 @@
         "**/*.+(js|css|map|png|gif|jpg)"
       ]
     }
+  ],
+  "authors": [
+    "Google Inc."
   ]
 }

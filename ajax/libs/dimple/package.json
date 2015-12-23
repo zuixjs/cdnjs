@@ -20,5 +20,8 @@
     "files": [
       "dimple.latest*.js"
     ]
-  }
+  },
+  "authors": [
+    "johnkiernander <jkiernander@pmsi-consulting.com>"
+  ]
 }

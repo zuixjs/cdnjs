@@ -14,5 +14,9 @@
     "files": [
       "*"
     ]
-  }
+  },
+  "authors": [
+    "agrublev <agrublev@gmail.com>",
+    "CamaroSS <camaro396@yandex.ru>"
+  ]
 }

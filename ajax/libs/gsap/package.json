@@ -33,5 +33,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/greensock/GreenSock-JS"
+  },
+  "author": {
+    "name": "Jack Doyle",
+    "url": "http://greensock.com/gsap/"
   }
 }

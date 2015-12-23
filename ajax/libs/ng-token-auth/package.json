@@ -30,5 +30,8 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/lynndylanhurley/ng-token-auth.git"
-  }
+  },
+  "authors": [
+    "Lynn Dylan Hurley <lynn.dylan.hurley@gmail.com>"
+  ]
 }
