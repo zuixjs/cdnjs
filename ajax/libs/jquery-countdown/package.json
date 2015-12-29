@@ -6,7 +6,11 @@
   "homepage": "http://keith-wood.name/countdown.html",
   "keywords": [
     "jquery",
-    "countdown"
+    "countdown",
+    "i18n",
+    "timer",
+    "timezone",
+    "ui"
   ],
   "repository": {
     "type": "git",
