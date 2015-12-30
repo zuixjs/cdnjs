@@ -1,7 +1,7 @@
 {
   "name": "x2js",
   "filename": "xml2json.min.js",
-  "version": "1.1.7",
+  "version": "1.2.0",
   "description": "XML <=> JSON mapping/converting library",
   "author": "abdmob",
   "license": "Apache-2.0",
