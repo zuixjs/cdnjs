@@ -103,6 +103,7 @@ ajax/libs/require-css/dev-test/
 ajax/libs/require-css/release-test/
 ajax/libs/ionic/testing
 ajax/libs/yamlcss/rm
+ajax/libs/nuclear-js/show
 ajax/libs/aws-sdk/*/appinfo.sample.js
 ajax/libs/winjs/release
 ajax/libs/plottable.js/.0.18.0
