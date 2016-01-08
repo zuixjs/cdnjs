@@ -6,11 +6,30 @@
   "homepage": "http://keith-wood.name/countdown.html",
   "keywords": [
     "jquery",
-    "countdown"
+    "countdown",
+    "i18n",
+    "timer",
+    "timezone",
+    "ui"
   ],
   "repository": {
     "type": "git",
     "url": "https://github.com/kbwood/countdown.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "author": {
+    "name": "Keith Wood",
+    "url": "http://keith-wood.name/"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/kbwood/countdown.git",
+    "basePath": "",
+    "files": [
+      "jquery.+(plugin|countdown)*.+(js|css)"
+    ]
+  },
+  "requiredFiles": [
+    "jquery.countdown.min.css"
+  ]
 }
