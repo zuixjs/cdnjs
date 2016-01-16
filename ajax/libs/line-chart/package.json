@@ -7,10 +7,7 @@
     "type": "git",
     "url": "https://github.com/n3-charts/line-chart.git"
   },
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/n3-charts/line-chart/blob/master/LICENCE"
-  },
+  "license": "MIT",
   "npmName": "n3-charts",
   "npmFileMap": [
     {
