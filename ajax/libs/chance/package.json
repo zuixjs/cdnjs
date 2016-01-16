@@ -19,5 +19,14 @@
     "address",
     "dice"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "npmName": "chance",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
+    }
+  ]
 }
