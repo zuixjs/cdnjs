@@ -3,7 +3,7 @@
   "version": "0.4.2",
   "repository": {
     "type": "git",
-    "url": "http://github.com/graphalchemist/alchemy.git"
+    "url": "https://github.com/graphalchemist/alchemy.git"
   },
   "homepage": "http://graphalchemist.github.io/Alchemy",
   "dependencies": {
