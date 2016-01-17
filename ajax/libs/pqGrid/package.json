@@ -44,8 +44,7 @@
       "pqgrid*.+(js|css)",
       "images/*.+(png|gif)",
       "localize/pq-localize-*.js",
-      "themes/Office/pqgrid*.css",
-      "themes/Office/images/header-hover.gif"
+      "themes/**/*"
     ]
   },
   "requiredFiles": [
@@ -60,7 +59,6 @@
     "localize/pq-localize-pl.min.js",
     "localize/pq-localize-pt.min.js",
     "localize/pq-localize-tr.min.js",
-    "localize/pq-localize-zh.min.js",
-    "themes/Office/pqgrid.min.css"
+    "localize/pq-localize-zh.min.js"
   ]
 }
