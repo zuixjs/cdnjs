@@ -20,7 +20,7 @@
     "target": "git://github.com/lumapps/lumx.git",
     "basePath": "dist",
     "files": [
-      "lumx*",
+      "**/lumx*",
       "fonts/*"
     ]
   }
