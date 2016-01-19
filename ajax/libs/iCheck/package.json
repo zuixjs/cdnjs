@@ -43,5 +43,14 @@
     "type": "git",
     "url": "https://github.com/fronteed/iCheck"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/fronteed/iCheck.git",
+    "basePath": "",
+    "files": [
+      "icheck*.js",
+      "skins/**/*"
+    ]
+  }
 }
