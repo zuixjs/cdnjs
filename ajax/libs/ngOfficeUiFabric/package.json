@@ -15,19 +15,17 @@
     "ng-office-ui-fabric",
     "sharepoint"
   ],
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/ngOfficeUIFabric/package-ngofficeuifabric.git",
-    "basePath": "",
-    "files": [
-      "ngOfficeUiFabric*.js"
-    ]
-  },
-  "requiredFiles": [
-    "ngOfficeUiFabric.min.js"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/ngOfficeUIFabric/package-ngofficeuifabric"
-  }
+  },
+  "npmName": "ng-office-ui-fabric",
+  "npmFileMap": [
+    {
+      "basePath": "",
+      "files": [
+        "ngOfficeUiFabric*.js"
+      ]
+    }
+  ]
 }
