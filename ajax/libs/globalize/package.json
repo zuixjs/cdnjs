@@ -40,7 +40,7 @@
     "target": "git://github.com/jquery/globalize.git",
     "basePath": "/dist",
     "files": [
-      "**/*"
+      "**/!(node)*"
     ]
   },
   "license": "MIT"
