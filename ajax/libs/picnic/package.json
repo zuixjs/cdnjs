@@ -34,8 +34,7 @@
     {
       "basePath": "releases",
       "files": [
-        "picnic*.css",
-        "plugins*.css"
+        "**/*"
       ]
     }
   ]
