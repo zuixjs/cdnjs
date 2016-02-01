@@ -1,0 +1,22 @@
+{
+  "name": "feature.js",
+  "filename": "feature.min.js",
+  "version": "1.0.0",
+  "description": "Feature.js is a fast, simple and lightweight browser feature detection library. It has no dependencies and weighs only 1kb minified and gzipped.",
+  "keywords": [
+    "feature",
+    "detection"
+  ],
+  "licenst": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/viljamis/feature.js.git"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/viljamis/feature.js.git",
+    "files": [
+      "feature*.js"
+    ]
+  }
+}
