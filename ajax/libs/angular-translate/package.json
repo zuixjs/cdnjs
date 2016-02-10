@@ -15,9 +15,9 @@
   "npmName": "angular-translate",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
-        "*.js"
+        "**/*"
       ]
     }
   ],
