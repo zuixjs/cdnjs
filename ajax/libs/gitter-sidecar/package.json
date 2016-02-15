@@ -11,6 +11,7 @@
     "embed",
     "widget"
   ],
+  "homepage": "https://sidecar.gitter.im/",
   "repository": {
     "type": "git",
     "url": "https://github.com/gitterHQ/sidecar"
