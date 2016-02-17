@@ -12,10 +12,7 @@
     "http://themergency.com/footable-demo/responsive-container.htm"
   ],
   "homepage": "http://themergency.com/footable/",
-  "license": {
-    "name": "MIT License",
-    "url": "https://github.com/fooplugins/FooTable/blob/master/LICENSE"
-  },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/fooplugins/FooTable.git"
