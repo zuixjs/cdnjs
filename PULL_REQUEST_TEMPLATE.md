@@ -1,11 +1,28 @@
 Checklist for **Pull request** or **lib adding request issue** follows the conventions.
 
+Note that if you are using a distribution purpose repository/package, please also provide the url and other related info like popularity of the source code repo/package.
+
+# Profile of the lib
+ * Git repository (required):
+ * Official website (optional, not the repository):
+ * NPM package url (optional):
+ * GitHub / Bitbucket popularity (required):
+   - Count of stars:
+   - Count of watchers:
+   - Count of folks
+ * NPM download stats (optional):
+   - Downloads in the last day:
+   - Downloads in the last week:
+   - Downloads in the last month:
+
 # Essential checklist
+ * [ ] I'm the author of this library
+   * [ ] I would like to add link to the page of this library on CDNJS on website / readme
  * [ ] This lib was not found on cdnjs repo
  * [ ] No already exist / duplicated issue and PR
  * [ ] The lib has notable popularity
-   *  [ ] More than 100 [Stars / Watchers / Forks] on [GitHub / Bitbucket]
-   *  [ ] More than 500 downloads stats per month on npm registry
+   * [ ] More than 100 [Stars / Watchers / Forks] on [GitHub / Bitbucket]
+   * [ ] More than 500 downloads stats per month on npm registry
  * [ ] Project has public repository on famous online hosting platform (or been hosted on npm)
 
 # Auto-update checklist
