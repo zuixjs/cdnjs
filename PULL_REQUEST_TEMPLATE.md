@@ -15,5 +15,10 @@ Checklist for **Pull request** or **lib adding request issue** follows the conve
  * [ ] Auto-update filemap is correct.
 
 # Git commit checklist
+ * [ ] The first line of commit message is less then 50 chars, be clean and clear, easy to understand.
+ * [ ] The parent of the commit(s) in the PR is not old than 3 days.
+ * [ ] Pull request is sending from a non-master branch with meaningful name.
  * [ ] Separate unrelated changes into different commits.
  * [ ] Use rebase to squash/fixup dummy/unnecessary commits into only one commit.
+ * [ ] Close corresponding issue in commit message
+ * [ ] Mention related issue(s), people in commit message, comment.
