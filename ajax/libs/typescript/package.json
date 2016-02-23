@@ -20,7 +20,7 @@
     {
       "basePath": "lib/",
       "files": [
-        "typescript*.js"
+        "typescript.js"
       ]
     }
   ]
