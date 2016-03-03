@@ -20,14 +20,11 @@ cdnjs will host any production version of any JavaScript/CSS library, subject to
 
 Please raise a new pull request for new library additions and existing library updates, following the instructions below.
 
-## IMPORTANT - No more manual submissions
+## IMPORTANT
 
-[Discussion](https://github.com/cdnjs/cdnjs/issues/3638)
-
-It's time for us to move away from manual submissions and focus solely on getting libraries updating from official sources. Everything is still flakey and we hope you can bear with us in this transition.
-
-*All pull requests should just add auto update configs to the package.json*
-
+ - All new libraries hosted on CDNJS should have a official public repository or npm package, and the officially pre-built distribution file(s) should also be there, so that we can apply the auto-update mechanishm on that lib.
+ - Now CDNJS supports adding a library by a single package.json, you just need to add a valid CDNJS package.json with npm/git auto-update config, and remove its version field in package.json, then we'll handle the remaining works.
+   - Notes that you should have a `filename` to point to the main file of a lib, if that file is not minified, please still use `filename.min.js` or `filename.min.css` structure naming, we'll do the minify job.
 
 ## Adding a new or updating an existing library
 
