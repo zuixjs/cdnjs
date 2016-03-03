@@ -1,6 +1,6 @@
 {
   "name": "BigVideo.js",
-  "filename": "bigvideo.min.js",
+  "filename": "lib/bigvideo.min.js",
   "description": "The jQuery Plugin for Big Background Video (and Images)",
   "keywords": [
     "video",
