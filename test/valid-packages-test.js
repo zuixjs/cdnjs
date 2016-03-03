@@ -161,6 +161,14 @@ packages.map(function (pkg) {
             }
     };
 
+    package_vows[pname + ": must have auto-update config if it has no version specified"] = function (pkg) {
+        var json = parse(pkg, true, true);
+        if (json.version != undefined) {
+          return;
+        }
+        assert.ok((json.npmName != undefined && json.npmFileMap != undefined && Array.isArray(json.npmFileMap)) || (json.autoupdate != undefined),
+                   pkg_name(pkg) + ": must have a valid auto-update config");
+    }
     var targetPrefixes = new RegExp("^git://.+\.git$");
     package_vows[pname + ": autoupdate block is valid (if present)"] = function (pkg) {
         var json = parse(pkg, true, true),
