@@ -96,6 +96,9 @@ packages.map(function (pkg) {
     };
     package_vows[pname + ": filename from package.json exists"] = function (pkg) {
         var json = parse(pkg, true, true);
+        if (json.version === undefined) {
+           return;
+        }
         var filePath = "./ajax/libs/" + json.name + "/"+ json.version
             + "/" + json.filename;
         assert.ok(isThere(filePath),
