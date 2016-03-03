@@ -15,7 +15,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/ecomfe/echarts.git",
-    "basePath": "build/dist",
+    "basePath": "dist",
     "files": [
       "**/*"
     ]
