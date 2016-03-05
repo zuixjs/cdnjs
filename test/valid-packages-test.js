@@ -169,6 +169,14 @@ packages.map(function (pkg) {
         assert.ok((json.npmName != undefined && json.npmFileMap != undefined && Array.isArray(json.npmFileMap)) || (json.autoupdate != undefined),
                    pkg_name(pkg) + ": must have a valid auto-update config");
     }
+    package_vows[pname + ": npmName and npmFileMap should be a pair"] = function (pkg) {
+        var json = parse(pkg, true, true);
+        if (!json.npmName && !json.npmFileMap) {
+          return;
+        }
+        assert.ok(json.npmName != undefined && json.npmFileMap != undefined,
+                  pkg_name(pkg) + ": npmName and npmFileMap should be a pair");
+    }
     var targetPrefixes = new RegExp("^git://.+\.git$");
     package_vows[pname + ": autoupdate block is valid (if present)"] = function (pkg) {
         var json = parse(pkg, true, true),
