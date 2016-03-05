@@ -8,14 +8,14 @@
   "keywords": [
     "validator"
   ],
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/chriso/validator.js.git",
-    "basePath": "",
-    "files": [
-      "validator*.js"
-    ]
-  },
+  "npmFileMap": [
+    {
+      "basePath": "",
+      "files": [
+        "validator*"
+      ]
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/chriso/validator.js.git"
