@@ -1,6 +1,6 @@
 {
   "name": "componentjs",
-  "npmname": "componentjs",
+  "npmName": "componentjs",
   "npmFileMap": [
     {
       "basePath": "/",
