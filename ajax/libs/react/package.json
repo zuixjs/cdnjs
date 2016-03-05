@@ -23,5 +23,6 @@
       "*.js"
     ]
   },
-  "namespace": "React"
+  "namespace": "React",
+  "license": "BSD-3-Clause"
 }
