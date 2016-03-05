@@ -6,7 +6,14 @@
   "description": "String validation and sanitization",
   "homepage": "https://github.com/chriso/validator.js",
   "keywords": [
-    "validator"
+    "validator",
+    "validation",
+    "validate",
+    "sanitization",
+    "sanitize",
+    "sanitisation",
+    "sanitise",
+    "assert"
   ],
   "npmFileMap": [
     {
