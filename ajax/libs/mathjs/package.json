@@ -21,13 +21,14 @@
     "matrix",
     "unit"
   ],
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/josdejong/mathjs.git",
-    "basePath": "dist",
-    "files": [
-      "**/*"
-    ]
-  },
+  "npmName": "mathjs",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
+    }
+  ],
   "license": "Apache-2.0"
 }
