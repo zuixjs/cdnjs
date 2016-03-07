@@ -12,5 +12,13 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/ChiperSoft/Kalendae.git"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/ChiperSoft/Kalendae.git",
+    "basePath": "build",
+    "files": [
+      "**/*"
+    ]
   }
 }
