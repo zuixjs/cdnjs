@@ -1,6 +1,6 @@
 {
   "name": "jslite",
-  "version": "1.1.7",
+  "version": "1.1.10",
   "filename": "JSLite.min.js",
   "description": "JSLite is a minimalist JavaScript library for modern browsers with a largely jQuery-compatible API. If you use jQuery, you already know how to use JSLite.",
   "repository": {
