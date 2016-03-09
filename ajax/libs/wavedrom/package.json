@@ -24,6 +24,7 @@
       "basePath": "",
       "files": [
         "wavedrom*.js",
+        "WaveDrom*.js",
         "skins/*.js"
       ]
     }
