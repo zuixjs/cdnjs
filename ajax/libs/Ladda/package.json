@@ -13,7 +13,7 @@
     ]
   },
   "filename": "ladda.min.js",
-  "version": "0.9.8",
+  "version": "1.0.0",
   "description": "Buttons with built-in loading indicators",
   "homepage": "http://lab.hakim.se/ladda",
   "repository": {
