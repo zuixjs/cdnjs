@@ -28,9 +28,5 @@
         "skins/*.js"
       ]
     }
-  ],
-  "requiredFiles": [
-    "skins/default.min.js",
-    "skins/narrow.min.js"
   ]
 }
