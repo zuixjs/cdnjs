@@ -9,7 +9,7 @@
     "converter"
   ],
   "repository": {
-    "type": "hg",
-    "url": "https://code.google.com/p/pagedown/"
+    "type": "git",
+    "url": "https://github.com/balpha/pagedown"
   }
 }
