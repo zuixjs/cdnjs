@@ -1,7 +1,7 @@
 {
   "name": "angular-inview",
   "filename": "angular-inview.min.js",
-  "version": "1.5.6",
+  "version": "1.5.7",
   "description": "AngularJS directive to check if a DOM element is in the browser viewport.",
   "repository": {
     "type": "git",
