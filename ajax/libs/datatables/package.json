@@ -23,7 +23,7 @@
     "basePath": "media",
     "files": [
       "css/*",
-      "js/*",
+      "js/*dataTables*",
       "images/*.png"
     ]
   },
