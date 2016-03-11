@@ -13,5 +13,13 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/turbolinks/turbolinks.git"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/turbolinks/turbolinks.git",
+    "basePath": "dist",
+    "files": [
+      "**/*"
+    ]
   }
 }
