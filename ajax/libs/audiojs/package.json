@@ -20,10 +20,10 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/kolber/audiojs.git",
-    "basePath": "",
+    "basePath": "audiojs",
     "files": [
-      "audiojs/audio*.+(js|swf)",
-      "audiojs/player-graphics.gif"
+      "audio*.+(js|swf)",
+      "player-graphics.gif"
     ]
   }
 }
