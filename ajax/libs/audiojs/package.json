@@ -22,7 +22,8 @@
     "target": "git://github.com/kolber/audiojs.git",
     "basePath": "",
     "files": [
-      "audiojs/audio*.+(js|swf)"
+      "audiojs/audio*.+(js|swf)",
+      "audiojs/player-graphics.gif"
     ]
   }
 }
