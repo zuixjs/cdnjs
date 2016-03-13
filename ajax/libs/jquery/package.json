@@ -3,9 +3,9 @@
   "npmName": "jquery",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
-        "jquery.*"
+        "**/*"
       ]
     }
   ],
