@@ -14,8 +14,7 @@
     "target": "git://github.com/websanova/js-url.git",
     "basePath": "",
     "files": [
-      "url.min.js",
-      "url.js"
+      "url*.js"
     ]
   },
   "repository": {
