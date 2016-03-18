@@ -271,6 +271,8 @@ packages.map(function (pkg) {
         delete json_fix.contributors;
         delete json_fix.maintainers;
         delete json_fix.bugs;
+        delete json_fix.gitHEAD;
+        delete json_fix.dist;
         delete json_fix.issues;
         delete json_fix.files;
         delete json_fix.ignore;
@@ -279,7 +281,7 @@ packages.map(function (pkg) {
         delete json_fix.directories;
 
         assert.ok(JSON.stringify(json) === JSON.stringify(json_fix) ,
-            pkg_name(pkg) + ": we don't need eslintConfig, styles, install, typescript, browserify, browser, jam, jest, scripts, devDependencies, main, peerDependencies, contributors, bugs, issues, files, ignore, engines, engine, directories and maintainers fields in package.json");
+            pkg_name(pkg) + ": we don't need eslintConfig, styles, install, typescript, browserify, browser, jam, jest, scripts, devDependencies, main, peerDependencies, contributors, bugs, gitHEAD, issues, files, ignore, engines, engine, directories and maintainers fields in package.json");
     }
     context[pname] = package_vows;
     suite.addBatch(context);

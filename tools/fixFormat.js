@@ -27,6 +27,8 @@ async.each(packages, function(item, callback) {
   delete pkg.peerDependencies;
   delete pkg.contributors;
   delete pkg.bugs;
+  delete pkg.gitHEAD;
+  delete pkg.dist;
   delete pkg.issues;
   delete pkg.files;
   delete pkg.ignore;
