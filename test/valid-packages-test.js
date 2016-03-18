@@ -230,7 +230,7 @@ packages.map(function (pkg) {
         var orig = fs.readFileSync(pkg, 'utf8'),
             correct = JSON.stringify(JSON.parse(orig), null, 2) + '\n',
             content = JSON.parse(correct);
-        if (correct.version === undefined) {
+        if (content.version === undefined) {
           return;
         }
         assert.ok(orig === correct,
