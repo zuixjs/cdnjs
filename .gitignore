@@ -11,6 +11,7 @@ temp/
 node_modules/
 
 # folders need to be ingored due to auto auto-update mechanism
+ajax/libs/formstone/remove/
 ajax/libs/angular-chart.js/rm/
 ajax/libs/foundation/undefined/
 ajax/libs/messenger/.1.5.0/
