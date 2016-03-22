@@ -272,6 +272,8 @@ packages.map(function (pkg) {
         delete json_fix.maintainers;
         delete json_fix.bugs;
         delete json_fix.gitHEAD;
+        delete json_fix.gitHead;
+        delete json_fix.spm;
         delete json_fix.dist;
         delete json_fix.issues;
         delete json_fix.files;

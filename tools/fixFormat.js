@@ -28,6 +28,8 @@ async.each(packages, function(item, callback) {
   delete pkg.contributors;
   delete pkg.bugs;
   delete pkg.gitHEAD;
+  delete pkg.gitHead;
+  delete pkg.spm;
   delete pkg.dist;
   delete pkg.issues;
   delete pkg.files;
