@@ -22,10 +22,7 @@
     "target": "git://github.com/Sjeiti/TinySort.git",
     "basePath": "dist",
     "files": [
-      "tinysort.js",
-      "tinysort.min.js",
-      "tinysort.charorder.js",
-      "tinysort.charorder.min.js"
+      "**.+(js|map|css)"
     ]
   }
 }
