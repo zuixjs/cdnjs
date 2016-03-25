@@ -31,10 +31,6 @@
     "avalon",
     "avalon.js"
   ],
-  "dependencies": {},
-  "commitplease": {
-    "components": []
-  },
   "namespace": "avalon",
   "license": "MIT"
 }
