@@ -24,7 +24,8 @@
     "target": "git://github.com/xdan/datetimepicker.git",
     "basePath": "",
     "files": [
-      "jquery.datetimepicker*.+(css|js)"
+      "jquery.datetimepicker*.+(css|js)",
+      "build/**/*"
     ]
   }
 }
