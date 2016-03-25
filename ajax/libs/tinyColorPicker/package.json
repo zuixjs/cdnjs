@@ -28,7 +28,8 @@
     "target": "git://github.com/PitPik/tinyColorPicker.git",
     "basePath": "",
     "files": [
-      "jqColorPicker*.+(js|map)"
+      "jqColorPicker*.+(js|map)",
+      "colors*.js"
     ]
   }
 }
