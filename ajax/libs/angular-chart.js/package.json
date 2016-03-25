@@ -9,12 +9,13 @@
     "url": "git://github.com/jtblin/angular-chart.js.git"
   },
   "license": "BSD",
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/jtblin/angular-chart.js.git",
-    "basePath": "dist",
-    "files": [
-      "**/*.+(css|js|map)"
-    ]
-  }
+  "npmName": "angular-chart.js",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "!(*.gz)"
+      ]
+    }
+  ]
 }
