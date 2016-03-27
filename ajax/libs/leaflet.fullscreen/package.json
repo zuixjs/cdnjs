@@ -9,5 +9,15 @@
     "type": "git",
     "url": "https://github.com/brunob/leaflet.fullscreen"
   },
-  "author": "b_b"
+  "author": "b_b",
+  "npmName": "leaflet.fullscreen",
+  "npmFileMap": [
+    {
+      "basePath": "",
+      "files": [
+        "Control.FullScreen*.+(css|js|map)",
+        "icon-fullscreen*.png"
+      ]
+    }
+  ]
 }
