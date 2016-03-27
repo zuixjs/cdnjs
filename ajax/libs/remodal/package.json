@@ -38,9 +38,5 @@
     "files": [
       "**/*"
     ]
-  },
-  "requiredFiles": [
-    "remodal.min.css",
-    "remodal-default-theme.min.css"
-  ]
+  }
 }

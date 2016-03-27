@@ -29,10 +29,5 @@
         "**/*"
       ]
     }
-  ],
-  "requiredFiles": [
-    "dataTable.min.css",
-    "material.min.css",
-    "dataTable.cjs.min.js"
   ]
 }

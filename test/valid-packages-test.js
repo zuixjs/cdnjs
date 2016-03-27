@@ -257,6 +257,7 @@ packages.map(function (pkg) {
         var json = parse(pkg, true, true);
         var json_fix = JSON.parse(JSON.stringify(json));
         delete json_fix.eslintConfig;
+        delete json_fix.requiredFiles
         delete json_fix.styles;
         delete json_fix.install;
         delete json_fix.typescript;

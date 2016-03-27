@@ -24,8 +24,5 @@
       "tree.jquery.js",
       "jqtree*.+(css|png)"
     ]
-  },
-  "requiredFiles": [
-    "jqtree.min.css"
-  ]
+  }
 }

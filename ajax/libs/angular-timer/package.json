@@ -21,8 +21,5 @@
     "files": [
       "**/*.+(css|js)"
     ]
-  },
-  "requiredFiles": [
-    "assets/css/angular-timer-bower.min.css"
-  ]
+  }
 }

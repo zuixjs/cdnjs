@@ -19,9 +19,6 @@
       "*.js"
     ]
   },
-  "requiredFiles": [
-    "fabric.require.min.js"
-  ],
   "license": "MIT",
   "repository": {
     "type": "git",

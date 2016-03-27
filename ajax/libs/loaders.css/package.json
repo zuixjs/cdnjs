@@ -24,8 +24,5 @@
       "loaders*.css",
       "loaders*.js"
     ]
-  },
-  "requiredFiles": [
-    "loaders.css.min.js"
-  ]
+  }
 }

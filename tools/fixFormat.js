@@ -15,6 +15,7 @@ async.each(packages, function(item, callback) {
   delete pkg.eslintConfig;
   delete pkg.maintainers;
   delete pkg.styles;
+  delete pkg.requiredFiles;
   delete pkg.install;
   delete pkg.typescript;
   delete pkg.browserify;

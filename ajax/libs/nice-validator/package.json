@@ -30,12 +30,5 @@
         "**/*"
       ]
     }
-  ],
-  "requiredFiles": [
-    "jquery.validator.min.css",
-    "local/en.min.js",
-    "local/ja.min.js",
-    "local/zh-CN.min.js",
-    "local/zh-TW.min.js"
   ]
 }

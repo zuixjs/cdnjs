@@ -21,9 +21,6 @@
       "gridforms.css"
     ]
   },
-  "requiredFiles": [
-    "gridforms.min.js"
-  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/kumailht/gridforms.git"

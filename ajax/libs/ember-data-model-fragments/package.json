@@ -23,8 +23,5 @@
     "files": [
       "**/*"
     ]
-  },
-  "requiredFiles": [
-    "ember-data-model-fragments.prod.min.js"
-  ]
+  }
 }

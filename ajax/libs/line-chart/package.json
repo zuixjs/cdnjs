@@ -16,8 +16,5 @@
         "**/*"
       ]
     }
-  ],
-  "requiredFiles": [
-    "LineChart.min.css"
   ]
 }
