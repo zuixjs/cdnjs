@@ -20,7 +20,7 @@
   "license": "WTFPL",
   "autoupdate": {
     "source": "git",
-    "target": "git://github.com:danpalmer/jquery.complexify.js.git",
+    "target": "git://github.com/danpalmer/jquery.complexify.js.git",
     "basePath": "",
     "files": [
       "jquery.complexify*"
