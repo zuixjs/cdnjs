@@ -13,11 +13,9 @@
   "npmName": "shaka-player",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "/dist/",
       "files": [
-        "shaka-player.compiled.js",
-        "shaka-player.vod.js",
-        "shaka-player.live.js"
+        "shaka-player.compiled.js"
       ]
     }
   ]
