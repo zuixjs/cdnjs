@@ -19,7 +19,7 @@
     "target": "git://github.com/ilikenwf/nestedSortable.git",
     "basePath": "",
     "files": [
-      "jquery.ui.nestedSortable*.js"
+      "*nestedSortable*"
     ]
   }
 }
