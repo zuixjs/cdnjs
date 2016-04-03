@@ -12,6 +12,8 @@ var fs = require("fs"),
 
 async.each(packages, function(item, callback) {
   var pkg = JSON.parse(fs.readFileSync(item, 'utf8'));
+  delete pkg.bin;
+  delete pkg.jshintConfig;
   delete pkg.eslintConfig;
   delete pkg.maintainers;
   delete pkg.styles;
