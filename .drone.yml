@@ -1,0 +1,8 @@
+build:
+  image: library/node:argon
+  pull: true
+  commands: npm test
+cache:
+  mount:
+    - node_modules
+    - .git
