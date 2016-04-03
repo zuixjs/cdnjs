@@ -2,6 +2,7 @@ build:
   image: library/node:argon
   pull: true
   commands:
+    - npm install
     - npm test
 cache:
   mount:
