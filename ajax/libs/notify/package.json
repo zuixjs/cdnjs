@@ -1,7 +1,7 @@
 {
   "name": "notify",
   "filename": "notify.min.js",
-  "version": "0.4.0",
+  "version": "0.4.2",
   "homepage": "http://notifyjs.com/",
   "description": "A simple, versatile notification library",
   "keywords": [
