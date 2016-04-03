@@ -2,6 +2,9 @@ build:
   image: library/node:argon
   pull: true
   commands:
+    - git --version
+    - node --version
+    - npm --version
     - npm install --silent
     - npm test -- --silent || npm test
 cache:
