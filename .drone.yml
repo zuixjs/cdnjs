@@ -3,7 +3,7 @@ build:
   pull: true
   commands:
     - npm install --silent
-    - npm test
+    - npm test -- --silent || npm test
 cache:
   mount:
     - node_modules
