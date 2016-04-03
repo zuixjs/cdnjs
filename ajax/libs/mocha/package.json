@@ -24,10 +24,6 @@
     "type": "git",
     "url": "git://github.com/mochajs/mocha.git"
   },
-  "bin": {
-    "mocha": "./bin/mocha",
-    "_mocha": "./bin/_mocha"
-  },
   "dependencies": {
     "commander": "0.6.1",
     "growl": "1.7.x",

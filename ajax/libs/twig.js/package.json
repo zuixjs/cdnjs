@@ -14,9 +14,6 @@
     "engine",
     "twig"
   ],
-  "bin": {
-    "twigjs": "./bin/twigjs"
-  },
   "dependencies": {
     "walk": "2.1.x",
     "minimatch": "0.2.x"

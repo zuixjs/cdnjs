@@ -21,10 +21,6 @@
     "queue-async": "1.0",
     "shapefile": "0.1"
   },
-  "bin": {
-    "topojson": "./bin/topojson",
-    "geojson": "./bin/geojson"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/mbostock/topojson.git",
