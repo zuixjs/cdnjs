@@ -15,13 +15,7 @@
     {
       "basePath": "/dist/",
       "files": [
-        "*.js"
-      ]
-    },
-    {
-      "basePath": "/css/",
-      "files": [
-        "*.css"
+        "**/*"
       ]
     }
   ],
