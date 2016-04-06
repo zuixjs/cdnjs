@@ -35,8 +35,7 @@
     "target": "git://github.com/mblode/marx.git",
     "basePath": "css",
     "files": [
-      "marx.min.css",
-      "marx.min.css.map"
+      "marx*.+(css|map)"
     ]
   }
 }
