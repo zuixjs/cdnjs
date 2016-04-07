@@ -4,3 +4,5 @@ nodejs:
     version: '4.4'
 tests:
     - npm test
+system:
+      homedir_volume_size: 30
