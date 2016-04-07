@@ -15,7 +15,7 @@
     {
       "basePath": "/dist/",
       "files": [
-        "shaka-player.compiled.js"
+        "shaka-player*"
       ]
     }
   ]
