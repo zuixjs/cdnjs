@@ -1,7 +1,7 @@
 {
   "name": "pickout",
   "filename": "pickout.min.js",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Cool efect for field select on form",
   "repository": {
     "type": "git",
