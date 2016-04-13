@@ -2,7 +2,7 @@
   "name": "msgpack-lite",
   "description": "Fast Pure JavaScript MessagePack Encoder and Decoder",
   "filename": "msgpack.min.js",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "author": "@kawanet",
   "dependencies": {
     "event-lite": "^0.1.1",
