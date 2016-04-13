@@ -16,12 +16,13 @@
   "author": "Nick Williams",
   "homepage": "http://wicky.nillia.ms/headroom.js",
   "license": "MIT",
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/WickyNilliams/headroom.js.git",
-    "basePath": "dist",
-    "files": [
-      "*"
-    ]
-  }
+  "npmName": "headroom.js",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
+    }
+  ]
 }
