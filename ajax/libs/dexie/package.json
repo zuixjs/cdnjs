@@ -15,12 +15,13 @@
   "author": "David Fahlander",
   "license": "Apache-2.0",
   "homepage": "http://www.dexie.org",
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/dfahlander/Dexie.js.git",
-    "basePath": "dist/latest",
-    "files": [
-      "**/*"
-    ]
-  }
+  "npmName": "dexie",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*.+(js|css|map)"
+      ]
+    }
+  ]
 }
