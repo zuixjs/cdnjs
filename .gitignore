@@ -11,6 +11,7 @@ temp/
 node_modules/
 
 # folders need to be ingored due to auto auto-update mechanism
+ajax/libs/unibox/jquery_plugin/
 ajax/libs/guards/bootstrap-0.1.0/
 ajax/libs/guards/bootstrap-0.3.0/
 ajax/libs/guards/bootstrap-0.4.0/
