@@ -28,13 +28,7 @@
     "target": "git://github.com/Dogfalo/materialize.git",
     "basePath": "dist",
     "files": [
-      "css/*",
-      "font/*/*.eot",
-      "font/*/*.svg",
-      "font/*/*.ttf",
-      "font/*/*.woff",
-      "font/*/*.woff2",
-      "js/*"
+      "**/*"
     ]
   },
   "repository": {
