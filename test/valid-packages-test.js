@@ -40,8 +40,10 @@ function pretty_error(err) {
 
 // load up those files
 var packages = glob.sync("./ajax/libs/*/").map(function (pkg) {
-        return pkg + "package.json";
-    }),
+        if (!fs.lstatSync(pkg.substring(0, pkg.length - 1)).isSymbolicLink()) {
+            return pkg + "package.json";
+        }
+    }).filter(function(n){ return n != undefined }),
     schemata = glob.sync("./test/schemata/*.json").map(function (schema) {
         return jsv.createSchema(parse(schema));
     }),
