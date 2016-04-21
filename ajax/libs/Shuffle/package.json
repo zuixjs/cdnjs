@@ -1,6 +1,6 @@
 {
   "name": "Shuffle",
-  "version": "3.1.1",
+  "version": "4.0.0",
   "description": "Categorize, sort, and filter a responsive grid of items",
   "keywords": [
     "jquery-plugin",
@@ -15,7 +15,7 @@
     "mobile",
     "tiles"
   ],
-  "filename": "jquery.shuffle.min.js",
+  "filename": "shuffle.min.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/Vestride/Shuffle.git"
