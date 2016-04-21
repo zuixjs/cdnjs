@@ -14,8 +14,7 @@
     "target": "git://github.com/DmitryBaranovskiy/raphael.git",
     "basePath": "",
     "files": [
-      "raphael-min.js",
-      "raphael.js"
+      "raphael*.+(js|map)"
     ]
   },
   "repository": {
