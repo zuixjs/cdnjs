@@ -1,1 +1,1 @@
-2.2.0/raphael.min.js
+raphael.min.js
