@@ -1,7 +1,7 @@
 {
   "name": "bricklayer",
   "filename": "bricklayer.min.js",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "description": "Lightweight cascading grid layout library",
   "homepage": "http://ademilter.github.io/bricklayer/",
   "keywords": [
