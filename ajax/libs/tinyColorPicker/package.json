@@ -1,6 +1,6 @@
 {
   "name": "tinyColorPicker",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "filename": "jqColorPicker.min.js",
   "description": "Tiny jQuery color picker for mobile and desktop with alpha channel",
   "author": "Peter Dematté <peter@dematte.at>",
