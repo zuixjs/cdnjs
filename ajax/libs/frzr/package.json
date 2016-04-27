@@ -9,7 +9,16 @@
   "author": "Juha Lindstedt",
   "license": "ISC",
   "keywords": [
-    "frzr", "tiny", "view", "library", "turboboosted", "framework", "javascript", "frontend", "client-side", "dom"
+    "frzr",
+    "tiny",
+    "view",
+    "library",
+    "turboboosted",
+    "framework",
+    "javascript",
+    "frontend",
+    "client-side",
+    "dom"
   ],
   "filename": "frzr.min.js",
   "npmName": "frzr",
@@ -20,5 +29,6 @@
         "frzr*.js"
       ]
     }
-  ]
+  ],
+  "version": "0.15.1"
 }
