@@ -10,14 +10,15 @@
     "browser",
     "framework"
   ],
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/vuejs/vue.git",
-    "basePath": "dist",
-    "files": [
-      "*.js"
-    ]
-  },
+  "npmName": "vue",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*.+(js|map)"
+      ]
+    }
+  ],
   "gratipay": "yyx990803",
   "repository": {
     "type": "git",
