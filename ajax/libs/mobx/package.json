@@ -27,9 +27,9 @@
   "npmName": "mobx",
   "npmFileMap": [
     {
-      "basePath": "",
+      "basePath": "lib",
       "files": [
-        "lib/mobx!(.d.ts)*"
+        "**/mobx!(.d.ts)*"
       ]
     }
   ]
