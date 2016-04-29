@@ -11,5 +11,14 @@
     "type": "git",
     "url": "https://github.com/Valve/fingerprintjs"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "npmName": "fingerprintjs",
+  "npmFileMap": [
+    {
+      "basePath": "",
+      "files": [
+        "fingerprint*"
+      ]
+    }
+  ]
 }
