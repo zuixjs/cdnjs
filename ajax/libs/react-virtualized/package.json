@@ -35,7 +35,7 @@
   "npmName": "react-virtualized",
   "npmFileMap": [
     {
-      "basePath": "dist/umd",
+      "basePath": "dist",
       "files": [
         "**/*"
       ]
