@@ -5,8 +5,8 @@
     {
       "basePath": "",
       "files": [
-        "js/jquery.terminal-+(min|src).js",
-        "css/jquery.terminal.css"
+        "js/jquery.terminal?(-)+(min|src).js",
+        "css/jquery.terminal?(-)+(min|src).css"
       ]
     }
   ],
