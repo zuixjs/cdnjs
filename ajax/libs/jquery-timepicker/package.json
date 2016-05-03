@@ -28,7 +28,7 @@
     "target": "git://github.com/jonthornton/jquery-timepicker.git",
     "basePath": "",
     "files": [
-      "jquery.timepicker.*"
+      "jquery.timepicker*.(!ts)"
     ]
   },
   "license": "MIT"
