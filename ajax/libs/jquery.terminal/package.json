@@ -5,13 +5,12 @@
     {
       "basePath": "",
       "files": [
-        "js/jquery.terminal?(-)+(min|src).js",
-        "css/jquery.terminal?(-)+(min|src).css"
+        "+(js|css)/jquery.terminal?(.min).+(js|css)"
       ]
     }
   ],
-  "filename": "js/jquery.terminal-min.js",
-  "version": "0.10.3",
+  "filename": "js/jquery.terminal.min.js",
+  "version": "0.10.4",
   "description": "jQuery Terminal Emulator is a plugin for creating command line interpreters in your applications.",
   "keywords": [
     "terminal",
