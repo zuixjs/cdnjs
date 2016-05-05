@@ -10,7 +10,7 @@
       ]
     }
   ],
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "This directive allows you to add a slider to your form elements.",
   "author": {
     "name": "PowerKiKi",
