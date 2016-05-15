@@ -1,7 +1,7 @@
 {
   "name": "anyjs",
   "filename": "any.min.js",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "It's a library which improve JS UI-development.",
   "author": "anyjser",
   "license": "MIT",
