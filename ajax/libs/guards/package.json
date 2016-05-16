@@ -26,5 +26,9 @@
     "files": [
       "guards*"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/on-site/guards.js.git"
   }
 }

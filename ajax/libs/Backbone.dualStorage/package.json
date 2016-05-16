@@ -27,5 +27,9 @@
     "files": [
       "backbone.dualstorage*.+(js|map)"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nilbus/Backbone.dualStorage.git"
   }
 }
