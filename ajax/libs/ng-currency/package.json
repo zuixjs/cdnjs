@@ -23,5 +23,9 @@
     "files": [
       "**/*"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/aguirrel/ng-currency.git"
   }
 }

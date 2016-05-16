@@ -27,5 +27,9 @@
       "switchy*.+(css|js|map)"
     ]
   },
-  "license": "WTFPL"
+  "license": "WTFPL",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lou/switchy.git"
+  }
 }

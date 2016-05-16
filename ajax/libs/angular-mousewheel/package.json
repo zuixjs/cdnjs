@@ -20,5 +20,9 @@
     "files": [
       "mousewheel*"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/monospaced/angular-mousewheel.git"
   }
 }
