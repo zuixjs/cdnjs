@@ -1,0 +1,26 @@
+{
+  "name": "videojs-swf",
+  "description": "The Flash-fallback video player for video.js (http://videojs.com)",
+  "version": "5.0.2",
+  "filename": "video-js.swf",
+  "keywords": [
+    "flash",
+    "video",
+    "player"
+  ],
+  "homepage": "http://videojs.com",
+  "author": "Brightcove",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/videojs/video-js-swf.git"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/videojs/video-js-swf.git",
+    "basePath": "dist",
+    "files": [
+      "**/*.!(orig|old)"
+    ]
+  }
+}
