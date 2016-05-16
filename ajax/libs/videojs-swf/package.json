@@ -20,7 +20,7 @@
     "target": "git://github.com/videojs/video-js-swf.git",
     "basePath": "dist",
     "files": [
-      "**/*.!(orig|old)"
+      "**/!(*.+(old|orig))"
     ]
   }
 }
