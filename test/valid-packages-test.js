@@ -288,9 +288,13 @@ packages.map(function (pkg) {
         assert.ok(JSON.stringify(json) === JSON.stringify(json_fix) ,
             pkg_name(pkg) + ": we don't need bin, jshintConfig, eslintConfig, styles, install, typescript, browserify, browser, jam, jest, scripts, devDependencies, main, peerDependencies, contributors, bugs, gitHEAD, issues, files, ignore, engines, engine, directories and maintainers fields in package.json");
     }
-    package_vows[pname + ": There must be repository information when using git auto-update config"] = function(pkg) {
+    package_vows[pname + ": There must be repository information when using auto-update config"] = function(pkg) {
         var json = parse(pkg, true, true);
-        assert.ok(json.autoupdate === undefined || json.repository != undefined,
+        assert.ok(
+            (
+                (json.repository !== undefined || json.repositories !== undefined) ||
+                (json.autoupdate === undefined && json.npmFileMap === undefined)
+            ),
             pkg_name(pkg) + ": Need to add repository information in package.json");
     }
     context[pname] = package_vows;
