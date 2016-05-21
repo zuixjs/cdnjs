@@ -22,7 +22,7 @@ The plugin can take an arbitrary amount of IDs, however the first one should spe
 Options default values
 {
 // basic config parameters
-    selector : "a:not(.no-ajaxy)",  //Selector for elements to ajaxify - without being swapped - e.g. a selection of links
+    selector : "a:not(.no-ajaxy):not([target='_blank'])",  //Selector for elements to ajaxify - without being swapped - e.g. a selection of links
     forms : "form:not(.no-ajaxy)", // jQuery selection for ajaxifying forms - set to "false" to disable
     canonical : true, // Fetch current URL from "canonical" link if given, updating the History API.  In case of a re-direct...
  
@@ -31,10 +31,8 @@ Options default values
     aniTime : 0, //in msec - must be set for animations to work
     aniParams : false, //Animation parameters - see below.  Default = off
     previewoff : true, // Plugin previews prefetched pages - set to "false" to enable or provide a jQuery selection to selectively disable
-    scrolltop : false, // Always scroll to top of page
     idleTime: 0, //in msec - master switch for slideshow / carousel - default "off"
     slideTime: 0, //in msec - time between slides
-    toggleSlide: false //For toggling sliding - see below.  Default = off
     menu: false, //Selector for links in the menu
     addclass: "jqhover", //Class that gets added dynamically to the highlighted element in the slideshow
  
@@ -48,32 +46,22 @@ Options default values
     prefetch : true, // Plugin pre-fetches pages on hoverIntent or touchstart
  
 // debugging & advanced settings
-    verbosity : 0,  //Debugging level to console: default off.  Can be set to 10 and higher (in case of logging enabled) 
+    verbosity : 0,  //Debugging level to console: 1 = medium, 2 = verbose
     memoryoff : false, // strings - separated by ", " - if matched in any URLs - only these are NOT executed - set to "true" to disable memory completely
     cb : null, // callback handler on completion of each Ajax request - default null
     pluginon : true // Plugin set "on" or "off" (==false) manually
 }
 
-Animation parameters (aniParams):  Default is false (set off) - specify aniTime and override the following aniParams:
+Animation parameters (aniParams):  Default is false (set off)
 {
     opacity: 1, //no fade, set to 0 for maximum fade
     width: "100%", //in percent -  "100%" means no change
     height: "100%" //in percent -  "100%" means no change
 }
 
-More animation parameters:
-You can specify any parameters that are understood by .animate() !
+More animation parameters
 
-Toggling sliding parameters (toggleSlide): Default is false (set off) 
-You can override the following toggleSlide parameters:
-{ //defaults - if not turned off completely
-    parentEl: '#content', //parent element, where the above image(s) will be prepended 
-    imgOn: 'http://4nf.org/images/pinOn.gif', //graphic for indicating sliding is on
-    imgOff: 'http://4nf.org/images/pinOff.gif', //graphic for indicating sliding is off
-    titleOn: 'Turn slideshow off', //title tag when on
-    titleOff: 'Turn slideshow on', //title tag when off
-    imgProps: { marginLeft: '85%', marginTop: '20px' }
-}
+You can specify any parameters that are understood by .animate() respectively…
 
 */
 
@@ -84,16 +72,16 @@ String.prototype.iO = function(s) { return this.toString().indexOf(s) + 1; };
 (function(a){a.fn.hoverIntent=function(w,e,b){var j={interval:100,sensitivity:7,timeout:0};if(typeof w==="object"){j=a.extend(j,w);}else{if(a.isFunction(e)){j=a.extend(j,{over:w,out:e,selector:b});}else{j=a.extend(j,{over:w,out:w,selector:e});}}var x,d,v,q;var m=function(c){x=c.pageX;d=c.pageY;};var g=function(c,f){f.hoverIntent_t=clearTimeout(f.hoverIntent_t);if(Math.abs(v-x)+Math.abs(q-d)<j.sensitivity){a(f).off("mousemove.hoverIntent",m);f.hoverIntent_s=1;return j.over.apply(f,[c]);}else{v=x;q=d;f.hoverIntent_t=setTimeout(function(){g(c,f);},j.interval);}};var p=function(f,c){c.hoverIntent_t=clearTimeout(c.hoverIntent_t);c.hoverIntent_s=0;return j.out.apply(c,[f]);};var k=function(c){var h=jQuery.extend({},c);var f=this;if(f.hoverIntent_t){f.hoverIntent_t=clearTimeout(f.hoverIntent_t);}if(c.type=="mouseenter"){v=h.pageX;q=h.pageY;a(f).on("mousemove.hoverIntent",m);if(f.hoverIntent_s!=1){f.hoverIntent_t=setTimeout(function(){g(h,f);},j.interval);}}else{a(f).off("mousemove.hoverIntent",m);if(f.hoverIntent_s==1){f.hoverIntent_t=setTimeout(function(){p(h,f);},j.timeout);}}};return this.on({"mouseenter.hoverIntent":k,"mouseleave.hoverIntent":k},j.selector);};})(jQuery);
 
 //Minified idle plugin
-!function(n){"use strict";n.fn.idle=function(e){var t,o,i={idle:6e4,events:"mousemove keydown mousedown touchstart",onIdle:function(){},onActive:function(){}},u=!1,c=n.extend({},i,e),l=null;return n(this).on("idle:kick",{},function(n){l=o(c)}),t=function(n,e){return u&&(e.onActive.call(),u=!1),clearTimeout(n),o(e)},o=function(n){var e,t=setTimeout;return e=t(function(){u=!0,n.onIdle.call()},n.idle)},this.each(function(){l=o(c),n(this).on(c.events,function(n){l=t(l,c)})})}}(jQuery);
+(function(n){n.fn.idle = function(e) {var i,t,o={idle:6e4,events:"mousemove keypress mousedown touchstart",onIdle:function(){},onActive:function(){},onHide:function(){},onShow:function(){},keepTracking:!1},c=!1,u=!0,d=n.extend({},o,e);return i=function(n,e){return c&&(e.onActive.call(),c=!1),(e.keepTracking?clearInterval:clearTimeout)(n),t(e);}, t = function(n) {var e,i=n.keepTracking?setInterval:setTimeout;return(e=i(function(){c=!0;n.onIdle.call();},n.idle)),e;},this.each(function(){var o=t(d);return n(this).on(d.events,function(){o=i(o,d);}),(e.onShow||e.onHide)&&n(document).on("visibilitychange webkitvisibilitychange mozvisibilitychange msvisibilitychange",function() {return document.hidden||document.webkitHidden||document.mozHidden||document.msHidden?u&&(u=!1,d.onHide.call()):u||(u=!0,d.onShow.call());});});};})(jQuery);
 
 //Module global variables
-var lvl = 0, pass = 0, currentURL = '', rootUrl = getRootUrl(), api = window.history && window.history.pushState && window.history.replaceState,
+var l = 0, pass = 0, currentURL = '', rootUrl = getRootUrl(), api = window.history && window.history.pushState && window.history.replaceState,
 
 //Regexes for escaping fetched HTML of a whole page - best of Baluptons Ajaxify
 //Makes it possible to pre-fetch an entire page
 docType = /<\!DOCTYPE[^>]*>/i,
-tagso = /<(html|head|body|meta|script|link)([\s\>])/gi,
-tagsc = /<\/(html|head|body|meta|script|link)\>/gi,
+tagso = /<(html|head|body|title|meta|script|link)([\s\>])/gi,
+tagsc = /<\/(html|head|body|title|meta|script|link)\>/gi,
 
 //Helper strings
 div12 = '<div class="ajy-$1"$2',
@@ -103,7 +91,7 @@ linkr = 'link[href*="!"]',
 scrr = 'script[src*="!"]';
 
 //Minified pO() function
-function getParamNames(){return funStr.slice(funStr.indexOf("(")+1,funStr.indexOf(")"))}function JSON2Str(n,r){var t="var ",e=0;for(var o in n)if(n.hasOwnProperty(o)){var i=n[o];t+=e?",\n":"",t+="function"==typeof i?"_"+o+" = "+iLog(i.toString(),o):o+" = "+(r?'settings["':"")+(r?o+'"]':JSON.stringify(i)),e++}return t+";"}function pO(n,r,t,e,o,i){var s="",a="",f="",l="",u="",g="",p=!1,c=!1,v=mbp;if(!n||!e)return void alert("Error in pO(): Missing parameter");if(funStr=e.toString(),funStr=iLog(funStr,n),s=n.substr(0,1).toUpperCase()+n.substr(1,n.length-1),u=getParamNames(e),p=u.iO("$this"),c=u.iO("options"),g=u.replace("$this, ",""),g="$this"==u?"":g,t&&!c&&(g+=""===g?"options":", options"),r&&(a=JSON2Str(r)),t&&(f="var settings = $.extend("+JSON.stringify(t)+", options);\n",f+=JSON2Str(t,1)),o&&(l=JSON2Str(o)),t||(v=v.replace(/\(options/g,"(")),p||(v=v.replace("var $this = $(this);","")),v=v.replace(/fnn/g,p?"fn."+n:n).replace(/Name/g,s).replace("funStr",funStr).replace("pVars",a).replace("pSettings",f).replace("pFns",l).replace("args",u).replace("arg0",g),codedump&&console.log(v),!i)try{jQuery.globalEval(v)}catch(S){alert("Error : "+S+" | "+v)}}function showArgs(n){s="";for(var r=0;r<n.length;r++)null==n[r]?s+="null | ":s+=(void 0!=n[r]&&"function"!=typeof n[r]&&"object"!=typeof n[r]&&("string"!=typeof n[r]||n[r].length<=100)?n[r]:"string"==typeof n[r]?n[r].substr(0,100):typeof n[r])+" | ";return s}function iLog(n,r){var t=n.indexOf("{");return logging&&"log"!==r?(n=n.substr(0,t)+'{ $.log(lvl++ + " | '+r+" | "+n.substr(n.indexOf("("),n.indexOf(")")-n.indexOf("(")+1)+' | " + showArgs(arguments));\n'+n.substr(t+1,n.length-t-2)+"\n lvl--;}",n.replace(/return /g,"return --lvl, ").replace(/return;/g,"return --lvl, undefined;")):n}var funStr,logging=!1,codedump=!1,mbp="(function ($) { var Name = function(options){ \npVars \npSettings \n this.a = funStr; \npFns }; \n$.fnn = function(arg0) {var $this = $(this); \nif(!$.fnn.o) $.fnn.o = new Name(options); \nreturn $.fnn.o.a(args);}; \n})(jQuery);";pO("log",0,{verbosity:0},function(n,r){r&&(verbosity=r),verbosity&&n&&lvl<verbosity&&console&&console.log(n)});
+function getParamNames(){return funStr.slice(funStr.indexOf("(")+1,funStr.indexOf(")"))}function JSON2Str(n,r){var t="var ",e=0;for(var i in n)if(n.hasOwnProperty(i)){var a=n[i];t+=e?",\n":"",t+="function"==typeof a?"_"+i+" = "+a.toString():i+" = "+(r?'settings["':"")+(r?i+'"]':JSON.stringify(a)),e++}return t+";"}function pO(n,r,t,e,i,a){var s="",o="",p="",f="",c="",u="",l=!1,g=!1,S=mbp;if(!n||!e)return void alert("Error in pO(): Missing parameter");if(funStr=e.toString(),s=n.substr(0,1).toUpperCase()+n.substr(1,n.length-1),c=getParamNames(e),l=c.iO("$this"),g=c.iO("options"),u=c.replace("$this, ",""),u="$this"==c?"":u,t&&!g&&(u+=""===u?"options":", options"),r&&(o=JSON2Str(r)),t&&(p="var settings = $.extend("+JSON.stringify(t)+", options);\n",p+=JSON2Str(t,1)),i&&(f=JSON2Str(i)),t||(S=S.replace(/\(options/g,"(")),l||(S=S.replace("var $this = $(this);","")),S=S.replace(/fnn/g,l?"fn."+n:n).replace(/Name/g,s).replace("funStr",funStr).replace("pVars",o).replace("pSettings",p).replace("pFns",f).replace("args",c).replace("arg0",u),!a)try{jQuery.globalEval(S)}catch(v){alert("Error : "+v+" | "+S)}}var funStr,mbp="(function ($) { var Name = function(options){ \npVars \npSettings \n this.a = funStr; \npFns }; \n$.fnn = function(arg0) {var $this = $(this); \nif(!$.fnn.o) $.fnn.o = new Name(options); \nreturn $.fnn.o.a(args);}; \n})(jQuery);";pO("log",0,{verbosity:0},function(n){l<verbosity&&console&&console.log(n)});
 
 //getRootUrl() from Baluptons history.js
 function getRootUrl(){var a=window.location.protocol+"//"+(window.location.hostname||window.location.host);if(window.location.port||!1)a+=":"+window.location.port;return a+="/",a;}
@@ -125,15 +113,16 @@ function _root(u) { return u.iO('?') ? u.split('?')[0] : u; }
 // 2) $.cache(<URL>) - returns page with specified URL
 // 3) $.cache(<jQuery object>) - saves the page in cache
 pO("cache", { d: false }, 0, function (o) {
-    if (!o) return d;
-	
+    if (!o) {
+        return d;
+    }
     if (typeof o === "string") {
         if(o === "f") { 
             $.pages("f");
             $.log("Cache flushed");
         } else d = $.pages($.memory(o));
         
-        return d;
+		return d;
     }
 
     if (typeof o === "object") {
@@ -145,16 +134,16 @@ pO("cache", { d: false }, 0, function (o) {
 // The stateful Memory plugin
 // Usage: $.memory(<URL>) - returns the same URL if not turned off internally
 pO("memory", { d: false }, { memoryoff: false }, function (h) {
-    d = memoryoff;
-    if (!h || d === true) return false;
-    if (d === false) return h;
-    if (d.iO(", ")) {
-         d = d.split(", ");
-         if (d.iO(h)) return false;
-         else return h;
-    }
+     d = memoryoff;
+     if (!h || d === true) return false;
+     if (d === false) return h;
+     if (d.iO(", ")) {
+          d = d.split(", ");
+          if (d.iO(h)) return false;
+          else return h;
+     }
      
-    return h == d ? false : h;
+	 return h == d ? false : h;
 });
 		
 // The stateful Pages plugin
@@ -162,31 +151,21 @@ pO("memory", { d: false }, { memoryoff: false }, function (h) {
 // 1) $.pages(<URL>) - returns page with specified URL from internal array
 // 2) $.pages(<jQuery object>) - saves the passed page in internal array
 // 3) $.pages(false) - returns false
-pO("pages", { d: [], i: -1 }, 0, function (h) {
+pO("pages", { d: [] }, 0, function (h) {
     if (typeof h === "string") {
-        if(h === "f") d = [];
-        else { 
-            i = _iPage(h);
-            if(i === -1) return;
-            return d[i][1];
-        }
+    if(h === "f") d = [];
+    else for (var i = 0; i < d.length; i++)
+        if (d[i][0] == h) return d[i][1];
     }
 	
     if (typeof h === "object") {
-        i = _iPage(h[0]);
-        if(i === -1) d.push(h);
-        else d[i] = h;
+        d.push(h);
     }
-	
-    if (typeof h === "boolean") return false;
-}, {
-    iPage: function (h) { //get index of page, -1 if not found
-        for (var i = 0; i < d.length; i++)
-            if (d[i][0] == h) return i;
-        return -1;
+    
+	if (typeof h === "boolean") {
+        return false;
     }
-}
-);
+});
 
 // The GetPage plugin
 // First parameter is a switch: 
@@ -197,22 +176,13 @@ pO("pages", { d: [], i: -1 }, 0, function (h) {
 // "x" - returns XHR
 // otherwise - returns selection of current page to client
 
-pO("getPage", { xhr: 0, cb: 0, plus: 0 }, 0, function (o, p, p2) { 
+pO("getPage", { xhr: 0 }, 0, function (o, p, p2) { 
     if (!o) return $.cache();
-    if (o.iO("/")) {
-        cb = p;
-        if(plus == o) return;
-        return _lPage(o);
-    }
-    if (o === "+")  {
-        plus = p;
-        cb = p2;
-        return _lPage(p, true);
-    }
-	
+	if (o.iO("/")) return _lPage(o, p);
+    if (o === "+") return _lPage(p, p2, true);
     if (o === "-") return _lSel(p);
     if (o === "x") return xhr;            
-    if($.cache()) return $.cache().find(o === "title" ?  "title:first" : ".ajy-" + o);
+    if($.cache()) return $.cache().find(".ajy-" + o);
 }, {
     lSel: function ($t) { //load page into DOM and handle scripts
         pass++;
@@ -223,45 +193,44 @@ pO("getPage", { xhr: 0, cb: 0, plus: 0 }, 0, function (o, p, p2) {
         return $.scripts("c");
     },
 		
-    lPage: function (h, pre) { //fire Ajax load, check for hash first
+    lPage: function (h, p, pre) { //fire Ajax load, check for hash first
          if (h.iO("#")) h = h.split("#")[0];
-         if ($.rq("is") || !$.cache(h)) return _lAjax(h, pre);
-		 
-         plus = 0;
-         if(cb) return cb();
+         if ($.rq("is") || !$.cache(h)) return _lAjax(h, p, pre);
+         if(p) p();
     },
 		
-    ld: function ($t, $h) { 
+	ld: function ($t, $h) {
         $h.find(".ajy-script").each(function(){
+            //if(!($(this).attr("src"))) $(this).replaceWith('<script type="text/javascript">' + $(this).text() + '</script>');
             if(!($(this).attr("src"))) $(this).replaceWith('');
             else $(this).replaceWith(scri.replace('*', $(this).attr("src")));
-        });      
+        });
+            
         $t.html($h.html());
     },
 		
     lDivs: function ($t) { //load target divs into DOM
-        if ($.cache()) $t.each(function() { 
+        if ($.cache()) $t.each(function () { 
             _ld($(this), $.cache().find("#" + $(this).attr("id")));
         });
     },
 		
-    lAjax: function (hin, pre) { //execute Ajax load
+    lAjax: function (hin, p, pre) { //execute Ajax load
         var ispost = $.rq("is");
                 
         xhr = $.ajax({
-        url: hin,
+		url: hin,
         type: ispost ? "POST" : "GET",
         data: ispost ? $.rq("d") : null,
-        success: function(h) {
+        success: function (h) {
             if (!h || !_isHtml(xhr)) {
                 if (!pre) location.href = hin;
             }
             
             $.cache($(_parseHTML(h)));
             $.pages([hin, $.cache()]);
-            plus = 0;
 
-            if(cb) return(cb());
+            if(p) p();
         },
         error: function(jqXHR, status, error) {
         // Try to parse response text
@@ -269,7 +238,7 @@ pO("getPage", { xhr: 0, cb: 0, plus: 0 }, 0, function (o, p, p2) {
                 $.log('Response text : ' + jqXHR.responseText);
                 $.cache($(_parseHTML(jqXHR.responseText)));
                 $.pages([hin, $.cache()]); 
-                if(cb) cb(error);
+                if(p) p(error);
             } catch (e) {}
         },
         async: true
@@ -296,30 +265,32 @@ pO("getPage", { xhr: 0, cb: 0, plus: 0 }, 0, function (o, p, p2) {
 // Checks for necessary pre-conditions - otherwise gracefully degrades
 // Initialises sub-plugins
 // Calls Pronto
-pO("ajaxify", 0, { pluginon: true, deltas: true, verbosity: 0 }, function ($this, options) {
+var fn = jQuery.getPage; //fn is passed to Pronto as a jQuery sub-plugin, that is a callback
+
+pO("ajaxify", 0, { pluginon: true, deltas: true }, function ($this, options) {
     var o = options;
     if(!o || typeof(o) !== 'string') {
         $(function () { //on DOMReady
             if (_init(settings)) { //sub-plugins initialisation
-                $this.pronto("i", settings); //Pronto initialisation
+                $().pronto(0, settings); //Pronto initialisation
+                $this.pronto("i"); 
                 if(deltas) $.scripts("1"); //delta-loading initialisation
             }
         });
     }
-    else return $().pronto(o);
+        else return $().pronto(o);
     }, {
         init: function (s) {
             if (!api || !pluginon) {
                 $.log("Gracefully exiting...");
                 return false;
             }
-            $.log("Ajaxify loaded...", verbosity);
             $.scripts("i", s);
             $.cache(0, s);
             $.memory(0, s);
             return true;
-       }
-    }
+            }
+        }
 );
 
 // The stateful Scripts plugin
@@ -333,15 +304,18 @@ pO("scripts", { $s : false }, { canonical: true, inline: true, inlinehints: fals
         if(!$s) $s = $();
         return true;
     }
-    
-    if (o === "s") return _allstyle($s.y);
+    if (o === "s") {
+        return _allstyle($s.y);
+    }
             
     if (o === "1") { 
         $.detScripts($s);
         return _addScripts(false, $s, settings);
     }
             
-    if (o === "a") return _alltxts($s.t);
+    if (o === "a") {
+        return _alltxts($s.t);
+    }
 
     if (o === "c") {
         if (canonical && $s.can) return $s.can.attr("href");
@@ -354,34 +328,35 @@ pO("scripts", { $s : false }, { canonical: true, inline: true, inlinehints: fals
     allstyle: function ($s) {
         if (!style || !$s) return;
         $("head").find("style").remove();
-        $s.each(function() {
+        $s.each(function () {
             var d = $(this).text();
             _addstyle(d);
         });
     },
     alltxts: function ($s) {
-        $s.each(function() {
-             var d = $(this).text(), t = $(this).prop('type');
-             if (!d.iO(").ajaxify(") && ((inline && !_inlineskip(d)) || $(this).hasClass("ajaxy") || _inlinehints(d))) _addtext(d, t);
+        $s.each(function () {
+             var d = $(this).text();
+             if (!d.iO(").ajaxify(") && ((inline && !_inlineskip(d)) || $(this).hasClass("ajaxy") || _inlinehints(d))) _addtext(d);
         });
     },
-    addtext: function (t, type) {
+    addtext: function (t) {
         if(!t || !t.length) return;
-        if(!type) type = 'text/javascript';
-        if(inlineappend || !type.iO('text/javascript')) try { return _apptext(t, type); } catch (e) { $.log("Error in apptext: " + t + "\nType: " + type + "\nCode: " + console.debug(e)); }
+        if(inlineappend) try { return _apptext(t); } catch (e) { $.log("Error in apptext: " + t); }
         
-        try { $.globalEval(t); } catch (e1) {
-	        try { eval(t); } catch (e2) {
+        try {
+            $.globalEval(t);
+        } catch (e1) {
+	        try { 
+                 eval(t);
+            } catch (e2) {
                  $.log("Error in inline script : " + t + "\nError code : " + e2);
             }
         }
     },
-    apptext: function (t, type) { 
-        var scriptNode = document.createElement('script'), $cd0 = $.cd("g").get(0);
-        scriptNode.type = type;
+    apptext: function (t) { 
+        var scriptNode = document.createElement('script');
         scriptNode.appendChild(document.createTextNode(t));
-        $.log(t);
-        $cd0.appendChild(scriptNode);
+        $.cd("g").append(scriptNode);
     },
     addstyle: function (t) {
         $("head").append('<style type="text/css">' + t + '</style>');
@@ -421,14 +396,16 @@ pO("detScripts", { head: 0, lk: 0, j: 0 }, 0, function ($s) {
     $s.c = _rel(lk, "stylesheet");
     $s.y = head.find("style");
     $s.can = _rel(lk, "canonical");
-    $s.s = j.filter(function() {
-         return($(this).attr("src"));
+    $s.s = j.filter(function () {
+         return $(this).attr("src");
     });
-    $s.t = j.filter(function() {return(!($(this).attr("src")));});
-    }, {
+    $s.t = j.filter(function () {
+         return !($(this).attr("src"));
+    })}, {
     rel: function(lk, v) {
-        return $(lk).filter(function(){return($(this).attr("rel").iO(v));});
-    }
+        return $(lk).filter(function () {
+             return $(this).attr("rel").iO(v);
+        })}
     }
 );
 
@@ -461,17 +438,17 @@ pO("addAll", { $scriptsO: false, $scriptsN: false, $sCssO: [], $sCssN: [], $sO: 
     }, {
     allScripts: function ($t, PK) {
         if (deltas) return false;
-        $t.each(function() {
+        $t.each(function () {
              _iScript($(this)[0], PK);
         });
         
         return true;
     },
     classAlways: function ($t, PK) { 
-        $t.each(function() {
-            if ($(this).attr("data-class") == "always") {
-                 _iScript($(this).attr(PK), PK);
-            }
+        $t.each(function () {
+        if ($(this).attr("data-class") == "always") {
+            _iScript($(this).attr(PK), PK);
+        }
         });
     },
     sameScripts: function (s, PK) {
@@ -483,7 +460,7 @@ pO("addAll", { $scriptsO: false, $scriptsN: false, $sCssO: [], $sCssN: [], $sO: 
     },
     newArray: function ($t, sN, sO, PK) {
         var d;
-        $t.each(function() {
+        $t.each(function () {
              d = [$(this).attr(PK), 0];
              sN.push(d);
              if (!pass) sO.push(d);
@@ -497,11 +474,11 @@ pO("addAll", { $scriptsO: false, $scriptsN: false, $sCssO: [], $sCssN: [], $sO: 
     },
     findScript: function ($S, s) {
         if ($S)
-            for (var i = 0; i < s.length; i++)
-                if (s[i][0] == $S) {
-                    s[i][1] = 1;
-                    return true;
-                }
+        for (var i = 0; i < s.length; i++)
+             if (s[i][0] == $S) {
+                 s[i][1] = 1;
+                 return true;
+             }
     },
     freeOld: function (s, PK) {
         for (var i = 0; i < s.length; i++)
@@ -518,7 +495,7 @@ pO("cd", { cd: 0, aniTrue: 0, from: 0, cdwidth: 0 }, { aniParams: false, aniTime
     
     if(o === "g") return cd;
 
-    if(o === "i") {
+	if(o === "i") {
         cd = p.first();
         aniTrue = aniTime && aniParams;
         cdwidth = cd.width();
@@ -530,7 +507,7 @@ pO("cd", { cd: 0, aniTrue: 0, from: 0, cdwidth: 0 }, { aniParams: false, aniTime
             height: "100%"
         }, aniParams);
 		
-        aniParams = $.extend({
+		aniParams = $.extend({
             marginRight: cdwidth - aniParams.width
         }, aniParams);
 		
@@ -551,60 +528,51 @@ pO("cd", { cd: 0, aniTrue: 0, from: 0, cdwidth: 0 }, { aniParams: false, aniTime
 	
     if(!p) return;
 	
-    if(!aniTrue) { p(); return; }
+	if(!aniTrue) { p(); return; }
 	
     if (o === "1" || o === "2") {
-        if(o === "1") cd.stop(true, true);
+		if(o === "1") cd.stop(true, true);
         cd.animate(o === "1" ? aniParams : from, aniTime, p);
     }
 });
 
-pO("slides", { pinned: 0, img: 0, timer: -1, currEl: 0, parentEl: 0}, { idleTime: 0, slideTime: 0, menu: false, addclass: "jqhover", toggleSlide: false }, function (o) {
-    if(!o || !idleTime) return;
+pO("slides", { sliding: false, timer: 0, currEl: 0, sp: 0 }, { idleTime: 0, slideTime: 0, menu: false, addclass: "jqhover" }, function (o) {
+	if(!o) return;
 	
-    if (o === "i") { 
-        $(document).idle({ onIdle: _onIdle, onActive: _onActive, idle: idleTime });
-        
-        if(toggleSlide) toggleSlide = $.extend({ //defaults - if not turned off completely
-            parentEl: '#content', //parent element, where the above image(s) will be prepended 
-            imgOn: 'http://4nf.org/images/pinOn.gif', //graphic for indicating sliding is on
-            imgOff: 'http://4nf.org/images/pinOff.gif', //graphic for indicating sliding is off
-            titleOn: 'Turn slideshow off', //title tag when on
-            titleOff: 'Turn slideshow on', //title tag when off
-            imgProps: { marginLeft: '85%', marginTop: '20px' }
-        }, toggleSlide);  
-
-        parentEl = toggleSlide.parentEl;
+	if (o === "i") { 
+	    if(!idleTime) return;
+			
+        $(document).idle({
+            onIdle: function(){
+                _trigger("idle");
+                if(sliding) return;                    
+                sliding = true;
+                _slide();
+            },
+            onActive: function(){
+                _trigger("active");
+                if(currEl) currEl.removeClass(addclass);
+                clearInterval(timer);
+                sliding = false;
+            },
+            idle: idleTime
+        });     
     }
-    
-    if (o === "f") _insImg();
 }, {
-    onIdle: function(){ 
-        _trigger("idle");
-        if(timer + 1) return;                    
-        _slide();
-    },
-    onActive: function(){ 
-        _trigger("active");
-        if(currEl) currEl.removeClass(addclass);
-        if(timer + 1) clearInterval(timer);
-        timer = -1;
-    },
     slide: function() { 
-        if(timer + 1) clearInterval(timer);
-		timer = setInterval(_slide1, slideTime); 
+        if(!sliding) return;
+        timer = setInterval(_slide1, slideTime); 
     },
     slide1: function() { 
-        if(pinned) return;
+        if(!sliding) return;
         $().pronto(_nextLink());
     }, 
-    nextLink: function() { 
+	nextLink: function() { 
         var wasPrev = false, firstValue = false, firstLink = false, nextLink = false, link;
-        $(menu).each(function(i, v){ 
-            var el = $(this).parent();
-            if(nextLink) return(true);
+        $(menu).each(function(i, v){ var el = $(this).parent();
+            if(nextLink) return true;
             link = v.href;
-            if(!_internal(link)) return(undefined);
+            if(!_internal(link)) return;
             el.removeClass(addclass);
             if(!firstValue) firstValue = $(this).parent();
             if(!firstLink) firstLink = link;
@@ -623,39 +591,19 @@ pO("slides", { pinned: 0, img: 0, timer: -1, currEl: 0, parentEl: 0}, { idleTime
         }
 		
         return nextLink;
-    },
-    insImg: function() {
-        if(!parentEl) return;
-        img = $('<img src ="' + toggleSlide.imgOn + '" title="' + toggleSlide.titleOn + '" />').prependTo(parentEl).css(toggleSlide.imgProps);
-        
-        img.click(_toggleImg);
-        pinned = 0;
-    },
-    toggleImg: function(e) {
-        if(!parentEl || !img || !img.length) return;
-        var src = toggleSlide.imgOn, titl = toggleSlide.titleOn;
-        
-        if(!pinned) { 
-            pinned = 1;
-            src = toggleSlide.imgOff;
-            titl = toggleSlide.titleOff;
-        } else pinned = 0;
-                
-        img.attr("src", src);
-        img.attr("title", titl);
-        
-        if(!pinned) { //Kickstart in idle sub-plugin after user resumes 
-            _slide1();
-            _slide();
-             $(document).trigger("idle:kick");
-		}
     }
 });
 
-pO("rq", { ispost: 0, data: 0, same: 0, push: 0, can: 0, e: 0, l: 0, h: 0}, 0, function (o, p) {
-    if(o === "=") {
-        return h === currentURL; 
-    }
+pO("rq", { ispost: 0, data: 0, same: 0, sema: 0, mode: 0, push: 0, can: 0, e: 0, l: 0, h: 0}, 0, function (o, p) {
+     if(o === "c") {
+        if(!p) return sema;
+        e = p;
+        l = e.currentTarget;
+        h = l.href;
+		if(sema === h) return false;
+        sema = h;
+        return true;
+	}
     
     if(o === "v") {
         if(!p) return false;
@@ -666,13 +614,14 @@ pO("rq", { ispost: 0, data: 0, same: 0, push: 0, can: 0, e: 0, l: 0, h: 0}, 0, f
         o = "i";
     }
     
-    if(o === "i") {
+	if(o === "i") {
         ispost = false;
         data = null;
         same = false;
+        mode = false;
         push = false;
         return l;
-    }
+	}
     
     if(o === "h") { // Access href hard
         if(p) {
@@ -683,40 +632,44 @@ pO("rq", { ispost: 0, data: 0, same: 0, push: 0, can: 0, e: 0, l: 0, h: 0}, 0, f
         return h;
     }
     
-    if(o === "l") return l;
+	if(o === "l") return l;
     if(o === "e") {
         if(p) e = p;
         return e ? e : h; // Return "e" or if not given "h"
     }
+    
+    if(o === "m") {
+        if(p) mode = p;
+		return mode;
+    }
 
     if(o === "p") {
         if(p) push = p;
-        return push;
+		return push;
     }
     
-    if(o === "s") { 
-        var t = p ? p : h;
+	if(o === "s") { var t = p ? p : h;
         same = (_root(t) === _root(currentURL));
-    }
+	}
     
     if(o === "s?") return same;
 	
-    if(o === "is") {
+	if(o === "is") {
         if(p) ispost = p;
         return ispost;
-    }
+	}
 	
-    if(o === "d") {
+	if(o === "d") {
         if(p) data = p;
         return data;
-    }
+	}
 	
     if(o === "can") {
         if(p) can = p;
         return can;
-    }
+	}
 	
-    if(o === "can?") return can && can !== p && !p.iO('#') && !p.iO('?') ? can : p;
+	if(o === "can?") return can && can !== p && !p.iO('#') && !p.iO('?') ? can : p;
 });
 
 pO("frms", { fm: 0, divs: 0}, { forms: "form:not(.no-ajaxy)" }, function (o, p) {
@@ -724,13 +677,13 @@ pO("frms", { fm: 0, divs: 0}, { forms: "form:not(.no-ajaxy)" }, function (o, p) 
     
     if(o === "d") divs = p;
     if(o === "a") divs.find(forms).filter(function() {
-        return(_internal($(this).attr("action")));
-    }).submit(function(q) {
+        return _internal($(this).attr("action"));
+    }).submit(function (q) {
         fm = $(q.target);
         if (!fm.is("form")) {
             fm = fm.filter("input[type=submit]").parents("form:first");
             if (fm.length === 0) {
-                return(true);
+                return true;
             }
         }
         
@@ -755,7 +708,7 @@ pO("frms", { fm: 0, divs: 0}, { forms: "form:not(.no-ajaxy)" }, function (o, p) 
         _trigger("submit", h);
         $().pronto({ href: h });
 		
-        return(false);
+        return false;
     });
 }, {
     k: function () {
@@ -786,72 +739,23 @@ pO("rqTimer", { requestTimer: 0 }, { requestDelay: 0 }, function (o) {
     if(typeof(o) === 'function') requestTimer = setTimeout(o, requestDelay);
 });
 
-// The stateful Offsets plugin
-// Usage: 
-// 1) $.offsets(<URL>) - returns offset with specified URL from internal array
-// 2) $.offsets() - saves the current URL + offset in internal array
-pO("offsets", { d: [], i: -1 }, 0, function (h) {
-    if (typeof h === "string") {
-        i = _iOffset(h);
-        if(i === -1) return;
-        return d[i][1];
-    }
-	
-    var os = [currentURL, $(window).scrollTop()];
-    i = _iOffset(currentURL);
-    if(i === -1) d.push(os);
-    else d[i] = os;
-}, {
-  iOffset: function (h) { //get index of page, -1 if not found
-        for (var i = 0; i < d.length; i++)
-            if (d[i][0] == h) return i;
-        return -1;
-    }
-}
-);
-
-pO("scroll", 0, { scrolltop: false }, function (o) {
+pO("hApi", 0, 0, function (o) {
     if(!o) return;
-  
-    if(scrolltop === "s") {
-        if(o === "+") $.offsets();
-        else $(window).scrollTop($.offsets(o));
-        return;
-    }
-
-    if(scrolltop) $(window).scrollTop(0);
-    else {  
-        var url = o;
-        if (url.iO('#') && (url.iO('#') < url.length - 1)) { //if hash in URL
-            var $el = $('#' + url.split('#')[1]), offSet;
-            if ($el.length) offSet = $el.offset().top;
-            $.log("Offset: " + offSet);
-            if (offSet !== false) $(window).scrollTop(offSet); // ...animate
-        }
-    }
-});
-
-pO("hApi", 0, 0, function (o, p) {
-    if(!o) return;
-    if(p) currentURL = p;
 
     if(o === "=") history.replaceState({ url: currentURL }, "state-" + currentURL, currentURL);
     else history.pushState({ url: currentURL }, "state-" + currentURL, currentURL);
 });
 
-pO("pronto", { $gthis: 0 }, { selector: "a:not(.no-ajaxy)", prefetch: true, previewoff: true, cb: 0 }, function ($this, h) {
+pO("pronto", { $gthis: 0 }, { selector: "a:not(.no-ajaxy):not([target='_blank'])", prefetch: true, previewoff: true, cb: 0 }, function ($this, h) {
      if(!h) return;
      
-     if(h === "i") { 
-         var s = settings;
-         if(!$this.length) $.log("Warning - empty content selector passed!");
+     if(h === "i") {
          $gthis = $this;
-         $.cd(0, 0, s);
-         $.frms(0, 0, s);
-         $.slides(0, s);
-         $.rqTimer(0, s);
-         $.scroll(0, s);
-		 $.cd("i", $gthis);
+         $.cd(0, 0, settings);
+         $.frms(0, 0, settings);
+         $.slides(0, settings);
+         $.rqTimer(0, settings);
+         $.cd("i", $gthis);
          _init_p();
          return $this;
      }
@@ -863,18 +767,20 @@ pO("pronto", { $gthis: 0 }, { selector: "a:not(.no-ajaxy)", prefetch: true, prev
      }
      
      if(h.iO("/")) {
-         $.rq("h", h);				 
+         $.rq("h", h);
+         $.rq("m", true);				 
          _request(true);
      }
 }, { 
  init_p: function() {
-    $.hApi("=", window.location.href); // Set initial state
+    currentURL = window.location.href; // Capture current url & state
+    $.hApi("="); // Set initial state
     $(window).on("popstate", _onPop); // Set handler for popState
     if (prefetch) {
         $(selector).hoverIntent(_prefetch, function(){});
-        $(selector).on("touchend", _prefetch); // for touchscreens
+        $(selector).on("touchstart", _prefetch); // for touchscreens
     }
-    
+            
     var $body = $("body");
     $body.on("click.pronto", selector, _click); // Real click handler -> _click()
     $.frms("d", $body); // Select forms in whole body
@@ -882,46 +788,41 @@ pO("pronto", { $gthis: 0 }, { selector: "a:not(.no-ajaxy)", prefetch: true, prev
     $.frms("d", $gthis); // Every further pass - select forms in content div(s) only
     $.slides("i"); // Init slideshow
   }, 
- prefetch: function(e) { //...target page on hoverIntent
+ prefetch: function(e) { //...target page on hoverIntent or touchstart
        var link = $.rq("v", e); // validate internal URL
-       if ($.rq("=") || !link) return;
-       fn('+', link.href, function() {
-            if (previewoff === true) return(false);
+       if (!link || currentURL == link.href) return false;
+       fn('+', link.href, function () {
+            if (previewoff === true) return false;
             if (!_isInDivs(link) && (previewoff === false || !$(link).closest(previewoff).length)) _click(e, true);
        });
   },
  isInDivs: function(link) {
       var is = false;
-      $gthis.each(function() {
+      $gthis.each(function () {
           if ($(link).parents("#" + $(this).attr("id")).length > 0) is = true;
       });      
          
       return is;
   },
- stopBubbling: function(e) { // Stop "bubbling-up"
-      e.preventDefault();
-      e.stopPropagation();
-      e.stopImmediatePropagation();
- },
  click: function(e, mode) { //...handler for normal clicks
+      if(!$.rq("c", e)) return; // Central semaphore - prevents multiple _click()s
       var link = $.rq("v", e);  // validate internal URL
-      if(!link || _exoticKey(e)) return; // Ignore everything but normal click
-      if(_hashChange(link)) { // only hash has changed
-          $.scroll(link.href);
-          if(link.href.substr(-1) !=='#') currentURL = link.href;
-          $.hApi("="); 
-          return false;
+      $.rq("m", mode); // Mode variable -> "true" means don't jump on hash change
+      if (!link || _exoticKey(e)) return; // Ignore everything but normal click
+      if (_hashChange(link)) { // Only the hash part has changed
+          $.hApi("="); // Update state on hash change
+          return true;
       }
-      
-      _stopBubbling(e);
-      if($.rq("=")) $.hApi("=");
-      else _request(); // Continue with _request()
+      e.preventDefault(); // Stop normal click behaviour
+      e.stopPropagation(); // Stop "bubbling-up"
+           
+      _request(); // Continue with _request()
   }, 
  request: function(notPush) { // ... new url
       $.rq("p", !notPush); // mode for hApi - replaceState / pushState
       _trigger("request"); // Fire request event
       $.rq("s"); // Set "same" variable
-      fn($.rq("h"), function(err) { // Call "fn" - handler of parent
+      fn($.rq("h"), function (err) { // Call "fn" - handler of parent
           if (err) { 
               $.log('Error in _request : ' + err); 
               _trigger("error", err); 
@@ -936,13 +837,13 @@ pO("pronto", { $gthis: 0 }, { selector: "a:not(.no-ajaxy)", prefetch: true, prev
       $.rqTimer(function() { $.cd("1", _doRender); }); // Set.  Animate to
   },
  onPop: function(e) { // Handle back/forward navigation
-      $.rq("i"); //Initialise request in general
-      $.rq("e", e); //Initialise request event
+      $.rq("i");
+      $.rq("e", e);
             
       var data = e.originalEvent.state, url = data ? data.url : 0;
            
       if (!url || url === currentURL) return;  // Check if data exists
-      $.rq("s", url); // Set "same" variable
+      $.rq("s", url);
       _trigger("request"); // Fire request event
       fn(url, _render); // Call "fn" - handler of parent, continue with _render()
   },
@@ -951,7 +852,6 @@ pO("pronto", { $gthis: 0 }, { selector: "a:not(.no-ajaxy)", prefetch: true, prev
       $.rq("can", fn('-', $gthis)); // Update DOM and fetch canonical URL
       $('title').html(fn('title').html()); // Update title
       $.cd("2", _doRender2); // Animate back - continue with _doRender2()
-      $.slides("f"); // Finalise slideshow
   },
  doRender2: function() { // Continue render
       var e = $.rq("e"), // Fetch event 
@@ -959,23 +859,30 @@ pO("pronto", { $gthis: 0 }, { selector: "a:not(.no-ajaxy)", prefetch: true, prev
       url = $.rq("can?", url); // Fetch canonical if no hash or parameters in URL
       $.frms("a"); // Ajaxify forms - in content divs only
            
-      $.hApi($.rq("p") ? "+" : "=", url); // Push new state to the stack on new url
-      $.scroll(url);
+      _scroll2id(url);
+      currentURL = url;
+      $.hApi($.rq("p") ? "+" : "="); // Push new state to the stack on new url
       _gaCaptureView(url); // Trigger analytics page view
       _trigger("render"); // Fire render event
       if(cb) cb(); // Callback user's handler, if specified
   },
+ scroll2id: function(url) { //If hash in URL and hash not standalone at the end, 
+      if (url.iO('#') && (url.iO('#') < url.length - 1) && !$.rq("m")) { 
+          var $el = $('#' + url.split('#')[1]), scrollTop;
+          if ($el.length) scrollTop = $el.offset().top;
+          if (scrollTop !== false) $(window).scrollTop(scrollTop); // ...animate
+      }
+  },
  gaCaptureView: function(url) { // Google Analytics support
       url = '/' + url.replace(rootUrl,'');
-      if (typeof window.ga !== 'undefined') window.ga('send', 'pageview', url); // the new analytics API
-      else if (typeof window._gaq !== 'undefined') window._gaq.push(['_trackPageview', url]);  // the old API					
+      if (typeof window.ga !== 'undefined') window.ga('send', 'pageview', url);
   },
  exoticKey: function(e) {
-      return (e.which > 1 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.currentTarget.target === "_blank");
+      return (e.which > 1 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey);
   },
- hashChange: function(link) { // only hash has changed
+ hashChange: function(link) {
       return (link.hash && link.href.replace(link.hash, '') === window.location.href.replace(location.hash, '') || link.href === window.location.href + '#');
   }
 });
 
-var fn = jQuery.getPage; //fn is passed to Pronto as a jQuery sub-plugin, that is a callback
+jQuery.log("Ajaxify loaded...", {verbosity: 2});

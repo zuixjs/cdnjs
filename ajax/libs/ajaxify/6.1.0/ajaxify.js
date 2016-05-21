@@ -162,31 +162,16 @@ pO("memory", { d: false }, { memoryoff: false }, function (h) {
 // 1) $.pages(<URL>) - returns page with specified URL from internal array
 // 2) $.pages(<jQuery object>) - saves the passed page in internal array
 // 3) $.pages(false) - returns false
-pO("pages", { d: [], i: -1 }, 0, function (h) {
+pO("pages", { d: [] }, 0, function (h) {
     if (typeof h === "string") {
         if(h === "f") d = [];
-        else { 
-            i = _iPage(h);
-            if(i === -1) return;
-            return d[i][1];
-        }
+        else for (var i = 0; i < d.length; i++)
+            if (d[i][0] == h) return d[i][1];
     }
 	
-    if (typeof h === "object") {
-        i = _iPage(h[0]);
-        if(i === -1) d.push(h);
-        else d[i] = h;
-    }
-	
+    if (typeof h === "object") d.push(h);
     if (typeof h === "boolean") return false;
-}, {
-    iPage: function (h) { //get index of page, -1 if not found
-        for (var i = 0; i < d.length; i++)
-            if (d[i][0] == h) return i;
-        return -1;
-    }
-}
-);
+});
 
 // The GetPage plugin
 // First parameter is a switch: 
@@ -368,7 +353,7 @@ pO("scripts", { $s : false }, { canonical: true, inline: true, inlinehints: fals
     addtext: function (t, type) {
         if(!t || !t.length) return;
         if(!type) type = 'text/javascript';
-        if(inlineappend || !type.iO('text/javascript')) try { return _apptext(t, type); } catch (e) { $.log("Error in apptext: " + t + "\nType: " + type + "\nCode: " + console.debug(e)); }
+        if(inlineappend || !type.iO('text/javascript')) try { return _apptext(t, type); } catch (e) { $.log("Error in apptext: " + t); }
         
         try { $.globalEval(t); } catch (e1) {
 	        try { eval(t); } catch (e2) {
@@ -377,11 +362,10 @@ pO("scripts", { $s : false }, { canonical: true, inline: true, inlinehints: fals
         }
     },
     apptext: function (t, type) { 
-        var scriptNode = document.createElement('script'), $cd0 = $.cd("g").get(0);
+        var scriptNode = document.createElement('script');
         scriptNode.type = type;
         scriptNode.appendChild(document.createTextNode(t));
-        $.log(t);
-        $cd0.appendChild(scriptNode);
+        $.cd("g").append(scriptNode);
     },
     addstyle: function (t) {
         $("head").append('<style type="text/css">' + t + '</style>');
@@ -652,7 +636,7 @@ pO("slides", { pinned: 0, img: 0, timer: -1, currEl: 0, parentEl: 0}, { idleTime
     }
 });
 
-pO("rq", { ispost: 0, data: 0, same: 0, push: 0, can: 0, e: 0, l: 0, h: 0}, 0, function (o, p) {
+pO("rq", { ispost: 0, data: 0, same: 0, sema: 0, mode: 0, push: 0, can: 0, e: 0, l: 0, h: 0}, 0, function (o, p) {
     if(o === "=") {
         return h === currentURL; 
     }
@@ -663,6 +647,7 @@ pO("rq", { ispost: 0, data: 0, same: 0, push: 0, can: 0, e: 0, l: 0, h: 0}, 0, f
         l = e.currentTarget;
         h = l.href;
         if(!_internal(h)) return false;
+        //Todo - update memory with $(window).scrollTop()
         o = "i";
     }
     
@@ -670,6 +655,7 @@ pO("rq", { ispost: 0, data: 0, same: 0, push: 0, can: 0, e: 0, l: 0, h: 0}, 0, f
         ispost = false;
         data = null;
         same = false;
+        mode = false;
         push = false;
         return l;
     }
@@ -687,6 +673,11 @@ pO("rq", { ispost: 0, data: 0, same: 0, push: 0, can: 0, e: 0, l: 0, h: 0}, 0, f
     if(o === "e") {
         if(p) e = p;
         return e ? e : h; // Return "e" or if not given "h"
+    }
+    
+    if(o === "m") {
+        if(p) mode = p;
+        return mode;
     }
 
     if(o === "p") {
@@ -786,51 +777,6 @@ pO("rqTimer", { requestTimer: 0 }, { requestDelay: 0 }, function (o) {
     if(typeof(o) === 'function') requestTimer = setTimeout(o, requestDelay);
 });
 
-// The stateful Offsets plugin
-// Usage: 
-// 1) $.offsets(<URL>) - returns offset with specified URL from internal array
-// 2) $.offsets() - saves the current URL + offset in internal array
-pO("offsets", { d: [], i: -1 }, 0, function (h) {
-    if (typeof h === "string") {
-        i = _iOffset(h);
-        if(i === -1) return;
-        return d[i][1];
-    }
-	
-    var os = [currentURL, $(window).scrollTop()];
-    i = _iOffset(currentURL);
-    if(i === -1) d.push(os);
-    else d[i] = os;
-}, {
-  iOffset: function (h) { //get index of page, -1 if not found
-        for (var i = 0; i < d.length; i++)
-            if (d[i][0] == h) return i;
-        return -1;
-    }
-}
-);
-
-pO("scroll", 0, { scrolltop: false }, function (o) {
-    if(!o) return;
-  
-    if(scrolltop === "s") {
-        if(o === "+") $.offsets();
-        else $(window).scrollTop($.offsets(o));
-        return;
-    }
-
-    if(scrolltop) $(window).scrollTop(0);
-    else {  
-        var url = o;
-        if (url.iO('#') && (url.iO('#') < url.length - 1)) { //if hash in URL
-            var $el = $('#' + url.split('#')[1]), offSet;
-            if ($el.length) offSet = $el.offset().top;
-            $.log("Offset: " + offSet);
-            if (offSet !== false) $(window).scrollTop(offSet); // ...animate
-        }
-    }
-});
-
 pO("hApi", 0, 0, function (o, p) {
     if(!o) return;
     if(p) currentURL = p;
@@ -839,19 +785,17 @@ pO("hApi", 0, 0, function (o, p) {
     else history.pushState({ url: currentURL }, "state-" + currentURL, currentURL);
 });
 
-pO("pronto", { $gthis: 0 }, { selector: "a:not(.no-ajaxy)", prefetch: true, previewoff: true, cb: 0 }, function ($this, h) {
+pO("pronto", { $gthis: 0 }, { selector: "a:not(.no-ajaxy)", prefetch: true, previewoff: true, scrolltop: false, cb: 0 }, function ($this, h) {
      if(!h) return;
      
      if(h === "i") { 
-         var s = settings;
          if(!$this.length) $.log("Warning - empty content selector passed!");
          $gthis = $this;
-         $.cd(0, 0, s);
-         $.frms(0, 0, s);
-         $.slides(0, s);
-         $.rqTimer(0, s);
-         $.scroll(0, s);
-		 $.cd("i", $gthis);
+         $.cd(0, 0, settings);
+         $.frms(0, 0, settings);
+         $.slides(0, settings);
+         $.rqTimer(0, settings);
+         $.cd("i", $gthis);
          _init_p();
          return $this;
      }
@@ -863,7 +807,8 @@ pO("pronto", { $gthis: 0 }, { selector: "a:not(.no-ajaxy)", prefetch: true, prev
      }
      
      if(h.iO("/")) {
-         $.rq("h", h);				 
+         $.rq("h", h);
+         $.rq("m", true);				 
          _request(true);
      }
 }, { 
@@ -906,11 +851,11 @@ pO("pronto", { $gthis: 0 }, { selector: "a:not(.no-ajaxy)", prefetch: true, prev
  click: function(e, mode) { //...handler for normal clicks
       var link = $.rq("v", e);  // validate internal URL
       if(!link || _exoticKey(e)) return; // Ignore everything but normal click
-      if(_hashChange(link)) { // only hash has changed
-          $.scroll(link.href);
+      if(_hashChange(link)) {
+          _scroll2id(link.href);
           if(link.href.substr(-1) !=='#') currentURL = link.href;
-          $.hApi("="); 
-          return false;
+          $.hApi("=");
+          return true;
       }
       
       _stopBubbling(e);
@@ -959,11 +904,19 @@ pO("pronto", { $gthis: 0 }, { selector: "a:not(.no-ajaxy)", prefetch: true, prev
       url = $.rq("can?", url); // Fetch canonical if no hash or parameters in URL
       $.frms("a"); // Ajaxify forms - in content divs only
            
+      _scroll2id(url);
       $.hApi($.rq("p") ? "+" : "=", url); // Push new state to the stack on new url
-      $.scroll(url);
       _gaCaptureView(url); // Trigger analytics page view
       _trigger("render"); // Fire render event
       if(cb) cb(); // Callback user's handler, if specified
+  },
+ scroll2id: function(url) { //If hash in URL and hash not standalone at the end or scrolltop set, 
+      if(scrolltop) $(window).scrollTop(0); //always scroll to top
+      else if (url.iO('#') && (url.iO('#') < url.length - 1) && !$.rq("m")) { //if hash in URL
+          var $el = $('#' + url.split('#')[1]), offSet;
+          if ($el.length) offSet = $el.offset().top;
+          if (offSet !== false) $(window).scrollTop(offSet); // ...animate
+      }
   },
  gaCaptureView: function(url) { // Google Analytics support
       url = '/' + url.replace(rootUrl,'');
@@ -973,7 +926,7 @@ pO("pronto", { $gthis: 0 }, { selector: "a:not(.no-ajaxy)", prefetch: true, prev
  exoticKey: function(e) {
       return (e.which > 1 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.currentTarget.target === "_blank");
   },
- hashChange: function(link) { // only hash has changed
+ hashChange: function(link) {
       return (link.hash && link.href.replace(link.hash, '') === window.location.href.replace(location.hash, '') || link.href === window.location.href + '#');
   }
 });

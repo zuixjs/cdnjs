@@ -48,7 +48,7 @@ Options default values
     prefetch : true, // Plugin pre-fetches pages on hoverIntent or touchstart
  
 // debugging & advanced settings
-    verbosity : 0,  //Debugging level to console: default off.  Can be set to 10 and higher (in case of logging enabled) 
+    verbosity : 0,  //Debugging level to console: 1 = medium, 2 = verbose
     memoryoff : false, // strings - separated by ", " - if matched in any URLs - only these are NOT executed - set to "true" to disable memory completely
     cb : null, // callback handler on completion of each Ajax request - default null
     pluginon : true // Plugin set "on" or "off" (==false) manually
@@ -84,7 +84,7 @@ String.prototype.iO = function(s) { return this.toString().indexOf(s) + 1; };
 (function(a){a.fn.hoverIntent=function(w,e,b){var j={interval:100,sensitivity:7,timeout:0};if(typeof w==="object"){j=a.extend(j,w);}else{if(a.isFunction(e)){j=a.extend(j,{over:w,out:e,selector:b});}else{j=a.extend(j,{over:w,out:w,selector:e});}}var x,d,v,q;var m=function(c){x=c.pageX;d=c.pageY;};var g=function(c,f){f.hoverIntent_t=clearTimeout(f.hoverIntent_t);if(Math.abs(v-x)+Math.abs(q-d)<j.sensitivity){a(f).off("mousemove.hoverIntent",m);f.hoverIntent_s=1;return j.over.apply(f,[c]);}else{v=x;q=d;f.hoverIntent_t=setTimeout(function(){g(c,f);},j.interval);}};var p=function(f,c){c.hoverIntent_t=clearTimeout(c.hoverIntent_t);c.hoverIntent_s=0;return j.out.apply(c,[f]);};var k=function(c){var h=jQuery.extend({},c);var f=this;if(f.hoverIntent_t){f.hoverIntent_t=clearTimeout(f.hoverIntent_t);}if(c.type=="mouseenter"){v=h.pageX;q=h.pageY;a(f).on("mousemove.hoverIntent",m);if(f.hoverIntent_s!=1){f.hoverIntent_t=setTimeout(function(){g(h,f);},j.interval);}}else{a(f).off("mousemove.hoverIntent",m);if(f.hoverIntent_s==1){f.hoverIntent_t=setTimeout(function(){p(h,f);},j.timeout);}}};return this.on({"mouseenter.hoverIntent":k,"mouseleave.hoverIntent":k},j.selector);};})(jQuery);
 
 //Minified idle plugin
-!function(n){"use strict";n.fn.idle=function(e){var t,o,i={idle:6e4,events:"mousemove keydown mousedown touchstart",onIdle:function(){},onActive:function(){}},u=!1,c=n.extend({},i,e),l=null;return n(this).on("idle:kick",{},function(n){l=o(c)}),t=function(n,e){return u&&(e.onActive.call(),u=!1),clearTimeout(n),o(e)},o=function(n){var e,t=setTimeout;return e=t(function(){u=!0,n.onIdle.call()},n.idle)},this.each(function(){l=o(c),n(this).on(c.events,function(n){l=t(l,c)})})}}(jQuery);
+!function(n){"use strict";n.fn.idle=function(e){var t,o,i={idle:6e4,events:"mousemove keydown mousedown touchstart",onIdle:function(){},onActive:function(){}},u=!1,c=n.extend({},i,e),l=null;return n(this).on("idle:kick",{},function(){l=o(c)}),t=function(n,e){return u&&(e.onActive.call(),u=!1),clearTimeout(n),o(e)},o=function(n){var e,t=setTimeout;return e=t(function(){u=!0,n.onIdle.call()},n.idle)},this.each(function(){l=o(c),n(this).on(c.events,function(){l=t(l,c)})})}}(jQuery);
 
 //Module global variables
 var lvl = 0, pass = 0, currentURL = '', rootUrl = getRootUrl(), api = window.history && window.history.pushState && window.history.replaceState,
@@ -162,31 +162,16 @@ pO("memory", { d: false }, { memoryoff: false }, function (h) {
 // 1) $.pages(<URL>) - returns page with specified URL from internal array
 // 2) $.pages(<jQuery object>) - saves the passed page in internal array
 // 3) $.pages(false) - returns false
-pO("pages", { d: [], i: -1 }, 0, function (h) {
+pO("pages", { d: [] }, 0, function (h) {
     if (typeof h === "string") {
         if(h === "f") d = [];
-        else { 
-            i = _iPage(h);
-            if(i === -1) return;
-            return d[i][1];
-        }
+        else for (var i = 0; i < d.length; i++)
+            if (d[i][0] == h) return d[i][1];
     }
 	
-    if (typeof h === "object") {
-        i = _iPage(h[0]);
-        if(i === -1) d.push(h);
-        else d[i] = h;
-    }
-	
+    if (typeof h === "object") d.push(h);
     if (typeof h === "boolean") return false;
-}, {
-    iPage: function (h) { //get index of page, -1 if not found
-        for (var i = 0; i < d.length; i++)
-            if (d[i][0] == h) return i;
-        return -1;
-    }
-}
-);
+});
 
 // The GetPage plugin
 // First parameter is a switch: 
@@ -296,6 +281,8 @@ pO("getPage", { xhr: 0, cb: 0, plus: 0 }, 0, function (o, p, p2) {
 // Checks for necessary pre-conditions - otherwise gracefully degrades
 // Initialises sub-plugins
 // Calls Pronto
+var fn = jQuery.getPage; //fn is passed to Pronto as a jQuery sub-plugin, that is a callback
+
 pO("ajaxify", 0, { pluginon: true, deltas: true, verbosity: 0 }, function ($this, options) {
     var o = options;
     if(!o || typeof(o) !== 'string') {
@@ -368,7 +355,7 @@ pO("scripts", { $s : false }, { canonical: true, inline: true, inlinehints: fals
     addtext: function (t, type) {
         if(!t || !t.length) return;
         if(!type) type = 'text/javascript';
-        if(inlineappend || !type.iO('text/javascript')) try { return _apptext(t, type); } catch (e) { $.log("Error in apptext: " + t + "\nType: " + type + "\nCode: " + console.debug(e)); }
+        if(inlineappend || !type.iO('text/javascript')) try { return _apptext(t, type); } catch (e) { $.log("Error in apptext: " + t); }
         
         try { $.globalEval(t); } catch (e1) {
 	        try { eval(t); } catch (e2) {
@@ -377,11 +364,10 @@ pO("scripts", { $s : false }, { canonical: true, inline: true, inlinehints: fals
         }
     },
     apptext: function (t, type) { 
-        var scriptNode = document.createElement('script'), $cd0 = $.cd("g").get(0);
+        var scriptNode = document.createElement('script');
         scriptNode.type = type;
         scriptNode.appendChild(document.createTextNode(t));
-        $.log(t);
-        $cd0.appendChild(scriptNode);
+        $.cd("g").append(scriptNode);
     },
     addstyle: function (t) {
         $("head").append('<style type="text/css">' + t + '</style>');
@@ -427,7 +413,7 @@ pO("detScripts", { head: 0, lk: 0, j: 0 }, 0, function ($s) {
     $s.t = j.filter(function() {return(!($(this).attr("src")));});
     }, {
     rel: function(lk, v) {
-        return $(lk).filter(function(){return($(this).attr("rel").iO(v));});
+        return($(lk).filter(function(){return($(this).attr("rel").iO(v));}));
     }
     }
 );
@@ -560,9 +546,11 @@ pO("cd", { cd: 0, aniTrue: 0, from: 0, cdwidth: 0 }, { aniParams: false, aniTime
 });
 
 pO("slides", { pinned: 0, img: 0, timer: -1, currEl: 0, parentEl: 0}, { idleTime: 0, slideTime: 0, menu: false, addclass: "jqhover", toggleSlide: false }, function (o) {
-    if(!o || !idleTime) return;
+    if(!o) return;
 	
     if (o === "i") { 
+        if(!idleTime) return;
+			
         $(document).idle({ onIdle: _onIdle, onActive: _onActive, idle: idleTime });
         
         if(toggleSlide) toggleSlide = $.extend({ //defaults - if not turned off completely
@@ -591,8 +579,7 @@ pO("slides", { pinned: 0, img: 0, timer: -1, currEl: 0, parentEl: 0}, { idleTime
         timer = -1;
     },
     slide: function() { 
-        if(timer + 1) clearInterval(timer);
-		timer = setInterval(_slide1, slideTime); 
+        timer = setInterval(_slide1, slideTime); 
     },
     slide1: function() { 
         if(pinned) return;
@@ -631,7 +618,7 @@ pO("slides", { pinned: 0, img: 0, timer: -1, currEl: 0, parentEl: 0}, { idleTime
         img.click(_toggleImg);
         pinned = 0;
     },
-    toggleImg: function(e) {
+    toggleImg: function() {
         if(!parentEl || !img || !img.length) return;
         var src = toggleSlide.imgOn, titl = toggleSlide.titleOn;
         
@@ -646,13 +633,14 @@ pO("slides", { pinned: 0, img: 0, timer: -1, currEl: 0, parentEl: 0}, { idleTime
         
         if(!pinned) { //Kickstart in idle sub-plugin after user resumes 
             _slide1();
-            _slide();
-             $(document).trigger("idle:kick");
-		}
+            //if(timer + 1) clearInterval(timer);
+            //timer = -1;
+            $(document).trigger("idle:kick");
+        }
     }
 });
 
-pO("rq", { ispost: 0, data: 0, same: 0, push: 0, can: 0, e: 0, l: 0, h: 0}, 0, function (o, p) {
+pO("rq", { ispost: 0, data: 0, same: 0, sema: 0, mode: 0, push: 0, can: 0, e: 0, l: 0, h: 0}, 0, function (o, p) {
     if(o === "=") {
         return h === currentURL; 
     }
@@ -670,6 +658,7 @@ pO("rq", { ispost: 0, data: 0, same: 0, push: 0, can: 0, e: 0, l: 0, h: 0}, 0, f
         ispost = false;
         data = null;
         same = false;
+        mode = false;
         push = false;
         return l;
     }
@@ -687,6 +676,11 @@ pO("rq", { ispost: 0, data: 0, same: 0, push: 0, can: 0, e: 0, l: 0, h: 0}, 0, f
     if(o === "e") {
         if(p) e = p;
         return e ? e : h; // Return "e" or if not given "h"
+    }
+    
+    if(o === "m") {
+        if(p) mode = p;
+        return mode;
     }
 
     if(o === "p") {
@@ -786,51 +780,6 @@ pO("rqTimer", { requestTimer: 0 }, { requestDelay: 0 }, function (o) {
     if(typeof(o) === 'function') requestTimer = setTimeout(o, requestDelay);
 });
 
-// The stateful Offsets plugin
-// Usage: 
-// 1) $.offsets(<URL>) - returns offset with specified URL from internal array
-// 2) $.offsets() - saves the current URL + offset in internal array
-pO("offsets", { d: [], i: -1 }, 0, function (h) {
-    if (typeof h === "string") {
-        i = _iOffset(h);
-        if(i === -1) return;
-        return d[i][1];
-    }
-	
-    var os = [currentURL, $(window).scrollTop()];
-    i = _iOffset(currentURL);
-    if(i === -1) d.push(os);
-    else d[i] = os;
-}, {
-  iOffset: function (h) { //get index of page, -1 if not found
-        for (var i = 0; i < d.length; i++)
-            if (d[i][0] == h) return i;
-        return -1;
-    }
-}
-);
-
-pO("scroll", 0, { scrolltop: false }, function (o) {
-    if(!o) return;
-  
-    if(scrolltop === "s") {
-        if(o === "+") $.offsets();
-        else $(window).scrollTop($.offsets(o));
-        return;
-    }
-
-    if(scrolltop) $(window).scrollTop(0);
-    else {  
-        var url = o;
-        if (url.iO('#') && (url.iO('#') < url.length - 1)) { //if hash in URL
-            var $el = $('#' + url.split('#')[1]), offSet;
-            if ($el.length) offSet = $el.offset().top;
-            $.log("Offset: " + offSet);
-            if (offSet !== false) $(window).scrollTop(offSet); // ...animate
-        }
-    }
-});
-
 pO("hApi", 0, 0, function (o, p) {
     if(!o) return;
     if(p) currentURL = p;
@@ -839,19 +788,17 @@ pO("hApi", 0, 0, function (o, p) {
     else history.pushState({ url: currentURL }, "state-" + currentURL, currentURL);
 });
 
-pO("pronto", { $gthis: 0 }, { selector: "a:not(.no-ajaxy)", prefetch: true, previewoff: true, cb: 0 }, function ($this, h) {
+pO("pronto", { $gthis: 0 }, { selector: "a:not(.no-ajaxy)", prefetch: true, previewoff: true, scrolltop: false, cb: 0 }, function ($this, h) {
      if(!h) return;
      
      if(h === "i") { 
-         var s = settings;
          if(!$this.length) $.log("Warning - empty content selector passed!");
          $gthis = $this;
-         $.cd(0, 0, s);
-         $.frms(0, 0, s);
-         $.slides(0, s);
-         $.rqTimer(0, s);
-         $.scroll(0, s);
-		 $.cd("i", $gthis);
+         $.cd(0, 0, settings);
+         $.frms(0, 0, settings);
+         $.slides(0, settings);
+         $.rqTimer(0, settings);
+         $.cd("i", $gthis);
          _init_p();
          return $this;
      }
@@ -863,7 +810,8 @@ pO("pronto", { $gthis: 0 }, { selector: "a:not(.no-ajaxy)", prefetch: true, prev
      }
      
      if(h.iO("/")) {
-         $.rq("h", h);				 
+         $.rq("h", h);
+         $.rq("m", true);				 
          _request(true);
      }
 }, { 
@@ -872,9 +820,9 @@ pO("pronto", { $gthis: 0 }, { selector: "a:not(.no-ajaxy)", prefetch: true, prev
     $(window).on("popstate", _onPop); // Set handler for popState
     if (prefetch) {
         $(selector).hoverIntent(_prefetch, function(){});
-        $(selector).on("touchend", _prefetch); // for touchscreens
+        $(selector).on("touchstart", _prefetch); // for touchscreens
     }
-    
+            
     var $body = $("body");
     $body.on("click.pronto", selector, _click); // Real click handler -> _click()
     $.frms("d", $body); // Select forms in whole body
@@ -882,9 +830,9 @@ pO("pronto", { $gthis: 0 }, { selector: "a:not(.no-ajaxy)", prefetch: true, prev
     $.frms("d", $gthis); // Every further pass - select forms in content div(s) only
     $.slides("i"); // Init slideshow
   }, 
- prefetch: function(e) { //...target page on hoverIntent
+ prefetch: function(e) { //...target page on hoverIntent or touchstart
        var link = $.rq("v", e); // validate internal URL
-       if ($.rq("=") || !link) return;
+       if ($.rq("=") || !link) return false;
        fn('+', link.href, function() {
             if (previewoff === true) return(false);
             if (!_isInDivs(link) && (previewoff === false || !$(link).closest(previewoff).length)) _click(e, true);
@@ -906,11 +854,11 @@ pO("pronto", { $gthis: 0 }, { selector: "a:not(.no-ajaxy)", prefetch: true, prev
  click: function(e, mode) { //...handler for normal clicks
       var link = $.rq("v", e);  // validate internal URL
       if(!link || _exoticKey(e)) return; // Ignore everything but normal click
-      if(_hashChange(link)) { // only hash has changed
-          $.scroll(link.href);
+      if(_hashChange(link)) {
+          _scroll2id(link.href);
           if(link.href.substr(-1) !=='#') currentURL = link.href;
-          $.hApi("="); 
-          return false;
+          $.hApi("=");
+          return true;
       }
       
       _stopBubbling(e);
@@ -959,11 +907,19 @@ pO("pronto", { $gthis: 0 }, { selector: "a:not(.no-ajaxy)", prefetch: true, prev
       url = $.rq("can?", url); // Fetch canonical if no hash or parameters in URL
       $.frms("a"); // Ajaxify forms - in content divs only
            
+      _scroll2id(url);
       $.hApi($.rq("p") ? "+" : "=", url); // Push new state to the stack on new url
-      $.scroll(url);
       _gaCaptureView(url); // Trigger analytics page view
       _trigger("render"); // Fire render event
       if(cb) cb(); // Callback user's handler, if specified
+  },
+ scroll2id: function(url) { //If hash in URL and hash not standalone at the end or scrolltop set, 
+      if(scrolltop) $(window).scrollTop(0); //always scroll to top
+      else if (url.iO('#') && (url.iO('#') < url.length - 1) && !$.rq("m")) { //if hash in URL
+          var $el = $('#' + url.split('#')[1]), offSet;
+          if ($el.length) offSet = $el.offset().top;
+          if (offSet !== false) $(window).scrollTop(offSet); // ...animate
+      }
   },
  gaCaptureView: function(url) { // Google Analytics support
       url = '/' + url.replace(rootUrl,'');
@@ -973,9 +929,7 @@ pO("pronto", { $gthis: 0 }, { selector: "a:not(.no-ajaxy)", prefetch: true, prev
  exoticKey: function(e) {
       return (e.which > 1 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.currentTarget.target === "_blank");
   },
- hashChange: function(link) { // only hash has changed
+ hashChange: function(link) {
       return (link.hash && link.href.replace(link.hash, '') === window.location.href.replace(location.hash, '') || link.href === window.location.href + '#');
   }
 });
-
-var fn = jQuery.getPage; //fn is passed to Pronto as a jQuery sub-plugin, that is a callback
