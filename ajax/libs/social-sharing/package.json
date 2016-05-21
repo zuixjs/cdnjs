@@ -15,9 +15,9 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/cferdinandi/social-sharing.git",
-    "basePath": "",
+    "basePath": "dist",
     "files": [
-      "css/**/*"
+      "**/*"
     ]
   }
 }
