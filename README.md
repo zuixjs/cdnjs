@@ -14,7 +14,7 @@
 
 Here are the project sponsors:
 
- * [![Cloudflare](https://cdnjs.com/img/poweredbycloudflare.png)](https://www.cloudflare.com/?utm_source=cdnjs&utm_medium=link&utm_campaign=cdnjs)
+ * [![Cloudflare](https://cdnjs.com/img/poweredbycloudflare.png)](https://cloudflare.com/?utm_source=cdnjs&utm_medium=link&utm_campaign=cdnjs)
  * [![Algolia](https://cdnjs.com/img/algolia256x80.png)](https://www.algolia.com/?utm_source=cdnjs&utm_medium=link&utm_campaign=cdnjs)
 
 cdnjs will host any production version of any JavaScript/CSS library, subject to license permissions.
