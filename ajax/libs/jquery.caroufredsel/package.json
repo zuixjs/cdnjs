@@ -8,5 +8,9 @@
     "carousel",
     "responsive",
     "jquery"
+  ],
+  "licenses": [
+    "MIT",
+    "GPL-2.0"
   ]
 }
