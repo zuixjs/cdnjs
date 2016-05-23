@@ -12,5 +12,9 @@
   "licenses": [
     "MIT",
     "GPL-2.0"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gilbitron/carouFredSel.git"
+  }
 }
