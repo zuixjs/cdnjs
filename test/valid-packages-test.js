@@ -217,7 +217,7 @@ packages.map(function (pkg) {
 
     package_vows[pname + ": format check"] = function (pkg) {
         var orig = fs.readFileSync(pkg, 'utf8'),
-            correct = JSON.stringify(orig, null, 2) + '\n',
+            correct = JSON.stringify(JSON.parse(orig), null, 2) + '\n',
             content = JSON.parse(correct);
         if (content.version === undefined) {
           return;
