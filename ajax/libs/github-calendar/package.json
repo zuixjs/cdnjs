@@ -1,6 +1,6 @@
 {
   "name": "github-calendar",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "filename": "github-calendar.min.js",
   "description": "Embed your GitHub contributions calendar anywhere.",
   "repository": {
