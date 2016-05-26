@@ -20,7 +20,7 @@
     "target": "git://github.com/vuejs/vue-resource.git",
     "basePath": "dist",
     "files": [
-      "*"
+      "**/*"
     ]
   }
 }
