@@ -1,7 +1,7 @@
 {
   "name": "lrsjng.jquery-qrcode",
   "version": "0.13.4",
-  "filename": "jquery.qrcode.min.js",
+  "filename": "jquery-qrcode.min.js",
   "description": "generate QR codes dynamically",
   "homepage": "http://larsjung.de/jquery-qrcode/",
   "author": "Lars Jung <lrsjng@gmail.com> (http://larsjung.de)",
@@ -15,7 +15,7 @@
     "target": "git://github.com/lrsjng/jquery-qrcode.git",
     "basePath": "dist",
     "files": [
-      "*"
+      "**/*"
     ]
   }
 }
