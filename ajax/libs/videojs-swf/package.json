@@ -15,12 +15,13 @@
     "type": "git",
     "url": "https://github.com/videojs/video-js-swf.git"
   },
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/videojs/video-js-swf.git",
-    "basePath": "dist",
-    "files": [
-      "**/!(*.+(old|orig))"
-    ]
-  }
+  "npmName": "videojs-swf",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/!(*.+(old|orig))"
+      ]
+    }
+  ]
 }
