@@ -9,6 +9,13 @@
     "url": "https://github.com/ternjs/acorn.git"
   },
   "license": "MIT",
+  "keywords": [
+    "acorn",
+    "javascript",
+    "parser",
+    "ECMAScript",
+    "Escodegen"
+  ],
   "npmName": "acorn",
   "npmFileMap": [
     {
