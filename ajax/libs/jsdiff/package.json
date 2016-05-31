@@ -1,6 +1,6 @@
 {
   "name": "jsdiff",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "filename": "diff.min.js",
   "description": "A javascript text diff implementation.",
   "keywords": [
