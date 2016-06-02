@@ -20,19 +20,19 @@
     "execSync": "^1.0",
     "fs-extra": "^0.30.0",
     "glob": "^7",
-    "is-there": "4.3.2",
+    "is-there": "4.3.3",
     "lodash": "^4.12",
     "rss": "^1.2",
     "semver": "^5.1.0",
     "semver-stable": "^2.0.4",
-    "superagent": "^1.8.3",
+    "superagent": "^2.0.0",
     "tarball-extract": "^0.0.3",
     "uglify-js": "^2.6.2",
     "underscore": "^1.8.3"
   },
   "devDependencies": {
     "JSV": "^4.0.2",
-    "jslint": "^0.9.6",
+    "jslint": "^0.10.1",
     "vows-si": "^0.7.1"
   },
   "engines": {
