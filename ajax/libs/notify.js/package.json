@@ -18,9 +18,9 @@
   "npmName": "notifyjs",
   "npmFileMap": [
     {
-      "basePath": "",
+      "basePath": "dist",
       "files": [
-        "notify*"
+        "**/*"
       ]
     }
   ]
