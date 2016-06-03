@@ -12,7 +12,7 @@ node_modules/
 
 # folders need to be ingored due to auto auto-update mechanism
 ajax/libs/juicer/0.5.*-stable
-ajax/libs/juicer/0.6.*-stable
+ajax/libs/juicer/0.6.*-stable*
 ajax/libs/jsmediatags/delete/
 ajax/libs/jsmediatags/.3.2.0/
 ajax/libs/ionic-framework/2.0.0-alpha.2.0.0-alpha.50/
