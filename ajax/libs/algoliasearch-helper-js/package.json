@@ -12,6 +12,15 @@
     "type": "git",
     "url": "https://github.com/algolia/algoliasearch-helper-js.git"
   },
+  "keywords": [
+    "js",
+    "algolia",
+    "search",
+    "helper",
+    "facets",
+    "api",
+    "rest"
+  ],
   "dependencies": {
     "lodash": "^3.10.1",
     "lodash-compat": "^3.10.1",
