@@ -4,7 +4,7 @@
   "version": "3.1.1",
   "author": "bryanbraun (https://github.com/bryanbraun)",
   "description": "A Javscript utility for adding deep anchor links to online docs.",
-  "homepage": "https://github.com/bryanbraun/anchorjs",
+  "homepage": "https://bryanbraun.github.io/anchorjs/",
   "keywords": [
     "anchor",
     "utility",
