@@ -2,7 +2,7 @@
   "name": "x-tag",
   "filename": "x-tag-core.min.js",
   "description": "The X-Tag core library",
-  "version": "1.5.9",
+  "version": "1.5.10",
   "author": "Daniel Buchner",
   "keywords": [
     "x-tag",
