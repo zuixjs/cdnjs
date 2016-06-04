@@ -5,6 +5,11 @@
   "author": "bryanbraun (https://github.com/bryanbraun)",
   "description": "A Javscript utility for adding deep anchor links to online docs.",
   "homepage": "https://github.com/bryanbraun/anchorjs",
+  "keywords": [
+    "anchor",
+    "utility",
+    "javascript"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/bryanbraun/anchorjs.git"
