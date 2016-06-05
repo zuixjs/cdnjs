@@ -83,74 +83,77 @@ exec('git ls-tree -r --name-only HEAD | grep **/package.json | while read filena
 
 var packages = Array();
 
-fs.readFile('../new-website/public/packages.min.json', 'utf8', function(err, data) {
-  data = JSON.parse(data);
-  glob("ajax/libs/*/package.json", function (error, matches) {
-    async.each(matches, function(item, callback) {
-      var package = JSON.parse(fs.readFileSync(item, 'utf8'));
-      if (package.version === undefined) {
-          console.log("Package " + package.name + " doesn't have a valid version, ignore it!");
-          return;
+try {
+  data = JSON.parse(fs.readFileSync('../new-website/public/packages.min.json', 'utf8'));
+} catch (e) {
+  data = { "packages": [] };
+}
+
+glob("ajax/libs/*/package.json", function (error, matches) {
+  async.each(matches, function(item, callback) {
+    var package = JSON.parse(fs.readFileSync(item, 'utf8'));
+    if (package.version === undefined) {
+        console.log("Package " + package.name + " doesn't have a valid version, ignore it!");
+        return;
+    }
+    delete package.main;
+    delete package.scripts;
+    delete package.bugs;
+    delete package.npmFileMap;
+    delete package.dependencies;
+    delete package.devDependencies;
+    var temp = {}
+    if (package.npmName) {
+      temp.type = 'npm';
+      temp.target = package.npmName;
+      package.autoupdate = temp;
+    } else if (package.autoupdate) {
+      temp.type = package.autoupdate.source;
+      temp.target = package.autoupdate.target;
+      package.autoupdate = temp;
+    } else {
+      delete package.autoupdate;
+    }
+    delete package.npmName;
+    package.assets = Array();
+    var oldVersions = Array();
+    var pkgSave;
+    data['packages'].forEach(function(pkg){
+      if (pkg.name == package.name) {
+        oldVersions = pkg['assets'].map(function(d){return d[['version']]});
+        pkgSave = pkg;
       }
-      delete package.main;
-      delete package.scripts;
-      delete package.bugs;
-      delete package.npmFileMap;
-      delete package.dependencies;
-      delete package.devDependencies;
-      var temp = {}
-      if (package.npmName) {
-        temp.type = 'npm';
-        temp.target = package.npmName;
-        package.autoupdate = temp;
-      } else if (package.autoupdate) {
-        temp.type = package.autoupdate.source;
-        temp.target = package.autoupdate.target;
-        package.autoupdate = temp;
+    });
+    var versions = glob.sync("ajax/libs/"+package.name+"/!(package.json)/").map(function(ver){return ver.slice(0, -1);});
+    async.each(versions, function(version, callback) {
+      var temp = Object();
+      temp.version = version.replace(/^.+\//, "");
+      if (oldVersions.indexOf(temp.version) != -1) {
+        for (var i = 0, size = pkgSave['assets'].length; i < size; i ++) {
+          if ( pkgSave['assets'][i].version == temp.version) {
+            temp.files = pkgSave['assets'][i].files;
+          }
+        }
       } else {
-        delete package.autoupdate;
+        temp.files = glob.sync(version + "/**/*", {nodir:true});
+        for (var i = 0; i < temp.files.length; i++){
+          var filespec = temp.files[i];
+          temp.files[i] = filespec.replace(version + "/", "");
+        }
       }
-      delete package.npmName;
-      package.assets = Array();
-      var oldVersions = Array();
-      var pkgSave;
-      data['packages'].forEach(function(pkg){
-        if (pkg.name == package.name) {
-          oldVersions = pkg['assets'].map(function(d){return d[['version']]});
-          pkgSave = pkg;
-        }
-      });
-      var versions = glob.sync("ajax/libs/"+package.name+"/!(package.json)/").map(function(ver){return ver.slice(0, -1);});
-      async.each(versions, function(version, callback) {
-        var temp = Object();
-        temp.version = version.replace(/^.+\//, "");
-        if (oldVersions.indexOf(temp.version) != -1) {
-          for (var i = 0, size = pkgSave['assets'].length; i < size; i ++) {
-            if ( pkgSave['assets'][i].version == temp.version) {
-              temp.files = pkgSave['assets'][i].files;
-            }
-          }
-        } else {
-          temp.files = glob.sync(version + "/**/*", {nodir:true});
-          for (var i = 0; i < temp.files.length; i++){
-            var filespec = temp.files[i];
-            temp.files[i] = filespec.replace(version + "/", "");
-          }
-        }
-        package.assets.push(temp);
-      }, function(err) {
-        console.log(err);
-      });
-      package.assets.sort(function(a, b){
-        return natcompare.compare(a.version, b.version);
-      })
-      package.assets.reverse();
-      packages.push(package);
+      package.assets.push(temp);
     }, function(err) {
       console.log(err);
     });
-    // Initialize the feed object
-    fs.writeFileSync('../cdnjs.debug.packages.json', JSON.stringify({"packages":packages}, null, 2), 'utf8');
-    fs.writeFileSync('../new-website/public/packages.min.json', JSON.stringify({"packages":packages}), 'utf8');
+    package.assets.sort(function(a, b){
+      return natcompare.compare(a.version, b.version);
+    })
+    package.assets.reverse();
+    packages.push(package);
+  }, function(err) {
+    console.log(err);
   });
+  // Initialize the feed object
+  fs.writeFileSync('../cdnjs.debug.packages.json', JSON.stringify({"packages":packages}, null, 2), 'utf8');
+  fs.writeFileSync('../new-website/public/packages.min.json', JSON.stringify({"packages":packages}), 'utf8');
 });
