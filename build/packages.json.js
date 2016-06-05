@@ -6,6 +6,7 @@ var fs = require('fs');
 var _ = require('underscore');
 var natcompare = require('./natcompare.js');
 var RSS = require('rss');
+var isThere = require("is-there");
 var feed = new RSS({
     title:        'cdnjs.com - library updates',
     description:  'Track when libraries are added and updated! Created by <a href="https://twitter.com/ryan_kirkman">Ryan Kirkman</a> and <a href="https://twitter.com/neutralthoughts">Thomas Davis</a>, managed by <a href="https://twitter.com/PeterDaveHello">Peter Dave Hello</a>. Sponsored and hosted by <a href="https://cloudflare.com">Cloudflare</a>',
@@ -59,6 +60,9 @@ exec('git ls-tree -r --name-only HEAD | grep **/package.json | while read filena
     });
     recentLibraries = recentLibraries.reverse();
     _.each(recentLibraries, function (lib) {
+      if (!isThere(lib.path)) {
+        return;
+      }
       var package = JSON.parse(fs.readFileSync(lib.path, 'utf8'));
       var title = '';
       if(lib.change === 'M') {
