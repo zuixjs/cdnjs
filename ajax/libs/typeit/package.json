@@ -24,7 +24,7 @@
     {
       "basePath": "dist",
       "files": [
-        "**/*"
+        "**/!(jquery-+([0-9].)min.js)"
       ]
     }
   ]
