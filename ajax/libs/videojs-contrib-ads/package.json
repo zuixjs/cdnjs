@@ -16,5 +16,12 @@
         "**/*"
       ]
     }
+  ],
+  "keywords": [
+    "videojs",
+    "html5",
+    "video",
+    "ads",
+    "advertisements"
   ]
 }

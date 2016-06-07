@@ -22,5 +22,9 @@
       "**/*"
     ]
   },
-  "description": "Provides callbacks for image loading events"
+  "description": "Provides callbacks for image loading events",
+  "keywords": [
+    "jquery",
+    "images"
+  ]
 }

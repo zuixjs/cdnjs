@@ -17,5 +17,11 @@
     "files": [
       "**/*"
     ]
-  }
+  },
+  "keywords": [
+    "waveform",
+    "audio",
+    "music",
+    "player"
+  ]
 }

@@ -19,5 +19,11 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/HubSpot/shepherd.git"
-  }
+  },
+  "keywords": [
+    "guider",
+    "tour",
+    "javascript",
+    "css"
+  ]
 }

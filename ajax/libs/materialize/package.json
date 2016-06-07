@@ -34,5 +34,17 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/Dogfalo/materialize.git"
-  }
+  },
+  "keywords": [
+    "css",
+    "js",
+    "sass",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "framework",
+    "ux",
+    "material",
+    "design"
+  ]
 }

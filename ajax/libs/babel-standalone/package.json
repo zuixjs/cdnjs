@@ -19,5 +19,12 @@
         "babel.min.js"
       ]
     }
+  ],
+  "keywords": [
+    "babel",
+    "babeljs",
+    "6to5",
+    "transpile",
+    "transpiler"
   ]
 }

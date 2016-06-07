@@ -25,5 +25,11 @@
     "files": [
       "**/*"
     ]
-  }
+  },
+  "keywords": [
+    "editor",
+    "wysiwyg",
+    "javascript",
+    "richtext"
+  ]
 }

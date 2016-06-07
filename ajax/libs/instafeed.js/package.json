@@ -17,5 +17,9 @@
       ]
     }
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "javascript",
+    "instagram"
+  ]
 }

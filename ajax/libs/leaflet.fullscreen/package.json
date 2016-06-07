@@ -19,5 +19,11 @@
         "icon-fullscreen*.png"
       ]
     }
+  ],
+  "keywords": [
+    "leaflet",
+    "plugins",
+    "maps",
+    "fullscreen"
   ]
 }

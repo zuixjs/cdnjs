@@ -16,5 +16,16 @@
     "files": [
       "**/*.!(html|scss)"
     ]
-  }
+  },
+  "keywords": [
+    "burger",
+    "mblode",
+    "menu",
+    "hamburger",
+    "css",
+    "jquery",
+    "javascript",
+    "navigation",
+    "fullscreen"
+  ]
 }

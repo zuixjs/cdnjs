@@ -24,5 +24,11 @@
     "files": [
       "*slider*"
     ]
-  }
+  },
+  "keywords": [
+    "angular",
+    "slider",
+    "bootstrap-slider",
+    "bootstrap"
+  ]
 }

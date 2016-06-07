@@ -19,5 +19,10 @@
     "files": [
       "**/*"
     ]
-  }
+  },
+  "keywords": [
+    "angular",
+    "wysiwyg",
+    "editor"
+  ]
 }

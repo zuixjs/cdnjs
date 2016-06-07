@@ -18,5 +18,13 @@
     }
   ],
   "filename": "angular-formly-templates-bootstrap.min.js",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "AngularJs",
+    "form",
+    "formly",
+    "json",
+    "bootstrap",
+    "html"
+  ]
 }

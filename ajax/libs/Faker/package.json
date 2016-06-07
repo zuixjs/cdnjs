@@ -16,5 +16,12 @@
       "**/*"
     ]
   },
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "faker",
+    "fake",
+    "dummy",
+    "identity",
+    "test"
+  ]
 }

@@ -19,5 +19,11 @@
     "files": [
       "**/*"
     ]
-  }
+  },
+  "keywords": [
+    "wysiwyg",
+    "inline",
+    "html",
+    "editor"
+  ]
 }

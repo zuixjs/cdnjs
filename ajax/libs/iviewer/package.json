@@ -27,5 +27,12 @@
       "jquery.iviewer*",
       "img/*"
     ]
-  }
+  },
+  "keywords": [
+    "jquery",
+    "jquery",
+    "ui",
+    "image",
+    "viewer"
+  ]
 }

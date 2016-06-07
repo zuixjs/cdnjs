@@ -20,5 +20,10 @@
     "files": [
       "**/*"
     ]
-  }
+  },
+  "keywords": [
+    "google",
+    "maps",
+    "jquery"
+  ]
 }

@@ -20,5 +20,13 @@
     "files": [
       "*animo*.+(css|js|map)"
     ]
-  }
+  },
+  "keywords": [
+    "animo",
+    "animate",
+    "css",
+    "animation",
+    "blur",
+    "transition"
+  ]
 }

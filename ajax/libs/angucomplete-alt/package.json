@@ -18,5 +18,10 @@
       "angucomplete-alt.min.js"
     ]
   },
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "autocomplete",
+    "typeahead",
+    "angularjs"
+  ]
 }

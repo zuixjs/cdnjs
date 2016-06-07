@@ -17,5 +17,13 @@
       "**/*"
     ]
   },
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "scroll",
+    "reveal",
+    "css",
+    "animation",
+    "javascript",
+    "mobile"
+  ]
 }

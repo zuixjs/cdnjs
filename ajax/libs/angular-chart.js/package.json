@@ -17,5 +17,18 @@
         "!(*.gz)"
       ]
     }
+  ],
+  "keywords": [
+    "angular",
+    "angular.js",
+    "chartjs",
+    "chart",
+    "reactive",
+    "responsive",
+    "graph",
+    "bar",
+    "line",
+    "area",
+    "donut"
   ]
 }

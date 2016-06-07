@@ -19,5 +19,11 @@
     "files": [
       "**/*"
     ]
-  }
+  },
+  "keywords": [
+    "angular",
+    "image",
+    "crop",
+    "cropper"
+  ]
 }
