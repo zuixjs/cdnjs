@@ -13,5 +13,15 @@
     "type": "git",
     "url": "https://github.com/GumbyFramework/Gumby.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/GumbyFramework/Gumby.git",
+    "basePath": "",
+    "files": [
+      "+(js|css|img)/**/gumby*",
+      "js/+(main.js|plugins.js)",
+      "fonts/**/*"
+    ]
+  }
 }
