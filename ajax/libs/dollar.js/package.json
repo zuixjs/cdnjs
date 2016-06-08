@@ -18,5 +18,13 @@
     "oz",
     "ozjs"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/dexteryy/DollarJS.git",
+    "basePath": "",
+    "files": [
+      "dollar*"
+    ]
+  }
 }
