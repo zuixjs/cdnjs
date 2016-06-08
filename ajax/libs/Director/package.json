@@ -18,6 +18,7 @@
     "url": "git://github.com/flatiron/director.git"
   },
   "author": "Charlie Robbins <charlie.robbins@gmail.com>",
+  "license": "MIT",
   "keywords": [
     "URL",
     "router",
