@@ -18,7 +18,10 @@ var feed = new RSS({
     author: 'cdnjs team'
 });
 var exec=require('child_process').exec;
-exec('git ls-tree -r --name-only HEAD | grep **/package.json | while read filename; do   echo "$(git log -1 --since="2 weeks ago" --name-status --format="%ad" -- $filename) blahcrap"; done',function(err,stdout,stderr){
+var threads = require('os').cpus().length;
+threads = threads > 2 ? threads - 2 : 1;
+
+exec('git ls-tree -r --name-only HEAD | grep **/package.json | xargs -n 1 -P ' + threads + ' git log -1 --since="2 weeks ago" --name-status --format="blahcrap %ad" --',function(err,stdout,stderr){
     var recentLibraries = stdout.split('blahcrap');
     recentLibraries = _.filter(recentLibraries, function(lib){
     //console.log(lib, 'a', lib.length);
@@ -84,7 +87,7 @@ exec('git ls-tree -r --name-only HEAD | grep **/package.json | while read filena
 
 })
 
-
+delete threads;
 var packages = Array();
 
 try {
