@@ -28,5 +28,6 @@
     "files": [
       "topojson.js"
     ]
-  }
+  },
+  "license": "BSD-3-Clause"
 }

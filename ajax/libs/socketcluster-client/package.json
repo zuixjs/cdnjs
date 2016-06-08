@@ -24,5 +24,6 @@
   },
   "authors": [
     "Jonathan Gros-Dubois <grosjona@yahoo.com.au>"
-  ]
+  ],
+  "license": "MIT"
 }

@@ -23,5 +23,6 @@
     "video",
     "ads",
     "advertisements"
-  ]
+  ],
+  "license": "Apache-2.0"
 }

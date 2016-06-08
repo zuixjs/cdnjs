@@ -22,5 +22,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jrburke/requirejs"
-  }
+  },
+  "license": "MIT"
 }
