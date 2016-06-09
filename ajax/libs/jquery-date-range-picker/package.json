@@ -23,9 +23,10 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/longbill/jquery-date-range-picker.git",
-    "basePath": "dist",
+    "basePath": "",
     "files": [
-      "**/*"
+      "*daterangepicker*"
     ]
-  }
+  },
+  "version": "0.5.1"
 }
