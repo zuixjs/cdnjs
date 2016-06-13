@@ -16,9 +16,9 @@
   "npmName": "placeholder.js",
   "npmFileMap": [
     {
-      "basePath": "",
+      "basePath": "dist",
       "files": [
-        "placeholder*.js"
+        "**/*"
       ]
     }
   ],
