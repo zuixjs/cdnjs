@@ -6,16 +6,15 @@
   "npmName": "pileup",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
-        "*.js",
-        "*.map"
+        "**/*pileup*.+(css|js|map)"
       ]
     },
     {
-      "basePath": "/style/",
+      "basePath": "style",
       "files": [
-        "*.css"
+        "pileup*.+(css|map)"
       ]
     }
   ],
@@ -23,7 +22,6 @@
     "type": "git",
     "url": "https://github.com/hammerlab/pileup.js.git"
   },
-  "homepage": "https://github.com/hammerlab/pileup.js",
   "keywords": [
     "genome",
     "track",
