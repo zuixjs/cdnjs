@@ -17,7 +17,7 @@
       "js/jquery.anythingslider*.js",
       "css/anythingslider.css",
       "css/theme-*.css",
-      "images/default.png"
+      "images/*.+(gif|png)"
     ]
   },
   "repository": {
