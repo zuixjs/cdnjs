@@ -3,7 +3,7 @@
   "filename": "vidom.min.js",
   "license": "MIT",
   "description": "Library to build UI in a declarative way",
-  "author":  "Dmitry Filatov <dfilatov@yandex-team.ru>",
+  "author": "Dmitry Filatov <dfilatov@yandex-team.ru>",
   "keywords": [
     "vidom",
     "react",
@@ -24,5 +24,6 @@
         "**/*"
       ]
     }
-  ]
+  ],
+  "version": "0.3.3"
 }
