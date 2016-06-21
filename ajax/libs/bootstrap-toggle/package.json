@@ -22,8 +22,7 @@
     "target": "git://github.com/minhur/bootstrap-toggle.git",
     "basePath": "",
     "files": [
-      "js/bootstrap-toggle*.+(js|map)",
-      "css/bootstrap-toggle*.css"
+      "+(css|js)/bootstrap*-toggle*.+(css|js|map)"
     ]
   }
 }
