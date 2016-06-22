@@ -13,14 +13,15 @@
   "dependencies": {
     "bootstrap": "~3"
   },
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/lipis/bootstrap-sweetalert.git",
-    "basePath": "lib",
-    "files": [
-      "sweet-alert*.+(js|css)"
-    ]
-  },
+  "npmName": "bootstrap-sweetalert",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
+    }
+  ],
   "keywords": [
     "sweetalert",
     "alert",
