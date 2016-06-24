@@ -248,6 +248,10 @@ var updateLibrary = function (pkg, cb) {
       msg += ' (' + pkg.name + ')';
     }
     console.log(msg.prompt);
+    var npmNameScopeReg = /^@.+\/.+$/;
+    if (npmNameScopeReg.test(pkg.npmName)) {
+      pkg.npmName = pkg.npmName.replace('/', '%2f');
+    }
     request.get('http://registry.npmjs.org/' + pkg.npmName).end(function(error, result) {
         if (result != undefined && result.body != undefined) {
             async.each(_.toPairs(result.body.versions), function(p, cb) {
