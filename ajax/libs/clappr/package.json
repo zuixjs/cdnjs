@@ -20,7 +20,7 @@
     "target": "git://github.com/clappr/clappr.git",
     "basePath": "dist",
     "files": [
-      "**/clappr*"
+      "**/*"
     ]
   }
 }
