@@ -17,7 +17,7 @@
   "npmName": "rsvp",
   "npmFileMap": [
     {
-      "basePath": "lib/",
+      "basePath": "dist",
       "files": [
         "**/*"
       ]
