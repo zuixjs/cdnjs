@@ -1,7 +1,7 @@
 {
   "name": "vuejs-paginator",
   "filename": "vuejs-paginator.min.js",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "A Vue.js plugin to easily integrate pagination.",
   "repository": {
     "type": "git",
