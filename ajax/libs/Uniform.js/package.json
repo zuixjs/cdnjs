@@ -1,6 +1,6 @@
 {
   "name": "Uniform.js",
-  "filename": "jquery.uniform.min.js",
+  "filename": "js/jquery.uniform.bundled.js",
   "version": "3.0.0",
   "homepage": "http://uniformjs.com",
   "description": "A plugin for jQuery. Make your form controls look how you want them to.",
