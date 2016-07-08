@@ -5,7 +5,7 @@
   "filename": "sanitize.min.css",
   "repository": {
     "type": "git",
-    "url": "git://github.com/10up/sanitize.css"
+    "url": "git://github.com/jonathantneal/sanitize.css"
   },
   "keywords": [
     "css",
@@ -21,13 +21,13 @@
   ],
   "author": "Jonathan Neal <jonathantneal@hotmail.com> (http://jonathantneal.com)",
   "license": "CC0-1.0",
-  "homepage": "https://github.com/10up/sanitize.css#readme",
+  "homepage": "https://jonathantneal.github.io/sanitize.css/",
   "npmName": "sanitize.css",
   "npmFileMap": [
     {
-      "basePath": "dist",
+      "basePath": "",
       "files": [
-        "**/*"
+        "sanitize*"
       ]
     }
   ]
