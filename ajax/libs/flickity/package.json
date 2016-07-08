@@ -1,7 +1,7 @@
 {
   "name": "flickity",
   "filename": "flickity.pkgd.min.js",
-  "version": "1.2.1",
+  "version": "2.0.0",
   "description": "Touch, responsive, flickable galleries",
   "homepage": "http://flickity.metafizzy.co/",
   "keywords": [
