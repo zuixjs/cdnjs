@@ -17,5 +17,13 @@
     "ui"
   ],
   "license": "MIT",
-  "author": "harvest"
+  "author": "harvest",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/harvesthq/chosen-package.git",
+    "basePath": "",
+    "files": [
+      "**/*chosen*"
+    ]
+  }
 }
