@@ -36,7 +36,7 @@
   ],
   "author": "Jonathan Neal <jonathantneal@hotmail.com> (http://jonathantneal.com)",
   "license": "MIT",
-  "homepage": "https://github.com/10up/flexibility#readme",
+  "homepage": "https://jonathantneal.github.io/flexibility/",
   "npmName": "flexibility",
   "npmFileMap": [
     {
@@ -48,6 +48,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/10up/flexibility.git"
+    "url": "https://github.com/jonathantneal/flexibility.git"
   }
 }
