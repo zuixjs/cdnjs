@@ -10,7 +10,7 @@
     "url": "git://github.com/sparkalow/angular-truncate.git"
   },
   "license": "MIT",
-  "keyword": [
+  "keywords": [
     "filter",
     "Angularjs",
     "truncate",
