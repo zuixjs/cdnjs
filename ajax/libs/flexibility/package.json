@@ -40,9 +40,9 @@
   "npmName": "flexibility",
   "npmFileMap": [
     {
-      "basePath": "dist",
+      "basePath": "",
       "files": [
-        "**/*"
+        "flexibility*"
       ]
     }
   ],
