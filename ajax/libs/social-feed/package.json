@@ -38,5 +38,6 @@
       "css/jquery.socialfeed.*",
       "js/jquery.socialfeed.*"
     ]
-  }
+  },
+  "description": "A jQuery plugin that shows a user feed from the most popular social networks "
 }

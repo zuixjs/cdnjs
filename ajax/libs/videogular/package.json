@@ -21,5 +21,6 @@
     "files": [
       "videogular*.js"
     ]
-  }
+  },
+  "description": "Bower repository for Videogular project"
 }

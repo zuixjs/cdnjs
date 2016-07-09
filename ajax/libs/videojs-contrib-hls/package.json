@@ -26,5 +26,6 @@
         "**/*"
       ]
     }
-  ]
+  ],
+  "description": "Play back HLS with video.js, even where it's not natively supported"
 }

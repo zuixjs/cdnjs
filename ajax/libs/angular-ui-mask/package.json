@@ -21,5 +21,6 @@
     "files": [
       "**/*"
     ]
-  }
+  },
+  "description": "Mask on an input field so the user can only type pre-determined pattern"
 }

@@ -20,5 +20,6 @@
     "files": [
       "ng-table*.+(js|css|map)"
     ]
-  }
+  },
+  "description": "Simple table with sorting and filtering on AngularJS"
 }

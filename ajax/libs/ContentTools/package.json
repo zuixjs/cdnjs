@@ -25,5 +25,6 @@
     "inline",
     "html",
     "editor"
-  ]
+  ],
+  "description": "A JS library for building WYSIWYG editors for HTML content"
 }

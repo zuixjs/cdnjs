@@ -19,5 +19,6 @@
       "js/jquery.circliful*.js",
       "css/jquery.circliful*.css"
     ]
-  }
+  },
+  "description": "jQuery circle statitic plugin"
 }

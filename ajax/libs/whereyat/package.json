@@ -25,5 +25,6 @@
     "geolocation",
     "location"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "description": "Where y'at adds classes to your HTML based on where your users are."
 }

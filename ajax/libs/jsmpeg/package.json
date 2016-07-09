@@ -25,5 +25,6 @@
     "files": [
       "jsmpg*.js"
     ]
-  }
+  },
+  "description": "MPEG1 Video Decoder in JavaScript"
 }

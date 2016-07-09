@@ -20,5 +20,6 @@
     "files": [
       "**/*sidy*"
     ]
-  }
+  },
+  "description": "jQuery plugin for Off-, On- canvas panels with CSS3 animations"
 }

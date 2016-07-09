@@ -16,5 +16,6 @@
         "**/*"
       ]
     }
-  ]
+  ],
+  "description": "Awesome charts for AngularJS."
 }

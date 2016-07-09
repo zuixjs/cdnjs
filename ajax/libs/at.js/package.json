@@ -29,5 +29,6 @@
     "files": [
       "**/*"
     ]
-  }
+  },
+  "description": "Add Github like mentions autocomplete to your application."
 }
