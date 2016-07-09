@@ -1,7 +1,7 @@
 {
   "name": "gyrejs",
   "filename": "gyrejs.min.js",
-  "version": "0.2.5",
+  "version": "0.3.0",
   "description": "Experimental data fetching and state library geared towards ReactJS",
   "repository": {
     "type": "git",
