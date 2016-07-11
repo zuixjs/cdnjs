@@ -13,8 +13,7 @@
     "target": "git://github.com/HubSpot/pace.git",
     "basePath": "",
     "files": [
-      "pace.js",
-      "pace.min.js",
+      "pace*.+(css|js|map)",
       "themes/*/*"
     ]
   },
