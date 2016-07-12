@@ -1,6 +1,6 @@
 {
   "name": "smartcrop",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "filename": "smartcrop.min.js",
   "description": "Content aware image cropping.",
   "homepage": "http://29a.ch/2014/04/03/smartcrop-content-aware-image-cropping",
