@@ -2,7 +2,7 @@
   "name": "twemoji",
   "title": "twemoji",
   "filename": "twemoji.min.js",
-  "version": "2.0.5",
+  "version": "2.1.0",
   "description": "A Unicode standard based way to implement emoji across all platforms.",
   "homepage": "https://github.com/twitter/twemoji",
   "keywords": [
