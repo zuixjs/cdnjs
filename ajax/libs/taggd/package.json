@@ -1,0 +1,33 @@
+{
+  "name": "taggd",
+  "filename": "js/jquery.taggd.min.js",
+  "version": "2.0.3",
+  "description": "A jQuery plugin that adds tags to your image.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/timseverien/taggd.git"
+  },
+  "author": {
+    "name": "Tim Severien",
+    "email": "timseverien@gmail.com",
+    "url": "https://timseverien.com"
+  },
+  "licenses": [
+    "MIT",
+    "WTFPL"
+  ],
+  "homepage": "https://timseverien.github.io/taggd/",
+  "keywords": [
+    "jQuery",
+    "tag",
+    "configurable"
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/timseverien/taggd.git",
+    "basePath": "",
+    "files": [
+      "+(js|css|fonts)/*taggd*"
+    ]
+  }
+}
