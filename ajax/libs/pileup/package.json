@@ -8,7 +8,8 @@
     {
       "basePath": "dist",
       "files": [
-        "**/*pileup*.+(css|js|map)"
+        "!(main|test)/*pileup*.+(css|js|map)",
+        "*pileup*"
       ]
     },
     {
