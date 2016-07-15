@@ -45,6 +45,6 @@ author
 assets
 ```
 
-The API is served over Cloudflare with a six-hour expiry for requests.
+The API is served over Cloudflare with a hour expiry for requests.
 
 
