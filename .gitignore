@@ -11,7 +11,7 @@ temp/
 node_modules/
 
 # folders need to be ingored due to auto auto-update mechanism
-ajax/libs/jsxgraph/rc/
+ajax/libs/jsxgraph/rm/
 ajax/libs/elfinder/*-src
 ajax/libs/mobx/*iosfix*
 ajax/libs/mobx/*albert*
