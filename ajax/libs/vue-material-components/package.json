@@ -1,0 +1,39 @@
+{
+  "name": "vue-material-components",
+  "version": "0.3.2",
+  "filename": "vue-material-components.min.js",
+  "description": "Web components of Vue.js and materializecss",
+  "library": "VueMaterialComponents",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appcomponents/materialize-components.git"
+  },
+  "keywords": [
+    "material",
+    "materialize",
+    "vue-components",
+    "web-components",
+    "vue"
+  ],
+  "author": {
+    "name": "Martin Janys",
+    "email": "martinjanys@gmail.com",
+    "url": "https://github.com/mjanys"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "ts-loader": "^0.8.1",
+    "vue-class-component": "^3.2.0",
+    "velocity-animate": "^1.2.3"
+  },
+  "homepage": "http://appcomponents.org/material-components",
+  "npmName": "vue-material-components",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
+    }
+  ]
+}
