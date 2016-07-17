@@ -1,0 +1,39 @@
+{
+  "name": "react-bootstrap-typeahead",
+  "version": "0.5.3",
+  "filename": "react-bootstrap-typeahead.min.js",
+  "description": "React-based typeahead using the Bootstrap theme",
+  "keywords": [
+    "bootstrap",
+    "bootstrap-tokenizer",
+    "bootstrap-typeahead",
+    "react",
+    "react-bootstrap",
+    "react-bootstrap-tokenizer",
+    "react-bootstrap-typeahead",
+    "tokenizer",
+    "typeahead"
+  ],
+  "author": "ericgio",
+  "license": "MIT",
+  "dependencies": {
+    "classnames": "^2.2.0",
+    "lodash": "^4.12.0",
+    "react-highlighter": "^0.3.1",
+    "react-input-autosize": "^0.6.2",
+    "react-onclickoutside": "^4.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ericgio/react-bootstrap-typeahead.git"
+  },
+  "npmName": "react-bootstrap-typeahead",
+  "npmFileMap": [
+    {
+      "basePath": "build",
+      "files": [
+        "**/*"
+      ]
+    }
+  ]
+}
