@@ -54,7 +54,7 @@
   "npmName": "cloudinary-jquery-file-upload",
   "npmFileMap": [
     {
-      "basePath": ".",
+      "basePath": "",
       "files": [
         "cloudinary-jquery-file-upload*"
       ]
