@@ -53,7 +53,7 @@
   "npmName": "cloudinary-core",
   "npmFileMap": [
     {
-      "basePath": ".",
+      "basePath": "",
       "files": [
         "cloudinary-core*"
       ]
