@@ -2,7 +2,7 @@
   "name": "paho-mqtt",
   "author": "Eclipse Paho",
   "filename": "mqttws31.min.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The Eclipse Paho JavaScript Library for Web-browsers, using WebSockets.",
   "repository": {
     "type": "git",
