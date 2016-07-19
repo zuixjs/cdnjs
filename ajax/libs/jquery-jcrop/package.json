@@ -15,5 +15,13 @@
   },
   "authors": [
     "Tapmodo <khallman@tapmodo.com>"
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/tapmodo/Jcrop.git",
+    "basePath": "",
+    "files": [
+      "+(css|js)/*Jcrop*"
+    ]
+  }
 }
