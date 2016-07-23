@@ -19,7 +19,7 @@
     "target": "git://github.com/limonte/sweetalert2.git",
     "basePath": "dist",
     "files": [
-      "**/*"
+      "**/!(*.gz)"
     ]
   }
 }
