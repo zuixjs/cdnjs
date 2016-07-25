@@ -16,5 +16,14 @@
   "license": "MIT",
   "authors": [
     "Imulus, LLC <developer@imulus.com>"
+  ],
+  "npmName": "retinajs",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
+    }
   ]
 }
