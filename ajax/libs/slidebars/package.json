@@ -11,5 +11,14 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/adchsm/Slidebars.git"
-  }
+  },
+  "npmName": "slidebars",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
+    }
+  ]
 }
