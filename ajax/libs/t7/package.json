@@ -7,6 +7,11 @@
     "type": "git",
     "url": "git+https://github.com/trueadm/t7.git"
   },
+  "keywords": [
+    "dom",
+    "es2015",
+    "lightweight"
+  ],
   "author": "Dominic Gannaway",
   "license": "ISC",
   "npmName": "t7",
