@@ -14,7 +14,7 @@
   ],
   "author": "Adam Bouqdib (http://abemedia.co.uk)",
   "license": "GPL-2.0",
-  "homepage": "http://contextify.donlabs.com",
+  "homepage": "http://contextify.js.org",
   "dependencies": {
     "jquery": ">=1.7"
   },
