@@ -23,6 +23,7 @@
     }
   ],
   "licenses": [
-    "GPL, MIT"
+    "GPL",
+    "MIT"
   ]
 }
