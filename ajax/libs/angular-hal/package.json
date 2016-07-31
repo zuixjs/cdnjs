@@ -1,0 +1,26 @@
+{
+  "name": "angular-hal",
+  "version": "2.3.0",
+  "filename": "angular-hal.min.js",
+  "description": "Hal client for angularjs",
+  "homepage": "http://angular-hal.io",
+  "license": "WTFPL",
+  "dependencies": {
+    "angular": ">=1.3",
+    "content-type": "^1.0.1",
+    "rfc6570": "0.1.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LuvDaSun/angular-hal.git"
+  },
+  "npmName": "angular-hal",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
+    }
+  ]
+}
