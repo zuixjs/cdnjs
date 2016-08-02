@@ -1,6 +1,6 @@
 {
   "name": "clndr",
-  "version": "1.4.5",
+  "version": "1.4.6",
   "filename": "clndr.min.js",
   "description": "A jQuery calendar plugin that uses HTML templates.",
   "author": "Kyle Stetz",
