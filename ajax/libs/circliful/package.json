@@ -1,7 +1,7 @@
 {
   "name": "circliful",
   "filename": "js/jquery.circliful.min.js",
-  "version": "0.1.5",
+  "version": "1.0.1",
   "homepage": "https://github.com/pguso/jquery-plugin-circliful",
   "authors": [
     "Patric Gutersohn <pguso@gmx.de>"
