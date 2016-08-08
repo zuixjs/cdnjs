@@ -10,6 +10,10 @@
     "type": "git",
     "url": "https://github.com/moxiecode/plupload.git"
   },
+  "keywords": [
+    "cross-browser",
+    "upload"
+  ],
   "licenses": [
     "GPL-2.0",
     {
