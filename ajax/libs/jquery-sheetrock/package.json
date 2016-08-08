@@ -19,8 +19,7 @@
     "target": "git://github.com/chriszarate/sheetrock.git",
     "basePath": "",
     "files": [
-      "dist/*",
-      "src/*"
+      "dist/**/*"
     ]
   },
   "repository": {
