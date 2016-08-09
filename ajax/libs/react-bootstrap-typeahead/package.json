@@ -30,7 +30,7 @@
   "npmName": "react-bootstrap-typeahead",
   "npmFileMap": [
     {
-      "basePath": "build",
+      "basePath": "dist",
       "files": [
         "**/*"
       ]
