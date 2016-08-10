@@ -1,7 +1,7 @@
 {
   "name": "rivets",
   "filename": "rivets.min.js",
-  "version": "0.9.3",
+  "version": "0.9.4",
   "description": "Declarative data binding + templating solution.",
   "license": "MIT",
   "homepage": "http://rivetsjs.com",
