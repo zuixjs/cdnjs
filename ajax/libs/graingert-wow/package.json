@@ -2,7 +2,7 @@
   "name": "graingert-wow",
   "filename": "wow.min.js",
   "title": "WOW",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Reveal CSS animation as you scroll down a page.",
   "keywords": [
     "scroll",
