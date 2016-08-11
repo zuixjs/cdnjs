@@ -1,0 +1,29 @@
+{
+  "name": "tAutocomplete",
+  "filename": "tautocomplete.min.js",
+  "version": "1.0.0",
+  "description": "Automplete drop-down lists the details in a table format. The plugin is useful when multiple details has to be displayed.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vyasrao/tAutocomplete.git"
+  },
+  "keywords": [
+    "autocomplete",
+    "table"
+  ],
+  "author": "Vedavyas",
+  "homepage": "https://vyasrao.github.io/tAutocomplete",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": ">=1.5"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/vyasrao/tAutocomplete.git",
+    "basePath": "",
+    "files": [
+      "tautocomplete!(*.json)",
+      "img/*.gif"
+    ]
+  }
+}
