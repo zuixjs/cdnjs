@@ -28,9 +28,9 @@
   "npmName": "jquery-i18next",
   "npmFileMap": [
     {
-      "basePath": "",
+      "basePath": "dist/umd",
       "files": [
-        "i18next-jquery*.js"
+        "**/*"
       ]
     }
   ]
