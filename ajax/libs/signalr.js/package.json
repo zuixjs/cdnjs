@@ -1,6 +1,6 @@
 {
   "name": "signalr.js",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "filename": "jquery.signalR.min.js",
   "description": "Incredibly simple real-time web for .NET http://signalr.net",
   "homepage": "https://github.com/SignalR/SignalR",
