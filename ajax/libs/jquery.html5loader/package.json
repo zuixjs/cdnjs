@@ -9,6 +9,13 @@
   },
   "author": "Gianluca Guarini <gianluca.guarini@gmail.com> (http://gianlucaguarini.com/)",
   "license": "MIT",
+  "keywords": [
+    "images",
+    "svgs",
+    "html5",
+    "css",
+    "preload"
+  ],
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/GianlucaGuarini/jquery.html5loader.git",
