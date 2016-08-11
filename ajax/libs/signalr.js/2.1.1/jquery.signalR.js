@@ -4,7 +4,7 @@
  * ASP.NET SignalR JavaScript Library v2.1.1
  * http://signalr.net/
  *
- * Copyright Microsoft Open Technologies, Inc. All rights reserved.
+ * Copyright (C) Microsoft Corporation. All rights reserved.
  *
  */
 
@@ -2824,5 +2824,5 @@
 /*global window:false */
 /// <reference path="jquery.signalR.core.js" />
 (function ($, undefined) {
-    $.signalR.version = "2.1.1-pre";
+    $.signalR.version = "2.1.1";
 }(window.jQuery));
