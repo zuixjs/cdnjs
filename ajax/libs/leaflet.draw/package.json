@@ -15,5 +15,14 @@
     "url": "https://github.com/Leaflet/Leaflet.draw"
   },
   "license": "BSD",
-  "author": "Jacob Toye"
+  "author": "Jacob Toye",
+  "npmName": "leaflet-draw",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
+    }
+  ]
 }
