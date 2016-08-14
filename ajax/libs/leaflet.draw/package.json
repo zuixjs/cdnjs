@@ -6,9 +6,11 @@
   "homepage": "https://github.com/Leaflet/Leaflet.draw",
   "keywords": [
     "maps",
-    "mobile",
+    "leaflet",
+    "client",
+    "vector",
     "drawing",
-    "vector"
+    "draw"
   ],
   "repository": {
     "type": "git",
