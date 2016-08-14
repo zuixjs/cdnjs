@@ -14,7 +14,7 @@
     "type": "git",
     "url": "https://github.com/Leaflet/Leaflet.draw"
   },
-  "license": "BSD",
+  "license": "MIT",
   "author": "Jacob Toye",
   "npmName": "leaflet-draw",
   "npmFileMap": [
