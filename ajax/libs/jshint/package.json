@@ -8,6 +8,10 @@
     "email": "anton@kovalyov.net",
     "url": "http://anton.kovalyov.net/"
   },
+  "keywords": [
+    "detect",
+    "code-analysis"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/jshint/jshint.git"
