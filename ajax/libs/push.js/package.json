@@ -1,7 +1,7 @@
 {
   "name": "push.js",
   "filename": "push.min.js",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "A compact, cross-browser solution for Javascript desktop notifications",
   "repository": {
     "type": "git",
