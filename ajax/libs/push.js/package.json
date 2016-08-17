@@ -18,7 +18,7 @@
     "target": "git://github.com/Nickersoft/push.js.git",
     "basePath": "",
     "files": [
-      "push*"
+      "push!(_tests.js)"
     ]
   }
 }
