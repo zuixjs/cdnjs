@@ -1,6 +1,6 @@
 {
   "name": "aframe",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "filename": "aframe.min.js",
   "description": "Building blocks for the VR Web",
   "repository": {
