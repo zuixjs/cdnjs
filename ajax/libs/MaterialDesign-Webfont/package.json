@@ -1,6 +1,6 @@
 {
   "name": "MaterialDesign-Webfont",
-  "version": "1.6.50",
+  "version": "1.7.12",
   "description": "Dist for Material Design Webfont. This includes the Stock and Community icons in a single webfont collection.",
   "filename": "css/materialdesignicons.min.css",
   "repository": {
