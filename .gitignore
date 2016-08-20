@@ -11,6 +11,7 @@ temp/
 node_modules/
 
 # folders need to be ingored due to auto auto-update mechanism
+ajax/libs/js-nacl/last_plain_nacl_version/
 ajax/libs/js-scrypt/1.1.0/
 ajax/libs/imgareaselect/0.9.11-rc.1/
 ajax/libs/jsxgraph/rm/
