@@ -8,6 +8,10 @@
     "type": "git",
     "url": "git://github.com/mhayes/twentytwenty.git"
   },
+  "keywords": [
+    "difference",
+    "images"
+  ],
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/mhayes/twentytwenty.git",
