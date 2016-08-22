@@ -5,7 +5,7 @@
   "homepage": "https://github.com/rackt/history",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rackt/history.git"
+    "url": "https://github.com/mjackson/history.git"
   },
   "license": "MIT",
   "keywords": [

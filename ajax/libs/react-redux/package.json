@@ -19,7 +19,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rackt/react-redux.git"
+    "url": "https://github.com/reactjs/react-redux.git"
   },
   "npmName": "react-redux",
   "npmFileMap": [
