@@ -10,7 +10,6 @@
     "routes",
     "routing"
   ],
-  "homepage": "https://github.com/rackt/react-router",
   "npmName": "react-router",
   "npmFileMap": [
     {
@@ -22,7 +21,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/rackt/react-router.git"
+    "url": "https://github.com/reactjs/react-router.git"
   },
   "license": "MIT",
   "authors": [
