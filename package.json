@@ -19,6 +19,7 @@
     "colors": "^1.1",
     "execSync": "^1.0",
     "fs-extra": "^0.30.0",
+    "git-url-parse": "^6.0.5",
     "glob": "^7",
     "is-there": "4.3.3",
     "lodash": "^4.12",
