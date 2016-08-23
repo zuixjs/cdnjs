@@ -17,7 +17,6 @@
   ],
   "author": "Dustin Higginbotham <dustin@6px.io> (https://6px.io)",
   "license": "MIT",
-  "homepage": "https://github.com/6px-io/6px-js",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/6px-io/6px-js.git",

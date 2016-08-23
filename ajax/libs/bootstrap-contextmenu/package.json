@@ -12,7 +12,6 @@
   ],
   "author": "James Santos",
   "license": "MIT",
-  "homepage": "https://github.com/sydcanem/bootstrap-contextmenu",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/sydcanem/bootstrap-contextmenu.git",

@@ -13,7 +13,6 @@
   ],
   "author": "jillix <contact@jillix.com>",
   "license": "MIT",
-  "homepage": "https://github.com/jillix/svg.draggy.js",
   "npmName": "svg.draggy.js",
   "npmFileMap": [
     {

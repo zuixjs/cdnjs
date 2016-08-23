@@ -10,7 +10,6 @@
     "promises-aplus",
     "async"
   ],
-  "homepage": "https://github.com/petkaantonov/bluebird",
   "repository": {
     "type": "git",
     "url": "git://github.com/petkaantonov/bluebird.git"

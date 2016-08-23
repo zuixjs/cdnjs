@@ -3,7 +3,6 @@
   "filename": "depot.min.js",
   "version": "0.1.6",
   "description": "depot.js is a namespaced localStorage wrapper with a simple API.",
-  "homepage": "https://github.com/mkuklis/depot.js",
   "npmName": "depot",
   "npmFileMap": [
     {

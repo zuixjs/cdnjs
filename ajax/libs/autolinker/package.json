@@ -17,7 +17,6 @@
   ],
   "author": "Gregory Jacobs <greg@greg-jacobs.com>",
   "license": "MIT",
-  "homepage": "https://github.com/gregjacobs/Autolinker.js",
   "npmName": "autolinker",
   "npmFileMap": [
     {

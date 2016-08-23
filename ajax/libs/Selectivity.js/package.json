@@ -13,7 +13,6 @@
     "template",
     "loading indicators"
   ],
-  "homepage": "https://github.com/arendjr/selectivity",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/arendjr/selectivity.git",

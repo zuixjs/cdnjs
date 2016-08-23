@@ -21,7 +21,6 @@
     "photo",
     "effects"
   ],
-  "homepage": "https://github.com/una/CSSgram",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/una/CSSgram.git",

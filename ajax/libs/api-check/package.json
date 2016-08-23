@@ -15,7 +15,6 @@
   ],
   "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kent.doddsfamily.us)",
   "license": "MIT",
-  "homepage": "https://github.com/kentcdodds/api-check",
   "config": {
     "ghooks": {
       "pre-commit": "npm run ci"

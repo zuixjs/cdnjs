@@ -15,7 +15,6 @@
     "incremental",
     "dom"
   ],
-  "homepage": "https://github.com/google/incremental-dom#readme",
   "npmName": "incremental-dom",
   "npmFileMap": [
     {

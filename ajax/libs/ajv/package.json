@@ -13,7 +13,6 @@
   ],
   "author": "Evgeny Poberezkin",
   "license": "MIT",
-  "homepage": "https://github.com/epoberezkin/ajv",
   "dependencies": {
     "json-stable-stringify": "^1.0.0"
   },

@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "filename": "jquery.counterup.min.js",
   "description": "A lightweight jQuery plugin that counts up to a targeted number when the number becomes visible.",
-  "homepage": "https://github.com/bfintal/Counter-Up",
   "author": {
     "name": "Benjamin Intal",
     "url": "https://github.com/bfintal/"

@@ -14,7 +14,6 @@
     "mvvm"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/vuejs/vue-resource#readme",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/vuejs/vue-resource.git",

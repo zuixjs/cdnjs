@@ -14,7 +14,6 @@
   ],
   "author": "fat <jacobthornton@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/fat/zoom.js",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/fat/zoom.js.git",

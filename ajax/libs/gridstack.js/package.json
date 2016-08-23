@@ -3,7 +3,6 @@
   "filename": "gridstack.min.js",
   "version": "0.2.6",
   "description": "gridstack.js is a jQuery plugin for widget layout",
-  "homepage": "https://github.com/troolee/gridstack.js",
   "keywords": [
     "grid",
     "jQuery",

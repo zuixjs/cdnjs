@@ -11,7 +11,6 @@
   ],
   "author": "Meck <yesmeck@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/yesmeck/jquery-jsonview",
   "npmName": "jquery-jsonview",
   "npmFileMap": [
     {

@@ -8,7 +8,6 @@
     "inflate",
     "gzip"
   ],
-  "homepage": "https://github.com/nodeca/pako",
   "license": "MIT",
   "repository": {
     "type": "git",

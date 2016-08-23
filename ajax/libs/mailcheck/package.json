@@ -13,7 +13,6 @@
     "url": "http://derrickko.com",
     "email": "hello@derrickko.com"
   },
-  "homepage": "https://github.com/mailcheck/mailcheck",
   "repository": {
     "type": "git",
     "url": "git://github.com/mailcheck/mailcheck.git"

@@ -14,7 +14,6 @@
   ],
   "author": "Fernando Daciuk",
   "license": "MIT",
-  "homepage": "https://github.com/fdaciuk/ajax",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/fdaciuk/ajax.git",

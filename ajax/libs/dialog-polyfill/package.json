@@ -2,7 +2,6 @@
   "name": "dialog-polyfill",
   "filename": "dialog-polyfill.min.js",
   "version": "0.4.4",
-  "homepage": "https://github.com/GoogleChrome/dialog-polyfill",
   "description": "Polyfill for the dialog element",
   "keywords": [
     "html5",

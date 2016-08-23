@@ -15,7 +15,6 @@
   ],
   "author": "Yuriy Khabarov",
   "license": "MIT",
-  "homepage": "https://github.com/gromo/jquery.scrollbar",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/gromo/jquery.scrollbar.git",

@@ -10,7 +10,6 @@
     "markdown-it",
     "markdown-it-plugin"
   ],
-  "homepage": "https://github.com/markdown-it/markdown-it",
   "repository": {
     "type": "git",
     "url": "git://github.com/markdown-it/markdown-it.git"

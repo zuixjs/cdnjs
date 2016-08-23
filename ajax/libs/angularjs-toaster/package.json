@@ -3,7 +3,6 @@
   "filename": "toaster.min.js",
   "version": "2.0.0",
   "description": "AngularJS Toaster is a customized version of toastr non-blocking notification javascript library",
-  "homepage": "https://github.com/jirikavi/AngularJS-Toaster",
   "keywords": [
     "angular",
     "toaster",

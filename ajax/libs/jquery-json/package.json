@@ -6,7 +6,6 @@
   "keywords": [
     "jquery-plugin"
   ],
-  "homepage": "https://github.com/Krinkle/jquery-json",
   "repository": {
     "type": "git",
     "url": "git://github.com/Krinkle/jquery-json.git"

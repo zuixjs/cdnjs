@@ -19,7 +19,6 @@
     "jquery-plugins",
     "ecosystem:jquery"
   ],
-  "homepage": "https://github.com/julien-maurel/jQuery-Storage-API",
   "repository": {
     "type": "git",
     "url": "https://github.com/julien-maurel/jQuery-Storage-API"

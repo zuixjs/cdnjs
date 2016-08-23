@@ -3,7 +3,6 @@
   "filename": "jquery.treetable.min.js",
   "description": "jQuery plugin for displaying a tree structure in a (HTML) table, i.e. a directory structure or a nested list.",
   "version": "3.2.0",
-  "homepage": "https://github.com/ludo/jquery-treetable",
   "author": {
     "name": "Ludo van den Boom",
     "url": "http://ludovandenboom.com"

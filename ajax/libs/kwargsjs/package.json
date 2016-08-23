@@ -16,7 +16,6 @@
     "helpers",
     "utility"
   ],
-  "homepage": "https://github.com/serkanyersen/kwargsjs",
   "author": "Serkan Yersen <serkanyersen@gmail.com> (http://serkan.io/)",
   "license": "MIT",
   "repository": {

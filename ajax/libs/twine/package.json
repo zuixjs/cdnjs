@@ -17,7 +17,6 @@
   ],
   "author": "Shopify Inc",
   "license": "MIT",
-  "homepage": "https://github.com/Shopify/twine",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/Shopify/twine.git",

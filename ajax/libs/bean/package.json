@@ -3,7 +3,6 @@
   "filename": "bean.min.js",
   "description": "A small, fast, framework-agnostic event manager",
   "version": "1.0.15",
-  "homepage": "https://github.com/fat/bean",
   "authors": [
     "Jacob Thornton <@fat>",
     "Rod Vagg <@rvagg>",

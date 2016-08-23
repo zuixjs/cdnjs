@@ -10,7 +10,6 @@
     "jquery",
     "modal"
   ],
-  "homepage": "https://github.com/ashleydw/lightbox",
   "author": "ashleydw <hello@ashleyd.ws>",
   "style": "dist/ekko-lightbox.css",
   "less": "ekko-lightbox.less",

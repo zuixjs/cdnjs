@@ -15,7 +15,6 @@
     "type": "git",
     "url": "https://github.com/dfilatov/vidom"
   },
-  "homepage": "https://github.com/dfilatov/vidom#readme",
   "npmName": "vidom",
   "npmFileMap": [
     {

@@ -3,7 +3,6 @@
   "filename": "hbars.min.js",
   "version": "0.0.2",
   "description": "RequireJS Handlebars template plugin",
-  "homepage": "https://github.com/jfparadis/requirejs-handlebars",
   "keywords": [
     "require",
     "requirejs",

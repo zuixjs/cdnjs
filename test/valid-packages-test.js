@@ -6,6 +6,7 @@ var assert = require("assert"),
     glob = require("glob"),
     vows = require("vows-si"),
     jsv = require("JSV").JSV.createEnvironment(),
+    GitUrlParse = require("git-url-parse"),
     isThere = require("is-there");
 
 function parse(json_file, ignore_missing) {
@@ -258,6 +259,19 @@ packages.map(function (pkg) {
                 (json.autoupdate === undefined && json.npmFileMap === undefined)
             ),
             pkg_name(pkg) + ": Need to add repository information in package.json");
+    }
+    package_vows[pname + ": Homepage doesn't need to be set if it's the same as repository"] = function(pkg) {
+        var json = parse(pkg, true);
+        if ((json.repository != undefined) && (json.repository.type == 'git') && (json.homepage != undefined)) {
+            var repoUrlHttps = GitUrlParse(json.repository.url).toString("https");
+            assert.ok(
+                (
+                    (json.homepage != repoUrlHttps) &&
+                    (json.homepage != repoUrlHttps + '#readme') &&
+                    (json.homepage != repoUrlHttps + '.git')
+                ),
+                pkg_name(pkg) + ": Need to add repository information in package.json");
+        }
     }
     context[pname] = package_vows;
     suite.addBatch(context);

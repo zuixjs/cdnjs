@@ -15,7 +15,6 @@
   ],
   "author": "Chris O'Donnell",
   "license": "MIT",
-  "homepage": "https://github.com/codfish/jquery-data-remote",
   "npmName": "jquery-data-remote",
   "npmFileMap": [
     {

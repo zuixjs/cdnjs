@@ -19,6 +19,5 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rich-harris/ramjet.git"
-  },
-  "homepage": "https://github.com/rich-harris/ramjet#readme"
+  }
 }

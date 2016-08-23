@@ -20,7 +20,6 @@
   ],
   "author": "Pavlo Voznenko",
   "license": "MIT",
-  "homepage": "https://github.com/pvoznenko/jquery-allowed-chars-simple-plugin",
   "npmName": "jquery.allowed-chars",
   "npmFileMap": [
     {

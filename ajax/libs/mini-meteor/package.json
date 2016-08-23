@@ -24,6 +24,5 @@
     "rx"
   ],
   "author": "Dean Radcliffe <deanmisc@yahoo.com>",
-  "license": "MIT",
-  "homepage": "https://github.com/deanius/mini-meteor"
+  "license": "MIT"
 }

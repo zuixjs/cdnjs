@@ -26,7 +26,6 @@
     "languages",
     "locales"
   ],
-  "homepage": "https://github.com/jquery/globalize",
   "author": "The jQuery Project",
   "repository": {
     "type": "git",

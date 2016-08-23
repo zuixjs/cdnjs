@@ -10,7 +10,6 @@
     "lanczos",
     "canvas"
   ],
-  "homepage": "https://github.com/nodeca/pica",
   "license": "MIT",
   "repository": {
     "type": "git",

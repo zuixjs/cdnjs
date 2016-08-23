@@ -5,7 +5,6 @@
     "autocomplete",
     "typeahead"
   ],
-  "homepage": "https://github.com/algolia/autocomplete.js",
   "license": "MIT",
   "repository": {
     "type": "git",

@@ -13,7 +13,6 @@
   ],
   "author": "imgix",
   "license": "MIT",
-  "homepage": "https://github.com/imgix/luminous#readme",
   "npmName": "luminous-lightbox",
   "npmFileMap": [
     {

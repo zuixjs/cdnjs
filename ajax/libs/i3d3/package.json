@@ -4,7 +4,6 @@
   "description": "D3-based plotting and histogramming library",
   "version": "0.9.1",
   "license": "MIT",
-  "homepage": "https://github.com/eigenhombre/i3d3",
   "keywords": [
     "d3",
     "histogram",

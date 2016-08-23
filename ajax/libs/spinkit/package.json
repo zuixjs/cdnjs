@@ -16,7 +16,6 @@
   },
   "author": "Tobias Ahlin",
   "license": "MIT",
-  "homepage": "https://github.com/tobiasahlin/SpinKit",
   "npmName": "spinkit",
   "npmFileMap": [
     {

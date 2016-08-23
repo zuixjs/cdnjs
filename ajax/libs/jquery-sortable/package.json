@@ -2,7 +2,6 @@
   "name": "jquery-sortable",
   "filename": "jquery-sortable-min.js",
   "version": "0.9.13",
-  "homepage": "https://github.com/johnny/jquery-sortable",
   "description": "jquery plugin for sortable, nestable lists",
   "keywords": [
     "sortable",

@@ -26,7 +26,6 @@
   ],
   "author": "Typicode <typicode@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/typicode/pegasus",
   "npmName": "@typicode/pegasus",
   "npmFileMap": [
     {

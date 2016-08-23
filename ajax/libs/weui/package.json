@@ -19,7 +19,6 @@
     "type": "git",
     "url": "git+https://github.com/weui/weui.git"
   },
-  "homepage": "https://github.com/weui/weui",
   "license": "MIT",
   "npmName": "weui",
   "npmFileMap": [

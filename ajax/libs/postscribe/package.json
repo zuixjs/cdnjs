@@ -28,7 +28,6 @@
     "url": "https://github.com/krux/postscribe.git"
   },
   "dependencies": {},
-  "homepage": "https://github.com/krux/postscribe",
   "filename": "postscribe.min.js",
   "license": "MIT"
 }

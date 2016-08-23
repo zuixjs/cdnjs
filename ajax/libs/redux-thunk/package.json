@@ -7,7 +7,6 @@
     "type": "git",
     "url": "https://github.com/gaearon/redux-thunk.git"
   },
-  "homepage": "https://github.com/gaearon/redux-thunk",
   "keywords": [
     "redux",
     "thunk",

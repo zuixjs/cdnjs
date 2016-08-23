@@ -24,7 +24,6 @@
   ],
   "author": "Ahmad Ben Mrad (@BatikhSouri)",
   "license": "ISC",
-  "homepage": "https://github.com/jedisct1/libsodium.js",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/jedisct1/libsodium.js.git",

@@ -4,7 +4,6 @@
     "url": "https://github.com/abpetkov"
   },
   "description": "Create CSS3 transitions dynamically",
-  "homepage": "https://github.com/abpetkov/transitionize",
   "license": "MIT",
   "name": "transitionize",
   "filename": "transitionize.min.js",

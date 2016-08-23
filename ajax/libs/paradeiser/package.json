@@ -13,7 +13,6 @@
     "hamburger",
     "menu"
   ],
-  "homepage": "https://github.com/lucidlemon/paradeiser",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/lucidlemon/paradeiser.git",

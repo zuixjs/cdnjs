@@ -8,7 +8,6 @@
     "map projections",
     "visualization"
   ],
-  "homepage": "https://github.com/d3/d3-geo-projection",
   "author": {
     "name": "Mike Bostock",
     "url": "http://bost.ocks.org/mike"

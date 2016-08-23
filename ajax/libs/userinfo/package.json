@@ -3,7 +3,6 @@
   "filename": "userinfo.min.js",
   "description": "Javascript wrapper for the userinfo.io API",
   "version": "1.1.1",
-  "homepage": "https://github.com/vdurmont/userinfo-js",
   "keywords": [
     "ip",
     "geolocation",

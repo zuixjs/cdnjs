@@ -15,7 +15,6 @@
   ],
   "author": "Erik Schierboom",
   "license": "Apache",
-  "homepage": "https://github.com/ErikSchierboom/knockout-pre-rendered",
   "dependencies": {},
   "autoupdate": {
     "source": "git",

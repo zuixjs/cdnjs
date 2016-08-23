@@ -4,7 +4,6 @@
   "version": "0.2.0",
   "description": "Raphael Rendered, Data Driven Documents",
   "author": "Mike Hemesath",
-  "homepage": "https://github.com/mhemesath/r2d3",
   "repository": {
     "type": "git",
     "url": "https://github.com/mhemesath/r2d3.git"

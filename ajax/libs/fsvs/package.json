@@ -16,7 +16,6 @@
   ],
   "author": "Luke Snowden <luke@sno.wden.co.uk>",
   "license": "MIT",
-  "homepage": "https://github.com/lukesnowden/FSVS",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/lukesnowden/FSVS.git",

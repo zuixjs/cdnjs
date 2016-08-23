@@ -10,7 +10,6 @@
     "language",
     "util"
   ],
-  "homepage": "https://github.com/davidchambers/string-format",
   "license": "WTFPL",
   "repository": {
     "type": "git",

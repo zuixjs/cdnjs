@@ -1,7 +1,6 @@
 {
   "author": "Victor Bjelkholm",
   "description": "slim, site-wide progressbar for AngularJS",
-  "homepage": "https://github.com/VictorBjelkholm/ngProgress#readme",
   "keywords": [
     "angular",
     "ng-progress",

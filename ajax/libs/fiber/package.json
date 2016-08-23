@@ -3,7 +3,6 @@
   "filename": "fiber.min.js",
   "version": "1.0.5",
   "description": "Lightweight JavaScript inheritance library",
-  "homepage": "https://github.com/linkedin/Fiber",
   "keywords": [
     "inheritance",
     "linkedin"

@@ -4,7 +4,6 @@
     "name": "Anna Migas"
   },
   "description": "Repaintless is a library of CSS animations, which don't cause costly repaints and recalculations in our browser. Animations are smooth and simple.",
-  "homepage": "https://github.com/szynszyliszys/repaintless",
   "keywords": [
     "css",
     "sass",

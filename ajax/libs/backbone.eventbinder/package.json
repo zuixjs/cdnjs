@@ -3,7 +3,6 @@
   "filename": "backbone.eventbinder.min.js",
   "version": "0.1.0",
   "description": "Manage your Backbone event bindings better",
-  "homepage": "https://github.com/marionettejs/backbone.eventbinder",
   "keywords": [
     "events",
     "popular"

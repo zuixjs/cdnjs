@@ -3,7 +3,6 @@
   "filename": "backbone.paginator.min.js",
   "version": "2.0.5",
   "description": "A pageable Backbone.Collection superset. Supports server-side/client-side/infinite pagination and sorting.",
-  "homepage": "https://github.com/backbone-paginator/backbone.paginator",
   "keywords": [
     "backbone",
     "pagination"

@@ -3,7 +3,6 @@
   "license": "MIT",
   "name": "query-result",
   "description": "Rethinking the $",
-  "homepage": "https://github.com/WebReflection/query-result",
   "keywords": [
     "querySelector",
     "querySelectorAll",

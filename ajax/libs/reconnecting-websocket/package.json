@@ -13,7 +13,6 @@
   },
   "author": "Joe Walnes",
   "license": "MIT",
-  "homepage": "https://github.com/joewalnes/reconnecting-websocket",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/joewalnes/reconnecting-websocket.git",

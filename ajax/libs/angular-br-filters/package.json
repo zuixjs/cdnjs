@@ -20,7 +20,6 @@
     "Daniel Campos <darc.tec@gmail.com>"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/the-darc/angular-br-filters",
   "dependencies": {
     "br-masks": "^0.4.0"
   },

@@ -18,7 +18,6 @@
   "version": "2.2.0",
   "description": "Fancy date ranges for Moment.js",
   "filename": "moment-range.min.js",
-  "homepage": "https://github.com/gf3/moment-range",
   "keywords": [
     "date",
     "moment",

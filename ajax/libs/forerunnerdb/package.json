@@ -47,7 +47,6 @@
   },
   "filename": "fdb-all.min.js",
   "license": "MIT",
-  "homepage": "https://github.com/irrelon/ForerunnerDB#readme",
   "npmName": "forerunnerdb",
   "npmFileMap": [
     {

@@ -12,7 +12,6 @@
     "datastore",
     "embedded"
   ],
-  "homepage": "https://github.com/louischatriot/nedb",
   "repository": {
     "type": "git",
     "url": "git@github.com:louischatriot/nedb.git"

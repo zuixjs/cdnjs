@@ -7,7 +7,6 @@
     "cookie",
     "tiny"
   ],
-  "homepage": "https://github.com/florian/cookie.js#readme",
   "license": "MIT",
   "repository": {
     "type": "git",

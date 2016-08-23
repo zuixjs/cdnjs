@@ -3,7 +3,6 @@
   "filename": "raven.min.js",
   "version": "3.5.1",
   "description": "JavaScript client for the Sentry realtime event logging and aggregation platform.",
-  "homepage": "https://github.com/getsentry/raven-js",
   "keywords": [
     "raven",
     "sentry"

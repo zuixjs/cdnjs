@@ -3,7 +3,6 @@
   "filename": "brain.min.js",
   "version": "0.6.3",
   "description": "Neural network library",
-  "homepage": "https://github.com/harthur/brain",
   "keywords": [
     "brain",
     "neural"

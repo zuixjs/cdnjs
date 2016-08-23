@@ -2,7 +2,6 @@
   "name": "geojs",
   "version": "0.10.1",
   "description": "JavaScript Geo visualization and Analysis Library",
-  "homepage": "https://github.com/OpenGeoscience/geojs",
   "license": "BSD-3-Clause",
   "repository": {
     "type": "git",

@@ -14,7 +14,6 @@
   ],
   "author": "Ionică Bizău <bizauionica@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/IonicaBizau/CaiuSS",
   "npmName": "caiuss",
   "npmFileMap": [
     {

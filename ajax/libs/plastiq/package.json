@@ -26,6 +26,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/featurist/plastiq.git"
-  },
-  "homepage": "https://github.com/featurist/plastiq"
+  }
 }

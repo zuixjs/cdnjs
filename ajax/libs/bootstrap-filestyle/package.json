@@ -18,7 +18,6 @@
   ],
   "author": "Markus Lima @markusslima",
   "license": "MIT",
-  "homepage": "https://github.com/markusslima/bootstrap-filestyle#readme",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/markusslima/bootstrap-filestyle.git",

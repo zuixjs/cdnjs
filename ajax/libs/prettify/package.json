@@ -3,7 +3,6 @@
   "filename": "prettify.min.js",
   "version": "r298",
   "description": "A Javascript module and CSS file that allows syntax highlighting of source code snippets in an html page.",
-  "homepage": "https://github.com/google/code-prettify",
   "license": "Apache-2.0",
   "keywords": [
     "code",

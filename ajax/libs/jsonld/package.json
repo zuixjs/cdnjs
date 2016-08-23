@@ -3,7 +3,6 @@
   "version": "0.4.11",
   "filename": "jsonld.min.js",
   "description": "A JSON-LD Processor and API implementation in JavaScript.",
-  "homepage": "https://github.com/digitalbazaar/jsonld.js",
   "author": {
     "name": "Digital Bazaar, Inc.",
     "email": "support@digitalbazaar.com",

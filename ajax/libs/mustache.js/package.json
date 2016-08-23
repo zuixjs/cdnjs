@@ -4,7 +4,6 @@
   "version": "2.2.1",
   "description": "Logic-less {{mustache}} templates with JavaScript",
   "author": "mustache.js Authors <https://github.com/janl/mustache.js>",
-  "homepage": "https://github.com/janl/mustache.js",
   "keywords": [
     "templates",
     "templating",

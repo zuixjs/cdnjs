@@ -13,7 +13,6 @@
   ],
   "author": "jillix <contact@jillix.com>",
   "license": "MIT",
-  "homepage": "https://github.com/jillix/jQuery-form-serializer",
   "npmName": "jquery-form-serializer",
   "npmFileMap": [
     {

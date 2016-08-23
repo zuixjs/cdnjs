@@ -9,7 +9,6 @@
     "polyfill",
     "accurate"
   ],
-  "homepage": "https://github.com/wilddeer/stickyfill",
   "repository": {
     "type": "git",
     "url": "https://github.com/wilddeer/stickyfill.git"

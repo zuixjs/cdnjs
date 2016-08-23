@@ -25,6 +25,5 @@
     "type": "git",
     "url": "git+https://github.com/zurb/foundation-emails.git"
   },
-  "license": "MIT",
-  "homepage": "https://github.com/zurb/foundation-emails#readme"
+  "license": "MIT"
 }

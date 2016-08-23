@@ -3,7 +3,6 @@
   "filename": "angular-block-ui.min.js",
   "version": "0.2.2",
   "description": "An AngularJS module that allows you to block user interaction on AJAX requests.",
-  "homepage": "https://github.com/McNull/angular-block-ui",
   "repository": {
     "type": "git",
     "url": "https://github.com/McNull/angular-block-ui"

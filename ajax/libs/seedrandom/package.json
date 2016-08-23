@@ -23,6 +23,5 @@
     "url": "git://github.com/davidbau/seedrandom.git"
   },
   "author": "David Bau",
-  "license": "BSD",
-  "homepage": "https://github.com/davidbau/seedrandom"
+  "license": "BSD"
 }

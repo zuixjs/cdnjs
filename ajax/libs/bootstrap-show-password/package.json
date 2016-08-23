@@ -18,7 +18,6 @@
     "show.password",
     "hide.password"
   ],
-  "homepage": "https://github.com/wenzhixin/bootstrap-show-password",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/wenzhixin/bootstrap-show-password.git",

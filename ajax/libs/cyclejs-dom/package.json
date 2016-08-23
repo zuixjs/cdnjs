@@ -5,7 +5,6 @@
   "author": "Andre Staltz",
   "description": "The standard DOM Driver for Cycle.js, based on virtual-dom, and other helpers",
   "license": "MIT",
-  "homepage": "https://github.com/cyclejs/cycle-dom",
   "repository": {
     "type": "git",
     "url": "https://github.com/cyclejs/cycle-dom"

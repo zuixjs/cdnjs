@@ -37,7 +37,6 @@
     "name": "Onur Yıldırım",
     "email": "onur@cutepilot.com"
   },
-  "homepage": "https://github.com/onury/geolocator",
   "npmName": "geolocator",
   "npmFileMap": [
     {

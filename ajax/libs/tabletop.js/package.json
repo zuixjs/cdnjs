@@ -1,7 +1,6 @@
 {
   "name": "tabletop.js",
   "filename": "tabletop.min.js",
-  "homepage": "https://github.com/jsoma/tabletop",
   "description": "**Tabletop.js** takes a Google Spreadsheet and makes it easily accessible through JavaScript. With zero dependencies!",
   "keywords": [
     "database",

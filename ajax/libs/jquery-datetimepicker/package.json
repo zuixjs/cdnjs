@@ -18,7 +18,6 @@
   ],
   "author": "Chupurnov <chupurnov@gmail.com> (http://xdsoft.net/)",
   "license": "MIT",
-  "homepage": "https://github.com/xdan/datetimepicker",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/xdan/datetimepicker.git",

@@ -15,7 +15,6 @@
     "mapzen"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/mapzen/leaflet-geocoder",
   "npmName": "leaflet-geocoder-mapzen",
   "npmFileMap": [
     {

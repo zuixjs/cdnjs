@@ -16,7 +16,6 @@
     "viewer",
     "viewerjs"
   ],
-  "homepage": "https://github.com/box/viewer.js",
   "dependencies": {},
   "autoupdate": {
     "source": "git",

@@ -3,7 +3,6 @@
   "filename": "js/jquery.gray.min.js",
   "version": "1.4.4",
   "description": "Make an image gray in all browsers",
-  "homepage": "https://github.com/karlhorky/gray",
   "license": "MIT",
   "author": "kununu",
   "keywords": [

@@ -2,7 +2,6 @@
   "name": "document-register-element",
   "version": "1.0.1",
   "description": "A stand-alone working lightweight version of the W3C Custom Elements specification",
-  "homepage": "https://github.com/WebReflection/document-register-element",
   "keywords": [
     "Web",
     "Components",

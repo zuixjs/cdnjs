@@ -2,7 +2,6 @@
   "name": "bootstrap-fileinput",
   "filename": "js/fileinput.min.js",
   "version": "4.3.4",
-  "homepage": "https://github.com/kartik-v/bootstrap-fileinput",
   "description": "An enhanced HTML 5 file input for Bootstrap 3.x with file preview, multiple selection, ajax uploads, and more features.",
   "keywords": [
     "bootstrap",

@@ -19,7 +19,6 @@
   ],
   "author": "PixelsCommander",
   "license": "MIT",
-  "homepage": "https://github.com/PixelsCommander/HTML-GL",
   "dependencies": {
     "gulp-bump": "^0.2.2"
   },

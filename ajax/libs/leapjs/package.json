@@ -3,7 +3,6 @@
   "filename": "leap.min.js",
   "version": "0.6.1",
   "description": "JavaScript client for the Leap Motion Controller",
-  "homepage": "https://github.com/leapmotion/leapjs",
   "keywords": [
     "graphics",
     "leap"

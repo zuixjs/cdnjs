@@ -13,7 +13,6 @@
     "vvo"
   ],
   "description": "Image lazy loading",
-  "homepage": "https://github.com/vvo/lazyload#readme",
   "license": "MIT",
   "name": "lazyloadjs",
   "filename": "lazyload.min.js",

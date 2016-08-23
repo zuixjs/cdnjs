@@ -4,7 +4,6 @@
   "filename": "validator.min.js",
   "version": "5.5.0",
   "description": "String validation and sanitization",
-  "homepage": "https://github.com/chriso/validator.js",
   "keywords": [
     "validator",
     "validation",

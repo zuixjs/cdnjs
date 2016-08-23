@@ -9,7 +9,6 @@
   },
   "author": "Nicolas Bevacqua <nicolasbevacqua@gmail.com> (http://bevacqua.io/)",
   "license": "MIT",
-  "homepage": "https://github.com/bevacqua/dragula",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/bevacqua/dragula.git",

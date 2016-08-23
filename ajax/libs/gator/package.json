@@ -13,7 +13,6 @@
   ],
   "author": "Craig Campbell",
   "license": "Apache-2.0",
-  "homepage": "https://github.com/ccampbell/gator",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/ccampbell/gator.git",

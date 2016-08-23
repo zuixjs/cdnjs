@@ -2,7 +2,6 @@
   "name": "acorn",
   "filename": "acorn.min.js",
   "description": "ECMAScript parser",
-  "homepage": "https://github.com/ternjs/acorn",
   "version": "3.3.0",
   "repository": {
     "type": "git",

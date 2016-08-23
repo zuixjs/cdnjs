@@ -5,7 +5,6 @@
   "filename": "readmore.min.js",
   "author": "Jed Foster <jed@jedfoster.com>",
   "license": "MIT",
-  "homepage": "https://github.com/jedfoster/Readmore.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/jedfoster/Readmore.js.git"

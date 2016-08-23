@@ -8,7 +8,6 @@
     "type": "git",
     "url": "git://github.com/lgalfaso/angular-dynamic-locale.git"
   },
-  "homepage": "https://github.com/lgalfaso/angular-dynamic-locale",
   "keywords": [
     "dynamic",
     "change locale"

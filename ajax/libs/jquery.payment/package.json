@@ -3,7 +3,6 @@
   "filename": "jquery.payment.min.js",
   "version": "1.4.4",
   "description": "A general purpose library for building credit card forms, validating inputs and formatting numbers.",
-  "homepage": "https://github.com/stripe/jquery.payment",
   "keywords": [
     "payment",
     "jquery"

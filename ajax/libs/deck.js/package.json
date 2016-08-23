@@ -3,7 +3,6 @@
   "filename": "core/deck.core.min.js",
   "version": "1.1.0",
   "description": "Modern HTML Presentations",
-  "homepage": "https://github.com/imakewebthings/deck.js",
   "author": {
     "name": "Caleb Troughton",
     "email": "caleb@imakewebthings.com",

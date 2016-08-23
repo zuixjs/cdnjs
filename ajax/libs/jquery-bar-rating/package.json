@@ -4,7 +4,6 @@
     "jquery": ">=1.7.2"
   },
   "description": "Minimal, light-weight jQuery ratings.",
-  "homepage": "https://github.com/antennaio/jquery-bar-rating#readme",
   "keywords": [
     "jquery",
     "jquery-plugin",

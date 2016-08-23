@@ -2,7 +2,6 @@
   "name": "ion-rangeslider",
   "filename": "js/ion.rangeSlider.min.js",
   "version": "2.1.4",
-  "homepage": "https://github.com/IonDen/ion.rangeSlider",
   "description": "Cool, comfortable and easily customizable range slider with many options and skin support",
   "keywords": [
     "jquery-plugin",

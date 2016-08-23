@@ -14,7 +14,6 @@
     "email": "takandar@gmail.com",
     "url": "https://github.com/morr/jquery.appear/blob/master/AUTHORS.txt"
   },
-  "homepage": "https://github.com/morr/jquery.appear",
   "demo": "http://morr.github.com/appear.html",
   "dependencies": {
     "jquery": ">=1.5"

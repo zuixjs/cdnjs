@@ -17,7 +17,6 @@
   ],
   "author": "Vincent Paré",
   "license": "Apache-2.0",
-  "homepage": "https://github.com/vincepare/iframeTracker-jquery",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/vincepare/iframeTracker-jquery.git",

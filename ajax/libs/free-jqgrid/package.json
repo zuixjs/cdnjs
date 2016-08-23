@@ -38,6 +38,5 @@
     "searching"
   ],
   "author": "Oleg Kiriljuk <oleg.kiriljuk@ok-soft-gmbh.com>",
-  "license": "MIT",
-  "homepage": "https://github.com/free-jqgrid/jqGrid"
+  "license": "MIT"
 }

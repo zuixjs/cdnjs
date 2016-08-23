@@ -5,7 +5,6 @@
   "description": "Raw JavaScript fluid videos",
   "author": "@toddmotto",
   "license": "MIT",
-  "homepage": "https://github.com/toddmotto/fluidvids",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/toddmotto/fluidvids.git",

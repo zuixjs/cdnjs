@@ -16,7 +16,6 @@
   ],
   "author": "Dimitris Krestos <dkrestos@gmail.com>",
   "license": "Apache-2.0",
-  "homepage": "https://github.com/vdw/HideSeek",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/vdw/HideSeek.git",

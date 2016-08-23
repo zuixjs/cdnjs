@@ -20,7 +20,6 @@
   ],
   "author": "Mike McNeil <@mikermcneil> (http://balderdash.co/)",
   "license": "MIT",
-  "homepage": "https://github.com/balderdashy/sails.io.js",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/balderdashy/sails.io.js.git",

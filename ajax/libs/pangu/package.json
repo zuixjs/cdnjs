@@ -23,7 +23,6 @@
     "url": "https://vinta.ws/"
   },
   "license": "MIT",
-  "homepage": "https://github.com/vinta/pangu.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/vinta/pangu.js.git"

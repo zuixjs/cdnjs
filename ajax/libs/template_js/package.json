@@ -3,7 +3,6 @@
   "description": "template.js simple and easy to use javascript template.",
   "filename": "template.min.js",
   "version": "0.7.1",
-  "homepage": "https://github.com/yanhaijing/template.js",
   "author": {
     "name": "yanhaijing",
     "email": "yanhaijing@yeah.net",

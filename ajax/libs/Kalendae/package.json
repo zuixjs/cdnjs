@@ -3,7 +3,6 @@
   "filename": "kalendae.standalone.min.js",
   "description": "A framework agnostic javascript date picker.",
   "version": "0.6.1",
-  "homepage": "https://github.com/ChiperSoft/Kalendae",
   "keywords": [
     "datepicker"
   ],

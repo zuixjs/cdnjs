@@ -4,7 +4,6 @@
   "description": "Simple, small and fast JavaScript/jQuery polyfill for the HTML5 <input type=\"range\"> slider element",
   "version": "2.2.1",
   "filename": "rangeslider.min.css",
-  "homepage": "https://github.com/andreruffert/rangeslider.js",
   "author": {
     "name": "André Ruffert",
     "url": "http://andreruffert.com"

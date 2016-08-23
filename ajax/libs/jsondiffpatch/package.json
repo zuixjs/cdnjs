@@ -36,7 +36,6 @@
       "android-browser/4.2..latest"
     ]
   },
-  "homepage": "https://github.com/benjamine/jsondiffpatch",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/benjamine/jsondiffpatch.git",

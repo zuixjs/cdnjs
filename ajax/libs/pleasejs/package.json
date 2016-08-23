@@ -14,7 +14,6 @@
   ],
   "author": "Jordan Checkman",
   "license": "MIT",
-  "homepage": "https://github.com/Fooidge/PleaseJS",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/Fooidge/PleaseJS.git",

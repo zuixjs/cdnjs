@@ -3,7 +3,6 @@
   "filename": "angular-poller.min.js",
   "description": "Angular Poller service uses a timer and sends requests every few seconds to keep the client synced with the server.",
   "version": "0.4.5",
-  "homepage": "https://github.com/emmaguo/angular-poller.git",
   "author": {
     "name": "Emma Guo",
     "email": "emmahongguo@gmail.com"

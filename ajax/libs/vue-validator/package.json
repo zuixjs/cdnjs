@@ -4,7 +4,6 @@
   "description": "Validator component for Vue.js",
   "version": "2.1.6",
   "author": "kazuya kawaguchi",
-  "homepage": "https://github.com/vuejs/vue-validator",
   "keywords": [
     "plugin",
     "validation",

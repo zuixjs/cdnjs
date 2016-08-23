@@ -9,7 +9,6 @@
   },
   "author": "Daniel Lo Nigro <daniel@dan.cx> (http://dan.cx/)",
   "license": "MIT",
-  "homepage": "https://github.com/Daniel15/babel-standalone#readme",
   "npmName": "babel-standalone",
   "npmFileMap": [
     {

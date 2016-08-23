@@ -19,7 +19,6 @@
   ],
   "author": "Jari Zwarts",
   "license": "MIT",
-  "homepage": "https://github.com/jariz/vibrant.js",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/jariz/vibrant.js.git",

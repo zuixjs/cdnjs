@@ -27,7 +27,6 @@
   ],
   "author": "Jason Hicks <jaszhix@gmail.com>",
   "license": "CC-BY-4.0",
-  "homepage": "https://github.com/jaszhix/vquery",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/jaszhix/vquery.git",

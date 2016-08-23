@@ -3,7 +3,6 @@
   "filename": "jquery.rest.min.js",
   "version": "1.0.2",
   "description": "A jQuery plugin for easy consumption of RESTful APIs",
-  "homepage": "https://github.com/jpillora/jquery.rest",
   "keywords": [
     "jquery",
     "rest",

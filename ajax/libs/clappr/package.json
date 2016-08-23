@@ -9,7 +9,6 @@
   },
   "author": "Globo.com",
   "license": "BSD",
-  "homepage": "https://github.com/clappr/clappr",
   "dependencies": {
     "underscore": "1.7.0",
     "mousetrap": "^1.4.6",

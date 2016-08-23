@@ -14,7 +14,6 @@
   ],
   "author": "Michal Zielenkiewicz",
   "license": "MIT",
-  "homepage": "https://github.com/buberdds/angular-bootstrap-colorpicker",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/buberdds/angular-bootstrap-colorpicker.git",

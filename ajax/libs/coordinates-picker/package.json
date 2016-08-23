@@ -8,7 +8,6 @@
     "pick",
     "coordinates"
   ],
-  "homepage": "https://github.com/barinbritva/coordinates-picker",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/barinbritva/coordinates-picker.git",

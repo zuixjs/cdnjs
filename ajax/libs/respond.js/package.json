@@ -3,7 +3,6 @@
   "filename": "respond.min.js",
   "version": "1.4.2",
   "description": "min/max-width media query polyfill",
-  "homepage": "https://github.com/scottjehl/Respond",
   "keywords": [
     "polyfill",
     "queries",

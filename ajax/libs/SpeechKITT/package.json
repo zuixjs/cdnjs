@@ -20,7 +20,6 @@
   ],
   "author": "Tal Ater <tal@talater.com> (https://www.talater.com/)",
   "license": "MIT",
-  "homepage": "https://github.com/TalAter/SpeechKITT",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/TalAter/SpeechKITT.git",

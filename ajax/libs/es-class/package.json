@@ -3,7 +3,6 @@
   "version": "2.0.0",
   "license": "MIT",
   "description": "A future proof, backward compatible, JavaScript class utility.",
-  "homepage": "https://github.com/WebReflection/es-class",
   "keywords": [
     "ES3",
     "ES5",

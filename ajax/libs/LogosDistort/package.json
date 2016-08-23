@@ -3,7 +3,6 @@
   "filename": "jquery.logosDistort.min.js",
   "version": "0.3.8",
   "description": "A simple Javascript plugin that uses matrix3d to perform perspective distortions.",
-  "homepage": "https://github.com/hellsan631/LogosDistort",
   "keywords": [
     "jquery",
     "matrix3d",

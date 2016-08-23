@@ -3,7 +3,6 @@
   "name": "twig.js",
   "description": "JS port of the Twig templating language.",
   "version": "0.8.9",
-  "homepage": "https://github.com/justjohn/twig.js",
   "filename": "twig.min.js",
   "repository": {
     "type": "git",

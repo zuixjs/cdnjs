@@ -20,7 +20,6 @@
   ],
   "author": "AllMobilize, Inc.",
   "license": "MIT",
-  "homepage": "https://github.com/amazeui/amazeui-react",
   "dependencies": {
     "classnames": "^1.2.0",
     "fecha": "^0.2.1",

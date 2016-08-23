@@ -7,7 +7,6 @@
     "type": "git",
     "url": "git://github.com/goodeggs/angular-cached-resource.git"
   },
-  "homepage": "https://github.com/goodeggs/angular-cached-resource",
   "filename": "angular-cached-resource.min.js",
   "keywords": [
     "angularjs",

@@ -14,7 +14,6 @@
   ],
   "author": "Benjamin Reid <benjaminreid.nouveller@gmail.com> (http://nouveller.com)",
   "license": "MIT",
-  "homepage": "https://github.com/nouveller/ready.js",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/nouveller/ready.js.git",

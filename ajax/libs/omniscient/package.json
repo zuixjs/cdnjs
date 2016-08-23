@@ -12,7 +12,6 @@
     "cursors",
     "components"
   ],
-  "homepage": "https://github.com/omniscientjs/omniscient",
   "npmName": "omniscient",
   "npmFileMap": [
     {

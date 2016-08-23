@@ -3,7 +3,6 @@
   "filename": "jquery.localScroll.min.js",
   "version": "1.4.0",
   "description": "Animated anchor navigation made easy with jQuery",
-  "homepage": "https://github.com/flesler/jquery.localScroll",
   "keywords": [
     "browser",
     "animated",

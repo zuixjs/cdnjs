@@ -8,6 +8,7 @@
 var fs = require("fs"),
   async = require("async"),
   glob = require("glob"),
+  GitUrlParse = require("git-url-parse"),
   packages = glob.sync("./ajax/libs/*/package.json");
 
 async.each(packages, function(item, callback) {
@@ -41,6 +42,16 @@ async.each(packages, function(item, callback) {
   delete pkg.engine;
   delete pkg.directories;
   delete pkg.repositories;
+  if ((pkg.repository != undefined) && (pkg.repository.type == 'git')) {
+    if (pkg.homepage != undefined) {
+      repoUrlHttps = GitUrlParse(pkg.repository.url).toString("https");
+      if (pkg.homepage == repoUrlHttps ||
+          pkg.homepage == repoUrlHttps + '#readme' ||
+          pkg.homepage == repoUrlHttps + '.git' ) {
+        delete pkg.homepage;
+      }
+    }
+  }
   if ((pkg.authors != undefined) && !Array.isArray(pkg.authors)) {
     pkg.author = pkg.authors;
     delete pkg.authors;

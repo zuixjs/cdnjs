@@ -21,7 +21,6 @@
     "url": "https://github.com/Yomguithereal"
   },
   "license": "MIT",
-  "homepage": "https://github.com/Yomguithereal/baobab",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/Yomguithereal/baobab.git",

@@ -9,7 +9,6 @@
     "hover",
     "dropdowns"
   ],
-  "homepage": "https://github.com/CWSpear/bootstrap-hover-dropdown",
   "dependencies": {
     "bootstrap": "~3.0.0"
   },

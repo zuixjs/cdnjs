@@ -3,7 +3,6 @@
   "filename": "money.min.js",
   "version": "0.2.0",
   "description": "JavaScript currency conversion library.",
-  "homepage": "https://github.com/openexchangerates/money.js",
   "keywords": [
     "accounting",
     "number",

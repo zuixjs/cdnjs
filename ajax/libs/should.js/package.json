@@ -8,7 +8,6 @@
     "type": "git",
     "url": "https://github.com/shouldjs/should.js.git"
   },
-  "homepage": "https://github.com/shouldjs/should.js",
   "keywords": [
     "test",
     "bdd",

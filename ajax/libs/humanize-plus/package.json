@@ -18,7 +18,6 @@
   "filename": "humanize.min.js",
   "version": "1.6.0",
   "description": "A simple utility library for making the web more humane.",
-  "homepage": "https://github.com/HubSpot/humanize",
   "keywords": [
     "humanize",
     "format",

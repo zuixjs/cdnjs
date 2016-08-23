@@ -2,7 +2,6 @@
   "name": "ractive-require",
   "version": "0.6.8",
   "description": "Require Ractive views on demand in Package by Feature way",
-  "homepage": "https://github.com/CodeCorico/ractive-require",
   "filename": "ractive-require.min.js",
   "license": "MIT",
   "keywords": [

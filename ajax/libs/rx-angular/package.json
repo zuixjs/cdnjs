@@ -3,7 +3,6 @@
   "filename": "rx.angular.min.js",
   "description": "Library for bridging between RxJS and AngularJS.",
   "version": "1.1.3",
-  "homepage": "https://github.com/Reactive-Extensions/rx.angular.js",
   "author": {
     "name": "Microsoft"
   },

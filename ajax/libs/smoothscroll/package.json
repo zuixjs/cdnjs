@@ -19,7 +19,6 @@
   ],
   "author": "Balazs Galambosi (https://www.smoothscroll.net)",
   "license": "MIT",
-  "homepage": "https://github.com/galambalazs/smoothscroll-for-websites",
   "npmName": "smoothscroll-for-websites",
   "npmFileMap": [
     {

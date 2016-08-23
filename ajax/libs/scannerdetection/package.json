@@ -19,7 +19,6 @@
     "QRCode",
     "event"
   ],
-  "homepage": "https://github.com/julien-maurel/jQuery-Scanner-Detection",
   "repository": {
     "type": "git",
     "url": "https://github.com/julien-maurel/jQuery-Scanner-Detection.git"

@@ -4,7 +4,6 @@
   "version": "1.2.2",
   "description": "un-suck JavaScript APIs in IE8 & 9",
   "author": "Shawn Allen",
-  "homepage": "https://github.com/shawnbot/aight",
   "license": "BSD-2-Clause",
   "keywords": [
     "js",

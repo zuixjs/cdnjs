@@ -29,7 +29,6 @@
   ],
   "author": "Matthew Blode",
   "license": "MIT",
-  "homepage": "https://github.com/mblode/marx",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/mblode/marx.git",

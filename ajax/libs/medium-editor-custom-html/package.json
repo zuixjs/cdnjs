@@ -14,7 +14,6 @@
   ],
   "author": "jillix <contact@jillix.com>",
   "license": "MIT",
-  "homepage": "https://github.com/jillix/medium-editor-custom-html",
   "npmName": "medium-editor-custom-html",
   "npmFileMap": [
     {

@@ -15,7 +15,6 @@
     "url": "https://github.com/christian-fei/Simple-Jekyll-Search.git"
   },
   "author": "Christian Fei",
-  "homepage": "https://github.com/christian-fei/Simple-Jekyll-Search",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/christian-fei/Simple-Jekyll-Search.git",

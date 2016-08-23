@@ -15,7 +15,6 @@
   ],
   "author": "Evan You",
   "license": "MIT",
-  "homepage": "https://github.com/vuejs/vue-router#readme",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/vuejs/vue-router.git",

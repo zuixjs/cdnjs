@@ -22,7 +22,6 @@
   },
   "author": "Glen Cheney <cheney.glen@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/Vestride/Shuffle",
   "dependencies": {
     "jquery": ">=1.9.0"
   },

@@ -15,7 +15,6 @@
   ],
   "author": "Scott Fleckenstein <scott@stellar.org>",
   "license": "Apache-2.0",
-  "homepage": "https://github.com/stellar/js-stellar-base",
   "dependencies": {
     "babel-runtime": "~5.8.24",
     "base32.js": "~0.1.0",

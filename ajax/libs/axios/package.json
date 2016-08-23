@@ -16,7 +16,6 @@
   ],
   "author": "Matt Zabriskie",
   "license": "MIT",
-  "homepage": "https://github.com/mzabriskie/axios",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/mzabriskie/axios.git",

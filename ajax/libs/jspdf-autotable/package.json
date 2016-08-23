@@ -17,7 +17,6 @@
   ],
   "author": "Simon Bengtsson <simongbe@gmail.com> (simonbengtsson.com)",
   "license": "MIT",
-  "homepage": "https://github.com/simonbengtsson/jsPDF-AutoTable#readme",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/simonbengtsson/jsPDF-AutoTable.git",

@@ -3,7 +3,6 @@
   "filename": "jquery.fileDownload.min.js",
   "version": "1.4.2",
   "description": "jQuery.fileDownload plugin",
-  "homepage": "https://github.com/johnculviner/jquery.fileDownload",
   "keywords": [
     "jquery.fileDownload",
     "file download"

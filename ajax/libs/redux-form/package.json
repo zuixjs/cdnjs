@@ -20,7 +20,6 @@
   ],
   "author": "Erik Rasmussen <rasmussenerik@gmail.com> (http://github.com/erikras)",
   "license": "MIT",
-  "homepage": "https://github.com/erikras/redux-form",
   "dependencies": {
     "deep-equal": "^1.0.1",
     "hoist-non-react-statics": "^1.0.5",

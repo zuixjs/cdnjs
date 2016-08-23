@@ -3,7 +3,6 @@
   "version": "1.4.4",
   "filename": "jquery-scrollto.min.js",
   "description": "Smooth Scrolling to any jQuery/DOM Element",
-  "homepage": "https://github.com/balupton/jquery-scrollto",
   "keywords": [
     "jquery",
     "scroll",

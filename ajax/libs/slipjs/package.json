@@ -16,7 +16,6 @@
   ],
   "author": "Kornel <pornel@pornel.net>",
   "license": "BSD-2-Clause",
-  "homepage": "https://github.com/pornel/slip#readme",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/pornel/slip.git",

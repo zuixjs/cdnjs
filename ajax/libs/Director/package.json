@@ -12,7 +12,6 @@
   "filename": "director.min.js",
   "version": "1.2.8",
   "description": "A client Side/Server Side Router",
-  "homepage": "https://github.com/flatiron/director",
   "repository": {
     "type": "git",
     "url": "git://github.com/flatiron/director.git"

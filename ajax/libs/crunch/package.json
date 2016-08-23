@@ -17,7 +17,6 @@
   ],
   "author": "Nenad Vukicevic <vukicevic@gmail.com> (https://github.com/vukicevic)",
   "license": "MIT",
-  "homepage": "https://github.com/vukicevic/crunch",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/vukicevic/crunch.git",

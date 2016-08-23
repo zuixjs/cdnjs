@@ -6,7 +6,6 @@
     "jquery",
     "jquery-plugin"
   ],
-  "homepage": "https://github.com/RobLoach/jquery-once",
   "author": "Rob Loach (https://github.com/RobLoach)",
   "npmName": "jquery-once",
   "npmFileMap": [

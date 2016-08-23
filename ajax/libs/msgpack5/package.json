@@ -21,7 +21,6 @@
   ],
   "author": "Matteo collina <hello@matteocollina.com>",
   "license": "MIT",
-  "homepage": "https://github.com/mcollina/msgpack5",
   "testling": {
     "files": "test/*.js",
     "browsers": [

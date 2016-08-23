@@ -18,7 +18,6 @@
     "url": "https://github.com/lmgonzalves"
   },
   "license": "MIT",
-  "homepage": "https://github.com/lmgonzalves/segment",
   "npmName": "segment-js",
   "npmFileMap": [
     {

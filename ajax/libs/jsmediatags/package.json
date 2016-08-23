@@ -19,7 +19,6 @@
     "mp4"
   ],
   "license": "BSD-3-Clause",
-  "homepage": "https://github.com/aadsm/jsmediatags#readme",
   "dependencies": {
     "xhr2": "~0.1.3"
   },

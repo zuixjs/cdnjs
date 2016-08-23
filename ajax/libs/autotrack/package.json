@@ -19,7 +19,6 @@
     "url": "http://philipwalton.com"
   },
   "license": "Apache-2.0",
-  "homepage": "https://github.com/googleanalytics/autotrack#readme",
   "dependencies": {
     "debounce": "^1.0.0",
     "delegate": "^3.0.0"

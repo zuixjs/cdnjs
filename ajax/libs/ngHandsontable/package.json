@@ -1,7 +1,6 @@
 {
   "name": "ngHandsontable",
   "description": "AngularJS directive for Handsontable",
-  "homepage": "https://github.com/handsontable/ngHandsontable",
   "author": "Marcin Warpechowski <hello@handsontable.com>",
   "version": "0.12.0",
   "repository": {

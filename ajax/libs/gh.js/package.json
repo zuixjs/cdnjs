@@ -13,7 +13,6 @@
   ],
   "author": "Ionică Bizău <bizauionica@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/IonicaBizau/gh.js",
   "dependencies": {
     "jsonrequest": "^2.0.0",
     "ul": "^2.1.0",

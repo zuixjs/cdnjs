@@ -3,7 +3,6 @@
   "filename": "haml.min.js",
   "version": "5.4",
   "description": "Haml compiler for client side javascript and coffeescript view templates",
-  "homepage": "https://github.com/uglyog/clientside-haml-js",
   "keywords": [
     "template",
     "haml"

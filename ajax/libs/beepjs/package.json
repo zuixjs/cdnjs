@@ -4,7 +4,6 @@
   "filename": "beep.min.js",
   "version": "0.0.1",
   "description": "Makes browser beep.",
-  "homepage": "https://github.com/luciferous/beepjs",
   "author": {
     "name": "Neuman Vong",
     "email": "neuman@ashmoremusic.com",

@@ -17,7 +17,6 @@
   ],
   "author": "David G. Hong",
   "license": "MIT",
-  "homepage": "https://github.com/hongymagic/jQuery.serializeObject",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/hongymagic/jQuery.serializeObject.git",

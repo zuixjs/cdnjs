@@ -20,7 +20,6 @@
   ],
   "author": "Federico Zivolo",
   "license": "MIT",
-  "homepage": "https://github.com/FezVrasta/bootstrap-material-design",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/FezVrasta/bootstrap-material-design.git",

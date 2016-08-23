@@ -28,7 +28,6 @@
     "url": "https://github.com/webschik"
   },
   "license": "MIT",
-  "homepage": "https://github.com/jsFile/jsFile",
   "dependencies": {
     "jstask": "^1.0.2"
   }

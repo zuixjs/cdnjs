@@ -2,7 +2,6 @@
   "name": "domready",
   "filename": "ready.min.js",
   "version": "1.0.8",
-  "homepage": "https://github.com/ded/domready",
   "description": "modern domready",
   "keywords": [
     "ender",

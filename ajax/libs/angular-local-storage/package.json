@@ -3,7 +3,6 @@
   "filename": "angular-local-storage.min.js",
   "version": "0.2.7",
   "description": "An Angular module that gives you access to the browsers local storage",
-  "homepage": "https://github.com/grevory/angular-local-storage",
   "repository": {
     "type": "git",
     "url": "https://github.com/grevory/angular-local-storage.git"

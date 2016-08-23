@@ -18,7 +18,6 @@
   ],
   "author": "Sabbir Ahmed",
   "license": "MIT",
-  "homepage": "https://github.com/thesabbir/simple-line-icons",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/thesabbir/simple-line-icons.git",

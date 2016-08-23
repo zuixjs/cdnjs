@@ -2,7 +2,6 @@
   "name": "backbone.radio",
   "description": "Messaging patterns for Backbone applications.",
   "version": "1.0.5",
-  "homepage": "https://github.com/marionettejs/backbone.radio",
   "filename": "backbone.radio.min.js",
   "keywords": [
     "backbone",

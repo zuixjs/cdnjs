@@ -32,7 +32,6 @@
     "ndarray": "^1.0.18",
     "ndarray-linear-interpolate": "^1.0.0"
   },
-  "homepage": "https://github.com/serratus/quaggaJS#readme",
   "npmName": "quagga",
   "npmFileMap": [
     {

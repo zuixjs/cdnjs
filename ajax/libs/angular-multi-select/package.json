@@ -14,7 +14,6 @@
   ],
   "author": "Ignatius Steven <isteven.github@gmail.com> (https://github.com/isteven)",
   "license": "MIT",
-  "homepage": "https://github.com/isteven/angular-multi-select",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/isteven/angular-multi-select.git",

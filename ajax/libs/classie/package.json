@@ -12,7 +12,6 @@
   ],
   "author": "David DeSandro",
   "license": "MIT",
-  "homepage": "https://github.com/desandro/classie",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/desandro/classie.git",

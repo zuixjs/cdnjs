@@ -15,7 +15,6 @@
     "sequence",
     "iteration"
   ],
-  "homepage": "https://github.com/facebook/immutable-js",
   "npmName": "immutable",
   "npmFileMap": [
     {

@@ -3,7 +3,6 @@
   "filename": "keymaster.min.js",
   "description": "library for defining and dispatching keyboard shortcuts",
   "version": "1.6.1",
-  "homepage": "https://github.com/madrobby/keymaster",
   "keywords": [
     "hotkeys",
     "hotkey"

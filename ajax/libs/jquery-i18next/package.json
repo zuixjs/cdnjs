@@ -14,7 +14,6 @@
     "jquery",
     "jquery-plugin"
   ],
-  "homepage": "https://github.com/i18next/jquery-i18next",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/i18next/jquery-i18next.git"

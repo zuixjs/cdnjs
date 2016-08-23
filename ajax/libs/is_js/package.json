@@ -8,7 +8,6 @@
     "type": "git",
     "url": "https://github.com/arasatasaygin/is.js.git"
   },
-  "homepage": "https://github.com/arasatasaygin/is.js",
   "npmName": "is_js",
   "npmFileMap": [
     {

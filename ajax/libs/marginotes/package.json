@@ -19,7 +19,6 @@
     "url": "http://francisco.dance"
   },
   "license": "MIT",
-  "homepage": "https://github.com/fdansv/marginotes#readme",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/fdansv/marginotes.git",

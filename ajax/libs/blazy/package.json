@@ -21,7 +21,6 @@
     "url": "https://github.com/dinbror/blazy.git"
   },
   "license": "MIT",
-  "homepage": "https://github.com/dinbror/blazy",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/dinbror/blazy.git",

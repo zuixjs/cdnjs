@@ -16,7 +16,6 @@
   ],
   "author": "Erik Cunningham <djtrinary@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/trinary/d3-transform",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/trinary/d3-transform.git",

@@ -4,7 +4,6 @@
   "filename": "gas.min.js",
   "description": "Google Analytics on Steroids",
   "version": "1.11.0",
-  "homepage": "https://github.com/CardinalPath/gas",
   "keywords": [
     "Google Analytics",
     "Web Analytics"

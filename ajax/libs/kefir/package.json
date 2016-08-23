@@ -19,7 +19,6 @@
     "Observable"
   ],
   "author": "Roman Pominov <rpominov@gmail.com>",
-  "homepage": "https://github.com/rpominov/kefir",
   "repository": {
     "type": "git",
     "url": "https://github.com/rpominov/kefir.git"

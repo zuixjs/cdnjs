@@ -24,7 +24,6 @@
     "name": "Kiran Abburi"
   },
   "license": "MIT",
-  "homepage": "https://github.com/akiran/react-foundation-apps",
   "dependencies": {
     "object-assign": "^2.0.0",
     "pubsub-js": "^1.5.0",

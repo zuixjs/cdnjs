@@ -3,7 +3,6 @@
   "filename": "url.min.js",
   "version": "2.1.7",
   "description": "Lightweight URL manipulation with JavaScript.",
-  "homepage": "https://github.com/Mikhus/jsurl",
   "keywords": [
     "url",
     "querystring"

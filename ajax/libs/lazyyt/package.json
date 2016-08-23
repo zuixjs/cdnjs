@@ -14,7 +14,6 @@
   ],
   "author": "Tyler Pearson <ty.pearson@gmail.com> (http://tylerp.me)",
   "license": "CC-BY-SA-4.0",
-  "homepage": "https://github.com/tylerpearson/lazyYT",
   "dependencies": {
     "jquery": ">=1.8"
   },

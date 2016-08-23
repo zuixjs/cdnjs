@@ -3,7 +3,6 @@
   "filename": "dat.gui.min.js",
   "version": "0.5.1",
   "description": "A lightweight graphical user interface for changing variables in JavaScript.",
-  "homepage": "https://github.com/dataarts/dat.gui",
   "keywords": [
     "ui",
     "DataArtsTeam",
