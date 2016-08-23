@@ -7,14 +7,15 @@
     "events",
     "popular"
   ],
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/marionettejs/backbone.wreqr.git",
-    "basePath": "lib",
-    "files": [
-      "*"
-    ]
-  },
+  "npmName": "backbone.wreqr",
+  "npmFileMap": [
+    {
+      "basePath": "lib",
+      "files": [
+        "**/*"
+      ]
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/marionettejs/backbone.wreqr"
