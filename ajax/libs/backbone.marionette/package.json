@@ -1,7 +1,7 @@
 {
   "name": "backbone.marionette",
   "filename": "backbone.marionette.min.js",
-  "version": "2.5.6",
+  "version": "3.0.0",
   "description": "Make your Backbone.js apps dance!",
   "keywords": [
     "collections",
