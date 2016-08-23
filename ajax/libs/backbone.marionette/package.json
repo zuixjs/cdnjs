@@ -10,14 +10,15 @@
     "events",
     "popular"
   ],
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/marionettejs/backbone.marionette.git",
-    "basePath": "/lib/",
-    "files": [
-      "**/*"
-    ]
-  },
+  "npmName": "backbone.marionette",
+  "npmFileMap": [
+    {
+      "basePath": "lib",
+      "files": [
+        "**/*"
+      ]
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/marionettejs/backbone.marionette"
