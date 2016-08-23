@@ -25,7 +25,13 @@
     {
       "basePath": "",
       "files": [
-        "waterfall*.js"
+        "waterfall*"
+      ]
+    },
+    {
+      "basePath": "src",
+      "files": [
+        "waterfall*"
       ]
     }
   ]
