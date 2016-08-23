@@ -40,6 +40,7 @@ async.each(packages, function(item, callback) {
   delete pkg.engines;
   delete pkg.engine;
   delete pkg.directories;
+  delete pkg.repositories;
   if ((pkg.authors != undefined) && !Array.isArray(pkg.authors)) {
     pkg.author = pkg.authors;
     delete pkg.authors;

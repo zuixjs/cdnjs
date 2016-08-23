@@ -112,42 +112,14 @@ packages.map(function (pkg) {
             pkg_name(pkg) + ": Name property should be '" + trueName + "', not '" + json.name +"'");
     };
 
-    package_vows[pname + ": validate type of repository/repositories"] = function (pkg) {
+     package_vows[pname + ": make sure repository field follow npm package.json format"] = function (pkg) {
         var json = parse(pkg, true);
+        if (json.repository) {
             assert.ok(
-                (
-                    (json.repositories === undefined) ||
-                    (Array.isArray(json.repositories) && json.repositories.length > 1)
-                ),
-            "There is only one repo in " + json.name + "'s package.json, please use repository object instead of repositories array."
-            );
-            assert.ok(!Array.isArray(json.repository), "repository should not be an array, please use repositories instead if there are multiple repos in " + json.name + "'s package.json");
-    };
-
-     package_vows[pname + ": do not use repositories if there is only one repo"] = function (pkg) {
-        var json = parse(pkg, true);
-            assert.ok(
-                (
-                    (json.repositories === undefined) ||
-                    (Array.isArray(json.repositories) && json.repositories.length > 1)
-                ),
-            "There is only one repo in " + json.name + "'s package.json, please use repository object instead of repositories array."
-            );
-    };   package_vows[pname + ": make sure repository field follow npm package.json format"] = function (pkg) {
-        var json = parse(pkg, true);
-            if (json.repositories === undefined && json.repository !== undefined) {
-                json.repositories = [];
-                json.repositories[0] = json.repository;
-            }
-            for (var repo in json.repositories) {
-                assert.ok(
-                    (
-                        (json.repositories[repo].type !== undefined) &&
-                        (json.repositories[repo].url  !== undefined)
-                    ),
+                 ((json.repository.type !== undefined) && (json.repository.url  !== undefined)),
                 "There repository field in " + json.name + "'s package.json should follow npm's format, must have type and url field."
-                );
-            }
+            );
+        }
     };
 
     package_vows[pname + ": must have auto-update config if it has no version specified"] = function (pkg) {
@@ -273,15 +245,16 @@ packages.map(function (pkg) {
         delete json_fix.engines;
         delete json_fix.engine;
         delete json_fix.directories;
+        delete json_fix.repositories;
 
         assert.ok(JSON.stringify(json) === JSON.stringify(json_fix) ,
-            pkg_name(pkg) + ": we don't need bin, jshintConfig, eslintConfig, styles, install, typescript, browserify, browser, jam, jest, scripts, devDependencies, main, peerDependencies, contributors, bugs, gitHEAD, issues, files, ignore, engines, engine, directories and maintainers fields in package.json");
+            pkg_name(pkg) + ": we don't need bin, jshintConfig, eslintConfig, styles, install, typescript, browserify, browser, jam, jest, scripts, devDependencies, main, peerDependencies, contributors, bugs, gitHEAD, issues, files, ignore, engines, engine, directories, repositories and maintainers fields in package.json");
     }
     package_vows[pname + ": There must be repository information when using auto-update config"] = function(pkg) {
         var json = parse(pkg, true);
         assert.ok(
             (
-                (json.repository !== undefined || json.repositories !== undefined) ||
+                (json.repository !== undefined) ||
                 (json.autoupdate === undefined && json.npmFileMap === undefined)
             ),
             pkg_name(pkg) + ": Need to add repository information in package.json");

@@ -39,10 +39,6 @@
             "type": "object",
             "additionalProperties": "string"
             },
-        "repositories": {
-            "type": "array",
-            "items": "object"
-            },
         "npmName": {
             "type": "string"
             },
