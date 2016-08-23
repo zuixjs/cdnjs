@@ -35,6 +35,24 @@
             "type": "object",
             "additionalProperties": "string"
             },
+        "repository": {
+            "type": "object",
+            "additionalProperties": "string"
+            },
+        "repositories": {
+            "type": "array",
+            "items": "object"
+            },
+        "npmName": {
+            "type": "string"
+            },
+        "npmFileMap": {
+            "type": "array",
+            "items": "object"
+            },
+        "autoupdate": {
+            "type": "object"
+            },
         "private": {
             "type": "boolean"
             }
