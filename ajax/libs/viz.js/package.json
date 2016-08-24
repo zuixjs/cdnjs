@@ -16,5 +16,14 @@
   "keywords": [
     "GraphViz",
     "viz"
+  ],
+  "npmName": "viz.js",
+  "npmFileMap": [
+    {
+      "basePath": "",
+      "files": [
+        "viz*"
+      ]
+    }
   ]
 }
