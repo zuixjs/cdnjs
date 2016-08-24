@@ -18,7 +18,7 @@
   "npmName": "gridlex",
   "npmFileMap": [
     {
-      "basePath": "dist",
+      "basePath": "docs",
       "files": [
         "gridlex*"
       ]
