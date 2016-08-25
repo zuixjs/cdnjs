@@ -34,7 +34,7 @@
 ## B. pull request
 
 ### a. Sparse checkout and shallow clone
-* [The short document of how to use sparse checkout and shallow clone is here](https://github.com/cdnjs/cdnjs/blob/master/sparseCheckout.md)
+* [The short document of how to use sparse checkout and shallow clone is here](https://github.com/cdnjs/cdnjs/blob/master/documents/sparseCheckout.md)
 * Sparse checkout and shallow clone can totally raise efficient of working with cdnjs repo and avoid the problem of case-insensitive filesystem, for detail reason, see it below.
 * The minor reason that you should use sparse checkout and shallow clone:
   * There is no need to clone the whole history of cdnjs repo if you are not tracing issues or maintaining this project, and there is no need to checkout all the libs on cdnjs for the same reason(unless you want to access the libs without the Internet).
