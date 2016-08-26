@@ -27,7 +27,7 @@
     {
       "basePath": "build",
       "files": [
-        "**/*"
+        "**/!(*.php)"
       ]
     }
   ]
