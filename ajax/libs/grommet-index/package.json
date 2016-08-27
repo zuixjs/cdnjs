@@ -1,0 +1,32 @@
+{
+  "name": "grommet-index",
+  "version": "0.4.5",
+  "filename": "grommet-index.min.js",
+  "description": "Grommet UI and example server for searching, filtering, and displaying mass quantities of items.",
+  "authors": [
+    "Alan Souza",
+    "Bryan Jacquot",
+    "Chris Carlozzi",
+    "Eric Soderberg"
+  ],
+  "homepage": "http://index.grommet.io",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/grommet/grommet-index.git"
+  },
+  "dependencies": {
+    "classnames": "^2.2.3",
+    "debounce": "^1.0.0",
+    "grommet": "^0.6.11"
+  },
+  "npmName": "grommet-index",
+  "npmFileMap": [
+    {
+      "basePath": "",
+      "files": [
+        "grommet-index*"
+      ]
+    }
+  ]
+}
