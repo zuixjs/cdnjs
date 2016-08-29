@@ -16,7 +16,5 @@
     "url": "https://github.com/sympmarc/SPServices.git"
   },
   "license": "MIT",
-  "authors": [
-    "Sympraxis Consulting LLC/marc.anderson@sympraxisconsulting.com"
-  ]
+  "author": "Sympraxis Consulting LLC/marc.anderson@sympraxisconsulting.com"
 }

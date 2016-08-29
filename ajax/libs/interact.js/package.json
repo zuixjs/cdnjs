@@ -8,13 +8,6 @@
   "filename": "interact.min.js",
   "description": "Drag and drop, resizing and multi-touch gestures with inertia and snapping for modern browsers (and also IE8+)",
   "homepage": "http://interactjs.io",
-  "authors": [
-    {
-      "name": "Taye Adeyemi",
-      "email": "dev@taye.me",
-      "url": "http://taye.me"
-    }
-  ],
   "keywords": [
     "interact.js",
     "draggable",
@@ -40,5 +33,10 @@
     "files": [
       "interact.*"
     ]
+  },
+  "author": {
+    "name": "Taye Adeyemi",
+    "email": "dev@taye.me",
+    "url": "http://taye.me"
   }
 }

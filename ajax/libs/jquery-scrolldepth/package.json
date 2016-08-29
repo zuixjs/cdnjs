@@ -4,9 +4,6 @@
   "version": "0.9.1",
   "description": "A jQuery plugin to track page scroll depth",
   "homepage": "http://scrolldepth.parsnip.io",
-  "authors": [
-    "Rob Flaherty"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/robflaherty/jquery-scrolldepth.git"
@@ -29,5 +26,6 @@
     "files": [
       "jquery.scrolldepth*.js"
     ]
-  }
+  },
+  "author": "Rob Flaherty"
 }

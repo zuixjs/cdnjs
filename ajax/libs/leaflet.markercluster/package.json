@@ -24,7 +24,5 @@
     "url": "https://github.com/Leaflet/Leaflet.markercluster.git"
   },
   "license": "MIT",
-  "authors": [
-    "Dave Leaver <danzel@localhost.geek.nz>"
-  ]
+  "author": "Dave Leaver <danzel@localhost.geek.nz>"
 }

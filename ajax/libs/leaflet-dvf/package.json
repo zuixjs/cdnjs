@@ -23,7 +23,5 @@
     "url": "https://github.com/humangeo/leaflet-dvf.git"
   },
   "license": "MIT",
-  "authors": [
-    "Scott Fairgrieve <https://github.com/sfairgrieve>"
-  ]
+  "author": "Scott Fairgrieve <https://github.com/sfairgrieve>"
 }

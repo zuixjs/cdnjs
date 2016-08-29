@@ -22,7 +22,5 @@
       "piwik.js"
     ]
   },
-  "authors": [
-    "Piwik.org <hello@piwik.org>"
-  ]
+  "author": "Piwik.org <hello@piwik.org>"
 }

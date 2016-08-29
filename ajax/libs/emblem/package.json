@@ -26,7 +26,5 @@
     "url": "https://github.com/machty/emblem.js"
   },
   "license": "MIT",
-  "authors": [
-    "Alex Matchneer <machty@gmail.com>"
-  ]
+  "author": "Alex Matchneer <machty@gmail.com>"
 }

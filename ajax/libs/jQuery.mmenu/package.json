@@ -3,9 +3,6 @@
   "filename": "js/jquery.mmenu.min.js",
   "version": "5.7.0",
   "homepage": "http://mmenu.frebsite.nl/",
-  "authors": [
-    "Fred Heusschen <info@frebsite.nl>"
-  ],
   "description": "The best jQuery plugin for app look-alike on- and off-canvas menus with sliding submenus for your website and webapp.",
   "keywords": [
     "mmenu",
@@ -30,5 +27,6 @@
     "type": "git",
     "url": "git://github.com/BeSite/jQuery.mmenu.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "author": "Fred Heusschen <info@frebsite.nl>"
 }

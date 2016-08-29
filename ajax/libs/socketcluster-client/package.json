@@ -22,8 +22,6 @@
       "socketcluster*.js"
     ]
   },
-  "authors": [
-    "Jonathan Gros-Dubois <grosjona@yahoo.com.au>"
-  ],
-  "license": "MIT"
+  "license": "MIT",
+  "author": "Jonathan Gros-Dubois <grosjona@yahoo.com.au>"
 }

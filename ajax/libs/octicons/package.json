@@ -5,9 +5,6 @@
   "description": "GitHub's icon font",
   "license": "SIL OFL 1.1, MIT",
   "homepage": "http://octicons.github.com/",
-  "authors": [
-    "GitHub <support@github.com>"
-  ],
   "keywords": [
     "GitHub",
     "icons",
@@ -30,5 +27,6 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/github/octicons.git"
-  }
+  },
+  "author": "GitHub <support@github.com>"
 }

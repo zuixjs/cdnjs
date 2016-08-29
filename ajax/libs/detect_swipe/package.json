@@ -21,7 +21,5 @@
     "url": "git://github.com/marcandre/detect_swipe.git"
   },
   "license": "MIT",
-  "authors": [
-    "Marc-André Lafortune"
-  ]
+  "author": "Marc-André Lafortune"
 }

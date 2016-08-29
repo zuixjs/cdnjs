@@ -12,13 +12,6 @@
     "jquery",
     "jquery-plugin"
   ],
-  "authors": [
-    {
-      "name": "Bjørn Klinggaard",
-      "url": "http://dinbror.dk",
-      "email": "hello@dinbror.dk"
-    }
-  ],
   "license": "DWIWYWBPVMS",
   "moduleType": [
     "jquery"
@@ -34,5 +27,10 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/dinbror/bpopup.git"
+  },
+  "author": {
+    "name": "Bjørn Klinggaard",
+    "url": "http://dinbror.dk",
+    "email": "hello@dinbror.dk"
   }
 }

@@ -26,7 +26,5 @@
       "**/*"
     ]
   },
-  "authors": [
-    "Savio Dimatteo <darksmo@gmail.com>"
-  ]
+  "author": "Savio Dimatteo <darksmo@gmail.com>"
 }

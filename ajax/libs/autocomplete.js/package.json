@@ -24,7 +24,5 @@
     }
   ],
   "filename": "autocomplete.jquery.min.js",
-  "authors": [
-    "Algolia Team <support@algolia.com>"
-  ]
+  "author": "Algolia Team <support@algolia.com>"
 }

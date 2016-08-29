@@ -4,13 +4,6 @@
   "version": "2.0.3",
   "description": "Replicating Medium's beautiful, minimalist lightbox module",
   "homepage": "http://terrymun.github.io/Fluidbox/",
-  "authors": [
-    {
-      "name": "Terry Mun",
-      "email": "hello@terrymun.com",
-      "homagepage": "http://terrymun.com"
-    }
-  ],
   "keywords": [
     "fluidbox",
     "fluidbox.js",
@@ -33,5 +26,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/terrymun/Fluidbox/"
+  },
+  "author": {
+    "name": "Terry Mun",
+    "email": "hello@terrymun.com",
+    "homagepage": "http://terrymun.com"
   }
 }

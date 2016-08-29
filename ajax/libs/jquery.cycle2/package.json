@@ -22,7 +22,5 @@
       "**/*"
     ]
   },
-  "authors": [
-    "malsup <malsup@gmail.com>"
-  ]
+  "author": "malsup <malsup@gmail.com>"
 }

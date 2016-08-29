@@ -12,8 +12,6 @@
     "music",
     "beeplay"
   ],
-  "authors": [
-    "Daijiro Wachi <daijiro.wachi@gmail.com>"
-  ],
-  "license": "MIT"
+  "license": "MIT",
+  "author": "Daijiro Wachi <daijiro.wachi@gmail.com>"
 }

@@ -7,9 +7,6 @@
     "type": "git",
     "url": "git://github.com/prrashi/rateYo.git"
   },
-  "authors": [
-    "prrashi <prashanth.pamidi@gmail.com>"
-  ],
   "homepage": "http://rateyo.fundoocode.ninja/",
   "keywords": [
     "RateYo",
@@ -29,5 +26,6 @@
     "files": [
       "jquery.rateyo*.+(js|map|css)"
     ]
-  }
+  },
+  "author": "prrashi <prashanth.pamidi@gmail.com>"
 }

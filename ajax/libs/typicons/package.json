@@ -5,9 +5,6 @@
   "description": "Typicons icon font",
   "license": "CC BY-SA",
   "homepage": "http://typicons.com",
-  "authors": [
-    "Stephen Hutchings"
-  ],
   "keywords": [
     "icons",
     "font",
@@ -29,5 +26,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/stephenhutchings/typicons.font.git"
-  }
+  },
+  "author": "Stephen Hutchings"
 }

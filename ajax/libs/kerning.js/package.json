@@ -18,7 +18,5 @@
     "url": "https://github.com/endtwist/kerning.js"
   },
   "license": "MIT",
-  "authors": [
-    "Joshua Gross <joshua@gross.is>"
-  ]
+  "author": "Joshua Gross <joshua@gross.is>"
 }

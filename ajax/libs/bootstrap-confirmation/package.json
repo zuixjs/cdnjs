@@ -21,10 +21,8 @@
     "url": "https://github.com/tavicu/bs-confirmation.git"
   },
   "license": "MIT",
-  "authors": [
-    {
-      "name": "Tavicu",
-      "homepage": "https://github.com/tavicu"
-    }
-  ]
+  "author": {
+    "name": "Tavicu",
+    "homepage": "https://github.com/tavicu"
+  }
 }

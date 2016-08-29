@@ -14,9 +14,6 @@
     "url": "https://github.com/imulus/retinajs.git"
   },
   "license": "MIT",
-  "authors": [
-    "Imulus, LLC <developer@imulus.com>"
-  ],
   "npmName": "retinajs",
   "npmFileMap": [
     {
@@ -25,5 +22,6 @@
         "**/*"
       ]
     }
-  ]
+  ],
+  "author": "Imulus, LLC <developer@imulus.com>"
 }

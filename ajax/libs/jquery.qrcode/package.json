@@ -14,7 +14,5 @@
     "url": "https://github.com/jeromeetienne/jquery-qrcode"
   },
   "license": "MIT",
-  "authors": [
-    "jeromeetienne"
-  ]
+  "author": "jeromeetienne"
 }

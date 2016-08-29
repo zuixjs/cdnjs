@@ -3,9 +3,6 @@
   "filename": "jquery.dotdotdot.min.js",
   "version": "1.7.4",
   "homepage": "http://dotdotdot.frebsite.nl/",
-  "authors": [
-    "Fred Heusschen <info@frebsite.nl>"
-  ],
   "description": "A jQuery plugin for advanced cross-browser ellipsis on multiple line content.",
   "keywords": [
     "ellipsis",
@@ -37,5 +34,6 @@
     "files": [
       "*.js"
     ]
-  }
+  },
+  "author": "Fred Heusschen <info@frebsite.nl>"
 }

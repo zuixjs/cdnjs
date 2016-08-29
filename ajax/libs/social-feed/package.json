@@ -2,13 +2,6 @@
   "name": "social-feed",
   "version": "0.1.2",
   "homepage": "http://pavelk2.github.io/social-feed/",
-  "authors": [
-    {
-      "name": "Pavel Kucherbaev",
-      "email": "pavel@kucherbaev.com",
-      "homepage": "http://kucherbaev.com"
-    }
-  ],
   "keywords": [
     "Twitter",
     "Facebook",
@@ -39,5 +32,10 @@
       "js/jquery.socialfeed.*"
     ]
   },
-  "description": "A jQuery plugin that shows a user feed from the most popular social networks "
+  "description": "A jQuery plugin that shows a user feed from the most popular social networks ",
+  "author": {
+    "name": "Pavel Kucherbaev",
+    "email": "pavel@kucherbaev.com",
+    "homepage": "http://kucherbaev.com"
+  }
 }

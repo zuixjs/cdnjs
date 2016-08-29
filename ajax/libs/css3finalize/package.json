@@ -20,10 +20,8 @@
     "url": "https://github.com/codler/jQuery-Css3-Finalize"
   },
   "license": "MIT",
-  "authors": [
-    {
-      "name": "Han Lin Yap",
-      "homepage": "http://yap.nu/"
-    }
-  ]
+  "author": {
+    "name": "Han Lin Yap",
+    "homepage": "http://yap.nu/"
+  }
 }

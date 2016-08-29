@@ -2,9 +2,6 @@
   "name": "z-schema",
   "version": "3.17.0",
   "description": "JSON schema validator",
-  "authors": [
-    "Martin Zagora <zaggino@gmail.com>"
-  ],
   "license": "MIT",
   "keywords": [
     "JSON",
@@ -30,5 +27,6 @@
         "!(ZSchema-browser-test*)"
       ]
     }
-  ]
+  ],
+  "author": "Martin Zagora <zaggino@gmail.com>"
 }

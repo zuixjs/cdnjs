@@ -21,8 +21,6 @@
       "dimple.latest*.js"
     ]
   },
-  "authors": [
-    "johnkiernander <jkiernander@pmsi-consulting.com>"
-  ],
-  "description": "An object-oriented charting API for d3"
+  "description": "An object-oriented charting API for d3",
+  "author": "johnkiernander <jkiernander@pmsi-consulting.com>"
 }

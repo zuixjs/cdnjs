@@ -21,7 +21,5 @@
       "**/*"
     ]
   },
-  "authors": [
-    "Arend van Beelen jr."
-  ]
+  "author": "Arend van Beelen jr."
 }

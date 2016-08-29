@@ -202,16 +202,12 @@ packages.map(function (pkg) {
                 pkg_name(pkg) + ": author field in package.json should be a object or string to show its author info, if there is multiple authors info, you should use 'authors' instead, you can use our tool: tools/fixFormat.js to fix it for you.");
         }
         if (content.authors != undefined) {
-            assert.ok(Array.isArray(content.authors),
+            assert.ok(Array.isArray(content.authors) && content.authors.length > 1 ,
                 pkg_name(pkg) + ": authors field in package.json should be an array to include multiple authors info, if there is only one author, you should use 'author' instead, you can use our tool: tools/fixFormat.js to fix it for you.");
         }
         if (content.licenses != undefined) {
             assert.ok(Array.isArray(content.licenses),
                 pkg_name(pkg) + ": licenses field in package.json should be an array to include multiple licenses info, if there is only one license, you should use 'license' instead, you can use our tool: tools/fixFormat.js to fix it for you.");
-        }
-        if (content.author != undefined) {
-            assert.ok(!Array.isArray(content.author),
-                pkg_name(pkg) + ": author field in package.json should be a object or string to show its author info, if there is multiple authors info, you should use 'authors' instead, you can use our tool: tools/fixFormat.js to fix it for you.");
         }
     }
 

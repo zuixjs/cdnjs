@@ -22,11 +22,9 @@
     "type": "git",
     "url": "git://github.com/barinbritva/coordinates-picker.git"
   },
-  "authors": [
-    {
-      "name": "Barin Britva",
-      "email": "barinbritva@outlook.com",
-      "homepage": "http://barinbritva.ru"
-    }
-  ]
+  "author": {
+    "name": "Barin Britva",
+    "email": "barinbritva@outlook.com",
+    "homepage": "http://barinbritva.ru"
+  }
 }

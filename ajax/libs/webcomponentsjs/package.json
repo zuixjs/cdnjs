@@ -4,9 +4,6 @@
   "filename": "webcomponents.min.js",
   "version": "0.7.22",
   "homepage": "http://webcomponents.org",
-  "authors": [
-    "The Polymer Authors"
-  ],
   "keywords": [
     "webcomponents"
   ],
@@ -24,5 +21,6 @@
     "type": "git",
     "url": "git://github.com/webcomponents/webcomponentsjs"
   },
-  "description": "webcomponents.js"
+  "description": "webcomponents.js",
+  "author": "The Polymer Authors"
 }

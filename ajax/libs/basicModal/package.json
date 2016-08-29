@@ -1,9 +1,6 @@
 {
   "name": "basicModal",
   "version": "3.3.7",
-  "authors": [
-    "Tobias Reich <tobias@electerious.com>"
-  ],
   "description": "Easy-to-use modal window for your website or webapp",
   "filename": "basicModal.min.js",
   "keywords": [
@@ -24,5 +21,6 @@
     "files": [
       "**/*"
     ]
-  }
+  },
+  "author": "Tobias Reich <tobias@electerious.com>"
 }

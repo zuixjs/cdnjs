@@ -52,11 +52,10 @@ async.each(packages, function(item, callback) {
       }
     }
   }
-  if ((pkg.authors != undefined) && !Array.isArray(pkg.authors)) {
-    pkg.author = pkg.authors;
+  if ((pkg.authors != undefined) && (!Array.isArray(pkg.authors) || pkg.authors.length == 1)) {
+    pkg.author = pkg.authors[0];
     delete pkg.authors;
-  }
-  if ((pkg.author != undefined) && Array.isArray(pkg.author)) {
+  } else if ((pkg.author != undefined) && Array.isArray(pkg.author)) {
     pkg.authors = pkg.author;
     delete pkg.author;
   }

@@ -23,7 +23,5 @@
       "**/*"
     ]
   },
-  "authors": [
-    "OpenPGP Development Team <list@openpgpjs.org> (https://github.com/openpgpjs/openpgpjs/graphs/contributors)"
-  ]
+  "author": "OpenPGP Development Team <list@openpgpjs.org> (https://github.com/openpgpjs/openpgpjs/graphs/contributors)"
 }

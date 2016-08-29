@@ -6,9 +6,6 @@
     "type": "git",
     "url": "https://github.com/reactjs/react-modal.git"
   },
-  "authors": [
-    "Ryan Florence"
-  ],
   "license": "MIT",
   "tags": [
     "react",
@@ -33,5 +30,6 @@
       ]
     }
   ],
-  "filename": "react-modal.min.js"
+  "filename": "react-modal.min.js",
+  "author": "Ryan Florence"
 }

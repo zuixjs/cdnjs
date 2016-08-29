@@ -18,9 +18,6 @@
     "mask"
   ],
   "license": "MIT",
-  "authors": [
-    "Robert Knothe"
-  ],
   "homepage": "http://www.decorplanit.com/plugin/",
   "dependencies": {
     "jquery": ">=1.7"

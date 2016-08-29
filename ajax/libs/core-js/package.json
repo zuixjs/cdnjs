@@ -45,7 +45,5 @@
       "shim.min.js.map"
     ]
   },
-  "authors": [
-    "Denis Pushkarev <zloirock@zloirock.ru> (http://zloirock.ru/)"
-  ]
+  "author": "Denis Pushkarev <zloirock@zloirock.ru> (http://zloirock.ru/)"
 }

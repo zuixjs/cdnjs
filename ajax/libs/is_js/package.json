@@ -17,9 +17,6 @@
       ]
     }
   ],
-  "authors": [
-    "arasatasaygin <arasatasaygin@gmail.com>"
-  ],
   "keywords": [
     "type",
     "presence",
@@ -31,5 +28,6 @@
     "environment",
     "time",
     "configuration"
-  ]
+  ],
+  "author": "arasatasaygin <arasatasaygin@gmail.com>"
 }

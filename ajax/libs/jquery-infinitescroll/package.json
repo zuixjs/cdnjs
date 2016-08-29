@@ -23,7 +23,5 @@
     "url": "https://github.com/infinite-scroll/infinite-scroll"
   },
   "license": "MIT",
-  "authors": [
-    "paulirish"
-  ]
+  "author": "paulirish"
 }

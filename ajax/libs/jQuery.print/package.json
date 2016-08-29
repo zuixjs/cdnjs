@@ -3,9 +3,6 @@
   "filename": "jQuery.print.min.js",
   "version": "1.4.1",
   "homepage": "https://doersguild.github.io/jQuery.print/",
-  "authors": [
-    "Sathvik P <sathvik@doersguild.com>"
-  ],
   "description": "Easy to use, Element Printing Plugin for jQuery, for printing specific parts of a page",
   "keywords": [
     "print",
@@ -27,5 +24,6 @@
     "files": [
       "jQuery.print*"
     ]
-  }
+  },
+  "author": "Sathvik P <sathvik@doersguild.com>"
 }
