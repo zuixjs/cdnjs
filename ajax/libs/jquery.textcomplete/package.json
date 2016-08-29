@@ -10,7 +10,7 @@
     }
   ],
   "filename": "jquery.textcomplete.min.js",
-  "version": "1.6.3",
+  "version": "1.7.0",
   "description": "Introduce autocompleting power to textareas, like GitHub comment forms have.",
   "homepage": "http://yuku-t.com/jquery-textcomplete/",
   "keywords": [
