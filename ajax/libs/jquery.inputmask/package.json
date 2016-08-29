@@ -23,12 +23,19 @@
   "dependencies": {
     "jquery": ">=1.7"
   },
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/RobinHerbots/jquery.inputmask.git",
-    "basePath": "dist",
-    "files": [
-      "**/*"
-    ]
-  }
+  "npmName": "jquery.inputmask",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
+    },
+    {
+      "basePath": "extra",
+      "files": [
+        "**/*"
+      ]
+    }
+  ]
 }
