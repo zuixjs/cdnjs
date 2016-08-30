@@ -18,6 +18,7 @@ var feed = new RSS({
     author: 'cdnjs team'
 });
 var exec=require('child_process').exec;
+var execSync=require('child_process').execSync;
 var threads = require('os').cpus().length;
 threads = threads > 2 ? threads - 2 : 1;
 
@@ -142,10 +143,25 @@ glob("ajax/libs/*/package.json", function (error, matches) {
           }
         }
       } else {
+        var libSri = {};
         temp.files = glob.sync(version + "/**/*", {nodir:true});
         for (var i = 0; i < temp.files.length; i++){
           var filespec = temp.files[i];
+          var fileType = temp.files[i].split('.').pop();
           temp.files[i] = filespec.replace(version + "/", "");
+          switch (fileType) {
+            case 'js':
+            case 'css':
+              libSri[temp.files[i]] = execSync('cat ' + filespec +' | openssl dgst -sha256 -binary | openssl enc -base64 -A').toString();
+              break;
+            default:
+              break;
+          }
+        }
+        var realVer = version.split('/').pop();
+        if (Object.keys(libSri).length > 0) {
+          fs.mkdirpSync('../new-website/sri/' + package.name);
+          fs.writeFileSync('../new-website/sri/' + package.name + '/' + realVer + '.json', JSON.stringify(libSri), 'utf8');
         }
       }
       package.assets.push(temp);
