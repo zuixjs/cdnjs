@@ -2,7 +2,7 @@
 
 var async = require('async');
 var glob = require('glob');
-var fs = require('fs');
+var fs = require('fs-extra');
 var _ = require('underscore');
 var natcompare = require('./natcompare.js');
 var RSS = require('rss');
