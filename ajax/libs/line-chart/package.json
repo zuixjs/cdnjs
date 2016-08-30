@@ -6,6 +6,12 @@
     "type": "git",
     "url": "https://github.com/n3-charts/line-chart.git"
   },
+  "keywords": [
+    "JavaScript",
+    "AngularJS",
+    "D3",
+    "chart"
+  ],
   "license": "MIT",
   "npmName": "n3-charts",
   "npmFileMap": [
