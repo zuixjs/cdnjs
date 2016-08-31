@@ -1,0 +1,29 @@
+{
+  "name": "legofy",
+  "version": "0.1.11",
+  "description": "Legofy your images with retina support using SVG.",
+  "filename": "legofy.min.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wildhoney/Legofy.git"
+  },
+  "keywords": [
+    "lego",
+    "legofy"
+  ],
+  "author": "Adam Timberlake <adam.timberlake@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://legofy.herokuapp.com",
+  "dependencies": {
+    "rgbquant": "^1.1.2"
+  },
+  "npmName": "legofy",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
+    }
+  ]
+}
