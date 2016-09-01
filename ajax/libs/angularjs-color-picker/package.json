@@ -9,7 +9,7 @@
     "Angular",
     "AngularJS"
   ],
-  "version": "2.4.3",
+  "version": "2.4.4",
   "license": "MIT",
   "dependencies": {
     "angular": "^1.4.0",
