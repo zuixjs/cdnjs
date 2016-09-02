@@ -1,6 +1,6 @@
 {
   "name": "history",
-  "version": "3.0.0-2",
+  "version": "3.2.0",
   "description": "A minimal, functional history implementation for JavaScript",
   "repository": {
     "type": "git",
