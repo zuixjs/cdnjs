@@ -11,7 +11,7 @@
     "history",
     "location"
   ],
-  "filename": "History.min.js",
+  "filename": "history.min.js",
   "npmName": "history",
   "npmFileMap": [
     {
