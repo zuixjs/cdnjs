@@ -13,7 +13,7 @@
   "dependencies": {
     "jquery": ">= 1.7"
   },
-  "version": "0.21.3",
+  "version": "0.21.4",
   "npmName": "autocomplete.js",
   "npmFileMap": [
     {
