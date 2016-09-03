@@ -23,9 +23,9 @@
   "npmName": "ngn-chassis-components",
   "npmFileMap": [
     {
-      "basePath": "dist",
+      "basePath": "",
       "files": [
-        "**/*"
+        "**/chassis*.+(js|css|map)"
       ]
     }
   ]
