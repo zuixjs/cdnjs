@@ -1,0 +1,31 @@
+{
+  "name": "vue-focus",
+  "filename": "vue-focus.min.js",
+  "description": "A set of reusable focus directives for reusable Vue.js components",
+  "version": "0.1.2",
+  "author": "Denis Karabaza <denis.karabaza@gmail.com>",
+  "dependencies": {
+    "loose-envify": "^1.2.0"
+  },
+  "keywords": [
+    "focus",
+    "reusable",
+    "vue",
+    "vue-directive",
+    "vuejs"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simplesmiler/vue-focus"
+  },
+  "npmName": "vue-focus",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
+    }
+  ]
+}
