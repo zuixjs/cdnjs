@@ -1,8 +1,8 @@
 {
   "name": "emojify.js",
-  "version": "0.9.5",
+  "version": "1.1.0",
   "description": "A Javascript module to convert emoji keywords to images.",
-  "filename": "emojify.min.js",
+  "filename": "js/emojify.min.js",
   "repository": {
     "type": "git",
     "url": "https://hassankhan@github.com/Ranks/emojify.js.git"
