@@ -17,10 +17,9 @@
   "npmName": "emojify.js",
   "npmFileMap": [
     {
-      "basePath": "",
+      "basePath": "dist",
       "files": [
-        "emojify*.js",
-        "emojify*.css"
+        "**/*"
       ]
     }
   ]
