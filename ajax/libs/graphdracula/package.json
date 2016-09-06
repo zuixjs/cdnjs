@@ -1,0 +1,41 @@
+{
+  "author": {
+    "name": "Johann Philipp Strathausen",
+    "email": "philipp@stratha.us",
+    "url": "http://stratha.us"
+  },
+  "filename": "dracula.min.js",
+  "name": "graphdracula",
+  "description": "JavaScript Graph Layouting and Drawing",
+  "homepage": "https://www.graphdracula.net",
+  "license": "MIT",
+  "keywords": [
+    "bellman-ford",
+    "dijkstra",
+    "dracula",
+    "graph",
+    "math",
+    "raphael",
+    "snap",
+    "static",
+    "svg",
+    "vml"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/strathausen/dracula.git"
+  },
+  "dependencies": {
+    "lodash": "^4.14.1",
+    "uuid": "^2.0.2"
+  },
+  "npmName": "graphdracula",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
+    }
+  ]
+}
