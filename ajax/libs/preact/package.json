@@ -1,7 +1,7 @@
 {
   "name": "preact",
   "filename": "preact.min.js",
-  "version": "6.0.1",
+  "version": "6.0.2",
   "description": "Fast 3kb React alternative with the same ES6 API. Components & Virtual DOM.",
   "repository": {
     "type": "git",
