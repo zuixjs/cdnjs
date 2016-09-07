@@ -11,6 +11,7 @@ temp/
 node_modules/
 
 # folders need to be ingored due to auto auto-update mechanism
+ajax/libs/graphdracula/1.0.1-*
 ajax/libs/d3-tip/0.7.0-temp-fork/
 ajax/libs/meshki/1.0.0/
 ajax/libs/meshki/1.1.0/
