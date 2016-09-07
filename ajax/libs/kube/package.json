@@ -16,10 +16,9 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/imperavi/kube.git",
-    "basePath": "",
+    "basePath": "dist",
     "files": [
-      "css/*",
-      "js/*"
+      "!(scss)/*"
     ]
   }
 }
