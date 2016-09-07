@@ -26,5 +26,13 @@
   "author": {
     "name": "Yang Zhang",
     "url": "http://yz.mit.edu/"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/yang/reactive-coffee.git",
+    "basePath": "dist",
+    "files": [
+      "**/*"
+    ]
   }
 }
