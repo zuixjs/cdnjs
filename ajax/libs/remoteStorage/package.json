@@ -1,6 +1,6 @@
 {
   "name": "remoteStorage",
-  "version": "0.12.1",
+  "version": "0.13.0",
   "filename": "remotestorage.min.js",
   "description": "JavaScript library for integrating remoteStorage",
   "homepage": "http://remotestorage.io/",
