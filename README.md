@@ -12,11 +12,6 @@
 
 [Thomas Davis](https://twitter.com/neutralthoughts) and [Ryan Kirkman](https://twitter.com/ryan_kirkman) created cdnjs, [Drew Freyling](http://decompile.it/blog/) and [Peter Dave Hello](https://github.com/PeterDaveHello) are maintainers. [Juan Gallardo](http://jgallardo.me/) is our community moderator.
 
-Here are the project sponsors:
-
- * [![Cloudflare](https://cdnjs.com/img/poweredbycloudflare.png)](https://cloudflare.com/?utm_source=cdnjs&utm_medium=link&utm_campaign=cdnjs)
- * [![Algolia](https://cdnjs.com/img/algolia256x80.png)](https://www.algolia.com/?utm_source=cdnjs&utm_medium=link&utm_campaign=cdnjs)
-
 cdnjs will host any production version of any JavaScript/CSS library, subject to license permissions.
 
   * Libraries must have notable popularity: 100 stars/watchers on GitHub, or more than 500 times download per month on npm stats are both good examples, but as long as reasonable popularity can be demonstrated the library will be added.
