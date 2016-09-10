@@ -1,7 +1,7 @@
 {
   "name": "timeago.js",
   "filename": "timeago.min.js",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "timeago.js is a simple library (only 2kb) to used to format datetime with `*** time ago` statement. eg: '3 hours ago'. localization supported.",
   "author": {
     "name": "hustcc",
