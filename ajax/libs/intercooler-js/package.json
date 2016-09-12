@@ -1,7 +1,7 @@
 {
   "name": "intercooler-js",
   "filename": "intercooler.min.js",
-  "version": "0.9.7",
+  "version": "1.0.0",
   "description": "Making AJAX as easy as anchor tags",
   "homepage": "http://intercoolerjs.org",
   "author": {
