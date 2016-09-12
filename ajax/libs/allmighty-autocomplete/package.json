@@ -13,14 +13,5 @@
   ],
   "author": "Goscha Graf <justgoscha@gmail.com>",
   "license": "MIT",
-  "homepage": "http://justgoscha.github.io/allmighty-autocomplete/",
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/geoperez/allmighty-autocomplete.git",
-    "basePath": "dist/",
-    "files": [
-      "*.js",
-      "*.css"
-    ]
-  }
+  "homepage": "http://justgoscha.github.io/allmighty-autocomplete/"
 }
