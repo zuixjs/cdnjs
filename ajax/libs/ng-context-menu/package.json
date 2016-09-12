@@ -12,14 +12,6 @@
   ],
   "author": "Ian Kennington Walter (http://ianvonwalter.com)",
   "license": "MIT",
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/ianwalter/ng-context-menu.git",
-    "basePath": "/dist/",
-    "files": [
-      "*"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/ianwalter/ng-context-menu.git"

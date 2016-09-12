@@ -10,15 +10,6 @@
     "angular",
     "angularjs"
   ],
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/SubKit/angularsubkit.js.git",
-    "basePath": "",
-    "files": [
-      "angularsubkit.min.js",
-      "angularsubkit.js"
-    ]
-  },
   "license": "MIT",
   "repository": {
     "type": "git",

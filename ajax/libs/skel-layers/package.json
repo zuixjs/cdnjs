@@ -9,14 +9,6 @@
     "toolbars",
     "responsive"
   ],
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/n33/skel-layers.git",
-    "basePath": "dist",
-    "files": [
-      "skel-layers.min.js"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/n33/skel-layers.git"
