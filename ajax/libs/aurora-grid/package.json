@@ -1,7 +1,7 @@
 {
   "name": "aurora-grid",
   "filename": "aurora-grid.min.css",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Grid system for Aurora Kit",
   "repository": {
     "type": "git",
