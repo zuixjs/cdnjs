@@ -1,7 +1,7 @@
 {
   "name": "Vidage",
-  "version": "0.2.0",
-  "filename": "scripts/Vidage.js",
+  "version": "0.2.6",
+  "filename": "scripts/Vidage.min.js",
   "description": "Your solution to full-screen background video and image combined.",
   "repository": {
     "type": "git",
