@@ -1,7 +1,7 @@
 {
   "name": "react-swipe",
   "filename": "react-swipe.min.js",
-  "version": "5.0.3",
+  "version": "5.0.4",
   "description": "Brad Birdsall's Swipe.js, as a React component",
   "keywords": [
     "react",
