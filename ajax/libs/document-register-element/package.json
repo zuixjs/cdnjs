@@ -28,7 +28,7 @@
     {
       "basePath": "/build/",
       "files": [
-        "*.js"
+        "!(*.node.js)"
       ]
     }
   ],
