@@ -24,7 +24,7 @@
     {
       "basePath": "",
       "files": [
-        "angular-inview*.js"
+        "angular-inview!(.spec)"
       ]
     }
   ]
