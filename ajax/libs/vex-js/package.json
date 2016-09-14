@@ -12,10 +12,9 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/HubSpot/vex.git",
-    "basePath": "",
+    "basePath": "dist",
     "files": [
-      "css/**/vex*",
-      "js/**/vex*"
+      "**/*"
     ]
   },
   "keywords": [
