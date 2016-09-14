@@ -1,7 +1,7 @@
 {
   "name": "cookiesjs",
   "filename": "cookies.min.js",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Intuitive cookie manipulation library",
   "author": "Francisco Presencia <developerfrancisco@hotmail.com>",
   "keywords": [
