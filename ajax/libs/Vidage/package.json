@@ -23,7 +23,7 @@
   "npmName": "vidage",
   "npmFileMap": [
     {
-      "basePath": "dest",
+      "basePath": "dist",
       "files": [
         "**/*"
       ]
