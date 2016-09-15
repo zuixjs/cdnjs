@@ -1,0 +1,30 @@
+{
+  "name": "Kraken",
+  "filename": "js/main.min.js",
+  "version": "7.5.0",
+  "description": "A lightweight front-end boilerplate",
+  "author": {
+    "name": "Chris Ferdinandi",
+    "url": "http://gomakethings.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/cferdinandi/kraken"
+  },
+  "homepage": "https://cferdinandi.github.io/kraken/",
+  "keywords": [
+    "css",
+    "lightweight",
+    "front-end",
+    "boilerplate"
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/cferdinandi/kraken.git",
+    "basePath": "dist",
+    "files": [
+      "**/!(*.md)"
+    ]
+  }
+}
