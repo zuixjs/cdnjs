@@ -19,5 +19,13 @@
     "type": "git",
     "url": "https://github.com/ericelliott/h5Validate.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/ericelliott/h5Validate.git",
+    "basePath": "",
+    "files": [
+      "jquery.h5validate*"
+    ]
+  }
 }
