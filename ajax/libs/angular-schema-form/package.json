@@ -4,9 +4,9 @@
   "description": "Create complex forms from a JSON schema with angular.",
   "repository": {
     "type": "git",
-    "url": "git://github.com/Textalk/angular-schema-form"
+    "url": "git://github.com/json-schema-form/angular-schema-form"
   },
-  "homepage": "http://textalk.github.io/angular-schema-form/",
+  "homepage": "http://schemaform.io",
   "author": "Textalk",
   "license": "MIT",
   "dependencies": {
