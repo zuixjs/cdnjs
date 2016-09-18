@@ -1,7 +1,7 @@
 {
   "name": "tocktimer",
   "filename": "tock.min.js",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "timer object/class. kickass!",
   "repository": {
     "type": "git",
