@@ -10,6 +10,9 @@ scratch/*
 temp/
 node_modules/
 
+# for bot to mark as the new version cannot be added automatically, prevent keep compressing files in it.
+ajax/libs/*/*/.bot_cant_auto_add
+
 # folders need to be ingored due to auto auto-update mechanism
 ajax/libs/avalon.js/dynamic_detect/
 ajax/libs/appbase-js/1.0.0/
