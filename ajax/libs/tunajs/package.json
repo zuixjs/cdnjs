@@ -1,7 +1,7 @@
 {
   "name": "tunajs",
   "filename": "tuna-min.js",
-  "version": "0.4.9",
+  "version": "1.0.0",
   "description": "Audio effects library for the Web Audio API",
   "repository": {
     "type": "git",
