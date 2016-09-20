@@ -1,6 +1,6 @@
 {
   "name": "angular-gettext",
-  "version": "2.3.7",
+  "version": "2.3.8",
   "filename": "angular-gettext.min.js",
   "description": "Gettext support for Angular.js",
   "keywords": [
