@@ -4,6 +4,10 @@
   "version": "1.0.6",
   "description": "Stanford Javascript Crypto Library",
   "author": "bitwiseshiftleft",
+  "licenses": [
+    "GPL-2.0",
+    "BSD-2-Clause"
+  ],
   "keywords": [
     "encryption",
     "high-level",
