@@ -2,7 +2,7 @@
   "name": "rsvp",
   "filename": "rsvp.min.js",
   "namespace": "RSVP",
-  "version": "3.3.1",
+  "version": "3.3.2",
   "description": "A lightweight library that provides tools for organizing asynchronous code",
   "repository": {
     "type": "git",
