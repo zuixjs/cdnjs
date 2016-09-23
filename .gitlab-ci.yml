@@ -1,0 +1,15 @@
+image: node:argon
+
+cache:
+  paths:
+    - node_modules/
+
+before_script:
+  - git --version
+  - npm --version
+  - node --version
+
+test:
+  script:
+    - npm install
+    - npm test -- --silent || npm test
