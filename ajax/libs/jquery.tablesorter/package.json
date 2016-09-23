@@ -19,10 +19,7 @@
   ],
   "licenses": [
     "MIT",
-    {
-      "type": "GPL",
-      "url": "http://www.gnu.org/licenses/gpl.html"
-    }
+    "deprecated_GPL-2.0+"
   ],
   "homepage": "http://mottie.github.com/tablesorter/",
   "docs": "http://mottie.github.com/tablesorter/docs/index.html",
