@@ -4,7 +4,12 @@ cache:
   paths:
     - node_modules/
 
+variable:
+  GIT_DEPTH: "10"
+  GIT_STRATEGY: fetch
+
 before_script:
+  - env
   - git --version
   - npm --version
   - node --version
