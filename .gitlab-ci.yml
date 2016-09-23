@@ -4,7 +4,7 @@ cache:
   paths:
     - node_modules/
 
-variable:
+variables:
   GIT_DEPTH: "10"
   GIT_STRATEGY: fetch
 
