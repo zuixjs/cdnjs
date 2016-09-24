@@ -20,10 +20,9 @@
   "npmName": "d3-composite-projections",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "build",
       "files": [
-        "*.min.js",
-        "composite-projections.js"
+        "**/*"
       ]
     }
   ]
