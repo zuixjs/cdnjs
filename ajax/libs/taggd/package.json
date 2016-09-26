@@ -25,9 +25,9 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/timseverien/taggd.git",
-    "basePath": "",
+    "basePath": "dist",
     "files": [
-      "+(js|css|fonts)/*taggd*"
+      "**/*"
     ]
   }
 }
