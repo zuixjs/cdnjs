@@ -1,7 +1,7 @@
 {
   "name": "air-datepicker",
   "filename": "js/datepicker.min.js",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "dependencies": {
     "jquery": "^3.0.0"
   },
