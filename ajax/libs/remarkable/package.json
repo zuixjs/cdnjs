@@ -1,6 +1,6 @@
 {
   "name": "remarkable",
-  "version": "1.6.2",
+  "version": "1.7.0",
   "description": "Markdown parser, done right. 100% Commonmark support, extensions, syntax plugins, high speed - all in one.",
   "repository": {
     "type": "git",
