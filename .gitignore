@@ -159,6 +159,7 @@ ajax/libs/Hyphenator/HyphenatorBeta12/
 ajax/libs/Hyphenator/ersion_*
 ajax/libs/gemma/0.1.0/
 ajax/libs/gemma/0.4.0/
+ajax/libs/origamijs/0.0.2/
 
 #ignore files that we don't need
 ajax/libs/*/*/**/Gruntfile.js
