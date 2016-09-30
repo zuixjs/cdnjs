@@ -3,7 +3,7 @@
   "description": "Javascript MVC for the \"write less, do more\"",
   "homepage": "http://agilityjs.com",
   "version": "0.1.3",
-  "licence": "MIT",
+  "license": "MIT",
   "keywords": [
     "mvc",
     "agility",
