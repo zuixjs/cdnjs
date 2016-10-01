@@ -5,7 +5,10 @@
   "version": "2.3.0",
   "keywords": [
     "bootstrap",
-    "css"
+    "css",
+    "jquery",
+    "form",
+    "plugin"
   ],
   "homepage": "http://bootstrapformhelpers.com",
   "author": "Vincent Lamanna",
