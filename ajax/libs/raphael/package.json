@@ -1,7 +1,7 @@
 {
   "name": "raphael",
   "filename": "raphael.min.js",
-  "version": "2.2.4",
+  "version": "2.2.6",
   "description": "JavaScript Vector Library",
   "homepage": "http://raphaeljs.com/",
   "keywords": [
