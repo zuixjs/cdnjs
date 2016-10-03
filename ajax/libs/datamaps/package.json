@@ -2,7 +2,7 @@
   "name": "datamaps",
   "filename": "datamaps.all.min.js",
   "description": "datamaps with d3.js",
-  "version": "0.5.7",
+  "version": "0.5.8",
   "author": {
     "name": "Mark DiMarco",
     "email": "markmarkoh@gmail.com"
