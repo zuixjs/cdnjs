@@ -1,7 +1,7 @@
 {
   "name": "fontfaceobserver",
-  "filename": "fontfaceobserver.standalone.min.js",
-  "version": "2.0.4",
+  "filename": "fontfaceobserver.standalone.js",
+  "version": "2.0.5",
   "description": "Detect if web fonts are available",
   "repository": {
     "type": "git",
