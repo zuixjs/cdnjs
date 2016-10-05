@@ -152,7 +152,7 @@ glob("ajax/libs/*/package.json", function (error, matches) {
           switch (fileType) {
             case 'js':
             case 'css':
-                var fileSRI = execSync('cat ' + filespec +' | openssl dgst -sha256 -binary | openssl enc -base64 -A').toString();
+                var fileSRI = execSync('cat "' + filespec + '" | openssl dgst -sha256 -binary | openssl enc -base64 -A').toString();
                 if (fileSRI != '') {
                   libSri[temp.files[i]] = 'sha256-' + fileSRI;
                 }
