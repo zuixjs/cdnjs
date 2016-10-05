@@ -3,7 +3,7 @@
   "description": "Client for the realtime Engine",
   "filename": "engine.io.min.js",
   "license": "MIT",
-  "version": "1.6.11",
+  "version": "1.7.0",
   "dependencies": {
     "has-cors": "1.1.0",
     "ws": "1.0.1",
