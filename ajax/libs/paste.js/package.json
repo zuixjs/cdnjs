@@ -1,0 +1,31 @@
+{
+  "name": "paste.js",
+  "filename": "paste.min.js",
+  "version": "0.0.21",
+  "description": "read image/text data from clipboard (cross-browser)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/layerssss/paste.js.git"
+  },
+  "keywords": [
+    "copy",
+    "paste",
+    "jQuery"
+  ],
+  "author": "Michael Yin",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.14.3",
+    "coffee-script": "^1.10.0",
+    "concurrently": "^2.2.0",
+    "wait-run": "^1.2.0"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/layerssss/paste.js.git",
+    "basePath": "",
+    "files": [
+      "paste*.+(js|css|map)"
+    ]
+  }
+}
