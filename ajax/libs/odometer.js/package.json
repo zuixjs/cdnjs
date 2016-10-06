@@ -11,10 +11,10 @@
   "npmName": "odometer",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
-        "odometer.js",
-        "odometer.min.js"
+        "odometer*.+(js|css|map)",
+        "themes/**/odometer*"
       ]
     }
   ],
