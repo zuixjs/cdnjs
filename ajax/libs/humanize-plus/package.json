@@ -3,15 +3,9 @@
   "npmName": "humanize-plus",
   "npmFileMap": [
     {
-      "basePath": "/public/dist/",
+      "basePath": "dist",
       "files": [
-        "humanize.min.js"
-      ]
-    },
-    {
-      "basePath": "/public/src/",
-      "files": [
-        "humanize.js"
+        "**/*"
       ]
     }
   ],
