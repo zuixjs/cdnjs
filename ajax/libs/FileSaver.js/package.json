@@ -16,7 +16,7 @@
   "npmFileMap": [
     {
       "files": [
-        "*.js"
+        "FileSaver*.js"
       ]
     }
   ]
