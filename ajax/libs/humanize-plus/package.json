@@ -10,7 +10,7 @@
     }
   ],
   "filename": "humanize.min.js",
-  "version": "1.6.0",
+  "version": "1.8.2",
   "description": "A simple utility library for making the web more humane.",
   "keywords": [
     "humanize",
