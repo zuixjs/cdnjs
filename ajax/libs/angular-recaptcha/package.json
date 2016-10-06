@@ -19,7 +19,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/vividcortex/angular-recaptcha.git",
-    "basePath": "release/",
+    "basePath": "release",
     "files": [
       "angular-recaptcha*.js"
     ]

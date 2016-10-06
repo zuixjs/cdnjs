@@ -17,7 +17,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/onokumus/metisMenu.git",
-    "basePath": "/dist/",
+    "basePath": "dist",
     "files": [
       "*"
     ]

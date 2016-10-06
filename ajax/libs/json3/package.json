@@ -7,7 +7,7 @@
   "npmName": "json3",
   "npmFileMap": [
     {
-      "basePath": "/lib/",
+      "basePath": "lib",
       "files": [
         "*.js"
       ]

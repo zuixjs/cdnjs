@@ -11,7 +11,7 @@
   "npmName": "absurd",
   "npmFileMap": [
     {
-      "basePath": "/client-side/build/",
+      "basePath": "client-side/build",
       "files": [
         "*.js"
       ]

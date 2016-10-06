@@ -13,7 +13,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/EtienneLem/architect.git",
-    "basePath": "static/",
+    "basePath": "static",
     "files": [
       "architect.min.js",
       "workers/ajax_worker.min.js",

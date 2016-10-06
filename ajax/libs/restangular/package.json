@@ -3,7 +3,7 @@
   "npmName": "restangular",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*"
       ]

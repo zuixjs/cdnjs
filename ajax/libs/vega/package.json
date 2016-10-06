@@ -11,7 +11,7 @@
   "npmName": "vega",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "vega.js",
         "vega.min.js"

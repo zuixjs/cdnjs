@@ -3,7 +3,7 @@
   "npmName": "ng-clip",
   "npmFileMap": [
     {
-      "basePath": "/dest/",
+      "basePath": "dest",
       "files": [
         "*"
       ]

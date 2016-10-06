@@ -19,7 +19,7 @@
   "npmName": "taffydb",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "taffy.js",
         "taffy-min.js"

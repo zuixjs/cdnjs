@@ -18,7 +18,7 @@
   "npmName": "stacktrace-js",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*"
       ]

@@ -14,7 +14,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/zaach/jsonlint.git",
-    "basePath": "lib/",
+    "basePath": "lib",
     "files": [
       "jsonlint.js"
     ]

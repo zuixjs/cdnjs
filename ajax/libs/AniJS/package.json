@@ -20,7 +20,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/anijs/anijs.git",
-    "basePath": "dist/",
+    "basePath": "dist",
     "files": [
       "**/*"
     ]

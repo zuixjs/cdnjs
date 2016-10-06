@@ -17,7 +17,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/optimizely/nuclear-js.git",
-    "basePath": "dist/",
+    "basePath": "dist",
     "files": [
       "**/*"
     ]

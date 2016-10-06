@@ -14,7 +14,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/aino/galleria.git",
-    "basePath": "src/",
+    "basePath": "src",
     "files": [
       "**/*.gif",
       "**/*.css",

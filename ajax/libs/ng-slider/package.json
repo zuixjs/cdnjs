@@ -14,7 +14,7 @@
   "npmName": "ng-slider",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "**/*"
       ]

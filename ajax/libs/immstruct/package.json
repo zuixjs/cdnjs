@@ -21,7 +21,7 @@
   "npmName": "immstruct",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*.js"
       ]

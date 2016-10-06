@@ -28,7 +28,7 @@
   "npmName": "insightjs",
   "npmFileMap": [
     {
-      "basePath": "dist/",
+      "basePath": "dist",
       "files": [
         "*.js",
         "*.css"

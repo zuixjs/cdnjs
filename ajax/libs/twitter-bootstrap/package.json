@@ -4,7 +4,7 @@
   "npmName": "bootstrap",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*"
       ]

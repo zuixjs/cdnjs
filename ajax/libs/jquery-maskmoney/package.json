@@ -23,7 +23,7 @@
   "npmName": "jquery-maskmoney",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "jquery.maskMoney.min.js"
       ]

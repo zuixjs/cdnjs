@@ -3,7 +3,7 @@
   "npmName": "basket.js",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*"
       ]

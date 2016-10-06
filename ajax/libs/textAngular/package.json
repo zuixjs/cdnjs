@@ -13,7 +13,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/fraywing/textAngular.git",
-    "basePath": "dist/",
+    "basePath": "dist",
     "files": [
       "**/*"
     ]

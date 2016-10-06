@@ -14,7 +14,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/artch/angular-route-segment.git",
-    "basePath": "build/",
+    "basePath": "build",
     "files": [
       "*"
     ]

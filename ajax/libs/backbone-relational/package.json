@@ -14,7 +14,7 @@
   "npmName": "backbone-relational",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "*.js"
       ]

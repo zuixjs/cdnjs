@@ -3,7 +3,7 @@
   "npmName": "pouchdb",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "pouchdb.js",
         "pouchdb.min.js"

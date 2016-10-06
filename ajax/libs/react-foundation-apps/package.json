@@ -32,7 +32,7 @@
   "npmName": "react-foundation-apps",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*.js"
       ]

@@ -13,7 +13,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/bevacqua/horsey.git",
-    "basePath": "dist/",
+    "basePath": "dist",
     "files": [
       "**/*"
     ]

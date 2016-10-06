@@ -11,7 +11,7 @@
   "npmName": "handlebars",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "handlebars.amd.js",
         "handlebars.amd.min.js",

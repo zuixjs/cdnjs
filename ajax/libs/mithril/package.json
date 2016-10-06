@@ -17,7 +17,7 @@
   },
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "mithril.js",
         "mithril.min.js",

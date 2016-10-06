@@ -24,7 +24,7 @@
   "npmName": "react-modal",
   "npmFileMap": [
     {
-      "basePath": "/dist",
+      "basePath": "dist",
       "files": [
         "**/*"
       ]

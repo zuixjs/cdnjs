@@ -22,7 +22,7 @@
   "npmName": "angulartics-google-analytics",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "**/*"
       ]

@@ -27,7 +27,7 @@
   "npmName": "geojs",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "geo*.js"
       ]

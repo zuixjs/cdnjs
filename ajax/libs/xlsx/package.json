@@ -3,7 +3,7 @@
   "npmName": "xlsx",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*.js",
         "*.map"

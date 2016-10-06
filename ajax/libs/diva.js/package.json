@@ -6,7 +6,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/DDMAL/diva.js.git",
-    "basePath": "/build/",
+    "basePath": "build",
     "files": [
       "js/**/*diva*",
       "css/**/*diva*",

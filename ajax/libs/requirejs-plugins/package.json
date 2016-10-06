@@ -6,7 +6,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/millermedeiros/requirejs-plugins.git",
-    "basePath": "/src/",
+    "basePath": "src",
     "files": [
       "*"
     ]

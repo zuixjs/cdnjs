@@ -17,7 +17,7 @@
   "npmName": "scriptjs",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "script.min.js"
       ]

@@ -22,7 +22,7 @@
   "npmName": "clipboard",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "**/*"
       ]

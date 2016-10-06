@@ -10,7 +10,7 @@
   "npmName": "tabcomplete",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "tabcomplete.js",
         "tabcomplete.min.js"

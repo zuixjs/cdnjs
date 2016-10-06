@@ -3,7 +3,7 @@
   "npmName": "ice",
   "npmFileMap": [
     {
-      "basePath": "/lib/",
+      "basePath": "lib",
       "files": [
         "*.js",
         "*.map"

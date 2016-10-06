@@ -14,7 +14,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/matthewhudson/device.js.git",
-    "basePath": "/lib/",
+    "basePath": "lib",
     "files": [
       "*"
     ]

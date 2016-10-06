@@ -14,7 +14,7 @@
   "npmName": "emblem",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "emblem.js",
         "emblem.min.js"

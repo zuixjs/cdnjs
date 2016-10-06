@@ -16,7 +16,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/vadikom/smartmenus.git",
-    "basePath": "dist/",
+    "basePath": "dist",
     "files": [
       "**/*.+(css|js)"
     ]

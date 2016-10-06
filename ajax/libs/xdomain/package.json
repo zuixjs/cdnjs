@@ -12,7 +12,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/jpillora/xdomain.git",
-    "basePath": "dist/",
+    "basePath": "dist",
     "files": [
       "*"
     ]

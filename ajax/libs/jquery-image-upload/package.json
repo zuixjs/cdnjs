@@ -16,7 +16,7 @@
   "npmName": "jquery-image-upload",
   "npmFileMap": [
     {
-      "basePath": "/src",
+      "basePath": "src",
       "files": [
         "*"
       ]

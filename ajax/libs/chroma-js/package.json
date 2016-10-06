@@ -14,7 +14,7 @@
   "npmName": "chroma-js",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "chroma.min.js"
       ]

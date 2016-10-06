@@ -21,7 +21,7 @@
   "npmName": "ng-tags-input",
   "npmFileMap": [
     {
-      "basePath": "/build/",
+      "basePath": "build",
       "files": [
         "*.js",
         "*.css"

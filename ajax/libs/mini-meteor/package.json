@@ -3,7 +3,7 @@
   "npmName": "mini-meteor",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "*.js"
       ]

@@ -20,7 +20,7 @@
   "npmName": "jsface",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "**/*"
       ]

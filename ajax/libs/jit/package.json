@@ -17,7 +17,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/philogb/jit.git",
-    "basePath": "Jit/",
+    "basePath": "Jit",
     "files": [
       "Extras/excanvas.js",
       "jit.js"

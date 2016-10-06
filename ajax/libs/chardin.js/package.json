@@ -17,7 +17,7 @@
   "npmName": "chardin.js",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "chardinjs.css",
         "chardinjs.js",

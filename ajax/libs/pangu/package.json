@@ -30,7 +30,7 @@
   "npmName": "pangu",
   "npmFileMap": [
     {
-      "basePath": "/dist/browser",
+      "basePath": "dist/browser",
       "files": [
         "**/*"
       ]

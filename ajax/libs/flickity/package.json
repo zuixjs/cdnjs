@@ -15,7 +15,7 @@
   "npmName": "flickity",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*"
       ]

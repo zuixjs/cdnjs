@@ -19,7 +19,7 @@
   "npmName": "anima",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "anima.js",
         "anima.min.js",

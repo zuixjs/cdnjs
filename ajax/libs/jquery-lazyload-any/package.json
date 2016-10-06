@@ -11,7 +11,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/emn178/jquery-lazyload-any.git",
-    "basePath": "build/",
+    "basePath": "build",
     "files": [
       "jquery.lazyload-any.min.js"
     ]

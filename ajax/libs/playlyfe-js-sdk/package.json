@@ -25,7 +25,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/playlyfe/playlyfe-js-sdk.git",
-    "basePath": "/lib/",
+    "basePath": "lib",
     "files": [
       "playlyfe-js-sdk.js",
       "playlyfe-js-sdk.min.js"

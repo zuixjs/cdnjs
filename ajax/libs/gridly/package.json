@@ -21,7 +21,7 @@
   "npmName": "gridly",
   "npmFileMap": [
     {
-      "basePath": "/dist",
+      "basePath": "dist",
       "files": [
         "**/*"
       ]

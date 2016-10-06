@@ -14,7 +14,7 @@
   "npmName": "backbone",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "backbone.js",
         "backbone-min.js",

@@ -11,7 +11,7 @@
   "npmName": "cannon",
   "npmFileMap": [
     {
-      "basePath": "/build/",
+      "basePath": "build",
       "files": [
         "cannon.min.js",
         "cannon.js"

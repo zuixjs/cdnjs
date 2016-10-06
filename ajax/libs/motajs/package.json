@@ -24,7 +24,7 @@
   "npmName": "motajs",
   "npmFileMap": [
     {
-      "basePath": "/main/",
+      "basePath": "main",
       "files": [
         "*.css",
         "*.js",

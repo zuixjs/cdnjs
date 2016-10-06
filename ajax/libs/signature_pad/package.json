@@ -6,7 +6,7 @@
   "npmName": "signature_pad",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "signature_pad.js",
         "signature_pad.min.js"

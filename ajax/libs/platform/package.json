@@ -21,7 +21,7 @@
   "npmName": "platform",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "platform.js"
       ]

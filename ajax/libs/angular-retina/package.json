@@ -6,7 +6,7 @@
   "npmName": "angular-retina",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*.js"
       ]

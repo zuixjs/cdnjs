@@ -6,7 +6,7 @@
   "npmName": "depot",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "depot.js",
         "depot.min.js"

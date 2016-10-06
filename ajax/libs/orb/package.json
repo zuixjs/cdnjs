@@ -22,7 +22,7 @@
   "npmName": "orb",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*.js",
         "*.css",

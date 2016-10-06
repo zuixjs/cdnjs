@@ -3,7 +3,7 @@
   "npmName": "templatebinding",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "TemplateBinding.min.js",
         "TemplateBinding.js"

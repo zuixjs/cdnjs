@@ -11,7 +11,7 @@
   "npmName": "floatthead",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*.js"
       ]

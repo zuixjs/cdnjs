@@ -16,7 +16,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/deltakosh/handjs.git",
-    "basePath": "/bin/",
+    "basePath": "bin",
     "files": [
       "hand.js",
       "hand.min.js"

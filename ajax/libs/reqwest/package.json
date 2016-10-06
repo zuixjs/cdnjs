@@ -21,7 +21,7 @@
   "npmName": "reqwest",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "reqwest.js",
         "reqwest.min.js"

@@ -15,7 +15,7 @@
   "npmName": "minicart",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "**/*"
       ]

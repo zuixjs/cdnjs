@@ -15,7 +15,7 @@
   "npmName": "knockout.validation",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*"
       ]

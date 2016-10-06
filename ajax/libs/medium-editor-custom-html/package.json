@@ -17,7 +17,7 @@
   "npmName": "medium-editor-custom-html",
   "npmFileMap": [
     {
-      "basePath": "/src",
+      "basePath": "src",
       "files": [
         "*"
       ]

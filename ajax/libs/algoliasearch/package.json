@@ -14,7 +14,7 @@
   "npmName": "algoliasearch",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*.js"
       ]

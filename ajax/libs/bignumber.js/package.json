@@ -21,7 +21,7 @@
   "npmName": "bignumber.js",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "bignumber.min.js",
         "bignumber.js",

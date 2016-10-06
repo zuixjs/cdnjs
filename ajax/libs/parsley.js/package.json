@@ -11,7 +11,7 @@
   "npmName": "parsleyjs",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*.js"
       ]

@@ -20,7 +20,7 @@
   "npmName": "geojson2svg",
   "npmFileMap": [
     {
-      "basePath": "/dist",
+      "basePath": "dist",
       "files": [
         "*"
       ]

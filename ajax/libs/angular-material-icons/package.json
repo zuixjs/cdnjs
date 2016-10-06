@@ -28,7 +28,7 @@
   "npmName": "angular-material-icons",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "angular-material-icons.min.js"
       ]

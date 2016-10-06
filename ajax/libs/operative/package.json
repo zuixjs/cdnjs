@@ -7,7 +7,7 @@
   "npmName": "operative",
   "npmFileMap": [
     {
-      "basePath": "/dist",
+      "basePath": "dist",
       "files": [
         "*"
       ]

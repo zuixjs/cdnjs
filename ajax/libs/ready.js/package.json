@@ -17,7 +17,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/nouveller/ready.js.git",
-    "basePath": "dist/",
+    "basePath": "dist",
     "files": [
       "ready.min.js",
       "ready.js"

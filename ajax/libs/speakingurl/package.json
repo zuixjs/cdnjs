@@ -63,7 +63,7 @@
   "npmName": "speakingurl",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "speakingurl.min.js"
       ]

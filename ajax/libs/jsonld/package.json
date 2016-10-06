@@ -23,7 +23,7 @@
   "npmName": "jsonld",
   "npmFileMap": [
     {
-      "basePath": "/js/",
+      "basePath": "js",
       "files": [
         "jsonld.js"
       ]

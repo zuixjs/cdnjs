@@ -19,7 +19,7 @@
   "npmName": "blueimp-md5",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "js/md5.js",
         "js/md5.min.js"

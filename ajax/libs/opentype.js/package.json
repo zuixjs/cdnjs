@@ -20,7 +20,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/nodebox/opentype.js.git",
-    "basePath": "/dist/",
+    "basePath": "dist",
     "files": [
       "opentype.min.js",
       "opentype.js"

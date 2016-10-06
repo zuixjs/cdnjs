@@ -16,7 +16,7 @@
   "npmName": "jquery-form-serializer",
   "npmFileMap": [
     {
-      "basePath": "/src",
+      "basePath": "src",
       "files": [
         "*"
       ]

@@ -11,7 +11,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/desandro/draggabilly.git",
-    "basePath": "/dist/",
+    "basePath": "dist",
     "files": [
       "draggabilly.pkgd.js",
       "draggabilly.pkgd.min.js"

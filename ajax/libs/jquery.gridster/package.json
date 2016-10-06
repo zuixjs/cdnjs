@@ -22,7 +22,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/ducksboard/gridster.js.git",
-    "basePath": "dist/",
+    "basePath": "dist",
     "files": [
       "**/*"
     ]

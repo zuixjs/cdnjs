@@ -19,14 +19,14 @@
   "npmName": "jquery.tipsy",
   "npmFileMap": [
     {
-      "basePath": "/src/",
+      "basePath": "src",
       "files": [
         "*.js",
         "*.css"
       ]
     },
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*.js"
       ]

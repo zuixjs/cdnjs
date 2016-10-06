@@ -21,7 +21,7 @@
   "npmName": "jstree",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "jstree.min.js",
         "themes/**/*.png",

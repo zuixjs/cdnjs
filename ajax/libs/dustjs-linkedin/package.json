@@ -14,7 +14,7 @@
   "npmName": "dustjs-linkedin",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*.js"
       ]

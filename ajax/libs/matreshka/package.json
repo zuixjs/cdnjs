@@ -11,7 +11,7 @@
   "npmName": "matreshka",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "matreshka.js",
         "matreshka.min.js",

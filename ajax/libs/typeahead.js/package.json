@@ -12,7 +12,7 @@
   "npmName": "typeahead.js",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*.js"
       ]

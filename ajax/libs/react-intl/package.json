@@ -13,7 +13,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/yahoo/react-intl.git",
-    "basePath": "dist/",
+    "basePath": "dist",
     "files": [
       "**/*"
     ]

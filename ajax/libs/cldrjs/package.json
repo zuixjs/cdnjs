@@ -33,7 +33,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/rxaviers/cldrjs.git",
-    "basePath": "/dist",
+    "basePath": "dist",
     "files": [
       "cldr.js",
       "cldr.min.js",

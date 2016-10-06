@@ -33,7 +33,7 @@
   "npmName": "function-plot",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "**/*"
       ]

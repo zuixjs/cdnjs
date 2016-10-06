@@ -7,7 +7,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/lvoogdt/Leaflet.awesome-markers.git",
-    "basePath": "dist/",
+    "basePath": "dist",
     "files": [
       "**/*"
     ]

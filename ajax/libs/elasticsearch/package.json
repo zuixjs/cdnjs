@@ -15,7 +15,7 @@
   "npmName": "elasticsearch-browser",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "*.js"
       ]

@@ -28,7 +28,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/davidjbradshaw/iframe-resizer.git",
-    "basePath": "js/",
+    "basePath": "js",
     "files": [
       "!(index)*.+(js|map)"
     ]

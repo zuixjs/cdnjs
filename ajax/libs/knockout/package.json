@@ -18,7 +18,7 @@
   "npmName": "knockout",
   "npmFileMap": [
     {
-      "basePath": "/build/output/",
+      "basePath": "build/output",
       "files": [
         "*.js"
       ]

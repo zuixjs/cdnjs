@@ -28,7 +28,7 @@
   "npmName": "js-data-localforage",
   "npmFileMap": [
     {
-      "basePath": "/dist",
+      "basePath": "dist",
       "files": [
         "*"
       ]

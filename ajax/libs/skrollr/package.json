@@ -19,7 +19,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/Prinzhorn/skrollr.git",
-    "basePath": "dist/",
+    "basePath": "dist",
     "files": [
       "**/*"
     ]

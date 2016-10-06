@@ -14,7 +14,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/sapo/Ink.git",
-    "basePath": "dist/",
+    "basePath": "dist",
     "files": [
       "js/*",
       "css/ink*.css",

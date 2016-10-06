@@ -23,7 +23,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/bramp/js-sequence-diagrams.git",
-    "basePath": "/build/",
+    "basePath": "build",
     "files": [
       "sequence-diagram.js",
       "sequence-diagram-min.js",

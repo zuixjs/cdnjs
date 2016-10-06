@@ -35,7 +35,7 @@
   "npmName": "machina",
   "npmFileMap": [
     {
-      "basePath": "/lib/",
+      "basePath": "lib",
       "files": [
         "machina.js",
         "machina.min.js"

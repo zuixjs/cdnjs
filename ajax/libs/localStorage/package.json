@@ -11,7 +11,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/mortzdk/localStorage.git",
-    "basePath": "dist/",
+    "basePath": "dist",
     "files": [
       "*"
     ]

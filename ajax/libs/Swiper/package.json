@@ -16,7 +16,7 @@
   "npmName": "swiper",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "**/*"
       ]

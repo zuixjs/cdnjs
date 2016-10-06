@@ -6,7 +6,7 @@
   "npmName": "ally.js",
   "npmFileMap": [
     {
-      "basePath": "./",
+      "basePath": "",
       "files": [
         "ally.min.js",
         "ally.min.js.map"

@@ -19,13 +19,13 @@
   "npmName": "upb",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "upb.js"
       ]
     },
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         ".js",
         ".map"

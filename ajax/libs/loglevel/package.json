@@ -22,7 +22,7 @@
   "npmName": "loglevel",
   "npmFileMap": [
     {
-      "basePath": "/dist",
+      "basePath": "dist",
       "files": [
         "loglevel.min.js"
       ]

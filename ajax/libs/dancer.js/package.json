@@ -10,7 +10,7 @@
   "npmName": "dancer",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "dancer.js",
         "dancer.min.js",

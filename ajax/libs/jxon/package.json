@@ -29,7 +29,7 @@
   "npmName": "jxon",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "index.js"
       ]

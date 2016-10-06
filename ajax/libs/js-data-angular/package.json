@@ -15,7 +15,7 @@
   "npmName": "js-data-angular",
   "npmFileMap": [
     {
-      "basePath": "/dist",
+      "basePath": "dist",
       "files": [
         "*"
       ]

@@ -3,7 +3,7 @@
   "npmName": "ng-csv",
   "npmFileMap": [
     {
-      "basePath": "/build/",
+      "basePath": "build",
       "files": [
         "*"
       ]

@@ -17,7 +17,7 @@
   "npmName": "stapes",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "stapes.js",
         "stapes.min.js"

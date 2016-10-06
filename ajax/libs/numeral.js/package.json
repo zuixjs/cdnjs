@@ -15,7 +15,7 @@
   "npmName": "numeral",
   "npmFileMap": [
     {
-      "basePath": "/min/",
+      "basePath": "min",
       "files": [
         "numeral.min.js"
       ]

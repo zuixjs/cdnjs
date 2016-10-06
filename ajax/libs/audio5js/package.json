@@ -18,7 +18,7 @@
   "npmName": "audio5",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "audio5.js",
         "audio5.min.js",

@@ -17,7 +17,7 @@
   "npmName": "angular-local-storage",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*.js"
       ]

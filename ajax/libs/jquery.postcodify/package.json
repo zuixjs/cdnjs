@@ -13,7 +13,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/kijin/postcodify.git",
-    "basePath": "api/",
+    "basePath": "api",
     "files": [
       "search.min.js"
     ]

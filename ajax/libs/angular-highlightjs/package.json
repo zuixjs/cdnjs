@@ -18,7 +18,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/pc035860/angular-highlightjs.git",
-    "basePath": "build/",
+    "basePath": "build",
     "files": [
       "*.js"
     ]

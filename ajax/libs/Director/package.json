@@ -3,7 +3,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/flatiron/director.git",
-    "basePath": "/build/",
+    "basePath": "build",
     "files": [
       "director.min.js",
       "director.js"

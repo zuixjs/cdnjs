@@ -12,7 +12,7 @@
   "npmName": "leaflet-dvf",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*"
       ]

@@ -36,13 +36,13 @@
   "npmName": "scrollmagic",
   "npmFileMap": [
     {
-      "basePath": "/scrollmagic/minified/",
+      "basePath": "scrollmagic/minified",
       "files": [
         "**/*.js"
       ]
     },
     {
-      "basePath": "/scrollmagic/uncompressed/",
+      "basePath": "scrollmagic/uncompressed",
       "files": [
         "**/*.js"
       ]

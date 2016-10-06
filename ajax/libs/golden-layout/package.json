@@ -23,13 +23,13 @@
   "npmName": "golden-layout",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "**/*"
       ]
     },
     {
-      "basePath": "/src/",
+      "basePath": "src",
       "files": [
         "css/+(goldenlayout*|*-theme).css"
       ]

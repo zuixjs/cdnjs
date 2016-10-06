@@ -14,7 +14,7 @@
   "npmName": "accounting",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "accounting.min.js",
         "accounting.js"

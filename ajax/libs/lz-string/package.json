@@ -19,7 +19,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/pieroxy/lz-string.git",
-    "basePath": "libs/",
+    "basePath": "libs",
     "files": [
       "lz-string.js",
       "lz-string.min.js",

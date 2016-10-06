@@ -6,7 +6,7 @@
   "npmName": "angular-moment",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "plastiq.js",
         "plastiq.min.js"

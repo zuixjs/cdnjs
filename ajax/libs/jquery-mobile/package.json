@@ -3,7 +3,7 @@
   "npmName": "jquery-mobile",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*.css",
         "*.js",

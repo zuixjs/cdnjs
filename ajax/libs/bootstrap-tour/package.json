@@ -31,7 +31,7 @@
   "npmName": "bootstrap-tour",
   "npmFileMap": [
     {
-      "basePath": "/build/",
+      "basePath": "build",
       "files": [
         "*"
       ]

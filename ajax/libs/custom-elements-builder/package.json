@@ -5,7 +5,7 @@
   "npmName": "ceb",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*.js",
         "*.map"

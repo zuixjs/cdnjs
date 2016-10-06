@@ -17,7 +17,7 @@
   "npmName": "spa.js",
   "npmFileMap": [
     {
-      "basePath": "/dist",
+      "basePath": "dist",
       "files": [
         "**/*"
       ]

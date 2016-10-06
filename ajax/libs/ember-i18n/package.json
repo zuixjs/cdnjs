@@ -17,7 +17,7 @@
   "npmName": "ember-i18n",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*.js"
       ]

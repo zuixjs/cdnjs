@@ -30,7 +30,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/dlueth/qoopido.js.git",
-    "basePath": "/dist/latest/min",
+    "basePath": "dist/latest/min",
     "files": [
       "**/*.js"
     ]

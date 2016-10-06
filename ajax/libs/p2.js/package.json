@@ -22,7 +22,7 @@
   "npmName": "p2",
   "npmFileMap": [
     {
-      "basePath": "/build/",
+      "basePath": "build",
       "files": [
         "*"
       ]

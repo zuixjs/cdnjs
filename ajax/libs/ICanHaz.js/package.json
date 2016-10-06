@@ -13,7 +13,7 @@
   "npmName": "icanhaz",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "ICanHaz.min.js"
       ]

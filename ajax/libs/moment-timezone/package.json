@@ -13,7 +13,7 @@
   "npmName": "moment-timezone",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "moment-timezone*"
       ]

@@ -11,7 +11,7 @@
   "npmName": "kinetic",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "kinetic.js",
         "kinetic.min.js"

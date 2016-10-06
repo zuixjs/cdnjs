@@ -11,7 +11,7 @@
   "npmName": "fast-json-patch",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*.js"
       ]

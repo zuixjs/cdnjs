@@ -14,7 +14,7 @@
   "npmName": "colors.js",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "*.min.js"
       ]

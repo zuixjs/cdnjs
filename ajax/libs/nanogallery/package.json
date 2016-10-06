@@ -22,7 +22,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/Kris-B/nanoGALLERY.git",
-    "basePath": "dist/",
+    "basePath": "dist",
     "files": [
       "**/*"
     ]

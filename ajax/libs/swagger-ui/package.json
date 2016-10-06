@@ -15,7 +15,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/swagger-api/swagger-ui.git",
-    "basePath": "dist/",
+    "basePath": "dist",
     "files": [
       "swagger-ui.*",
       "css/screen.css",

@@ -17,7 +17,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/HealthIndicators/js-api.git",
-    "basePath": "Content/Scripts/API/Output/",
+    "basePath": "Content/Scripts/API/Output",
     "files": [
       "hiw-api.js",
       "hiw-api.min.js",

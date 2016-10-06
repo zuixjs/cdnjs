@@ -15,7 +15,7 @@
   "npmName": "stompjs",
   "npmFileMap": [
     {
-      "basePath": "/lib/",
+      "basePath": "lib",
       "files": [
         "stomp.js",
         "stomp.min.js"

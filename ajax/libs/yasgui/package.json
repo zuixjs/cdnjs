@@ -19,7 +19,7 @@
   "npmName": "yasgui",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*.min.js",
         "*.min.js.map",

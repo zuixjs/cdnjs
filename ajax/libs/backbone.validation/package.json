@@ -3,7 +3,7 @@
   "npmName": "backbone-validation",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "backbone-validation-amd-min.js",
         "backbone-validation-amd.js",

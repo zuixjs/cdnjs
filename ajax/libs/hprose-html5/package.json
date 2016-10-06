@@ -31,7 +31,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/hprose/hprose-html5.git",
-    "basePath": "dist/",
+    "basePath": "dist",
     "files": [
       "hprose-html5.js"
     ]

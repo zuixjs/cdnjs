@@ -16,7 +16,7 @@
   "npmName": "leaflet-hash",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "leaflet-hash*.js"
       ]

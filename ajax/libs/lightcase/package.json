@@ -20,7 +20,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/cbopp-art/lightcase.git",
-    "basePath": "src/",
+    "basePath": "src",
     "files": [
       "@(js|css|fonts)/*lightcase*"
     ]

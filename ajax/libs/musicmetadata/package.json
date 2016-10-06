@@ -25,7 +25,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/leetreveil/musicmetadata.git",
-    "basePath": "dist/",
+    "basePath": "dist",
     "files": [
       "**/*"
     ]

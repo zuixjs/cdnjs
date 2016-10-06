@@ -16,7 +16,7 @@
   "npmName": "svg.draggy.js",
   "npmFileMap": [
     {
-      "basePath": "/src",
+      "basePath": "src",
       "files": [
         "*"
       ]

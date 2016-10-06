@@ -14,7 +14,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/zurb/ink.git",
-    "basePath": "css/",
+    "basePath": "css",
     "files": [
       "ink.css"
     ]

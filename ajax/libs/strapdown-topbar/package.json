@@ -13,7 +13,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/joedf/strapdown-topbar.git",
-    "basePath": "assets/strapdown/",
+    "basePath": "assets/strapdown",
     "files": [
       "strapdown-topbar*"
     ]

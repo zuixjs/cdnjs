@@ -13,7 +13,7 @@
   "npmName": "noty",
   "npmFileMap": [
     {
-      "basePath": "/js/noty/",
+      "basePath": "js/noty",
       "files": [
         "**/*"
       ]

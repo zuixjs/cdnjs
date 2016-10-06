@@ -3,7 +3,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/hakimel/Ladda.git",
-    "basePath": "/dist/",
+    "basePath": "dist",
     "files": [
       "ladda-themeless.min.css",
       "ladda.jquery.min.js",

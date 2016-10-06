@@ -10,7 +10,7 @@
   "npmName": "lunr",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "lunr.min.js"
       ]

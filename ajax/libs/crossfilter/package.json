@@ -20,7 +20,7 @@
   "npmName": "crossfilter",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "crossfilter.js",
         "crossfilter.min.js"

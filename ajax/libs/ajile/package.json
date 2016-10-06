@@ -33,7 +33,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/iskitz/ajile.git",
-    "basePath": "/use/",
+    "basePath": "use",
     "files": [
       "com.iskitz.ajile.src.js",
       "com.iskitz.ajile.js",

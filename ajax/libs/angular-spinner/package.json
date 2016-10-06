@@ -6,7 +6,7 @@
   "npmName": "angular-spinner",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "angular-spinner.js",
         "angular-spinner.min.js",

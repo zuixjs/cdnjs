@@ -19,7 +19,7 @@
   "npmName": "jinplace",
   "npmFileMap": [
     {
-      "basePath": "/js/",
+      "basePath": "js",
       "files": [
         "*.js"
       ]

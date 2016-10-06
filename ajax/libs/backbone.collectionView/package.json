@@ -26,7 +26,7 @@
   "npmName": "bb-collection-view",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*.js"
       ]

@@ -28,7 +28,7 @@
   "npmName": "postal",
   "npmFileMap": [
     {
-      "basePath": "/lib/",
+      "basePath": "lib",
       "files": [
         "postal.js",
         "postal.min.js",

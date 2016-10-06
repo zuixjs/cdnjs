@@ -3,7 +3,7 @@
   "npmName": "angular-wizard",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*.css",
         "*.js"

@@ -16,7 +16,7 @@
   "npmName": "jplayer",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "**/*.css",
         "**/*.js",

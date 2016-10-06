@@ -17,7 +17,7 @@
   "npmName": "ractive-require",
   "npmFileMap": [
     {
-      "basePath": "dist/",
+      "basePath": "dist",
       "files": [
         "ractive-require.js",
         "ractive-require.min.js",

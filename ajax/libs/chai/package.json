@@ -4,7 +4,7 @@
   "npmName": "chai",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "chai*.js"
       ]

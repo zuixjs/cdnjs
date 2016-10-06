@@ -3,7 +3,7 @@
   "npmName": "ng-file-upload",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*.js",
         "*.swf"

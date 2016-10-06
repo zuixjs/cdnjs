@@ -17,7 +17,7 @@
   "npmName": "knockback",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "knockback.min.js"
       ]

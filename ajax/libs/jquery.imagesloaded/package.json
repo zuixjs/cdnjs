@@ -12,7 +12,7 @@
   "npmName": "imagesloaded",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "imagesloaded*.js"
       ]

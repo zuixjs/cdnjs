@@ -21,7 +21,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/angular-ui-tree/angular-ui-tree.git",
-    "basePath": "dist/",
+    "basePath": "dist",
     "files": [
       "**/*"
     ]

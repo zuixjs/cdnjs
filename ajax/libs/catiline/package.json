@@ -3,7 +3,7 @@
   "npmName": "catiline",
   "npmFileMap": [
     {
-      "basePath": "/dist",
+      "basePath": "dist",
       "files": [
         "catiline*.js"
       ]
