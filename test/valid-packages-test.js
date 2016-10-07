@@ -281,6 +281,32 @@ packages.map(function(pkg) {
                   pkgName(pkg) + ": Need to add \"String\" type basePath in auto-update config");
     }
   }
+  packageVows[pname + ": There must no \"/\" at the front or the last of basePath "] = function(pkg) {
+    var json = parse(pkg, true);
+    if (json.npmFileMap) {
+      for (var i in json.npmFileMap) {
+        if (json.npmFileMap[i].basePath) {
+          var basePath = json.npmFileMap[i].basePath;
+          assert.ok(
+             (
+                 (basePath.length == 0) ||
+                 (basePath[0] != '/' && basePath[basePath.length-1] != '/')
+             ),
+             pkgName(pkg) + ": Need to remove \"/\" at the front or the last of basePath in package.json");
+        }
+      }
+    } else if (json.autoupdate) {
+        if (json.autoupdate.basePath) {
+          var basePath = json.autoupdate.basePath;
+            assert.ok(
+                (
+                    (basePath.length == 0) ||
+                    (basePath[0] != '/' && basePath[basePath.length-1] != '/')
+                ),
+                pkgName(pkg) + ": Need to remove \"/\" at the front or the last of basePath in package.json");
+        }
+      }
+  };
   context[pname] = packageVows;
   suite.addBatch(context);
   return null;
