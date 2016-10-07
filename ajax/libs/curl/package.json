@@ -14,5 +14,13 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/cujojs/curl"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/cujojs/curl.git",
+    "basePath": "dist",
+    "files": [
+      "**/*.!(md)"
+    ]
   }
 }
