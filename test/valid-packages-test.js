@@ -269,6 +269,18 @@ packages.map(function(pkg) {
                 pkgName(pkg) + ": Need to add repository information in package.json");
     }
   };
+  packageVows[pname + ": There must be \"String\" type basePath in auto-update config"] = function(pkg) {
+    var json = parse(pkg, true);
+    if (json.npmFileMap) {
+      for (var i in json.npmFileMap) {
+        assert.ok(json.npmFileMap[i].basePath != undefined && ((typeof json.npmFileMap[i].basePath) == "string"),
+                  pkgName(pkg) + ": Need to add \"String\" type basePath in auto-update config");
+      }
+    } else if (json.autoupdate) {
+        assert.ok(json.autoupdate.basePath != undefined && ((typeof json.autoupdate.basePath) == "string"),
+                  pkgName(pkg) + ": Need to add \"String\" type basePath in auto-update config");
+    }
+  }
   context[pname] = packageVows;
   suite.addBatch(context);
   return null;
