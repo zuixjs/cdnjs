@@ -16,6 +16,7 @@
   "npmName": "portal-client",
   "npmFileMap": [
     {
+      "basePath": "",
       "files": [
         "*.js"
       ]

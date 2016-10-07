@@ -11,7 +11,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/woothemes/FlexSlider.git",
-    "basepath": "",
+    "basePath": "",
     "files": [
       "flexslider.css",
       "jquery.flexslider-min.js",

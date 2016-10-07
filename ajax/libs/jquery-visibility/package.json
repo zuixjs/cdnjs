@@ -23,6 +23,7 @@
   "npmName": "jquery-visibility",
   "npmFileMap": [
     {
+      "basePath": "",
       "files": [
         "jquery-visibility*.js"
       ]
