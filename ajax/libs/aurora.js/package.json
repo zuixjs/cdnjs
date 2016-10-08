@@ -14,5 +14,10 @@
   "dependencies": {
     "speaker": "~0.0.10"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "framework",
+    "decoder",
+    "audio"
+  ]
 }
