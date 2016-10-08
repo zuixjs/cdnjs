@@ -1,6 +1,6 @@
 {
   "name": "jquery-scrollto",
-  "version": "1.4.4",
+  "version": "1.4.6",
   "filename": "jquery-scrollto.min.js",
   "description": "Smooth Scrolling to any jQuery/DOM Element",
   "keywords": [
