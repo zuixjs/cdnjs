@@ -1,0 +1,40 @@
+{
+  "name": "mammoth",
+  "filename": "mammoth.browser.min.js",
+  "version": "1.2.5",
+  "author": "Michael Williamson <mike@zwobble.org>",
+  "description": "Convert Word documents from docx to simple HTML and Markdown",
+  "keywords": [
+    "docx",
+    "html",
+    "office",
+    "word",
+    "markdown",
+    "md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mwilliamson/mammoth.js.git"
+  },
+  "dependencies": {
+    "bluebird": "~3.4.0",
+    "sax": "~1.1.1",
+    "underscore": "~1.6.0",
+    "lop": "~0.4.0",
+    "argparse": "~1.0.3",
+    "jszip": "~2.5.0",
+    "xmlbuilder": "~2.6.4",
+    "path-is-absolute": "^1.0.0"
+  },
+  "homepage": "https://mike.zwobble.org/projects/mammoth/",
+  "license": "BSD-2-Clause",
+  "npmName": "mammoth",
+  "npmFileMap": [
+    {
+      "basePath": "",
+      "files": [
+        "mammoth.browser*"
+      ]
+    }
+  ]
+}
