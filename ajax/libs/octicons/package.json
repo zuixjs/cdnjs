@@ -14,7 +14,7 @@
   ],
   "autoupdate": {
     "source": "git",
-    "target": "git://github.com/github/octicons.git",
+    "target": "git://github.com/primer/octicons.git",
     "basePath": "octicons/",
     "files": [
       "*.ttf",
@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/github/octicons.git"
+    "url": "git://github.com/primer/octicons.git"
   },
   "author": "GitHub <support@github.com>"
 }
