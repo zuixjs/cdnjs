@@ -20,13 +20,9 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/primer/octicons.git",
-    "basePath": "octicons/",
+    "basePath": "build",
     "files": [
-      "*.ttf",
-      "*.eot",
-      "*.svg",
-      "*.woff",
-      "*.css"
+      "**/*"
     ]
   },
   "repository": {
