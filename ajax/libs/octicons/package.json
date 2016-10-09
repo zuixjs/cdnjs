@@ -13,7 +13,9 @@
     "icons",
     "font",
     "web font",
-    "icon font"
+    "icon font",
+    "svg",
+    "octicons"
   ],
   "autoupdate": {
     "source": "git",
