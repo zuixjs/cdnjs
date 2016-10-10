@@ -1,6 +1,6 @@
 {
   "name": "most",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "filename": "most.min.js",
   "description": "Monadic streams for Ultra-high performance reactive programming",
   "repository": {
