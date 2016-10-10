@@ -6,6 +6,10 @@
   "author": "Claudio Holanda",
   "license": "MIT",
   "homepage": "https://kazzkiq.github.io/balloon.css/",
+  "keywords": [
+    "css",
+    "tooltip"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/kazzkiq/balloon.css.git"
