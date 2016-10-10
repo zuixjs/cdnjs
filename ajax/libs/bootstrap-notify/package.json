@@ -16,6 +16,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/goodybag/bootstrap-notify.git",
+    "basePath": "",
     "files": [
       "css/styles/alert-*.css",
       "css/bootstrap-notify*.css",

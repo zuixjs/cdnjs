@@ -3,6 +3,7 @@
   "npmName": "q",
   "npmFileMap": [
     {
+      "basePath": "",
       "files": [
         "q.js"
       ]

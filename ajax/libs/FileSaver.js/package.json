@@ -15,6 +15,7 @@
   "npmName": "file-saver",
   "npmFileMap": [
     {
+      "basePath": "",
       "files": [
         "FileSaver*.js"
       ]

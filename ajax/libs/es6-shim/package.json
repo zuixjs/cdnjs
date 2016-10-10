@@ -24,6 +24,7 @@
   "npmName": "es6-shim",
   "npmFileMap": [
     {
+      "basePath": "",
       "files": [
         "*.min.js",
         "es6-shim.*",

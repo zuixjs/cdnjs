@@ -11,6 +11,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/processing-js/processing-js.git",
+    "basePath": "",
     "files": [
       "processing.min.js",
       "processing.js"
