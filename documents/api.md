@@ -1,6 +1,6 @@
 # API
 
-You can search cdnjs via our API:
+You can "search" cdnjs via our API:
 
 ```
 https://api.cdnjs.com/libraries
@@ -11,6 +11,23 @@ Without any query parameters it will return the name and main file URL of every 
 ```
 https://api.cdnjs.com/libraries?search=jquery
 ```
+
+You can also "select" a certain library if you already know its name on CDNJS, e.g.
+
+```
+https://api.cdnjs.com/libraries/jquery
+```
+
+Without any query parameters it will return the whole meta data of the library, if you want to specify the info you want (recommended), use "fields" query:
+
+```
+https://api.cdnjs.com/libraries/jquery?fields=name,filename,version
+```
+
+All the usable fields is the same as the library's package.json on CDNJS:
+
+https://github.com/cdnjs/cdnjs/blob/master/ajax/libs/jquery/package.json
+
 
 API will reture minified result by default, if you wanna have a human readable result, try `output=human` like this:
 
