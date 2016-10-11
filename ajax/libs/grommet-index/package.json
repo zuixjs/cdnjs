@@ -1,6 +1,6 @@
 {
   "name": "grommet-index",
-  "version": "0.4.5",
+  "version": "1.0.0",
   "filename": "grommet-index.min.js",
   "description": "Grommet UI and example server for searching, filtering, and displaying mass quantities of items.",
   "authors": [
