@@ -12,7 +12,7 @@
   "npmName": "string_score",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "string_score.js",
         "string_score.min.js"

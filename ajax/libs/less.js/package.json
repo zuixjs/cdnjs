@@ -16,7 +16,7 @@
   "npmName": "less",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "less.*js"
       ]

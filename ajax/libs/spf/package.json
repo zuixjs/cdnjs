@@ -11,7 +11,7 @@
   "npmName": "spf",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*"
       ]

@@ -16,7 +16,7 @@
   "npmName": "baconjs",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*.js"
       ]

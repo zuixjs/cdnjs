@@ -10,7 +10,7 @@
   "npmName": "backbone.localstorage",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "backbone.localStorage-min.js",
         "backbone.localStorage.js"

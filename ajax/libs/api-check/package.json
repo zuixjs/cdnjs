@@ -23,7 +23,7 @@
   "npmName": "api-check",
   "npmFileMap": [
     {
-      "basePath": "/dist",
+      "basePath": "dist",
       "files": [
         "*"
       ]

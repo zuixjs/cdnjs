@@ -14,7 +14,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/stephenhutchings/typicons.font.git",
-    "basePath": "src/font/",
+    "basePath": "src/font",
     "files": [
       "*.ttf",
       "*.eot",

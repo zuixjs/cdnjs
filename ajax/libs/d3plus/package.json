@@ -32,7 +32,7 @@
   "npmName": "d3plus",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "d3plus.full.js",
         "d3plus.full.min.js",

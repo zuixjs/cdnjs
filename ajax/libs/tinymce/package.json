@@ -12,7 +12,7 @@
   "npmName": "tinymce",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "tinymce.min.js",
         "tinymce.jquery.min.js",

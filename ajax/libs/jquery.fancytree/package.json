@@ -23,7 +23,7 @@
   "npmName": "jquery.fancytree",
   "npmFileMap": [
     {
-      "basePath": "dist/",
+      "basePath": "dist",
       "files": [
         "*.js",
         "*.js.map",

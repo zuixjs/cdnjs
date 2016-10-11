@@ -15,7 +15,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/johnotander/furtive.git",
-    "basePath": "css/",
+    "basePath": "css",
     "files": [
       "furtive*.css"
     ]

@@ -20,7 +20,7 @@
   "npmName": "domainr-search-box",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "**/*"
       ]

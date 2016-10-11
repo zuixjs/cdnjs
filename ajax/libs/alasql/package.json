@@ -37,7 +37,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/agershun/alasql.git",
-    "basePath": "/dist/",
+    "basePath": "dist",
     "files": [
       "alasql-worker.min.js",
       "alasql.min.js"

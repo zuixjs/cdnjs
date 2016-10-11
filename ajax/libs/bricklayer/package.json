@@ -14,7 +14,7 @@
   "npmName": "bricklayer",
   "npmFileMap": [
     {
-      "basePath": "dist/",
+      "basePath": "dist",
       "files": [
         "**/!(*node*)"
       ]

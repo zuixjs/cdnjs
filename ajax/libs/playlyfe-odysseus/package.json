@@ -21,7 +21,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/playlyfe/odysseus.git",
-    "basePath": "/lib/",
+    "basePath": "lib",
     "files": [
       "odysseus.js",
       "odysseus.min.js"

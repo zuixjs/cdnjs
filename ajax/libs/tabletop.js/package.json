@@ -14,7 +14,7 @@
   "npmName": "tabletop",
   "npmFileMap": [
     {
-      "basePath": "/src/",
+      "basePath": "src",
       "files": [
         "tabletop.js",
         "backbone.tabletopSync.js"

@@ -14,7 +14,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/angular/angular.js.git",
-    "basePath": "src/ngLocale/",
+    "basePath": "src/ngLocale",
     "files": [
       "angular-locale_*.js"
     ]

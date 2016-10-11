@@ -16,7 +16,7 @@
   "npmName": "jquery-json-editor",
   "npmFileMap": [
     {
-      "basePath": "/src",
+      "basePath": "src",
       "files": [
         "*"
       ]

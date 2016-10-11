@@ -3,7 +3,7 @@
   "npmName": "string",
   "npmFileMap": [
     {
-      "basePath": "/lib/",
+      "basePath": "lib",
       "files": [
         "string.*"
       ]

@@ -21,7 +21,7 @@
   "npmName": "simple-statistics",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "simple_statistics.min.js",
         "simple_statistics.js"

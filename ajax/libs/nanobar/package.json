@@ -19,7 +19,7 @@
   "npmName": "nanobar",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "nanobar.js",
         "nanobar.min.js"

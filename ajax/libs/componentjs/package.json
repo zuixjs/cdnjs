@@ -3,7 +3,7 @@
   "npmName": "componentjs",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "component.js",
         "component.min.js",

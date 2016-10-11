@@ -5,7 +5,7 @@
   "npmName": "evil-icons",
   "npmFileMap": [
     {
-      "basePath": "/assets/",
+      "basePath": "assets",
       "files": [
         "evil-icons.min.js",
         "evil-icons.min.css"

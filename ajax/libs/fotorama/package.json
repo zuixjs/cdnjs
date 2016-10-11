@@ -33,7 +33,7 @@
   "npmName": "fotorama",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "fotorama*"
       ]

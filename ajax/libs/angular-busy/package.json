@@ -20,7 +20,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/cgross/angular-busy.git",
-    "basePath": "dist/",
+    "basePath": "dist",
     "files": [
       "angular-busy.js",
       "angular-busy.min.js",

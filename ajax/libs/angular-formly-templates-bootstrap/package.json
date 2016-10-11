@@ -11,7 +11,7 @@
   "npmName": "angular-formly-templates-bootstrap",
   "npmFileMap": [
     {
-      "basePath": "/dist",
+      "basePath": "dist",
       "files": [
         "*"
       ]

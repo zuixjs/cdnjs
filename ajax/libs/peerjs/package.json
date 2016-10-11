@@ -11,7 +11,7 @@
   "npmName": "peerjs",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*"
       ]

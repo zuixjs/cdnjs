@@ -10,7 +10,7 @@
   "npmName": "leaflet.markercluster",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "MarkerCluster.Default.css",
         "MarkerCluster.css",

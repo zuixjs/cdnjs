@@ -12,7 +12,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/flatlogic/awesome-bootstrap-checkbox.git",
-    "basePath": "/",
+    "basePath": "",
     "files": [
       "awesome-bootstrap-checkbox.css"
     ]

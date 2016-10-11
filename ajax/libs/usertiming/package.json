@@ -19,7 +19,7 @@
   "npmName": "usertiming",
   "npmFileMap": [
     {
-      "basePath": "/dist",
+      "basePath": "dist",
       "files": [
         "**/*"
       ]

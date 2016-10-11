@@ -29,7 +29,7 @@
   "npmName": "eddy",
   "npmFileMap": [
     {
-      "basePath": "/build/",
+      "basePath": "build",
       "files": [
         "eddy.dom.js",
         "eddy.dom.max.js",

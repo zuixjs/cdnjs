@@ -10,7 +10,7 @@
   "npmName": "proj4",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*.js"
       ]

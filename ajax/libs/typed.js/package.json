@@ -15,7 +15,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/mattboldt/typed.js.git",
-    "basePath": "dist/",
+    "basePath": "dist",
     "files": [
       "**/*"
     ]

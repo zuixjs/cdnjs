@@ -16,13 +16,13 @@
   "npmName": "codemirror",
   "npmFileMap": [
     {
-      "basePath": "/lib/",
+      "basePath": "lib",
       "files": [
         "*.+(js|css)"
       ]
     },
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "+(addon|theme|mode|keymap)/**/*.+(js|css)"
       ]

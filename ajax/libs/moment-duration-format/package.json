@@ -12,7 +12,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/jsmreese/moment-duration-format.git",
-    "basePath": "lib/",
+    "basePath": "lib",
     "files": [
       "moment-duration-format*.js"
     ]

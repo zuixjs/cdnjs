@@ -10,7 +10,7 @@
       ]
     },
     {
-      "basePath": "/min/",
+      "basePath": "min",
       "files": [
         "moment*.js"
       ]

@@ -20,7 +20,7 @@
   "npmName": "angular-materialize",
   "npmFileMap": [
     {
-      "basePath": "/src",
+      "basePath": "src",
       "files": [
         "angular-materialize.js",
         "angular-materialize.min.js"

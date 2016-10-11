@@ -28,7 +28,7 @@
   "npmName": "backbone-associations",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "backbone-associations-min.js",
         "backbone-associations.js"

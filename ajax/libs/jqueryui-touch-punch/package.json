@@ -12,7 +12,7 @@
   "npmName": "jquery-ui-touch-punch",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "jquery.ui.touch-punch.min.js"
       ]

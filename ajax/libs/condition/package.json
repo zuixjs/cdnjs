@@ -9,7 +9,7 @@
   "npmName": "condition",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "condition.js",
         "condition.min.js"

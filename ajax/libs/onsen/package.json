@@ -26,7 +26,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/OnsenUI/OnsenUI.git",
-    "basePath": "build/",
+    "basePath": "build",
     "files": [
       "js/*",
       "css/*"

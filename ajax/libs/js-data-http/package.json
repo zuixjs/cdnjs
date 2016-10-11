@@ -28,7 +28,7 @@
   "npmName": "js-data-http",
   "npmFileMap": [
     {
-      "basePath": "/dist",
+      "basePath": "dist",
       "files": [
         "**/*.+(!ts)"
       ]

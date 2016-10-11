@@ -18,7 +18,7 @@
   "npmName": "sprite-js",
   "npmFileMap": [
     {
-      "basePath": "/dist",
+      "basePath": "dist",
       "files": [
         "*"
       ]

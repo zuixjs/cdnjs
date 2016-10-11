@@ -18,7 +18,7 @@
   "npmName": "chainloading",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "chainloading.min.js"
       ]

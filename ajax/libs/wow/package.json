@@ -17,7 +17,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/matthieua/WOW.git",
-    "basePath": "dist/",
+    "basePath": "dist",
     "files": [
       "*"
     ]

@@ -7,7 +7,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/javve/list.js.git",
-    "basePath": "/dist",
+    "basePath": "dist",
     "files": [
       "list.js",
       "list.min.js"

@@ -14,7 +14,7 @@
   "npmName": "klass",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "klass.js",
         "klass.min.js"

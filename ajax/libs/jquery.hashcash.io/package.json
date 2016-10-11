@@ -21,7 +21,7 @@
   "npmName": "jquery.hashcash.io",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "*.js",
         "*.css"

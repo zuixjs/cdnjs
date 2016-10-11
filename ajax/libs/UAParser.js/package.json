@@ -23,7 +23,7 @@
   "npmName": "ua-parser-js",
   "npmFileMap": [
     {
-      "basePath": "/src/",
+      "basePath": "src",
       "files": [
         "*.js"
       ]

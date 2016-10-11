@@ -33,7 +33,7 @@
   "npmName": "ui-contextmenu",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "jquery.ui-contextmenu.min.js",
         "jquery.ui-contextmenu.min.js.map"

@@ -13,7 +13,7 @@
   "npmName": "backbone.layoutmanager",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "*.js"
       ]

@@ -3,7 +3,7 @@
   "npmName": "@reactivex/rxjs",
   "npmFileMap": [
     {
-      "basePath": "/dist/global",
+      "basePath": "dist/global",
       "files": [
         "**/*"
       ]

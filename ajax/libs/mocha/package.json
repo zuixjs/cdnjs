@@ -5,7 +5,7 @@
   "npmName": "mocha",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "mocha.js",
         "mocha.css"

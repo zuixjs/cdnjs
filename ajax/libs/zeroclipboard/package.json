@@ -22,7 +22,7 @@
   "npmName": "zeroclipboard",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "ZeroClipboard.*"
       ]

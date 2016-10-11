@@ -30,7 +30,7 @@
   "npmName": "dc",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "dc.css",
         "dc.min.css",

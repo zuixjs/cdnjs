@@ -15,7 +15,7 @@
   "npmName": "angular-formly",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*.js",
         "*.map"

@@ -14,7 +14,7 @@
   "npmName": "hydra.js",
   "npmFileMap": [
     {
-      "basePath": "/versions/",
+      "basePath": "versions",
       "files": [
         "hydra.js",
         "hydra.min.js"

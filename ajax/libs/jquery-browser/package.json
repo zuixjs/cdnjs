@@ -3,7 +3,7 @@
   "npmName": "jquery.browser",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*"
       ]

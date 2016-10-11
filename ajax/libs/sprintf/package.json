@@ -3,7 +3,7 @@
   "npmName": "sprintf-js",
   "npmFileMap": [
     {
-      "basePath": "/src/",
+      "basePath": "src",
       "files": [
         "sprintf.js",
         "sprintf.min.js"

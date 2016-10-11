@@ -3,7 +3,7 @@
   "npmName": "gorillascript",
   "npmFileMap": [
     {
-      "basePath": "/extras/",
+      "basePath": "extras",
       "files": [
         "*.js"
       ]

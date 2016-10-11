@@ -22,7 +22,7 @@
   "npmName": "bean",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "bean.js",
         "bean.min.js"

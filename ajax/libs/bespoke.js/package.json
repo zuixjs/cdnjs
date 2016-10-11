@@ -11,7 +11,7 @@
   "npmName": "bespoke",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "bespoke.js",
         "bespoke.min.js"

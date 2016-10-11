@@ -15,7 +15,7 @@
   "npmName": "omniscient",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*.js"
       ]

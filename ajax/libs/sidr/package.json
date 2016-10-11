@@ -15,7 +15,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/artberri/sidr.git",
-    "basePath": "dist/",
+    "basePath": "dist",
     "files": [
       "jquery.sidr.min.js",
       "stylesheets/jquery.sidr.dark.min.css",

@@ -12,7 +12,7 @@
   "npmName": "dropzone",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*.js",
         "*.css",

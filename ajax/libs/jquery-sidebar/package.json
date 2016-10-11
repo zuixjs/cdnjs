@@ -16,7 +16,7 @@
   "npmName": "jquery-sidebar",
   "npmFileMap": [
     {
-      "basePath": "/src",
+      "basePath": "src",
       "files": [
         "*"
       ]

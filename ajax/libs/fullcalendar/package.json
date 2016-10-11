@@ -29,7 +29,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/fullcalendar/fullcalendar.git",
-    "basePath": "dist/",
+    "basePath": "dist",
     "files": [
       "**/*"
     ]

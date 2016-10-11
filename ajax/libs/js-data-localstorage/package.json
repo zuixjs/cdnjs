@@ -25,7 +25,7 @@
   "npmName": "js-data-localstorage",
   "npmFileMap": [
     {
-      "basePath": "/dist",
+      "basePath": "dist",
       "files": [
         "**/*.+(js|map)"
       ]

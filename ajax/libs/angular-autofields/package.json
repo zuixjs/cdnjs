@@ -19,7 +19,7 @@
   "npmName": "angular-autoFields-bootstrap",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "**/*.js"
       ]

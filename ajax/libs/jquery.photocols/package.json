@@ -13,7 +13,7 @@
   "npmName": "jquery.photocols",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "jquery.photocols.min.js"
       ]

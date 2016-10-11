@@ -24,7 +24,7 @@
   "npmName": "react-redux",
   "npmFileMap": [
     {
-      "basePath": "dist/",
+      "basePath": "dist",
       "files": [
         "**/*"
       ]

@@ -23,7 +23,7 @@
   "npmName": "cubism",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "cubism.v1.js",
         "cubism.v1.min.js"

@@ -9,7 +9,7 @@
   "npmName": "neo-async",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*"
       ]

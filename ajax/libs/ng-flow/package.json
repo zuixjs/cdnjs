@@ -24,7 +24,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/flowjs/ng-flow.git",
-    "basePath": "/dist/",
+    "basePath": "dist",
     "files": [
       "*.js"
     ]

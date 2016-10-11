@@ -29,7 +29,7 @@
   "npmName": "backbone.babysitter",
   "npmFileMap": [
     {
-      "basePath": "/lib/",
+      "basePath": "lib",
       "files": [
         "*.js",
         "*.map"

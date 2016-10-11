@@ -30,7 +30,7 @@
   "npmName": "redux",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*.js"
       ]

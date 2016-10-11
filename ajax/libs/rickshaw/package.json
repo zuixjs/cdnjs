@@ -26,7 +26,7 @@
   "npmName": "rickshaw",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "rickshaw.css",
         "rickshaw.min.css",

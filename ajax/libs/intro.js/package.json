@@ -15,7 +15,7 @@
   "npmName": "intro.js",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "intro.js",
         "introjs.css",
@@ -23,7 +23,7 @@
       ]
     },
     {
-      "basePath": "/minified/",
+      "basePath": "minified",
       "files": [
         "*"
       ]

@@ -11,7 +11,7 @@
   "npmName": "idb-wrapper",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "idbstore.min.js"
       ]

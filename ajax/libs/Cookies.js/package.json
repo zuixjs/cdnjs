@@ -10,7 +10,7 @@
   "npmName": "cookies-js",
   "npmFileMap": [
     {
-      "basePath": "/src/",
+      "basePath": "src",
       "files": [
         "cookies.js",
         "cookies.min.js"

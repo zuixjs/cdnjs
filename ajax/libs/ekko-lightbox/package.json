@@ -24,7 +24,7 @@
   "npmName": "ekko-lightbox",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*"
       ]

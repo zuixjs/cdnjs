@@ -21,7 +21,7 @@
   "npmName": "gh.js",
   "npmFileMap": [
     {
-      "basePath": "/dist",
+      "basePath": "dist",
       "files": [
         "**/*"
       ]

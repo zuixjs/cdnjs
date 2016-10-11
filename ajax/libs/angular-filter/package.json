@@ -20,7 +20,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/a8m/angular-filter.git",
-    "basePath": "/dist/",
+    "basePath": "dist",
     "files": [
       "*.js"
     ]

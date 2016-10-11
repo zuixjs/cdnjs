@@ -14,7 +14,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/johnny/jquery-sortable.git",
-    "basePath": "source/js/",
+    "basePath": "source/js",
     "files": [
       "jquery-sortable*.js"
     ]

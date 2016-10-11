@@ -17,7 +17,7 @@
   "npmName": "caiuss",
   "npmFileMap": [
     {
-      "basePath": "/dist",
+      "basePath": "dist",
       "files": [
         "*"
       ]

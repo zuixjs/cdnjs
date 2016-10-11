@@ -19,7 +19,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/ErikSchierboom/knockout-pre-rendered.git",
-    "basePath": "/dist/",
+    "basePath": "dist",
     "files": [
       "knockout-pre-rendered.min.js",
       "knockout-pre-rendered.js"

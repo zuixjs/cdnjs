@@ -15,7 +15,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/sroze/ngInfiniteScroll.git",
-    "basePath": "build/",
+    "basePath": "build",
     "files": [
       "ng-infinite-scroll*.js"
     ]

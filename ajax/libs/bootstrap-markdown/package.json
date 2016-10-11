@@ -12,7 +12,7 @@
   "npmName": "bootstrap-markdown",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "css/bootstrap-markdown.min.css",
         "js/bootstrap-markdown.js"

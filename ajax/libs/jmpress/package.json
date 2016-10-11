@@ -3,7 +3,7 @@
   "npmName": "jmpress",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "*.js",
         "*.css",

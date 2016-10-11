@@ -7,7 +7,7 @@
   "npmName": "select2-bootstrap-css",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "*.css"
       ]

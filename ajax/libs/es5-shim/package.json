@@ -3,7 +3,7 @@
   "npmName": "es5-shim",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "es5*"
       ]

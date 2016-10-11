@@ -16,7 +16,7 @@
   "npmName": "angular-ui-router",
   "npmFileMap": [
     {
-      "basePath": "/release/",
+      "basePath": "release",
       "files": [
         "angular-ui-router.min.js",
         "angular-ui-router.js"

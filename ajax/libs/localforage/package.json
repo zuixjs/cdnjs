@@ -3,7 +3,7 @@
   "npmName": "localforage",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*.js"
       ]

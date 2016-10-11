@@ -9,7 +9,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/julianshapiro/velocity.git",
-    "basePath": "/",
+    "basePath": "",
     "files": [
       "velocity.js",
       "velocity.min.js",

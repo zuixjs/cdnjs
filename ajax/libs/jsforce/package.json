@@ -19,7 +19,7 @@
   "npmName": "jsforce",
   "npmFileMap": [
     {
-      "basePath": "/build/",
+      "basePath": "build",
       "files": [
         "*"
       ]

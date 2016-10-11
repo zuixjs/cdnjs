@@ -15,7 +15,7 @@
   "npmName": "backbone-pageable",
   "npmFileMap": [
     {
-      "basePath": "/lib/",
+      "basePath": "lib",
       "files": [
         "backbone-pageable.js",
         "backbone-pageable.min.js"

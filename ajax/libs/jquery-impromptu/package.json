@@ -22,7 +22,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/trentrichardson/jQuery-Impromptu.git",
-    "basePath": "/dist/",
+    "basePath": "dist",
     "files": [
       "**/*.js",
       "**/*.css"

@@ -10,7 +10,7 @@
   "npmName": "leapjs",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "leap.min.js"
       ]

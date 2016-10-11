@@ -6,7 +6,7 @@
   "npmName": "pusher-angular",
   "npmFileMap": [
     {
-      "basePath": "/lib/",
+      "basePath": "lib",
       "files": [
         "*.js"
       ]

@@ -11,7 +11,7 @@
   "npmName": "Base64",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "*.js"
       ]

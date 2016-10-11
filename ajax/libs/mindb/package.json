@@ -19,7 +19,7 @@
   "npmName": "min",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*.js",
         "*.map"

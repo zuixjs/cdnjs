@@ -13,7 +13,7 @@
   "npmName": "shred",
   "npmFileMap": [
     {
-      "basePath": "/lib/",
+      "basePath": "lib",
       "files": [
         "shred.js"
       ]

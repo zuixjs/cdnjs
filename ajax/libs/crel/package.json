@@ -10,7 +10,7 @@
   "npmName": "crel",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "crel.js",
         "crel.min.js"

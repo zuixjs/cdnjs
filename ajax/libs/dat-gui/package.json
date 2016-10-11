@@ -15,7 +15,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/dataarts/dat.gui.git",
-    "basePath": "build/",
+    "basePath": "build",
     "files": [
       "dat.gui*.js"
     ]

@@ -17,7 +17,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/jaysalvat/vegas.git",
-    "basePath": "dist/",
+    "basePath": "dist",
     "files": [
       "**/*"
     ]

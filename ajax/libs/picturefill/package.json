@@ -14,7 +14,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/scottjehl/picturefill.git",
-    "basePath": "dist/",
+    "basePath": "dist",
     "files": [
       "*"
     ]

@@ -20,7 +20,7 @@
   "npmName": "underscore-contrib",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*"
       ]

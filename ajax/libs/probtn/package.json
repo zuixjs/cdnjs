@@ -15,7 +15,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/probtn/probtn-web.git",
-    "basePath": "/cdn/",
+    "basePath": "cdn",
     "files": [
       "**/*"
     ]

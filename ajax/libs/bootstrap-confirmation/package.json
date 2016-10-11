@@ -11,7 +11,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/tavicu/bs-confirmation.git",
-    "basePath": "/",
+    "basePath": "",
     "files": [
       "bootstrap-confirmation.js"
     ]

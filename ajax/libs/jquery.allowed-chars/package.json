@@ -23,7 +23,7 @@
   "npmName": "jquery.allowed-chars",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*.js"
       ]

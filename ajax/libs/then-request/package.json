@@ -15,7 +15,7 @@
   "npmName": "then-request",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*"
       ]

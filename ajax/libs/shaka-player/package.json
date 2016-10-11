@@ -12,7 +12,7 @@
   "npmName": "shaka-player",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "shaka-player*"
       ]

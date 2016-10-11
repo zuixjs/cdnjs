@@ -19,7 +19,7 @@
   "npmName": "queue-async",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "queue.min.js",
         "queue.js"

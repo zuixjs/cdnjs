@@ -10,7 +10,7 @@
   "npmName": "slick-carousel",
   "npmFileMap": [
     {
-      "basePath": "/slick/",
+      "basePath": "slick",
       "files": [
         "fonts/slick.*",
         "*.js",

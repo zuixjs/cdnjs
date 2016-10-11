@@ -3,7 +3,7 @@
   "npmName": "jquery-migrate",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "**/*"
       ]

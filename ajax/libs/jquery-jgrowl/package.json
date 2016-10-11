@@ -27,7 +27,7 @@
   "npmName": "jgrowl",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "jquery.jgrowl*css",
         "jquery.jgrowl*js",

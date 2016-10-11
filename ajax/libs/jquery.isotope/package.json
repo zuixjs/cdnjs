@@ -14,7 +14,7 @@
   "npmName": "isotope-layout",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*"
       ]

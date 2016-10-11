@@ -3,7 +3,7 @@
   "npmName": "bla",
   "npmFileMap": [
     {
-      "basePath": "/build/",
+      "basePath": "build",
       "files": [
         "*.js"
       ]

@@ -12,7 +12,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/BlackrockDigital/startbootstrap-sb-admin-2.git",
-    "basePath": "dist/",
+    "basePath": "dist",
     "files": [
       "js/sb-admin-2.js",
       "js/sb-admin-2.min.js",

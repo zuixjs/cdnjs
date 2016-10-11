@@ -19,7 +19,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/mikeric/rivets.git",
-    "basePath": "dist/",
+    "basePath": "dist",
     "files": [
       "*.js"
     ]

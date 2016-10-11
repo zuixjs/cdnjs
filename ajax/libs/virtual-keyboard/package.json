@@ -30,7 +30,7 @@
   "npmName": "virtual-keyboard",
   "npmFileMap": [
     {
-      "basePath": "dist/",
+      "basePath": "dist",
       "files": [
         "**/*"
       ]

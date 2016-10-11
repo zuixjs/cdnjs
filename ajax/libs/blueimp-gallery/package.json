@@ -34,7 +34,7 @@
   "npmName": "blueimp-gallery",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "css/blueimp-gallery-indicator.css",
         "css/blueimp-gallery-video.css",

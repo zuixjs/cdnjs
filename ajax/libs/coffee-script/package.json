@@ -15,7 +15,7 @@
   "npmName": "coffee-script",
   "npmFileMap": [
     {
-      "basePath": "/lib/coffee-script/",
+      "basePath": "lib/coffee-script",
       "files": [
         "coffee-script.js"
       ]

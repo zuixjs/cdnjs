@@ -17,7 +17,7 @@
   "npmName": "kartograph-js",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "kartograph.js",
         "kartograph.min.js"

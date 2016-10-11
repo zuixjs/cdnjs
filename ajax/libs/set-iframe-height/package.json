@@ -3,7 +3,7 @@
   "npmName": "set-iframe-height",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "*.js"
       ]

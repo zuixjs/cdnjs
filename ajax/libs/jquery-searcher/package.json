@@ -20,7 +20,7 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/lloiser/jquery-searcher.git",
-    "basePath": "dist/",
+    "basePath": "dist",
     "files": [
       "*.js"
     ]

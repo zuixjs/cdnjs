@@ -17,7 +17,7 @@
   "npmName": "autocomplete.js",
   "npmFileMap": [
     {
-      "basePath": "/dist",
+      "basePath": "dist",
       "files": [
         "**/*"
       ]

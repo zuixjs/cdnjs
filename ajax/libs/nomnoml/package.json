@@ -19,7 +19,7 @@
   "npmName": "nomnoml",
   "npmFileMap": [
     {
-      "basePath": "dist/",
+      "basePath": "dist",
       "files": [
         "**/*"
       ]

@@ -22,7 +22,7 @@
   "npmName": "grd",
   "npmFileMap": [
     {
-      "basePath": "/dist",
+      "basePath": "dist",
       "files": [
         "**/*"
       ]

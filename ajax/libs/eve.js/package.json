@@ -7,7 +7,7 @@
   "npmName": "eve.js",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "eve.min.js"
       ]

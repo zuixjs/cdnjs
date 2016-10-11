@@ -4,7 +4,7 @@
   "npmName": "jssip",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "dist",
       "files": [
         "jssip.min.js",
         "jssip.js"

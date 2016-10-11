@@ -19,7 +19,7 @@
   "npmName": "html5media",
   "npmFileMap": [
     {
-      "basePath": "/dist/api/",
+      "basePath": "dist/api",
       "files": [
         "*.js",
         "*.swf"

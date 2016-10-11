@@ -20,7 +20,7 @@
   "npmName": "ractive",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "ractive*.js",
         "ractive*.map"

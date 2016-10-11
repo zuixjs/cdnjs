@@ -17,7 +17,7 @@
   "npmName": "primish",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "primish-min.js"
       ]

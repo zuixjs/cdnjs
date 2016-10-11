@@ -67,6 +67,22 @@ async.each(packages, function(item, callback) {
     pkg.licenses = pkg.license;
     delete pkg.license;
   }
+  if (pkg.npmFileMap) {
+    for (var i in pkg.npmFileMap) {
+      var npmbasePath = pkg.npmFileMap[i].basePath;
+      if (npmbasePath && npmbasePath.length != 0 && ((typeof npmbasePath) == "string")) {
+          npmbasePath = (npmbasePath).replace(/^\/+|\/+$/g , "");
+          pkg.npmFileMap[i].basePath = npmbasePath;
+      }
+    }
+  }
+  if (pkg.autoupdate) {
+    var basePath = pkg.autoupdate.basePath;
+    if (basePath && basePath.length != 0 && ((typeof basePath) == "string")) {
+        basePath = (basePath).replace(/^\/+|\/+$/g , "");
+        pkg.autoupdate.basePath = basePath;
+    }
+  }
   fs.writeFileSync(item, JSON.stringify(pkg, null, 2) + '\n', 'utf8');
   callback();
 });

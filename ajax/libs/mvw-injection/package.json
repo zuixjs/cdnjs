@@ -21,7 +21,7 @@
   "npmName": "mvw-injection",
   "npmFileMap": [
     {
-      "basePath": "dist/",
+      "basePath": "dist",
       "files": [
         "dependency-injection.js",
         "dependency-injection.min.js",

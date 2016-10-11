@@ -6,7 +6,7 @@
   "npmName": "legojs",
   "npmFileMap": [
     {
-      "basePath": "/",
+      "basePath": "",
       "files": [
         "lego.min.js"
       ]
