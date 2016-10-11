@@ -1,6 +1,6 @@
 {
   "name": "jquery-contextify",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A lightweight jQuery plugin for creating Bootstrap powered context menus.",
   "filename": "jquery.contextify.min.js",
   "repository": {
