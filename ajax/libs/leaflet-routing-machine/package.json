@@ -1,6 +1,6 @@
 {
   "name": "leaflet-routing-machine",
-  "version": "3.2.0",
+  "version": "3.2.2",
   "description": "Routing for Leaflet",
   "filename": "leaflet-routing-machine.min.js",
   "repository": {
