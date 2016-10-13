@@ -1,7 +1,7 @@
 {
   "name": "md-data-table",
   "filename": "md-data-table.min.js",
-  "version": "1.8.0",
+  "version": "1.8.3",
   "description": "Angular material table. Complete implementation of google material design based on angular material components.",
   "author": "Istvan Fodor <programtervezo@gmail.com>",
   "repository": {
