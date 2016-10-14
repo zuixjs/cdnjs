@@ -1,6 +1,6 @@
 {
   "name": "dexie",
-  "version": "1.4.2",
+  "version": "1.5.0",
   "description": "A Minimalistic Wrapper for IndexedDB",
   "filename": "dexie.min.js",
   "repository": {
