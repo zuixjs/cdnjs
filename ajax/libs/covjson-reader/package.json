@@ -1,7 +1,7 @@
 {
   "name": "covjson-reader",
   "filename": "covjson-reader.min.js",
-  "version": "0.16.1",
+  "version": "0.16.2",
   "license": "BSD-3-Clause",
   "description": "A reader for CoverageJSON files.",
   "repository": {
