@@ -54,6 +54,7 @@ ajax/libs/postgrest-client/1.0.*
 ajax/libs/jquery-ui-timepicker-addon/0.0.0-ignored/
 ajax/libs/jsrender/*/jsrender-node.js
 ajax/libs/typescript/*/typescriptServices.js
+ajax/libs/typescript/2.0.6-insiders.20161017
 ajax/libs/froala-editor/froala_editor_1.0.3/
 ajax/libs/froala-editor/.1.0.5/
 ajax/libs/min/1.5
