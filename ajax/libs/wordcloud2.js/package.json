@@ -18,6 +18,7 @@
     "presentation",
     "tag"
   ],
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/timdream/wordcloud2.js"
