@@ -16,12 +16,13 @@
   },
   "author": "Facebook",
   "license": "BSD-3-Clause",
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/facebook/flux.git",
-    "basePath": "dist",
-    "files": [
-      "**/*"
-    ]
-  }
+  "npmName": "flux",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
+    }
+  ]
 }
