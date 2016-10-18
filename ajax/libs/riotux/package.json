@@ -12,7 +12,7 @@
       ]
     },
     {
-      "basePath": "",
+      "basePath": "src",
       "files": [
         "riotux.js"
       ]
