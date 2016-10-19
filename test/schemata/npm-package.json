@@ -25,6 +25,7 @@
             },
         "keywords": {
             "type": "array",
+            "uniqueItems" : true,
             "items": "string"
             },
         "homepage": {
@@ -33,24 +34,45 @@
             },
         "dependencies": {
             "type": "object",
-            "additionalProperties": "string"
+            "uniqueItems" : true,
+            "items": {
+                "type": "string"
+                }
             },
         "repository": {
             "type": "object",
-            "additionalProperties": "string"
+            "uniqueItems" : true,
+            "items": {
+                "type": "string"
+                }
             },
         "npmName": {
             "type": "string"
             },
         "npmFileMap": {
             "type": "array",
+            "uniqueItems" : true,
             "items": "object"
+            },
+        "author": {
+            "type": ["string", "object"],
+            "uniqueItems" : true,
+            "items": {
+                "type": ["string", "object"]
+                }
             },
         "autoupdate": {
             "type": "object"
             },
-        "private": {
-            "type": "boolean"
+        "license": {
+            "type": ["string", "object"]
+            },
+        "licenses": {
+            "type": "array",
+            "uniqueItems" : true,
+            "items": {
+                "type": ["string", "object"]
+                }
             }
         }
     }
