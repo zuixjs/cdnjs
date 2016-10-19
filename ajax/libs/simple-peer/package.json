@@ -28,8 +28,7 @@
     "stream",
     "peer-to-peer",
     "data channel stream",
-    "webrtc stream",
-    "peer"
+    "webrtc stream"
   ],
   "license": "MIT",
   "filename": "simplepeer.min.js",

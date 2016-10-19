@@ -11,8 +11,7 @@
   "keywords": [
     "jQuery",
     "Viewport",
-    "checker",
-    "Viewport"
+    "checker"
   ],
   "autoupdate": {
     "source": "git",

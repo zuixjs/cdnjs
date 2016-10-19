@@ -9,8 +9,7 @@
     "datepicker",
     "input",
     "angularjs",
-    "angular",
-    "input"
+    "angular"
   ],
   "repository": {
     "type": "git",
