@@ -25,6 +25,7 @@
             },
         "keywords": {
             "type": "array",
+            "required": true,
             "uniqueItems" : true,
             "items": "string"
             },
