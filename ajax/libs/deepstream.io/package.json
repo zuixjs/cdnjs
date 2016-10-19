@@ -18,23 +18,17 @@
     "rpc",
     "streaming"
   ],
-  "browser": {
-    "net": false
-  },
   "author": "deepstreamHub GmbH",
   "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/deepstreamIO/deepstream.io-client-js/issues"
-  },
   "npmName": "deepstream.io-client-js",
   "npmFileMap": [
     {
       "basePath": "dist",
       "files": [
-        "deepstream.js",
-        "deepstream.min.js"
+        "**/*"
       ]
     }
   ],
+  "filename": "deepstream.min.js",
   "homepage": "http://deepstream.io"
 }
