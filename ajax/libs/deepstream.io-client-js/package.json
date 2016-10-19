@@ -2,9 +2,6 @@
   "name": "deepstream.io-client-js",
   "description": "the javascript client for deepstream.io",
   "filename": "deepstream.min.js",
-  "directories": {
-    "test": "test"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/deepstreamIO/deepstream.io-client-js.git"
