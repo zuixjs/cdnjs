@@ -1,7 +1,7 @@
 {
   "name": "basscss",
   "filename": "css/basscss.min.css",
-  "version": "8.0.2",
+  "version": "8.0.3",
   "description": "Low-level CSS toolkit",
   "dependencies": {
     "basscss-align": "^1.0.2",
