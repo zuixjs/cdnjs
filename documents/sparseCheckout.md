@@ -6,7 +6,7 @@ Here are the steps:
 
 `$ git init cdnjs && cd cdnjs`
 
-> Initialized empty Git repository in /home/peter/.git/
+> Initialized empty Git repository in /home/peter/cdnjs/.git/
 
 2.Enable sparseCheckout:
 
