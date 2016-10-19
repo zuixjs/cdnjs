@@ -1,0 +1,40 @@
+{
+  "name": "deepstream.io-client-js",
+  "description": "the javascript client for deepstream.io",
+  "main": "src/client.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deepstreamIO/deepstream.io-client-js.git"
+  },
+  "keywords": [
+    "deepstream",
+    "realtime",
+    "server",
+    "datasync",
+    "pubsub",
+    "rpc",
+    "streaming"
+  ],
+  "browser": {
+    "net": false
+  },
+  "author": "deepstreamHub GmbH",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/deepstreamIO/deepstream.io-client-js/issues"
+  },
+  "npmName": "deepstream.io-client-js",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "deepstream.js",
+        "deepstream.min.js"
+      ]
+    }
+  ],
+  "homepage": "http://deepstream.io"
+}
