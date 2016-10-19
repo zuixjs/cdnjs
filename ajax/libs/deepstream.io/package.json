@@ -1,7 +1,7 @@
 {
   "name": "deepstream.io-client-js",
   "description": "the javascript client for deepstream.io",
-  "main": "src/client.js",
+  "filename": "deepstream.min.js",
   "directories": {
     "test": "test"
   },
@@ -29,6 +29,5 @@
       ]
     }
   ],
-  "filename": "deepstream.min.js",
   "homepage": "http://deepstream.io"
 }
