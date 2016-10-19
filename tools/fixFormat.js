@@ -9,6 +9,7 @@ var fs = require("fs"),
   async = require("async"),
   glob = require("glob"),
   GitUrlParse = require("git-url-parse"),
+  _ = require('lodash'),
   packages = glob.sync("./ajax/libs/*/package.json");
 
 async.each(packages, function(item, callback) {
@@ -81,6 +82,12 @@ async.each(packages, function(item, callback) {
     if (basePath && basePath.length != 0 && ((typeof basePath) == "string")) {
         basePath = (basePath).replace(/^\/+|\/+$/g , "");
         pkg.autoupdate.basePath = basePath;
+    }
+  }
+  if (pkg.keywords !== undefined) {
+    var mod = _.uniq(pkg.keywords);
+    if (pkg.keywords.length != mod.length) {
+      pkg.keywords = mod;
     }
   }
   fs.writeFileSync(item, JSON.stringify(pkg, null, 2) + '\n', 'utf8');
