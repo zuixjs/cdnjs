@@ -22,5 +22,10 @@
     }
   ],
   "filename": "js-data-angular.min.js",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "js",
+    "data",
+    "angular"
+  ]
 }

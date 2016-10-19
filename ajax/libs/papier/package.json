@@ -24,5 +24,8 @@
         "papier.+(css|min.css|map)"
       ]
     }
+  ],
+  "keywords": [
+    "papier"
   ]
 }

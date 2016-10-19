@@ -18,5 +18,8 @@
     "url": "https://github.com/Polymer/TemplateBinding"
   },
   "license": "BSD",
-  "author": "The Polymer Authors"
+  "author": "The Polymer Authors",
+  "keywords": [
+    "templatebinding"
+  ]
 }

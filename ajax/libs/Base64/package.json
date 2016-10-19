@@ -17,5 +17,8 @@
       ]
     }
   ],
-  "license": "WTFPL"
+  "license": "WTFPL",
+  "keywords": [
+    "Base64"
+  ]
 }

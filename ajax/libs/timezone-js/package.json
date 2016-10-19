@@ -15,5 +15,9 @@
     "files": [
       "date.js"
     ]
-  }
+  },
+  "keywords": [
+    "timezone",
+    "js"
+  ]
 }

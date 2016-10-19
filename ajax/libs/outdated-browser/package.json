@@ -19,5 +19,9 @@
       "outdatedbrowser.min.js"
     ]
   },
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "outdated",
+    "browser"
+  ]
 }

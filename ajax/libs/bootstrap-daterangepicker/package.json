@@ -27,5 +27,9 @@
       "daterangepicker*.css",
       "moment*.js"
     ]
-  }
+  },
+  "keywords": [
+    "bootstrap",
+    "daterangepicker"
+  ]
 }

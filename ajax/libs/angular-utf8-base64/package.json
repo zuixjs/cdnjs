@@ -16,5 +16,10 @@
     "files": [
       "angular-utf8-base64*"
     ]
-  }
+  },
+  "keywords": [
+    "angular",
+    "utf8",
+    "base64"
+  ]
 }

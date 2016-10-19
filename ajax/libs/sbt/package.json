@@ -20,5 +20,8 @@
       "sbt-extra-controls-dojo-amd.js.uncompressed.js"
     ]
   },
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "keywords": [
+    "sbt"
+  ]
 }

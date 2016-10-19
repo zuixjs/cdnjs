@@ -30,5 +30,9 @@
         "engine.io*"
       ]
     }
+  ],
+  "keywords": [
+    "engine.io",
+    "client"
   ]
 }

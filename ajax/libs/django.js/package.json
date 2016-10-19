@@ -18,5 +18,8 @@
   "license": {
     "type": "LGPL 3",
     "url": "http://www.gnu.org/licenses/lgpl-3.0.txt"
-  }
+  },
+  "keywords": [
+    "django.js"
+  ]
 }

@@ -6,5 +6,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/JoelSutherland/GitHub-jQuery-Repo-Widget.git"
-  }
+  },
+  "keywords": [
+    "github",
+    "repo",
+    "widget"
+  ]
 }

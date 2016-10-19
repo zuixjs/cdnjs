@@ -15,5 +15,8 @@
     "files": [
       "r2d3*.js"
     ]
-  }
+  },
+  "keywords": [
+    "r2d3"
+  ]
 }

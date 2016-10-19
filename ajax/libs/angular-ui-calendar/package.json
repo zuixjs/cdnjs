@@ -10,5 +10,10 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/angular-ui/ui-calendar.git"
-  }
+  },
+  "keywords": [
+    "angular",
+    "ui",
+    "calendar"
+  ]
 }

@@ -17,5 +17,9 @@
         "shaka-player*"
       ]
     }
+  ],
+  "keywords": [
+    "shaka",
+    "player"
   ]
 }

@@ -19,5 +19,10 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/GuillaumeLeclerc/vue-google-maps.git"
-  }
+  },
+  "keywords": [
+    "vue",
+    "google",
+    "maps"
+  ]
 }

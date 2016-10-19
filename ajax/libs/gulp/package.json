@@ -18,5 +18,8 @@
     "asset",
     "pipeline"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "gulp"
+  ]
 }

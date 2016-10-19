@@ -17,5 +17,8 @@
       "snabbt.min.js",
       "snabbt.js"
     ]
-  }
+  },
+  "keywords": [
+    "snabbt.js"
+  ]
 }

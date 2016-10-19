@@ -25,5 +25,8 @@
       "**/*"
     ]
   },
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "jstat"
+  ]
 }

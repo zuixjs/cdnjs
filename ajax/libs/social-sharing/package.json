@@ -19,5 +19,9 @@
     "files": [
       "**/*"
     ]
-  }
+  },
+  "keywords": [
+    "social",
+    "sharing"
+  ]
 }

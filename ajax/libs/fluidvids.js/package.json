@@ -16,5 +16,8 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/toddmotto/fluidvids.git"
-  }
+  },
+  "keywords": [
+    "fluidvids.js"
+  ]
 }

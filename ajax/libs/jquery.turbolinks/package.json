@@ -4,5 +4,8 @@
   "filename": "jquery.turbolinks.min.js",
   "author": "Sasha Koss <kossnocorp@gmail.com>",
   "description": "jQuery plugin for drop-in fix binded events problem caused by Turbolinks",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "jquery.turbolinks"
+  ]
 }

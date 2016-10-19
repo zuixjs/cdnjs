@@ -17,5 +17,8 @@
         "terraformer*.+(css|js|map)"
       ]
     }
+  ],
+  "keywords": [
+    "terraformer"
   ]
 }

@@ -19,5 +19,10 @@
       "sortable.js",
       "sortable.min.js"
     ]
-  }
+  },
+  "keywords": [
+    "angular",
+    "ui",
+    "sortable"
+  ]
 }

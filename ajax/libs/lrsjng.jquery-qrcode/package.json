@@ -17,5 +17,9 @@
     "files": [
       "**/*"
     ]
-  }
+  },
+  "keywords": [
+    "lrsjng.jquery",
+    "qrcode"
+  ]
 }

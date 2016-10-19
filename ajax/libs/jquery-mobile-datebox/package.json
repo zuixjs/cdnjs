@@ -12,5 +12,10 @@
   "author": {
     "name": "JTSage and other contributors",
     "url": "https://github.com/jtsage/jquery-mobile-datebox/blob/master/AUTHORS.txt"
-  }
+  },
+  "keywords": [
+    "jquery",
+    "mobile",
+    "datebox"
+  ]
 }

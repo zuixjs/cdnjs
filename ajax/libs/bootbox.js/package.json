@@ -17,5 +17,8 @@
       "bootbox.js"
     ]
   },
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "bootbox.js"
+  ]
 }

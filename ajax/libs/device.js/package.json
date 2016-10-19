@@ -19,5 +19,8 @@
       "*"
     ]
   },
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "device.js"
+  ]
 }

@@ -9,5 +9,8 @@
     "type": "git",
     "url": "git://github.com/flosse/scaleApp.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "scaleapp"
+  ]
 }

@@ -7,5 +7,8 @@
     "url": "git://github.com/skidding/dragdealer.git"
   },
   "dependencies": {},
-  "filename": "dragdealer.min.js"
+  "filename": "dragdealer.min.js",
+  "keywords": [
+    "dragdealer"
+  ]
 }

@@ -7,5 +7,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/darcyclarke/Repo.js.git"
-  }
+  },
+  "keywords": [
+    "repo.js"
+  ]
 }

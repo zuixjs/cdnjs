@@ -17,5 +17,9 @@
     "type": "git",
     "url": "git://github.com/rniemeyer/knockout-postbox.git"
   },
-  "description": "A small library that uses Knockout's native pub/sub capabilities to facilitate decoupled communication between separate view models or components."
+  "description": "A small library that uses Knockout's native pub/sub capabilities to facilitate decoupled communication between separate view models or components.",
+  "keywords": [
+    "knockout",
+    "postbox"
+  ]
 }

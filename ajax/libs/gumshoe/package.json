@@ -19,5 +19,8 @@
     "files": [
       "**/*"
     ]
-  }
+  },
+  "keywords": [
+    "gumshoe"
+  ]
 }

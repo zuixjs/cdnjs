@@ -20,5 +20,9 @@
         "ng-tasty*"
       ]
     }
+  ],
+  "keywords": [
+    "ng",
+    "tasty"
   ]
 }

@@ -16,5 +16,10 @@
       "*"
     ]
   },
-  "description": "AngularJS ui-select"
+  "description": "AngularJS ui-select",
+  "keywords": [
+    "angular",
+    "ui",
+    "select"
+  ]
 }

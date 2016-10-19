@@ -22,5 +22,8 @@
   "dependencies": {
     "jquery": ">=1.7"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "jquery.photocols"
+  ]
 }

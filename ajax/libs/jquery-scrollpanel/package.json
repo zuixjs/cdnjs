@@ -17,5 +17,9 @@
     "files": [
       "*"
     ]
-  }
+  },
+  "keywords": [
+    "jquery",
+    "scrollpanel"
+  ]
 }

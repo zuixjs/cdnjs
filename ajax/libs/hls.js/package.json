@@ -20,5 +20,8 @@
     "type": "git",
     "url": "git://github.com/dailymotion/hls.js"
   },
-  "author": "Guillaume du Pontavice <guillaume.dupontavice@dailymotion.com>"
+  "author": "Guillaume du Pontavice <guillaume.dupontavice@dailymotion.com>",
+  "keywords": [
+    "hls.js"
+  ]
 }

@@ -18,5 +18,8 @@
     "files": [
       "eventable*"
     ]
-  }
+  },
+  "keywords": [
+    "eventable"
+  ]
 }

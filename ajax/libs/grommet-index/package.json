@@ -28,5 +28,9 @@
         "grommet-index*"
       ]
     }
+  ],
+  "keywords": [
+    "grommet",
+    "index"
   ]
 }

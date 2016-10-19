@@ -8,5 +8,8 @@
     "type": "git",
     "url": "git://github.com/chaplinjs/chaplin.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "chaplin"
+  ]
 }

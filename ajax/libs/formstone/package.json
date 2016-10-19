@@ -24,5 +24,8 @@
     "files": [
       "**/*"
     ]
-  }
+  },
+  "keywords": [
+    "formstone"
+  ]
 }
