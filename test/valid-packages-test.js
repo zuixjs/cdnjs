@@ -307,6 +307,19 @@ packages.map(function(pkg) {
         }
       }
   };
+  packageVows[pname + ": There must be array datatype files in auto-update config"] = function(pkg) {
+    var json = parse(pkg, true);
+    if (json.npmFileMap) {
+      for (var i in json.npmFileMap) {
+        assert.ok(Array.isArray(json.npmFileMap[i].files),
+                  pkgName(pkg) + ": files in auto-update config file map need to be an array");
+      }
+    } else if (json.autoupdate) {
+        assert.ok(Array.isArray(json.autoupdate.files),
+                  pkgName(pkg) + ": files in auto-update config file map need to be an array");
+      }
+  };
+
   context[pname] = packageVows;
   suite.addBatch(context);
   return null;
