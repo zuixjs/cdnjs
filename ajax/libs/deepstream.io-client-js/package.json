@@ -26,5 +26,6 @@
       ]
     }
   ],
-  "homepage": "http://deepstream.io"
+  "homepage": "http://deepstream.io",
+  "version": "1.1.1"
 }
