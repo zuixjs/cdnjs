@@ -1,0 +1,33 @@
+{
+  "name": "simditor",
+  "version": "2.3.6",
+  "filename": "lib/simditor.min.js",
+  "description": "A simple online editor",
+  "keywords": [
+    "editor",
+    "simditor",
+    "WYSIWYG"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mycolorway/simditor"
+  },
+  "author": "farthinker <farthinker@gmail.com>",
+  "license": "MIT",
+  "homepage": "http://simditor.tower.im",
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "simple-hotkeys": "~1.0.3",
+    "simple-uploader": "~2.0.7",
+    "simple-module": "~2.0.6"
+  },
+  "npmName": "simditor",
+  "npmFileMap": [
+    {
+      "basePath": "",
+      "files": [
+        "+(lib|styles)/simditor*.+(css|js|map)"
+      ]
+    }
+  ]
+}
