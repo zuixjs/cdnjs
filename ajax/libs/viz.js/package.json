@@ -3,7 +3,6 @@
   "filename": "viz.js",
   "version": "1.3.0",
   "description": "A hack to put Graphviz on the web.",
-  "homepage": "https://github.com/mdaines/viz.js/",
   "author": {
     "name": "Mike Daines",
     "url": "https://github.com/mdaines"
@@ -12,7 +11,7 @@
     "type": "git",
     "url": "git://github.com/mdaines/viz.js"
   },
-  "license": "MIT",
+  "license": "Unlicense",
   "keywords": [
     "GraphViz",
     "viz"
