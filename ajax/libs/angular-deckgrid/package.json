@@ -9,14 +9,12 @@
     "grid"
   ],
   "filename": "angular-deckgrid.min.js",
-  "version": "0.5.0",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/akoenig/angular-deckgrid.git",
     "basepath": "",
     "files": [
-      "angular-deckgrid.js",
-      "angular-deckgrid.min.js"
+      "angular-deckgrid*"
     ]
   },
   "license": "MIT",
