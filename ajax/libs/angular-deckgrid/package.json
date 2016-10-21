@@ -1,0 +1,25 @@
+{
+  "name": "angular-deckgrid",
+  "description": "A lightweight masonry-like grid for AngularJS.",
+  "author": "André König (andre.koenig@posteo.de)",
+  "keywords": [
+    "deckgrind",
+    "angular",
+    "masonry",
+    "grid"
+  ],
+  "filename": "angular-deckgrid.min.js",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/akoenig/angular-deckgrid.git",
+    "basePath": "",
+    "files": [
+      "angular-deckgrid*"
+    ]
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akoenig/angular-deckgrid"
+  }
+}
