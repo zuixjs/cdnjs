@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git://github.com/mdaines/viz.js"
   },
-  "license": "MIT",
+  "license": "Unlicense",
   "keywords": [
     "GraphViz",
     "viz"
