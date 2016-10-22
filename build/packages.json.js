@@ -148,7 +148,7 @@ glob("ajax/libs/*/package.json", function(error, matches) {
         for (var i = 0; i < temp.files.length; i++) {
           var filespec = temp.files[i];
           var fileType = temp.files[i].split('.').pop();
-          temp.files[i] = filespec.replace(version + "/", "");
+          temp.files[i] = filespec.replace("/" + version + "/", "/");
           switch (fileType) {
             case 'js':
             case 'css':
