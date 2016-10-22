@@ -1,0 +1,36 @@
+{
+  "name": "vuikit",
+  "version": "0.6.0",
+  "description": "UIkit with all the power of Vue",
+  "author": {
+    "name": "ZOOlanders",
+    "url": "http://www.zoolanders.com"
+  },
+  "keywords": [
+    "library",
+    "vue",
+    "vuejs",
+    "uikit",
+    "vuikit"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuikit/vuikit.git"
+  },
+  "homepage": "https://vuikit.github.io/vuikit",
+  "dependencies": {
+    "moment": "^2.14.1",
+    "vue": "^2.0.0"
+  },
+  "npmName": "vuikit",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
+    }
+  ],
+  "filename": "vuikit.js"
+}
