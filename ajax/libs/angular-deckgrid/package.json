@@ -3,7 +3,7 @@
   "description": "A lightweight masonry-like grid for AngularJS.",
   "author": "André König (andre.koenig@posteo.de)",
   "keywords": [
-    "deckgrind",
+    "deckgrid",
     "angular",
     "masonry",
     "grid"
