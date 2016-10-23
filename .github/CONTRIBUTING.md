@@ -1,5 +1,8 @@
 ﻿# a temporary version of the contributing doc
 
+ - Please read the instructions about sparseCheckout and shallow clone before any git clone operation to this huge repository: [documents/sparseCheckout.md](https://github.com/cdnjs/cdnjs/blob/master/documents/sparseCheckout.md)
+ - Please make sure you are not going to submit a personal library, we have popularity requirement for the libraries, for the detail, see: [issue](#a-issue)
+
 ## MENU
 
 * Are you opening an issue? Please take a look at [issue](#a-issue) chapter.
@@ -23,6 +26,8 @@
  * f. [P.S.](#f-ps)
 
 ## A. issue
+
+* For the new library request issue, please make sure it's not a *personal* project, we have a basic requirement for the popularity, like 100 stars on GitHub or 500 downloads/month on npm registry.
 
 * Before opening a issue ticket, please check if there is/was already an issue on the same topic.
 
