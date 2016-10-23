@@ -1,4 +1,4 @@
-Currently, cdnjs's repo is too huge and some people have issues with using it when it is this big. To get around the issue or repo size you can use `sparse-checkout`. It lets you check out only the files you want, so that the whole directory in your computer won't need to be 11GB, but only about 1GB (you can make this even smaller with shallow pull too!)
+Currently, cdnjs's repo is too huge and some people have issues with using it when it is this big. To get around the issue or repo size you can use `sparse-checkout`. It lets you check out only the files you want, so that the whole directory in your computer won't need to be 65 GB, but only about 2.2 GB (you can make this even smaller with shallow pull too!)
 
 Here are the steps:
 
@@ -50,11 +50,11 @@ If you already cloned a cdnjs repo, this time, you can set a local path to speed
 It's all done, you will only have jquery lib now and other files won't be checked out. Let's take a look at the space it used:
 
 `$ du -d 1 -h`
-> 18M     ./ajax
+> 2.5M     ./ajax
 
-> 587M    ./.git
+> 2.0G    ./.git
 
-> 605M    .
+> 2.1G    .
 
 
 The database behind git is only 587MB, and the whole repo is only 605MB, awesome!
@@ -63,21 +63,23 @@ What's the origin one?
 
 `$ du -d 1 -h`
 
-> 682M    ./.git
+> 2.6G    ./.git
 
-> 43M     ./scratch
+> 16K     ./documents
 
-> 16M     ./node_modules
+> 21M     ./node_modules
 
-> 12G     ./ajax
+> 21K     ./hooks
 
-> 24K     ./test
+> 63G     ./ajax
 
-> 32K     ./build
+> 36K     ./test
 
-> 13G     .
+> 16K     ./build
 
-The crazy 13GB/682MB haha ...
+> 65G     .
+
+The crazy 65 GB vs 2.1 GB ...
 
 This tip can also avoid sortable/Sortable issue([#3650](https://github.com/cdnjs/cdnjs/issues/3650)) in case-insensitive filesystem, especially Mac OS.
 
