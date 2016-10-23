@@ -26,6 +26,7 @@
     "type": "git",
     "url": "https://github.com/meltingice/CamanJS"
   },
+  "license": "BSD-3-Clause",
   "author": {
     "name": "Ryan LeFevre",
     "email": "meltingice8917@gmail.com",
