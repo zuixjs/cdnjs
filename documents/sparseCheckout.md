@@ -19,11 +19,13 @@ Here are the steps:
 Here is an example of `.git/info/sparse-checkout`:
 ```
 /build
+/documents
 /test
 /tools
 /scratch
 /MIT-LICENSE
 /hooks
+/MAINTAINERS
 /*.yml
 /*.md
 /*.json
