@@ -18,6 +18,7 @@
         "tinymce.jquery.min.js",
         "jquery.tinymce.min.js",
         "themes/modern/theme.min.js",
+        "themes/inlite/theme.min.js",
         "skins/lightgray/*.css",
         "skins/lightgray/img/*",
         "skins/lightgray/fonts/*",
