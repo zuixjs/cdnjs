@@ -14,12 +14,7 @@
     {
       "basePath": "",
       "files": [
-        "tinymce.min.js",
-        "tinymce.jquery.min.js",
-        "jquery.tinymce.min.js",
-        "themes/modern/theme.min.js",
-        "themes/inlite/theme.min.js",
-        "skins/lightgray/*.css",
+        "**/*.min.+(css|js|map)",
         "skins/lightgray/img/*",
         "skins/lightgray/fonts/*",
         "plugins/*"
