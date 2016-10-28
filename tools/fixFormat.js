@@ -1,19 +1,42 @@
 #!/usr/bin/env node
 
+var fs = require('fs'),
+  async = require('async'),
+  glob = require('glob'),
+  GitUrlParse = require('git-url-parse'),
+  _ = require('lodash'),
+  packages = glob.sync('./ajax/libs/*/package.json');
+  colors = require('colors'),
+  licenses = JSON.parse(fs.readFileSync('tools/license-list.json', 'utf8'));
+  isThere = require('is-there');
+
 /*
- * Fix the format and indent of package.json of each lib.
+ *
+ * 1. Fix the format and indent of package.json of each lib.
+ * 2. Migrate package.json of the libs using the new format of license(s) field using SPDX license identifier
+ *    cc https://github.com/cdnjs/cdnjs/issues/5543, $5543
+ *    The recognized SPDX license identifier will be in an array in tools/license-list.json
+ * 3. Fix the package.json of each lib. If the minified file exists, filename field should point to it.
  *
  */
 
-var fs = require("fs"),
-  async = require("async"),
-  glob = require("glob"),
-  GitUrlParse = require("git-url-parse"),
-  _ = require('lodash'),
-  packages = glob.sync("./ajax/libs/*/package.json");
-
 async.each(packages, function(item, callback) {
   var pkg = JSON.parse(fs.readFileSync(item, 'utf8'));
+
+  deletePackageParts(pkg);
+  deleteHomepage(pkg);
+  fixAuthors(pkg);
+  fixLicense(pkg);
+  setNpmBasePaths(pkg);
+  filterKeywords(pkg);
+  fixAutoupdate(pkg);
+  fixFilenameField(pkg);
+
+  fs.writeFileSync(item, JSON.stringify(pkg, null, 2) + '\n', 'utf8');
+  callback();
+});
+
+function deletePackageParts(pkg) {
   delete pkg.bin;
   delete pkg.jshintConfig;
   delete pkg.eslintConfig;
@@ -43,9 +66,12 @@ async.each(packages, function(item, callback) {
   delete pkg.engine;
   delete pkg.directories;
   delete pkg.repositories;
+}
+
+function deleteHomepage(pkg) {
   if ((pkg.repository != undefined) && (pkg.repository.type == 'git')) {
     if (pkg.homepage != undefined) {
-      repoUrlHttps = GitUrlParse(pkg.repository.url).toString("https");
+      var repoUrlHttps = GitUrlParse(pkg.repository.url).toString('https');
       if (pkg.homepage == repoUrlHttps ||
           pkg.homepage == repoUrlHttps + '#readme' ||
           pkg.homepage == repoUrlHttps + '.git' ) {
@@ -53,6 +79,9 @@ async.each(packages, function(item, callback) {
       }
     }
   }
+}
+
+function fixAuthors(pkg) {
   if ((pkg.authors != undefined) && (!Array.isArray(pkg.authors) || pkg.authors.length == 1)) {
     pkg.author = pkg.authors[0];
     delete pkg.authors;
@@ -60,45 +89,137 @@ async.each(packages, function(item, callback) {
     pkg.authors = pkg.author;
     delete pkg.author;
   }
+}
+
+function fixLicense(pkg) {
   if ((pkg.licenses != undefined) && !Array.isArray(pkg.licenses)) {
     pkg.license = pkg.licenses;
     delete pkg.licenses;
   }
+
   if ((pkg.license != undefined) && Array.isArray(pkg.license)) {
     pkg.licenses = pkg.license;
     delete pkg.license;
   }
+
+  if (pkg.licenses !== undefined && pkg.licenses.length == 1) {
+    pkg.license = pkg.licenses[0];
+    delete pkg.licenses;
+    updateJSON(item, pkg);
+  }
+
+  if (pkg.license !== undefined) {
+    if (pkg.license.type !== undefined) {
+      if (licenses.indexOf(pkg.license.type) !== -1) {
+        pkg.license = pkg.license.type;
+        updateJSON(item, pkg);
+      } else if (adapt(pkg.license.type)) {
+        pkg.license = adapt(pkg.license.type);
+        updateJSON(item, pkg);
+      } else {
+        unRecognizedLicense(pkg.name, pkg.license.type);
+      }
+    }
+  } else if (pkg.licenses !== undefined) {
+    var modified = false;
+    for (license in pkg.licenses) {
+      if (pkg.licenses[license].type !== undefined) {
+        if (licenses.indexOf(pkg.licenses[license].type) !== -1) {
+          pkg.licenses[license] = pkg.licenses[license].type;
+          modified = true;
+        } else {
+          unRecognizedLicense(pkg.name, pkg.licenses[license].type);
+        }
+      }
+    }
+    if (modified) {
+      updateJSON(item, pkg);
+    }
+  } else {
+    console.log((pkg.name + ' does not have license field ...').red);
+  }
+}
+
+function setNpmBasePaths(pkg) {
   if (pkg.npmFileMap) {
     for (var i in pkg.npmFileMap) {
       var npmbasePath = pkg.npmFileMap[i].basePath;
-      if (npmbasePath && npmbasePath.length != 0 && ((typeof npmbasePath) == "string")) {
-          npmbasePath = (npmbasePath).replace(/^\/+|\/+$/g , "");
-          pkg.npmFileMap[i].basePath = npmbasePath;
+      if (npmbasePath && npmbasePath.length != 0 && ((typeof npmbasePath) == 'string')) {
+        npmbasePath = (npmbasePath).replace(/^\/+|\/+$/g , '');
+        pkg.npmFileMap[i].basePath = npmbasePath;
       }
     }
   }
+}
+
+function filterKeywords(pkg) {
   if (pkg.keywords !== undefined) {
     var mod = _.uniq(pkg.keywords);
     if (pkg.keywords.length != mod.length) {
       pkg.keywords = mod;
     }
   }
+}
+
+function fixAutoupdate(pkg) {
   if (pkg.autoupdate) {
     var basePath = pkg.autoupdate.basePath || ""
     if (basePath || pkg.autoupdate.files) {
-        if (basePath && basePath.length !== 0) {
-            basePath = basePath.replace(/^\/+|\/+$/g , "");
-        }
-        pkg.autoupdate.fileMap = [
-            {
-                basePath: basePath || "",
-                files: pkg.autoupdate.files
-            }
-        ];
-        delete pkg.autoupdate.basePath;
-        delete pkg.autoupdate.files;
+      if (basePath && basePath.length !== 0) {
+          basePath = basePath.replace(/^\/+|\/+$/g , "");
+      }
+      pkg.autoupdate.fileMap = [
+          {
+              basePath: basePath || "",
+              files: pkg.autoupdate.files
+          }
+      ];
+      delete pkg.autoupdate.basePath;
+      delete pkg.autoupdate.files;
     }
   }
-  fs.writeFileSync(item, JSON.stringify(pkg, null, 2) + '\n', 'utf8');
-  callback();
-});
+}
+
+function updateJSON(path, pkg) {
+  fs.writeFile(path, JSON.stringify(pkg, null, 2) + '\n', 'utf8');
+  console.log(('Library - ' + pkg.name + ' been updated!').green);
+}
+
+function unRecognizedLicense(lib, license) {
+  console.log(('Library ' + lib + ' has un-recognized license - ' + license).yellow);
+}
+
+function adapt(licenseName) {
+  switch(licenseName) {
+    case 'GPLv2':
+    case 'GNU GPL v2':
+      return 'GPL-2.0';
+      break;
+    case 'GPLv3':
+    case 'GNU General Public License Version 3':
+      return 'GPL-3.0';
+      break;
+    case 'Apache License, Version 2.0':
+    case 'Apache 2.0':
+    case 'Apache License, 2.0':
+    case 'Apache License 2.0':
+      return 'Apache-2.0';
+      break;
+  }
+}
+
+function fixFilenameField(pkg) {
+  var orig = pkg.filename.split('.');
+  var min = '';
+  if (orig[orig.length - 2] !== 'min') {
+    var temp = orig,
+      ext = temp.pop();
+    temp.push('min');
+    temp.push(ext);
+    min = temp.join('.');
+  }
+  if (min !== '' && isThere('./ajax/libs/' + pkg.name + '/' + pkg.version + '/' + min)) {
+    pkg.filename = min;
+    fs.writeFileSync(item, JSON.stringify(pkg, null, 2) + '\n', 'utf8');
+  }
+};
