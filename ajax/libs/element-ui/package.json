@@ -21,7 +21,8 @@
       "basePath": "lib",
       "files": [
         "index.js",
-        "theme-default/+(index.css|fonts/*)"
+        "theme-default/index.css",
+        "theme-default/fonts/*"
       ]
     }
   ]
