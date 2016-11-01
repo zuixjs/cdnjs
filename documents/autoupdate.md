@@ -8,14 +8,18 @@ To add `git` auto-update config to a library, update the `package.json` with con
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/jashkenas/underscore.git",
-    "basePath": "",
-    "files": [
-      "underscore-min.js",
-      "underscore-min.map",
-      "underscore.js"
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "underscore-min.js",
+          "underscore-min.map",
+          "underscore.js"
+        ]
+      }
     ]
   }
- ```
+```
 
 To add an `npm` hook to a library, update the `package.json` with configuration details and submit your pull request. An example configuration:
 
@@ -67,5 +71,3 @@ The auto-update process will look for `dist` inside the named tarball and copy a
 ```
 
 ...where `x.y.z` is the version number, extracted from the `package.json` on npm.
-
-
