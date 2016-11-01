@@ -22,9 +22,13 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/i-break-codes/logerr.git",
-    "basePath": "",
-    "files": [
-      "logerr*"
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "logerr*"
+        ]
+      }
     ]
   }
 }

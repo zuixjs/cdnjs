@@ -22,9 +22,13 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/matowens/ng-notify.git",
-    "basePath": "dist",
-    "files": [
-      "**/*"
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
     ]
   }
 }

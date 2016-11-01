@@ -23,9 +23,13 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/matthewwithanm/react-inlinesvg.git",
-    "basePath": "standalone",
-    "files": [
-      "**/*"
+    "fileMap": [
+      {
+        "basePath": "standalone",
+        "files": [
+          "**/*"
+        ]
+      }
     ]
   }
 }
