@@ -77,17 +77,26 @@ async.each(packages, function(item, callback) {
       }
     }
   }
-  if (pkg.autoupdate) {
-    var basePath = pkg.autoupdate.basePath;
-    if (basePath && basePath.length != 0 && ((typeof basePath) == "string")) {
-        basePath = (basePath).replace(/^\/+|\/+$/g , "");
-        pkg.autoupdate.basePath = basePath;
-    }
-  }
   if (pkg.keywords !== undefined) {
     var mod = _.uniq(pkg.keywords);
     if (pkg.keywords.length != mod.length) {
       pkg.keywords = mod;
+    }
+  }
+  if (pkg.autoupdate) {
+    var basePath = pkg.autoupdate.basePath || ""
+    if (basePath || pkg.autoupdate.files) {
+        if (basePath && basePath.length !== 0) {
+            basePath = basePath.replace(/^\/+|\/+$/g , "");
+        }
+        pkg.autoupdate.fileMap = [
+            {
+                basePath: basePath || "",
+                files: pkg.autoupdate.files
+            }
+        ];
+        delete pkg.autoupdate.basePath;
+        delete pkg.autoupdate.files;
     }
   }
   fs.writeFileSync(item, JSON.stringify(pkg, null, 2) + '\n', 'utf8');
