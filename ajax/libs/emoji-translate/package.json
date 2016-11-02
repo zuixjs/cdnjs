@@ -15,10 +15,14 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/notwaldorf/emoji-translate.git",
-    "basePath": "",
-    "files": [
-      "emoji-translate*",
-      "bower_components/emojilib/emojis.json"
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "emoji-translate*",
+          "bower_components/emojilib/emojis.json"
+        ]
+      }
     ]
   },
   "keywords": [

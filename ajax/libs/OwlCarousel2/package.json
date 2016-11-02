@@ -23,9 +23,13 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/smashingboxes/OwlCarousel2.git",
-    "basePath": "dist",
-    "files": [
-      "**/!(LICENSE|*.md)"
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/!(LICENSE|*.md)"
+        ]
+      }
     ]
   }
 }

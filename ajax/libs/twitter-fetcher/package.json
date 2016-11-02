@@ -21,9 +21,13 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/jasonmayes/Twitter-Post-Fetcher.git",
-    "basePath": "",
-    "files": [
-      "js/twitterFetcher*"
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "js/twitterFetcher*"
+        ]
+      }
     ]
   }
 }

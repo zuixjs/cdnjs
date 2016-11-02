@@ -15,9 +15,13 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/Heydon/fukol-grids.git",
-    "basePath": "",
-    "files": [
-      "fukol*.+(css|js|map)"
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "fukol*.+(css|js|map)"
+        ]
+      }
     ]
   },
   "repository": {

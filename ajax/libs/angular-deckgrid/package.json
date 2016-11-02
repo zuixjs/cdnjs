@@ -12,9 +12,13 @@
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/akoenig/angular-deckgrid.git",
-    "basePath": "",
-    "files": [
-      "angular-deckgrid*"
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "angular-deckgrid*"
+        ]
+      }
     ]
   },
   "license": "MIT",
