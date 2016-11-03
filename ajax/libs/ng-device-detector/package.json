@@ -1,0 +1,28 @@
+{
+  "name": "ng-device-detector",
+  "filename": "ng-device-detector.min.js",
+  "version": "3.0.1",
+  "description": "Uses user-agent to set css classes or directly usable via JS.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/srfrnk/ng-device-detector.git"
+  },
+  "homepage": "https://srfrnk.github.io/ng-device-detector/",
+  "keywords": [
+    "angularjs"
+  ],
+  "author": "srfrnk",
+  "license": "MIT",
+  "dependencies": {
+    "re-tree": "~0.0.2"
+  },
+  "npmName": "ng-device-detector",
+  "npmFileMap": [
+    {
+      "basePath": "",
+      "files": [
+        "ng-device-detector*"
+      ]
+    }
+  ]
+}
