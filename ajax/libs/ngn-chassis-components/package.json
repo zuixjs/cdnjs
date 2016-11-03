@@ -1,6 +1,6 @@
 {
   "name": "ngn-chassis-components",
-  "version": "0.0.46",
+  "version": "0.0.47",
   "description": "NGN Chassis Web Components",
   "filename": "chassis-cycle.min.js",
   "repository": {
