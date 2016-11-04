@@ -330,5 +330,5 @@ args = process.argv.slice(2);
 if (args.length > 0 && args[0] === 'run') {
   exports.run();
 } else {
-  console.log('to start, pass the "run" arg'.prompt);
+  console.log('to start "npm auto-update", pass the "run" arg'.prompt);
 }
