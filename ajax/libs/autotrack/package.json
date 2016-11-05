@@ -23,13 +23,16 @@
     "debounce": "^1.0.0",
     "delegate": "^3.0.0"
   },
-  "npmName": "autotrack",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "autotrack*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/googleanalytics/autotrack.git",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "autotrack*"
+        ]
+      }
+    ]
+  }
 }
