@@ -2,7 +2,7 @@
   "name": "just-animate",
   "filename": "just-animate-all.min.js",
   "author": "Christopher Wallis <christopher.j.wallis@gmail.com>",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Web Animation library",
   "keywords": [
     "webanimation",
