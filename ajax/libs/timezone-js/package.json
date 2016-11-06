@@ -23,5 +23,6 @@
   "keywords": [
     "timezone",
     "js"
-  ]
+  ],
+  "license": "Apache-2.0"
 }
