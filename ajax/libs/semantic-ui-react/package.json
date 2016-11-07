@@ -9,10 +9,9 @@
   },
   "keywords": [
     "Semantic UI",
-    "jQuery",
-    "react integration"
+    "React"
   ],
-  "homepage": "http://react.semantic-ui.com/introduction",
+  "homepage": "http://react.semantic-ui.com",
   "author": "Technology Advice <devteam@technologyadvice.com>",
   "license": "MIT",
   "npmName": "semantic-ui-react",
