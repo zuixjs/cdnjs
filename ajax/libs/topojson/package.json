@@ -21,17 +21,14 @@
     "queue-async": "1.0",
     "shapefile": "0.1"
   },
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/mbostock/topojson.git",
-    "fileMap": [
-      {
-        "basePath": "",
-        "files": [
-          "topojson.js"
-        ]
-      }
-    ]
-  },
+  "npmName": "topojson",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
+    }
+  ],
   "license": "BSD-3-Clause"
 }
