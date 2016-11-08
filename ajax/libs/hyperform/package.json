@@ -30,5 +30,6 @@
       "basePath": "css",
       "files": "hyperform*"
     }
-  ]
+  ],
+  "version": "0.8.10"
 }
