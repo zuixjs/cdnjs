@@ -24,11 +24,15 @@
   "npmFileMap": [
     {
       "basePath": "dist",
-      "files": "**/*"
+      "files": [
+        "**/*"
+      ]
     },
     {
       "basePath": "css",
-      "files": "hyperform*"
+      "files": [
+        "hyperform*"
+      ]
     }
   ],
   "version": "0.8.10"
