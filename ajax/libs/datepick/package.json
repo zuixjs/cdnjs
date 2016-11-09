@@ -1,0 +1,38 @@
+{
+  "name": "datepick",
+  "filename": "js/jquery.datepick.min.js",
+  "description": "This plugin attaches a popup calendar to your input fields or shows an inline calendar for selecting individual dates or date ranges.",
+  "version": "5.1.1",
+  "keywords": [
+    "calendar",
+    "date",
+    "datepicker",
+    "input",
+    "jQuery",
+    "localisation",
+    "validation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kbwood/datepick.git"
+  },
+  "homepage": "http://keith-wood.name/datepick.HTML",
+  "licence": "MIT",
+  "dependencies": {
+    "jquery": ">=1.12.0",
+    "kbw-plugin": "~1.0.2"
+  },
+  "author": "Keith Wood <wood.keith@optusnet.com.au> (http://keith-wood.name)",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/kbwood/datepick.git",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*.!(html)"
+        ]
+      }
+    ]
+  }
+}
