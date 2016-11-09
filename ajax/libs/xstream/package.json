@@ -1,0 +1,30 @@
+{
+  "name": "xstream",
+  "version": "7.0.0",
+  "description": "An extremely intuitive, small, and fast functional reactive stream library for JavaScript",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/staltz/xstream.git"
+  },
+  "homepage": "http://staltz.com/xstream/",
+  "author": "Andre Staltz <andre+npm@staltz.com> (http://andre.staltz.com/)",
+  "license": "MIT",
+  "keywords": [
+    "xstream",
+    "reactive stream",
+    "functional"
+  ],
+  "dependencies": {
+    "symbol-observable": "^1.0.2"
+  },
+  "npmName": "xstream",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
+    }
+  ],
+  "filename": "xstream.min.js"
+}
