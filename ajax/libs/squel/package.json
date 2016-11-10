@@ -17,7 +17,8 @@
     "email": "ram@hiddentao.com",
     "url": "http://www.hiddentao.com/"
   },
-  "dependencies": {},
+  "homepage": "https://hiddentao.com/squel/",
+  "license": "MIT",
   "keywords": [
     "sql",
     "database",
