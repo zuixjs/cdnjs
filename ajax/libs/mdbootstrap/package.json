@@ -21,15 +21,18 @@
   "author": "MDBootstrap",
   "license": "MIT",
   "homepage": "https://mdbootstrap.com/material-design-for-bootstrap/",
-  "npmName": "mdbootstrap",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "+(js|css)/**/mdb*",
-        "font/**/*.+(eot|ttf|woff|woff2)",
-        "img/overlays/*.png"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/mdbootstrap/bootstrap-material-design.git",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "+(js|css)/**/mdb*",
+          "font/**/*",
+          "img/overlays/*"
+        ]
+      }
+    ]
+  }
 }
