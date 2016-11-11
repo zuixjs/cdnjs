@@ -164,6 +164,8 @@ ajax/libs/Hyphenator/ersion_*
 ajax/libs/gemma/0.1.0/
 ajax/libs/gemma/0.4.0/
 ajax/libs/origamijs/0.0.2/
+ajax/libs/mobx-react/*-observableprops*/
+ajax/libs/mobx-react/*-fix*/
 
 #ignore files that we don't need
 ajax/libs/*/*/**/Gruntfile.js
