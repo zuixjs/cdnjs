@@ -1,7 +1,7 @@
 {
   "name": "gmail-js",
   "filename": "gmail.min.js",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "JavaScript API for Gmail (useful for chrome extensions)",
   "repository": {
     "type": "git",
