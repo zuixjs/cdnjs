@@ -22,7 +22,7 @@
     {
       "basePath": "dist",
       "files": [
-        "**/!(*.less)"
+        "**/!(*.+(less|scss|styl))"
       ]
     }
   ]
