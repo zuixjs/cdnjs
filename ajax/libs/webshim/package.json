@@ -33,7 +33,7 @@
       {
         "basePath": "js-webshim",
         "files": [
-          "**/*"
+          "**/!(*.+(scss|php|txt|json|zip))"
         ]
       }
     ]
