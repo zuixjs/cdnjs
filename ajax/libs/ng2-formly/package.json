@@ -1,7 +1,7 @@
 {
   "name": "ng2-formly",
   "filename": "ng2-formly.umd.min.js",
-  "version": "2.0.0-beta.12",
+  "version": "2.0.0-beta.13",
   "author": {
     "name": "Zama Khan Mohammed",
     "email": "mohammedzamakhan@gmail.com"
@@ -11,7 +11,7 @@
     {
       "basePath": "bundles",
       "files": [
-        "**/!(*.gz)"
+        "**/ng2-formly*"
       ]
     }
   ],
