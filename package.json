@@ -34,7 +34,6 @@
     "jslint": "^0.10.1",
     "vows-si": "^0.7.1"
   },
-  "license": "MIT",
   "engines": {
     "node": "^4.2.3"
   }
