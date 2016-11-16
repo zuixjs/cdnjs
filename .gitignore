@@ -166,6 +166,9 @@ ajax/libs/gemma/0.4.0/
 ajax/libs/origamijs/0.0.2/
 ajax/libs/mobx-react/*-observableprops*/
 ajax/libs/mobx-react/*-fix*/
+ajax/libs/react-data-grid/*-*/
+!ajax/libs/react-data-grid/*-alpha*/
+ajax/libs/react-data-grid/*-dm*/
 
 #ignore files that we don't need
 ajax/libs/*/*/**/Gruntfile.js

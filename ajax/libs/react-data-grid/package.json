@@ -1,0 +1,40 @@
+{
+  "name": "react-data-grid",
+  "filename": "react-data-grid.min.js",
+  "version": "1.0.57",
+  "description": "Data grid for React",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/adazzle/react-data-grid.git"
+  },
+  "keywords": [
+    "react",
+    "grid",
+    "react-component"
+  ],
+  "dependencies": {
+    "classnames": "^1.2.0",
+    "es5-shim": "^4.0.3",
+    "fbjs": "^0.6.1",
+    "fs-extra": "^0.30.0",
+    "object-assign": "^2.0.0",
+    "react-contextmenu": "1.6.2",
+    "react-dnd": "^2.1.4",
+    "react-dnd-html5-backend": "^2.1.2",
+    "react-select": "^1.0.0-beta14",
+    "reselect": "^2.5.1",
+    "ron-react-autocomplete": "^3.0.0"
+  },
+  "author": "adazzle",
+  "license": "MIT",
+  "homepage": "https://adazzle.github.io/react-data-grid/",
+  "npmName": "react-data-grid",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
+    }
+  ]
+}
