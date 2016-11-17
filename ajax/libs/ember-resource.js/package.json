@@ -18,5 +18,17 @@
     "type": "git",
     "url": "https://github.com/zendesk/ember-resource"
   },
-  "license": "APLv2"
+  "license": "APLv2",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/zendesk/ember-resource.git",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "*"
+        ]
+      }
+    ]
+  }
 }
