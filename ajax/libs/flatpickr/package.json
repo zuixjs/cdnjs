@@ -23,12 +23,6 @@
   "npmName": "flatpickr",
   "npmFileMap": [
     {
-      "basePath": "src",
-      "files": [
-        "flatpickr*"
-      ]
-    },
-    {
       "basePath": "dist",
       "files": [
         "**/*"
