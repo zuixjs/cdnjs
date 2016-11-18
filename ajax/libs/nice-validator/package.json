@@ -1,7 +1,7 @@
 {
   "name": "nice-validator",
   "description": "Simple, smart and pleasant verification solution.",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "filename": "jquery.validator.min.js",
   "keywords": [
     "jquery-plugin",
