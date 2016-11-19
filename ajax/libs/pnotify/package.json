@@ -20,10 +20,9 @@
     "target": "git://github.com/sciactive/pnotify.git",
     "fileMap": [
       {
-        "basePath": "src",
+        "basePath": "dist",
         "files": [
-          "*.js",
-          "*.css"
+          "**/*"
         ]
       }
     ]
