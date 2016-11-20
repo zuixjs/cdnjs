@@ -23,7 +23,7 @@
     {
       "basePath": "client",
       "files": [
-        "zingchart*.js"
+        "**/*"
       ]
     }
   ]
