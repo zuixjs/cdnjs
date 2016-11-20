@@ -17,5 +17,19 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/amcharts/amcharts3.git"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/amcharts/amcharts3.git",
+    "fileMap": [
+      {
+        "basePath": "amcharts",
+        "files": [
+          "patterns/!(chalk)/*",
+          "**/!(examples|samples)/!(LICENSE|index.js|*.json|*.md|*.txt|*.csv|*.png)",
+          "*.+(js|map)"
+        ]
+      }
+    ]
   }
 }
