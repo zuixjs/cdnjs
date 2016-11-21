@@ -1,16 +1,13 @@
-build:
-  image: library/node:argon
-  pull: true
-  commands:
-    - git --version
-    - node --version
-    - npm --version
-    - npm install --silent
-    - npm test -- --silent || npm test
-cache:
-  mount:
-    - node_modules
-    - .git
-branches:
-  - master
-  - develop
+pipeline:
+  fast-clone:
+    image: peterdavehello/cdnjs-drone-fastclone
+  #cache-restore:
+  #  image: peterdavehello/cdnjs-drone-ci
+  #  action: restore-cache
+  clone:
+    image: peterdavehello/drone-git-sparse-checkout:latest
+    depth: 15
+    sparseCheckout: tools/sparse-checkout.template
+  test:
+    image: peterdavehello/cdnjs-drone-ci
+    action: test
