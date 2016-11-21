@@ -1,9 +1,7 @@
 pipeline:
-  fast-clone:
-    image: peterdavehello/cdnjs-drone-fastclone
-  #cache-restore:
-  #  image: peterdavehello/cdnjs-drone-ci
-  #  action: restore-cache
+  cache-restore:
+    image: peterdavehello/cdnjs-drone-ci
+    action: restore-cache
   clone:
     image: peterdavehello/drone-git-sparse-checkout:latest
     depth: 15
