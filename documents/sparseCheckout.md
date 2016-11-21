@@ -22,7 +22,6 @@ Here is an example of `.git/info/sparse-checkout`:
 /documents
 /test
 /tools
-/scratch
 /MIT-LICENSE
 /hooks
 /MAINTAINERS
