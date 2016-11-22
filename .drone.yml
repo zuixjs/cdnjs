@@ -2,6 +2,8 @@ pipeline:
   cache-restore:
     image: peterdavehello/cdnjs-drone-ci
     action: restore-cache
+    when:
+      event: [ push, pull_request ]
   clone:
     image: peterdavehello/drone-git-sparse-checkout:latest
     depth: 15
@@ -9,3 +11,5 @@ pipeline:
   test:
     image: peterdavehello/cdnjs-drone-ci
     action: test
+    when:
+      event: [ push, pull_request ]
