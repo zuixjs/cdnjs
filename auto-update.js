@@ -293,13 +293,11 @@ exports.run = function() {
 
   // load up those files
   var packages;
-  var tmpPath;
-  tmpPath = './ajax/libs/' + args[1] + '/package.json';
-  if (args.length === 2 && isThere(tmpPath)) {
-    packages = glob.sync(tmpPath);
-  } else {
-    packages = glob.sync("./ajax/libs/*/package.json");
+  var globPattern = '*';
+  if (args.length === 2) {
+    globPattern = args[1];
   }
+  packages = glob.sync("./ajax/libs/" + globPattern + "/package.json");
   packages = _(packages).map(function(pkg) {
     var parsedPkg = parse(pkg);
     return (parsedPkg.npmName && parsedPkg.npmFileMap) ? parsedPkg : null;
