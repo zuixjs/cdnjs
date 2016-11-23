@@ -17,7 +17,8 @@
         "**/*.min.+(css|js|map)",
         "skins/lightgray/img/*",
         "skins/lightgray/fonts/*",
-        "plugins/*"
+        "plugins/**/plugin.js",
+        "plugins/**/*.!(js)"
       ]
     }
   ],
