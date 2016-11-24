@@ -17,7 +17,7 @@
     "url": "https://github.com/kbwood/datepick.git"
   },
   "homepage": "http://keith-wood.name/datepick.HTML",
-  "licence": "MIT",
+  "license": "MIT",
   "dependencies": {
     "jquery": ">=1.12.0",
     "kbw-plugin": "~1.0.2"
