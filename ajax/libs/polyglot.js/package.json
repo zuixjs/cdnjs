@@ -17,7 +17,7 @@
     "polyglot"
   ],
   "author": "Spike Brehm <spike@airbnb.com>",
-  "license": "BSD",
+  "license": "BSD-2-Clause",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/airbnb/polyglot.js.git",
