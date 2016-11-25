@@ -3,7 +3,11 @@
   "filename": "widget.min.js",
   "version": "1.0",
   "description": "Protest in Washington DC.",
-  "keywords": [],
+  "keywords": [
+    "fight",
+    "surveillance",
+    "banner"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/tfrce/project-megaphone.git"
