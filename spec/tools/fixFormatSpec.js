@@ -37,36 +37,7 @@ describe('fixFormat - tool to fix package.json file of libraries', () => {
         author: {
           name: "jQuery Foundation and other contributors",
           url: "https://github.com/jquery/jquery/blob/master/AUTHORS.txt"
-        },
-        bin: 'some bin',
-        jshintConfig: 'some jshintConfig',
-        eslintConfig: 'some eslintConfig',
-        maintainers: 'some maintainers',
-        styles: 'some styles',
-        requiredFiles: 'some requiredFiles',
-        install: 'some install',
-        typescript: 'some typescript',
-        browserify: 'some browserify',
-        browser: 'some browser',
-        jam: 'some jam',
-        jest: 'some jest',
-        scripts: 'some scripts',
-        devDependencies: 'some devDependencies',
-        main: 'some main',
-        peerDependencies: 'some peerDependencies',
-        contributors: 'some contributors',
-        bugs: 'some bugs',
-        gitHEAD: 'some gitHEAD',
-        gitHead: 'some gitHead',
-        spm: 'some spm',
-        dist: 'some dist',
-        issues: 'some issues',
-        files: 'some files',
-        ignore: 'some ignore',
-        engines: 'some engines',
-        engine: 'some engine',
-        directories: 'some directories',
-        repositories: 'some repositories'
+        }
       }
     ];
 
@@ -99,6 +70,36 @@ describe('fixFormat - tool to fix package.json file of libraries', () => {
 
   describe('When there are extraneous keys', () => {
     beforeEach((done) => {
+      this.packagesMock[0].bin = 'some bin';
+      this.packagesMock[0].jshintConfig = 'some jshintConfig';
+      this.packagesMock[0].eslintConfig = 'some eslintConfig';
+      this.packagesMock[0].maintainers = 'some maintainers';
+      this.packagesMock[0].styles = 'some styles';
+      this.packagesMock[0].requiredFiles = 'some requiredFiles';
+      this.packagesMock[0].install = 'some install';
+      this.packagesMock[0].typescript = 'some typescript';
+      this.packagesMock[0].browserify = 'some browserify';
+      this.packagesMock[0].browser = 'some browser';
+      this.packagesMock[0].jam = 'some jam';
+      this.packagesMock[0].jest = 'some jest';
+      this.packagesMock[0].scripts = 'some scripts';
+      this.packagesMock[0].devDependencies = 'some devDependencies';
+      this.packagesMock[0].main = 'some main';
+      this.packagesMock[0].peerDependencies = 'some peerDependencies';
+      this.packagesMock[0].contributors = 'some contributors';
+      this.packagesMock[0].bugs = 'some bugs';
+      this.packagesMock[0].gitHEAD = 'some gitHEAD';
+      this.packagesMock[0].gitHead = 'some gitHead';
+      this.packagesMock[0].spm = 'some spm';
+      this.packagesMock[0].dist = 'some dist';
+      this.packagesMock[0].issues = 'some issues';
+      this.packagesMock[0].files = 'some files';
+      this.packagesMock[0].ignore = 'some ignore';
+      this.packagesMock[0].engines = 'some engines';
+      this.packagesMock[0].engine = 'some engine';
+      this.packagesMock[0].directories = 'some directories';
+      this.packagesMock[0].repositories = 'some repositories';
+
       fixFormatFile.__set__({
         fs: this.fsMock,
         packages: this.packagesMock.map((pkg) => (JSON.stringify(pkg)))
@@ -899,6 +900,26 @@ describe('fixFormat - tool to fix package.json file of libraries', () => {
       var result = JSON.parse(this.fsMock.writtenFile);
 
       expect(result.filename).toEqual('jquery.min.js');
+    });
+  });
+
+  describe('When indentation is incorrect', () => {
+    beforeEach((done) => {
+      fixFormatFile.__set__({
+        fs: this.fsMock,
+        packages: this.packagesMock.map((pkg) => (JSON.stringify(pkg))),
+        isThere: function() { return true }
+      });
+
+      fixFormatFile.fixFormat();
+      done();
+    });
+
+    it('corrects indentation to two spaces', () => {
+      var result = this.fsMock.writtenFile;
+
+      expect(result).not.toEqual(JSON.stringify(this.packagesMock[0]) + '\n');
+      expect(result).toEqual(JSON.stringify(this.packagesMock[0], null, 2) + '\n');
     });
   });
 });

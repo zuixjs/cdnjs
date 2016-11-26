@@ -33,8 +33,10 @@ function fixFormat() {
     fixAutoupdate(pkg);
     fixFilenameField(pkg, item);
 
-    if (!_.isEqual(JSON.parse(fs.readFileSync(item, 'utf8')), pkg)) {
-      fs.writeFileSync(item, JSON.stringify(pkg, null, 2) + '\n', 'utf8');
+    const pkgJson = JSON.stringify(pkg, null, 2) + '\n';
+
+    if (!_.isEqual(fs.readFileSync(item, 'utf8'), pkgJson)) {
+      fs.writeFileSync(item, pkgJson, 'utf8');
       console.log(('Library - ' + pkg.name + ' was updated!').green);
     }
 
