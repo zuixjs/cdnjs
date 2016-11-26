@@ -4,6 +4,10 @@ notify:
 machine:
   node:
     version: 4
+  pre:
+    - git config core.sparseCheckout true
+    - ./tools/createSparseCheckoutConfig.js
+    - git reset --hard
 test:
   override:
     - npm test -- --silent || npm test
