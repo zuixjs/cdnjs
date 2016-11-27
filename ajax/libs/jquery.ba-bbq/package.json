@@ -30,7 +30,7 @@
     "type": "git",
     "url": "https://github.com/cowboy/jquery-bbq"
   },
-  "licenses: [
+  "licenses": [
     "MIT",
     "GPL-2.0"
   ]
