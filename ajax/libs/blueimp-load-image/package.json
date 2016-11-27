@@ -29,13 +29,16 @@
     "url": "git://github.com/blueimp/JavaScript-Load-Image.git"
   },
   "license": "MIT",
-  "npmName": "blueimp-load-image",
-  "npmFileMap": [
-    {
-      "basePath": "js",
-      "files": [
-        "load-image*.js"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/blueimp/JavaScript-Load-Image.git",
+    "fileMap": [
+      {
+        "basePath": "js",
+        "files": [
+          "**/load-image*"
+        ]
+      }
+    ]
+  }
 }
