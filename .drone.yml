@@ -7,7 +7,7 @@ pipeline:
   clone:
     image: peterdavehello/drone-git-sparse-checkout:latest
     depth: 15
-    sparseCheckout: tools/sparse-checkout.template
+    sparseCheckout: tools/sparse-checkout-with-package.json.template
   test:
     image: peterdavehello/cdnjs-drone-ci
     action: test
