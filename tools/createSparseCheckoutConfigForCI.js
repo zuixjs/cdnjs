@@ -13,7 +13,6 @@ var fs = require("fs"),
   result = fs.readFileSync('.git/info/sparse-checkout'),
   packages = glob.sync("./ajax/libs/*/package.json");
 
-result += '/ajax/libs/*/package.json\n';
 colors.setTheme({
   success: 'green'
 });
