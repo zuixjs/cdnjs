@@ -10,5 +10,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/tkyk/jquery-history-plugin.git"
-  }
+  },
+  "license": "MIT"
 }
