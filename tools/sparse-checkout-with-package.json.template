@@ -1,0 +1,13 @@
+/build
+/documents
+/test
+/tools
+/MIT-LICENSE
+/hooks
+/MAINTAINERS
+/*.yml
+/*.md
+/*.json
+/*.sh
+/*.js
+/ajax/libs/*/package.json
