@@ -296,7 +296,7 @@ packages.map(function(pkg) {
         }
     }
   }
-  packageVows[pname + ": There must no \"/\" at the front or the last of basePath "] = function(pkg) {
+  packageVows[pname + ": There should not be leading or trailing slash (\"/\") in basePath "] = function(pkg) {
     var json = parse(pkg, true);
     if (json.npmFileMap) {
       for (var i in json.npmFileMap) {
@@ -307,7 +307,7 @@ packages.map(function(pkg) {
                  (basePath.length == 0) ||
                  (basePath[0] != '/' && basePath[basePath.length-1] != '/')
              ),
-             pkgName(pkg) + ": Need to remove \"/\" at the front or the last of basePath in package.json");
+             pkgName(pkg) + ": Need to remove leading/trailing slash (\"/\") in basePath in package.json");
         }
       }
     } else if (json.autoupdate) {
