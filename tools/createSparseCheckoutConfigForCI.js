@@ -10,7 +10,7 @@ var fs = require("fs"),
   glob = require("glob"),
   colors = require("colors"),
   basePath = "/ajax/libs/",
-  result = fs.readFileSync('tools/sparse-checkout.template'),
+  result = fs.readFileSync('.git/info/sparse-checkout'),
   packages = glob.sync("./ajax/libs/*/package.json");
 
 result += '/ajax/libs/*/package.json\n';
