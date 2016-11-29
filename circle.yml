@@ -13,5 +13,5 @@ test:
     - npm test -- --silent || npm test
 general:
   branches:
-    only:
+    ignore:
       - master
