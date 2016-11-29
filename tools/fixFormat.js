@@ -219,6 +219,7 @@ function fixFormat() {
       temp.push(ext);
       min = temp.join('.');
     }
+    pkg.filename = pkg.filename.replace(/^\/+/g , "");
     if (min !== '' && isThere('./ajax/libs/' + pkg.name + '/' + pkg.version + '/' + min)) {
       pkg.filename = min;
     }

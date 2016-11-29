@@ -296,6 +296,11 @@ packages.map(function(pkg) {
         }
     }
   }
+  packageVows[pname + ": There should not be leading slash (\"/\") in filename "] = function(pkg) {
+    var json = parse(pkg, true);
+    assert.ok(json.filename[0] != '/',
+       pkgName(pkg) + ": Need to remove leading/trailing slash (\"/\") in filename in package.json");
+  }
   packageVows[pname + ": There should not be leading or trailing slash (\"/\") in basePath "] = function(pkg) {
     var json = parse(pkg, true);
     if (json.npmFileMap) {
