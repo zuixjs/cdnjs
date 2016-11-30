@@ -13,5 +13,6 @@
   "repository": {
     "type": "svn",
     "url": "http://google-diff-match-patch.googlecode.com/svn/trunk/"
-  }
+  },
+  "license": "Apache-2.0"
 }
