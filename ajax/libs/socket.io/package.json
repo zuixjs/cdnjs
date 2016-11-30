@@ -1,7 +1,7 @@
 {
   "name": "socket.io",
   "filename": "socket.io.min.js",
-  "version": "1.6.0",
+  "version": "1.7.1",
   "description": "node.js realtime framework server",
   "homepage": "http://socket.io",
   "keywords": [
@@ -12,10 +12,9 @@
   "npmName": "socket.io-client",
   "npmFileMap": [
     {
-      "basePath": "",
+      "basePath": "dist",
       "files": [
-        "socket.io.js",
-        "socket.io.min.js"
+        "**/*"
       ]
     }
   ],
