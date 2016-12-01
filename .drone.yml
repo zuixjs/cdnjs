@@ -5,8 +5,7 @@ pipeline:
     when:
       event: [ push, pull_request ]
   clone:
-    image: peterdavehello/drone-git-sparse-checkout:latest
-    depth: 15
+    image: peterdavehello/cdnjs-drone-clone:latest
     sparseCheckout: tools/sparse-checkout.template
   test:
     image: peterdavehello/cdnjs-drone-ci
