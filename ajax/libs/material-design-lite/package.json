@@ -15,17 +15,14 @@
     "type": "git",
     "url": "https://github.com/google/material-design-lite"
   },
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/google/material-design-lite.git",
-    "fileMap": [
-      {
-        "basePath": "",
-        "files": [
-          "material*.+(js|css|map)"
-        ]
-      }
-    ]
-  },
+  "npmName": "material-design-lite",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*material*.!(template)"
+      ]
+    }
+  ],
   "author": "Google"
 }
