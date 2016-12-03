@@ -1,7 +1,7 @@
 {
   "name": "leaflet.draw",
   "filename": "leaflet.draw.js",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "description": "Vector drawing plugin for Leaflet",
   "keywords": [
     "maps",
