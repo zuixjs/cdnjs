@@ -29,7 +29,7 @@
         "basePath": "",
         "files": [
           "assets/svg/*",
-          "assets/sprites/*",
+          "assets/sprites/!(*.mustache)",
           "assets/png/*",
           "assets/css/emojione.min.css",
           "lib/js/emojione.min.js"
