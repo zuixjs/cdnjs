@@ -1,7 +1,7 @@
 {
   "name": "jquery-tubeplayer",
-  "filename": "jQuery.tubeplayer.min.js",
-  "version": "1.1.7",
+  "filename": "jquery.tubeplayer.min.js",
+  "version": "2.1.0",
   "description": "A jQuery wrapper around the YouTube Player API.",
   "repository": {
     "type": "git",
@@ -10,7 +10,7 @@
   "keywords": [
     "youtube",
     "media",
-    "vedio",
+    "video",
     "player"
   ],
   "autoupdate": {
@@ -18,9 +18,9 @@
     "target": "git://github.com/nirvanatikku/jQuery-TubePlayer-Plugin.git",
     "fileMap": [
       {
-        "basePath": "",
+        "basePath": "dist",
         "files": [
-          "jQuery.tubeplayer*.js"
+          "jquery.tubeplayer*.js"
         ]
       }
     ]
