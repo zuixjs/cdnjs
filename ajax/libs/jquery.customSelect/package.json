@@ -11,5 +11,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/adamcoulombe/jquery.customSelect"
-  }
+  },
+  "licenses": [
+    "MIT",
+    "GPL-2.0"
+  ]
 }
