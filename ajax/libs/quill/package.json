@@ -20,16 +20,13 @@
     "rich text",
     "wysiwyg"
   ],
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/quilljs/quill.git",
-    "fileMap": [
-      {
-        "basePath": "dist",
-        "files": [
-          "**/*"
-        ]
-      }
-    ]
-  }
+  "npmName": "quill",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
+    }
+  ]
 }
