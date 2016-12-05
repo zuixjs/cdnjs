@@ -21,7 +21,7 @@ var exec = require('child_process').exec;
 var execSync = require('child_process').execSync;
 var threads = require('os').cpus().length;
 var data;
-threads = threads > 2 ? threads - 2 : 1;
+threads = threads > 2 ? threads - 1 : 1;
 
 exec('git ls-tree -r --name-only HEAD | grep **/package.json | xargs -n 1 -P ' + threads + ' git log -1 --since="2 weeks ago" --name-status --format="blahcrap %ad" --', function(err, stdout, stderr) {
   console.dir(err);
