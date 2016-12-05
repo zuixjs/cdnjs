@@ -1,6 +1,6 @@
 {
   "name": "quill",
-  "filename": "quill.base.min.css",
+  "filename": "quill.min.js",
   "version": "1.1.5",
   "description": "Cross browser rich text editor",
   "author": "Jason Chen <jhchen7@gmail.com>",
