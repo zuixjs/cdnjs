@@ -22,5 +22,6 @@
   },
   "keywords": [
     "r2d3"
-  ]
+  ],
+  "license": "MIT"
 }
