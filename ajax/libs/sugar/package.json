@@ -1,6 +1,6 @@
 {
   "name": "sugar",
-  "version": "1.4.1",
+  "version": "2.0.4",
   "filename": "sugar.min.js",
   "description": "A Javascript library for working with native objects.",
   "keywords": [
@@ -14,5 +14,17 @@
     "type": "git",
     "url": "https://github.com/andrewplummer/Sugar.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/andrewplummer/Sugar.git",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ]
+  }
 }
