@@ -27,11 +27,11 @@ function fixFormat() {
     deletePackageParts(pkg);
     deleteHomepage(pkg);
     fixAuthors(pkg);
-    fixLicense(pkg, item);
+    fixLicense(pkg);
     setNpmBasePaths(pkg);
     filterKeywords(pkg);
     fixAutoupdate(pkg);
-    fixFilenameField(pkg, item);
+    fixFilenameField(pkg);
     removeKeysWithLeadingUnderscores(pkg);
 
     const pkgJson = JSON.stringify(pkg, null, 2) + '\n';
@@ -106,7 +106,7 @@ function fixFormat() {
     }
   }
 
-  function fixLicense(pkg, item) {
+  function fixLicense(pkg) {
     if ((pkg.licenses != undefined) && !Array.isArray(pkg.licenses)) {
       pkg.license = pkg.licenses;
       delete pkg.licenses;
@@ -210,7 +210,7 @@ function fixFormat() {
     }
   }
 
-  function fixFilenameField(pkg, item) {
+  function fixFilenameField(pkg) {
     var orig = pkg.filename.split('.');
     var min = '';
     if (orig[orig.length - 2] !== 'min') {
