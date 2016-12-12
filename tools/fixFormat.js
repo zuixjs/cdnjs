@@ -32,6 +32,7 @@ function fixFormat() {
     filterKeywords(pkg);
     fixAutoupdate(pkg);
     fixFilenameField(pkg, item);
+    removeKeysWithLeadingUnderscores(pkg);
 
     const pkgJson = JSON.stringify(pkg, null, 2) + '\n';
 
@@ -224,6 +225,14 @@ function fixFormat() {
       pkg.filename = min;
     }
   };
+
+  function removeKeysWithLeadingUnderscores(pkg) {
+    Object.keys(pkg).forEach(function(key) {
+      if (key[0] === '_') {
+        delete pkg[key]
+      }
+    });
+  }
 };
 
 // don't execute this function if we are just running tests
