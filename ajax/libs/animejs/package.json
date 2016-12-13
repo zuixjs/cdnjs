@@ -19,13 +19,16 @@
   "author": "Julian Garnier <hello@julian.gr>",
   "license": "MIT",
   "homepage": "http://anime-js.com",
-  "npmName": "animejs",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "anime*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/juliangarnier/anime.git",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "anime*"
+        ]
+      }
+    ]
+  }
 }
