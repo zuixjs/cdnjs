@@ -20,5 +20,14 @@
   "licenses": [
     "MIT",
     "BSD-3-Clause"
+  ],
+  "npmName": "jquery.easing",
+  "npmFileMap": [
+    {
+      "basePath": "",
+      "files": [
+        "jquery.easing*"
+      ]
+    }
   ]
 }
