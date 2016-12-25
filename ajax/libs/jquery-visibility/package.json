@@ -20,13 +20,16 @@
   "dependencies": {
     "jquery": "*"
   },
-  "npmName": "jquery-visibility",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "jquery-visibility*.js"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "jquery-visibility",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "jquery-visibility*.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

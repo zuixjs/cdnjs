@@ -21,13 +21,16 @@
     "AngularJS",
     "ui-router"
   ],
-  "npmName": "angular-ui-router-default",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "angular-ui-router-default*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "angular-ui-router-default",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "angular-ui-router-default*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

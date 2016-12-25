@@ -17,16 +17,19 @@
     "normalize.css": "^3.0.3",
     "politespace": "^0.1.4"
   },
-  "npmName": "uswds",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
   "keywords": [
     "uswds"
-  ]
+  ],
+  "autoupdate": {
+    "target": "uswds",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

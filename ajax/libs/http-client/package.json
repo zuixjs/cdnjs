@@ -17,13 +17,16 @@
     "type": "git",
     "url": "git+https://github.com/mjackson/http-client.git"
   },
-  "npmName": "http-client",
-  "npmFileMap": [
-    {
-      "basePath": "umd",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "http-client",
+    "fileMap": [
+      {
+        "basePath": "umd",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

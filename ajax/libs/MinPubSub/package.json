@@ -18,13 +18,16 @@
     "url": "git://github.com/daniellmb/minpubsub.git"
   },
   "license": "MIT",
-  "npmName": "minpubsub",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "minpubsub*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "minpubsub",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "minpubsub*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

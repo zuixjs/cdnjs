@@ -12,20 +12,23 @@
     "codemirror-graphql": "^0.1.1",
     "marked": "^0.3.5"
   },
-  "npmName": "graphiql",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "graphiql*"
-      ]
-    }
-  ],
   "license": {
     "type": "customized",
     "url": "https://github.com/graphql/graphiql/raw/master/LICENSE"
   },
   "keywords": [
     "graphiql"
-  ]
+  ],
+  "autoupdate": {
+    "target": "graphiql",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "graphiql*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

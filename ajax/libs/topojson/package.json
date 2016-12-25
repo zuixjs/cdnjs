@@ -21,14 +21,17 @@
     "queue-async": "1.0",
     "shapefile": "0.1"
   },
-  "npmName": "topojson",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/!(*.node.js)"
-      ]
-    }
-  ],
-  "license": "BSD-3-Clause"
+  "license": "BSD-3-Clause",
+  "autoupdate": {
+    "target": "topojson",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/!(*.node.js)"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

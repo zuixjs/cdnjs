@@ -17,13 +17,16 @@
   ],
   "author": "Ben Pickles",
   "license": "MIT",
-  "npmName": "peity",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "jquery.peity*.js"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "peity",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "jquery.peity*.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

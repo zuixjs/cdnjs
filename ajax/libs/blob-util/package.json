@@ -21,13 +21,16 @@
     "blob": "0.0.4",
     "native-or-lie": "1.0.0"
   },
-  "npmName": "blob-util",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "blob-util",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

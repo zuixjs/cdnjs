@@ -15,13 +15,16 @@
   ],
   "license": "MIT",
   "homepage": "https://jaredreich.com/projects/notie.js",
-  "npmName": "notie",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "notie",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

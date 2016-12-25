@@ -23,13 +23,16 @@
     "url": "http://github.com/kripken/sql.js.git"
   },
   "author": "Alon Zakai",
-  "npmName": "sql.js",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "js/*sql!(*raw)*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "sql.js",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "js/*sql!(*raw)*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

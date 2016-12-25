@@ -21,13 +21,16 @@
   "author": "Yotam Mann <yotammann@gmail.com> (http://yotammann.info/)",
   "homepage": "https://tonejs.github.io/",
   "license": "MIT",
-  "npmName": "tone",
-  "npmFileMap": [
-    {
-      "basePath": "build",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "tone",
+    "fileMap": [
+      {
+        "basePath": "build",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

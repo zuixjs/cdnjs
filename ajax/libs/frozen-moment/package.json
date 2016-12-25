@@ -21,13 +21,16 @@
   "dependencies": {
     "moment": "~2.10"
   },
-  "npmName": "frozen-moment",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "frozen-moment*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "frozen-moment",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "frozen-moment*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

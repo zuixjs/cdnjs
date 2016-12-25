@@ -16,14 +16,17 @@
   "dependencies": {
     "json-stable-stringify": "^1.0.0"
   },
-  "npmName": "ajv",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "*"
-      ]
-    }
-  ],
-  "filename": "ajv.min.js"
+  "filename": "ajv.min.js",
+  "autoupdate": {
+    "target": "ajv",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

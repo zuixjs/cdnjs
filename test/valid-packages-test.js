@@ -132,46 +132,28 @@ packages.map(function(pkg) {
     if (json.version !== undefined) {
       return;
     }
-    assert.ok((json.npmName !== undefined && json.npmFileMap !== undefined && Array.isArray(json.npmFileMap)) || (json.autoupdate !== undefined),
-                   pkgName(pkg) + ": must have a valid auto-update config");
+    assert.ok(json.autoupdate, pkgName(pkg) + ": must have a valid auto-update config");
   };
-  packageVows[pname + ": npmName and npmFileMap should be a pair"] = function(pkg) {
+  packageVows[pname + ": npmName and npmFileMap are deprecated"] = function(pkg) {
     var json = parse(pkg, true);
-    if (!json.npmName && !json.npmFileMap) {
-      return;
-    }
-    assert.ok(json.npmName !== undefined && json.npmFileMap !== undefined,
-                  pkgName(pkg) + ": npmName and npmFileMap should be a pair");
+    assert.ok(!json.npmName && !json.npmFileMap, "npmName and npmFileMap are deprecated. Please use autoupdate.source = 'npm'");
   };
   var targetPrefixes = new RegExp("^git://.+.git$");
   packageVows[pname + ": autoupdate block is valid (if present)"] = function(pkg) {
     var json = parse(pkg, true);
     var fileMapPostfixes = new RegExp("\\*\\*$");
-    if (json.autoupdate) {
-      assert.ok(json.autoupdate.source === "git",
-                pkgName(pkg) + ": Autoupdate source should be 'git', not " + json.autoupdate.source);
-      assert.ok(targetPrefixes.test(json.autoupdate.target),
-                pkgName(pkg) + ": Autoupdate target should match '" + targetPrefixes +
-                "', but is " + json.autoupdate.target);
-      for (var i in json.autoupdate.files) {
-        assert.ok(!fileMapPostfixes.test(json.autoupdate.files[i]),
-                    pkgName(pkg) + ": fileMap should not end with ***");
-      }
-    } else if (json.npmFileMap) {
-      assert.ok(Array.isArray(json.npmFileMap),
-                pkgName(pkg) + ": npmFileMap should be an array and include one or multiply objects to describe corresponding bash path and files");
-      for (var i in json.npmFileMap) {
-        for (var j in json.npmFileMap[i].files) {
-          assert.ok(!fileMapPostfixes.test(json.npmFileMap[i].files[j]),
-                        pkgName(pkg) + ": fileMap should not end with ***");
-        }
-      }
+    if (!json.autoupdate) { return; }
+    assert.ok(json.autoupdate.source === "git" || json.autoupdate.source === "npm",
+              pkgName(pkg) + ": Autoupdate source should be 'git' or 'npm', not " + json.autoupdate.source);
+    if (json.autoupdate.source === "git") {
+        assert.ok(targetPrefixes.test(json.autoupdate.target),
+                  pkgName(pkg) + ": Autoupdate target should match '" + targetPrefixes +
+                  "', but is " + json.autoupdate.target);
     }
-  };
-  packageVows[pname + ": should not have multiple auto-update configs"] = function(pkg) {
-    var json = parse(pkg, true);
-    assert.ok(json.autoupdate === undefined || json.npmFileMap === undefined,
-            pkgName(pkg) + ": has both git and npm auto-update config, should remove one of it");
+    for (var i in json.autoupdate.fileMap) {
+      assert.ok(!fileMapPostfixes.test(json.autoupdate.fileMap[i]),
+                  pkgName(pkg) + ": fileMap should not end with ***");
+    }
   };
   packageVows[pname + ": should point filename field to minified file"] = function(pkg) {
     var json = parse(pkg, true);
@@ -255,7 +237,7 @@ packages.map(function(pkg) {
     assert.ok(
             (
                 (json.repository !== undefined) ||
-                (json.autoupdate === undefined && json.npmFileMap === undefined)
+                (json.autoupdate === undefined)
             ),
             pkgName(pkg) + ": Need to add repository information in package.json");
   };
@@ -274,12 +256,7 @@ packages.map(function(pkg) {
   };
   packageVows[pname + ": There must be \"String\" type basePath in auto-update config"] = function(pkg) {
     var json = parse(pkg, true);
-    if (json.npmFileMap) {
-      for (var i in json.npmFileMap) {
-        assert.ok(json.npmFileMap[i].basePath != undefined && ((typeof json.npmFileMap[i].basePath) == "string"),
-                  pkgName(pkg) + ": Need to add \"String\" type basePath in auto-update config");
-      }
-    } else if (json.autoupdate) {
+    if (json.autoupdate) {
         var autoupdate = json.autoupdate;
         if (autoupdate.fileMap) {
             assert.ok(autoupdate.basePath === undefined, "The autoupadte.basePath should appear inside of fileMap only.");
@@ -304,19 +281,7 @@ packages.map(function(pkg) {
   }
   packageVows[pname + ": There should not be leading or trailing slash (\"/\") in basePath "] = function(pkg) {
     var json = parse(pkg, true);
-    if (json.npmFileMap) {
-      for (var i in json.npmFileMap) {
-        if (json.npmFileMap[i].basePath) {
-          var basePath = json.npmFileMap[i].basePath;
-          assert.ok(
-             (
-                 (basePath.length == 0) ||
-                 (basePath[0] != '/' && basePath[basePath.length-1] != '/')
-             ),
-             pkgName(pkg) + ": Need to remove leading/trailing slash (\"/\") in basePath in package.json");
-        }
-      }
-    } else if (json.autoupdate) {
+    if (json.autoupdate) {
         if (json.autoupdate.basePath) {
           var basePath = json.autoupdate.basePath;
             assert.ok(
@@ -330,15 +295,10 @@ packages.map(function(pkg) {
   };
   packageVows[pname + ": There must be array datatype files in auto-update config"] = function(pkg) {
     var json = parse(pkg, true);
-    if (json.npmFileMap) {
-      for (var i in json.npmFileMap) {
-        assert.ok(Array.isArray(json.npmFileMap[i].files),
-                  pkgName(pkg) + ": files in auto-update config file map need to be an array");
-      }
-    } else if (json.autoupdate) {
+    if (json.autoupdate) {
         assert.ok(json.autoupdate.files === undefined,
                   pkgName(pkg) + ": files in auto-update config file is deprecated.");
-      }
+    }
   };
 
   packageVows[pname + ": keys with leading underscore should be removed"] = function(pkg) {

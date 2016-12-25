@@ -25,18 +25,21 @@
     "underscore": ">=1.1.7"
   },
   "license": "MIT",
-  "npmName": "postal",
-  "npmFileMap": [
-    {
-      "basePath": "lib",
-      "files": [
-        "postal.js",
-        "postal.min.js",
-        "basic/postal.basic.js",
-        "basic/postal.basic.min.js",
-        "strategies-add-on/postal.strategies.js",
-        "strategies-add-on/postal.strategies.min.js"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "postal",
+    "fileMap": [
+      {
+        "basePath": "lib",
+        "files": [
+          "postal.js",
+          "postal.min.js",
+          "basic/postal.basic.js",
+          "basic/postal.basic.min.js",
+          "strategies-add-on/postal.strategies.js",
+          "strategies-add-on/postal.strategies.min.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

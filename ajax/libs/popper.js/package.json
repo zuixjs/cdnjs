@@ -16,13 +16,16 @@
   "author": "Federico Zivolo <federico.zivolo@gmail.com>",
   "license": "MIT",
   "homepage": "https://popper.js.org/",
-  "npmName": "popper.js",
-  "npmFileMap": [
-    {
-      "basePath": "build",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "popper.js",
+    "fileMap": [
+      {
+        "basePath": "build",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

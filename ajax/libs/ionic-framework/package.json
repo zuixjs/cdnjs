@@ -29,13 +29,16 @@
     "q": "1.4.1"
   },
   "homepage": "http://ionicframework.com/",
-  "npmName": "ionic-framework",
-  "npmFileMap": [
-    {
-      "basePath": "bundles",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "ionic-framework",
+    "fileMap": [
+      {
+        "basePath": "bundles",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

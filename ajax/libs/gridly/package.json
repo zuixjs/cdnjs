@@ -18,14 +18,17 @@
   "dependencies": {
     "uglifycss": "^0.0.18"
   },
-  "npmName": "gridly",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
-  "filename": "gridly-col-widths.min.css"
+  "filename": "gridly-col-widths.min.css",
+  "autoupdate": {
+    "target": "gridly",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

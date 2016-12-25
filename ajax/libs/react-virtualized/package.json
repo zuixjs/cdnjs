@@ -32,13 +32,16 @@
     "dom-helpers": "^2.4.0",
     "raf": "^3.1.0"
   },
-  "npmName": "react-virtualized",
-  "npmFileMap": [
-    {
-      "basePath": "dist/umd",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "react-virtualized",
+    "fileMap": [
+      {
+        "basePath": "dist/umd",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

@@ -19,14 +19,17 @@
     "gl-matrix": "2.1.0"
   },
   "filename": "p2.min.js",
-  "npmName": "p2",
-  "npmFileMap": [
-    {
-      "basePath": "build",
-      "files": [
-        "*"
-      ]
-    }
-  ],
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "p2",
+    "fileMap": [
+      {
+        "basePath": "build",
+        "files": [
+          "*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

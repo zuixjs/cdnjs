@@ -19,13 +19,16 @@
     "SCSS",
     "1000.tech"
   ],
-  "npmName": "godlike.css",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "godlike*.+(css|map)"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "godlike.css",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "godlike*.+(css|map)"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

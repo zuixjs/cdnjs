@@ -14,13 +14,16 @@
   ],
   "author": "Allen Royston <allen.acr@gmail.com> (httphttps://allenroyston.herokuapp.com/#/home/)",
   "license": "MIT",
-  "npmName": "ng-parallax",
-  "npmFileMap": [
-    {
-      "basePath": "src",
-      "files": [
-        "ngParallax*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "ng-parallax",
+    "fileMap": [
+      {
+        "basePath": "src",
+        "files": [
+          "ngParallax*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

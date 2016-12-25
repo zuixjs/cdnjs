@@ -20,13 +20,16 @@
     "angular": "1.x",
     "angular-sanitize": "1.x"
   },
-  "npmName": "ng-embed",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "ng-embed",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

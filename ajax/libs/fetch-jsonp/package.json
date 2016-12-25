@@ -18,13 +18,16 @@
   },
   "author": "Cam Song",
   "license": "MIT",
-  "npmName": "fetch-jsonp",
-  "npmFileMap": [
-    {
-      "basePath": "build",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "fetch-jsonp",
+    "fileMap": [
+      {
+        "basePath": "build",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

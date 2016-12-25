@@ -1,6 +1,5 @@
 {
   "name": "mithril",
-  "npmName": "mithril",
   "version": "0.2.5",
   "filename": "mithril.min.js",
   "description": "Mithril.js beta build - use this to help us test the releases before they are released",
@@ -15,14 +14,18 @@
     "type": "git",
     "url": "https://github.com/lhorie/mithril.js.git"
   },
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "mithril.js",
-        "mithril.min.js",
-        "mithril.min.js.map"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "mithril",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "mithril.js",
+          "mithril.min.js",
+          "mithril.min.js.map"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

@@ -21,13 +21,16 @@
     "url": "git+https://github.com/jonsuh/hamburgers.git"
   },
   "version": "0.7.0",
-  "npmName": "hamburgers",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/hamburgers*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "hamburgers",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/hamburgers*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

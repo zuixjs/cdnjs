@@ -23,13 +23,16 @@
     "photo",
     "stretch"
   ],
-  "npmName": "jquery.backstretch",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "jquery.backstretch*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "jquery.backstretch",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "jquery.backstretch*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

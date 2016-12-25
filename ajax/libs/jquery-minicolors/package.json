@@ -17,13 +17,16 @@
     "type": "git",
     "url": "https://github.com/claviska/jquery-minicolors.git"
   },
-  "npmName": "@claviska/jquery-minicolors",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "jquery.minicolors*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "@claviska/jquery-minicolors",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "jquery.minicolors*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

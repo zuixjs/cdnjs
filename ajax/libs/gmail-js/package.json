@@ -19,13 +19,16 @@
   },
   "author": "Kartik Talwar",
   "license": "MIT",
-  "npmName": "gmail-js",
-  "npmFileMap": [
-    {
-      "basePath": "src",
-      "files": [
-        "gmail*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "gmail-js",
+    "fileMap": [
+      {
+        "basePath": "src",
+        "files": [
+          "gmail*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

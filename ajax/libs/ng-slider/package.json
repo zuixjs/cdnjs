@@ -11,15 +11,6 @@
     "type": "git",
     "url": "https://github.com/darul75/angular-awesome-slider.git"
   },
-  "npmName": "ng-slider",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
   "keywords": [
     "angular",
     "slider",
@@ -27,5 +18,17 @@
     "ui"
   ],
   "dependencies": {},
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "ng-slider",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

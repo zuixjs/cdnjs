@@ -1,15 +1,5 @@
 {
   "author": "CrossEye <scott@sauyet.com> (scott.sauyet.com)",
-  "npmName": "ramda",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "ramda.js",
-        "ramda.min.js"
-      ]
-    }
-  ],
   "keywords": [
     "functional"
   ],
@@ -23,5 +13,18 @@
     "url": "git://github.com/ramda/ramda.git"
   },
   "filename": "ramda.min.js",
-  "dependencies": {}
+  "dependencies": {},
+  "autoupdate": {
+    "target": "ramda",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "ramda.js",
+          "ramda.min.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

@@ -1,14 +1,5 @@
 {
   "name": "jsfile",
-  "npmName": "jsfile",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
   "filename": "jsfile.min.js",
   "version": "0.1.17",
   "description": "JavaScript library for working with files in browser",
@@ -30,5 +21,17 @@
   "license": "MIT",
   "dependencies": {
     "jstask": "^1.0.2"
+  },
+  "autoupdate": {
+    "target": "jsfile",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
   }
 }

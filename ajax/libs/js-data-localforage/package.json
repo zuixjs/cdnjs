@@ -25,15 +25,18 @@
   "dependencies": {
     "mout": "0.11.0"
   },
-  "npmName": "js-data-localforage",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "*"
-      ]
-    }
-  ],
   "filename": "js-data-localforage.min.js",
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "js-data-localforage",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

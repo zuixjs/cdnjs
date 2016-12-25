@@ -16,18 +16,21 @@
   "dependencies": {
     "jquery-untouched": ">=1.7"
   },
-  "npmName": "jinplace",
-  "npmFileMap": [
-    {
-      "basePath": "js",
-      "files": [
-        "*.js"
-      ]
-    }
-  ],
   "license": "MIT",
   "repository": {
     "type": "hg",
     "url": "https://bitbucket.org/itinken/jinplace"
+  },
+  "autoupdate": {
+    "target": "jinplace",
+    "fileMap": [
+      {
+        "basePath": "js",
+        "files": [
+          "*.js"
+        ]
+      }
+    ],
+    "source": "npm"
   }
 }

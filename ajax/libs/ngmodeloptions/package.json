@@ -15,13 +15,16 @@
   ],
   "author": "Fergal Doyle",
   "license": "MIT",
-  "npmName": "ngmodeloptions",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "ngModelOptions*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "ngmodeloptions",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "ngModelOptions*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

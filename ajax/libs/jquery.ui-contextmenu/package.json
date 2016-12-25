@@ -30,15 +30,18 @@
   "dependencies": {
     "jquery": ">=1.7"
   },
-  "npmName": "ui-contextmenu",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "jquery.ui-contextmenu.min.js",
-        "jquery.ui-contextmenu.min.js.map"
-      ]
-    }
-  ],
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "ui-contextmenu",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "jquery.ui-contextmenu.min.js",
+          "jquery.ui-contextmenu.min.js.map"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

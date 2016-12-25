@@ -18,14 +18,17 @@
     "ecosystem:jquery"
   ],
   "filename": "jquery.sceditor.min.js",
-  "npmName": "sceditor",
-  "npmFileMap": [
-    {
-      "basePath": "minified",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
-  "version": "1.5.2"
+  "version": "1.5.2",
+  "autoupdate": {
+    "target": "sceditor",
+    "fileMap": [
+      {
+        "basePath": "minified",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

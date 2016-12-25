@@ -10,20 +10,23 @@
     "type": "git",
     "url": "https://github.com/2CodersTeam/jquery.photocols.git"
   },
-  "npmName": "jquery.photocols",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "jquery.photocols.min.js"
-      ]
-    }
-  ],
   "dependencies": {
     "jquery": ">=1.7"
   },
   "license": "MIT",
   "keywords": [
     "jquery.photocols"
-  ]
+  ],
+  "autoupdate": {
+    "target": "jquery.photocols",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "jquery.photocols.min.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

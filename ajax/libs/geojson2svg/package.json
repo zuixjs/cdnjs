@@ -17,14 +17,17 @@
     "multigeojson": "~0.0.1",
     "xtend": "~4.0.0"
   },
-  "npmName": "geojson2svg",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "*"
-      ]
-    }
-  ],
-  "filename": "geojson2svg.min.js"
+  "filename": "geojson2svg.min.js",
+  "autoupdate": {
+    "target": "geojson2svg",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

@@ -20,13 +20,16 @@
     "msweeney <matt.sweeney@yahoo.com>",
     "jamesalley <manalagi001@yahoo.com>"
   ],
-  "npmName": "purecss",
-  "npmFileMap": [
-    {
-      "basePath": "build",
-      "files": [
-        "**/!(*.md)"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "purecss",
+    "fileMap": [
+      {
+        "basePath": "build",
+        "files": [
+          "**/!(*.md)"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

@@ -18,14 +18,17 @@
     "MPL-1.1"
   ],
   "author": "CKSource (http://cksource.com/)",
-  "npmName": "ckeditor",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "+(adapters|skins|plugins|lang)/**/*.+(js|css|png|gif|map|jpg)",
-        "+(build-config|ckeditor|config|contents|styles).+(js|css|map)"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "ckeditor",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "+(adapters|skins|plugins|lang)/**/*.+(js|css|png|gif|map|jpg)",
+          "+(build-config|ckeditor|config|contents|styles).+(js|css|map)"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

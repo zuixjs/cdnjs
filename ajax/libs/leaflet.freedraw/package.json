@@ -20,13 +20,16 @@
   "dependencies": {
     "express": "^4.9.0"
   },
-  "npmName": "leaflet.freedraw",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "leaflet.freedraw",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

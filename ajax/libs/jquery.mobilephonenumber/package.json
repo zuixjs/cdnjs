@@ -15,13 +15,16 @@
   "dependencies": {
     "jquery": "^1.5"
   },
-  "npmName": "jquery.mobilephonenumber",
-  "npmFileMap": [
-    {
-      "basePath": "lib",
-      "files": [
-        "jquery.mobilePhoneNumber*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "jquery.mobilephonenumber",
+    "fileMap": [
+      {
+        "basePath": "lib",
+        "files": [
+          "jquery.mobilePhoneNumber*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

@@ -24,13 +24,16 @@
     "type": "git",
     "url": "https://github.com/appbaseio/appbase-js.git"
   },
-  "npmName": "appbase-js",
-  "npmFileMap": [
-    {
-      "basePath": "browser",
-      "files": [
-        "appbase*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "appbase-js",
+    "fileMap": [
+      {
+        "basePath": "browser",
+        "files": [
+          "appbase*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

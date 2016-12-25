@@ -99,13 +99,16 @@
     "turf-variance": "1.0.1",
     "turf-within": "^1.0.1"
   },
-  "npmName": "turf",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "**/turf*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "turf",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "**/turf*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

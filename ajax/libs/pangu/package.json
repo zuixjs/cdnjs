@@ -27,13 +27,16 @@
     "type": "git",
     "url": "git://github.com/vinta/pangu.js.git"
   },
-  "npmName": "pangu",
-  "npmFileMap": [
-    {
-      "basePath": "dist/browser",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "pangu",
+    "fileMap": [
+      {
+        "basePath": "dist/browser",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

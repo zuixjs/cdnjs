@@ -1,14 +1,5 @@
 {
   "name": "postscribe",
-  "npmName": "postscribe",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
   "description": "Asynchronously write javascript, even with document.write.",
   "version": "2.0.8",
   "keywords": [
@@ -29,5 +20,17 @@
   },
   "dependencies": {},
   "filename": "postscribe.min.js",
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "postscribe",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

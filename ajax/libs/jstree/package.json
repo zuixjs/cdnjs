@@ -18,17 +18,20 @@
   "dependencies": {
     "jquery": ">=1.9.1"
   },
-  "npmName": "jstree",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "jstree.min.js",
-        "themes/**/*.png",
-        "themes/**/*.gif",
-        "themes/**/*.min.css"
-      ]
-    }
-  ],
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "jstree",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "jstree.min.js",
+          "themes/**/*.png",
+          "themes/**/*.gif",
+          "themes/**/*.min.css"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

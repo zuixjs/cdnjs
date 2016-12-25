@@ -8,16 +8,6 @@
     "vega",
     "vega.js"
   ],
-  "npmName": "vega",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "vega.js",
-        "vega.min.js"
-      ]
-    }
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/vega/vega.git"
@@ -26,5 +16,18 @@
   "author": {
     "name": "Arvind Satyanarayan",
     "url": "http://arvindsatya.com"
+  },
+  "autoupdate": {
+    "target": "vega",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "vega.js",
+          "vega.min.js"
+        ]
+      }
+    ],
+    "source": "npm"
   }
 }

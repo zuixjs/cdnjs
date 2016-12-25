@@ -16,13 +16,16 @@
     "email": "rzajac@gmail.com"
   },
   "license": "MIT",
-  "npmName": "angularjs-slider",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "angularjs-slider",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

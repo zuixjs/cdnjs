@@ -4,15 +4,6 @@
   "description": "simple css to make select2 widgets fit in with bootstrap",
   "style": "select2-bootstrap.css",
   "filename": "select2-bootstrap.min.css",
-  "npmName": "select2-bootstrap-css",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "*.css"
-      ]
-    }
-  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/t0m/select2-bootstrap-css.git"
@@ -23,5 +14,17 @@
     "css"
   ],
   "author": "Tom Terrace",
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "select2-bootstrap-css",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "*.css"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

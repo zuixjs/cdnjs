@@ -16,13 +16,16 @@
     "GraphViz",
     "viz"
   ],
-  "npmName": "viz.js",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "viz*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "viz.js",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "viz*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

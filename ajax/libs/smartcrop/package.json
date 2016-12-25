@@ -16,13 +16,16 @@
     "canvas",
     "smart"
   ],
-  "npmName": "smartcrop",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "*smartcrop*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "smartcrop",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "*smartcrop*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

@@ -60,14 +60,17 @@
   "volo": {
     "url": "//cdnjs.cloudflare.com/ajax/libs/speakingurl/{version}/speakingurl.min.js"
   },
-  "npmName": "speakingurl",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "speakingurl.min.js"
-      ]
-    }
-  ],
-  "license": "BSD-3-Clause"
+  "license": "BSD-3-Clause",
+  "autoupdate": {
+    "target": "speakingurl",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "speakingurl.min.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

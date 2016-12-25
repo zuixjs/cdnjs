@@ -20,13 +20,16 @@
     "angular": "^1.3.14",
     "sweetalert": "^0.4.2"
   },
-  "npmName": "angular-sweetalert",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "SweetAlert*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "angular-sweetalert",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "SweetAlert*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

@@ -2,7 +2,53 @@ var assert = require("assert");
 var path = require("path");
 var vows = require("vows-si");
 var _ = require('lodash');
-var au = require('./../auto-update');
+
+var reEscape = function(s) {
+  return s.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+};
+
+var au = {
+    invalidNpmName: function (name) {
+      return (name.indexOf("..") !== -1); // doesnt contain
+    },
+    // is path within the lib dir? if not, they shouldnt be writing/reading there
+    isAllowedPathFn: function(libPath) {
+      libPath = path.normalize(libPath || "/");
+      return function() {
+        var paths = arguments.length >= 1 ? [].slice.call(arguments, 0) : [];
+        var re = new RegExp("^" + reEscape(libPath));
+        return _.every(paths, function(p) {
+          p = path.normalize(p);
+          return p.match(re);
+        });
+      };
+    },
+    /**
+     * Check if an npmFileMap object contains any path which are not normalized, and thus could allow access to parent dirs
+     * @param pkg
+     * @returns {*}
+     */
+    isValidFileMap: function (pkg) {
+      var isValidPath = function(p) {
+        if (p !== null) { // don't allow parent dir access, or tricky paths
+          p = p.replace(/\/+/g, '/'); // don't penalize for consequtive path seperators
+          return p === path.normalize(p);
+        }
+        return false;
+      };
+
+      if (pkg && pkg.autoupdate && pkg.autoupdate.source === "npm" && pkg.autoupdate.fileMap) {
+        return _.every(pkg.autoupdate.fileMap, function(fileSpec) {
+          if (isValidPath(fileSpec.basePath || "/")) {
+            return _.every(fileSpec.files, isValidPath);
+          }
+          return false;
+        });
+      }
+      return false;
+    }
+};
+
 
 var suite = vows.describe('NPM Auto Update - stand alone methods');
 suite.addBatch({

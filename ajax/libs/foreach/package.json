@@ -16,13 +16,16 @@
     "Array#forEach",
     "each"
   ],
-  "npmName": "foreach",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "index*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "foreach",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "index*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

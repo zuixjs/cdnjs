@@ -22,13 +22,16 @@
   },
   "homepage": "http://stuartmemo.com/qwerty-hancock/",
   "license": "MIT",
-  "npmName": "qwerty-hancock",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "qwerty-hancock",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

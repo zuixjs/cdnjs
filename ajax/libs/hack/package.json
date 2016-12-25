@@ -12,18 +12,21 @@
     "bootstrap"
   ],
   "homepage": "http://hackcss.com",
-  "npmName": "hack",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
   "version": "0.7.7",
   "repository": {
     "type": "git",
     "url": "https://github.com/egoist/hack.git"
+  },
+  "autoupdate": {
+    "target": "hack",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
   }
 }

@@ -13,13 +13,16 @@
     "console",
     "polyfill"
   ],
-  "npmName": "console-polyfill",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "index*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "console-polyfill",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "index*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

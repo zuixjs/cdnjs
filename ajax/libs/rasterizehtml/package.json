@@ -26,13 +26,16 @@
     "xmlserializer": "~0.3.1",
     "sane-domparser-error": "~0.2.0"
   },
-  "npmName": "rasterizehtml",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "rasterizehtml",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

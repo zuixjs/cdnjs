@@ -27,18 +27,21 @@
     "crossfilter": "1.x",
     "d3": "3.x"
   },
-  "npmName": "dc",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "dc.css",
-        "dc.min.css",
-        "dc.min.js",
-        "dc.min.js.map",
-        "dc.js",
-        "dc.js.map"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "dc",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "dc.css",
+          "dc.min.css",
+          "dc.min.js",
+          "dc.min.js.map",
+          "dc.js",
+          "dc.js.map"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

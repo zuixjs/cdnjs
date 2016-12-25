@@ -16,13 +16,16 @@
   ],
   "author": "Yaffle (https://github.com/Yaffle)",
   "license": "MIT",
-  "npmName": "event-source-polyfill",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "eventsource*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "event-source-polyfill",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "eventsource*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

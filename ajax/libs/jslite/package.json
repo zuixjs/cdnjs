@@ -21,13 +21,16 @@
     "cli-color": "^1.0.0",
     "mocha-phantomjs": "^4.0.1"
   },
-  "npmName": "jslite",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "jslite",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

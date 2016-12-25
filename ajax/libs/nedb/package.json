@@ -24,13 +24,16 @@
     "underscore": "~1.4.4"
   },
   "license": "MIT",
-  "npmName": "nedb",
-  "npmFileMap": [
-    {
-      "basePath": "browser-version/out",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "nedb",
+    "fileMap": [
+      {
+        "basePath": "browser-version/out",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

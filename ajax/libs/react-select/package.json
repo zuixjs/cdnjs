@@ -24,13 +24,16 @@
     "ui"
   ],
   "homepage": "https://jedwatson.github.io/react-select/",
-  "npmName": "react-select",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "react-select",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

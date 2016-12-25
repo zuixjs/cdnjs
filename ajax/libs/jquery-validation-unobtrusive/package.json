@@ -20,13 +20,16 @@
     "jquery": ">=1.8",
     "jquery-validation": ">=1.8"
   },
-  "npmName": "jquery-validation-unobtrusive",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "jquery.validate.unobtrusive*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "jquery-validation-unobtrusive",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "jquery.validate.unobtrusive*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

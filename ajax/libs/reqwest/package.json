@@ -18,15 +18,18 @@
     "type": "git",
     "url": "https://github.com/ded/reqwest.git"
   },
-  "npmName": "reqwest",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "reqwest.js",
-        "reqwest.min.js"
-      ]
-    }
-  ],
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "reqwest",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "reqwest.js",
+          "reqwest.min.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

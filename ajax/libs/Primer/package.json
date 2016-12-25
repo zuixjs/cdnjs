@@ -16,13 +16,16 @@
     "github",
     "primercss"
   ],
-  "npmName": "primer-css",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "css/primer*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "primer-css",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "css/primer*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

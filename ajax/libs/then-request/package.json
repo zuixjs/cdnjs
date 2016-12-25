@@ -12,14 +12,17 @@
     "type": "git",
     "url": "https://github.com/then/then-request.git"
   },
-  "npmName": "then-request",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "*"
-      ]
-    }
-  ],
-  "namespace": "request"
+  "namespace": "request",
+  "autoupdate": {
+    "target": "then-request",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

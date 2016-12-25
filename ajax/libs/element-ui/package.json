@@ -15,15 +15,18 @@
     "components"
   ],
   "license": "MIT",
-  "npmName": "element-ui",
-  "npmFileMap": [
-    {
-      "basePath": "lib",
-      "files": [
-        "index.js",
-        "theme-default/index.css",
-        "theme-default/fonts/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "element-ui",
+    "fileMap": [
+      {
+        "basePath": "lib",
+        "files": [
+          "index.js",
+          "theme-default/index.css",
+          "theme-default/fonts/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

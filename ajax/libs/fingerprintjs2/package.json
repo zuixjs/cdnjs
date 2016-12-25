@@ -17,13 +17,16 @@
   "author": "Valentin Vasilyev",
   "license": "MIT",
   "homepage": "https://valve.github.io/fingerprintjs2/",
-  "npmName": "fingerprintjs2",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "fingerprintjs2",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

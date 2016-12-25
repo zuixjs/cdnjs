@@ -23,13 +23,16 @@
     "angular": ">=1.0.6",
     "qrcode-generator": "git://github.com/monospaced/bower-qrcode-generator.git#v0.1.0"
   },
-  "npmName": "angular-qrcode",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "angular-qrcode*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "angular-qrcode",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "angular-qrcode*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

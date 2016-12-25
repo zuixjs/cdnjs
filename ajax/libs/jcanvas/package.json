@@ -21,14 +21,17 @@
     "animation"
   ],
   "license": "MIT",
-  "npmName": "jcanvas",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "jcanvas*.js",
-        "plugins/jcanvas-*.js"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "jcanvas",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "jcanvas*.js",
+          "plugins/jcanvas-*.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

@@ -20,14 +20,17 @@
     "Semantic Web",
     "jsonld"
   ],
-  "npmName": "jsonld",
-  "npmFileMap": [
-    {
-      "basePath": "js",
-      "files": [
-        "jsonld.js"
-      ]
-    }
-  ],
-  "license": "BSD-3-Clause"
+  "license": "BSD-3-Clause",
+  "autoupdate": {
+    "target": "jsonld",
+    "fileMap": [
+      {
+        "basePath": "js",
+        "files": [
+          "jsonld.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

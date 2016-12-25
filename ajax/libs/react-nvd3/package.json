@@ -27,13 +27,16 @@
     "react": "^0.14.3",
     "react-dom": "^0.14.3"
   },
-  "npmName": "react-nvd3",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "react-nvd3",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

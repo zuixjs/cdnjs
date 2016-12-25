@@ -24,13 +24,16 @@
     "proj4": "~2.0.0"
   },
   "homepage": "http://kartena.github.io/Proj4Leaflet/",
-  "npmName": "proj4leaflet",
-  "npmFileMap": [
-    {
-      "basePath": "src",
-      "files": [
-        "proj4leaflet*.js"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "proj4leaflet",
+    "fileMap": [
+      {
+        "basePath": "src",
+        "files": [
+          "proj4leaflet*.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

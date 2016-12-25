@@ -36,15 +36,18 @@
     "es6-promise": "^2.0.1",
     "mout": "0.11.0"
   },
-  "npmName": "js-data",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/!(*.ts)"
-      ]
-    }
-  ],
   "filename": "js-data.min.js",
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "js-data",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/!(*.ts)"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

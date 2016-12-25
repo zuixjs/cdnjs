@@ -22,13 +22,16 @@
     "uglify-js": "~1.2"
   },
   "license": "MIT",
-  "npmName": "juicer",
-  "npmFileMap": [
-    {
-      "basePath": "build",
-      "files": [
-        "!(expressjs-wrapper)"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "juicer",
+    "fileMap": [
+      {
+        "basePath": "build",
+        "files": [
+          "!(expressjs-wrapper)"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

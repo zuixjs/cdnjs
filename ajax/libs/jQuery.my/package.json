@@ -27,13 +27,16 @@
     "sugar": "~1.4"
   },
   "license": "MIT",
-  "npmName": "jquerymy",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "jquerymy*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "jquerymy",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "jquerymy*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

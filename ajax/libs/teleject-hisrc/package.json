@@ -24,13 +24,16 @@
     "type": "git",
     "url": "git@github.com:teleject/hisrc.git"
   },
-  "npmName": "hisrc",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "hisrc*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "hisrc",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "hisrc*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

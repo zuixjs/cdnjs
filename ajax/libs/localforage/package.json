@@ -1,14 +1,5 @@
 {
   "name": "localforage",
-  "npmName": "localforage",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "*.js"
-      ]
-    }
-  ],
   "author": "Mozilla",
   "description": "Offline storage, improved.",
   "keywords": [
@@ -23,5 +14,17 @@
     "url": "git://github.com/mozilla/localForage.git"
   },
   "filename": "localforage.min.js",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "autoupdate": {
+    "target": "localforage",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "*.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

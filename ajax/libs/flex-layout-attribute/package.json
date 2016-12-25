@@ -21,13 +21,16 @@
     "css",
     "fla"
   ],
-  "npmName": "flex-layout-attribute",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "css/**/*flex-layout-attribute*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "flex-layout-attribute",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "css/**/*flex-layout-attribute*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

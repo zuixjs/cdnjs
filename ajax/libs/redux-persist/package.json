@@ -21,14 +21,17 @@
     "lodash": "^4.11.1",
     "lodash-es": "^4.16.0"
   },
-  "npmName": "redux-persist",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
-  "filename": "redux-persist.min.js"
+  "filename": "redux-persist.min.js",
+  "autoupdate": {
+    "target": "redux-persist",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

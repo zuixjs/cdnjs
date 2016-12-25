@@ -13,19 +13,22 @@
   "dependencies": {
     "clipboard": "1.5.12"
   },
-  "npmName": "embed-box",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
   "keywords": [
     "UI",
     "embed",
     "CMD",
     "plugin"
-  ]
+  ],
+  "autoupdate": {
+    "target": "embed-box",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

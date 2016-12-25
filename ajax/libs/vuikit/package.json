@@ -23,14 +23,17 @@
     "moment": "^2.14.1",
     "vue": "^2.0.0"
   },
-  "npmName": "vuikit",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
-  "filename": "vuikit.js"
+  "filename": "vuikit.js",
+  "autoupdate": {
+    "target": "vuikit",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

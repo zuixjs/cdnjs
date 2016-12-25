@@ -17,13 +17,16 @@
     "localstorage",
     "redis"
   ],
-  "npmName": "lockr",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "lockr*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "lockr",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "lockr*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

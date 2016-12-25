@@ -1,15 +1,5 @@
 {
   "name": "angular-wizard",
-  "npmName": "angular-wizard",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "*.css",
-        "*.js"
-      ]
-    }
-  ],
   "description": "Easy to use Wizard library for AngularJS",
   "version": "0.10.0",
   "filename": "angular-wizard.min.js",
@@ -27,5 +17,18 @@
     "steps"
   ],
   "dependencies": {},
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "angular-wizard",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "*.css",
+          "*.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

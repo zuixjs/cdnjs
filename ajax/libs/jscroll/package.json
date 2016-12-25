@@ -27,13 +27,16 @@
   "dependencies": {
     "jquery": "^1.7.4"
   },
-  "npmName": "jscroll",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "*jscroll*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "jscroll",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "*jscroll*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

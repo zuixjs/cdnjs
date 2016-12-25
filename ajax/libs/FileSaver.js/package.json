@@ -12,13 +12,16 @@
     "url": "https://github.com/eligrey/FileSaver.js"
   },
   "license": "MIT",
-  "npmName": "file-saver",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "FileSaver*.js"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "file-saver",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "FileSaver*.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

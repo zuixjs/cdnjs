@@ -58,13 +58,16 @@
     "web-development",
     "webdev"
   ],
-  "npmName": "infamous",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "infamous.js"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "infamous",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "infamous.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

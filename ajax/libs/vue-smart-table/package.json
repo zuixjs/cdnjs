@@ -21,13 +21,16 @@
     "camel-case": "^3.0.0",
     "pascal-case": "^2.0.0"
   },
-  "npmName": "vue-smart-table",
-  "npmFileMap": [
-    {
-      "basePath": "dist/static",
-      "files": [
-        "**/*vue*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "vue-smart-table",
+    "fileMap": [
+      {
+        "basePath": "dist/static",
+        "files": [
+          "**/*vue*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

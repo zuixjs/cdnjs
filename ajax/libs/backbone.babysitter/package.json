@@ -26,15 +26,18 @@
     "backbone": ">=0.9.9 <=1.1.2",
     "underscore": ">=1.4.0 <=1.6.0"
   },
-  "npmName": "backbone.babysitter",
-  "npmFileMap": [
-    {
-      "basePath": "lib",
-      "files": [
-        "*.js",
-        "*.map"
-      ]
-    }
-  ],
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "backbone.babysitter",
+    "fileMap": [
+      {
+        "basePath": "lib",
+        "files": [
+          "*.js",
+          "*.map"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

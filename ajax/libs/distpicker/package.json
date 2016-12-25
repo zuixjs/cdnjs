@@ -1,15 +1,6 @@
 {
   "name": "distpicker",
   "filename": "distpicker.min.js",
-  "npmName": "distpicker",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
   "description": "A simple jQuery plugin for picking provinces, cities and districts of China.",
   "version": "1.0.4",
   "license": "MIT",
@@ -51,5 +42,17 @@
   ],
   "dependencies": {
     "jquery": ">= 1.9.1"
+  },
+  "autoupdate": {
+    "target": "distpicker",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
   }
 }

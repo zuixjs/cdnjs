@@ -23,14 +23,17 @@
     "type": "git",
     "url": "git://github.com/soundblogs/soundplayer-widget.git"
   },
-  "npmName": "soundplayer-widget",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
-  "filename": "soundplayer-widget.min.js"
+  "filename": "soundplayer-widget.min.js",
+  "autoupdate": {
+    "target": "soundplayer-widget",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

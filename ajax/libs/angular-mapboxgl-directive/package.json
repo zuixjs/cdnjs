@@ -22,13 +22,16 @@
     "angular": "1.x",
     "mapbox-gl": "^0.23.0"
   },
-  "npmName": "angular-mapboxgl-directive",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "angular-mapboxgl-directive",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

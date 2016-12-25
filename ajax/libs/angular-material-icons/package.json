@@ -25,13 +25,16 @@
     "url": "https://github.com/klarsys/angular-material-icons.git"
   },
   "filename": "angular-material-icons.min.js",
-  "npmName": "angular-material-icons",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "angular-material-icons.min.js"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "angular-material-icons",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "angular-material-icons.min.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

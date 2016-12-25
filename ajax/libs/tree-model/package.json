@@ -21,13 +21,16 @@
     "mergesort": "0.0.1",
     "find-insert-index": "0.0.1"
   },
-  "npmName": "tree-model",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "tree-model",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

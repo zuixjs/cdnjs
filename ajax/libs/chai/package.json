@@ -1,15 +1,6 @@
 {
   "author": "Jake Luer <jake@alogicalparadox.com>",
   "name": "chai",
-  "npmName": "chai",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "chai*.js"
-      ]
-    }
-  ],
   "filename": "chai.min.js",
   "description": "BDD/TDD assertion library for node.js and the browser. Test framework agnostic.",
   "keywords": [
@@ -29,5 +20,17 @@
   "dependencies": {
     "assertion-error": "1.0.0",
     "deep-eql": "0.1.3"
+  },
+  "autoupdate": {
+    "target": "chai",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "chai*.js"
+        ]
+      }
+    ],
+    "source": "npm"
   }
 }

@@ -17,13 +17,16 @@
   },
   "author": "Alex Ewerlöf",
   "license": "MIT",
-  "npmName": "micromustache",
-  "npmFileMap": [
-    {
-      "basePath": "browser",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "micromustache",
+    "fileMap": [
+      {
+        "basePath": "browser",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

@@ -24,13 +24,16 @@
     "react": "^0.14.2",
     "react-dom": "^0.14.2"
   },
-  "npmName": "react-semantify",
-  "npmFileMap": [
-    {
-      "basePath": "dst",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "react-semantify",
+    "fileMap": [
+      {
+        "basePath": "dst",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

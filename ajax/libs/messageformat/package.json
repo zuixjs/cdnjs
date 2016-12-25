@@ -30,13 +30,16 @@
     "nopt": "~3.0.6",
     "watchr": "~2.4.13"
   },
-  "npmName": "messageformat",
-  "npmFileMap": [
-    {
-      "basePath": "lib",
-      "files": [
-        "messageformat.+(min.js|js)"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "messageformat",
+    "fileMap": [
+      {
+        "basePath": "lib",
+        "files": [
+          "messageformat.+(min.js|js)"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

@@ -9,17 +9,20 @@
   "author": "Google",
   "license": "Apache License 2.0",
   "filename": "shaka-player.compiled.js",
-  "npmName": "shaka-player",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "shaka-player*"
-      ]
-    }
-  ],
   "keywords": [
     "shaka",
     "player"
-  ]
+  ],
+  "autoupdate": {
+    "target": "shaka-player",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "shaka-player*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

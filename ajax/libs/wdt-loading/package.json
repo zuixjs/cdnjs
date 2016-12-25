@@ -22,13 +22,16 @@
     "type": "git",
     "url": "git://github.com/needim/wdtLoading.git"
   },
-  "npmName": "wdt-loading",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "wdtLoading*.+(js|css|map)"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "wdt-loading",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "wdtLoading*.+(js|css|map)"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

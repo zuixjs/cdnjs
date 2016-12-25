@@ -21,13 +21,16 @@
     "dynamics.js": "0.0.9",
     "invariant": "^2.2.0"
   },
-  "npmName": "react-ios-switch",
-  "npmFileMap": [
-    {
-      "basePath": "build",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "react-ios-switch",
+    "fileMap": [
+      {
+        "basePath": "build",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

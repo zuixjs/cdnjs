@@ -24,16 +24,19 @@
   "dependencies": {
     "jquery": ">=1.4"
   },
-  "npmName": "jgrowl",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "jquery.jgrowl*css",
-        "jquery.jgrowl*js",
-        "jquery.jgrowl*map"
-      ]
-    }
-  ],
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "jgrowl",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "jquery.jgrowl*css",
+          "jquery.jgrowl*js",
+          "jquery.jgrowl*map"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

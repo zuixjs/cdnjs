@@ -13,16 +13,19 @@
   "author": "Aerolab",
   "license": "MIT",
   "homepage": "https://aerolab.github.io/midnight.js/",
-  "npmName": "midnight.js",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
   "keywords": [
     "midnight.js"
-  ]
+  ],
+  "autoupdate": {
+    "target": "midnight.js",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

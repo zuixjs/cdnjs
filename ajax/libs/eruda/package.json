@@ -14,13 +14,16 @@
   ],
   "author": "redhoodsu",
   "license": "MIT",
-  "npmName": "eruda",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "eruda*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "eruda",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "eruda*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

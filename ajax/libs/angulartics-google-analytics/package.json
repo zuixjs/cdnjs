@@ -19,13 +19,16 @@
   "dependencies": {
     "angulartics": "~0.20"
   },
-  "npmName": "angulartics-google-analytics",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "angulartics-google-analytics",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

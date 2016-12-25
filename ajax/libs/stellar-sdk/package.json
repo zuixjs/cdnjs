@@ -31,13 +31,16 @@
     "superagent": "^1.1.0",
     "toml": "^2.3.0"
   },
-  "npmName": "stellar-sdk",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "stellar-sdk",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

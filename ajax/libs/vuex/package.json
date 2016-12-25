@@ -16,13 +16,16 @@
     "Architecture",
     "Flux"
   ],
-  "npmName": "vuex",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*vuex*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "vuex",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*vuex*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

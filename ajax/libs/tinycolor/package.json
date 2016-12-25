@@ -16,14 +16,17 @@
     "url": "https://github.com/bgrins/TinyColor"
   },
   "dependencies": {},
-  "npmName": "tinycolor2",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "tinycolor.js"
-      ]
-    }
-  ],
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "tinycolor2",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "tinycolor.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

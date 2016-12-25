@@ -21,13 +21,16 @@
   "author": "Gregory Pratt",
   "license": "MIT",
   "homepage": "http://blazecss.com",
-  "npmName": "blaze",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "blaze",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

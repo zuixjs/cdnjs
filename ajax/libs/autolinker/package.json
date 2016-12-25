@@ -17,13 +17,16 @@
   ],
   "author": "Gregory Jacobs <greg@greg-jacobs.com>",
   "license": "MIT",
-  "npmName": "autolinker",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "autolinker",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

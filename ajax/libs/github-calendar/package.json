@@ -17,13 +17,16 @@
   "dependencies": {
     "github-calendar-parser": "^1.0.0"
   },
-  "npmName": "github-calendar",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "github-calendar",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

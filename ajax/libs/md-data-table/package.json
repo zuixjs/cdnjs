@@ -24,13 +24,16 @@
     "lodash": "~3.10.1",
     "phantomjs": "^2.1.7"
   },
-  "npmName": "md-data-table",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "md-data-table",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

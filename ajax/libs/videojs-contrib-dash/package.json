@@ -22,13 +22,16 @@
     "global": "^4.3.0",
     "video.js": "^5.0.0"
   },
-  "npmName": "videojs-contrib-dash",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "videojs-contrib-dash",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

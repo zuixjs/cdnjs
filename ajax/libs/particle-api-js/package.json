@@ -25,13 +25,16 @@
     "superagent-prefix": "0.0.2"
   },
   "homepage": "https://docs.particle.io/",
-  "npmName": "particle-api-js",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "particle-api-js",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

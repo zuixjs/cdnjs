@@ -16,13 +16,16 @@
   "dependencies": {
     "re-tree": "~0.0.2"
   },
-  "npmName": "ng-device-detector",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "ng-device-detector*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "ng-device-detector",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "ng-device-detector*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

@@ -14,18 +14,21 @@
     "jquery": ">=1.11.0",
     "datatables": ">=1.10.0"
   },
-  "npmName": "angular-datatables",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/l-lin/angular-datatables.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "angular-datatables",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

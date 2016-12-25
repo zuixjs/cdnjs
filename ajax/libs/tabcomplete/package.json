@@ -7,16 +7,6 @@
     "type": "git",
     "url": "https://github.com/erming/tabcomplete"
   },
-  "npmName": "tabcomplete",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "tabcomplete.js",
-        "tabcomplete.min.js"
-      ]
-    }
-  ],
   "keywords": [
     "tab",
     "complete",
@@ -29,5 +19,18 @@
     "jquery": ">=1.9"
   },
   "author": "Mattias Erming",
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "tabcomplete",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "tabcomplete.js",
+          "tabcomplete.min.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

@@ -21,16 +21,19 @@
     "to-factory": "^1.0.0"
   },
   "license": "MIT",
-  "npmName": "instantsearch.js",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
   "keywords": [
     "instantsearch.js"
-  ]
+  ],
+  "autoupdate": {
+    "target": "instantsearch.js",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

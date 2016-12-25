@@ -14,13 +14,16 @@
     "v-model",
     "tinymce"
   ],
-  "npmName": "vue-form",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "vue-form*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "vue-form",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "vue-form*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

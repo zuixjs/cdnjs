@@ -22,13 +22,16 @@
     "Angular2",
     "polyfill"
   ],
-  "npmName": "angular2-polyfill",
-  "npmFileMap": [
-    {
-      "basePath": "bundles",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "angular2-polyfill",
+    "fileMap": [
+      {
+        "basePath": "bundles",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

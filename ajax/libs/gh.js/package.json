@@ -18,14 +18,17 @@
     "ul": "^2.1.0",
     "lien": "^0.0.11"
   },
-  "npmName": "gh.js",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
-  "filename": "gh.min.js"
+  "filename": "gh.min.js",
+  "autoupdate": {
+    "target": "gh.js",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

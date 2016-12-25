@@ -19,13 +19,16 @@
     "fbjs": "^0.8.0-alpha.1",
     "immutable": "^3.7.4"
   },
-  "npmName": "draft-js",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "draft-js",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

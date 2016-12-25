@@ -20,15 +20,18 @@
   "dependencies": {
     "d3": "2.9.1"
   },
-  "npmName": "cubism",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "cubism.v1.js",
-        "cubism.v1.min.js"
-      ]
-    }
-  ],
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "autoupdate": {
+    "target": "cubism",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "cubism.v1.js",
+          "cubism.v1.min.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

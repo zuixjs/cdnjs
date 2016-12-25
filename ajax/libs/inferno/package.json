@@ -27,13 +27,16 @@
     "url": "https://github.com/trueadm/inferno"
   },
   "homepage": "http://infernojs.org/",
-  "npmName": "inferno",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/!(*.orig|*.node.*)"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "inferno",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/!(*.orig|*.node.*)"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

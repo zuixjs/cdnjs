@@ -21,13 +21,16 @@
     "type": "GNU GENERAL PUBLIC LICENSE",
     "url": "https://github.com/ashleydw/lightbox/blob/master/LICENSE.txt"
   },
-  "npmName": "ekko-lightbox",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "ekko-lightbox",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

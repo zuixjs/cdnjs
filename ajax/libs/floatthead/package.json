@@ -8,15 +8,6 @@
     "type": "git",
     "url": "git://github.com/mkoryak/floatThead.git"
   },
-  "npmName": "floatthead",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "*.js"
-      ]
-    }
-  ],
   "keywords": [
     "locked header",
     "floating header",
@@ -28,5 +19,17 @@
     "scrolling table"
   ],
   "author": "Misha Koryak",
-  "license": "CC BY-SA 4.0"
+  "license": "CC BY-SA 4.0",
+  "autoupdate": {
+    "target": "floatthead",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "*.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

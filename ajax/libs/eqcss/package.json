@@ -32,13 +32,16 @@
     "type": "git",
     "url": "git://github.com/eqcss/eqcss.git"
   },
-  "npmName": "eqcss",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "EQCSS*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "eqcss",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "EQCSS*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

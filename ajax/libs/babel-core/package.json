@@ -71,14 +71,17 @@
     "to-fast-properties": "^1.0.0",
     "trim-right": "^1.0.0"
   },
-  "npmName": "babel-browser",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "browser*.js"
-      ]
-    }
-  ],
-  "filename": "browser.min.js"
+  "filename": "browser.min.js",
+  "autoupdate": {
+    "target": "babel-browser",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "browser*.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

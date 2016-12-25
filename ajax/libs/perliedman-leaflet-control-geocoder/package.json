@@ -27,13 +27,16 @@
     "leaflet": "~0.7.7"
   },
   "homepage": "http://www.liedman.net/leaflet-control-geocoder/",
-  "npmName": "leaflet-control-geocoder",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "leaflet-control-geocoder",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

@@ -16,13 +16,16 @@
   ],
   "author": "Denis Lukov",
   "license": "MIT",
-  "npmName": "multiple.js",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "multiple*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "multiple.js",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "multiple*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

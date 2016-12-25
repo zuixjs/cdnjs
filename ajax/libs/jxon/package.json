@@ -26,14 +26,17 @@
   "dependencies": {
     "xmldom": "~0.1.17"
   },
-  "npmName": "jxon",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "index.js"
-      ]
-    }
-  ],
-  "author": "MDN (https://developer.mozilla.org/en-US/docs/JXON)"
+  "author": "MDN (https://developer.mozilla.org/en-US/docs/JXON)",
+  "autoupdate": {
+    "target": "jxon",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "index.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

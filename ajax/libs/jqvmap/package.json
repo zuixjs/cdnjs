@@ -27,13 +27,16 @@
     "type": "git",
     "url": "git+https://github.com/manifestinteractive/jqvmap.git"
   },
-  "npmName": "jqvmap",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "jqvmap",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

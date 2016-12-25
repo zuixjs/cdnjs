@@ -21,13 +21,16 @@
     "classnames": "^2.1.2",
     "react-toastr": "^2.3.1"
   },
-  "npmName": "react-bootstrap-table",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "react-bootstrap-table",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

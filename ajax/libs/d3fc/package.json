@@ -20,13 +20,16 @@
     "graphs"
   ],
   "license": "MIT",
-  "npmName": "d3fc",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*.+(css|js|map)"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "d3fc",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*.+(css|js|map)"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

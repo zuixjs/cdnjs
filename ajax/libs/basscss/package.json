@@ -31,13 +31,16 @@
     "url": "https://github.com/basscss/basscss.git"
   },
   "homepage": "http://www.basscss.com/",
-  "npmName": "basscss",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "css/basscss*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "basscss",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "css/basscss*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

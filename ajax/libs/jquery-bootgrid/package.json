@@ -1,16 +1,6 @@
 {
   "name": "jquery-bootgrid",
   "namespace": "jquery.bootgrid",
-  "npmName": "jquery-bootgrid",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "*.css",
-        "*.js"
-      ]
-    }
-  ],
   "filename": "jquery.bootgrid.min.js",
   "version": "1.3.1",
   "description": "Nice, sleek and intuitive. A grid control especially designed for bootstrap.",
@@ -45,5 +35,18 @@
     "name": "Rafael Staib",
     "email": "me@rafaelstaib.com",
     "url": "http://www.rafaelstaib.com"
+  },
+  "autoupdate": {
+    "target": "jquery-bootgrid",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "*.css",
+          "*.js"
+        ]
+      }
+    ],
+    "source": "npm"
   }
 }

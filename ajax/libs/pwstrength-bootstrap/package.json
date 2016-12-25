@@ -24,13 +24,16 @@
     "jquery": ">=1.7.0",
     "bootstrap": ">=2.0.0"
   },
-  "npmName": "pwstrength-bootstrap",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "pwstrength-bootstrap",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

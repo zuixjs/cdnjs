@@ -18,13 +18,16 @@
   "dependencies": {
     "gulp-header": "1.7.1"
   },
-  "npmName": "what-input",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "what-input*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "what-input",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "what-input*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

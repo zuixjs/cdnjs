@@ -19,13 +19,16 @@
   "dependencies": {
     "jquery": "^1.11.3"
   },
-  "npmName": "typeit",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/!(jquery-+([0-9].)min.js)"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "typeit",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/!(jquery-+([0-9].)min.js)"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

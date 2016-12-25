@@ -23,15 +23,18 @@
     "server",
     "client"
   ],
-  "npmName": "backbone-react-component",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "/backbone-react-component-min.js",
-        "/backbone-react-component.js"
-      ]
-    }
-  ],
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "backbone-react-component",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "/backbone-react-component-min.js",
+          "/backbone-react-component.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

@@ -17,14 +17,17 @@
   "dependencies": {
     "symbol-observable": "^1.0.2"
   },
-  "npmName": "xstream",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
-  "filename": "xstream.min.js"
+  "filename": "xstream.min.js",
+  "autoupdate": {
+    "target": "xstream",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

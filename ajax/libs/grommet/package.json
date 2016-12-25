@@ -53,13 +53,16 @@
     "superagent": "^1.1.0",
     "yargs": "^4.6.0"
   },
-  "npmName": "grommet",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "*grommet*.min.*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "grommet",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "*grommet*.min.*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

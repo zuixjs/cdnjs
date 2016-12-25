@@ -8,16 +8,6 @@
     "url": "git://github.com/aFarkas/lazysizes.git"
   },
   "namespace": "lazySizes",
-  "npmName": "lazysizes",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "*.min.js",
-        "plugins/**/*.min.js"
-      ]
-    }
-  ],
   "description": "High performance (jankfree) lazy loader for images (including responsive images), iframes and scripts (widgets).",
   "keywords": [
     "lazy",
@@ -34,5 +24,18 @@
     "respimage",
     "include"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "lazysizes",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "*.min.js",
+          "plugins/**/*.min.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

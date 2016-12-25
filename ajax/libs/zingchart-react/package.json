@@ -19,13 +19,16 @@
     "type": "git",
     "url": "git://github.com/zingchart/ZingChart-React.git"
   },
-  "npmName": "zingchart-react",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "zingchart-react",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

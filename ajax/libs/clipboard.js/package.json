@@ -19,14 +19,17 @@
     "delegate-events": "^1.1.1",
     "tiny-emitter": "^1.0.0"
   },
-  "npmName": "clipboard",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
-  "homepage": "https://clipboardjs.com"
+  "homepage": "https://clipboardjs.com",
+  "autoupdate": {
+    "target": "clipboard",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

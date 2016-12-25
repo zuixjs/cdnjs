@@ -23,14 +23,17 @@
     "url": "git://github.com/WebReflection/document-register-element.git"
   },
   "filename": "document-register-element.js",
-  "npmName": "document-register-element",
-  "npmFileMap": [
-    {
-      "basePath": "build",
-      "files": [
-        "!(*.node.js)"
-      ]
-    }
-  ],
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "document-register-element",
+    "fileMap": [
+      {
+        "basePath": "build",
+        "files": [
+          "!(*.node.js)"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

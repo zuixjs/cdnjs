@@ -26,13 +26,16 @@
     "is-promise": "^2.1.0",
     "react-lazy-cache": "^3.0.1"
   },
-  "npmName": "redux-form",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "redux-form",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

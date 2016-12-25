@@ -20,13 +20,16 @@
     "commander": "^2.9.0",
     "colors": "^1.1.2"
   },
-  "npmName": "sentient-lang",
-  "npmFileMap": [
-    {
-      "basePath": "bin",
-      "files": [
-        "sentient*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "sentient-lang",
+    "fileMap": [
+      {
+        "basePath": "bin",
+        "files": [
+          "sentient*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

@@ -19,13 +19,16 @@
     "moment": "^2.8.4",
     "string-mask": "^0.2.0"
   },
-  "npmName": "angular-input-masks",
-  "npmFileMap": [
-    {
-      "basePath": "releases",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "angular-input-masks",
+    "fileMap": [
+      {
+        "basePath": "releases",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

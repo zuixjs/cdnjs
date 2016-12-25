@@ -18,19 +18,22 @@
     "type": "SATA",
     "url": "https://github.com/DIYgod/DPlayer/blob/master/LICENSE"
   },
-  "npmName": "dplayer",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    },
-    {
-      "basePath": "src",
-      "files": [
-        "DPlayer.!(scss)"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "dplayer",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      },
+      {
+        "basePath": "src",
+        "files": [
+          "DPlayer.!(scss)"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

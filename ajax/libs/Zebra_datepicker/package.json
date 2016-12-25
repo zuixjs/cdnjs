@@ -21,13 +21,16 @@
     "ui"
   ],
   "license": "LGPL-3.0",
-  "npmName": "zebra_datepicker",
-  "npmFileMap": [
-    {
-      "basePath": "public",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "zebra_datepicker",
+    "fileMap": [
+      {
+        "basePath": "public",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

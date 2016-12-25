@@ -14,14 +14,17 @@
     "type": "git",
     "url": "https://github.com/kmalakoff/knockback.git"
   },
-  "npmName": "knockback",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "knockback.min.js"
-      ]
-    }
-  ],
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "knockback",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "knockback.min.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

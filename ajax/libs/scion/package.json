@@ -15,13 +15,16 @@
     "url": "https://github.com/jbeard4/SCION.git"
   },
   "filename": "scxml.min.js",
-  "npmName": "scxml",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "scxml",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

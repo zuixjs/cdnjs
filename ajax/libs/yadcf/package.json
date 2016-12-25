@@ -24,13 +24,16 @@
   "dependencies": {
     "jquery": ">=1.7.0"
   },
-  "npmName": "yadcf",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "jquery.dataTables.yadcf*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "yadcf",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "jquery.dataTables.yadcf*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

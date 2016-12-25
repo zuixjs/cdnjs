@@ -20,13 +20,16 @@
     "fbjs": "^0.8.1",
     "react-static-container": "^1.0.1"
   },
-  "npmName": "react-relay",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "react-relay",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

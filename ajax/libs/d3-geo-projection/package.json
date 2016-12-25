@@ -16,15 +16,18 @@
     "type": "git",
     "url": "https://github.com/d3/d3-geo-projection.git"
   },
-  "npmName": "d3-geo-projection",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "d3.geo.projection.js",
-        "d3.geo.projection.min.js"
-      ]
-    }
-  ],
-  "license": "BSD-3-Clause"
+  "license": "BSD-3-Clause",
+  "autoupdate": {
+    "target": "d3-geo-projection",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "d3.geo.projection.js",
+          "d3.geo.projection.min.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

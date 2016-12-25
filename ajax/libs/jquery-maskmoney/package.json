@@ -20,14 +20,17 @@
   "dependencies": {
     "jquery": ">=1.6"
   },
-  "npmName": "jquery-maskmoney",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "jquery.maskMoney.min.js"
-      ]
-    }
-  ],
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "jquery-maskmoney",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "jquery.maskMoney.min.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

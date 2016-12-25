@@ -18,13 +18,16 @@
     "data.js",
     "Data"
   ],
-  "npmName": "data_js",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "data*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "data_js",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "data*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

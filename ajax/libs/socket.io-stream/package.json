@@ -21,13 +21,16 @@
     "component-bind": "~1.0.0",
     "debug": "~2.2.0"
   },
-  "npmName": "socket.io-stream",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "socket.io-stream*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "socket.io-stream",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "socket.io-stream*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

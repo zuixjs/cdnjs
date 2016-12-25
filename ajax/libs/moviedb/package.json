@@ -20,13 +20,16 @@
   "dependencies": {
     "superagent": "^1.6.1"
   },
-  "npmName": "moviedb",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "moviedb*.+(js|map)"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "moviedb",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "moviedb*.+(js|map)"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

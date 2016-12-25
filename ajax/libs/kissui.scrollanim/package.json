@@ -20,13 +20,16 @@
   "author": "Afshin Mehrabani",
   "license": "MIT",
   "homepage": "http://scrollanim.kissui.io/",
-  "npmName": "kissui.scrollanim",
-  "npmFileMap": [
-    {
-      "basePath": "build",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "kissui.scrollanim",
+    "fileMap": [
+      {
+        "basePath": "build",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

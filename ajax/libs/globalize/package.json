@@ -34,14 +34,17 @@
   "dependencies": {
     "cldrjs": "0.3.4"
   },
-  "npmName": "globalize",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/!(node)*"
-      ]
-    }
-  ],
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "globalize",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/!(node)*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

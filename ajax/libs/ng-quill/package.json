@@ -19,14 +19,17 @@
     "angular",
     "directive"
   ],
-  "npmName": "ng-quill",
-  "npmFileMap": [
-    {
-      "basePath": "src",
-      "files": [
-        "ng-quill*"
-      ]
-    }
-  ],
-  "filename": "ng-quill.min.js"
+  "filename": "ng-quill.min.js",
+  "autoupdate": {
+    "target": "ng-quill",
+    "fileMap": [
+      {
+        "basePath": "src",
+        "files": [
+          "ng-quill*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

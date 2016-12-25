@@ -1,14 +1,5 @@
 {
   "name": "restangular",
-  "npmName": "restangular",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "*"
-      ]
-    }
-  ],
   "description": "Restful Resources service for AngularJS apps",
   "version": "1.5.2",
   "filename": "restangular.min.js",
@@ -27,5 +18,17 @@
     "api"
   ],
   "dependencies": {},
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "restangular",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

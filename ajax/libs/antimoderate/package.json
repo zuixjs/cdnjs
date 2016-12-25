@@ -7,15 +7,6 @@
     "type": "git",
     "url": "https://github.com/sunstorymvp/antimoderate.git"
   },
-  "npmName": "antimoderate",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "antimoderate*"
-      ]
-    }
-  ],
   "license": {
     "type": "See README.md",
     "url": "https://github.com/whackashoe/antimoderate#license"
@@ -26,5 +17,17 @@
   },
   "keywords": [
     "antimoderate"
-  ]
+  ],
+  "autoupdate": {
+    "target": "antimoderate",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "antimoderate*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

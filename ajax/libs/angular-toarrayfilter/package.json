@@ -21,13 +21,16 @@
   ],
   "author": "Pete Bacon Darwin <pete@bacondarwin.com>",
   "license": "MIT",
-  "npmName": "angular-toarrayfilter",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "*toArrayFilter*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "angular-toarrayfilter",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "*toArrayFilter*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

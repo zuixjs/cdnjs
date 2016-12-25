@@ -14,13 +14,16 @@
     "type": "git",
     "url": "https://github.com/kazzkiq/balloon.css.git"
   },
-  "npmName": "balloon-css",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "balloon*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "balloon-css",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "balloon*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

@@ -20,13 +20,16 @@
   },
   "license": "MIT",
   "homepage": "http://angularjs.org",
-  "npmName": "angular-sanitize",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "angular-sanitize*.+(js|map)"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "angular-sanitize",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "angular-sanitize*.+(js|map)"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

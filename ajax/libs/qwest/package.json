@@ -20,19 +20,22 @@
     "jquery-param": "^0.1.2",
     "pinkyswear": "^2.2.2"
   },
-  "npmName": "qwest",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "qwest*"
-      ]
-    },
-    {
-      "basePath": "src",
-      "files": [
-        "qwest*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "qwest",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "qwest*"
+        ]
+      },
+      {
+        "basePath": "src",
+        "files": [
+          "qwest*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

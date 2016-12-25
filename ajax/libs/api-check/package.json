@@ -20,14 +20,17 @@
       "pre-commit": "npm run ci"
     }
   },
-  "npmName": "api-check",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "*"
-      ]
-    }
-  ],
-  "filename": "api-check.min.js"
+  "filename": "api-check.min.js",
+  "autoupdate": {
+    "target": "api-check",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

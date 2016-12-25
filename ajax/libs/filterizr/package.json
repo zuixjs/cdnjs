@@ -26,19 +26,22 @@
   "author": "Yiotis Kaltsikis <yiotiskal@gmail.com>",
   "license": "MIT",
   "homepage": "http://yiotis.net/filterizr/",
-  "npmName": "filterizr",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    },
-    {
-      "basePath": "src",
-      "files": [
-        "jquery.filterizr*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "filterizr",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      },
+      {
+        "basePath": "src",
+        "files": [
+          "jquery.filterizr*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

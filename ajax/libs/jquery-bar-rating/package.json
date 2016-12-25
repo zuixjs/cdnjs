@@ -18,13 +18,16 @@
   },
   "version": "1.2.1",
   "license": "MIT",
-  "npmName": "jquery-bar-rating",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "jquery-bar-rating",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

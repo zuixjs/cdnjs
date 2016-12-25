@@ -1,15 +1,6 @@
 {
   "name": "leaflet-omnivore",
   "filename": "leaflet-omnivore.min.js",
-  "npmName": "leaflet-omnivore",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "leaflet-omnivore*"
-      ]
-    }
-  ],
   "version": "0.3.4",
   "description": "a geospatial format parser for Leaflet",
   "repository": {
@@ -42,5 +33,17 @@
     "brfs": "0.2.1",
     "topojson": "1.6.8",
     "polyline": "0.0.3"
+  },
+  "autoupdate": {
+    "target": "leaflet-omnivore",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "leaflet-omnivore*"
+        ]
+      }
+    ],
+    "source": "npm"
   }
 }

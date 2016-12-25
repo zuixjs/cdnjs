@@ -18,13 +18,16 @@
     "shaka-player": "v2.0.0-beta3",
     "clappr": "0.2.61"
   },
-  "npmName": "dash-shaka-playback",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "dash-shaka-playback*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "dash-shaka-playback",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "dash-shaka-playback*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

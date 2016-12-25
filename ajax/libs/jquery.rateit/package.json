@@ -17,13 +17,16 @@
   "dependencies": {
     "jquery": ">=1.6"
   },
-  "npmName": "jquery.rateit",
-  "npmFileMap": [
-    {
-      "basePath": "scripts",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "jquery.rateit",
+    "fileMap": [
+      {
+        "basePath": "scripts",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

@@ -12,14 +12,17 @@
     "location"
   ],
   "filename": "history.min.js",
-  "npmName": "history",
-  "npmFileMap": [
-    {
-      "basePath": "umd",
-      "files": [
-        "*.js"
-      ]
-    }
-  ],
-  "author": "Michael Jackson"
+  "author": "Michael Jackson",
+  "autoupdate": {
+    "target": "history",
+    "fileMap": [
+      {
+        "basePath": "umd",
+        "files": [
+          "*.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

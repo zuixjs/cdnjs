@@ -26,13 +26,16 @@
     "url": "https://github.com/webpro/DOMtastic-release.git"
   },
   "license": "MIT",
-  "npmName": "domtastic",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "domtastic*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "domtastic",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "domtastic*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

@@ -13,15 +13,6 @@
     "pre-processor",
     "popular"
   ],
-  "npmName": "less",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "less.*js"
-      ]
-    }
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/less/less.js"
@@ -30,5 +21,17 @@
   "author": {
     "name": "Alexis Sellier",
     "email": "self@cloudhead.net"
+  },
+  "autoupdate": {
+    "target": "less",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "less.*js"
+        ]
+      }
+    ],
+    "source": "npm"
   }
 }

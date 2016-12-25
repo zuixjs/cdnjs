@@ -18,13 +18,16 @@
     "MIT",
     "Beerware"
   ],
-  "npmName": "heatmap.js",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "heatmap*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "heatmap.js",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "heatmap*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

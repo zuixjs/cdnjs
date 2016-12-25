@@ -13,17 +13,20 @@
   ],
   "author": "Vladimir Kharlampidi",
   "homepage": "http://www.idangero.us/sliders/swiper",
-  "npmName": "swiper",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
   "licenses": [
     "GPL",
     "MIT"
-  ]
+  ],
+  "autoupdate": {
+    "target": "swiper",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

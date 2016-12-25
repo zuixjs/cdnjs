@@ -18,15 +18,18 @@
     "verilog",
     "RTL"
   ],
-  "npmName": "wavedrom",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "wavedrom*.js",
-        "WaveDrom*.js",
-        "skins/*.js"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "wavedrom",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "wavedrom*.js",
+          "WaveDrom*.js",
+          "skins/*.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

@@ -1,6 +1,5 @@
 {
   "name": "bootstrap-switch",
-  "npmName": "bootstrap-switch",
   "filename": "js/bootstrap-switch.min.js",
   "description": "Turn checkboxes and radio buttons into toggle switches.",
   "version": "3.3.2",
@@ -25,12 +24,16 @@
   },
   "license": "Apache Version 2",
   "readmeFilename": "README.md",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "bootstrap-switch",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

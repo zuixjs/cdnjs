@@ -17,13 +17,16 @@
   "author": "Neil Jenkins",
   "license": "MIT",
   "homepage": "https://neilj.github.io/Squire/",
-  "npmName": "squire-rte",
-  "npmFileMap": [
-    {
-      "basePath": "build",
-      "files": [
-        "**/!(*.html)"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "squire-rte",
+    "fileMap": [
+      {
+        "basePath": "build",
+        "files": [
+          "**/!(*.html)"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

@@ -26,13 +26,16 @@
     "lodash": "^3.10.1",
     "q": "^1.4.1"
   },
-  "npmName": "excel-builder",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "excel-builder",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

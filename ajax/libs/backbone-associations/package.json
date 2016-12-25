@@ -25,19 +25,22 @@
     "url": "git://github.com/dhruvaray/backbone-associations.git"
   },
   "github": "https://github.com/dhruvaray/backbone-associations/",
-  "npmName": "backbone-associations",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "backbone-associations-min.js",
-        "backbone-associations.js"
-      ]
-    }
-  ],
   "license": "MIT",
   "authors": [
     "Dhruva Ray",
     "Jaynti Kanani"
-  ]
+  ],
+  "autoupdate": {
+    "target": "backbone-associations",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "backbone-associations-min.js",
+          "backbone-associations.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

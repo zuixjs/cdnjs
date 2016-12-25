@@ -21,13 +21,16 @@
     "polyfill",
     "rtc"
   ],
-  "npmName": "adapterjs",
-  "npmFileMap": [
-    {
-      "basePath": "publish",
-      "files": [
-        "!(*.debug.js)"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "adapterjs",
+    "fileMap": [
+      {
+        "basePath": "publish",
+        "files": [
+          "!(*.debug.js)"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

@@ -17,13 +17,16 @@
   ],
   "author": "tenXer",
   "license": "MIT",
-  "npmName": "xcharts",
-  "npmFileMap": [
-    {
-      "basePath": "build",
-      "files": [
-        "**/!(LICENSE|README.md)"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "xcharts",
+    "fileMap": [
+      {
+        "basePath": "build",
+        "files": [
+          "**/!(LICENSE|README.md)"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

@@ -17,13 +17,16 @@
   },
   "license": "MIT",
   "filename": "oojs-ui.min.js",
-  "npmName": "oojs-ui",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "oojs-ui",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

@@ -18,13 +18,16 @@
   ],
   "author": "Abdelrahman Awad <logaretm1@gmail.com>",
   "license": "MIT",
-  "npmName": "vee-validate",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "vee-validate",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

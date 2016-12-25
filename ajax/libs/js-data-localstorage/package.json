@@ -22,15 +22,18 @@
   "dependencies": {
     "mout": "0.11.0"
   },
-  "npmName": "js-data-localstorage",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*.+(js|map)"
-      ]
-    }
-  ],
   "filename": "js-data-localstorage.min.js",
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "js-data-localstorage",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*.+(js|map)"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

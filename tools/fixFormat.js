@@ -149,13 +149,21 @@ function fixFormat() {
 
   function setNpmBasePaths(pkg) {
     if (pkg.npmFileMap) {
-      for (var i in pkg.npmFileMap) {
-        var npmbasePath = pkg.npmFileMap[i].basePath;
+      var fileMap = pkg.npmFileMap
+      pkg.autoupdate = {
+        target: pkg.npmName || pkg.name,
+        fileMap: fileMap,
+        source: "npm"
+      };
+      for (var i in fileMap) {
+        var npmbasePath = fileMap[i].basePath;
         if (npmbasePath && npmbasePath.length != 0 && ((typeof npmbasePath) == 'string')) {
           npmbasePath = (npmbasePath).replace(/^\/+|\/+$/g , '');
-          pkg.npmFileMap[i].basePath = npmbasePath;
+          fileMap[i].basePath = npmbasePath;
         }
       }
+      delete pkg.npmFileMap;
+      delete pkg.npmName;
     }
   }
 

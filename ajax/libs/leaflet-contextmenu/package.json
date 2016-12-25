@@ -16,13 +16,16 @@
   ],
   "author": "Adam Ratcliffe",
   "license": "MIT",
-  "npmName": "leaflet-contextmenu",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "leaflet-contextmenu",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

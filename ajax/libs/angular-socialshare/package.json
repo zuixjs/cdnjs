@@ -22,13 +22,16 @@
     "email": "filippo.oretti@gmail.com",
     "url": "https://github.com/45kb"
   },
-  "npmName": "angular-socialshare",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "angular-socialshare",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

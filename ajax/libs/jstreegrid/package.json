@@ -21,13 +21,16 @@
     "url": "http://github.com/deitch/jstree-grid.git"
   },
   "license": "MIT",
-  "npmName": "jstreegrid",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "jstreegrid*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "jstreegrid",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "jstreegrid*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

@@ -12,19 +12,22 @@
     "script",
     "popular"
   ],
-  "npmName": "coffee-script",
-  "npmFileMap": [
-    {
-      "basePath": "lib/coffee-script",
-      "files": [
-        "coffee-script.js"
-      ]
-    }
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/jashkenas/coffeescript.git"
   },
   "license": "MIT",
-  "author": "Jeremy Ashkenas"
+  "author": "Jeremy Ashkenas",
+  "autoupdate": {
+    "target": "coffee-script",
+    "fileMap": [
+      {
+        "basePath": "lib/coffee-script",
+        "files": [
+          "coffee-script.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

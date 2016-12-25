@@ -18,19 +18,22 @@
   "dependencies": {
     "leaflet": ">=0.7.7"
   },
-  "npmName": "leaflet-minimap",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    },
-    {
-      "basePath": "src",
-      "files": [
-        "Control.MiniMap*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "leaflet-minimap",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      },
+      {
+        "basePath": "src",
+        "files": [
+          "Control.MiniMap*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

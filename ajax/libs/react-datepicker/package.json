@@ -23,13 +23,16 @@
     "react-onclickoutside": "^4.8.0",
     "tether": "^1.3.2"
   },
-  "npmName": "react-datepicker",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "react-datepicker",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

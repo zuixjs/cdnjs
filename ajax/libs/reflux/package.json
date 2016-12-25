@@ -22,14 +22,17 @@
     "eventemitter3": "^1.1.1",
     "reflux-core": "^0.3.0"
   },
-  "npmName": "reflux",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
-  "filename": "reflux.min.js"
+  "filename": "reflux.min.js",
+  "autoupdate": {
+    "target": "reflux",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

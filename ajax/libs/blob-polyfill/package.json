@@ -17,13 +17,16 @@
     "url": "http://eligrey.com"
   },
   "license": "MIT",
-  "npmName": "blob-polyfill",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "Blob.js"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "blob-polyfill",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "Blob.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

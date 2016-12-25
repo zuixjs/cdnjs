@@ -31,34 +31,37 @@
     "type": "git",
     "url": "git://github.com/blueimp/Gallery.git"
   },
-  "npmName": "blueimp-gallery",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "css/blueimp-gallery-indicator.css",
-        "css/blueimp-gallery-video.css",
-        "css/blueimp-gallery.css",
-        "css/blueimp-gallery.min.css",
-        "img/error.png",
-        "img/error.svg",
-        "img/play-pause.png",
-        "img/loading.gif",
-        "img/play-pause.svg",
-        "img/video-play.png",
-        "img/video-play.svg",
-        "js/blueimp-gallery-fullscreen.js",
-        "js/blueimp-gallery-indicator.js",
-        "js/blueimp-gallery-video.js",
-        "js/blueimp-gallery-vimeo.js",
-        "js/blueimp-gallery-youtube.js",
-        "js/blueimp-gallery.js",
-        "js/blueimp-gallery.min.js",
-        "js/blueimp-helper.js",
-        "js/jquery.blueimp-gallery.js",
-        "js/jquery.blueimp-gallery.min.js"
-      ]
-    }
-  ],
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "blueimp-gallery",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "css/blueimp-gallery-indicator.css",
+          "css/blueimp-gallery-video.css",
+          "css/blueimp-gallery.css",
+          "css/blueimp-gallery.min.css",
+          "img/error.png",
+          "img/error.svg",
+          "img/play-pause.png",
+          "img/loading.gif",
+          "img/play-pause.svg",
+          "img/video-play.png",
+          "img/video-play.svg",
+          "js/blueimp-gallery-fullscreen.js",
+          "js/blueimp-gallery-indicator.js",
+          "js/blueimp-gallery-video.js",
+          "js/blueimp-gallery-vimeo.js",
+          "js/blueimp-gallery-youtube.js",
+          "js/blueimp-gallery.js",
+          "js/blueimp-gallery.min.js",
+          "js/blueimp-helper.js",
+          "js/jquery.blueimp-gallery.js",
+          "js/jquery.blueimp-gallery.min.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

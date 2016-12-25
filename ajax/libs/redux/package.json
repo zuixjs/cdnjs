@@ -27,13 +27,16 @@
     "invariant": "^2.0.0",
     "warning": "^2.0.0"
   },
-  "npmName": "redux",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "*.js"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "redux",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "*.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

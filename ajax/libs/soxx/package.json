@@ -19,13 +19,16 @@
   ],
   "author": "Trent Oswald <trentoswald@therebelrobot.com> (@therebelrobot)",
   "license": "ISC",
-  "npmName": "soxx",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "soxx",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

@@ -20,13 +20,16 @@
     "hogan.js": "^3.0.2",
     "to-factory": "^1.0.0"
   },
-  "npmName": "docsearch.js",
-  "npmFileMap": [
-    {
-      "basePath": "dist/cdn",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "docsearch.js",
+    "fileMap": [
+      {
+        "basePath": "dist/cdn",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

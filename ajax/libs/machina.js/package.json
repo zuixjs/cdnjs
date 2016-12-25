@@ -32,14 +32,17 @@
       "url": "http://opensource.org/licenses/GPL-2.0"
     }
   ],
-  "npmName": "machina",
-  "npmFileMap": [
-    {
-      "basePath": "lib",
-      "files": [
-        "machina.js",
-        "machina.min.js"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "machina",
+    "fileMap": [
+      {
+        "basePath": "lib",
+        "files": [
+          "machina.js",
+          "machina.min.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

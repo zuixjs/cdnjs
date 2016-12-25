@@ -17,19 +17,22 @@
     "immutable": "^3.0.2",
     "inherits": "^2.0.1"
   },
-  "npmName": "immstruct",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "*.js"
-      ]
-    }
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/omniscientjs/immstruct"
   },
   "license": "MIT",
-  "author": "Mikael Brevik, @torgeir"
+  "author": "Mikael Brevik, @torgeir",
+  "autoupdate": {
+    "target": "immstruct",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "*.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

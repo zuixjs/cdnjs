@@ -18,13 +18,16 @@
     "url": "git+https://github.com/kaimallea/isMobile.git"
   },
   "filename": "isMobile.min.js",
-  "npmName": "ismobilejs",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "isMobile*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "ismobilejs",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "isMobile*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

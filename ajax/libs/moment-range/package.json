@@ -1,19 +1,4 @@
 {
-  "npmName": "moment-range",
-  "npmFileMap": [
-    {
-      "basePath": "lib",
-      "files": [
-        "*.js"
-      ]
-    },
-    {
-      "basePath": "dist",
-      "files": [
-        "*.js"
-      ]
-    }
-  ],
   "name": "moment-range",
   "version": "2.2.0",
   "description": "Fancy date ranges for Moment.js",
@@ -29,5 +14,23 @@
     "url": "https://github.com/gf3/moment-range.git"
   },
   "license": "UNLICENSE",
-  "author": "Gianni Chiappetta <gianni@runlevel6.org> (http://butt.zone)"
+  "author": "Gianni Chiappetta <gianni@runlevel6.org> (http://butt.zone)",
+  "autoupdate": {
+    "target": "moment-range",
+    "fileMap": [
+      {
+        "basePath": "lib",
+        "files": [
+          "*.js"
+        ]
+      },
+      {
+        "basePath": "dist",
+        "files": [
+          "*.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

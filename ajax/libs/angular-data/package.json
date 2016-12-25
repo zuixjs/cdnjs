@@ -18,18 +18,21 @@
     "url": "http://www.pseudobry.com",
     "email": "jason.dobry@gmail.com"
   },
-  "npmName": "angular-data",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "*.js",
-        "*.map"
-      ]
-    }
-  ],
   "dependencies": {
     "mout": "0.10.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "angular-data",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "*.js",
+          "*.map"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

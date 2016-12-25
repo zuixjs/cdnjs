@@ -22,15 +22,18 @@
   "dependencies": {
     "signals": "<2.0"
   },
-  "npmName": "crossroads",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "crossroads.js",
-        "crossroads.min.js"
-      ]
-    }
-  ],
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "crossroads",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "crossroads.js",
+          "crossroads.min.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

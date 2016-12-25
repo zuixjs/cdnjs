@@ -29,19 +29,22 @@
   "dependencies": {
     "jquery": ">= 1.9.1"
   },
-  "npmName": "@fengyuanchen/datepicker",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    },
-    {
-      "basePath": "",
-      "files": [
-        "i18n/datepicker*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "@fengyuanchen/datepicker",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      },
+      {
+        "basePath": "",
+        "files": [
+          "i18n/datepicker*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

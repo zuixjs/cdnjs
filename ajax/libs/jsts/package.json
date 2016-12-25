@@ -17,17 +17,20 @@
     "url": "git://github.com/bjornharrtell/jsts.git"
   },
   "homepage": "https://bjornharrtell.github.io/jsts/",
-  "npmName": "jsts",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
   "licenses": [
     "EDL-1.0",
     "EPL-1.0"
-  ]
+  ],
+  "autoupdate": {
+    "target": "jsts",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

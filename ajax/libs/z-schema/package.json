@@ -19,14 +19,17 @@
     "commander": "^2.7.1",
     "request": "^2.54.0"
   },
-  "npmName": "z-schema",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "!(ZSchema-browser-test*)"
-      ]
-    }
-  ],
-  "author": "Martin Zagora <zaggino@gmail.com>"
+  "author": "Martin Zagora <zaggino@gmail.com>",
+  "autoupdate": {
+    "target": "z-schema",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "!(ZSchema-browser-test*)"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

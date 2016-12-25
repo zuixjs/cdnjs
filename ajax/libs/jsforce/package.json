@@ -16,14 +16,17 @@
     "type": "git",
     "url": "https://github.com/jsforce/jsforce.git"
   },
-  "npmName": "jsforce",
-  "npmFileMap": [
-    {
-      "basePath": "build",
-      "files": [
-        "*"
-      ]
-    }
-  ],
-  "author": "Shinichi Tomita <shinichi.tomita@gmail.com>"
+  "author": "Shinichi Tomita <shinichi.tomita@gmail.com>",
+  "autoupdate": {
+    "target": "jsforce",
+    "fileMap": [
+      {
+        "basePath": "build",
+        "files": [
+          "*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

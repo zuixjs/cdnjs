@@ -19,13 +19,16 @@
     "name": "jQuery Foundation and other contributors",
     "url": "https://github.com/jquery/qunit/blob/master/AUTHORS.txt"
   },
-  "npmName": "qunitjs",
-  "npmFileMap": [
-    {
-      "basePath": "qunit",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "qunitjs",
+    "fileMap": [
+      {
+        "basePath": "qunit",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

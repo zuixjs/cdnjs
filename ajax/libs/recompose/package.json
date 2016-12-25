@@ -26,13 +26,16 @@
     "hoist-non-react-statics": "^1.0.0",
     "lodash": "^4.3.0"
   },
-  "npmName": "recompose",
-  "npmFileMap": [
-    {
-      "basePath": "build",
-      "files": [
-        "**/!(*.+(json))"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "recompose",
+    "fileMap": [
+      {
+        "basePath": "build",
+        "files": [
+          "**/!(*.+(json))"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

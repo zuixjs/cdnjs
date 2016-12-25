@@ -14,13 +14,16 @@
   ],
   "author": "grevory <greg@gregpike.ca>",
   "license": "MIT",
-  "npmName": "angular-local-storage",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "*.js"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "angular-local-storage",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "*.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

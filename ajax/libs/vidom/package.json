@@ -15,14 +15,17 @@
     "type": "git",
     "url": "https://github.com/dfilatov/vidom"
   },
-  "npmName": "vidom",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
-  "version": "0.6.0"
+  "version": "0.6.0",
+  "autoupdate": {
+    "target": "vidom",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

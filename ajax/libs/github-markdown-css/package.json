@@ -23,13 +23,16 @@
     "style",
     "stylesheet"
   ],
-  "npmName": "github-markdown-css",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "github-markdown*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "github-markdown-css",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "github-markdown*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

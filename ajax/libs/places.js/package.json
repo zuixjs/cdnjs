@@ -15,20 +15,23 @@
     "autocomplete.js": "^0.20.0",
     "events": "^1.1.0"
   },
-  "npmName": "places.js",
-  "npmFileMap": [
-    {
-      "basePath": "dist/cdn",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
   "keywords": [
     "algolia",
     "geo",
     "search",
     "place",
     "input"
-  ]
+  ],
+  "autoupdate": {
+    "target": "places.js",
+    "fileMap": [
+      {
+        "basePath": "dist/cdn",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

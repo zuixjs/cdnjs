@@ -18,14 +18,17 @@
     "type": "git",
     "url": "https://github.com/bestiejs/platform.js.git"
   },
-  "npmName": "platform",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "platform.js"
-      ]
-    }
-  ],
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "platform",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "platform.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

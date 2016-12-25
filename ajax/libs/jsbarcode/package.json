@@ -24,13 +24,16 @@
     "canvas": "^1.0.0",
     "commander": ">=2.8.0"
   },
-  "npmName": "jsbarcode",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "jsbarcode",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

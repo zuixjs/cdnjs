@@ -11,18 +11,21 @@
     "bootstrap"
   ],
   "license": "MIT",
-  "npmName": "react-bootstrap",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/react-bootstrap/react-bootstrap"
   },
-  "author": "Stephen J. Collings <stevoland@gmail.com>"
+  "author": "Stephen J. Collings <stevoland@gmail.com>",
+  "autoupdate": {
+    "target": "react-bootstrap",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

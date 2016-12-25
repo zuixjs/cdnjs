@@ -15,13 +15,16 @@
     "timezone"
   ],
   "license": "MIT",
-  "npmName": "chrono",
-  "npmFileMap": [
-    {
-      "basePath": "lib",
-      "files": [
-        "chrono*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "chrono",
+    "fileMap": [
+      {
+        "basePath": "lib",
+        "files": [
+          "chrono*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

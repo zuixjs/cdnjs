@@ -32,13 +32,16 @@
     "ndarray": "^1.0.18",
     "ndarray-linear-interpolate": "^1.0.0"
   },
-  "npmName": "quagga",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "quagga",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

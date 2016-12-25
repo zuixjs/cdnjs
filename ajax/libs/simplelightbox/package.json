@@ -27,13 +27,16 @@
   },
   "license": "MIT",
   "homepage": "http://andreknieriem.de/simple-lightbox",
-  "npmName": "simplelightbox",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/!(*.scss)"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "simplelightbox",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/!(*.scss)"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

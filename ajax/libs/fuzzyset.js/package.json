@@ -15,13 +15,16 @@
     "string"
   ],
   "license": "BSD",
-  "npmName": "fuzzyset.js",
-  "npmFileMap": [
-    {
-      "basePath": "lib",
-      "files": [
-        "fuzzyset*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "fuzzyset.js",
+    "fileMap": [
+      {
+        "basePath": "lib",
+        "files": [
+          "fuzzyset*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

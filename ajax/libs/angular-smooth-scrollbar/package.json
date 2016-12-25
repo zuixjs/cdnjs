@@ -21,13 +21,16 @@
     "angular": "^1.4.8",
     "smooth-scrollbar": "^6.0.0"
   },
-  "npmName": "angular-smooth-scrollbar",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "angular-smooth-scrollbar",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

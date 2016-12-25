@@ -32,13 +32,16 @@
   ],
   "author": "Michael Jackson",
   "license": "MIT",
-  "npmName": "mach",
-  "npmFileMap": [
-    {
-      "basePath": "lib/umd",
-      "files": [
-        "mach*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "mach",
+    "fileMap": [
+      {
+        "basePath": "lib/umd",
+        "files": [
+          "mach*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

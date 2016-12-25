@@ -20,14 +20,17 @@
   "dependencies": {
     "strictdom": "^1.0.0"
   },
-  "npmName": "fastdom",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "fastdom*",
-        "extensions/fastdom*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "fastdom",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "fastdom*",
+          "extensions/fastdom*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

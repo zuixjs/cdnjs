@@ -29,13 +29,16 @@
     "node-sass": "^2.0.0-beta",
     "uglifycss": "0.0.11"
   },
-  "npmName": "picnic",
-  "npmFileMap": [
-    {
-      "basePath": "releases",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "picnic",
+    "fileMap": [
+      {
+        "basePath": "releases",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

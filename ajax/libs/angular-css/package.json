@@ -8,15 +8,6 @@
     "type": "git",
     "url": "git://github.com/castillo-io/angular-css"
   },
-  "npmName": "angular-css",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "*.js"
-      ]
-    }
-  ],
   "author": "Alex Castillo <alex@castillo.io> (http://castillo.io)",
   "keywords": [
     "angularjs",
@@ -24,5 +15,17 @@
     "ui-router",
     "css"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "angular-css",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "*.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

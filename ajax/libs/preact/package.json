@@ -16,14 +16,17 @@
     "view"
   ],
   "homepage": "https://preactjs.com",
-  "npmName": "preact",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "!(*.+(flow|ts))"
-      ]
-    }
-  ],
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "preact",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "!(*.+(flow|ts))"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

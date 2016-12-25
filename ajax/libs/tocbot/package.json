@@ -23,13 +23,16 @@
   "dependencies": {
     "smooth-scroll": "cferdinandi/smooth-scroll"
   },
-  "npmName": "tocbot",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "tocbot",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

@@ -14,17 +14,20 @@
     "json-stable-stringify": "^1.0.1",
     "yargs": "^4.7.1"
   },
-  "npmName": "vega-lite",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "vega-lite*.+(js|css|map)"
-      ]
-    }
-  ],
   "keywords": [
     "visualization",
     "grammar"
-  ]
+  ],
+  "autoupdate": {
+    "target": "vega-lite",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "vega-lite*.+(js|css|map)"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

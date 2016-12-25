@@ -18,14 +18,17 @@
     "name": "Michael Benford",
     "email": "michael@michaelbenford.net"
   },
-  "npmName": "ng-tags-input",
-  "npmFileMap": [
-    {
-      "basePath": "build",
-      "files": [
-        "*.js",
-        "*.css"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "ng-tags-input",
+    "fileMap": [
+      {
+        "basePath": "build",
+        "files": [
+          "*.js",
+          "*.css"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

@@ -19,13 +19,16 @@
     "node-uuid": ">= 1.4.0",
     "etp-avro": "latest"
   },
-  "npmName": "etp",
-  "npmFileMap": [
-    {
-      "basePath": "lib/browser",
-      "files": [
-        "*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "etp",
+    "fileMap": [
+      {
+        "basePath": "lib/browser",
+        "files": [
+          "*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

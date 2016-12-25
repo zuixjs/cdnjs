@@ -21,13 +21,16 @@
     "url": "http://blakeembrey.me"
   },
   "license": "MIT",
-  "npmName": "pluralize",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "pluralize*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "pluralize",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "pluralize*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

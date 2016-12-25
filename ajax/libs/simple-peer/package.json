@@ -36,13 +36,16 @@
     "type": "git",
     "url": "git://github.com/feross/simple-peer.git"
   },
-  "npmName": "simple-peer",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "simplepeer*.js"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "simple-peer",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "simplepeer*.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

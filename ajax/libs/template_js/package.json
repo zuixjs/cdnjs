@@ -18,13 +18,16 @@
     "template.js",
     "js"
   ],
-  "npmName": "template_js",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "template*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "template_js",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "template*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

@@ -19,13 +19,16 @@
     "visible",
     "viewport"
   ],
-  "npmName": "angular-inview",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "angular-inview!(.spec)"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "angular-inview",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "angular-inview!(.spec)"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

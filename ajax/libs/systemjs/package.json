@@ -12,17 +12,20 @@
     "es6-module-loader": "^0.17.3",
     "when": "^3.7.2"
   },
-  "npmName": "systemjs",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
   "filename": "system.js",
   "keywords": [
     "systemjs"
-  ]
+  ],
+  "autoupdate": {
+    "target": "systemjs",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

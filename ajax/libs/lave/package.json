@@ -15,13 +15,16 @@
     "serialize"
   ],
   "license": "MIT",
-  "npmName": "lave",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "lave*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "lave",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "lave*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

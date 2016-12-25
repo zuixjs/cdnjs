@@ -24,13 +24,16 @@
     "chosen-npm": "^1.4.2",
     "angular": "^1.4.9"
   },
-  "npmName": "angular-chosen-localytics",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "angular-chosen-localytics",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

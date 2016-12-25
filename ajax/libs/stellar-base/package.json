@@ -26,13 +26,16 @@
     "sha.js": "^2.3.6",
     "tweetnacl": "^0.13.0"
   },
-  "npmName": "stellar-base",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "stellar-base",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

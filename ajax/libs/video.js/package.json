@@ -8,19 +8,22 @@
     "video",
     "videojs"
   ],
-  "npmName": "video.js",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*.+(js|css|map|woff|ttf|svg|eot|swf)"
-      ]
-    }
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/videojs/video.js"
   },
   "license": "Apache-2.0",
-  "author": "Steve Heffernan"
+  "author": "Steve Heffernan",
+  "autoupdate": {
+    "target": "video.js",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*.+(js|css|map|woff|ttf|svg|eot|swf)"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

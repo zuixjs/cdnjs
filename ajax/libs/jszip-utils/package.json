@@ -20,13 +20,16 @@
     "GPL-3.0"
   ],
   "hoempage": "https://stuk.github.io/jszip-utils",
-  "npmName": "jszip-utils",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "jszip-utils",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

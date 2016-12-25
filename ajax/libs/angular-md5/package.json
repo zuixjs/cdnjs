@@ -22,16 +22,19 @@
     "md5"
   ],
   "dependencies": {},
-  "npmName": "angular-md5",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "angular-md5.js",
-        "angular-md5.min.js",
-        "angular-md5.min.js.map"
-      ]
-    }
-  ],
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "angular-md5",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "angular-md5.js",
+          "angular-md5.min.js",
+          "angular-md5.min.js.map"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

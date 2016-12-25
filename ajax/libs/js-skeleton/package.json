@@ -20,13 +20,16 @@
   "dependencies": {
     "express": "^4.13.4"
   },
-  "npmName": "js-skeleton",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "skeleton*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "js-skeleton",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "skeleton*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

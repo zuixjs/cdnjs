@@ -21,13 +21,16 @@
   "dependencies": {
     "aurora-shared": "^1.0.0"
   },
-  "npmName": "aurora-grid",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "aurora-grid",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

@@ -2,16 +2,6 @@
   "name": "mocha",
   "version": "3.2.0",
   "description": "simple, flexible, fun test framework",
-  "npmName": "mocha",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "mocha.js",
-        "mocha.css"
-      ]
-    }
-  ],
   "keywords": [
     "mocha",
     "test",
@@ -34,5 +24,18 @@
     "glob": "3.2.3"
   },
   "filename": "mocha.min.js",
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "mocha",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "mocha.js",
+          "mocha.css"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

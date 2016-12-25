@@ -39,13 +39,16 @@
     "jquery.transit": "^0.9.12",
     "velocity-animate": "^1.1.0"
   },
-  "npmName": "tweene",
-  "npmFileMap": [
-    {
-      "basePath": "minified",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "tweene",
+    "fileMap": [
+      {
+        "basePath": "minified",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

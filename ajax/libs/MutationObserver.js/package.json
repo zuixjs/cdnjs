@@ -15,13 +15,16 @@
     "url": "github.com/megawac/MutationObserver.js"
   },
   "license": "WTFPL",
-  "npmName": "mutationobserver-shim",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*.!(md)"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "mutationobserver-shim",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*.!(md)"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

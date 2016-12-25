@@ -18,13 +18,16 @@
     "asap": "^2.0.3",
     "inline-style-prefixer": "^2.0.0"
   },
-  "npmName": "aphrodite",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "aphrodite",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

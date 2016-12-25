@@ -13,19 +13,22 @@
     "url": "git://github.com/mozilla/pdf.js.git"
   },
   "license": "Apache-2.0",
-  "npmName": "pdfjs-dist",
-  "npmFileMap": [
-    {
-      "basePath": "build",
-      "files": [
-        "**/*"
-      ]
-    },
-    {
-      "basePath": "web",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "pdfjs-dist",
+    "fileMap": [
+      {
+        "basePath": "build",
+        "files": [
+          "**/*"
+        ]
+      },
+      {
+        "basePath": "web",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

@@ -23,13 +23,16 @@
     "type": "git",
     "url": "https://github.com/OnsenUI/OnsenUI.git"
   },
-  "npmName": "onsenui",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "+(js|css)/**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "onsenui",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "+(js|css)/**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

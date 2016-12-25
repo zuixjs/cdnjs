@@ -13,19 +13,22 @@
   "dependencies": {
     "bootstrap": "~3"
   },
-  "npmName": "bootstrap-sweetalert",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
   "keywords": [
     "sweetalert",
     "alert",
     "modal",
     "popup"
-  ]
+  ],
+  "autoupdate": {
+    "target": "bootstrap-sweetalert",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

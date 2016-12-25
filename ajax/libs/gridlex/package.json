@@ -15,13 +15,16 @@
     "Flexbox",
     "css"
   ],
-  "npmName": "gridlex",
-  "npmFileMap": [
-    {
-      "basePath": "docs",
-      "files": [
-        "gridlex*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "gridlex",
+    "fileMap": [
+      {
+        "basePath": "docs",
+        "files": [
+          "gridlex*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

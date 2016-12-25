@@ -30,14 +30,17 @@
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.0.0"
   },
-  "npmName": "react-bootstrap-select",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "js/bootstrap-select.*",
-        "js/i18n/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "react-bootstrap-select",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "js/bootstrap-select.*",
+          "js/i18n/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

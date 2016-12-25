@@ -1,14 +1,5 @@
 {
   "name": "ng-clip",
-  "npmName": "ng-clip",
-  "npmFileMap": [
-    {
-      "basePath": "dest",
-      "files": [
-        "*"
-      ]
-    }
-  ],
   "version": "0.2.6",
   "filename": "ng-clip.min.js",
   "description": "Copy to clipboard using AngularJS",
@@ -29,5 +20,17 @@
     "url": "http://about.me/asafdavid"
   },
   "dependencies": {},
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "ng-clip",
+    "fileMap": [
+      {
+        "basePath": "dest",
+        "files": [
+          "*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

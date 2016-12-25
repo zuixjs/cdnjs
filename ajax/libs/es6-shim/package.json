@@ -21,17 +21,6 @@
     "type": "git",
     "url": "git://github.com/es-shims/es6-shim.git"
   },
-  "npmName": "es6-shim",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "*.min.js",
-        "es6-shim.*",
-        "*.map"
-      ]
-    }
-  ],
   "testling": {
     "html": "testling.html",
     "browsers": [
@@ -50,5 +39,19 @@
     ]
   },
   "dependencies": {},
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "es6-shim",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "*.min.js",
+          "es6-shim.*",
+          "*.map"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

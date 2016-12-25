@@ -19,19 +19,22 @@
   "dependencies": {
     "knot.js": "^1.1.1"
   },
-  "npmName": "bricks.js",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*.!(html)"
-      ]
-    },
-    {
-      "basePath": "src",
-      "files": [
-        "bricks*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "bricks.js",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*.!(html)"
+        ]
+      },
+      {
+        "basePath": "src",
+        "files": [
+          "bricks*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

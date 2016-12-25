@@ -23,14 +23,17 @@
     "json-schema",
     "schema"
   ],
-  "npmName": "angular-schema-form",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
-  "filename": "bootstrap-decorator.min.js"
+  "filename": "bootstrap-decorator.min.js",
+  "autoupdate": {
+    "target": "angular-schema-form",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

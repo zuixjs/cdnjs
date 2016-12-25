@@ -20,13 +20,16 @@
     "parser",
     "syntax"
   ],
-  "npmName": "esprima",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "esprima*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "esprima",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "esprima*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

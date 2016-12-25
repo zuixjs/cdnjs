@@ -19,13 +19,16 @@
     "moment": "^2.10.3"
   },
   "author": "Wanasit Tanakitrungruang",
-  "npmName": "chrono-node",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "chrono.!(*json)"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "chrono-node",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "chrono.!(*json)"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

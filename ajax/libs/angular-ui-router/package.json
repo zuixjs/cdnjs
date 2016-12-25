@@ -13,21 +13,24 @@
     "url": "https://github.com/angular-ui/ui-router.git"
   },
   "dependencies": {},
-  "npmName": "angular-ui-router",
-  "npmFileMap": [
-    {
-      "basePath": "release",
-      "files": [
-        "angular-ui-router.min.js",
-        "angular-ui-router.js"
-      ]
-    }
-  ],
   "keywords": [
     "angular",
     "ui",
     "angular-ui",
     "ui-router"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "angular-ui-router",
+    "fileMap": [
+      {
+        "basePath": "release",
+        "files": [
+          "angular-ui-router.min.js",
+          "angular-ui-router.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

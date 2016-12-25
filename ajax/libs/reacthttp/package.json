@@ -20,13 +20,16 @@
     "node-fetch": "^1.6.3",
     "whatwg-fetch": "^1.0.0"
   },
-  "npmName": "reacthttp",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "reacthttp",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

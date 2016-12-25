@@ -20,13 +20,16 @@
   "dependencies": {
     "normalize.css": "^4.2.0"
   },
-  "npmName": "gemma",
-  "npmFileMap": [
-    {
-      "basePath": "public",
-      "files": [
-        "gemma*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "gemma",
+    "fileMap": [
+      {
+        "basePath": "public",
+        "files": [
+          "gemma*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

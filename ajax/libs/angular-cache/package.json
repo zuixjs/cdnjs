@@ -13,16 +13,6 @@
     "url": "http://www.pseudobry.com",
     "email": "jason.dobry@gmail.com"
   },
-  "npmName": "angular-cache",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "*.js",
-        "*.map"
-      ]
-    }
-  ],
   "postinstall": "node node_modules/grunt-cli/bin/grunt build",
   "license": "MIT",
   "keywords": [
@@ -30,5 +20,18 @@
     "angular-cache",
     "Angular",
     "cache"
-  ]
+  ],
+  "autoupdate": {
+    "target": "angular-cache",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "*.js",
+          "*.map"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

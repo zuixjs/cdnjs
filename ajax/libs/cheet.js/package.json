@@ -21,13 +21,16 @@
     "silly"
   ],
   "license": "MIT",
-  "npmName": "cheet.js",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "cheet*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "cheet.js",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "cheet*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

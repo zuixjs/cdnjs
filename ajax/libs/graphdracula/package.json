@@ -29,14 +29,17 @@
     "lodash": "^4.14.1",
     "uuid": "^2.0.2"
   },
-  "npmName": "graphdracula",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
-  "version": "1.0.3"
+  "version": "1.0.3",
+  "autoupdate": {
+    "target": "graphdracula",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

@@ -12,14 +12,17 @@
     "type": "git",
     "url": "git://github.com/viljamis/feature.js.git"
   },
-  "npmName": "feature.js",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "feature*"
-      ]
-    }
-  ],
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "feature.js",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "feature*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

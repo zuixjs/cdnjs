@@ -16,14 +16,17 @@
     "workers"
   ],
   "filename": "task.min.js",
-  "npmName": "task.js",
-  "npmFileMap": [
-    {
-      "basePath": "dist/client",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
-  "version": "0.0.21"
+  "version": "0.0.21",
+  "autoupdate": {
+    "target": "task.js",
+    "fileMap": [
+      {
+        "basePath": "dist/client",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

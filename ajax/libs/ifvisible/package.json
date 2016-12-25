@@ -24,13 +24,16 @@
     "type": "git",
     "url": "https://github.com/serkanyersen/ifvisible.js.git"
   },
-  "npmName": "ifvisible.js",
-  "npmFileMap": [
-    {
-      "basePath": "src",
-      "files": [
-        "ifvisible*.+(js|map)"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "ifvisible.js",
+    "fileMap": [
+      {
+        "basePath": "src",
+        "files": [
+          "ifvisible*.+(js|map)"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

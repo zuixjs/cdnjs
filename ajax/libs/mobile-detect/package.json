@@ -1,13 +1,4 @@
 {
-  "npmName": "mobile-detect",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "mobile-detect*.js"
-      ]
-    }
-  ],
   "name": "mobile-detect",
   "filename": "mobile-detect.min.js",
   "version": "1.3.5",
@@ -36,5 +27,17 @@
   },
   "license": "MIT",
   "readmeFilename": "README.md",
-  "dependencies": {}
+  "dependencies": {},
+  "autoupdate": {
+    "target": "mobile-detect",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "mobile-detect*.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

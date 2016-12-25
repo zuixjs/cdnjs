@@ -24,13 +24,16 @@
     "state management",
     "data flow"
   ],
-  "npmName": "mobx",
-  "npmFileMap": [
-    {
-      "basePath": "lib",
-      "files": [
-        "**/mobx!(.d.ts)*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "mobx",
+    "fileMap": [
+      {
+        "basePath": "lib",
+        "files": [
+          "**/mobx!(.d.ts)*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

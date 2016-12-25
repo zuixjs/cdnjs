@@ -25,13 +25,16 @@
   ],
   "author": "Arvind Gupta",
   "license": "MIT",
-  "npmName": "ajaxify",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "ajaxify*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "ajaxify",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "ajaxify*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

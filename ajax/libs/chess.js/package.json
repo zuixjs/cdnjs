@@ -12,13 +12,16 @@
     "type": "git",
     "url": "https://github.com/jhlywa/chess.js.git"
   },
-  "npmName": "chess.js",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "chess*.js"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "chess.js",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "chess*.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

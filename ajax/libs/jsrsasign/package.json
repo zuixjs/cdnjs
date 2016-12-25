@@ -47,13 +47,16 @@
   "author": "Kenji Urushima",
   "license": "MIT",
   "homepage": "https://kjur.github.io/jsrsasign/",
-  "npmName": "jsrsasign",
-  "npmFileMap": [
-    {
-      "basePath": "lib",
-      "files": [
-        "jsrsasign*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "jsrsasign",
+    "fileMap": [
+      {
+        "basePath": "lib",
+        "files": [
+          "jsrsasign*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

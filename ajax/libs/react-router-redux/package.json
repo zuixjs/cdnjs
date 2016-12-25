@@ -16,14 +16,17 @@
     "redux",
     "router"
   ],
-  "npmName": "react-router-redux",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
-  "version": "4.0.7"
+  "version": "4.0.7",
+  "autoupdate": {
+    "target": "react-router-redux",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

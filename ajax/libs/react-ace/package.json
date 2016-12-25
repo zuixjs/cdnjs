@@ -16,13 +16,16 @@
     "type": "git",
     "url": "http://github.com/securingsincity/react-ace.git"
   },
-  "npmName": "react-ace",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "react-ace",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

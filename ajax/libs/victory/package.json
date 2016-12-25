@@ -23,13 +23,16 @@
     "victory-core": "^4.5.1",
     "victory-pie": "^4.3.1"
   },
-  "npmName": "victory",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "victory",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

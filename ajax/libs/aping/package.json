@@ -19,13 +19,16 @@
   "dependencies": {
     "angular": "*"
   },
-  "npmName": "aping",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/!(*config*)"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "aping",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/!(*config*)"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

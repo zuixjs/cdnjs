@@ -3,21 +3,6 @@
   "filename": "riotux.min.js",
   "version": "2.1.1",
   "description": "Simple Event Controller for Riot.js, inspired in Flux Pattern.",
-  "npmName": "riotux",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    },
-    {
-      "basePath": "src",
-      "files": [
-        "riotux.js"
-      ]
-    }
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/luisvinicius167/riotux.git"
@@ -33,5 +18,23 @@
     "email": "dev_luis@hotmail.com"
   },
   "license": "MIT",
-  "homepage": "http://luisvinicius167.github.io/riotux/"
+  "homepage": "http://luisvinicius167.github.io/riotux/",
+  "autoupdate": {
+    "target": "riotux",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      },
+      {
+        "basePath": "src",
+        "files": [
+          "riotux.js"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

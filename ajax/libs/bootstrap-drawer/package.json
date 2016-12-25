@@ -28,13 +28,16 @@
     "bootstrap": "3.x"
   },
   "homepage": "https://clineamb.github.io/bootstrap-drawer/",
-  "npmName": "bootstrap-drawer",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "bootstrap-drawer",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

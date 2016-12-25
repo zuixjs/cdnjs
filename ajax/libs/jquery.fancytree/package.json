@@ -20,17 +20,20 @@
     "tree",
     "treegrid"
   ],
-  "npmName": "jquery.fancytree",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "*.js",
-        "*.js.map",
-        "**/*.css",
-        "**/*.gif"
-      ]
-    }
-  ],
-  "license": "MIT"
+  "license": "MIT",
+  "autoupdate": {
+    "target": "jquery.fancytree",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "*.js",
+          "*.js.map",
+          "**/*.css",
+          "**/*.gif"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

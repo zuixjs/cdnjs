@@ -19,13 +19,16 @@
     "type": "git",
     "url": "https://github.com/simplesmiler/vue-focus"
   },
-  "npmName": "vue-focus",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "vue-focus",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

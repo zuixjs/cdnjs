@@ -12,13 +12,16 @@
     "type": "git",
     "url": "git://github.com/kpdecker/jsdiff.git"
   },
-  "npmName": "diff",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "diff",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

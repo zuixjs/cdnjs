@@ -13,14 +13,17 @@
     "type": "git",
     "url": "https://github.com/thomaspark/bootswatch.git"
   },
-  "npmName": "bootswatch",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "fonts/*",
-        "*/*.css"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "bootswatch",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "fonts/*",
+          "*/*.css"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

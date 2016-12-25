@@ -17,17 +17,20 @@
     "shariff"
   ],
   "license": "MIT",
-  "npmName": "shariff",
-  "npmFileMap": [
-    {
-      "basePath": "build",
-      "files": [
-        "shariff*.+(js|css)"
-      ]
-    }
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/heiseonline/shariff"
+  },
+  "autoupdate": {
+    "target": "shariff",
+    "fileMap": [
+      {
+        "basePath": "build",
+        "files": [
+          "shariff*.+(js|css)"
+        ]
+      }
+    ],
+    "source": "npm"
   }
 }

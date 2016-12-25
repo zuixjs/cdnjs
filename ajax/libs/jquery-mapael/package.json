@@ -25,14 +25,17 @@
     "raphael": "^2.2",
     "jquery-mousewheel": "^3.1"
   },
-  "npmName": "jquery-mapael",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "js/jquery.mapael*",
-        "js/maps/**/*.!(txt)"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "jquery-mapael",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "js/jquery.mapael*",
+          "js/maps/**/*.!(txt)"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

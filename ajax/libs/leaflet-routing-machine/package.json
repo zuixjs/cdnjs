@@ -23,13 +23,16 @@
     "leaflet": "^0.7.2",
     "polyline": "0.0.3"
   },
-  "npmName": "leaflet-routing-machine",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "leaflet-routing-machine",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

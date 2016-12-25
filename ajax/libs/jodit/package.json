@@ -16,13 +16,16 @@
     "type": "git",
     "url": "https://github.com/xdan/jodit.git"
   },
-  "npmName": "jodit",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "*jodit*.+(css|js|map)"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "jodit",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "*jodit*.+(css|js|map)"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

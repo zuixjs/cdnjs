@@ -24,13 +24,16 @@
   "author": "Thomas Zinnbauer",
   "license": "MIT",
   "homepage": "http://www.ymc.ch/sandbox/clickspark/demo.html",
-  "npmName": "clickspark.js",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "clickspark.js",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

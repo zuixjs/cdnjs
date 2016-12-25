@@ -13,20 +13,6 @@
   "dependencies": {
     "jquery": ">1.7.0"
   },
-  "npmName": "jplayer",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*.css",
-        "**/*.js",
-        "**/*.jpg",
-        "**/*.png",
-        "**/*.gif",
-        "**/*.swf"
-      ]
-    }
-  ],
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -36,5 +22,22 @@
     "name": "Mark J Panaghiston",
     "email": "markp@happyworm.com",
     "url": "http://happyworm.com/"
+  },
+  "autoupdate": {
+    "target": "jplayer",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*.css",
+          "**/*.js",
+          "**/*.jpg",
+          "**/*.png",
+          "**/*.gif",
+          "**/*.swf"
+        ]
+      }
+    ],
+    "source": "npm"
   }
 }

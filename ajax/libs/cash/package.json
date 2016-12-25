@@ -17,13 +17,16 @@
     "email": "ken_wheeler@me.com"
   },
   "license": "MIT",
-  "npmName": "cash-dom",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "cash-dom",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

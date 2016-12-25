@@ -34,13 +34,16 @@
     "angular": "*",
     "ws": "^0.7.1"
   },
-  "npmName": "angular-websocket",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "!(angular-websocket-mock.js)"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "angular-websocket",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "!(angular-websocket-mock.js)"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

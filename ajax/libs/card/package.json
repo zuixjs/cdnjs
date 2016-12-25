@@ -7,20 +7,23 @@
     "card"
   ],
   "homepage": "http://jessepollak.github.io/card",
-  "npmName": "card",
-  "npmFileMap": [
-    {
-      "basePath": "lib",
-      "files": [
-        "js/*.js",
-        "css/*.css"
-      ]
-    }
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/jessepollak/card"
   },
   "license": "MIT",
-  "author": "Jesse Pollak <jpollak92@gmail.com>"
+  "author": "Jesse Pollak <jpollak92@gmail.com>",
+  "autoupdate": {
+    "target": "card",
+    "fileMap": [
+      {
+        "basePath": "lib",
+        "files": [
+          "js/*.js",
+          "css/*.css"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

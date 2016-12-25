@@ -18,13 +18,16 @@
   "dependencies": {
     "dom-scroll-into-view": "1.0.1"
   },
-  "npmName": "react-autocomplete",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "react-autocomplete",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

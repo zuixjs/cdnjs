@@ -12,17 +12,20 @@
   "dependencies": {
     "jsrsasign": "^5.0.7"
   },
-  "npmName": "oidc-client",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
   "keywords": [
     "oidc",
     "client"
-  ]
+  ],
+  "autoupdate": {
+    "target": "oidc-client",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

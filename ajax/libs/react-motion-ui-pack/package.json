@@ -23,13 +23,16 @@
     "react-measure": "^0.4.0",
     "react-motion": "^0.4.4"
   },
-  "npmName": "react-motion-ui-pack",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "react-motion-ui-pack",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

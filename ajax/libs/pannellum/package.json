@@ -17,13 +17,16 @@
     "panorama",
     "viewer"
   ],
-  "npmName": "pannellum",
-  "npmFileMap": [
-    {
-      "basePath": "build",
-      "files": [
-        "**/*.!(htm)"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "pannellum",
+    "fileMap": [
+      {
+        "basePath": "build",
+        "files": [
+          "**/*.!(htm)"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

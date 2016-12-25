@@ -21,13 +21,16 @@
     "url": "git://github.com/EvanHahn/HumanizeDuration.js.git"
   },
   "license": "Unlicense",
-  "npmName": "humanize-duration",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "humanize-duration*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "humanize-duration",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "humanize-duration*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

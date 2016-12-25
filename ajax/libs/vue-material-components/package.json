@@ -27,13 +27,16 @@
     "velocity-animate": "^1.2.3"
   },
   "homepage": "http://appcomponents.org/material-components",
-  "npmName": "vue-material-components",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "vue-material-components",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

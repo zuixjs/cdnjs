@@ -17,13 +17,16 @@
   "author": "lokesh",
   "license": "MIT",
   "homepage": "https://lokesh-coder.github.io/pretty-checkbox",
-  "npmName": "pretty-checkbox",
-  "npmFileMap": [
-    {
-      "basePath": "src",
-      "files": [
-        "**/pretty*.+(css|js|map)"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "pretty-checkbox",
+    "fileMap": [
+      {
+        "basePath": "src",
+        "files": [
+          "**/pretty*.+(css|js|map)"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

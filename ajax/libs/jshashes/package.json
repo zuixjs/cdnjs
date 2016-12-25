@@ -26,13 +26,16 @@
     "encoding",
     "algorithm"
   ],
-  "npmName": "jshashes",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "hashes*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "jshashes",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "hashes*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

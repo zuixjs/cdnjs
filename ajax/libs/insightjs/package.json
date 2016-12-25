@@ -25,15 +25,18 @@
     "crossfilter": "1.x",
     "d3": "3.x"
   },
-  "npmName": "insightjs",
-  "npmFileMap": [
-    {
-      "basePath": "dist",
-      "files": [
-        "*.js",
-        "*.css"
-      ]
-    }
-  ],
-  "description": "InsightJS is a data aggregation and vizualization library for quickly analyzing datasets in Javascript."
+  "description": "InsightJS is a data aggregation and vizualization library for quickly analyzing datasets in Javascript.",
+  "autoupdate": {
+    "target": "insightjs",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "*.js",
+          "*.css"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }

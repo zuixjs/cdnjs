@@ -26,13 +26,16 @@
     "url": "git+https://github.com/kswedberg/jquery-expander.git"
   },
   "version": "1.7.0",
-  "npmName": "jquery-expander",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "jquery-expander*"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "target": "jquery-expander",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "jquery-expander*"
+        ]
+      }
+    ],
+    "source": "npm"
+  }
 }
