@@ -1,7 +1,7 @@
 {
   "name": "browser-logos",
   "description": "Collection of high resolution web browser logos with transparent backgrounds",
-  "filename": "archive/chromium_12-48/chromium_12-48_128x128.png",
+  "filename": "chromium/chromium_48x48.png",
   "version": "39.0.0",
   "repository": {
     "type": "git",
