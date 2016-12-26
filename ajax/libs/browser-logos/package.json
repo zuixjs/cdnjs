@@ -17,7 +17,7 @@
     "target": "git://github.com/alrra/browser-logos.git",
     "fileMap": [
       {
-        "basePath": "",
+        "basePath": "src",
         "files": [
           "**/!(*.+(json|md))"
         ]
