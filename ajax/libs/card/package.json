@@ -10,10 +10,9 @@
   "npmName": "card",
   "npmFileMap": [
     {
-      "basePath": "lib",
+      "basePath": "dist",
       "files": [
-        "js/*.js",
-        "css/*.css"
+        "**/*"
       ]
     }
   ],
