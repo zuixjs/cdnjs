@@ -21,9 +21,9 @@
   "npmName": "what-input",
   "npmFileMap": [
     {
-      "basePath": "",
+      "basePath": "dist",
       "files": [
-        "what-input*"
+        "**/what-input*"
       ]
     }
   ]
