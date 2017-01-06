@@ -32,5 +32,6 @@
       ]
     }
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "version": "0.2.27"
 }
