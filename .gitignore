@@ -219,6 +219,5 @@ node_modules/
 /ajax/libs/*/*/**/*.sublime-*
 /ajax/libs/*/*/**/*.md
 /ajax/libs/*/*/**/*.markdown
-/ajax/libs/*/*/**/*.json
 /ajax/libs/*/*/**/*.ts
 /ajax/libs/*/*/**/*.flow
