@@ -25,9 +25,20 @@ Please raise a new pull request for new library additions and existing library u
 
  - Please read the instructions about sparseCheckout and shallow clone before any git clone operation to this huge repository: [documents/sparseCheckout.md](https://github.com/cdnjs/cdnjs/blob/master/documents/sparseCheckout.md)
  - All new libraries hosted on CDNJS should have an official public repository or npm package, and the officially pre-built distribution file(s) should also be there, so that we can apply the auto-update mechanism on that lib.
- - Now CDNJS supports adding a library by a single package.json, you just need to add a valid CDNJS package.json with npm/git auto-update config, and remove its version field in package.json, then we'll handle the remaining works.
-   - Notes that you should have a `filename` to point to the main file of a lib, if that file is not minified, please still use `filename.min.js` or `filename.min.css` structure naming, we'll do the minify job.
 
+## Adding a library by a single package.json
+
+CDNJS now supports adding a new library by a single `package.json`: you just need to add a valid CDNJS package.json with npm/git auto-update config, and remove its `version` field in `package.json`, and we'll handle the remaining works.
+
+* [Fork the cdnjs repo](https://github.com/cdnjs/cdnjs/fork) to your own GitHub account.
+* Click the "Branch: master" dropdown, enter the name of the library being added, and choose "Create branch <LIBRARY_NAME> from master".
+* Go to `ajax/libs` directory.
+* Click "Create new file".
+* Enter `<LIBRARY_NAME>/package.json`, compose a valid [`package.json`](https://github.com/cdnjs/cdnjs#create-or-update-packagejson) for the library being added, enter commit message and click "Commit new file".
+* Submit a pull request.
+
+Note that you should have a `filename` to point to the main file of a lib, if that file is not minified, please still use `filename.min.js` or `filename.min.css` structure naming, we'll do the minify job.
+ 
 ## Adding a new or updating an existing library
 
 cdnjs relies on user-submitted pull requests and automatic updating via `npm` or `git` repository to populate and update libraries.
