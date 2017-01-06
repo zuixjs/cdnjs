@@ -1,7 +1,7 @@
 {
   "name": "react-data-grid",
   "filename": "react-data-grid.min.js",
-  "version": "1.0.80",
+  "version": "1.0.81",
   "description": "Data grid for React",
   "repository": {
     "type": "git",
