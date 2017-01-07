@@ -230,6 +230,8 @@ packages.map(function(pkg) {
     delete jsonFix.jest;
     delete jsonFix.scripts;
     delete jsonFix.devDependencies;
+    delete jsonFix.dependencies;
+    delete jsonFix.optionalDependencies;
     delete jsonFix.main;
     delete jsonFix.peerDependencies;
     delete jsonFix.contributors;
@@ -248,7 +250,7 @@ packages.map(function(pkg) {
     delete jsonFix.repositories;
 
     assert.ok(JSON.stringify(json) === JSON.stringify(jsonFix),
-            pkgName(pkg) + ": we don't need bin, jshintConfig, eslintConfig, styles, install, typescript, browserify, browser, jam, jest, scripts, devDependencies, main, peerDependencies, contributors, bugs, gitHEAD, issues, files, ignore, engines, engine, directories, repositories and maintainers fields in package.json");
+            pkgName(pkg) + ": we don't need bin, jshintConfig, eslintConfig, styles, install, typescript, browserify, browser, jam, jest, scripts, devDependencies, dependencies, optionalDependencies, main, peerDependencies, contributors, bugs, gitHEAD, issues, files, ignore, engines, engine, directories, repositories and maintainers fields in package.json");
   };
   packageVows[pname + ": There must be repository information when using auto-update config"] = function(pkg) {
     var json = parse(pkg, true);
