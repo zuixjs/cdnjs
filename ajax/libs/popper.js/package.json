@@ -19,7 +19,7 @@
   "npmName": "popper.js",
   "npmFileMap": [
     {
-      "basePath": "build",
+      "basePath": "dist",
       "files": [
         "**/*"
       ]
