@@ -20,10 +20,11 @@
       }
     ]
   },
-   "keywords": [
+  "keywords": [
     "semantic-ui",
     "semantic",
     "datepicker",
     "timepicker"
-  ]
+  ],
+  "version": "0.0.6"
 }
