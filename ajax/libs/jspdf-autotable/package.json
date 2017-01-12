@@ -24,7 +24,7 @@
       {
         "basePath": "dist",
         "files": [
-          "**/*"
+          "**/!(jspdf.plugin.autotable.src.js)"
         ]
       }
     ]
