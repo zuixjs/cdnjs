@@ -16,12 +16,7 @@
       {
         "basePath": "build",
         "files": [
-          "*.png",
-          "*.gif",
-          "*.css",
-          "*.js",
-          "*.swf",
-          "*.svg"
+          "**/!(jquery.js)"
         ]
       }
     ]
