@@ -20,5 +20,6 @@
       ]
     }
   ],
-  "filename": "paper.min.css"
+  "filename": "paper.min.css",
+  "version": "0.2.2"
 }
