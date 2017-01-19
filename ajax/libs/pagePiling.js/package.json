@@ -1,6 +1,6 @@
 {
   "name": "pagePiling.js",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "description": "Create a scrolling pile of sections",
   "filename": "jquery.pagepiling.min.js",
   "repository": {
@@ -20,9 +20,9 @@
     "target": "git://github.com/alvarotrigo/pagePiling.js.git",
     "fileMap": [
       {
-        "basePath": "",
+        "basePath": "dist",
         "files": [
-          "jquery.*"
+          "**/*"
         ]
       }
     ]
