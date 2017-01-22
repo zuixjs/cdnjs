@@ -18,13 +18,6 @@
     "adapter",
     "http"
   ],
-  "dependencies": {
-    "axios": "0.5.0",
-    "js-data": ">=1.1.0",
-    "jshint": "^2.6.3",
-    "jshint-loader": "^0.8.3",
-    "mout": "0.11.0"
-  },
   "npmName": "js-data-http",
   "npmFileMap": [
     {

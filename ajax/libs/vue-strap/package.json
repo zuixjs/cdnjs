@@ -8,9 +8,6 @@
     "url": "https://github.com/yuche/vue-strap"
   },
   "homepage": "https://yuche.github.io/vue-strap/",
-  "dependencies": {
-    "vue": "^0.12.10"
-  },
   "keywords": [
     "vue",
     "vue-bootstrap",

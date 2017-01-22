@@ -17,9 +17,6 @@
     "money",
     "jquery"
   ],
-  "dependencies": {
-    "jquery": ">=1.6"
-  },
   "npmName": "jquery-maskmoney",
   "npmFileMap": [
     {

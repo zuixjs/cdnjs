@@ -11,9 +11,6 @@
     "type": "git",
     "url": "https://github.com/audiocogs/aurora.js.git"
   },
-  "dependencies": {
-    "speaker": "~0.0.10"
-  },
   "license": "MIT",
   "keywords": [
     "framework",

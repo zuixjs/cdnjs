@@ -9,9 +9,6 @@
   },
   "license": "MIT",
   "homepage": "http://www.elevateweb.co.uk/image-zoom",
-  "dependencies": {
-    "jquery": ">=1.4.3"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/elevateweb/elevatezoom.git"

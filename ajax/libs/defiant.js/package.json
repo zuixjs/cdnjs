@@ -20,9 +20,6 @@
     "url": "https://github.com/hbi99/defiant.js.git"
   },
   "homepage": "http://www.defiantjs.com",
-  "dependencies": {
-    "x10": "git://github.com/hbi99/x10.js.git"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/hbi99/defiant.js.git",

@@ -8,9 +8,6 @@
     "url": "git://github.com/kazzkiq/CodeFlask.js"
   },
   "author": "Claudio Holanda",
-  "dependencies": {
-    "prism": "~1.0.1"
-  },
   "description": "A micro code-editor for awesome web pages.",
   "keywords": [
     "code-editor",

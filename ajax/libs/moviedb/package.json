@@ -17,9 +17,6 @@
     "name": "Dan Zajdband",
     "email": "dan.zajdband@gmail.com"
   },
-  "dependencies": {
-    "superagent": "^1.6.1"
-  },
   "npmName": "moviedb",
   "npmFileMap": [
     {

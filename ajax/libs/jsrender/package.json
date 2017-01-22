@@ -22,9 +22,6 @@
     "templates",
     "template"
   ],
-  "dependencies": {
-    "through2": "^2.0.0"
-  },
   "npmName": "jsrender",
   "npmFileMap": [
     {

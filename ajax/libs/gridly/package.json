@@ -15,9 +15,6 @@
   ],
   "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
   "license": "MIT",
-  "dependencies": {
-    "uglifycss": "^0.0.18"
-  },
   "npmName": "gridly",
   "npmFileMap": [
     {

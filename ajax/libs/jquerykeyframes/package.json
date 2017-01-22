@@ -15,10 +15,6 @@
   ],
   "author": "krazyjakee",
   "license": "MIT",
-  "dependencies": {
-    "jquery": "latest",
-    "prefixfree": "git://github.com/LeaVerou/prefixfree.git#gh-pages"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/Keyframes/jQuery.Keyframes.git",

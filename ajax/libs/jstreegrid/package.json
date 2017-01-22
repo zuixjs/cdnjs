@@ -7,9 +7,6 @@
     "name": "Avi Deitcher",
     "url": "https://github.com/deitch"
   },
-  "dependencies": {
-    "jstree": ">=3.0.0"
-  },
   "keywords": [
     "jquery",
     "jstree",

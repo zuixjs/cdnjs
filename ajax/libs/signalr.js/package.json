@@ -13,9 +13,6 @@
     "type": "git",
     "url": "git+https://github.com/SignalR/SignalR.git"
   },
-  "dependencies": {
-    "jquery": "^1.6.4"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/SignalR/bower-signalr.git",

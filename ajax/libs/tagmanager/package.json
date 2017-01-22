@@ -7,9 +7,6 @@
     "name": "Max Favilli",
     "url": "http://maxfavilli.com"
   },
-  "dependencies": {
-    "jquery": "1"
-  },
   "description": "A jQuery plugin to create tag input fields, which works nicely with Twitter Typeahead.js and Twitter Bootstrap",
   "keywords": [
     "tags",

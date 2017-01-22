@@ -13,10 +13,6 @@
     "engine",
     "twig"
   ],
-  "dependencies": {
-    "walk": "2.1.x",
-    "minimatch": "0.2.x"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/justjohn/twig.js.git",

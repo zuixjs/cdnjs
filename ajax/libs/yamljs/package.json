@@ -10,10 +10,6 @@
     "json2yaml"
   ],
   "author": "Jeremy Faivre <contact@jeremyfa.com>",
-  "dependencies": {
-    "argparse": "^1.0.7",
-    "glob": "^7.0.5"
-  },
   "license": "MIT",
   "repository": {
     "type": "git",

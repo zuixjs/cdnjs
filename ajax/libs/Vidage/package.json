@@ -17,9 +17,6 @@
   ],
   "author": "dvL-den",
   "license": "MIT",
-  "dependencies": {
-    "lodash": "^4.13.1"
-  },
   "npmName": "vidage",
   "npmFileMap": [
     {

@@ -10,9 +10,6 @@
     "colorpicker"
   ],
   "license": "MIT",
-  "dependencies": {
-    "jquery": ">= 1.7.x"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/claviska/jquery-minicolors.git"

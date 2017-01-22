@@ -17,9 +17,6 @@
     "name": "Jared Anderson",
     "url": "http://twitter.com/tuxsudo"
   },
-  "dependencies": {
-    "jquery": ">=1.5"
-  },
   "homepage": "https://tuxsudo.com/code/project/letterfx",
   "autoupdate": {
     "source": "git",

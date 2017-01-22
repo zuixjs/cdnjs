@@ -20,9 +20,6 @@
     "name": "Piotr Rochala",
     "url": "http://rocha.la/"
   },
-  "dependencies": {
-    "jquery": ">= 1.7"
-  },
   "licenses": [
     "MIT",
     {

@@ -16,11 +16,6 @@
   ],
   "author": "rt2zz <zack@root-two.com>",
   "license": "MIT",
-  "dependencies": {
-    "json-stringify-safe": "^5.0.1",
-    "lodash": "^4.11.1",
-    "lodash-es": "^4.16.0"
-  },
   "npmName": "redux-persist",
   "npmFileMap": [
     {

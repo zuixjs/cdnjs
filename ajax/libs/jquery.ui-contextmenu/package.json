@@ -27,9 +27,6 @@
   },
   "demo": "http://wwwendt.de/tech/demo/jquery-contextmenu/demo/",
   "docs": "https://github.com/mar10/jquery-ui-contextmenu/blob/master/README.md",
-  "dependencies": {
-    "jquery": ">=1.7"
-  },
   "npmName": "ui-contextmenu",
   "npmFileMap": [
     {

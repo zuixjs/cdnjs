@@ -15,10 +15,6 @@
   ],
   "author": "Dmitri Voronianski <dmitri.voronianski@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "deku": "^0.4.2",
-    "soundcloud-audio": "^0.1.4"
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/soundblogs/soundplayer-widget.git"

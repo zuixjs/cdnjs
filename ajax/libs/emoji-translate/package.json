@@ -8,9 +8,6 @@
     "url": "git://github.com/notwaldorf/emoji-translate.git"
   },
   "license": "MIT",
-  "dependencies": {
-    "emojilib": "^2.0.0"
-  },
   "author": "Monica Dinculescu <noms@google.com>",
   "autoupdate": {
     "source": "git",

@@ -15,10 +15,6 @@
     "url": "https://github.com/facebook/draft-js"
   },
   "license": "BSD-3-Clause",
-  "dependencies": {
-    "fbjs": "^0.8.0-alpha.1",
-    "immutable": "^3.7.4"
-  },
   "npmName": "draft-js",
   "npmFileMap": [
     {

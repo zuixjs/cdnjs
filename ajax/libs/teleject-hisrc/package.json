@@ -8,9 +8,6 @@
     "url": "https://github.com/teleject"
   },
   "license": "MIT",
-  "dependencies": {
-    "jquery": "1"
-  },
   "description": "A simple jQuery plugin for adaptive images in responsive web design",
   "keywords": [
     "rwd",

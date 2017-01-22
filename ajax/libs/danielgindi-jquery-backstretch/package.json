@@ -14,9 +14,6 @@
     "url": "git://github.com/danielgindi/jquery-backstretch.git"
   },
   "license": "MIT",
-  "dependencies": {
-    "jquery": ">= 1.7"
-  },
   "keywords": [
     "jquery",
     "background",

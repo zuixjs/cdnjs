@@ -18,12 +18,6 @@
     "bootstrap-switch",
     "jQuery plugin"
   ],
-  "dependencies": {
-    "angular": ">=1.4.0",
-    "jquery": ">=1.9.0",
-    "bootstrap": ">=2.3.2",
-    "bootstrap-switch": "3.3.2"
-  },
   "npmName": "angular-bootstrap-switch",
   "npmFileMap": [
     {

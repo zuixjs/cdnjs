@@ -3,10 +3,6 @@
   "version": "2.2.0",
   "description": "Angular directive for rich text editor Quill",
   "author": "Bengt Weiße <bengtler@gmail.com>",
-  "dependencies": {
-    "quill": "0.20.1",
-    "angular": "1.4.7"
-  },
   "license": "MIT",
   "repository": {
     "type": "git",

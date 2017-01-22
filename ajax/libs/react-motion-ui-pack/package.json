@@ -18,11 +18,6 @@
   ],
   "author": "Travis Arnold <travis@souporserious.com> (http://souporserious.com)",
   "license": "MIT",
-  "dependencies": {
-    "get-prefix": "^1.0.0",
-    "react-measure": "^0.4.0",
-    "react-motion": "^0.4.4"
-  },
   "npmName": "react-motion-ui-pack",
   "npmFileMap": [
     {

@@ -15,9 +15,6 @@
     "type": "git",
     "url": "git://github.com/walmik/timer.jquery.git"
   },
-  "dependencies": {
-    "babel-register": "^6.9.0"
-  },
   "license": "MIT",
   "autoupdate": {
     "source": "git",

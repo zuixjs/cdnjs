@@ -13,9 +13,6 @@
   ],
   "author": "srfrnk",
   "license": "MIT",
-  "dependencies": {
-    "re-tree": "~0.0.2"
-  },
   "npmName": "ng-device-detector",
   "npmFileMap": [
     {

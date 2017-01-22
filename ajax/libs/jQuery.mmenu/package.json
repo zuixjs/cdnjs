@@ -12,9 +12,6 @@
     "panels",
     "app"
   ],
-  "dependencies": {
-    "jquery": ">= 1.7.0"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/BeSite/jQuery.mmenu.git",

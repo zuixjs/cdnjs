@@ -7,10 +7,6 @@
     "email": "github@nonplus.net",
     "name": "Stepan Riha"
   },
-  "dependencies": {
-    "@types/angular": "^1.5",
-    "@types/angular-ui-router": "^1.1"
-  },
   "license": "MIT",
   "repository": {
     "type": "git",

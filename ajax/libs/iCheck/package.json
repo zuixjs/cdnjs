@@ -9,9 +9,6 @@
     "email": "info@fronteed.com",
     "homepage": "http://fronteed.com/"
   },
-  "dependencies": {
-    "jquery": ">=1.7"
-  },
   "keywords": [
     "checkbox",
     "radio",

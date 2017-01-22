@@ -8,9 +8,6 @@
     "email": "alexander.gugel@gmail.com"
   },
   "license": "MIT",
-  "dependencies": {
-    "normalize.css": "^3.0.2"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexanderGugel/papier.git"

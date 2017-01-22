@@ -19,11 +19,6 @@
   },
   "homepage": "http://jessy1092.github.io/react-semantify",
   "license": "MIT",
-  "dependencies": {
-    "classnames": "^2.2.0",
-    "react": "^0.14.2",
-    "react-dom": "^0.14.2"
-  },
   "npmName": "react-semantify",
   "npmFileMap": [
     {

@@ -17,10 +17,6 @@
   "author": "Mozilla",
   "license": "MPL-2.0",
   "homepage": "http://metricsgraphicsjs.org",
-  "dependencies": {
-    "jquery": ">=1.11.1",
-    "d3": ">=3.4.8"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/mozilla/metrics-graphics.git",

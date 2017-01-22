@@ -10,9 +10,6 @@
     "type": "git",
     "url": "git://github.com/EagerIO/EmbedBox.git"
   },
-  "dependencies": {
-    "clipboard": "1.5.12"
-  },
   "npmName": "embed-box",
   "npmFileMap": [
     {

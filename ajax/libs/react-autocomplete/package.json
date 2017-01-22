@@ -15,9 +15,6 @@
     "combobox",
     "a11y"
   ],
-  "dependencies": {
-    "dom-scroll-into-view": "1.0.1"
-  },
   "npmName": "react-autocomplete",
   "npmFileMap": [
     {

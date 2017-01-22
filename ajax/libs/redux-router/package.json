@@ -15,9 +15,6 @@
   ],
   "author": "Andrew Clark <acdlite@me.com>",
   "license": "MIT",
-  "dependencies": {
-    "deep-equal": "^1.0.1"
-  },
   "npmName": "redux-router",
   "npmFileMap": [
     {

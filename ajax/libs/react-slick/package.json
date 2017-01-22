@@ -17,12 +17,6 @@
     "slider",
     "react-component"
   ],
-  "dependencies": {
-    "json2mq": "^0.2.0",
-    "lodash": "^2.4.1",
-    "object-assign": "^2.0.0",
-    "react-responsive-mixin": "^0.3.1"
-  },
   "npmName": "react-slick",
   "npmFileMap": [
     {

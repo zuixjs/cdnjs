@@ -13,9 +13,6 @@
     "diff",
     "patch"
   ],
-  "dependencies": {
-    "chalk": "^0.5.1"
-  },
   "bundleDependencies": [],
   "license": "MIT",
   "testling": {

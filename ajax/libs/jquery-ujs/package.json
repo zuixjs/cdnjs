@@ -8,9 +8,6 @@
   ],
   "description": "Ruby on Rails unobtrusive scripting adapter for jQuery",
   "license": "MIT",
-  "dependencies": {
-    "jquery": ">1.8.*"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/rails/jquery-ujs.git"

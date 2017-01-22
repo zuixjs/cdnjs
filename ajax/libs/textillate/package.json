@@ -12,11 +12,6 @@
     "lettering"
   ],
   "license": "MIT",
-  "dependencies": {
-    "jquery": ">= 1.6.2",
-    "letteringjs": ">= 0.6.1",
-    "animate.css": ">= 3.0.0"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/jschr/textillate.git"

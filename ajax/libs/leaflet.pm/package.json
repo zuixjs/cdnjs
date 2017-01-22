@@ -15,9 +15,6 @@
     "data-field-geojson",
     "ui-leaflet-draw"
   ],
-  "dependencies": {
-    "leaflet": "^1.0.1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/codeofsumit/leaflet.pm.git"

@@ -21,7 +21,6 @@
     "crypto",
     "md5"
   ],
-  "dependencies": {},
   "npmName": "angular-md5",
   "npmFileMap": [
     {

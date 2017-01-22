@@ -16,9 +16,6 @@
   "homepage": "http://sonnyt.com/downCount-plugin/",
   "docs": "https://github.com/sonnyt/downCount#downCount",
   "demo": "http://sonnyt.com/downCount",
-  "dependencies": {
-    "jquery": ">=1.7"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/sonnyt/downCount.git",

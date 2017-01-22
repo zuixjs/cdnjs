@@ -18,12 +18,6 @@
     "mvi",
     "virtual-dom"
   ],
-  "dependencies": {
-    "es6-map": "0.1.1",
-    "vdom-parser": "^1.0.2",
-    "vdom-to-html": "^2.0.0",
-    "virtual-dom": "2.1.0"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/cyclejs/cycle-dom.git",

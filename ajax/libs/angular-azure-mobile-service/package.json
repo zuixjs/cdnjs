@@ -16,9 +16,6 @@
   ],
   "author": "Terry Moore II",
   "license": "MIT",
-  "dependencies": {
-    "angular": ">= 1.0.0"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/TerryMooreII/angular-azure-mobile-service.git",

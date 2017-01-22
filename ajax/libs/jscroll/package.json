@@ -24,9 +24,6 @@
   },
   "license": "MIT",
   "homepage": "http://jscroll.com",
-  "dependencies": {
-    "jquery": "^1.7.4"
-  },
   "npmName": "jscroll",
   "npmFileMap": [
     {

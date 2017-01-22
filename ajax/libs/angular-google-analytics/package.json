@@ -19,9 +19,6 @@
     "visitor-tracking",
     "universal-analytics"
   ],
-  "dependencies": {
-    "angular": ">=1"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/revolunet/angular-google-analytics.git",

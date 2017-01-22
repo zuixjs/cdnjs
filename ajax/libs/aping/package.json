@@ -16,9 +16,6 @@
   "author": "Jonathan Hornung <jonathan.hornung@gmail.com>",
   "license": "MIT",
   "homepage": "https://aping.readme.io/",
-  "dependencies": {
-    "angular": "*"
-  },
   "npmName": "aping",
   "npmFileMap": [
     {

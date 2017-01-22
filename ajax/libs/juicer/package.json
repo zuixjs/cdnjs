@@ -17,10 +17,6 @@
     "type": "git",
     "url": "git@github.com:PaulGuo/Juicer.git"
   },
-  "dependencies": {
-    "optimist": "~0.3",
-    "uglify-js": "~1.2"
-  },
   "license": "MIT",
   "npmName": "juicer",
   "npmFileMap": [

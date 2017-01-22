@@ -26,9 +26,6 @@
     }
   ],
   "homepage": "http://jvectormap.com",
-  "dependencies": {
-    "jquery": ">=1.5"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/bjornd/jvectormap.git",

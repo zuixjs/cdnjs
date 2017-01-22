@@ -24,9 +24,6 @@
     "url": "https://github.com/fengyuanchen/cropper.git"
   },
   "license": "MIT",
-  "dependencies": {
-    "jquery": ">= 1.9.0"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/fengyuanchen/cropper.git",

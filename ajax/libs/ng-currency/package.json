@@ -10,9 +10,6 @@
   ],
   "license": "MIT",
   "homepage": "http://alaguirre.com",
-  "dependencies": {
-    "angular": "~1.3.4"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/aguirrel/ng-currency.git",

@@ -4,9 +4,6 @@
   "version": "0.1.8",
   "author": "Per Vestman",
   "license": "MIT",
-  "dependencies": {
-    "jquery": ">=1.8"
-  },
   "description": "Yet another jQuery plugin to style/replace select elements.",
   "keywords": [
     "select",

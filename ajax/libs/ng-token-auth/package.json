@@ -2,15 +2,6 @@
   "name": "ng-token-auth",
   "filename": "ng-token-auth.min.js",
   "version": "0.0.29",
-  "dependencies": {
-    "config": "~0.4.35",
-    "crypto": "0.0.3",
-    "express": "~3.5.1",
-    "http-proxy": "~1.1.4",
-    "js-yaml": "~3.0.2",
-    "request": "~2.36.0",
-    "sitemap": "~0.7.3"
-  },
   "keywords": [
     "authentication",
     "oauth2",

@@ -12,7 +12,6 @@
     "type": "git",
     "url": "git://github.com/nervgh/angular-file-upload.git"
   },
-  "dependencies": {},
   "keywords": [
     "angularjs",
     "directive",

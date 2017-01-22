@@ -18,9 +18,6 @@
   },
   "license": "MIT",
   "homepage": "http://themes-pixeden.com/aurora-kit/grid",
-  "dependencies": {
-    "aurora-shared": "^1.0.0"
-  },
   "npmName": "aurora-grid",
   "npmFileMap": [
     {

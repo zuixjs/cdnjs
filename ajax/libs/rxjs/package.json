@@ -21,7 +21,6 @@
     "type": "git",
     "url": "https://github.com/Reactive-Extensions/RxJS.git"
   },
-  "dependencies": {},
   "keywords": [
     "LINQ",
     "FRP",

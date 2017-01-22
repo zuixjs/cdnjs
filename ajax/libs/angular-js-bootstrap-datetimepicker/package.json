@@ -16,9 +16,6 @@
     "url": "git+https://github.com/zhaber/angular-js-bootstrap-datetimepicker.git"
   },
   "license": "MIT",
-  "dependencies": {
-    "angular-ui-bootstrap": ">=1.2.4"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/zhaber/angular-js-bootstrap-datetimepicker.git",

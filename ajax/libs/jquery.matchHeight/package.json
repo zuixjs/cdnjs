@@ -20,9 +20,6 @@
   "homepage": "http://brm.io/jquery-match-height/",
   "docs": "http://brm.io/jquery-match-height/",
   "download": "https://github.com/liabru/jquery-match-height",
-  "dependencies": {
-    "jquery": ">=1.5"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/liabru/jquery-match-height.git",

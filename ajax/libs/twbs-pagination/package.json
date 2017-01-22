@@ -3,9 +3,6 @@
   "filename": "jquery.twbsPagination.min.js",
   "version": "1.4.1",
   "description": "jQuery simple pagination plugin for bootstrap-style webpages",
-  "dependencies": {
-    "jquery": ">=1.7.0"
-  },
   "keywords": [
     "pagination",
     "jQuery",

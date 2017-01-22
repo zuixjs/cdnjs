@@ -14,9 +14,6 @@
   "author": "ZURB <foundation@zurb.com>",
   "license": "MIT",
   "homepage": "http://zurb.com/playground/motion-ui",
-  "dependencies": {
-    "jquery": "^2.1.4"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/zurb/motion-ui.git",

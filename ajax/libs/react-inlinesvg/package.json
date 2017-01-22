@@ -15,11 +15,6 @@
   ],
   "author": "Matthew Dapena-Tretter <m@tthewwithanm.com>",
   "license": "MIT",
-  "dependencies": {
-    "httpplease": "^0.16",
-    "once": "^1.4",
-    "fbjs": "^0.8"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/matthewwithanm/react-inlinesvg.git",

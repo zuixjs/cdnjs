@@ -17,10 +17,6 @@
     "grid",
     "smart"
   ],
-  "dependencies": {
-    "camel-case": "^3.0.0",
-    "pascal-case": "^2.0.0"
-  },
   "npmName": "vue-smart-table",
   "npmFileMap": [
     {

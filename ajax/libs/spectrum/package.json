@@ -17,9 +17,6 @@
     "colorpicker",
     "ui"
   ],
-  "dependencies": {
-    "jquery": ">=1.7.2"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/bgrins/spectrum.git",

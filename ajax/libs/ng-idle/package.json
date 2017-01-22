@@ -19,9 +19,6 @@
   },
   "author": "Mike Grabski <me@mikegrabski.com>",
   "license": "MIT",
-  "dependencies": {
-    "angular": "^1.2.0"
-  },
   "npmName": "ng-idle",
   "npmFileMap": [
     {

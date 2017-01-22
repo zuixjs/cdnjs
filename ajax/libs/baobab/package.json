@@ -3,9 +3,6 @@
   "version": "2.4.0",
   "filename": "baobab.js",
   "description": "JavaScript persistent data tree with cursors.",
-  "dependencies": {
-    "emmett": "^3.0.1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Yomguithereal/baobab.git"

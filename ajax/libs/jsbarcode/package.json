@@ -20,10 +20,6 @@
   "author": "Johan Lindell",
   "license": "MIT",
   "homepage": "http://lindell.me/JsBarcode",
-  "dependencies": {
-    "canvas": "^1.0.0",
-    "commander": ">=2.8.0"
-  },
   "npmName": "jsbarcode",
   "npmFileMap": [
     {

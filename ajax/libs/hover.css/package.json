@@ -19,9 +19,6 @@
   "author": "Ian Lunn",
   "homepage": "http://ianlunn.co.uk/",
   "license": "MIT",
-  "dependencies": {
-    "load-grunt-tasks": "~0.2.0"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/IanLunn/Hover.git",

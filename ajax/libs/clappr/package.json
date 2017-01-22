@@ -9,11 +9,6 @@
   },
   "author": "Globo.com",
   "license": "BSD",
-  "dependencies": {
-    "underscore": "1.7.0",
-    "mousetrap": "^1.4.6",
-    "scrollmonitor": "^1.0.8"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/clappr/clappr.git",

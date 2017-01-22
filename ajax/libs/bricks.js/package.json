@@ -16,9 +16,6 @@
     "layout",
     "packing"
   ],
-  "dependencies": {
-    "knot.js": "^1.1.1"
-  },
   "npmName": "bricks.js",
   "npmFileMap": [
     {

@@ -22,10 +22,6 @@
     "type": "git",
     "url": "https://github.com/ermouth/jQuery.my.git"
   },
-  "dependencies": {
-    "jquery": "~1.11",
-    "sugar": "~1.4"
-  },
   "license": "MIT",
   "npmName": "jquerymy",
   "npmFileMap": [

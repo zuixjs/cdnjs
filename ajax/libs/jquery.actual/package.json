@@ -12,9 +12,6 @@
     "hidden element height",
     "actual"
   ],
-  "dependencies": {
-    "jquery": ">=1.2.3"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/dreamerslab/jquery.actual.git"

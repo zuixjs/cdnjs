@@ -14,9 +14,6 @@
     "async",
     "responsive"
   ],
-  "dependencies": {
-    "postscribe": "^1.4.0"
-  },
   "license": "MIT",
   "autoupdate": {
     "source": "git",

@@ -6,7 +6,6 @@
   "author": "https://github.com/angular-ui/ui-sortable/graphs/contributors",
   "license": "MIT",
   "homepage": "http://angular-ui.github.com",
-  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git://github.com/angular-ui/ui-sortable.git"

@@ -10,12 +10,6 @@
     "graphlib",
     "renderer"
   ],
-  "dependencies": {
-    "d3": "^3.3.8",
-    "dagre": "^0.7.3",
-    "graphlib": "^1.0.5",
-    "lodash": "^3.10.0"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/cpettitt/dagre-d3.git"

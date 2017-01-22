@@ -14,10 +14,6 @@
     "ngaudio",
     "angular-audio"
   ],
-  "dependencies": {
-    "browser-sync": "^2.7.12",
-    "gulp": "^3.9.0"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/danielstern/ngAudio.git",

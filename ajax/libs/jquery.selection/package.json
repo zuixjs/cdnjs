@@ -12,9 +12,6 @@
     "name": "Koji Iwasaki",
     "url": "http://blog.madapaja.net"
   },
-  "dependencies": {
-    "jquery": ">=1.7.0"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/madapaja/jquery.selection"

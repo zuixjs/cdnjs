@@ -17,9 +17,6 @@
     "rich-text",
     "textarea"
   ],
-  "dependencies": {
-    "quill": "^0.19.12"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/zenoamaro/react-quill.git",

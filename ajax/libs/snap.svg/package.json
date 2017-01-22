@@ -8,7 +8,6 @@
     "graphics"
   ],
   "homepage": "http://snapsvg.io",
-  "dependencies": {},
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/adobe-webplatform/Snap.svg.git",

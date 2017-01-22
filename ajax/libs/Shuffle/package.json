@@ -22,9 +22,6 @@
   },
   "author": "Glen Cheney <cheney.glen@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "jquery": ">=1.9.0"
-  },
   "npmName": "shufflejs",
   "npmFileMap": [
     {

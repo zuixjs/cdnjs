@@ -21,9 +21,6 @@
   },
   "license": "MIT",
   "homepage": "https://basilio.github.io/responsiveCarousel/",
-  "dependencies": {
-    "jquery": ">=1.7"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/basilio/responsiveCarousel.git",

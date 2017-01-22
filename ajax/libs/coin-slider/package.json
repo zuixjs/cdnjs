@@ -11,9 +11,6 @@
     "slider",
     "image"
   ],
-  "dependencies": {
-    "jquery": ">=1.2.2"
-  },
   "author": {
     "name": "Ivan Lazarevic",
     "url": "http://workshop.rs",

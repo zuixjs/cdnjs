@@ -23,9 +23,6 @@
   ],
   "author": "Per Liedman <per@liedman.net>",
   "license": "BSD-2-Clause",
-  "dependencies": {
-    "leaflet": "~0.7.7"
-  },
   "homepage": "http://www.liedman.net/leaflet-control-geocoder/",
   "npmName": "leaflet-control-geocoder",
   "npmFileMap": [

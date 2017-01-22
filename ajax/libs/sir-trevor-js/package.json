@@ -13,10 +13,6 @@
     "rich content editor",
     "Sir Trevor"
   ],
-  "dependencies": {
-    "es5-shim": "^4.0.3",
-    "svg4everybody": "^2.0.3"
-  },
   "license": "MIT",
   "autoupdate": {
     "source": "git",

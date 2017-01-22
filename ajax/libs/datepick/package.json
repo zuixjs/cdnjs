@@ -18,10 +18,6 @@
   },
   "homepage": "http://keith-wood.name/datepick.HTML",
   "license": "MIT",
-  "dependencies": {
-    "jquery": ">=1.12.0",
-    "kbw-plugin": "~1.0.2"
-  },
   "author": "Keith Wood <wood.keith@optusnet.com.au> (http://keith-wood.name)",
   "autoupdate": {
     "source": "git",

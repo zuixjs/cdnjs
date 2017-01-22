@@ -17,9 +17,6 @@
     "url": "git://github.com/wilsonpage/fastdom.git"
   },
   "license": "MIT",
-  "dependencies": {
-    "strictdom": "^1.0.0"
-  },
   "npmName": "fastdom",
   "npmFileMap": [
     {

@@ -14,9 +14,6 @@
     "gmail extension",
     "gmail chrome extension"
   ],
-  "dependencies": {
-    "jquery": "^1.10.2"
-  },
   "author": "Kartik Talwar",
   "license": "MIT",
   "npmName": "gmail-js",

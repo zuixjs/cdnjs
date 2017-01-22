@@ -10,10 +10,6 @@
     "angularjs",
     "d3js"
   ],
-  "dependencies": {
-    "d3": "~3.1.7",
-    "angular": "*"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/n3-charts/pie-chart.git"

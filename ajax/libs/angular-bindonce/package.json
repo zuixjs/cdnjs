@@ -9,9 +9,6 @@
     "url": "https://github.com/Pasvaz/bindonce.git"
   },
   "license": "MIT",
-  "dependencies": {
-    "angular": ">=1.0.6"
-  },
   "keywords": [
     "angularjs",
     "angular",

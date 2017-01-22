@@ -9,10 +9,6 @@
     "drag",
     "drop"
   ],
-  "dependencies": {
-    "jquery": "~1.9.1",
-    "jqueryui": "~1.9.2"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/McPants/jquery.shapeshift.git",

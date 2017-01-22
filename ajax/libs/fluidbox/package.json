@@ -12,9 +12,6 @@
     "modal"
   ],
   "license": "MIT",
-  "dependencies": {
-    "jquery": ">=1.9"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/terrymun/Fluidbox.git",

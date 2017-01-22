@@ -21,9 +21,6 @@
   ],
   "author": "Daniele Moraschi <daniele.moraschi@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "jquery": "~2.1"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/danielemoraschi/maplace.js.git",

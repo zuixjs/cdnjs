@@ -14,10 +14,6 @@
     "url": "http://www.dangrossman.info"
   },
   "license": "MIT",
-  "dependencies": {
-    "jquery": "^1.10",
-    "moment": "^2.9.0"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/dangrossman/bootstrap-daterangepicker.git",

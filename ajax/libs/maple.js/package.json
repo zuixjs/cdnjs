@@ -19,9 +19,6 @@
   },
   "author": "Adam Timberlake <adam.timberlake@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "plugin-jsx": "^1.1.0"
-  },
   "npmName": "maple.js",
   "npmFileMap": [
     {

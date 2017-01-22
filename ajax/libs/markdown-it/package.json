@@ -15,10 +15,6 @@
     "url": "git://github.com/markdown-it/markdown-it.git"
   },
   "license": "MIT",
-  "dependencies": {
-    "argparse": "~ 0.1.15",
-    "autolinker": "~ 0.15.0"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/markdown-it/markdown-it.git",

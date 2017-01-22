@@ -18,10 +18,6 @@
     "jquery-plugin"
   ],
   "homepage": "https://kylestetz.github.io/CLNDR/",
-  "dependencies": {
-    "jquery": ">=1.9",
-    "moment": ">=2.8.3"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/kylestetz/CLNDR.git",

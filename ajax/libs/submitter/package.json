@@ -25,9 +25,6 @@
     "url": "https://github.com/fengyuanchen/submitter.git"
   },
   "license": "MIT",
-  "dependencies": {
-    "jquery": ">= 1.9.1"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/fengyuanchen/submitter.git",

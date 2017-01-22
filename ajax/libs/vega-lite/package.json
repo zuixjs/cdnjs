@@ -9,11 +9,6 @@
     "url": "https://github.com/vega/vega-lite.git"
   },
   "license": "BSD-3-Clause",
-  "dependencies": {
-    "datalib": "^1.6.3",
-    "json-stable-stringify": "^1.0.1",
-    "yargs": "^4.7.1"
-  },
   "npmName": "vega-lite",
   "npmFileMap": [
     {

@@ -13,9 +13,6 @@
     "gallery",
     "lightbox"
   ],
-  "dependencies": {
-    "jquery": ">=1.4.0"
-  },
   "homepage": "http://janne.aukia.com/zoomooz",
   "author": {
     "name": "Janne Aukia",

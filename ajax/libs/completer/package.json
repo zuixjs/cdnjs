@@ -33,8 +33,5 @@
     "type": "git",
     "url": "https://github.com/fengyuanchen/completer.git"
   },
-  "license": "MIT",
-  "dependencies": {
-    "jquery": ">= 1.9.0"
-  }
+  "license": "MIT"
 }

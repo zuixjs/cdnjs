@@ -14,10 +14,6 @@
   },
   "author": "Clappr team",
   "license": "BSD-3-Clause",
-  "dependencies": {
-    "shaka-player": "v2.0.0-beta3",
-    "clappr": "0.2.61"
-  },
   "npmName": "dash-shaka-playback",
   "npmFileMap": [
     {

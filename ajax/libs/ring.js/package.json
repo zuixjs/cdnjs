@@ -17,9 +17,6 @@
     "url": "https://github.com/nicolas-van/ring.js.git"
   },
   "homepage": "http://ringjs.neoname.eu",
-  "dependencies": {
-    "underscore": ">=1.4.4"
-  },
   "license": "MIT",
   "autoupdate": {
     "source": "git",

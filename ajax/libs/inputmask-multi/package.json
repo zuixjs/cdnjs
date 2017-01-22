@@ -13,10 +13,6 @@
     "name": "Andrey Egorov",
     "url": "https://github.com/andr-04"
   },
-  "dependencies": {
-    "jquery": ">=1.5",
-    "jquery.inputmask": ">=3.2.0"
-  },
   "keywords": [
     "inputmask",
     "phone",

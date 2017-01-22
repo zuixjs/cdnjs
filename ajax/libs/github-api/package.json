@@ -4,13 +4,6 @@
   "version": "3.0.0",
   "license": "BSD-3-Clause-Clear",
   "description": "A higher-level wrapper around the Github API.",
-  "dependencies": {
-    "axios": "^0.10.0",
-    "debug": "^2.2.0",
-    "es6-promise": "^3.0.2",
-    "js-base64": "^2.1.9",
-    "utf8": "^2.1.1"
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/michael/github.git"

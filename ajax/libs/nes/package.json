@@ -12,16 +12,6 @@
     "plugin",
     "websocket"
   ],
-  "dependencies": {
-    "boom": "2.x.x",
-    "call": "2.x.x",
-    "cryptiles": "2.x.x",
-    "hoek": "2.x.x",
-    "iron": "2.x.x",
-    "items": "1.x.x",
-    "joi": "6.x.x",
-    "ws": "0.8.x"
-  },
   "license": "BSD-3-Clause",
   "npmName": "nes",
   "npmFileMap": [

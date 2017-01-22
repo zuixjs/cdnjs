@@ -13,10 +13,6 @@
     "type": "git",
     "url": "https://github.com/Bilibili/flv.js"
   },
-  "dependencies": {
-    "es6-promise": "^4.0.5",
-    "webworkify": "^1.4.0"
-  },
   "author": "zheng qian <xqq@xqq.im>",
   "license": "Apache-2.0",
   "npmName": "flv.js",

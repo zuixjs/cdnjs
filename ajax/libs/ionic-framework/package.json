@@ -21,13 +21,6 @@
     "type": "git",
     "url": "git+https://github.com/driftyco/ionic-code.git"
   },
-  "dependencies": {
-    "colors": "^1.1.2",
-    "inquirer": "0.11.0",
-    "lodash": "3.10.1",
-    "mkdirp-no-bin": "0.5.1",
-    "q": "1.4.1"
-  },
   "homepage": "http://ionicframework.com/",
   "npmName": "ionic-framework",
   "npmFileMap": [

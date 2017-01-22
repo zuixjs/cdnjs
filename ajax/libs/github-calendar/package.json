@@ -14,9 +14,6 @@
   ],
   "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
   "license": "MIT",
-  "dependencies": {
-    "github-calendar-parser": "^1.0.0"
-  },
   "npmName": "github-calendar",
   "npmFileMap": [
     {

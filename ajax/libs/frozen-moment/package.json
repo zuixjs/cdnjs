@@ -18,9 +18,6 @@
   ],
   "author": "Lucas Sanders",
   "license": "MIT",
-  "dependencies": {
-    "moment": "~2.10"
-  },
   "npmName": "frozen-moment",
   "npmFileMap": [
     {

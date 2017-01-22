@@ -15,9 +15,6 @@
   ],
   "author": "Jeremy Fields <jeremy.fields@viget.com>",
   "license": "MIT",
-  "dependencies": {
-    "gulp-header": "1.7.1"
-  },
   "npmName": "what-input",
   "npmFileMap": [
     {

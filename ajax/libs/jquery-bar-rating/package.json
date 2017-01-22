@@ -1,8 +1,5 @@
 {
   "author": "antennaio",
-  "dependencies": {
-    "jquery": ">=1.7.2"
-  },
   "description": "Minimal, light-weight jQuery ratings.",
   "keywords": [
     "jquery",

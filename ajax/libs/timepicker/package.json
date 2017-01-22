@@ -29,9 +29,6 @@
     "MIT",
     "GPL"
   ],
-  "dependencies": {
-    "jquery": ">= 1.4.3"
-  },
   "keywords": [
     "timepicker",
     "time",

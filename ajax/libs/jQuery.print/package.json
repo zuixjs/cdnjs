@@ -9,9 +9,6 @@
     "element printing",
     "jquery print"
   ],
-  "dependencies": {
-    "jquery": ">=1.7.2"
-  },
   "license": "CC-BY",
   "repository": {
     "type": "git",

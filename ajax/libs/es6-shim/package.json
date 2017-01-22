@@ -49,6 +49,5 @@
       "android-browser/4.2..latest"
     ]
   },
-  "dependencies": {},
   "license": "MIT"
 }

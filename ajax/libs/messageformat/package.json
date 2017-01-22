@@ -23,13 +23,6 @@
     "url": "git+https://github.com/SlexAxton/messageformat.js.git"
   },
   "filename": "messageformat.min.js",
-  "dependencies": {
-    "async": "~1.5.2",
-    "glob": "~6.0.4",
-    "make-plural": "~3.0.3",
-    "nopt": "~3.0.6",
-    "watchr": "~2.4.13"
-  },
   "npmName": "messageformat",
   "npmFileMap": [
     {

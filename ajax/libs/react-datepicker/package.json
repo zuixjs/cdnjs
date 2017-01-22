@@ -17,12 +17,6 @@
     "type": "git",
     "url": "git://github.com/Hacker0x01/react-datepicker.git"
   },
-  "dependencies": {
-    "classnames": "^2.2.1",
-    "moment": "^2.13.0",
-    "react-onclickoutside": "^4.8.0",
-    "tether": "^1.3.2"
-  },
   "npmName": "react-datepicker",
   "npmFileMap": [
     {

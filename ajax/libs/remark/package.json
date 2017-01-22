@@ -1,9 +1,6 @@
 {
   "name": "remark",
   "version": "0.14.0",
-  "dependencies": {
-    "marked": "0.3.1"
-  },
   "homepage": "https://remarkjs.com",
   "author": {
     "name": "Ole Petter Bang",

@@ -10,10 +10,6 @@
     "map",
     "raphael"
   ],
-  "dependencies": {
-    "jquery": "1.x",
-    "raphael": "2.x"
-  },
   "npmName": "kartograph-js",
   "npmFileMap": [
     {

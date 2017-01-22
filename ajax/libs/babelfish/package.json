@@ -9,9 +9,6 @@
   ],
   "homepage": "https://nodeca.github.io/babelfish/",
   "license": "MIT",
-  "dependencies": {
-    "plurals-cldr": "~1.0.1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/nodeca/babelfish.git"

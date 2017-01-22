@@ -9,9 +9,6 @@
   },
   "author": "Brock Allen & Dominick Baier",
   "license": "Apache-2.0",
-  "dependencies": {
-    "jsrsasign": "^5.0.7"
-  },
   "npmName": "oidc-client",
   "npmFileMap": [
     {

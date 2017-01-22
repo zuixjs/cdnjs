@@ -20,9 +20,6 @@
     "url": "https://github.com/RobinHerbots/jquery.inputmask"
   },
   "license": "MIT",
-  "dependencies": {
-    "jquery": ">=1.7"
-  },
   "npmName": "jquery.inputmask",
   "npmFileMap": [
     {

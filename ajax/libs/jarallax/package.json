@@ -9,9 +9,6 @@
     "jquery"
   ],
   "license": "WTFPL",
-  "dependencies": {
-    "jquery": ">=1.7"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/nk-o/jarallax.git",

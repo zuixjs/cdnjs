@@ -14,9 +14,6 @@
   "author": "Gidon Junge (https://twitter.com/gjunge)",
   "license": "MIT",
   "homepage": "https://gjunge.github.io/rateit.js/examples/",
-  "dependencies": {
-    "jquery": ">=1.6"
-  },
   "npmName": "jquery.rateit",
   "npmFileMap": [
     {

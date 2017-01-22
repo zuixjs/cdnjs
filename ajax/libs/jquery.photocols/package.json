@@ -19,9 +19,6 @@
       ]
     }
   ],
-  "dependencies": {
-    "jquery": ">=1.7"
-  },
   "license": "MIT",
   "keywords": [
     "jquery.photocols"

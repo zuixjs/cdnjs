@@ -19,9 +19,6 @@
     "adapter",
     "localstorage"
   ],
-  "dependencies": {
-    "mout": "0.11.0"
-  },
   "npmName": "js-data-localstorage",
   "npmFileMap": [
     {

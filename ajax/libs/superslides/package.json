@@ -12,9 +12,6 @@
     "type": "git",
     "url": "git://github.com/nicinabox/superslides.git"
   },
-  "dependencies": {
-    "jquery": "*"
-  },
   "keywords": [
     "superslides",
     "fullscreen",

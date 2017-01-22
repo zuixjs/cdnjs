@@ -36,9 +36,6 @@
     "MIT",
     "GPL-2.0"
   ],
-  "dependencies": {
-    "jquery": ">=1.7.2"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/eisbehr-/jquery.lazy.git",

@@ -15,9 +15,6 @@
   ],
   "author": "Mateo Gianolio",
   "license": "MIT",
-  "dependencies": {
-    "nblas": "^1.2.0"
-  },
   "npmName": "vectorious",
   "npmFileMap": [
     {

@@ -9,9 +9,6 @@
     "email": "tuupola@appelsiini.net",
     "url": "http://www.appelsiini.net/"
   },
-  "dependencies": {
-    "jquery": ">=1.5"
-  },
   "keywords": [
     "lazyload",
     "lazy",

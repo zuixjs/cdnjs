@@ -17,10 +17,6 @@
   },
   "license": "MIT",
   "author": "João Nuno Silva <jnss81@gmail.com> (http://jnuno.com)",
-  "dependencies": {
-    "mergesort": "0.0.1",
-    "find-insert-index": "0.0.1"
-  },
   "npmName": "tree-model",
   "npmFileMap": [
     {

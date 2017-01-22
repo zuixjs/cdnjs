@@ -15,11 +15,6 @@
     "type": "git",
     "url": "https://github.com/grommet/grommet-index.git"
   },
-  "dependencies": {
-    "classnames": "^2.2.3",
-    "debounce": "^1.0.0",
-    "grommet": "^0.6.11"
-  },
   "npmName": "grommet-index",
   "npmFileMap": [
     {

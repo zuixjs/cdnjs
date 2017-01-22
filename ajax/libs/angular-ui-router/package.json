@@ -12,7 +12,6 @@
     "type": "git",
     "url": "https://github.com/angular-ui/ui-router.git"
   },
-  "dependencies": {},
   "npmName": "angular-ui-router",
   "npmFileMap": [
     {

@@ -10,11 +10,6 @@
   "keywords": [
     "gss"
   ],
-  "dependencies": {
-    "ccss-compiler": "~1.1.2",
-    "vfl-compiler": "~1.1.3",
-    "cassowary": "git://github.com/slightlyoff/cassowary.js.git#829729cb602d4a17341b4d1a5dba6767bf1cfd5c"
-  },
   "npmName": "gss-engine",
   "npmFileMap": [
     {

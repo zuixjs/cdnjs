@@ -13,9 +13,6 @@
     "overflow",
     "dots"
   ],
-  "dependencies": {
-    "jquery": ">= 1.4.3"
-  },
   "licenses": [
     "MIT",
     {

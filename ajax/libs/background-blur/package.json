@@ -10,11 +10,6 @@
   ],
   "author": "Maksim Surguy",
   "license": "MIT",
-  "dependencies": {
-    "gulp": "^3.9.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-uglify": "^1.2.0"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/msurguy/background-blur.git",

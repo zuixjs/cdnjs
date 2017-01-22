@@ -11,10 +11,6 @@
   ],
   "homepage": "https://miamarti.github.io/ng.ckeditor/",
   "filename": "ng-ckeditor.min.js",
-  "dependencies": {
-    "jquery": ">= 1.9.1",
-    "ckeditor": "*"
-  },
   "license": "LGPL-2.0",
   "repository": {
     "type": "git",

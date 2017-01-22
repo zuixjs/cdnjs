@@ -16,9 +16,6 @@
     "url": "http://dropthebit.com"
   },
   "license": "MIT",
-  "dependencies": {
-    "jquery": ">=1.5"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/yairEO/validator.git"

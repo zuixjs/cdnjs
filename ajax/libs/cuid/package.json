@@ -19,11 +19,6 @@
     "url": "https://github.com/ericelliott/cuid.git"
   },
   "license": "MIT",
-  "dependencies": {
-    "browser-fingerprint": "0.0.1",
-    "core-js": "^1.1.1",
-    "node-fingerprint": "^1.1.0"
-  },
   "npmName": "cuid",
   "npmFileMap": [
     {

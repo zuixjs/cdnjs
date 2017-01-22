@@ -20,9 +20,6 @@
   ],
   "author": "Tim Scanlin",
   "license": "MIT",
-  "dependencies": {
-    "smooth-scroll": "cferdinandi/smooth-scroll"
-  },
   "npmName": "tocbot",
   "npmFileMap": [
     {

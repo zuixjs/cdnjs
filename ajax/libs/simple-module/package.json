@@ -9,9 +9,6 @@
   },
   "author": "farthinker",
   "license": "MIT",
-  "dependencies": {
-    "jquery": "^3.0.0"
-  },
   "keywords": [
     "subclasses",
     "extendable",

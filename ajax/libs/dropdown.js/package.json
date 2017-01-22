@@ -12,9 +12,6 @@
     "multiselect"
   ],
   "license": "MIT",
-  "dependencies": {
-    "jquery": "~2.1.3"
-  },
   "author": "Federico Zivolo <info@mywebexpression.com>",
   "repository": {
     "type": "git",

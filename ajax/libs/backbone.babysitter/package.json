@@ -22,10 +22,6 @@
     "url": "https://github.com/marionettejs/backbone.babysitter.git"
   },
   "github": "https://github.com/marionettejs/backbone.babysitter",
-  "dependencies": {
-    "backbone": ">=0.9.9 <=1.1.2",
-    "underscore": ">=1.4.0 <=1.6.0"
-  },
   "npmName": "backbone.babysitter",
   "npmFileMap": [
     {

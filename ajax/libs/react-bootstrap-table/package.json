@@ -17,10 +17,6 @@
   "author": "AllenFang",
   "license": "MIT",
   "homepage": "https://allenfang.github.io/react-bootstrap-table/index.html",
-  "dependencies": {
-    "classnames": "^2.1.2",
-    "react-toastr": "^2.3.1"
-  },
   "npmName": "react-bootstrap-table",
   "npmFileMap": [
     {

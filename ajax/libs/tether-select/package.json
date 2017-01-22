@@ -8,9 +8,6 @@
     "Zack Bloom <zbloom@hubspot.com>"
   ],
   "license": "MIT",
-  "dependencies": {
-    "tether": "~1.0.2"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/HubSpot/select.git",

@@ -35,6 +35,5 @@
     "url": "http://www.goebl.com/"
   },
   "license": "MIT",
-  "readmeFilename": "README.md",
-  "dependencies": {}
+  "readmeFilename": "README.md"
 }

@@ -16,9 +16,6 @@
     "url": "https://github.com/angulartics/angulartics-google-analytics"
   },
   "license": "MIT",
-  "dependencies": {
-    "angulartics": "~0.20"
-  },
   "npmName": "angulartics-google-analytics",
   "npmFileMap": [
     {

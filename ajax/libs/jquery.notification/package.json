@@ -16,9 +16,6 @@
     "url": "http://azproduction.ru/"
   },
   "demo": "http://azproduction.ru/jquery.notification/",
-  "dependencies": {
-    "jquery": ">=1.5"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/azproduction/jquery.notification"

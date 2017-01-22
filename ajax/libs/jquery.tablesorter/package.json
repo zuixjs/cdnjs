@@ -24,9 +24,6 @@
   "homepage": "http://mottie.github.com/tablesorter/",
   "docs": "http://mottie.github.com/tablesorter/docs/index.html",
   "demo": "https://github.com/Mottie/tablesorter/wiki",
-  "dependencies": {
-    "jquery": ">=1.2.6"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Mottie/tablesorter.git"

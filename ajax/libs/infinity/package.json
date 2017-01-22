@@ -19,6 +19,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/airbnb/infinity.git"
-  },
-  "dependencies": {}
+  }
 }

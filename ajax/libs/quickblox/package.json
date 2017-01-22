@@ -4,9 +4,6 @@
   "version": "2.5.1",
   "description": "JavaScript SDK of QuickBlox cloud backend platform.",
   "homepage": "http://quickblox.com/developers/Javascript",
-  "dependencies": {
-    "jquery": ">=2.0.0"
-  },
   "keywords": [
     "quickblox",
     "backend",

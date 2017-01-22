@@ -11,12 +11,6 @@
     "web"
   ],
   "filename": "js/bootstrap-material-datetimepicker.min.js",
-  "dependencies": {
-    "moment": "~2.10.2",
-    "bootstrap": "~3.3.4",
-    "jquery": "1.11.0",
-    "bootstrap-material-design": "~0.3.0"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/T00rk/bootstrap-material-datetimepicker"

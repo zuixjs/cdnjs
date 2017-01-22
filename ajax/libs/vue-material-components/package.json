@@ -21,11 +21,6 @@
     "url": "https://github.com/mjanys"
   },
   "license": "MIT",
-  "dependencies": {
-    "ts-loader": "^0.8.1",
-    "vue-class-component": "^3.2.0",
-    "velocity-animate": "^1.2.3"
-  },
   "homepage": "http://appcomponents.org/material-components",
   "npmName": "vue-material-components",
   "npmFileMap": [

@@ -20,7 +20,6 @@
     "type": "git",
     "url": "git://github.com/jrief/angular-retina.git"
   },
-  "dependencies": {},
   "keywords": [
     "angularjs",
     "ngSrc",

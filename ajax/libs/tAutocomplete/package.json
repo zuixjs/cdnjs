@@ -14,9 +14,6 @@
   "author": "Vedavyas",
   "homepage": "https://vyasrao.github.io/tAutocomplete",
   "license": "MIT",
-  "dependencies": {
-    "jquery": ">=1.5"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/vyasrao/tAutocomplete.git",

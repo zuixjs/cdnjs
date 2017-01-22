@@ -19,9 +19,6 @@
   ],
   "author": "PixelsCommander",
   "license": "MIT",
-  "dependencies": {
-    "gulp-bump": "^0.2.2"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/PixelsCommander/HTML-GL.git",

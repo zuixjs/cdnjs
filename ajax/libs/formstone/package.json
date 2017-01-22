@@ -14,9 +14,6 @@
     "email": "mr@benplum.com",
     "url": "http://www.benplum.com"
   },
-  "dependencies": {
-    "jquery": ">=1.11.1"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/Formstone/Formstone.git",

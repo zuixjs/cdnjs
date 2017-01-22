@@ -23,10 +23,6 @@
   "author": "Dan Abramov <dan.abramov@me.com> (https://github.com/gaearon)",
   "license": "MIT",
   "homepage": "http://redux.js.org",
-  "dependencies": {
-    "invariant": "^2.0.0",
-    "warning": "^2.0.0"
-  },
   "npmName": "redux",
   "npmFileMap": [
     {

@@ -15,9 +15,6 @@
     "url": "http://dropthebit.com"
   },
   "license": "MIT",
-  "dependencies": {
-    "jquery": ">=1.5"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/yairEO/stickyfloat.git",

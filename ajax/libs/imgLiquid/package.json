@@ -24,9 +24,6 @@
     "type": "git",
     "url": "git://github.com/karacas/imgLiquid.git"
   },
-  "dependencies": {
-    "jquery": ">=1.8.1"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/karacas/imgLiquid.git",

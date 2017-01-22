@@ -15,11 +15,6 @@
     "type": "git",
     "url": "https://github.com/sentient-lang/sentient-lang"
   },
-  "dependencies": {
-    "underscore": "^1.8.3",
-    "commander": "^2.9.0",
-    "colors": "^1.1.2"
-  },
   "npmName": "sentient-lang",
   "npmFileMap": [
     {

@@ -31,9 +31,6 @@
     "type": "git",
     "url": "git://github.com/jquery/globalize.git"
   },
-  "dependencies": {
-    "cldrjs": "0.3.4"
-  },
   "npmName": "globalize",
   "npmFileMap": [
     {

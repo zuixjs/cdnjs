@@ -14,12 +14,6 @@
   ],
   "author": "Tinpee <tinpee.dev@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "es6-promise": "^4.0.5",
-    "form-data": "^2.1.1",
-    "node-fetch": "^1.6.3",
-    "whatwg-fetch": "^1.0.0"
-  },
   "npmName": "reacthttp",
   "npmFileMap": [
     {

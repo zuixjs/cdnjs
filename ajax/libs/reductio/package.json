@@ -3,9 +3,6 @@
   "version": "0.6.3",
   "description": "Reductio: Crossfilter groupings",
   "filename": "reductio.min.js",
-  "dependencies": {
-    "crossfilter2": "^2.0.0-alpha.03"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/crossfilter/reductio.git"

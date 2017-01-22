@@ -15,10 +15,6 @@
     "spinner"
   ],
   "license": "MIT",
-  "dependencies": {
-    "leaflet": "^0.7.3",
-    "spin.js": "^2.3.1"
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/makinacorpus/Leaflet.Spin.git"

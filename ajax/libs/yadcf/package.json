@@ -21,9 +21,6 @@
     "plugin",
     "column"
   ],
-  "dependencies": {
-    "jquery": ">=1.7.0"
-  },
   "npmName": "yadcf",
   "npmFileMap": [
     {

@@ -19,10 +19,6 @@
     "email": "denis.ineshin@gmail.com"
   },
   "license": "MIT",
-  "dependencies": {
-    "jquery": ">=1.9",
-    "momentjs": ">=2.1"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/IonDen/ion.calendar.git",

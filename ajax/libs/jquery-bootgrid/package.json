@@ -31,10 +31,6 @@
     "HTML5",
     "Accessibility"
   ],
-  "dependencies": {
-    "jquery": ">=1.9.0",
-    "bootstrap": ">=3.1.1"
-  },
   "gratipay": "RafaelStaib",
   "license": "MIT",
   "repository": {

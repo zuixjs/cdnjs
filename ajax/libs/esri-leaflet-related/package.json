@@ -4,10 +4,6 @@
   "description": "A Leaflet plugin that allows users to query related tables.",
   "version": "2.0.0",
   "author": "John Gravois <jgravois@esri.com> (http://johngravois.com)",
-  "dependencies": {
-    "leaflet": "^1.0.0-beta.1",
-    "esri-leaflet": "^2.0.0-beta.4"
-  },
   "keywords": [
     "esri",
     "leaflet",

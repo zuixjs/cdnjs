@@ -15,9 +15,6 @@
   "homepage": "http://projects.lukehaas.me/scrollify",
   "docs": "https://github.com/lukehaas/Scrollify",
   "download": "https://github.com/lukehaas/Scrollify",
-  "dependencies": {
-    "jquery": ">=1.6"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/lukehaas/Scrollify.git",

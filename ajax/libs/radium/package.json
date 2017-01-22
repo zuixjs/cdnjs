@@ -8,12 +8,6 @@
     "url": "https://github.com/formidablelabs/radium.git"
   },
   "homepage": "http://stack.formidable.com/radium/",
-  "dependencies": {
-    "array-find": "^1.0.0",
-    "exenv": "^1.2.0",
-    "inline-style-prefixer": "^1.0.3",
-    "rimraf": "^2.4.0"
-  },
   "keywords": [
     "react",
     "style",

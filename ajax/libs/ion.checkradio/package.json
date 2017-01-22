@@ -4,9 +4,6 @@
     "name": "Denis Ineshin",
     "url": "IonDen"
   },
-  "dependencies": {
-    "jquery": ">=1.8"
-  },
   "description": "jQuery plugin for styling checkboxes and radio-buttons. With skin support",
   "homepage": "http://ionden.com/a/plugins/ion.checkRadio/en.html",
   "keywords": [

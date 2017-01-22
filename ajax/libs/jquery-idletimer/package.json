@@ -12,9 +12,6 @@
     "type": "git",
     "url": "git://github.com/thorst/jquery-idletimer.git"
   },
-  "dependencies": {
-    "jquery": "1.7"
-  },
   "keywords": [],
   "license": "MIT"
 }

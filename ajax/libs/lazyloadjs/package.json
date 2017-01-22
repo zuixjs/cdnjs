@@ -4,9 +4,6 @@
     "name": "Vincent Voyer",
     "url": "http://github.com/vvo"
   },
-  "dependencies": {
-    "in-viewport": "^3.4.1"
-  },
   "keywords": [
     "lazyload",
     "js",

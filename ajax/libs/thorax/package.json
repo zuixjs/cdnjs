@@ -15,8 +15,5 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/walmartlabs/thorax.git"
-  },
-  "dependencies": {
-    "fs-watch-tree": "0.2.0"
   }
 }

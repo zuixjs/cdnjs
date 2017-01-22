@@ -15,10 +15,6 @@
   ],
   "author": "Alex Kyriakidis <alex@tmvuejs.com>",
   "license": "MIT",
-  "dependencies": {
-    "vue": "^1.0.8",
-    "vue-resource": "^0.7.2"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/hootlex/vuejs-paginator.git",

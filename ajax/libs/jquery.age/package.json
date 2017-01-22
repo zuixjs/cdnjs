@@ -15,9 +15,6 @@
   "docs": "https://ksylvest.github.com/jquery-age",
   "homepage": "https://ksylvest.github.com/jquery-age",
   "download": "https://ksylvest.github.com/jquery-age",
-  "dependencies": {
-    "jquery": ">1.5"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/ksylvest/jquery-age.git",

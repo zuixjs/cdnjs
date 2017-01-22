@@ -16,9 +16,6 @@
     "typewriter",
     "type effect"
   ],
-  "dependencies": {
-    "jquery": "^1.11.3"
-  },
   "npmName": "typeit",
   "npmFileMap": [
     {

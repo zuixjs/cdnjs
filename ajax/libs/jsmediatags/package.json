@@ -19,9 +19,6 @@
     "mp4"
   ],
   "license": "BSD-3-Clause",
-  "dependencies": {
-    "xhr2": "~0.1.3"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/aadsm/jsmediatags.git",

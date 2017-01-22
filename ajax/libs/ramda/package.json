@@ -22,6 +22,5 @@
     "type": "git",
     "url": "git://github.com/ramda/ramda.git"
   },
-  "filename": "ramda.min.js",
-  "dependencies": {}
+  "filename": "ramda.min.js"
 }

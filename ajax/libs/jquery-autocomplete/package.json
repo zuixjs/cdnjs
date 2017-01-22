@@ -3,9 +3,6 @@
   "filename": "jquery.auto-complete.min.js",
   "description": "An extremely lightweight completion suggester plugin for jQuery.",
   "version": "1.0.7",
-  "dependencies": {
-    "jquery": ">=1.7"
-  },
   "keywords": [
     "autocomplete",
     "suggest",

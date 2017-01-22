@@ -13,9 +13,6 @@
   ],
   "author": "Evgeny Poberezkin",
   "license": "MIT",
-  "dependencies": {
-    "json-stable-stringify": "^1.0.0"
-  },
   "npmName": "ajv",
   "npmFileMap": [
     {

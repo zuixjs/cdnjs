@@ -14,9 +14,6 @@
     "url": "https://github.com/openplans/Leaflet.AnimatedMarker.git"
   },
   "author": "openplans",
-  "dependencies": {
-    "leaflet": "~0.7.2"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/openplans/Leaflet.AnimatedMarker.git",

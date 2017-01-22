@@ -10,7 +10,6 @@
     "compression",
     "string"
   ],
-  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/pieroxy/lz-string.git"

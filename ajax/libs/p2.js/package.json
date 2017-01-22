@@ -14,10 +14,6 @@
     "type": "git",
     "url": "https://github.com/schteppe/p2.js.git"
   },
-  "dependencies": {
-    "poly-decomp": "git://github.com/schteppe/poly-decomp.js",
-    "gl-matrix": "2.1.0"
-  },
   "filename": "p2.min.js",
   "npmName": "p2",
   "npmFileMap": [

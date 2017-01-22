@@ -19,13 +19,6 @@
   ],
   "author": "AllMobilize, Inc.",
   "license": "MIT",
-  "dependencies": {
-    "classnames": "^1.2.0",
-    "fecha": "^0.2.1",
-    "object-assign": "^2.0.0",
-    "object.omit": "^1.1.0",
-    "react": "^0.13.3"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/amazeui/amazeui-react.git",

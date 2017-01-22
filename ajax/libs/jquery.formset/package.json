@@ -3,9 +3,6 @@
   "filename": "jquery.formset.min.js",
   "version": "1.2.2",
   "description": "Helps create more usable Django formsets by adding and removing forms on the client-side.",
-  "dependencies": {
-    "jquery": ">=1.2.6"
-  },
   "keywords": [
     "django-dynamic-formset",
     "jquery-plugin",

@@ -17,9 +17,6 @@
     "conditional form",
     "conditional form fields"
   ],
-  "dependencies": {
-    "jquery": "^2.2.3"
-  },
   "npmName": "conditional-field",
   "npmFileMap": [
     {

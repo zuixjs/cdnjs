@@ -21,9 +21,6 @@
   },
   "docs": "https://github.com/stanlemon/jGrowl",
   "download": "https://github.com/stanlemon/jGrowl/archive/master.zip",
-  "dependencies": {
-    "jquery": ">=1.4"
-  },
   "npmName": "jgrowl",
   "npmFileMap": [
     {

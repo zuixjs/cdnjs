@@ -17,10 +17,6 @@
   "homepage": "http://brandonlwhite.github.io/sevenSeg.js",
   "demo": "http://brandonlwhite.github.io/sevenSeg.js",
   "docs": "http://brandonlwhite.github.io/sevenSeg.js",
-  "dependencies": {
-    "jquery": ">=1.6",
-    "ui.core": ">=1.10.3"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/BrandonLWhite/sevenSeg.js.git",

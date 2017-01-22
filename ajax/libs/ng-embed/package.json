@@ -16,10 +16,6 @@
     "smiley",
     "smileys"
   ],
-  "dependencies": {
-    "angular": "1.x",
-    "angular-sanitize": "1.x"
-  },
   "npmName": "ng-embed",
   "npmFileMap": [
     {

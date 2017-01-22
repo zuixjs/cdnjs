@@ -9,10 +9,6 @@
     "url": "git://github.com/platanus/angular-restmod.git"
   },
   "filename": "angular-restmod-bundle.min.js",
-  "dependencies": {
-    "angular": "*",
-    "angular-inflector": "~0.2"
-  },
   "keywords": [
     "angular",
     "restmod"

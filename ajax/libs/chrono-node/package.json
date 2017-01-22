@@ -15,9 +15,6 @@
     "url": "https://github.com/wanasit/chrono.git"
   },
   "license": "MIT",
-  "dependencies": {
-    "moment": "^2.10.3"
-  },
   "author": "Wanasit Tanakitrungruang",
   "npmName": "chrono-node",
   "npmFileMap": [

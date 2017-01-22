@@ -14,9 +14,6 @@
     "html5",
     "kissui"
   ],
-  "dependencies": {
-    "kissui.position": "^0.1.0"
-  },
   "author": "Afshin Mehrabani",
   "license": "MIT",
   "homepage": "http://scrollanim.kissui.io/",

@@ -19,9 +19,6 @@
   },
   "license": "MIT",
   "homepage": "http://jackonthe.net/css3animateit/",
-  "dependencies": {
-    "jquery": ">=1.4"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/Jack-McCourt/css3-animate-it.git",

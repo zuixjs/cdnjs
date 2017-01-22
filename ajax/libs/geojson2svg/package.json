@@ -13,10 +13,6 @@
   },
   "auther": "Gagan Bansal",
   "license": "MIT",
-  "dependencies": {
-    "multigeojson": "~0.0.1",
-    "xtend": "~4.0.0"
-  },
   "npmName": "geojson2svg",
   "npmFileMap": [
     {

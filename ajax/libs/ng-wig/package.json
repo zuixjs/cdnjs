@@ -3,9 +3,6 @@
   "version": "3.0.14",
   "filename": "ng-wig.min.js",
   "author": "Stepan Suvorov",
-  "dependencies": {
-    "angular": "1.5.0"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/stevermeister/ngWig"

@@ -19,9 +19,6 @@
     "url": "git+https://github.com/pawelczak/EasyAutocomplete.git"
   },
   "license": "MIT",
-  "dependencies": {
-    "jquery": "*"
-  },
   "npmName": "easy-autocomplete",
   "npmFileMap": [
     {

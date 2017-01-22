@@ -15,9 +15,6 @@
     "url": "https://github.com/wout/svg.filter.js.git"
   },
   "homepage": "https://documentup.com/wout/svg.filter.js",
-  "dependencies": {
-    "svg.js": "^2.2.5"
-  },
   "npmName": "svg.filter.js",
   "npmFileMap": [
     {

@@ -23,10 +23,6 @@
     "type": "git",
     "url": "https://github.com/dc-js/dc.js.git"
   },
-  "dependencies": {
-    "crossfilter": "1.x",
-    "d3": "3.x"
-  },
   "npmName": "dc",
   "npmFileMap": [
     {

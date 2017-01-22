@@ -16,9 +16,6 @@
     "validation",
     "react-component"
   ],
-  "dependencies": {
-    "form-data-to-object": "^0.2.0"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/christianalfoni/formsy-react.git",

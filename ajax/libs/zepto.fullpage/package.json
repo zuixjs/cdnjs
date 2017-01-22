@@ -12,9 +12,6 @@
     "fullpage"
   ],
   "license": "MIT",
-  "dependencies": {
-    "zepto": "1.x"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/yanhaijing/zepto.fullpage.git",

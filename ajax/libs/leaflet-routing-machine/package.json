@@ -18,11 +18,6 @@
   },
   "license": "ISC",
   "homepage": "http://www.liedman.net/leaflet-routing-machine/",
-  "dependencies": {
-    "corslite": "0.0.6",
-    "leaflet": "^0.7.2",
-    "polyline": "0.0.3"
-  },
   "npmName": "leaflet-routing-machine",
   "npmFileMap": [
     {

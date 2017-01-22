@@ -19,10 +19,6 @@
     "url": "https://github.com/perliedman/"
   },
   "license": "BSD-2-Clause",
-  "dependencies": {
-    "leaflet": "~0.7.0",
-    "proj4": "~2.0.0"
-  },
   "homepage": "http://kartena.github.io/Proj4Leaflet/",
   "npmName": "proj4leaflet",
   "npmFileMap": [

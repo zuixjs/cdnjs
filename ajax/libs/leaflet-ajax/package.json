@@ -14,9 +14,6 @@
   ],
   "author": "Calvin Metcalf",
   "license": "MIT",
-  "dependencies": {
-    "lie": "^3.0.1"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/calvinmetcalf/leaflet-ajax.git",

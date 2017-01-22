@@ -16,10 +16,6 @@
     "xhr"
   ],
   "license": "MIT",
-  "dependencies": {
-    "jquery-param": "^0.1.2",
-    "pinkyswear": "^2.2.2"
-  },
   "npmName": "qwest",
   "npmFileMap": [
     {

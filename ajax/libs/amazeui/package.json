@@ -24,9 +24,6 @@
     "type": "git",
     "url": "https://github.com/amazeui/amazeui.git"
   },
-  "dependencies": {
-    "jquery": "latest"
-  },
   "license": "MIT",
   "autoupdate": {
     "source": "git",

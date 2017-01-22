@@ -3,9 +3,6 @@
   "version": "1.0.1",
   "filename": "progressbar.min.js",
   "description": "Responsive and slick progress bars with animated SVG paths",
-  "dependencies": {
-    "shifty": "1.5.0"
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/kimmobrunfeldt/progressbar.js.git"

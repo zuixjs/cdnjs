@@ -20,9 +20,6 @@
     "adapter",
     "firebase"
   ],
-  "dependencies": {
-    "mout": "0.11.0"
-  },
   "npmName": "js-data-firebase",
   "npmFileMap": [
     {

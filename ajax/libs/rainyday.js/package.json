@@ -18,7 +18,6 @@
     "type": "git",
     "url": "git://github.com/maroslaw/rainyday.js.git"
   },
-  "dependencies": {},
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/maroslaw/rainyday.js.git",

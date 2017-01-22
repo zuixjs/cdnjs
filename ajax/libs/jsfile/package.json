@@ -27,8 +27,5 @@
     "name": "webschik",
     "url": "https://github.com/webschik"
   },
-  "license": "MIT",
-  "dependencies": {
-    "jstask": "^1.0.2"
-  }
+  "license": "MIT"
 }

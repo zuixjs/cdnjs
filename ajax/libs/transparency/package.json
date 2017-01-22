@@ -15,9 +15,6 @@
     "semantic"
   ],
   "author": "Jarno Keskikangas <jarno.keskikangas@leonidasoy.fi>",
-  "dependencies": {
-    "jsdom": "^1.0.0"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/leonidas/transparency.git",

@@ -10,9 +10,6 @@
   ],
   "author": "Michael Jackson",
   "license": "MIT",
-  "dependencies": {
-    "query-string": "^3.0.0"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mjackson/http-client.git"

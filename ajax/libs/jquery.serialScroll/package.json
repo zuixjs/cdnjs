@@ -22,10 +22,6 @@
   "docs": "http://flesler.blogspot.com/2008/02/jqueryserialscroll.html",
   "download": "https://github.com/flesler/jquery.serialScroll/releases",
   "demo": "http://demos.flesler.com/jquery/serialScroll",
-  "dependencies": {
-    "jquery": ">=1.8",
-    "scrollTo": ">=1.4.3"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/flesler/jquery.serialScroll.git",

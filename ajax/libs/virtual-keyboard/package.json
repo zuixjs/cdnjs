@@ -8,9 +8,6 @@
     "url": "https://github.com/jsatt"
   },
   "license": "MIT",
-  "dependencies": {
-    "jquery": ">=1.4.3"
-  },
   "keywords": [
     "customizable",
     "keyboard",

@@ -4,10 +4,6 @@
   "filename": "msgpack.min.js",
   "version": "0.1.26",
   "author": "@kawanet",
-  "dependencies": {
-    "event-lite": "^0.1.1",
-    "ieee754": "^1.1.6"
-  },
   "keywords": [
     "buffer",
     "fluentd",

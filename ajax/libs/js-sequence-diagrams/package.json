@@ -12,10 +12,6 @@
     "diagram"
   ],
   "license": "BSD",
-  "dependencies": {
-    "underscore": "~1.4.x",
-    "raphael": "~2.1.x"
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/bramp/js-sequence-diagrams.git"

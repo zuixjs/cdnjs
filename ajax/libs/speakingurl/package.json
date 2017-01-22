@@ -29,7 +29,6 @@
     "url": "https://twitter.com/SaschaDroste"
   },
   "filename": "speakingurl.min.js",
-  "dependencies": {},
   "testling": {
     "harness": "mocha",
     "files": "test/*.js",

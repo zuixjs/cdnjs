@@ -11,10 +11,6 @@
     "type": "git",
     "url": "git://github.com/DKirwan/calendar-heatmap.git"
   },
-  "dependencies": {
-    "d3": "3.5.x",
-    "moment": "2.11.x"
-  },
   "keywords": [
     "d3",
     "moment",

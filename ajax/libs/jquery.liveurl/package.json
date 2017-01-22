@@ -17,9 +17,6 @@
   "docs": "https://github.com/jquery/jquery-color",
   "download": "https://github.com/stephan-fischer/jQuery-LiveUrl/archive/master.zip",
   "demo": "http://liveurl.ainetworks.de/demo/",
-  "dependencies": {
-    "jquery": ">=1.8.2"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/stephan-fischer/jQuery-LiveUrl.git",

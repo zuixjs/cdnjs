@@ -15,9 +15,6 @@
     "opal-jquery",
     "jquery"
   ],
-  "dependencies": {
-    "opal": "0.3.43"
-  },
   "license": "MIT",
   "repository": {
     "type": "git",

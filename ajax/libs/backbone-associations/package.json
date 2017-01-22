@@ -15,10 +15,6 @@
     "relational",
     "relations"
   ],
-  "dependencies": {
-    "backbone": ">=1.0.0",
-    "underscore": ">=1.4.4"
-  },
   "version": "0.6.2",
   "repository": {
     "type": "git",

@@ -10,9 +10,6 @@
     "name": "Klaus Reimer",
     "email": "k@ailis.de"
   },
-  "dependencies": {
-    "jquery": ">=1.5"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/kayahr/jquery-fullscreen-plugin.git"

@@ -16,9 +16,6 @@
   "demos": [
     "http://jsfiddle.net/MoonScript/Q7bVG/show/"
   ],
-  "dependencies": {
-    "jquery": ">=1.5"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/MoonScript/jQuery-ajaxTransport-XDomainRequest.git"

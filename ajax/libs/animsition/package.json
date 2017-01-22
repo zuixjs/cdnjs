@@ -12,9 +12,6 @@
     "type": "git",
     "url": "git://github.com/blivesta/animsition.git"
   },
-  "dependencies": {
-    "jquery": ">= 1.11.0"
-  },
   "keywords": [
     "css3",
     "js",

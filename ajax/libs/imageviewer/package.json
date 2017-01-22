@@ -27,9 +27,6 @@
     "url": "https://github.com/fengyuanchen/viewer.git"
   },
   "license": "MIT",
-  "dependencies": {
-    "jquery": ">= 1.9.1"
-  },
   "npmName": "imageviewer",
   "npmFileMap": [
     {

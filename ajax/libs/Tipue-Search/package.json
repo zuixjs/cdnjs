@@ -14,9 +14,6 @@
   },
   "license": "MIT",
   "homepage": "http://www.tipue.com/search/",
-  "dependencies": {
-    "jquery": ">=2.1.3"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/Tipue/Tipue-Search.git",

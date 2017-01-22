@@ -4,11 +4,6 @@
   "description": "esri-leaflet plugin for rendering",
   "version": "2.0.4",
   "author": "Rachel Nehmer <rnehmer@esri.com>",
-  "dependencies": {
-    "esri-leaflet": "^2.0.0",
-    "leaflet": "^1.0.0-rc.3",
-    "leaflet-shape-markers": "^1.0.4"
-  },
   "homepage": "https://esri.github.io/esri-leaflet",
   "keywords": [
     "arcgis",

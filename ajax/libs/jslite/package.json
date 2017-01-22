@@ -17,10 +17,6 @@
   "homepage": "http://JSLite.io",
   "author": "kenny wang <398188662@qq.com>",
   "license": "MIT",
-  "dependencies": {
-    "cli-color": "^1.0.0",
-    "mocha-phantomjs": "^4.0.1"
-  },
   "npmName": "jslite",
   "npmFileMap": [
     {

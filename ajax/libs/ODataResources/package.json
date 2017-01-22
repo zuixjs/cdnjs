@@ -14,9 +14,6 @@
   ],
   "author": "Raphael ATALLAH",
   "license": "MIT",
-  "dependencies": {
-    "es5-shim": "^4.5.8"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/devnixs/ODataAngularResources.git",

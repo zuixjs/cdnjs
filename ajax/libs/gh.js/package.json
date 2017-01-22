@@ -13,11 +13,6 @@
   ],
   "author": "Ionică Bizău <bizauionica@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "jsonrequest": "^2.0.0",
-    "ul": "^2.1.0",
-    "lien": "^0.0.11"
-  },
   "npmName": "gh.js",
   "npmFileMap": [
     {

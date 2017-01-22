@@ -25,9 +25,6 @@
     "input",
     "textarea"
   ],
-  "dependencies": {
-    "jquery": ">=1.9"
-  },
   "author": "Mattias Erming",
   "license": "MIT"
 }

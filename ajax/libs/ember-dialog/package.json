@@ -12,7 +12,6 @@
     "popup"
   ],
   "homepage": "http://wheely.github.io/ember-dialog/",
-  "dependencies": {},
   "private": false,
   "autoupdate": {
     "source": "git",

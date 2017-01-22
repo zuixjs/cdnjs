@@ -12,9 +12,6 @@
     "type": "git",
     "url": "git://github.com/ReactiveRaven/jqBootstrapValidation.git"
   },
-  "dependencies": {
-    "jQuery": "*"
-  },
   "keywords": [
     "jquery",
     "validation",

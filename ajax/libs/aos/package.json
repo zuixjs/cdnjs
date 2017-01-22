@@ -10,11 +10,6 @@
     "type": "git",
     "url": "https://github.com/michalsnik/aos.git"
   },
-  "dependencies": {
-    "classlist-polyfill": "^1.0.3",
-    "lodash.debounce": "^4.0.6",
-    "lodash.throttle": "^4.0.1"
-  },
   "keywords": [
     "scroll",
     "css3",

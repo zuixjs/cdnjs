@@ -8,10 +8,6 @@
     "name": "John Polacek",
     "url": "http://johnpolacek.com"
   },
-  "dependencies": {
-    "jquery": "~1.9.1",
-    "greensock-js": "~1.9.6"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/johnpolacek/superscrollorama.git"

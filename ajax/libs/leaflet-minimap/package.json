@@ -15,9 +15,6 @@
     "type": "git",
     "url": "https://github.com/Norkart/Leaflet-MiniMap.git"
   },
-  "dependencies": {
-    "leaflet": ">=0.7.7"
-  },
   "npmName": "leaflet-minimap",
   "npmFileMap": [
     {

@@ -11,9 +11,6 @@
     "persistent"
   ],
   "license": "MIT",
-  "dependencies": {
-    "jStorage": ">=0.3.0"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/peterwilli/CoolQueue.io"

@@ -9,10 +9,6 @@
   },
   "author": "Rich Tibbett",
   "license": "MIT",
-  "dependencies": {
-    "cron": "^1.0.9",
-    "request": "^2.65.0"
-  },
   "keywords": [
     "nosleep",
     "wake lock",

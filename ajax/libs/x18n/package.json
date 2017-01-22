@@ -8,9 +8,6 @@
     "type": "git",
     "url": "http://github.com/florian/x18n.git"
   },
-  "dependencies": {
-    "observable_js": "^2.0.1"
-  },
   "keywords": [
     "JavaScript",
     "interpolation",

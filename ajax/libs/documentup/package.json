@@ -9,7 +9,6 @@
     "url": "git://github.com/jeromegn/documentup.git"
   },
   "filename": "documentup.min.js",
-  "dependencies": {},
   "keywords": [
     "documentup"
   ]

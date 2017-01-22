@@ -15,9 +15,6 @@
     "type": "git",
     "url": "https://github.com/objectivehtml/FlipClock"
   },
-  "dependencies": {
-    "jquery": ">=1.7"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/objectivehtml/FlipClock.git",

@@ -24,7 +24,6 @@
   ],
   "license": "BSD",
   "author": "Brian Turek <brian.turek@gmail.com>",
-  "dependencies": {},
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/Caligatio/jsSHA.git",

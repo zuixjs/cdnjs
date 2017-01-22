@@ -20,9 +20,6 @@
   "author": "Vinay Gopinath",
   "license": "MIT",
   "homepage": " https://vinaygopinath.github.io/ngMeta",
-  "dependencies": {
-    "angular": "^1.2.x"
-  },
   "npmName": "ng-meta",
   "npmFileMap": [
     {

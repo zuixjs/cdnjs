@@ -2,10 +2,6 @@
   "name": "angular-mousewheel",
   "filename": "mousewheel.min.js",
   "version": "1.0.5",
-  "dependencies": {
-    "angular": ">=1.0.6",
-    "hamsterjs": ">=1.0.2"
-  },
   "description": "An AngularJS directive for cross-browser mouse wheel support, using the small and standalone Hamster.js library.",
   "keywords": [
     "mouse",

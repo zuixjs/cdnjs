@@ -21,9 +21,6 @@
   "demo": "http://pupunzi.com/#mb.components/mb.YTPlayer/YTPlayer.html",
   "docs": "https://github.com/pupunzi/jquery.mb.YTPlayer/wiki",
   "download": "http://pupunzi.open-lab.com/mb-jquery-components/jquery-mb-ytplayer/",
-  "dependencies": {
-    "jquery": ">=1.8"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/pupunzi/jquery.mb.YTPlayer.git",

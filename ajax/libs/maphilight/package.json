@@ -13,9 +13,6 @@
     "url": "https://github.com/kemayo/maphilight.git"
   },
   "license": "MIT",
-  "dependencies": {
-    "jquery": "1"
-  },
   "description": "a plugin that adds visual hilights to image maps",
   "keywords": [
     "map",

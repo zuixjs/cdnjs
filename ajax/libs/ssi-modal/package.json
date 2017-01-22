@@ -3,9 +3,6 @@
   "filename": "js/ssi-modal.min.js",
   "description": "ssi-modal is the most flexible and powerful modal window.",
   "version": "1.0.27",
-  "dependencies": {
-    "jquery": ">1.9.x"
-  },
   "keywords": [
     "modal",
     "jquery",

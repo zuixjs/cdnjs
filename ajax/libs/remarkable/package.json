@@ -8,10 +8,6 @@
   },
   "license": "MIT",
   "filename": "remarkable.min.js",
-  "dependencies": {
-    "argparse": "~0.1.15",
-    "autolinker": "~0.15.0"
-  },
   "keywords": [
     "md",
     "markdown",

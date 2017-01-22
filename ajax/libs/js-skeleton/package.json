@@ -17,9 +17,6 @@
   ],
   "author": "Guy Peer <guypeer8@gmail.com>",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.13.4"
-  },
   "npmName": "js-skeleton",
   "npmFileMap": [
     {

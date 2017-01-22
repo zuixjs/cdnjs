@@ -14,12 +14,6 @@
     "url": "https://github.com/algolia/docsearch.git"
   },
   "homepage": "https://community.algolia.com/docsearch/",
-  "dependencies": {
-    "algoliasearch": "^3.18.0",
-    "autocomplete.js": "^0.21.3",
-    "hogan.js": "^3.0.2",
-    "to-factory": "^1.0.0"
-  },
   "npmName": "docsearch.js",
   "npmFileMap": [
     {

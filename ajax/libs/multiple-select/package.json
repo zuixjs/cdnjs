@@ -10,9 +10,6 @@
     "url": "http://wenzhixin.net.cn/"
   },
   "license": "MIT License",
-  "dependencies": {
-    "jquery": ">=1.7"
-  },
   "keywords": [
     "multiple.select",
     "select.list",

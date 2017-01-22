@@ -17,9 +17,6 @@
     "type": "git",
     "url": "git://github.com/gkz/LiveScript.git"
   },
-  "dependencies": {
-    "prelude-ls": ">= 0.6.0"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/gkz/LiveScript.git",

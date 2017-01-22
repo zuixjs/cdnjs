@@ -9,12 +9,6 @@
   "description": "A pure JS client for interacting with server-side RESTful resources. Think Restangular without Angular.",
   "author": "Robin Bressan <robin@buddey.net>",
   "license": "MIT",
-  "dependencies": {
-    "immutable": "3.7.6",
-    "object-assign": "2.0.0",
-    "qs": "5.2.0",
-    "warning": "2.1.0"
-  },
   "homepage": "https://marmelab.com/blog/2015/03/10/deal-easily-with-your-rest-api-using-restful-js.html",
   "keywords": [
     "rest",
