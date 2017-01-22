@@ -74,6 +74,8 @@ function fixFormat() {
     delete pkg.engine;
     delete pkg.directories;
     delete pkg.repositories;
+    delete pkg.dependencies;
+    delete pkg.optionalDependencies;
   }
 
   function deleteHomepage(pkg) {

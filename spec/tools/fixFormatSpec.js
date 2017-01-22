@@ -99,6 +99,8 @@ describe('fixFormat - tool to fix package.json file of libraries', () => {
       this.packagesMock[0].engine = 'some engine';
       this.packagesMock[0].directories = 'some directories';
       this.packagesMock[0].repositories = 'some repositories';
+      this.packagesMock[0].dependencies = 'some dependencies';
+      this.packagesMock[0].optionalDependencies = 'some optional dependencies';
 
       fixFormatFile.__set__({
         fs: this.fsMock,
@@ -141,6 +143,8 @@ describe('fixFormat - tool to fix package.json file of libraries', () => {
       expect(result.engine).toBeUndefined();
       expect(result.directories).toBeUndefined();
       expect(result.repositories).toBeUndefined();
+      expect(result.dependencies).toBeUndefined();
+      expect(result.optionalDependencies).toBeUndefined();
     });
   });
 
