@@ -16,8 +16,19 @@
       {
         "basePath": "dist",
         "files": [
-          "*.js",
-          "*.swf"
+          "react-native/**/*"
+        ]
+      },
+      {
+        "basePath": "dist/worker",
+        "files": [
+          "**/*"
+        ]
+      },
+      {
+        "basePath": "dist/web",
+        "files": [
+          "**/*"
         ]
       }
     ]
