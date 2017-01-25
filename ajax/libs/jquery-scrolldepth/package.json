@@ -1,7 +1,7 @@
 {
   "name": "jquery-scrolldepth",
   "filename": "jquery.scrolldepth.min.js",
-  "version": "0.9.1",
+  "version": "1.0.0",
   "description": "A jQuery plugin to track page scroll depth",
   "homepage": "http://scrolldepth.parsnip.io",
   "repository": {
