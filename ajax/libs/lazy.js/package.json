@@ -2,7 +2,7 @@
   "name": "lazy.js",
   "filename": "lazy.min.js",
   "description": "Like Underscore, but lazier",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "homepage": "http://dtao.github.io/lazy.js/",
   "author": {
     "name": "Dan Tao",
