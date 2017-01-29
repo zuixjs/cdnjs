@@ -20,7 +20,7 @@
     {
       "basePath": "dist",
       "files": [
-        "**/chirashi.!(gz|mjs)"
+        "**/chirashi.!(*gz|*mjs)"
       ]
     }
   ],
