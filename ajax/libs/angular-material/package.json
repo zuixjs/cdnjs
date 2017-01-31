@@ -16,7 +16,7 @@
       {
         "basePath": "",
         "files": [
-          "angular-material.*"
+          "angular-material.!(*scss)"
         ]
       }
     ]
