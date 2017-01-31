@@ -11,10 +11,10 @@
     "visualization",
     "dygraphs"
   ],
-  "npmname": "dygraphs",
-  "npmfilemap": [
+  "npmName": "dygraphs",
+  "npmFileMap": [
     {
-      "basepath": "dist",
+      "basePath": "dist",
       "files": [
         "**/!(test*|*.jar)"
       ]
