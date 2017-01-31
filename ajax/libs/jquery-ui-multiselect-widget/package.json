@@ -28,8 +28,7 @@
       {
         "basePath": "",
         "files": [
-          "jquery.multiselect*",
-          "i18n/jquery.multiselect*"
+          "{i18n/,}jquery.multiselect*"
         ]
       },
       {
