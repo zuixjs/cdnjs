@@ -28,7 +28,7 @@
   "npmName": "xss",
   "npmFileMap": [
     {
-      "basePath": "dist",
+      "basePath": "build",
       "files": [
         "**/*.!(html)"
       ]
