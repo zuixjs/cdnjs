@@ -16,6 +16,7 @@ node_modules/
 # folders need to be ingored due to auto auto-update mechanism
 /ajax/libs/trackpad-scroll-emulator/version_1.0
 /ajax/libs/date-fns/v.*
+/ajax/libs/infusion/*-dev.*/
 /ajax/libs/punycode/2.0.*
 /ajax/libs/punycode/2.1.*
 /ajax/libs/clusterize.js/v.0.6.0
