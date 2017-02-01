@@ -1,0 +1,27 @@
+{
+  "name": "mediaelement-plugins",
+  "filename": "markers/markers.min.js",
+  "description": "Plugins for MediaElement player",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johndyer/mediaelement-plugins.git"
+  },
+  "keywords": [
+    "mediaelement",
+    "plugins"
+  ],
+  "author": "John Dyer",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/johndyer/mediaelement-plugins.git",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ]
+  },
+  "license": "MIT"
+}
