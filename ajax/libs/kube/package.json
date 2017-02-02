@@ -1,6 +1,6 @@
 {
   "name": "kube",
-  "version": "6.5.1",
+  "version": "6.5.2",
   "description": "Kube is a minimalistic Web framework for professional developers and designers.",
   "filename": "css/kube.min.css",
   "repository": {
