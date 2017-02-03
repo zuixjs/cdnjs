@@ -3,7 +3,6 @@
   "filename": "dust-helpers.min.js",
   "version": "1.7.3",
   "description": "Helpers for dustjs-linkedin",
-  "homepage": "Additional functionality for dustjs-linkedin package",
   "keywords": [
     "template",
     "templating",
