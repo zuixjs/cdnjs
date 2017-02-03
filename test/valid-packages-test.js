@@ -261,6 +261,14 @@ packages.map(function(pkg) {
             ),
             pkgName(pkg) + ": Need to add repository information in package.json");
   };
+  packageVows[pname + ": homepage url validation"] = function(pkg) {
+    var json = parse(pkg, true);
+    var homepagePrefixes = new RegExp("^http(s)?://.+");
+    if (json.homepage) {
+      assert.ok(typeof json.homepage === "string", ": homepage preperty must be a string");
+      assert.ok(homepagePrefixes.test(json.homepage), pkgName(pkg) + ": homepage url must start with http(s):// , '" + json.homepage + "' is wrong");
+    }
+  }
   packageVows[pname + ": Homepage doesn't need to be set if it's the same as repository"] = function(pkg) {
     var json = parse(pkg, true);
     if ((json.repository !== undefined) && (json.repository.type === 'git') && (json.homepage !== undefined)) {
