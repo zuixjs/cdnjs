@@ -3,7 +3,7 @@
   "filename": "vega.min.js",
   "version": "2.6.5",
   "description": "The Vega visualization grammar.",
-  "homepage": "http://trifacta.github.io/vega/",
+  "homepage": "https://vega.github.io/vega/",
   "keywords": [
     "vega",
     "vega.js"
