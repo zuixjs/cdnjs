@@ -13,8 +13,13 @@
     {
       "basePath": "",
       "files": [
-        "vega.js",
-        "vega.min.js"
+        "vega*.+(js|css|map)"
+      ]
+    },
+    {
+      "basePath": "build",
+      "files": [
+        "**/vega*.+(js|css|map)"
       ]
     }
   ],
@@ -24,7 +29,7 @@
   },
   "license": "BSD-3-Clause",
   "author": {
-    "name": "Arvind Satyanarayan",
-    "url": "http://arvindsatya.com"
+    "name": "UW Interactive Data Lab",
+    "url": "http://idl.cs.washington.edu"
   }
 }
