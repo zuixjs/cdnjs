@@ -19,9 +19,13 @@
       {
         "basePath": "",
         "files": [
-          "vendors/*",
-          "jquery.fullPage*.js",
-          "jquery.fullPage*.css"
+          "vendors/*"
+        ]
+      },
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
         ]
       }
     ]
