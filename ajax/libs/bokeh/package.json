@@ -16,5 +16,6 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/bokeh/bokeh.git"
-  }
+  },
+  "homepage": "http://bokeh.pydata.org/en/latest"
 }
