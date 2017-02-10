@@ -1,6 +1,6 @@
 {
   "name": "spellbook",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "filename": "spellbook.min.js",
   "description": "Javascript tools and Class extensions",
   "repository": {
