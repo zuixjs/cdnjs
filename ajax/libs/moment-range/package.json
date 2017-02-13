@@ -2,12 +2,6 @@
   "npmName": "moment-range",
   "npmFileMap": [
     {
-      "basePath": "lib",
-      "files": [
-        "*.js"
-      ]
-    },
-    {
       "basePath": "dist",
       "files": [
         "!(*.flow)"
