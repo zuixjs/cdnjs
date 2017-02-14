@@ -16,5 +16,21 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/bokeh/bokeh.git"
-  }
+  },
+  "homepage": "http://bokeh.pydata.org/en/latest",
+  "npmName": "bokehjs",
+  "npmFileMap": [
+    {
+      "basePath": "build/js",
+      "files": [
+        "bokeh*"
+      ]
+    },
+    {
+      "basePath": "build/css",
+      "files": [
+        "bokeh*"
+      ]
+    }
+  ]
 }
