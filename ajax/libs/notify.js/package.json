@@ -1,7 +1,7 @@
 {
   "name": "notify.js",
   "filename": "notify.min.js",
-  "version": "2.0.3",
+  "version": "3.0.0",
   "description": "A handy wrapper for the Web Notifications API",
   "homepage": "https://alexgibson.github.io/notify.js/",
   "repository": {
