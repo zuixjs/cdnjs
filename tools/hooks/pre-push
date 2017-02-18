@@ -1,5 +1,8 @@
 #!/usr/bin/env sh
-# do npm test before push
+#
+# Do these works before push
+#   1. npm test
+#   2. pull with rebase from master branch
 set -e
 npm test -- --silent || npm test
 git pull --rebase origin master
