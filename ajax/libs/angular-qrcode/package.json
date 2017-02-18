@@ -1,7 +1,7 @@
 {
   "name": "angular-qrcode",
   "filename": "angular-qrcode.min.js",
-  "version": "6.2.1",
+  "version": "7.1.1",
   "description": "QR Code elements for AngularJS.",
   "keywords": [
     "angular",
