@@ -12,7 +12,7 @@
     "jquery",
     "linkify"
   ],
-  "homepage": "https://github.com/SoapBox/linkifyjs/",
+  "homepage": "https://soapbox.github.io/linkifyjs/",
   "version": "2.1.4",
   "license": "MIT",
   "npmName": "linkifyjs",
