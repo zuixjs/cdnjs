@@ -1,6 +1,6 @@
 {
   "name": "ie8",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "some damn DOM fix for this damned browser",
   "keywords": [
     "IE8",
