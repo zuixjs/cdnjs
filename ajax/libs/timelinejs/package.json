@@ -9,10 +9,10 @@
   ],
   "autoupdate": {
     "source": "git",
-    "target": "git://github.com/NUKnightLab/TimelineJS.git",
+    "target": "git://github.com/NUKnightLab/TimelineJS3.git",
     "fileMap": [
       {
-        "basePath": "build",
+        "basePath": "compiled",
         "files": [
           "css/**/*",
           "js/**/*"
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/NUKnightLab/TimelineJS.git"
+    "url": "https://github.com/NUKnightLab/TimelineJS3.git"
   },
   "license": "MPL-2.0",
   "authors": [
