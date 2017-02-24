@@ -13,6 +13,7 @@
     "type": "git",
     "url": "git://github.com/esimakin/twbs-pagination.git"
   },
+  "homepage": "https://esimakin.github.io/twbs-pagination/",
   "license": "Apache-2.0",
   "autoupdate": {
     "source": "git",
