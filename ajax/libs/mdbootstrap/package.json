@@ -30,7 +30,8 @@
         "files": [
           "+(js|css)/**/mdb*",
           "font/**/*",
-          "img/overlays/*"
+          "img/overlays/*",
+          "img/svg/*"
         ]
       }
     ]
