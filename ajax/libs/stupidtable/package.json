@@ -3,7 +3,7 @@
   "filename": "stupidtable.min.js",
   "version": "1.0.3",
   "description": "A stupidly small and simple jQuery table sorter plugin",
-  "homepage": "http://joequery.github.io/Stupid-Table-Plugin/",
+  "homepage": "https://joequery.github.io/Stupid-Table-Plugin/",
   "keywords": [
     "stupidtable",
     "table sort"
