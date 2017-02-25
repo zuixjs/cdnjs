@@ -99,14 +99,14 @@ packages.map(function(pkg) {
                 .join("\n"));
     }
   };
-  packageVows[pname + ": filename from package.json exists"] = function(pkg) {
+  packageVows[pname + ": filename from package.json exists and is a file (not a directory)"] = function(pkg) {
     var json = parse(pkg, true);
     if (json.version === undefined) {
       return;
     }
     var filePath = "./ajax/libs/" + json.name + "/" + json.version +
       "/" + json.filename;
-    assert.ok(isThere(filePath),
+    assert.ok(isThere.file(filePath),
                   filePath + " does not exist but is referenced in package.json!");
   };
   packageVows[pname + ": name in package.json should be parent folder name"] = function(pkg) {
