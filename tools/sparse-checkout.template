@@ -1,10 +1,10 @@
 /build
 /documents
 /test
+/spec
 /tools
-/MIT-LICENSE
+/LICENSE
 /hooks
-/MAINTAINERS
 /*.yml
 /*.md
 /*.json

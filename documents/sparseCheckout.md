@@ -21,10 +21,10 @@ Here is an example of `.git/info/sparse-checkout`:
 /build
 /documents
 /test
+/spec
 /tools
-/MIT-LICENSE
+/LICENSE
 /hooks
-/MAINTAINERS
 /*.yml
 /*.md
 /*.json
