@@ -27,7 +27,7 @@
 
 ## A. issue
 
-* For the new library request issue, please make sure it's not a *personal* project, we have a basic requirement for the popularity, like 100 stars on GitHub or 500 downloads/month on npm registry.
+* For the new library request issue, please make sure it's not a *personal* project, we have a basic requirement for the popularity, like **100** stars on GitHub or **500** downloads/month on npm registry.
 
 * Before opening a issue ticket, please check if there is/was already an issue on the same topic.
 
