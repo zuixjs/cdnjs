@@ -1,4 +1,4 @@
-# cdnjs Library Repository
+# CDNJS
 
 ﻿[![Drone CI](https://ci.cdnjs.com/api/badges/cdnjs/cdnjs/status.svg?branch=master)](https://ci.cdnjs.com/cdnjs/cdnjs)
 ﻿[![Dependency Status](https://david-dm.org/cdnjs/cdnjs.svg?theme=shields.io)](https://david-dm.org/cdnjs/cdnjs) [![devDependency Status](https://david-dm.org/cdnjs/cdnjs/dev-status.svg?theme=shields.io)](https://david-dm.org/cdnjs/cdnjs#info=devDependencies)
@@ -9,133 +9,50 @@
 
 [![Throughput Graph](https://graphs.waffle.io/cdnjs/cdnjs/throughput.svg)](https://waffle.io/cdnjs/cdnjs/metrics/throughput)
 
-[cdnjs](https://github.com/cdnjs/cdnjs) is the repository mirroring all library assets on [cdnjs.cloudflare.com](https://cdnjs.cloudflare.com).
+## Introduction
 
-[Thomas Davis](https://twitter.com/neutralthoughts) and [Ryan Kirkman](https://twitter.com/ryan_kirkman) created cdnjs, [Drew Freyling](http://decompile.it/blog/) and [Peter Dave Hello](https://github.com/PeterDaveHello) are maintainers. [Juan Gallardo](http://jgallardo.me/) is our community moderator.
+This is the main repository to maintain the libraries' assets on CDNJS, for website, api, please refer to [new-website](https://github.com/cdnjs/new-website) repository, all the repositories can be found at [CDNJS](https://github.com/cdnjs/) organization on GitHub!
 
-cdnjs will host any production version of any JavaScript/CSS library, subject to license permissions.
+CDNJS is a free and open source project to organize all the famous web front-end development resources and provide them to the developers with faster CDN intrastructure without usage limitation and fee. We want to help individual library/framework developers spread their projects, and help web developers to supercharge their websites! With the great and free CDN service, developers can focus on the project and website development, without spending time on worrying about how to setup a CDN for the project or website assets, we hope to make the web development eaiser, bring your websites and the WWW faster and safer.
 
-  * Libraries must have notable popularity: 100 stars/watchers on GitHub, or more than 500 times download per month on npm stats are both good examples, but as long as reasonable popularity can be demonstrated the library will be added.
-  * Beta, release candidate and alpha releases are not usually considered ready for full production status. Requests for pre-release versions of libraries _may_ be declined after peer review.
-  * We'll accept beta, release candidate and alpha releases if you are using our npm/git auto-update mechanism, if you really want it, please setup auto-update for that lib.
+If you love 💖 what we are doing and would like to help us make the project better, please consider to:
 
-Please raise a new pull request for new library additions and existing library updates, following the instructions below.
+1. Become a contributor, help us write document, organize issues, add libraries, design the website, propose features, review issues and pull requests, etc.
+2. Donate us on [Gratipay](https://gratipay.com/cdnjs/), [Bountysource](https://www.bountysource.com/teams/cdnjs) or [Tip4Commit](https://tip4commit.com/github/cdnjs/cdnjs).
 
-## IMPORTANT
+We're really appreciate your help 😊
 
- - Please read the instructions about sparseCheckout and shallow clone before any git clone operation to this huge repository: [documents/sparseCheckout.md](https://github.com/cdnjs/cdnjs/blob/master/documents/sparseCheckout.md)
- - All new libraries hosted on CDNJS should have an official public repository or npm package, and the officially pre-built distribution file(s) should also be there, so that we can apply the auto-update mechanism on that lib.
+Currently, CDNJS is the top 2([ref](https://w3techs.com/technologies/overview/content_delivery/all)) web front-end CDN service with great performance, we fully support [https](https://en.wikipedia.org/wiki/HTTPS), [SPDY](https://en.wikipedia.org/wiki/SPDY), [http/2.0](https://http2.github.io/) and [SRI](https://www.w3.org/TR/SRI/), which will **boost** and **secure** your website with zero configuration. *(note that you'll still need to take care of the server side and application layer of security issues, we just make it better, but can't help too much if you implment a bad practice)*
 
-## Adding a library by a single package.json
+## latest version url support
 
-CDNJS now supports adding a new library by a single `package.json`: you just need to add a valid CDNJS package.json with npm/git auto-update config, and remove its `version` field in `package.json`, and we'll handle the remaining works.
+Note that we don't support the feature to use `latest` in the url, because of the reasons below:
 
-* [Fork the cdnjs repo](https://github.com/cdnjs/cdnjs/fork) to your own GitHub account.
-* Click the "Branch: master" dropdown, enter the name of the library being added, and choose "Create branch <LIBRARY_NAME> from master".
-* Go to `ajax/libs` directory.
-* Click "Create new file".
-* Enter `<LIBRARY_NAME>/package.json`, compose a valid [`package.json`](https://github.com/cdnjs/cdnjs#create-or-update-packagejson) for the library being added, enter commit message and click "Commit new file".
-* Submit a pull request.
+ 1. It brings potential risks to break the website if there is any compatible issue or bug coming from upstream, it's not a good idea to use it in the production environment, both jQuery CDN and Google CDN doesn't provide this feature.
+ 2. The `latest` url feature also has cache and performance issues, which has conflicts of what we are tring to do - make your website loading as fast as possible.
+ 3. Security issues become more and more important nowadays, for example, GitHub had been attacked by the Great Cannon via malicious JavaScript([ref1](https://citizenlab.org/2015/04/chinas-great-cannon/), [ref2](https://arstechnica.com/security/2015/04/meet-great-cannon-the-man-in-the-middle-weapon-china-used-on-github/)) during April 2015, one of the technique to prevent this kind of attack is [Subresource Integrity(SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity), we have been supporting this feature for a long time, however, the `latest` url feature totally conflicts with the SRI technique.
 
-Note that you should have a `filename` to point to the main file of a lib, if that file is not minified, please still use `filename.min.js` or `filename.min.css` structure naming, we'll do the minify job.
- 
-## Adding a new or updating an existing library
+## Contributing
 
-cdnjs relies on user-submitted pull requests and automatic updating via `npm` or `git` repository to populate and update libraries.
+To contribute to CDNJS, please refer to the [CONTRIBUTING.md](https://github.com/cdnjs/cdnjs/blob/master/.github/CONTRIBUTING.md), it should contain most of the things you'll need to get your contribution started!
 
-To add a new library, or update an existing library outside of `npm`/`git`, start by [forking the cdnjs repo](https://github.com/cdnjs/cdnjs/fork) to your own GitHub account.
-
-If you're adding/modifying outside of the GitHub browser interface, for example on the command line or with the GitHub desktop application, you will need to additionally install `node`(`node.js`) locally, so that you can run the test  or utils under `tools` locally.
-
-When you have forked the cdnjs repo, add your library to it. Libraries are stored in the `ajax/libs` directory. Each library has its own subdirectory of `ajax/libs` and each version of the library has its own subdirectory of the library directory name, for example:
-
-```
-/ajax/libs/jquery/2.0.0/
-```
-
-[**@IonicaBizau**](https://github.com/IonicaBizau) wrote a NodeJS command line tool for automating the adding process of a new library. This tool [is named *cdnjs-importer* and it's open source](https://github.com/cdnjs/cdnjs-importer)
-
-For more information regarding this importer, please check out the [repository documentation](https://github.com/cdnjs/cdnjs-importer).
-
-## Conventions
-
-You should consider the following when adding to or updating the library, so that we can keep our project neat, clean and clear:
-
-* Filenames should _not_ include a version number.
-  * This is OK: `useful.min.js`, but this is not: `useful-2.0.1.min.js`.
-
-* JavaScript & CSS files should be minified to reduce network traffic and browser overhead.
-  * If the library doesn't already provide a minified version, cdnjs's preferred JavaScript minifier is [UglifyJS](http://marijnhaverbeke.nl/uglifyjs "UglifyJS")
-
-* If you are updating a library, please try to maintain consistency with the existing file and directory structure.
-  * There will be occasions, particularly with major version increments, where this is not practical.
-
-* You should sync your local repository with our master branch as new as possible, try to make the commits' parent be new.
- * Please use `git pull --rebase` instead of `git pull`, use `git rebase upstream/master` instead of `git merge upstream/master`, so that we can avoid of meaningless merging.
-
-* Only do one _meaningful_ thing in one commits, don't mix different things into the same commit, like add two libs in a commit.
-
-* Every commits should be meaningful, don't cut one thing into multiple commits, like add a lib in 3 commits.
-
-* Inspect your work by `git diff` & `git status` before commit your change.
-
-* Inspect your commit by `git log --stat` & `git log -p` before sending a pull request.
-
-## Create or update `package.json`
-
-Each library has a corresponding `package.json`, written in `npm` format (see `test/schemata/npm-package.json` for details or use another `package.json` to crib from - it's pretty self-explanatory), and we use `filename` field in `package.json` to point to the mainfile of a lib, this field will be required. When an existing library is updated, the details in `package.json` should be updated where required.
-
-For example, if a new version of the library is added, the version number may need changing. Likewise, if you're adding `npm` update information to a library, this is done in `package.json`.
-
-## Run `npm test` to check all is well
-
-If you're updating the library outside of `npm` or the GitHub browser, you should run `npm test` from the library directory to ensure everything is OK.
-
-If you run `npm test` and see no errors, all is well; resolve any errors before you raise your pull request and re-run `npm test` to ensure everything works.
-
-If you see an error then run `npm install` before running `npm test`:
-
-```
-vows: command not found
-npm ERR! Test failed.  See above for more details.
-npm ERR! not ok code 0
-```
-
-## Pull request pre-flight checks
-
-* Have you complied with our conventions?
-* Have you followed the library directory structure?
-* Does a valid and accurate `package.json` exist for the library?
-* Have you minified JavaScript and CSS?
-* Did `npm test` check out OK?
-
-...if so, great! You're ready to raise a pull request.
-
-## Raising a pull request
-
-Please restrict your pull request to one library. You can include >1 version/release of a library in a single pull request.
-
-From a maintenance standpoint, it's much more straightforward to process pull requests where there is one commit for one library.
-
-In your pull request title, tell us what you're doing.
-
- - If you are the author of the library, please add `[author]` to the pull request title.
-
- - If you are adding a new lib, please add `[new]` to the pull request title.
-
-__Please include the following in your pull request:__
-
-* The origin of your new files
-  * e.g., where you downloaded the version from
-
-A URL is ideal. Providing the origin of your files is very helpful as the cdnjs project is peer-reviewed. Practically speaking, it also helps us process your pull request more efficiently, which means your files go live sooner. Help us and we'll help you back.
-
-## Enabling auto-update
-See [autoupdate.md](documents/autoupdate.md)
-
-## API
-See [api.md](documents/api.md)
+## API usage
+See the [API page](https://cdnjs.com/api) on the website or [documents/api.md](documents/api.md);
 
 ## Extensions, Plugins, Resources
 
 [Extensions, Plugins, Resources](https://github.com/cdnjs/cdnjs/wiki/Extensions%2C-Plugins%2C-Resources)
+
+## Sponsors
+
+CDNJS would never be successful without the kindness sponsoring from the sponsors, CDNJS is currently sponsoring by this companies:
+
+ - [Cloudflare](https://www.cloudflare.com/?utm_source=cdnjs&utm_medium=link&utm_campaign=cdnjs)
+ - [DigitalOcean](https://www.digitalocean.com/?utm_source=cdnjs&utm_medium=link&utm_campaign=cdnjs)
+ - [Algolia](https://www.algolia.com/?utm_source=cdnjs&utm_medium=link&utm_campaign=cdnjs)
+ - [Heroku](https://www.heroku.com/?utm_source=cdnjs&utm_medium=link&utm_campaign=cdnjs)
+
+If you are interested in becoming a sponsor, please feel free to contact us!
+
+## License
+Each library is released under its own license, this CDNJS main repository is under [MIT license](LICENSE)
