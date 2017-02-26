@@ -10,7 +10,8 @@
   },
   "scripts": {
     "test": "vows",
-    "devTest": "jasmine"
+    "devTest": "jasmine",
+    "doctoc": "doctoc README.md"
   },
   "license": "MIT",
   "dependencies": {
@@ -29,6 +30,7 @@
     "tarball-extract": "^0.0.3"
   },
   "devDependencies": {
+    "doctoc": "^1.2.0",
     "JSV": "^4.0.2",
     "jasmine": "^2.5.2",
     "jslint": "^0.10.1",
