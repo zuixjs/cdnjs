@@ -160,7 +160,7 @@ var processNewVersion = function(pkg, version) {
           libContentsPath, error.FILE_PATH));
         return;
       }
-      var files = glob.sync(path.join(libContentsPath, file));
+      var files = glob.sync(path.join(libContentsPath, file), {nodir: true});
       if (files.length === 0) {
         // usually old versions have this problem
         var msg;
