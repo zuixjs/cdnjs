@@ -9,6 +9,20 @@
 
 [![Throughput Graph](https://graphs.waffle.io/cdnjs/cdnjs/throughput.svg)](https://waffle.io/cdnjs/cdnjs/metrics/throughput)
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Introduction](#introduction)
+- [latest version url support](#latest-version-url-support)
+- [Contributing](#contributing)
+- [API usage](#api-usage)
+- [Extensions, Plugins, Resources](#extensions-plugins-resources)
+- [Sponsors](#sponsors)
+- [License](#license)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Introduction
 
 This is the main repository to maintain the libraries' assets on CDNJS, for website, api, please refer to [new-website](https://github.com/cdnjs/new-website) repository, all the repositories can be found at [CDNJS](https://github.com/cdnjs/) organization on GitHub!
