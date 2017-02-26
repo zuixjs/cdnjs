@@ -3,13 +3,9 @@
   "npmName": "free-jqgrid",
   "npmFileMap": [
     {
-      "basePath": "",
+      "basePath": "dist",
       "files": [
-        "css/*",
-        "js/*",
-        "js/i18n/*",
-        "js/min/*",
-        "plugins/*"
+        "**/!(*.ts)"
       ]
     }
   ],
