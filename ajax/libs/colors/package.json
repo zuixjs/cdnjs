@@ -2,13 +2,16 @@
   "name": "colors",
   "filename": "colors.min.css",
   "version": "1.0",
-  "description": "Better colors for the web. A collection of skin classes for faster prototyping and nicer looking sites.",
+  "description": "Better default colors for the web. A collection of skin classes for faster prototyping and nicer looking sites.",
   "homepage": "http://clrs.cc",
   "keywords": [
     "css",
     "colors",
-    "html",
-    "new"
+    "design",
+    "a11y",
+    "postcss",
+    "palette",
+    "oocss"
   ],
   "repository": {
     "type": "git",
