@@ -11,15 +11,19 @@ var fs = require("fs"),
   colors = require("colors"),
   basePath = "/ajax/libs/",
   result = fs.readFileSync('.git/info/sparse-checkout'),
-  packages = glob.sync("./ajax/libs/*/package.json");
+  packages = glob.sync("./ajax/libs/*/package.json"),
+  fast;
 
 colors.setTheme({
   success: 'green'
 });
 
+args = process.argv.slice(2);
+fast = (args.length > 0 && args[0] === 'fast') ? true : false;
+
 async.each(packages, function(item, callback) {
   var content = JSON.parse(fs.readFileSync(item, 'utf8')),
-    temp = '/ajax/libs/' + content.name + '/' + content.version + '/*\n';
+  temp = '/ajax/libs/' + content.name + '/' + content.version + '/' + (fast ? content.filename : '') + '\n';
   result += temp;
   callback();
 }, function(){
