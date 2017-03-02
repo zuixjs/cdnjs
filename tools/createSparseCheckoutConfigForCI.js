@@ -19,7 +19,7 @@ colors.setTheme({
 
 async.each(packages, function(item, callback) {
   var content = JSON.parse(fs.readFileSync(item, 'utf8')),
-    temp = '/ajax/libs/' + content.name + '/' + content.version + '/' + content.filename + '\n';
+    temp = '/ajax/libs/' + content.name + '/' + content.version + '/*\n';
   result += temp;
   callback();
 }, function(){
