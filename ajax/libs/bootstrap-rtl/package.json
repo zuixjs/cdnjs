@@ -19,5 +19,17 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/morteza/bootstrap-rtl.git"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/morteza/bootstrap-rtl.git",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "css/**/*"
+        ]
+      }
+    ]
   }
 }
