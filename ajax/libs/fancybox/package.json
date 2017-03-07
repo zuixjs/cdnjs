@@ -1,7 +1,7 @@
 {
   "name": "fancybox",
-  "filename": "js/jquery.fancybox.min.js",
-  "version": "2.1.6",
+  "filename": "jquery.fancybox.min.js",
+  "version": "3.0.39",
   "description": "Touch enabled, responsive and fully customizable jQuery lightbox script",
   "homepage": "http://fancyapps.com/fancybox/",
   "keywords": [
@@ -24,5 +24,17 @@
     },
     "GPL-3.0"
   ],
-  "author": "Jānis Skarnelis"
+  "author": "Jānis Skarnelis",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/fancyapps/fancybox.git",
+    "fileMap": [
+      {
+        "basePath": "dist",
+        "files": [
+          "**/*"
+        ]
+      }
+    ]
+  }
 }
