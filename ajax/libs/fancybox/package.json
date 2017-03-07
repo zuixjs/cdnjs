@@ -2,7 +2,7 @@
   "name": "fancybox",
   "filename": "js/jquery.fancybox.min.js",
   "version": "2.1.6",
-  "description": "fancyBox is a tool that offers a nice and elegant way to add zooming functionality for images, html content and multi-media on your webpages. It is built at the top of the popular JavaScript framework jQuery and is both easy to implement and a snap to customize.",
+  "description": "Touch enabled, responsive and fully customizable jQuery lightbox script",
   "homepage": "http://fancyapps.com/fancybox/",
   "keywords": [
     "fancybox",
@@ -15,10 +15,14 @@
   "namespace": "$.fancybox",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fancyapps/fancyBox"
+    "url": "https://github.com/fancyapps/fancybox"
   },
-  "license": {
-    "type": "fancyBox",
-    "url": "http://fancyapps.com/fancybox/#license"
-  }
+  "licenses": [
+    {
+      "type": "fancyBox",
+      "url": "http://fancyapps.com/fancybox/#license"
+    },
+    "GPL-3.0"
+  ],
+  "author": "Jānis Skarnelis"
 }
