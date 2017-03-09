@@ -30,7 +30,7 @@ CDNJS is a free and open source project to organize all the famous web front-end
 
 If you love 💖 what we are doing and would like to help us make the project better, please consider to:
 
-1. Become a contributor, help us write document, organize issues, add libraries, design the website, propose features, review issues and pull requests, etc.
+1. Become a contributor, help us write [document](https://github.com/cdnjs/cdnjs/tree/master/documents), organize [issues](https://github.com/cdnjs/cdnjs/issues), add libraries, design the [website](https://github.com/cdnjs/new-website), propose features, review [issues](https://github.com/cdnjs/cdnjs/issues) and [pull requests](https://github.com/cdnjs/cdnjs/pulls), etc.
 2. Donate us on [Gratipay](https://gratipay.com/cdnjs/), [Bountysource](https://www.bountysource.com/teams/cdnjs) or [Tip4Commit](https://tip4commit.com/github/cdnjs/cdnjs).
 
 We're really appreciate your help 😊
