@@ -22,7 +22,7 @@
   "license": "MIT",
   "autoupdate": {
     "source": "git",
-    "target": "git://gitlab.com/epistemex/transformation-matrix-js.git",
+    "target": "https://gitlab.com/epistemex/transformation-matrix-js.git",
     "fileMap": [
       {
         "basePath": "",
@@ -37,5 +37,6 @@
         ]
       }
     ]
-  }
+  },
+  "version": "2.7.2"
 }
