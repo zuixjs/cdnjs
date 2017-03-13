@@ -160,7 +160,7 @@ packages.map(function (pkg) {
                   pkgName(pkg) + ': npmName and npmFileMap should be a pair');
   };
 
-  var targetPrefixes = new RegExp('^git://.+.git$');
+  var targetPrefixes = new RegExp('^(git|http|https)://.+.git$');
   packageVows[pname + ': autoupdate block is valid (if present)'] = function (pkg) {
     var json = parse(pkg, true);
     var fileMapPostfixes = new RegExp('\\*\\*$');
