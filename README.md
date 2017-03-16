@@ -17,6 +17,7 @@
 - [Contributing](#contributing)
 - [API usage](#api-usage)
 - [Extensions, Plugins, Resources](#extensions-plugins-resources)
+- [Contributors](#contributors)
 - [Sponsors](#sponsors)
 - [License](#license)
 
@@ -55,6 +56,19 @@ See the [API page](https://cdnjs.com/api) on the website or [documents/api.md](d
 ## Extensions, Plugins, Resources
 
 [Extensions, Plugins, Resources](https://github.com/cdnjs/cdnjs/wiki/Extensions%2C-Plugins%2C-Resources)
+
+## Contributors
+
+See each repos' GitHub contributors graph, e.g.
+ - [main repo](https://github.com/cdnjs/cdnjs/graphs/contributors)
+ - [website and api](https://github.com/cdnjs/new-website/graphs/contributors)
+ - [autoupdate tool](https://github.com/cdnjs/autoupdate/graphs/contributors)
+ - [atom-extension](https://github.com/cdnjs/atom-extension/graphs/contributors)
+ - [tutorials](https://github.com/cdnjs/tutorials/graphs/contributors)
+ - [buildScript](https://github.com/cdnjs/buildScript/graphs/contributors)
+ - [cdnjs-importer](https://github.com/cdnjs/cdnjs-importer)
+
+or [gitstats](https://github.com/cdnjs?utf8=✓&q=gitstats), [git_stats](https://github.com/cdnjs?utf8=✓&q=git_stats)
 
 ## Sponsors
 
