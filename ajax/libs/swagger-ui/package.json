@@ -19,11 +19,7 @@
       {
         "basePath": "dist",
         "files": [
-          "swagger-ui.*",
-          "css/screen.css",
-          "images/throbber.gif",
-          "images/explorer_icons.png",
-          "images/logo_small.png"
+          "**/swagger-ui*"
         ]
       }
     ]
