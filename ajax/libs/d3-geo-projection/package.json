@@ -19,10 +19,9 @@
   "npmName": "d3-geo-projection",
   "npmFileMap": [
     {
-      "basePath": "",
+      "basePath": "build",
       "files": [
-        "d3.geo.projection.js",
-        "d3.geo.projection.min.js"
+        "**/*"
       ]
     }
   ],
