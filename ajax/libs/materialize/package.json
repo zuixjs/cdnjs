@@ -4,7 +4,7 @@
   "description": "Builds Materialize distribution packages",
   "author": "Alvin Wang, Alan Chang",
   "url": "http://materializecss.com/",
-  "version": "0.98.0",
+  "version": "0.98.1",
   "license": "MIT",
   "autoupdate": {
     "source": "git",
