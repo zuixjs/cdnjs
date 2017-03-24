@@ -1,7 +1,7 @@
 {
   "name": "flowplayer",
   "filename": "flowplayer.min.js",
-  "version": "5.4.6",
+  "version": "7.0.2",
   "description": "The HTML5 video player for the web",
   "homepage": "http://flowplayer.org/",
   "keywords": [
@@ -16,5 +16,14 @@
     "type": "git",
     "url": "https://github.com/flowplayer/flowplayer"
   },
-  "license": "GPLv3"
+  "license": "GPLv3",
+  "npmName": "flowplayer",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
+    }
+  ]
 }
