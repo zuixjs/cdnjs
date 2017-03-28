@@ -1,7 +1,7 @@
 {
   "name": "jquery-csv",
-  "filename": "jquery.csv-0.71.min.js",
-  "version": "0.71",
+  "filename": "jquery.csv.min.js",
+  "version": "0.8.2",
   "description": "CSV parser (complete, end-to-end, battle tested, performance optimized, 100% IETF RFC 4180 compatible) in pure js to be used with jQuery, nodejs and more",
   "homepage": "http://code.google.com/p/jquery-csv/",
   "keywords": [
@@ -16,5 +16,17 @@
   "author": {
     "name": "Evan Plaice",
     "email": "evan.plaice@gmail.com"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/evanplaice/jquery-csv.git",
+    "fileMap": [
+      {
+        "basePath": "src",
+        "files": [
+          "jquery.csv*"
+        ]
+      }
+    ]
   }
 }
