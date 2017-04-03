@@ -36,7 +36,7 @@
   ],
   "author": "morganherlocker",
   "license": "MIT",
-  "npmName": "@turf%2fturf",
+  "npmName": "@turf/turf",
   "npmFileMap": [
     {
       "basePath": "",
