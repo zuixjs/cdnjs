@@ -8,6 +8,7 @@ var _ = require('lodash');
 var request = require('superagent');
 var async = require('async');
 var tarball = require('tarball-extract');
+var chmodr = require('chmodr');
 var colors = require('colors');
 var isThere = require('is-there');
 var stable = require('semver-stable');
@@ -145,6 +146,10 @@ var processNewVersion = function (pkg, version) {
     return;
   }
 
+  // trick to handle wrong permission lib like clipboard.js@0.0.7
+  fs.chmodSync(extractLibPath, 0755);
+  chmodr.sync(extractLibPath, 0755);
+
   var libPath = getPackagePath(pkg, version);
   var isAllowedPath = isAllowedPathFn(extractLibPath);
   var newPath = path.join(libPath, 'package.json');
@@ -188,6 +193,7 @@ var processNewVersion = function (pkg, version) {
         var copyPath = path.join(libPath, copyPart);
         fs.mkdirsSync(path.dirname(copyPath));
         fs.copySync(extractFilePath, copyPath);
+        fs.chmodSync(copyPath, '0644');
         updated = true;
       });
     });
