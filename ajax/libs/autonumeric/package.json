@@ -33,11 +33,11 @@
   "homepage": "http://www.decorplanit.com/plugin/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BobKnothe/autoNumeric.git"
+    "url": "git+https://github.com/autoNumeric/autoNumeric.git"
   },
   "autoupdate": {
     "source": "git",
-    "target": "git://github.com/BobKnothe/autoNumeric.git",
+    "target": "git://github.com/autoNumeric/autoNumeric.git",
     "fileMap": [
       {
         "basePath": "dist",
