@@ -8,10 +8,10 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/mapbox/mapbox-gl-js.git"
-  }, 
+  },
   "keywords": [
     "map",
-    "mapbox", 
+    "mapbox",
     "mapping"
   ],
   "npmName": "mapbox-gl",
@@ -22,5 +22,6 @@
         "**/*"
       ]
     }
-  ]
+  ],
+  "version": "0.34.0"
 }
