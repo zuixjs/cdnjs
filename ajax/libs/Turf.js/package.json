@@ -36,12 +36,12 @@
   ],
   "author": "morganherlocker",
   "license": "MIT",
-  "npmName": "turf",
+  "npmName": "@turf%2fturf",
   "npmFileMap": [
     {
       "basePath": "",
       "files": [
-        "**/turf*"
+        "turf*"
       ]
     }
   ]
