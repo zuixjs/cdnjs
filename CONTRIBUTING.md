@@ -1,7 +1,7 @@
 ﻿# CDNJS contributing docoment
 
  - Please read the instructions about sparseCheckout and shallow clone before any git clone operation to this huge repository: [documents/sparseCheckout.md](https://github.com/cdnjs/cdnjs/blob/master/documents/sparseCheckout.md), especially if you are using MacOS which uses case-insensitive filesystem by default, will bring you other issues.
- - Please make sure you are not going to submit a personal library, we have popularity requirement for the libraries, for the detail, see: [issue](#request-a-new-library)
+ - Please make sure you are not going to submit a personal library, we have popularity requirement for the libraries, for the detail, see: [issue](#b-request-a-new-library)
 
 ## Table of Contents
 
@@ -11,9 +11,9 @@
 
  A. [issue](#a-issue)
 
- * a. [general conventions](#general-conventions)
+ * a. [general conventions](#a-general-conventions)
 
- * b. [request a new library](#request-a-new-library)
+ * b. [request a new library](#b-request-a-new-library)
 
  B. [pull request](#b-pull-request)
 
