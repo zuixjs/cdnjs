@@ -48,7 +48,7 @@ Note that we don't support the feature to use `latest` in the url, because of th
 
 ## Contributing
 
-To contribute to CDNJS, please refer to the [CONTRIBUTING.md](https://github.com/cdnjs/cdnjs/blob/master/.github/CONTRIBUTING.md), it should contain most of the things you'll need to get your contribution started!
+To contribute to CDNJS, please refer to the [CONTRIBUTING.md](https://github.com/cdnjs/cdnjs/blob/master/CONTRIBUTING.md), it should contain most of the things you'll need to get your contribution started!
 
 ## API usage
 See the [API page](https://cdnjs.com/api) on the website or [documents/api.md](documents/api.md);
