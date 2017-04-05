@@ -31,7 +31,7 @@
     {
       "basePath": "dist",
       "files": [
-        "**/*"
+        "**/!(*common-js*|*es-modules*)"
       ]
     }
   ]
