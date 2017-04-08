@@ -240,6 +240,8 @@ node_modules/
 /ajax/libs/*/*/**/*.ts
 /ajax/libs/*/*/**/*.sh
 /ajax/libs/*/*/**/*.flow
+/ajax/libs/*/*/**/*.git
+/ajax/libs/*/*/**/*.git-id
 /ajax/libs/*/*/**/README
 /ajax/libs/*/*/**/README.md
 /ajax/libs/*/*/**/README.markdown
