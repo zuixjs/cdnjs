@@ -25,26 +25,26 @@
 
 ## Introduction
 
-This is the main repository to maintain the libraries' assets on CDNJS, for website, api, please refer to [new-website](https://github.com/cdnjs/new-website) repository, all the repositories can be found at [CDNJS](https://github.com/cdnjs/) organization on GitHub!
+This is the main repository to maintain the libraries' assets on CDNJS. For website and API, please refer to [new-website](https://github.com/cdnjs/new-website) repository, all the repositories can be found at [CDNJS](https://github.com/cdnjs/) organization on GitHub!
 
-CDNJS is a free and open source project to organize all the famous web front-end development resources and provide them to the developers with faster CDN infrastructure without usage limitation and fee. We want to help individual library/framework developers spread their projects, and help web developers to supercharge their websites! With the great and free CDN service, developers can focus on the project and website development, without spending time on worrying about how to setup a CDN for the project or website assets, we hope to make the web development eaiser, bring your websites and the WWW faster and safer.
+CDNJS is a free and open source project to organize all the famous web front-end development resources and provide them to the developers with faster CDN infrastructure without usage limitation and fee. We want to help individual library/framework developers spread their projects, and help web developers to supercharge their websites! With the great and free CDN service, developers can focus on the project and website development, without spending time worrying about how to setup a CDN for the project or website assets. We hope to make web development easier, your websites and the WWW faster and safer.
 
 If you love 💖 what we are doing and would like to help us make the project better, please consider to:
 
 1. Become a contributor, help us write [document](https://github.com/cdnjs/cdnjs/tree/master/documents), organize [issues](https://github.com/cdnjs/cdnjs/issues), add libraries, design the [website](https://github.com/cdnjs/new-website), propose features, review [issues](https://github.com/cdnjs/cdnjs/issues) and [pull requests](https://github.com/cdnjs/cdnjs/pulls), etc.
 2. Donate us on [Gratipay](https://gratipay.com/cdnjs/), [Bountysource](https://www.bountysource.com/teams/cdnjs) or [Tip4Commit](https://tip4commit.com/github/cdnjs/cdnjs).
 
-We're really appreciate your help 😊
+We really appreciate your help 😊
 
-Currently, CDNJS is the top 2([ref](https://w3techs.com/technologies/overview/content_delivery/all)) web front-end CDN service with great performance, we fully support [https](https://en.wikipedia.org/wiki/HTTPS), [SPDY](https://en.wikipedia.org/wiki/SPDY), [http/2.0](https://http2.github.io/) and [SRI](https://www.w3.org/TR/SRI/), which will **boost** and **secure** your website with zero configuration. *(note that you'll still need to take care of the server side and application layer of security issues, we just make it better, but can't help too much if you implment a bad practice)*
+Currently, CDNJS is the top 2([ref](https://w3techs.com/technologies/overview/content_delivery/all)) web front-end CDN service with great performance. We fully support [https](https://en.wikipedia.org/wiki/HTTPS), [SPDY](https://en.wikipedia.org/wiki/SPDY), [http/2.0](https://http2.github.io/) and [SRI](https://www.w3.org/TR/SRI/), which will **boost** and **secure** your website with zero configuration. *(note that you'll still need to take care of the server side and application layer of security issues. We make it better, but can't help too much if you implement a bad practice)*
 
 ## latest version url support
 
 Note that we don't support the feature to use `latest` in the url, because of the reasons below:
 
- 1. It brings potential risks to break the website if there is any compatible issue or bug coming from upstream, it's not a good idea to use it in the production environment, both jQuery CDN and Google CDN doesn't provide this feature.
- 2. The `latest` url feature also has cache and performance issues, which has conflicts of what we are tring to do - make your website loading as fast as possible.
- 3. Security issues become more and more important nowadays, for example, GitHub had been attacked by the Great Cannon via malicious JavaScript([ref1](https://citizenlab.org/2015/04/chinas-great-cannon/), [ref2](https://arstechnica.com/security/2015/04/meet-great-cannon-the-man-in-the-middle-weapon-china-used-on-github/)) during April 2015, one of the technique to prevent this kind of attack is [Subresource Integrity(SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity), we have been supporting this feature for a long time, however, the `latest` url feature totally conflicts with the SRI technique.
+ 1. It brings potential risks to break the website if there is any compatible issue or bug coming from upstream. It's not a good idea to use it in the production environment, both jQuery CDN and Google CDN don't provide this feature.
+ 2. The `latest` url feature also has cache and performance issues, which has conflicts of what we are tring to do - make your website load as fast as possible.
+ 3. Security issues become more and more important nowadays, for example, GitHub had been attacked by the Great Cannon via malicious JavaScript([ref1](https://citizenlab.org/2015/04/chinas-great-cannon/), [ref2](https://arstechnica.com/security/2015/04/meet-great-cannon-the-man-in-the-middle-weapon-china-used-on-github/)) during April 2015, one of the techniques to prevent this kind of attack is [Subresource Integrity(SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity). We have been supporting this feature for a long time, but the `latest` url feature totally conflicts with the SRI technique.
 
 ## Contributing
 
