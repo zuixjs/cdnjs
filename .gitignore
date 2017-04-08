@@ -242,6 +242,7 @@ node_modules/
 /ajax/libs/*/*/**/*.flow
 /ajax/libs/*/*/**/*.git
 /ajax/libs/*/*/**/*.git-id
+/ajax/libs/*/*/**/custom
 /ajax/libs/*/*/**/README
 /ajax/libs/*/*/**/README.md
 /ajax/libs/*/*/**/README.markdown
