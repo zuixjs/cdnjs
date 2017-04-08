@@ -82,7 +82,7 @@
 
 8. Do **NOT** do things which are **NOT** related with your commit log.
 
-9. We **ONLT** point the libraries to **production**/**stable** version.
+9. We **ONLY** point the libraries to **production**/**stable** version.
 
  * Which means we don't add a new library which has only have alpha/beta/RC or other non-production versions, please feel free to explain in comments it's really popular and you think it should still be added before a production version.
 
@@ -124,7 +124,7 @@
 4. You **must** do `npm test` under the root directory of this project to make sure everything is fine.
  * Please refer to [Install npm test dependencies](https://github.com/cdnjs/cdnjs/blob/master/README.md#install-npm-test-dependencies) & [Run npm test to check all is well](https://github.com/cdnjs/cdnjs/blob/master/README.md#run-npm-test-to-check-all-is-well).
 
-5. For those libs can use auto-update, we should add [auto-update config](https://github.com/cdnjs/cdnjs/blob/master/documents/autoupdate.md) for it, so that we can pull the new versions automatically, as the first pull request to add a lib, you should still add its real files, unless you would like to try the method below to add a a new library by a single package.json, or you won't pass the test.
+5. For those libs can use auto-update, we should add [auto-update config](https://github.com/cdnjs/cdnjs/blob/master/documents/autoupdate.md) for it, so that we can pull the new versions automatically, as the first pull request to add a lib, you should still add its real files, unless you would like to try the method below to add a new library by a single package.json, or you won't pass the test.
 
 
 ### e. adding a new library by a single package.json
