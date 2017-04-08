@@ -238,4 +238,5 @@ node_modules/
 /ajax/libs/*/*/**/*.md
 /ajax/libs/*/*/**/*.markdown
 /ajax/libs/*/*/**/*.ts
+/ajax/libs/*/*/**/*.sh
 /ajax/libs/*/*/**/*.flow
