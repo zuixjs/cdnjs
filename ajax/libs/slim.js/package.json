@@ -1,6 +1,7 @@
 {
   "name": "slim.js",
   "filename": "Slim.js",
+  "version": "2.6.5",
   "description": "Superpower Web Components",
   "repository": {
     "type": "git",
