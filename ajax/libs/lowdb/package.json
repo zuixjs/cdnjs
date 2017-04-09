@@ -1,6 +1,6 @@
 {
   "name": "lowdb",
-  "version": "0.16.1",
+  "version": "0.16.2",
   "filename": "lowdb.min.js",
   "description": "JSON database for Node and the browser powered by lodash API",
   "keywords": [
