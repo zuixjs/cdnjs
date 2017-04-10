@@ -8,7 +8,7 @@
     "url": "git://github.com/katspaugh/wavesurfer.js.git"
   },
   "author": "",
-  "license": "CC-BY 3.0",
+  "license": "CC-BY-3.0",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/katspaugh/wavesurfer.js.git",
