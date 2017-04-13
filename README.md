@@ -72,7 +72,7 @@ or [gitstats](https://github.com/cdnjs?utf8=✓&q=gitstats), [git_stats](https:/
 
 ## Sponsors
 
-CDNJS would never be successful without the kindness sponsoring from the sponsors, CDNJS is currently sponsoring by this companies:
+CDNJS would never be successful without the kindness sponsoring from the sponsors, CDNJS is currently being sponsored by these companies:
 
  - [Cloudflare](https://www.cloudflare.com/?utm_source=cdnjs&utm_medium=link&utm_campaign=cdnjs)
  - [DigitalOcean](https://www.digitalocean.com/?utm_source=cdnjs&utm_medium=link&utm_campaign=cdnjs)
