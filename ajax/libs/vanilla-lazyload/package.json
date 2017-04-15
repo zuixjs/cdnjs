@@ -29,12 +29,6 @@
         "files": [
           "**/*"
         ]
-      },
-      {
-        "basePath": "src",
-        "files": [
-          "lazyload*"
-        ]
       }
     ]
   }
