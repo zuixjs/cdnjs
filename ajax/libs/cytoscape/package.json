@@ -4,7 +4,7 @@
   "filename": "cytoscape.min.js",
   "description": "Graph theory (a.k.a. network) library for analysis and visualisation",
   "homepage": "http://cytoscape.github.io/cytoscape.js",
-  "license": "LGPL",
+  "license": "MIT",
   "keywords": [
     "graph",
     "theory",
