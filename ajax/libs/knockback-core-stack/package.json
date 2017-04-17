@@ -14,5 +14,6 @@
     "type": "git",
     "url": "https://github.com/kmalakoff/knockback.git"
   },
+  "homepage": "https://kmalakoff.github.io/knockback/",
   "license": "MIT"
 }
