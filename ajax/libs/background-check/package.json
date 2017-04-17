@@ -25,7 +25,8 @@
     ]
   },
   "author": {
-    "name" : "Kenneth Cachia",
-    "url" : "http://kennethcachia.com/"
-  }
+    "name": "Kenneth Cachia",
+    "url": "http://kennethcachia.com/"
+  },
+  "version": "1.2.2"
 }
