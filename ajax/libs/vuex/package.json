@@ -1,6 +1,6 @@
 {
   "name": "vuex",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "filename": "vuex.min.js",
   "description": "state management for Vue.js",
   "repository": {
