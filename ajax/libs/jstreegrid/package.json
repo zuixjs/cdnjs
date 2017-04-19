@@ -2,7 +2,7 @@
   "name": "jstreegrid",
   "filename": "jstreegrid.min.js",
   "description": "grid plugin for jstree",
-  "version": "3.8.1",
+  "version": "3.8.2",
   "author": {
     "name": "Avi Deitcher",
     "url": "https://github.com/deitch"
