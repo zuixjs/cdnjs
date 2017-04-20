@@ -11,5 +11,17 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/lucaong/jQCloud"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/lucaong/jQCloud.git",
+    "fileMap": [
+      {
+        "basePath": "jqcloud",
+        "files": [
+          "**/*"
+        ]
+      }
+    ]
   }
 }
