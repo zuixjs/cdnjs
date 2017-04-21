@@ -21,5 +21,6 @@
     "visualization",
     "tooltip",
     "plugin"
-  ]
+  ],
+  "version": "0.2.0"
 }
