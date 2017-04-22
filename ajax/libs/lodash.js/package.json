@@ -25,10 +25,9 @@
     "target": "git://github.com/lodash/lodash.git",
     "fileMap": [
       {
-        "basePath": "",
+        "basePath": "dist",
         "files": [
-          "lodash.js",
-          "lodash.min.js"
+          "**/*"
         ]
       }
     ]
