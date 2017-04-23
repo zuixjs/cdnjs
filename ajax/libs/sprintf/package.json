@@ -13,7 +13,6 @@
   "filename": "sprintf.min.js",
   "version": "1.0.3",
   "description": "JavaScript sprintf implementation",
-  "homepage:": "https://www.npmjs.org/package/sprintf-js",
   "repository": {
     "type": "git",
     "url": "https://github.com/alexei/sprintf.js.git"

@@ -9,9 +9,6 @@
     "jquery.pep,js",
     "pep"
   ],
-  "demos": [
-    "http://pep.briangonzalez.org"
-  ],
   "homepage": "http://pep.briangonzalez.org",
   "license": {
     "name": "MIT",

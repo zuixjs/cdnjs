@@ -15,7 +15,6 @@
     "chart",
     "angularjs"
   ],
-  "directories.doc": "docs",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/angular-gantt/angular-gantt.git",

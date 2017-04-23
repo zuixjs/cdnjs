@@ -11,8 +11,6 @@
     "modal"
   ],
   "author": "ashleydw <hello@ashleyd.ws>",
-  "style": "dist/ekko-lightbox.css",
-  "less": "ekko-lightbox.less",
   "repository": {
     "type": "git",
     "url": "https://github.com/ashleydw/lightbox.git"

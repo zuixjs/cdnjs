@@ -12,9 +12,6 @@
     "jqm",
     "jquery mobile"
   ],
-  "demos": [
-    "http://jquery-ui-map.googlecode.com/svn/trunk/demos/"
-  ],
   "homepage": "https://code.google.com/p/jquery-ui-map/",
   "license": {
     "name": "MIT License",

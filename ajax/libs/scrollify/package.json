@@ -13,8 +13,6 @@
     "url": "http://lukehaas.me"
   },
   "homepage": "http://projects.lukehaas.me/scrollify",
-  "docs": "https://github.com/lukehaas/Scrollify",
-  "download": "https://github.com/lukehaas/Scrollify",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/lukehaas/Scrollify.git",

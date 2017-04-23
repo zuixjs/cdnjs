@@ -23,10 +23,5 @@
     "couchdb",
     "pouchdb"
   ],
-  "tags": [
-    "db",
-    "couchdb",
-    "pouchdb"
-  ],
   "license": "Apache-2.0"
 }

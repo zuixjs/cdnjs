@@ -15,8 +15,6 @@
     "email": "kontakt@victorjonsson.se"
   },
   "homepage": "http://formvalidator.net",
-  "demo": "http://formvalidator.net",
-  "download": "http://formvalidator.net",
   "repository": {
     "type": "git",
     "url": "https://github.com/victorjonsson/jQuery-Form-Validator.git"

@@ -10,12 +10,6 @@
     "cloud",
     "db"
   ],
-  "tags": [
-    "quickblox",
-    "cloud",
-    "backend",
-    "db"
-  ],
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/QuickBlox/quickblox-javascript-sdk.git",

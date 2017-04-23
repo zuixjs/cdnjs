@@ -15,7 +15,6 @@
   ],
   "author": "Masayuki Tanaka",
   "license": "MIT",
-  "readmeFilename": "README.md",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/masayuki0812/c3.git",

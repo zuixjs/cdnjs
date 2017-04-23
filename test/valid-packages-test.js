@@ -8,6 +8,7 @@ var jsv = require('JSV').JSV.createEnvironment();
 var gitUrlParse = require('git-url-parse');
 var isThere = require('is-there');
 var libsToRun = require('./support/libsToRun');
+var recognizedFields = require('./recognizedFields.js');
 
 function parse(jsonFile, ignoreMissing) {
   var content;
@@ -239,41 +240,13 @@ packages.map(function (pkg) {
 
   packageVows[pname + ': useless fields check'] = function (pkg) {
     var json = parse(pkg, true);
-    var jsonFix = JSON.parse(JSON.stringify(json));
-    delete jsonFix.bin;
-    delete jsonFix.jshintConfig;
-    delete jsonFix.eslintConfig;
-    delete jsonFix.requiredFiles;
-    delete jsonFix.styles;
-    delete jsonFix.install;
-    delete jsonFix.typescript;
-    delete jsonFix.browserify;
-    delete jsonFix.browser;
-    delete jsonFix.jam;
-    delete jsonFix.jest;
-    delete jsonFix.scripts;
-    delete jsonFix.devDependencies;
-    delete jsonFix.dependencies;
-    delete jsonFix.optionalDependencies;
-    delete jsonFix.main;
-    delete jsonFix.peerDependencies;
-    delete jsonFix.contributors;
-    delete jsonFix.maintainers;
-    delete jsonFix.bugs;
-    delete jsonFix.gitHEAD;
-    delete jsonFix.gitHead;
-    delete jsonFix.spm;
-    delete jsonFix.dist;
-    delete jsonFix.issues;
-    delete jsonFix.files;
-    delete jsonFix.ignore;
-    delete jsonFix.engines;
-    delete jsonFix.engine;
-    delete jsonFix.directories;
-    delete jsonFix.repositories;
 
-    assert.ok(JSON.stringify(json) === JSON.stringify(jsonFix),
-            pkgName(pkg) + ": we don't need bin, jshintConfig, eslintConfig, styles, install, typescript, browserify, browser, jam, jest, scripts, devDependencies, dependencies, optionalDependencies, main, peerDependencies, contributors, bugs, gitHEAD, issues, files, ignore, engines, engine, directories, repositories and maintainers fields in package.json");
+    Object.keys(recognizedFields).forEach(function(field) {
+      delete json[field];
+    });
+
+    assert.ok(Object.keys(json).length === 0,
+            pkgName(pkg) + `: we don't need ${Object.keys(json).join(', ') + ' keys' } in package.json`);
   };
 
   packageVows[pname + ': There must be repository information when using auto-update config'] = function (pkg) {
