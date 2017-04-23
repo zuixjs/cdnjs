@@ -9,9 +9,6 @@
     "step-by-step guide",
     "introductions"
   ],
-  "demos": [
-    "http://usablica.github.com/intro.js/"
-  ],
   "npmName": "intro.js",
   "npmFileMap": [
     {

@@ -19,7 +19,6 @@
       ]
     }
   ],
-  "gratipay": "yyx990803",
   "repository": {
     "type": "git",
     "url": "https://github.com/vuejs/vue.git"

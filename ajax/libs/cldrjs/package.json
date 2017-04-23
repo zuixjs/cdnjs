@@ -24,7 +24,6 @@
     "type": "git",
     "url": "git://github.com/rxaviers/cldrjs.git"
   },
-  "readmeFilename": "README.md",
   "author": {
     "name": "Rafael Xavier de Souza",
     "email": "rxaviers@gmail.com",

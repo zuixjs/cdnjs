@@ -21,7 +21,6 @@
     "url": "git://github.com/nostalgiaz/bootstrap-switch.git"
   },
   "license": "Apache Version 2",
-  "readmeFilename": "README.md",
   "npmFileMap": [
     {
       "basePath": "dist",

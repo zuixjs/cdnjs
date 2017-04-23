@@ -19,7 +19,6 @@
     "picker",
     "lightweight"
   ],
-  "lecense": "MIT",
   "npmName": "flatpickr",
   "npmFileMap": [
     {

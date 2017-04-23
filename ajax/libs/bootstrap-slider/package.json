@@ -16,7 +16,6 @@
     "twitter",
     "slide"
   ],
-  "readmeFilename": "README.md",
   "npmFileMap": [
     {
       "basePath": "dist",

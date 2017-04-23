@@ -3,7 +3,6 @@
   "version": "6.6.3",
   "filename": "redux-form.min.js",
   "description": "A higher order component decorator for forms using Redux and React",
-  "jsnext:main": "./src/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/erikras/redux-form"

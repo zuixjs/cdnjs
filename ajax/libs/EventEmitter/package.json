@@ -19,7 +19,6 @@
     "url": "http://oli.me.uk/"
   },
   "license": "Unlicense",
-  "readmeFilename": "README.md",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/Olical/EventEmitter.git",

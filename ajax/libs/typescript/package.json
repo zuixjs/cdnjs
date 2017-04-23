@@ -1,6 +1,5 @@
 {
   "name": "typescript",
-  "npm-name": "typescript",
   "filename": "typescript.min.js",
   "version": "2.3.0",
   "description": "TypeScript is a language for application scale JavaScript development",

@@ -22,8 +22,6 @@
     "deprecated_GPL-2.0+"
   ],
   "homepage": "http://mottie.github.com/tablesorter/",
-  "docs": "http://mottie.github.com/tablesorter/docs/index.html",
-  "demo": "https://github.com/Mottie/tablesorter/wiki",
   "repository": {
     "type": "git",
     "url": "https://github.com/Mottie/tablesorter.git"

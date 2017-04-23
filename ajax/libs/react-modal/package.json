@@ -7,20 +7,12 @@
     "url": "https://github.com/reactjs/react-modal.git"
   },
   "license": "MIT",
-  "tags": [
-    "react",
-    "modal",
-    "dialog"
-  ],
   "keywords": [
     "react",
     "react-component",
     "modal",
     "dialog"
   ],
-  "browserify-shim": {
-    "react": "global:React"
-  },
   "npmName": "react-modal",
   "npmFileMap": [
     {
