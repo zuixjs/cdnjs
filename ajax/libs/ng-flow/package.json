@@ -20,7 +20,6 @@
   ],
   "author": "Aidas Klimas",
   "license": "MIT",
-  "readmeFilename": "README.md",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/flowjs/ng-flow.git",

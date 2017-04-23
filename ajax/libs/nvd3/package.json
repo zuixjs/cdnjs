@@ -14,10 +14,6 @@
     "name": "Novus Partners",
     "url": "https://github.com/novus"
   },
-  "maintainer": {
-    "name": "novus",
-    "url": "https://github.com/novus/"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/novus/nvd3.git"

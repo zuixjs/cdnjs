@@ -4,8 +4,6 @@
   "description": "A markdown parser built for speed",
   "author": "Christopher Jeffrey",
   "version": "0.3.6",
-  "man": "./man/marked.1",
-  "preferGlobal": true,
   "repository": {
     "type": "git",
     "url": "git://github.com/chjj/marked.git"

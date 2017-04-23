@@ -12,7 +12,6 @@
   ],
   "author": "George Zahariev <z@georgezahariev.com>",
   "homepage": "http://livescript.net",
-  "preferGlobal": true,
   "repository": {
     "type": "git",
     "url": "git://github.com/gkz/LiveScript.git"
