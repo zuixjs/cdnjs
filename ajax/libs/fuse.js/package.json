@@ -13,9 +13,9 @@
     "target": "git://github.com/krisk/Fuse.git",
     "fileMap": [
       {
-        "basePath": "src",
+        "basePath": "dist",
         "files": [
-          "*"
+          "**/*"
         ]
       }
     ]
