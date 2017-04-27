@@ -1,6 +1,6 @@
 {
   "name": "ag-grid",
-  "version": "9.0.4",
+  "version": "9.1.0",
   "filename": "ag-grid.min.js",
   "description": "Advanced Framework Agnostic Javascript Datagrid.",
   "repository": {
