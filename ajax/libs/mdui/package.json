@@ -1,6 +1,7 @@
 {
   "name": "mdui",
   "filename": "js/mdui.min.js",
+  "version": "0.2.0",
   "description": "a CSS Framework based on material design",
   "keywords": [
     "material design",
