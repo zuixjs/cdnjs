@@ -27,5 +27,6 @@
         "**/!(package.js|version.js)"
       ]
     }
-  ]
+  ],
+  "version": "1.0.3"
 }
