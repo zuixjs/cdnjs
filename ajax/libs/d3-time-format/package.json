@@ -1,6 +1,6 @@
 {
   "name": "d3-time-format",
-  "filename": "d3-time-format",
+  "filename": "d3-time-format.min.js",
   "description": "A JavaScript time formatter and parser inspired by strftime and strptime.",
   "keywords": [
     "d3",
