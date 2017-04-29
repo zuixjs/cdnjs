@@ -47,7 +47,8 @@
       {
         "basePath": "dist",
         "files": [
-          "*.js"
+          "aws-sdk.js",
+          "aws-sdk.min.js"
         ]
       }
     ]
