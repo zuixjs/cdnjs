@@ -1,6 +1,6 @@
 {
   "name": "turbolinks",
-  "filename": "turbolinks.min.js",
+  "filename": "turbolinks.js",
   "version": "5.0.1",
   "description": "Turbolinks makes navigating your web application faster",
   "keywords": [
