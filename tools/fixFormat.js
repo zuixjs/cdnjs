@@ -214,7 +214,7 @@ function fixFormat() {
       if (!recognizedKeys[key]) {
         delete pkg[key]
 
-        console.log(('removed unsupported key from ' + pkg[name] + ': ' + key).green);
+        console.log(('removed unsupported key from ' + pkg.name + ': ' + key).green);
       }
     });
   }
