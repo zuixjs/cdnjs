@@ -1,6 +1,6 @@
 {
   "name": "reselect",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "filename": "reselect.min.js",
   "description": "Selectors for Redux.",
   "keywords": [
