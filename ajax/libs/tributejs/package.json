@@ -1,7 +1,7 @@
 {
   "name": "tributejs",
   "filename": "tribute.min.js",
-  "version": "2.3.6",
+  "version": "2.3.7",
   "description": "Native ES6 @mentions",
   "keywords": [
     "mentions",
