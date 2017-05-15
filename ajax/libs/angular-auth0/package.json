@@ -1,7 +1,7 @@
 {
   "name": "angular-auth0",
   "filename": "angular-auth0.min.js",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Auth0.js wrapper for Angular.js",
   "repository": {
     "type": "git",
