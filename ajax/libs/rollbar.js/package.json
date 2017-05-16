@@ -9,7 +9,7 @@
     "url": "http://github.com/rollbar/rollbar.js"
   },
   "license": "MIT",
-  "filename": "rollbar.umd.nojson.min.js",
+  "filename": "rollbar.min.js",
   "keywords": [
     "errors",
     "tracking",
