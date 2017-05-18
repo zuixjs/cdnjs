@@ -1,7 +1,7 @@
 {
   "name": "ractive",
   "description": "Next-generation DOM manipulation",
-  "version": "0.9.0-build-136",
+  "version": "0.9.0-build-137",
   "keywords": [
     "reactive",
     "templates",
