@@ -1,7 +1,7 @@
 {
   "name": "viz.js",
   "filename": "viz.js",
-  "version": "1.7.1",
+  "version": "1.8.0",
   "description": "A hack to put Graphviz on the web.",
   "author": {
     "name": "Mike Daines",
