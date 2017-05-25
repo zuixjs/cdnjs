@@ -51,6 +51,8 @@ Note that we don't support the feature to use `latest` in the url, because of th
 
 To contribute to CDNJS, please refer to the [CONTRIBUTING.md](https://github.com/cdnjs/cdnjs/blob/master/CONTRIBUTING.md), it should contain most of the things you'll need to get your contribution started!
 
+**Working on your first Pull Request?** You can learn how from this *free* series [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)
+
 ## API usage
 See the [API page](https://cdnjs.com/api) on the website or [documents/api.md](documents/api.md);
 
