@@ -19,6 +19,7 @@
         "basePath": "",
         "files": [
           "themes/**/*",
+          "img/**/*",
           "offline*.js"
         ]
       }
