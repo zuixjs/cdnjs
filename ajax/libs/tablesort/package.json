@@ -13,10 +13,9 @@
     "target": "git://github.com/tristen/tablesort.git",
     "fileMap": [
       {
-        "basePath": "",
+        "basePath": "dist",
         "files": [
-          "tablesort*.js",
-          "src/**/tablesort*.js"
+          "**/*"
         ]
       }
     ]
