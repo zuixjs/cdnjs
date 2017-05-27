@@ -30,7 +30,7 @@
     {
       "basePath": "",
       "files": [
-        "dio*"
+        "dio!(.server)*.+(js|css|map)"
       ]
     }
   ]
