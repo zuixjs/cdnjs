@@ -22,8 +22,9 @@
         "basePath": "build",
         "files": [
           "**/*"
-         ]
+        ]
       }
     ]
-  }
+  },
+  "version": "1.4.3"
 }
