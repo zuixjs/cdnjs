@@ -15,18 +15,17 @@
     "css",
     "framework"
   ],
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/uikit/uikit.git",
-    "fileMap": [
-      {
-        "basePath": "dist",
-        "files": [
-          "**/*"
-        ]
-      }
-    ]
-  },
+  "npmName": "uikit",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "js/**/*",
+        "css/**/*",
+        "fonts/**/*"
+      ]
+    }
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
