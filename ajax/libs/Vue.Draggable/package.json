@@ -1,6 +1,6 @@
 {
   "name": "Vue.Draggable",
-  "version": "2.12.0",
+  "version": "2.13.0",
   "filename": "vuedraggable.min.js",
   "description": "Vue component allowing drag-and-drop sorting in sync with View-Model. Based on Sortable.js.",
   "keywords": [
