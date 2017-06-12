@@ -3,7 +3,7 @@
   "name": "cdnjs",
   "description": "Our goal is to operate this CDN in a peer reviewed fashion.",
   "version": "1.0.0",
-  "homepage": "http://www.cdnjs.com/",
+  "homepage": "https://cdnjs.com/",
   "repository": {
     "type": "git",
     "url": "git://github.com/cdnjs/cdnjs.git"
