@@ -6,7 +6,7 @@
 #   3. pull with rebase from master branch
 set -e
 
-if ! git diff --quite; then
+if ! git diff --quiet; then
   >&2 echo "Working directory not clean"
   exit 1
 fi
