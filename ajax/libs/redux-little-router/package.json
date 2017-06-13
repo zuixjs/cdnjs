@@ -1,7 +1,7 @@
 {
   "name": "redux-little-router",
   "filename": "redux-little-router.min.js",
-  "version": "13.1.3",
+  "version": "13.2.0",
   "description": "A barebones routing solution for Redux applications.",
   "repository": {
     "type": "git",
