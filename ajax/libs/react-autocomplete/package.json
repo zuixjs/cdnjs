@@ -1,7 +1,7 @@
 {
   "name": "react-autocomplete",
   "filename": "react-autocomplete.min.js",
-  "version": "1.5.7",
+  "version": "1.5.8",
   "description": "Accessible, extensible, Autocomplete for React.js",
   "repository": {
     "type": "git",
