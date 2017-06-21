@@ -28,7 +28,7 @@
       {
         "basePath": "",
         "files": [
-          "multiple.select.*"
+          "multiple-select*.+(js|css|map|png)"
         ]
       }
     ]
