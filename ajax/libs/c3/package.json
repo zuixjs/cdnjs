@@ -6,7 +6,7 @@
   "homepage": "http://c3js.org",
   "repository": {
     "type": "git",
-    "url": "git://github.com/masayuki0812/c3.git"
+    "url": "git://github.com/c3js/c3.git"
   },
   "keywords": [
     "d3",
@@ -17,7 +17,7 @@
   "license": "MIT",
   "autoupdate": {
     "source": "git",
-    "target": "git://github.com/masayuki0812/c3.git",
+    "target": "git://github.com/c3js/c3.git",
     "fileMap": [
       {
         "basePath": "",
