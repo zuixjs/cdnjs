@@ -33,10 +33,9 @@
     "target": "git://github.com/olifolkerd/tabulator.git",
     "fileMap": [
       {
-        "basePath": "",
+        "basePath": "dist",
         "files": [
-          "tabulator.!(*less)",
-          "themes/*.+(css|map)"
+          "**/*"
         ]
       }
     ]
