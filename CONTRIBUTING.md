@@ -64,7 +64,7 @@
 1. Before sending a pull request, please sync/update your own repository with our master HEAD.
 
 2. If you are **not** the author or maintainer of the lib, please tell us where are those files from, like the url of its download page, or the url of releases page of the library.
- * If you are the author or maintainer of the lib, please just add `[author]` in th pull request's title.
+ * If you are the author or maintainer of the lib, please just add `[author]` in the pull request's title.
 
 3. If you are adding a **new** lib into cdnjs, please add `[new]` in the pull request's title.
 
