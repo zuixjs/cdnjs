@@ -17,8 +17,8 @@ var tempDirPath;
 var args;
 
 if (fs.existsSync('/run/shm')) {
-  fs.mkdirsSync('/run/shm/cdnjs_NPM_temp');
-  tempDirPath = '/run/shm/cdnjs_NPM_temp';
+  tempDirPath = '/run/shm/' + process.env.USER + '/cdnjs_NPM_temp';
+  fs.mkdirsSync(tempDirPath);
 } else {
   tempDirPath = path.join(__dirname, 'temp');
 }
