@@ -1,7 +1,7 @@
 {
   "name": "aframe",
-  "version": "0.5.0",
-  "filename": "aframe.min.js",
+  "version": "0.6.0",
+  "filename": "aframe-master.min.js",
   "description": "Building blocks for the VR Web",
   "repository": {
     "type": "git",
