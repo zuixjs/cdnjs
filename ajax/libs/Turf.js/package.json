@@ -1,6 +1,6 @@
 {
   "name": "Turf.js",
-  "version": "4.4.0",
+  "version": "4.5.2",
   "description": "a node.js library for performing geospatial operations with geojson",
   "filename": "turf.min.js",
   "repository": {
