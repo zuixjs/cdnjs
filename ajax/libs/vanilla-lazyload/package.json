@@ -27,7 +27,7 @@
       {
         "basePath": "dist",
         "files": [
-          "**/*"
+          "**/!(lazyload.es2015.js)"
         ]
       }
     ]
