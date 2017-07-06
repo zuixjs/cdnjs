@@ -12,7 +12,7 @@
     {
       "basePath": "",
       "files": [
-        "lunr.min.js"
+        "lunr.*"
       ]
     }
   ],
