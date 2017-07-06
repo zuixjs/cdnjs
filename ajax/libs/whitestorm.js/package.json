@@ -27,7 +27,7 @@
     {
       "basePath": "build",
       "files": [
-        "**/*"
+        "**/!(whs.module.js*)"
       ]
     }
   ]
