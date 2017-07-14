@@ -102,6 +102,7 @@ node_modules/
 /ajax/libs/angular-leaflet-directive/delete/
 /ajax/libs/angular-leaflet-directive/remove/
 /ajax/libs/angular-smart-table/help/
+/ajax/libs/angular-mocks/*-build.*/
 /ajax/libs/atmosphere/javascript-project-*
 /ajax/libs/waypoints/latest/
 /ajax/libs/bPopup/ver*
