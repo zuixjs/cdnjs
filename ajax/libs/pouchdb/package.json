@@ -10,7 +10,7 @@
       ]
     }
   ],
-  "version": "6.3.3",
+  "version": "6.3.4",
   "filename": "pouchdb.min.js",
   "description": "PouchDB is a pocket-sized database.",
   "homepage": "http://pouchdb.com/",
