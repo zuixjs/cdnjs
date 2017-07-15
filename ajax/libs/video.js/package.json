@@ -13,7 +13,7 @@
     {
       "basePath": "dist",
       "files": [
-        "**/*.+(js|css|map|woff|ttf|svg|eot|swf)"
+        "**/!(*cjs|*es|*amd).+(js|css|map|woff|ttf|svg|eot|swf)"
       ]
     }
   ],
