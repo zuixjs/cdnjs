@@ -5,9 +5,11 @@
   "version": "1.0.2",
   "homepage": "http://webcomponents.org",
   "keywords": [
-    "webcomponents"
+    "webcomponents",
+    "polyfill",
+    "shim"
   ],
-  "license": "BSD",
+  "license": "BSD-3-Clause",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/webcomponents/webcomponentsjs.git",
@@ -15,8 +17,7 @@
       {
         "basePath": "",
         "files": [
-          "*.js",
-          "*.min.js"
+          "!(gulpfile).+(js|map)"
         ]
       }
     ]
