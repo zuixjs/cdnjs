@@ -1,7 +1,7 @@
 {
   "name": "muicss",
   "filename": "js/mui.min.js",
-  "version": "0.9.19",
+  "version": "0.9.20",
   "license": "MIT",
   "description": "Lightweight CSS framework based on Google's Material Design guidelines",
   "keywords": [
