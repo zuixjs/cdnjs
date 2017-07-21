@@ -25,7 +25,7 @@
           "extensions/**/*",
           "localization/**/*",
           "images/**/*",
-          "fonts/**/*",
+          "fonts/**/!(*.txt)",
           "jax/**/*",
           "MathJax.js",
           "latest.js"
