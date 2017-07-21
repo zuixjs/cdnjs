@@ -14,7 +14,7 @@
     {
       "basePath": "dist",
       "files": [
-        "**/!(*.md)"
+        "**/!(*.md|*.scss)"
       ]
     }
   ],
