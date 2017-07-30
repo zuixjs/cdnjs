@@ -23,6 +23,7 @@ node_modules/
 /ajax/libs/trackpad-scroll-emulator/version_1.0
 /ajax/libs/date-fns/v.*
 /ajax/libs/react-quill/02e9da4/
+/ajax/libs/inferno-test-utils/*-alpha.*
 /ajax/libs/infusion/*-dev.*/
 /ajax/libs/clone/0.1.*
 /ajax/libs/punycode/2.0.*
