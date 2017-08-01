@@ -13,7 +13,7 @@
     "transformer",
     "view"
   ],
-  "homepage": "http://facebook.github.io/react",
+  "homepage": "https://facebook.github.io/react/",
   "npmName": "react",
   "npmFileMap": [
     {
@@ -24,5 +24,6 @@
     }
   ],
   "namespace": "React",
-  "license": "BSD-3-Clause"
+  "license": "BSD-3-Clause",
+  "author": "Facebook"
 }
