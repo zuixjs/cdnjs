@@ -14,18 +14,15 @@
     "view"
   ],
   "homepage": "http://facebook.github.io/react",
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/reactjs/react-bower.git",
-    "fileMap": [
-      {
-        "basePath": "",
-        "files": [
-          "*.js"
-        ]
-      }
-    ]
-  },
+  "npmName": "react",
+  "npmFileMap": [
+    {
+      "basePath": "",
+      "files": [
+        "+(cjs|umd)/**/*"
+      ]
+    }
+  ],
   "namespace": "React",
   "license": "BSD-3-Clause"
 }
