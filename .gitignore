@@ -45,6 +45,7 @@ node_modules/
 /ajax/libs/avalon.js/ms_controller_fix/
 /ajax/libs/avalon.js/dynamic_detect/
 /ajax/libs/appbase-js/1.0.0/
+/ajax/libs/inferno-mobx/*-alpha.*
 /ajax/libs/graphdracula/1.0.1-*
 /ajax/libs/d3-tip/0.7.0-temp-fork/
 /ajax/libs/inferno-hyperscript/*-alpha.*
