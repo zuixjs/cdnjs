@@ -45,6 +45,7 @@ node_modules/
 /ajax/libs/js-nacl/last_plain_nacl_version/
 /ajax/libs/js-scrypt/1.1.0/
 /ajax/libs/imgareaselect/0.9.11-rc.1/
+/ajax/libs/inferno-router/*-alpha.*
 /ajax/libs/jsxgraph/rm/
 /ajax/libs/elfinder/*-src
 /ajax/libs/embed-js/*-alpha.*
