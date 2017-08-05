@@ -15,7 +15,7 @@
     {
       "basePath": "lib",
       "files": [
-        "**/*"
+        "**/!(backbone.marionette.esm.js*)"
       ]
     }
   ],
