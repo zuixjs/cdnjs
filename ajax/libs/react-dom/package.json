@@ -16,6 +16,15 @@
     "server"
   ],
   "homepage": "https://facebook.github.io/react/",
+  "npmName": "react-dom",
+  "npmFileMap": [
+    {
+      "basePath": "",
+      "files": [
+        "+(cjs|umd)/**/*"
+      ]
+    }
+  ],
   "license": "BSD-3-Clause",
   "author": "Facebook"
 }
