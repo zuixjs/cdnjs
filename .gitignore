@@ -209,6 +209,7 @@ node_modules/
 /ajax/libs/slim.js/1.*/
 /ajax/libs/slim.js/2.[0-5].*/
 /ajax/libs/europa/4.0.0-alpha*/
+/ajax/libs/inferno-compat/*-alpha.*/
 
 #ignore files that we don't need
 /ajax/libs/*/*/**/Gruntfile.js
