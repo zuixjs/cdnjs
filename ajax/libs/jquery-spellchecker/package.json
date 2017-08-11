@@ -1,6 +1,7 @@
 {
   "name": "jquery-spellchecker",
-  "filename": "jquery.spellchecker.min.js",
+  "filename": "js/jquery.spellchecker.min.js",
+  "version": "0.2.3",
   "description": "A lightweight jQuery plugin that can check the spelling of text within a form field or DOM tree.",
   "homepage": "http://jquery-spellchecker.badsyntax.co/",
   "author": {
