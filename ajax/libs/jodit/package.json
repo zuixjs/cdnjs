@@ -19,9 +19,9 @@
   "npmName": "jodit",
   "npmFileMap": [
     {
-      "basePath": "",
+      "basePath": "build",
       "files": [
-        "*jodit*.+(css|js|map)"
+        "**/*"
       ]
     }
   ]
