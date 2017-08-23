@@ -47,6 +47,7 @@ node_modules/
 /ajax/libs/imgareaselect/0.9.11-rc.1/
 /ajax/libs/jsxgraph/rm/
 /ajax/libs/elfinder/*-src
+/ajax/libs/embed-js/*-alpha.*
 /ajax/libs/mobx/*fix*
 /ajax/libs/mobx/*albert*
 /ajax/libs/aui/*do-not-use/
