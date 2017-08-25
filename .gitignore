@@ -26,6 +26,7 @@ node_modules/
 /ajax/libs/react-quill/02e9da4/
 /ajax/libs/inferno-test-utils/*-alpha.*
 /ajax/libs/infusion/*-dev.*/
+/ajax/libs/inferno-vnode-flags/*-alpha.*
 /ajax/libs/clone/0.1.*
 /ajax/libs/punycode/2.0.*
 /ajax/libs/punycode/2.1.*
