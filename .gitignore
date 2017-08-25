@@ -40,6 +40,7 @@ node_modules/
 /ajax/libs/appbase-js/1.0.0/
 /ajax/libs/graphdracula/1.0.1-*
 /ajax/libs/d3-tip/0.7.0-temp-fork/
+/ajax/libs/inferno-hyperscript/*-alpha.*
 /ajax/libs/meshki/1.0.0/
 /ajax/libs/meshki/1.1.0/
 /ajax/libs/js-nacl/last_plain_nacl_version/
