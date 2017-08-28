@@ -25,10 +25,10 @@
       {
         "basePath": "",
         "files": [
-          "+(js|css)/star-rating.*",
-          "js/star-rating_locale_!(LANG)*",
-          "css/theme*",
-          "img/loading.gif"
+          "+(js|css)/**/star-rating.*",
+          "js/locales/!(LANG)*",
+          "img/loading.gif",
+          "themes/**/*.+(js|css)"
         ]
       }
     ]
