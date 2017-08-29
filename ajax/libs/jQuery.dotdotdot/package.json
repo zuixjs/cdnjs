@@ -23,9 +23,9 @@
     "target": "git://github.com/BeSite/jQuery.dotdotdot.git",
     "fileMap": [
       {
-        "basePath": "src",
+        "basePath": "dist",
         "files": [
-          "*.js"
+          "**/*"
         ]
       }
     ]
