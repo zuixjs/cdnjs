@@ -23,7 +23,7 @@
     {
       "basePath": "build/js",
       "files": [
-        "bokeh*"
+        "bokeh*.!(json)"
       ]
     },
     {
