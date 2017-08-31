@@ -123,6 +123,8 @@ node_modules/
 /ajax/libs/flocks.js/0.15.7/
 /ajax/libs/qoopido.js/support
 /ajax/libs/qoopido.js/widget-adapt
+/ajax/libs/vue-lazyload/0.*
+/ajax/libs/vue-lazyload/1.0.0-*
 /ajax/libs/strophe.js/release-1.2.0
 /ajax/libs/raphael/semver/
 /ajax/libs/clappr/media_control_youtube/
