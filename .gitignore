@@ -92,6 +92,7 @@ node_modules/
 /ajax/libs/typescript/*insiders*
 /ajax/libs/froala-editor/froala_editor_1.0.3/
 /ajax/libs/froala-editor/v.1.0.5/
+/ajax/libs/fpo/[3-5].*
 /ajax/libs/min/1.5
 /ajax/libs/typescript/*dev*
 /ajax/libs/material-design-icons/*/gulpfile.babel.js
