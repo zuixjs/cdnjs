@@ -70,6 +70,7 @@ node_modules/
 /ajax/libs/jsmediatags/.3.2.0/
 /ajax/libs/ionic-framework/2.0.0-alpha.2.0.0-alpha.50/
 /ajax/libs/unibox/jquery_plugin/
+/ajax/libs/inferno-redux/*-alpha.*
 /ajax/libs/guards/bootstrap-*/
 /ajax/libs/guards/foundation-*/
 /ajax/libs/roslibjs/node*
