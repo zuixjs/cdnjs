@@ -36,7 +36,7 @@
     {
       "basePath": "dist",
       "files": [
-        "**/*"
+        "**/!(cropper.common.js|cropper.esm.js)"
       ]
     }
   ]
