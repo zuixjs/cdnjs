@@ -13,7 +13,7 @@
     {
       "basePath": "dist",
       "files": [
-        "**/*"
+        "**/!(videojs-contrib-ads.cjs*|videojs-contrib-ads.es*)"
       ]
     }
   ],
