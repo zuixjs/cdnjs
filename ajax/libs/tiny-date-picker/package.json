@@ -22,6 +22,12 @@
       "files": [
         "tiny-date-picker*"
       ]
+    },
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
     }
   ]
 }
