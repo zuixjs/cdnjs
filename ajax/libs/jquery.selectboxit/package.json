@@ -8,5 +8,6 @@
     "jquery",
     "jqueryui",
     "select box"
-  ]
+  ],
+  "license": "MIT"
 }

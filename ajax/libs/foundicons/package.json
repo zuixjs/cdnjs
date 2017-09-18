@@ -10,5 +10,6 @@
     "foundicons",
     "icons",
     "zurb"
-  ]
+  ],
+  "license": "MIT"
 }
