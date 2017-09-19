@@ -1,7 +1,7 @@
 {
   "name": "dropbox.js",
   "filename": "Dropbox-sdk.min.js",
-  "version": "2.5.8",
+  "version": "2.5.9",
   "description": "Client library for the Dropbox API",
   "homepage": "https://dropbox.com/developers",
   "keywords": [
