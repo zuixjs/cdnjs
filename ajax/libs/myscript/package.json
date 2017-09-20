@@ -24,9 +24,7 @@
       {
         "basePath": "dist",
         "files": [
-          "myscript.min.js",
-          "myscript.min.js.map",
-          "myscript.js"
+          "**/*"
         ]
       }
     ]
