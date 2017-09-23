@@ -13,6 +13,7 @@
   },
   "license": "MIT",
   "author": "Jimmy Yuen Ho Wong <wyuenho@gmail.com>",
+  "homepage": "https://backbone-paginator.github.io/backbone.paginator/api/",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/backbone-paginator/backbone.paginator.git",
