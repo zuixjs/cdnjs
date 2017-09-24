@@ -23,7 +23,7 @@
     {
       "basePath": "dist",
       "files": [
-        "**/*"
+        "**/!(*.md|*.esm.js|*.es2015.js)"
       ]
     }
   ]
