@@ -11,5 +11,9 @@
     "icons",
     "zurb"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zurb/foundation-icons.git"
+  },
   "license": "MIT"
 }
