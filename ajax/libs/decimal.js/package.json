@@ -32,7 +32,7 @@
     {
       "basePath": "",
       "files": [
-        "decimal*",
+        "decimal*.!(mjs)",
         "doc/decimal.js.map"
       ]
     }
