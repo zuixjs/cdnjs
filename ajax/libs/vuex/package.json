@@ -21,7 +21,7 @@
     {
       "basePath": "dist",
       "files": [
-        "**/*vuex*"
+        "**/vuex!(.common|.esm).js"
       ]
     }
   ]
