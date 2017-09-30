@@ -20,7 +20,7 @@
     {
       "basePath": "dist",
       "files": [
-        "*.js"
+        "**/!(*.ts|*.flow|*.es.js)"
       ]
     }
   ],
