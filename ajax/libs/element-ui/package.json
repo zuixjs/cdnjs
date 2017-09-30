@@ -21,8 +21,14 @@
       "basePath": "lib",
       "files": [
         "index.js",
-        "theme-default/index.css",
-        "theme-default/fonts/*"
+        "theme-*/index.css",
+        "theme-*/fonts/*"
+      ]
+    },
+    {
+      "basePath": "lib/umd",
+      "files": [
+        "**/*"
       ]
     }
   ]
