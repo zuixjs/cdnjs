@@ -24,7 +24,7 @@
       {
         "basePath": "dist",
         "files": [
-          "**/*"
+          "**/!(stickyfill.es6.js)"
         ]
       }
     ]
