@@ -9,6 +9,22 @@
   "license": "MIT",
   "filename": "dragdealer.min.js",
   "keywords": [
-    "dragdealer"
-  ]
+    "dragdealer",
+    "Drag-based",
+    "JavaScript"
+  ],
+  "homepage": "https://skidding.github.io/dragdealer/",
+  "author": "Ovidiu Cherecheș",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/skidding/dragdealer.git",
+    "fileMap": [
+      {
+        "basePath": "src",
+        "files": [
+          "dragdealer*"
+        ]
+      }
+    ]
+  }
 }
