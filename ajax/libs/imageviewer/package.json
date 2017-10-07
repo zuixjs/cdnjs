@@ -32,7 +32,7 @@
     {
       "basePath": "dist",
       "files": [
-        "**/*"
+        "**/!(viewer.common.js*|viewer.esm.js*)"
       ]
     }
   ]
