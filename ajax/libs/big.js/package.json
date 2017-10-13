@@ -32,7 +32,7 @@
     {
       "basePath": "",
       "files": [
-        "big*"
+        "big*.!(mjs)"
       ]
     }
   ]
