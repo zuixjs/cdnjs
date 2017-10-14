@@ -1,7 +1,7 @@
 {
   "name": "jsPlumb",
-  "version": "2.2.9",
-  "filename": "jsplumb.min.js",
+  "version": "2.5.5",
+  "filename": "js/jsplumb.min.js",
   "description": "Visual connectivity for webapps",
   "homepage": "http://jsplumbtoolkit.com",
   "keywords": [
