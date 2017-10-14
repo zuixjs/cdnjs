@@ -44,7 +44,7 @@ Currently, CDNJS is the top 2([ref](https://w3techs.com/technologies/overview/co
 Note that we don't support the feature to use `latest` in the url, because of the reasons below:
 
  1. It brings potential risks to break the website if there is any compatible issue or bug coming from upstream. It's not a good idea to use it in the production environment, both jQuery CDN and Google CDN don't provide this feature.
- 2. The `latest` url feature also has cache and performance issues, which has conflicts of what we are tring to do - make your website load as fast as possible.
+ 2. The `latest` url feature also has cache and performance issues, which has conflicts of what we are trying to do - make your website load as fast as possible.
  3. Security issues become more and more important nowadays, for example, GitHub had been attacked by the Great Cannon via malicious JavaScript([ref1](https://citizenlab.org/2015/04/chinas-great-cannon/), [ref2](https://arstechnica.com/security/2015/04/meet-great-cannon-the-man-in-the-middle-weapon-china-used-on-github/)) during April 2015, one of the techniques to prevent this kind of attack is [Subresource Integrity(SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity). We have been supporting this feature for a long time, but the `latest` url feature totally conflicts with the SRI technique.
 
 ## Contributing
