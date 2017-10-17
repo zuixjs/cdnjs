@@ -19,7 +19,7 @@
     {
       "basePath": "dist",
       "files": [
-        "**/*"
+        "**/!(LICENSE.md)"
       ]
     }
   ]
