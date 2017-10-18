@@ -1,6 +1,6 @@
 {
   "name": "hls.js",
-  "version": "0.8.4",
+  "version": "0.8.5",
   "filename": "hls.min.js",
   "description": "Media Source Extension - HLS library, by/for Dailymotion",
   "license": "MIT",
