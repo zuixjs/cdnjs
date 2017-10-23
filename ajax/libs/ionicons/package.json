@@ -7,21 +7,15 @@
     "font",
     "icon"
   ],
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/driftyco/ionicons.git",
-    "fileMap": [
-      {
-        "basePath": "",
-        "files": [
-          "css/*",
-          "fonts/*",
-          "png/*/*",
-          "src/*"
-        ]
-      }
-    ]
-  },
+  "npmName": "ionicons",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/!(*.json|*.scss|*.ts|*.svj)"
+      ]
+    }
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
