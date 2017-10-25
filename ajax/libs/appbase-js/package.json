@@ -19,9 +19,9 @@
   "npmName": "appbase-js",
   "npmFileMap": [
     {
-      "basePath": "browser",
+      "basePath": "dist",
       "files": [
-        "appbase*"
+        "**/!(*.gz|*.br)"
       ]
     }
   ]
