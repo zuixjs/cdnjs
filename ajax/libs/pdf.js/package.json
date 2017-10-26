@@ -1,6 +1,6 @@
 {
   "name": "pdf.js",
-  "version": "1.10.86",
+  "version": "1.10.88",
   "description": "PDF Reader in JavaScript",
   "filename": "pdf.min.js",
   "keywords": [
