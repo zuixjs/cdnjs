@@ -1,7 +1,7 @@
 {
   "name": "muuri",
   "filename": "muuri.min.js",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Responsive, sortable, filterable and draggable grid layouts.",
   "keywords": [
     "grid",
