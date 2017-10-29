@@ -13,16 +13,24 @@
     "type": "git",
     "url": "https://github.com/fabien-d/alertify.js"
   },
-  "npmName": "alertify",
-  "npmFileMap": [
-    {
-      "basePath": "",
-      "files": [
-        "lib/*.js",
-        "themes/*.css"
-      ]
-    }
-  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/fabien-d/alertify.js.git",
+    "fileMap": [
+      {
+        "basePath": "lib",
+        "files": [
+          "alertify*"
+        ]
+      },
+      {
+        "basePath": "",
+        "files": [
+          "themes/alertify*"
+        ]
+      }
+    ]
+  },
   "author": "Fabien Doiron",
   "license": "MIT"
 }
