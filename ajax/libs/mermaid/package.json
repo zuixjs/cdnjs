@@ -12,18 +12,15 @@
     "class diagram",
     "git graph"
   ],
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/knsv/mermaid.git",
-    "fileMap": [
-      {
-        "basePath": "dist",
-        "files": [
-          "*"
-        ]
-      }
-    ]
-  },
+  "npmName": "mermaid",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/!(*.html)"
+      ]
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/knsv/mermaid"
