@@ -31,6 +31,7 @@
     "type": "git",
     "url": "git://github.com/blueimp/Gallery.git"
   },
+  "homepage": "https://blueimp.github.io/Gallery/",
   "npmName": "blueimp-gallery",
   "npmFileMap": [
     {
