@@ -1,6 +1,6 @@
 {
   "name": "i18next-xhr-backend",
-  "version": "1.4.3",
+  "version": "1.5.0",
   "filename": "i18nextXHRBackend.min.js",
   "description": "Backend layer for i18next using browsers XHR",
   "keywords": [
