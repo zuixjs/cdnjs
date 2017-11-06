@@ -1,7 +1,7 @@
 {
   "name": "aui",
   "filename": "aui/js/aui.min.js",
-  "version": "7.0.0",
+  "version": "7.1.0",
   "description": "Atlassian User Interface Framework",
   "homepage": "https://docs.atlassian.com/aui/",
   "keywords": [
