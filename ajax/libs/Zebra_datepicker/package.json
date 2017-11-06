@@ -24,7 +24,7 @@
   "npmName": "zebra_datepicker",
   "npmFileMap": [
     {
-      "basePath": "public",
+      "basePath": "dist",
       "files": [
         "**/*"
       ]
