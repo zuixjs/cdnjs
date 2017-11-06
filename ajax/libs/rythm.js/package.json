@@ -1,7 +1,7 @@
 {
   "name": "rythm.js",
   "filename": "rythm.min.js",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "A javascript library that makes your page dance.",
   "keywords": [
     "page-dancing",
