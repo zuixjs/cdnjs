@@ -17,6 +17,12 @@
   "npmName": "react",
   "npmFileMap": [
     {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
+    },
+    {
       "basePath": "",
       "files": [
         "+(cjs|umd)/**/*"
