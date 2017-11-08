@@ -1,6 +1,6 @@
 {
   "name": "EventEmitter",
-  "version": "5.2.3",
+  "version": "5.2.4",
   "description": "Event based JavaScript for the browser",
   "filename": "EventEmitter.min.js",
   "repository": {
