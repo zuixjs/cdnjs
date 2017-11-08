@@ -1,7 +1,7 @@
 {
   "name": "wavedrom",
   "filename": "wavedrom.min.js",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "Digital timing diagram in your browser",
   "homepage": "http://wavedrom.com",
   "author": {
