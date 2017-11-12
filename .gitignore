@@ -251,6 +251,7 @@ node_modules/
 /ajax/libs/*/*/**/*.amd
 /ajax/libs/*/*/**/*.zip
 /ajax/libs/*/*/**/*.gz
+/ajax/libs/*/*/**/*.br
 /ajax/libs/*/*/**/*.rb
 /ajax/libs/*/*/**/*.xap
 /ajax/libs/*/*/**/*.tmSnippet
