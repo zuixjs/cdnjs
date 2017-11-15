@@ -24,7 +24,7 @@
     {
       "basePath": "dist",
       "files": [
-        "**/*"
+        "**/!(frappe-charts.esm.js)"
       ]
     }
   ]
