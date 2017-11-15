@@ -29,8 +29,8 @@
     {
       "basePath": "dist",
       "files": [
-        "vue-material*",
-        "!(docs)/**/*"
+        "vue-material!(*.esm.js|*.common.js)",
+        "!(docs)/**/!(*.scss|*.esm.js|*.common.js)"
       ]
     }
   ]
