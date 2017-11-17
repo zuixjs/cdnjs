@@ -17,9 +17,9 @@
     "target": "git://github.com/patrickkunka/mixitup.git",
     "fileMap": [
       {
-        "basePath": "src",
+        "basePath": "dist",
         "files": [
-          "jquery.mixitup*.js"
+          "**/*"
         ]
       }
     ]
