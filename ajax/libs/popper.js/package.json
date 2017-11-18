@@ -1,7 +1,7 @@
 {
   "name": "popper.js",
   "filename": "popper.min.js",
-  "version": "1.12.9",
+  "version": "1.13.0",
   "description": "A kickass library to manage your poppers",
   "repository": {
     "type": "git",
