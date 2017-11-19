@@ -23,7 +23,7 @@
     "jQuery",
     "mobile"
   ],
-  "version": "2.3.3",
+  "version": "2.3.4",
   "npmName": "lory.js",
   "npmFileMap": [
     {
