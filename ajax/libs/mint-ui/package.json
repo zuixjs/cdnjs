@@ -1,6 +1,6 @@
 {
   "name": "mint-ui",
-  "version": "2.2.11",
+  "version": "2.2.12",
   "filename": "mint-ui.common.min.js",
   "description": "Mobile UI elements for vue.js",
   "keywords": [
