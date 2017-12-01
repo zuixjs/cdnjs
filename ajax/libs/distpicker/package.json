@@ -11,7 +11,7 @@
     }
   ],
   "description": "A simple jQuery plugin for picking provinces, cities and districts of China.",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "license": "MIT",
   "repository": {
     "type": "git",
