@@ -1,7 +1,7 @@
 {
   "name": "vega",
   "filename": "vega.min.js",
-  "version": "3.0.7",
+  "version": "3.0.8",
   "description": "The Vega visualization grammar.",
   "homepage": "https://vega.github.io/vega/",
   "keywords": [
