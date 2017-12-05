@@ -1,6 +1,6 @@
 {
   "name": "react-inlinesvg",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "filename": "react-inlinesvg.min.js",
   "description": "An SVG loader for React",
   "repository": {
