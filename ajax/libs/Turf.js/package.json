@@ -41,7 +41,7 @@
     {
       "basePath": "",
       "files": [
-        "turf*"
+        "turf*.!(mjs)"
       ]
     }
   ]
