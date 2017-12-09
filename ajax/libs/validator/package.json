@@ -2,7 +2,7 @@
   "name": "validator",
   "npmName": "validator",
   "filename": "validator.min.js",
-  "version": "9.1.2",
+  "version": "9.2.0",
   "description": "String validation and sanitization",
   "keywords": [
     "validator",
