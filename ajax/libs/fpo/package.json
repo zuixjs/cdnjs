@@ -1,0 +1,25 @@
+{
+  "name": "fpo",
+  "filename": "fpo.min.js",
+  "description": "FP library for JavaScript. Supports named-argument style methods.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/getify/fpo.git"
+  },
+  "keywords": [
+    "fp",
+    "functional",
+    "programming"
+  ],
+  "author": "Kyle Simpson <getify@gmail.com>",
+  "license": "MIT",
+  "npmName": "fpo",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
+    }
+  ]
+}
