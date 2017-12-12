@@ -41,7 +41,7 @@
     {
       "basePath": "",
       "files": [
-        "turf*.!(mjs)"
+        "turf.+(js|min.js)?(.map)"
       ]
     }
   ]
