@@ -19,9 +19,9 @@
     "target": "git://github.com/kamlekar/slim-scroll.git",
     "fileMap": [
       {
-        "basePath": "",
+        "basePath": "dist",
         "files": [
-          "slimscroll*"
+          "**/*"
         ]
       }
     ]
