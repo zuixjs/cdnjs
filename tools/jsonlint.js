@@ -29,6 +29,7 @@ async.map(jsonfiles, function lintjson(item, cb) {
   }
   if (errorCount > 0) {
     console.log("\nYou can validate json here: https://jsonlint.com/ once you revised the file(s) with formatting problem.\n".cyan);
+    process.exit(1);
   } else if (jsonfiles.length > 0) {
     console.log("\nAll json parsed without problem!\n".green);
   }
