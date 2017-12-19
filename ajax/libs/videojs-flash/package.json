@@ -1,5 +1,6 @@
 {
   "name": "videojs-flash",
+  "version": "2.1.0",
   "filename": "videojs-flash.min.js",
   "description": "The official Flash tech package for Video.js.",
   "keywords": [
