@@ -21,7 +21,7 @@
     {
       "basePath": "dist",
       "files": [
-        "**/!(*.es.js)"
+        "**/!(*.es.js|*.cjs.js|styled-components.native.js)"
       ]
     }
   ]
