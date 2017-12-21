@@ -216,9 +216,6 @@ packages.map(function (pkg) {
     var orig = fs.readFileSync(pkg, 'utf8');
     var correct = JSON.stringify(JSON.parse(orig), null, 2) + '\n';
     var content = JSON.parse(correct);
-    if (content.version === undefined) {
-      return;
-    }
 
     assert.ok(orig === correct,
             pkgName(pkg) + ': package.json wrong indent, please use 2-spaces as indent, remove trailing spaces, you can use our tool: tools/fixFormat.js to fix it for you, here is an example: (Please ignore the first 2 spaces and the wildcard symbol in autoupadte config due to a bug)\n' + correct + '\n');
