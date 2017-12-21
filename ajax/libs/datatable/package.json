@@ -9,7 +9,7 @@
     "type": "git",
     "url": "https://github.com/Holt59/datatable"
   },
-  "description":  "Datatable is a smart javascript plugin allowing you to easily create dynamic 'datatables' (with pagination, filtering and sorting) for better management of big quantity of data.",
+  "description": "Datatable is a smart javascript plugin allowing you to easily create dynamic 'datatables' (with pagination, filtering and sorting) for better management of big quantity of data.",
   "keywords": [
     "datatable",
     "pagination",
@@ -33,5 +33,6 @@
         ]
       }
     ]
-  }
+  },
+  "version": "1.0.6"
 }
