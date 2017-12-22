@@ -2,7 +2,7 @@
   "name": "bowser",
   "filename": "bowser.min.js",
   "description": "Lightweight browser detector",
-  "version": "1.9.0",
+  "version": "1.9.1",
   "author": "Dustin Diaz <dustin@dustindiaz.com> (http://dustindiaz.com)",
   "repository": {
     "type": "git",
