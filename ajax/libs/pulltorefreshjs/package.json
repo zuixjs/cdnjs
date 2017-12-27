@@ -1,7 +1,7 @@
 {
   "name": "pulltorefreshjs",
   "filename": "pulltorefresh.min.js",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "Pull To Refresh",
   "keywords": [
     "pulltorefresh",
