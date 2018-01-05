@@ -24,7 +24,7 @@
     {
       "basePath": "dist",
       "files": [
-        "**/!(index.js)"
+        "**/!(index.js|*.ts)"
       ]
     }
   ]
