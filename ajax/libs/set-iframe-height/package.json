@@ -5,7 +5,7 @@
     {
       "basePath": "dist",
       "files": [
-        "*.js"
+        "**/!(demo*).+(js|css|map)"
       ]
     }
   ],
