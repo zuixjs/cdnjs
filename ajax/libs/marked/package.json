@@ -3,7 +3,7 @@
   "filename": "marked.min.js",
   "description": "A markdown parser built for speed",
   "author": "Christopher Jeffrey",
-  "version": "0.3.9",
+  "version": "0.3.12",
   "repository": {
     "type": "git",
     "url": "git://github.com/chjj/marked.git"
