@@ -1,7 +1,7 @@
 {
   "name": "yasr",
   "description": "Yet Another SPARQL Resultset Visualizer",
-  "version": "2.12.14",
+  "version": "2.12.16",
   "author": "Laurens Rietveld",
   "homepage": "http://yasr.yasgui.org",
   "keywords": [
