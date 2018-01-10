@@ -16,10 +16,9 @@
   "npmName": "bootswatch",
   "npmFileMap": [
     {
-      "basePath": "",
+      "basePath": "dist",
       "files": [
-        "fonts/*",
-        "*/*.css"
+        "**/!(*.scss)"
       ]
     }
   ]
