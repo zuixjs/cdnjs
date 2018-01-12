@@ -1,0 +1,27 @@
+{
+  "name": "event-drops",
+  "filename": "eventDrops.js",
+  "description": "A time based / event series interactive visualization using d3.js. Use drag and zoom to navigate in time.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marmelab/EventDrops"
+  },
+  "keywords": [
+    "svg",
+    "d3",
+    "visualization",
+    "interactive"
+  ],
+  "author": "Thiery Michel <thiery@marmelab.com>",
+  "license": "MIT",
+  "homepage": "https://marmelab.com/EventDrops/",
+  "npmName": "event-drops",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
+    }
+  ]
+}
