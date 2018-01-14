@@ -1,7 +1,7 @@
 {
   "name": "sticky-table-headers",
   "filename": "js/jquery.stickytableheaders.min.js",
-  "version": "0.1.21",
+  "version": "0.1.22",
   "description": "jQuery sticky table headers plugin",
   "keywords": [
     "jquery",
