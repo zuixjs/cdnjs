@@ -24,7 +24,7 @@
     {
       "basePath": "dist",
       "files": [
-        "**/!(*.gz)"
+        "**/!(*.gz|react-flip-move.cjs.js|react-flip-move.es.js)"
       ]
     }
   ],
