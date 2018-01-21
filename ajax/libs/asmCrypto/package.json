@@ -2,7 +2,7 @@
   "name": "asmCrypto",
   "filename": "asmcrypto.min.js",
   "description": "Asm.js implementation of WebCrypto API",
-  "version": "0.19.1",
+  "version": "0.21.0",
   "license": "MIT",
   "author": {
     "name": "Artem S Vybornov",
