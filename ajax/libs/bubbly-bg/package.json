@@ -17,6 +17,12 @@
   "npmName": "bubbly-bg",
   "npmFileMap": [
     {
+      "basePath": "",
+      "files": [
+        "src/bubbly-bg.js"
+      ]
+    },
+    {
       "basePath": "dist",
       "files": [
         "**/*"
