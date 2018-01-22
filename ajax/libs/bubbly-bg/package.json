@@ -1,0 +1,26 @@
+{
+  "name": "bubbly-bg",
+  "filename": "bubbly-bg.js",
+  "description": "Lightweight and beautiful bubbly backgrounds",
+  "author": "David Åse",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tipsy/bubbly-bg.git"
+  },
+  "homepage": "https://tipsy.github.io/bubbly-bg/",
+  "keywords": [
+    "animated-backgrounds",
+    "javascript",
+    "canvas"
+  ],
+  "npmName": "bubbly-bg",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
+    }
+  ]
+}
