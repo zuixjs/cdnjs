@@ -19,7 +19,7 @@
       {
         "basePath": "build",
         "files": [
-          "dat.gui*.js"
+          "dat.gui.!(module.)js"
         ]
       }
     ]
