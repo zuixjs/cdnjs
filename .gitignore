@@ -238,6 +238,9 @@ node_modules/
 /ajax/libs/numbered/0.0.4
 /ajax/libs/numbered/1.0.0
 
+#ignore snapshot tags
+/ajax/libs/*/*snapshot*
+
 #ignore files that we don't need
 /ajax/libs/*/*/**/Gruntfile.js
 /ajax/libs/*/*/**/.gitignore
