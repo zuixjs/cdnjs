@@ -1,7 +1,7 @@
 {
   "name": "fingerprintjs2",
   "filename": "fingerprint2.min.js",
-  "version": "1.5.1",
+  "version": "1.6.1",
   "description": "Modern & flexible browser fingerprinting library",
   "repository": {
     "type": "git",
