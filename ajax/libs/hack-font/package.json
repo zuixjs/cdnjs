@@ -32,7 +32,7 @@
       {
         "basePath": "build",
         "files": [
-          "+(web|webfonts)/**/*"
+          "+(web|webfonts)/**/!(*.in)"
         ]
       }
     ]
