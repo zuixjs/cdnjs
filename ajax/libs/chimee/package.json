@@ -1,5 +1,6 @@
 {
   "name": "chimee",
+  "version": "0.9.1",
   "description": "a video-player aims to bring wonderful experience on browser",
   "filename": "index.min.js",
   "repository": {
