@@ -1,6 +1,6 @@
 {
   "name": "react-popper",
-  "version": "0.7.5",
+  "version": "0.8.0",
   "filename": "react-popper.min.js",
   "description": "React wrapper around PopperJS.",
   "keywords": [
