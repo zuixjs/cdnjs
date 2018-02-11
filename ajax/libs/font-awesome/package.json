@@ -2,12 +2,16 @@
   "name": "font-awesome",
   "filename": "css/font-awesome.min.css",
   "version": "4.7.0",
-  "description": "The iconic font and CSS framework",
-  "homepage": "http://fontawesome.io/",
+  "description": "The iconic SVG, font, and CSS toolkit",
+  "homepage": "https://fontawesome.com/",
   "keywords": [
     "css",
     "font",
-    "icons"
+    "icons",
+    "fontawesome",
+    "webfont",
+    "svg-icons",
+    "svg-sprites"
   ],
   "autoupdate": {
     "source": "git",
@@ -28,11 +32,12 @@
   },
   "licenses": [
     "OFL-1.1",
-    "MIT"
+    "MIT",
+    "CC-BY-4.0"
   ],
   "author": {
     "name": "Dave Gandy",
     "email": "dave@fontawesome.io",
-    "web": "http://twitter.com/davegandy"
+    "web": "https://twitter.com/davegandy"
   }
 }
