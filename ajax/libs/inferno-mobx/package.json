@@ -1,6 +1,6 @@
 {
   "name": "inferno-mobx",
-  "version": "4.0.3",
+  "version": "4.0.4",
   "license": "MIT",
   "filename": "inferno-mobx.min.js",
   "description": "Official Inferno bindings for Mobx",
