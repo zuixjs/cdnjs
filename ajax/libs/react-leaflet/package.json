@@ -1,7 +1,7 @@
 {
   "name": "react-leaflet",
   "filename": "react-leaflet.min.js",
-  "version": "1.8.1",
+  "version": "1.8.2",
   "description": "React components for Leaflet maps",
   "repository": {
     "type": "git",
