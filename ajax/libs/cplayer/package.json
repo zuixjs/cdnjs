@@ -25,7 +25,7 @@
       {
         "basePath": "dist",
         "files": [
-          "**/*"
+          "**/cplayer*.+(js|css|map)"
         ]
       }
     ]
