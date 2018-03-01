@@ -21,13 +21,16 @@
   ],
   "author": "Amit Gupta (https://github.com/amitguptagwl)",
   "license": "MIT",
-  "npmName": "fast-xml-parser",
-  "npmFileMap": [
-    {
-      "basePath": "lib",
-      "files": [
-        "*parser*.+(js|css|map)"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/NaturalIntelligence/fast-xml-parser.git",
+    "fileMap": [
+      {
+        "basePath": "lib",
+        "files": [
+          "*parser*.+(js|css|map)"
+        ]
+      }
+    ]
+  }
 }
