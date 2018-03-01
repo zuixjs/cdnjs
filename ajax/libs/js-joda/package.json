@@ -20,7 +20,7 @@
     {
       "basePath": "dist",
       "files": [
-        "**/!(*.ts)"
+        "**/!(*.ts|js-joda.esm.js)"
       ]
     }
   ]
