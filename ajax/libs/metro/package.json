@@ -25,7 +25,7 @@
       {
         "basePath": "build",
         "files": [
-          "**/metro*"
+          "**/metro*.!(json)"
         ]
       }
     ]
