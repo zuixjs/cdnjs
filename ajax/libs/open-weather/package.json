@@ -34,7 +34,7 @@
       {
         "basePath": "src",
         "files": [
-          "openWeather*.+(js|map)"
+          "openweather*.+(js|map)"
         ]
       }
     ]
