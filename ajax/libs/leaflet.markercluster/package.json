@@ -5,7 +5,9 @@
   "description": "Provides Beautiful Animated Marker Clustering functionality for Leaflet",
   "keywords": [
     "maps",
-    "mobile"
+    "mobile",
+    "gis",
+    "cluster"
   ],
   "npmName": "leaflet.markercluster",
   "npmFileMap": [
@@ -20,6 +22,7 @@
     "type": "git",
     "url": "https://github.com/Leaflet/Leaflet.markercluster.git"
   },
+  "homepage": "http://leafletjs.com",
   "license": "MIT",
   "author": "Dave Leaver <danzel@localhost.geek.nz>"
 }
