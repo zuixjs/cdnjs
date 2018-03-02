@@ -12,10 +12,7 @@
     {
       "basePath": "dist",
       "files": [
-        "MarkerCluster.Default.css",
-        "MarkerCluster.css",
-        "leaflet.markercluster-src.js",
-        "leaflet.markercluster.js"
+        "**/!(*.txt)"
       ]
     }
   ],
