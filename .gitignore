@@ -187,6 +187,8 @@ node_modules/
 /ajax/libs/jsSHA/release*
 /ajax/libs/postscribe/ersion
 /ajax/libs/react-router/latest/
+/ajax/libs/react-mdl/0.*
+/ajax/libs/react-mdl/1.0.[0-1]
 /ajax/libs/angular-gantt/.0.6.1
 /ajax/libs/jquery-form-validator/2.2
 /ajax/libs/require-cs/latest/
