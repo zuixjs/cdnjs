@@ -1,7 +1,7 @@
 {
   "name": "tippy.js",
-  "version": "0.3.0",
-  "filename": "tippy.js",
+  "version": "2.2.3",
+  "filename": "tippy.min.js",
   "description": "Vanilla JS Tooltip Library",
   "author": "atomiks",
   "license": "MIT",
