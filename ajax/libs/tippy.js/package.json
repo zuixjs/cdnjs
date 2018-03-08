@@ -2,7 +2,7 @@
   "name": "tippy.js",
   "version": "0.3.0",
   "filename": "tippy.js",
-  "description": "Pure JS Tooltip Library",
+  "description": "Vanilla JS Tooltip Library",
   "author": "atomiks",
   "license": "MIT",
   "homepage": "https://atomiks.github.io/tippyjs/",
