@@ -1,7 +1,7 @@
 {
   "name": "rambda",
   "filename": "webVersion.js",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Lightweight alternative to Ramda",
   "repository": {
     "type": "git",
