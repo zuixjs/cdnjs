@@ -1,7 +1,7 @@
 {
   "name": "jqtree",
-  "version": "1.4.4",
-  "filename": "tree.jquery.min.js",
+  "version": "1.4.5",
+  "filename": "tree.jquery.js",
   "description": "Tree widget for jQuery",
   "keywords": [
     "jquery-plugin",
@@ -20,7 +20,7 @@
       {
         "basePath": "build",
         "files": [
-            "!(*test*)"
+          "!(*test*)"
         ]
       },
       {
