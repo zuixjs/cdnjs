@@ -10,7 +10,7 @@
     }
   ],
   "filename": "set-iframe-height-parent-min.js",
-  "version": "1.3.1",
+  "version": "2.1.0",
   "description": "cross-domain responsive iframes: automatically set iframe height to fit iframe content",
   "keywords": [
     "iframe",
