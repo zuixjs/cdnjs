@@ -18,9 +18,14 @@
     "target": "git://github.com/mbraak/jqtree.git",
     "fileMap": [
       {
+        "basePath": "build",
+        "files": [
+            "!(*test*)"
+        ]
+      },
+      {
         "basePath": "",
         "files": [
-          "tree.jquery.js",
           "jqtree*.+(css|png)"
         ]
       }
