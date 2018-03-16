@@ -17,7 +17,7 @@
     "compiler",
     "JavaScript"
   ],
-  "npmName": "babel-polyfill",
+  "npmName": "@babel/polyfill",
   "npmFileMap": [
     {
       "basePath": "dist",
