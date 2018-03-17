@@ -15,6 +15,8 @@ node_modules/
 /ajax/libs/*/*/.bot_cant_auto_add
 
 # folders need to be ingored due to auto auto-update mechanism
+/ajax/libs/rrssb/1.75
+/ajax/libs/rrssb/1.76
 /ajax/libs/tocas-ui/2.0.0-rc.*
 /ajax/libs/design-system/2.6.0-dev
 /ajax/libs/mini.css/3.0.0-alpha.3
