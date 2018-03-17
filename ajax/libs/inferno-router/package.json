@@ -1,6 +1,6 @@
 {
   "name": "inferno-router",
-  "version": "4.0.8",
+  "version": "5.0.0",
   "filename": "inferno-router.min.js",
   "license": "MIT",
   "description": "Provides routing functionality for Inferno",
