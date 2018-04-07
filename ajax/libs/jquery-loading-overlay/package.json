@@ -27,15 +27,9 @@
     "target": "git://github.com/gasparesganga/jquery-loading-overlay.git",
     "fileMap": [
       {
-        "basePath": "src",
+        "basePath": "dist",
         "files": [
-          "loadingoverlay*"
-        ]
-      },
-      {
-        "basePath": "extras/loadingoverlay_progress",
-        "files": [
-          "loadingoverlay_progress*"
+          "**/*"
         ]
       }
     ]
