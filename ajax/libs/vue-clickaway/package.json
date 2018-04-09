@@ -24,7 +24,7 @@
       {
         "basePath": "dist",
         "files": [
-          "**/*"
+          "**/!(vue-clickaway.common.js)"
         ]
       }
     ]
