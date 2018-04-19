@@ -26,6 +26,12 @@
         "files": [
           "**/*"
         ]
+      },
+      {
+        "basePath": "",
+        "files": [
+          "fingerprint2.js"
+        ]
       }
     ]
   }
