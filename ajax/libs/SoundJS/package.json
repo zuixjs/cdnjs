@@ -20,13 +20,16 @@
   "license": "MIT",
   "author": "gskinner.com, inc.",
   "homepage": "https://createjs.com/soundjs/",
-  "npmName": "soundjs",
-  "npmFileMap": [
-    {
-      "basePath": "lib",
-      "files": [
-        "**/!(*.md)"
-      ]
-    }
-  ]
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/CreateJS/SoundJS.git",
+    "fileMap": [
+      {
+        "basePath": "lib",
+        "files": [
+          "**/!(*.md|README.txt|*-NEXT.*)"
+        ]
+      }
+    ]
+  }
 }
