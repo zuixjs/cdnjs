@@ -19,7 +19,7 @@
   ],
   "licenses": [
     "MIT",
-    "deprecated_GPL-2.0+"
+    "GPL-2.0"
   ],
   "homepage": "http://mottie.github.com/tablesorter/",
   "repository": {
