@@ -16,12 +16,12 @@
     "github",
     "primercss"
   ],
-  "npmName": "primer-css",
+  "npmName": "primer",
   "npmFileMap": [
     {
       "basePath": "build",
       "files": [
-        "build.css"
+        "**/!(index.js)"
       ]
     }
   ]
