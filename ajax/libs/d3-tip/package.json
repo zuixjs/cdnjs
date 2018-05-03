@@ -8,18 +8,15 @@
     "d3",
     "tooltip"
   ],
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/Caged/d3-tip.git",
-    "fileMap": [
-      {
-        "basePath": "",
-        "files": [
-          "index.js"
-        ]
-      }
-    ]
-  },
+  "npmName": "d3-tip",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/Caged/d3-tip"
