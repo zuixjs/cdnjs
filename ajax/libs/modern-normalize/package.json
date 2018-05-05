@@ -1,0 +1,30 @@
+{
+  "name": "modern-normalize",
+  "description": "Normalize browsers' default style",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sindresorhus/modern-normalize.git"
+  },
+  "author": "Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)",
+  "filename": "modern-normalize.min.css",
+  "keywords": [
+    "normalize",
+    "css",
+    "reset",
+    "browser",
+    "style"
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/sindresorhus/modern-normalize.git",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "modern-normalize*"
+        ]
+      }
+    ]
+  }
+}
