@@ -1,7 +1,7 @@
 {
   "name": "sinon.js",
   "filename": "sinon.min.js",
-  "version": "5.0.3",
+  "version": "5.0.4",
   "description": "JavaScript test spies, stubs and mocks.",
   "homepage": "http://sinonjs.org/",
   "keywords": [
