@@ -20,9 +20,15 @@
     "target": "git://github.com/kazzkiq/CodeFlask.js.git",
     "fileMap": [
       {
+        "basePath": "build",
+        "files": [
+          "**/*"
+        ]
+      },
+      {
         "basePath": "src",
         "files": [
-          "codeflask*"
+          "codeflask.js"
         ]
       }
     ]
