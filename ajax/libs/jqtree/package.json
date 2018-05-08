@@ -26,7 +26,7 @@
       {
         "basePath": "",
         "files": [
-          "jqtree*.+(css|png)"
+          "+(tree.jquery|jqtree)*.+(css|png|js|map)"
         ]
       }
     ]
