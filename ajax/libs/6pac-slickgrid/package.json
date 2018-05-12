@@ -23,7 +23,7 @@
         "files": [
           "lib/+(jquery.event.*-!(2.2)|firebugx*)",
           "images/*",
-          "slick*",
+          "slick*.!(nuspec)",
           "plugins/slick*"
         ]
       }
