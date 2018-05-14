@@ -26,7 +26,7 @@
         "files": [
           "js/**/!(*encoding-japanese.min)*.+(js|map)",
           "css/+(elfinder|theme)*.+(css|map)",
-          "img/*.+(png|gif)",
+          "img/*.+(png|gif|svg)",
           "sounds/*.wav"
         ]
       }
