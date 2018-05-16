@@ -1,6 +1,6 @@
 {
   "name": "inferno-hyperscript",
-  "version": "5.0.5",
+  "version": "5.0.6",
   "filename": "inferno-hyperscript.min.js",
   "license": "MIT",
   "description": "Bridging hyperscript to InfernoJS",
