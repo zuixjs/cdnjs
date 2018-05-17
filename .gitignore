@@ -15,6 +15,7 @@ node_modules/
 /ajax/libs/*/*/.bot_cant_auto_add
 
 # folders need to be ingored due to auto auto-update mechanism
+/ajax/libs/interactive-data-display/1.0.1-DomTracking
 /ajax/libs/bxslider/*/jquery-3.1.1.min.js
 /ajax/libs/starability/v.0.1.0
 /ajax/libs/interactive-data-display/*build*
@@ -34,6 +35,7 @@ node_modules/
 /ajax/libs/crypto-js/release-3.1.2*
 /ajax/libs/inferno-create-class/*-alpha.*
 /ajax/libs/trackpad-scroll-emulator/version_1.0
+/ajax/libs/interactive-data-display/1.0.1-DomTracking
 /ajax/libs/date-fns/v.*
 /ajax/libs/react-quill/02e9da4/
 /ajax/libs/inferno-test-utils/*-alpha.*
