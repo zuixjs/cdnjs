@@ -21,7 +21,8 @@
     {
       "basePath": "",
       "files": [
-        "viz*"
+        "viz*.+(js|css|map)",
+        "*.render.+(js|map)"
       ]
     }
   ]
