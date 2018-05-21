@@ -15,16 +15,13 @@
     "IMA",
     "SDK"
   ],
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/googleads/videojs-ima.git",
-    "fileMap": [
-      {
-        "basePath": "src",
-        "files": [
-          "videojs.ima*"
-        ]
-      }
-    ]
-  }
+  "npmName": "videojs-ima",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/!(*.scss)"
+      ]
+    }
+  ]
 }
