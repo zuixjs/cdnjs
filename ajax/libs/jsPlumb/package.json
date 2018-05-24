@@ -29,6 +29,12 @@
       "files": [
         "**/*"
       ]
+    },
+    {
+      "basePath": "",
+      "files": [
+        "css/jsplumbtoolkit-defaults.css"
+      ]
     }
   ]
 }
