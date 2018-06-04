@@ -256,7 +256,7 @@ node_modules/
 /ajax/libs/numbered/1.0.0
 /ajax/libs/jquery-bracket/release-*
 /ajax/libs/jquery.ime/1.0.0+20131229
-/ajax/libs/v-mask/v1.[0-2].*
+/ajax/libs/v-mask/1.[0-2].*
 
 #ignore snapshot tags
 /ajax/libs/*/*snapshot*
