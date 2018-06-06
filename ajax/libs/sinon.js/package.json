@@ -21,7 +21,7 @@
     {
       "basePath": "pkg",
       "files": [
-        "**/!(*-[0-9])*"
+        "**/!(sinon-esm.js)"
       ]
     }
   ],
