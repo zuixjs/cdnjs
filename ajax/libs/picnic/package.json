@@ -22,9 +22,9 @@
   "npmName": "picnic",
   "npmFileMap": [
     {
-      "basePath": "releases",
+      "basePath": "",
       "files": [
-        "**/*"
+        "picnic*"
       ]
     }
   ]
