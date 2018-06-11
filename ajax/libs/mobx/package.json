@@ -29,7 +29,7 @@
     {
       "basePath": "lib",
       "files": [
-        "**/mobx!(*.d.ts|*.flow|.module.js)"
+        "**/mobx!(*.d.ts|*.flow|*.es6.js|.module.js)"
       ]
     }
   ]
