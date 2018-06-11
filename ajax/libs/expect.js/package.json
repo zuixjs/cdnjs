@@ -5,5 +5,10 @@
   "description": "BDD style assertions for node and the browser.",
   "keywords": [
     "expect.js"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Automattic/expect.js"
+  },
+  "license": "MIT"
 }
