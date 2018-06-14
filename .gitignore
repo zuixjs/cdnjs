@@ -19,6 +19,7 @@ node_modules/
 /ajax/libs/bxslider/*/jquery-3.1.1.min.js
 /ajax/libs/starability/v.0.1.0
 /ajax/libs/interactive-data-display/*build*
+/ajax/libs/uikit/*-dev.*
 /ajax/libs/jspdf/v.1.4.0/
 /ajax/libs/rrssb/1.75
 /ajax/libs/rrssb/1.76
