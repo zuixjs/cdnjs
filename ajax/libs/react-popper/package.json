@@ -1,7 +1,7 @@
 {
   "name": "react-popper",
-  "version": "0.10.4",
-  "filename": "umd/react-popper.min.js",
+  "version": "1.0.0",
+  "filename": "index.umd.min.js",
   "description": "React wrapper around PopperJS.",
   "keywords": [
     "react",
