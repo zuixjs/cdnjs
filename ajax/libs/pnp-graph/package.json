@@ -1,0 +1,28 @@
+{
+  "name": "pnp-graph",
+  "filename": "graph.es5.umd.min.js",
+  "description": "pnp - provides functionality to query the Microsoft Graph",
+  "keywords": [
+    "patterns and practices",
+    "sharepoint",
+    "office365",
+    "tools",
+    "spfx",
+    "sharepoint framework"
+  ],
+  "npmName": "@pnp/graph",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/!(*.ts)"
+      ]
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pnp/pnp"
+  },
+  "license": "MIT",
+  "author": "Microsoft and other contributors"
+}
