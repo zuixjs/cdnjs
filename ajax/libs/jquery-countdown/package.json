@@ -30,6 +30,12 @@
         "files": [
           "jquery.+(plugin|countdown)*.+(js|css)"
         ]
+      },
+      {
+        "basePath": "dist",
+        "files": [
+          "**/+(css|js)/jquery.+(plugin|countdown)*.+(js|css|map)"
+        ]
       }
     ]
   }
