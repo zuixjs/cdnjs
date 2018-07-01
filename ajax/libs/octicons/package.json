@@ -17,18 +17,15 @@
     "svg",
     "octicons"
   ],
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/primer/octicons.git",
-    "fileMap": [
-      {
-        "basePath": "build",
-        "files": [
-          "**/*"
-        ]
-      }
-    ]
-  },
+  "npmName": "octicons",
+  "npmFileMap": [
+    {
+      "basePath": "build",
+      "files": [
+        "**/!(*.json|*.html)"
+      ]
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/primer/octicons.git"
