@@ -1,7 +1,7 @@
 {
   "name": "react-dropzone",
   "filename": "index.js",
-  "version": "4.2.12",
+  "version": "4.2.13",
   "description": "Simple HTML5 drag-drop zone with React.js",
   "keywords": [
     "react-component",
