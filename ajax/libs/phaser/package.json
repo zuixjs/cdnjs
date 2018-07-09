@@ -25,9 +25,9 @@
   "npmName": "phaser",
   "npmFileMap": [
     {
-      "basePath": "build",
+      "basePath": "dist",
       "files": [
-        "**/!(*.php)"
+        "**/*"
       ]
     }
   ]
