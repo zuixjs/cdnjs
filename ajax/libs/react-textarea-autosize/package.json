@@ -25,7 +25,7 @@
     {
       "basePath": "dist",
       "files": [
-        "**/!(*.es.js|*.cjs.js)"
+        "**/!(*.es.*js|*.cjs.*js|*.esm.*js)"
       ]
     }
   ]
