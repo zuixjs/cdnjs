@@ -33,13 +33,12 @@
   "homepage": "http://www.idangero.us/framework7/",
   "autoupdate": {
     "source": "git",
-    "target": "git://github.com/nolimits4web/Framework7.git",
+    "target": "git://github.com/framework7io/framework7.git",
     "fileMap": [
       {
-        "basePath": "dist",
+        "basePath": "packages/core",
         "files": [
-          "**/framework7!(.module|.modular|.esm|.less)*",
-          "img/**/*.+(png|svg)"
+          "**/framework7!(.module|.modular|.esm|.less)*"
         ]
       }
     ]
