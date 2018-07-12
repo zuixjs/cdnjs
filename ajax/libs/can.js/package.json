@@ -1,7 +1,7 @@
 {
   "name": "can.js",
   "title": "CanJS",
-  "filename": "core.min.js",
+  "filename": "can.min.js",
   "description": "MIT-licensed, client-side, JavaScript framework that makes building rich web applications easy.",
   "homepage": "https://canjs.com/",
   "keywords": [
@@ -27,5 +27,5 @@
       ]
     }
   ],
-  "version": "5.2.1"
+  "version": "5.2.2"
 }
