@@ -3,11 +3,8 @@
   "filename": "octicons.min.css",
   "version": "4.4.0",
   "description": "GitHub's icon font",
-  "licenses": [
-    "OFL-1.1",
-    "MIT"
-  ],
-  "homepage": "http://octicons.github.com/",
+  "license": "MIT",
+  "homepage": "https://octicons.github.com/",
   "keywords": [
     "GitHub",
     "icons",
