@@ -5,7 +5,7 @@
   "filename": "js/framework7.min.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nolimits4web/Framework7.git"
+    "url": "https://github.com/framework7io/framework7.git"
   },
   "keywords": [
     "mobile",
@@ -30,7 +30,7 @@
   ],
   "author": "Vladimir Kharlampidi",
   "license": "MIT",
-  "homepage": "http://www.idangero.us/framework7/",
+  "homepage": "https://framework7.io",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/framework7io/framework7.git",
