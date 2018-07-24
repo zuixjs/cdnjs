@@ -19,7 +19,7 @@
       {
         "basePath": "src",
         "files": [
-          "mqttws31.js"
+          "paho-mqtt.js"
         ]
       }
     ]
