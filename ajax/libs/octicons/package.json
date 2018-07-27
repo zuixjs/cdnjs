@@ -1,7 +1,7 @@
 {
   "name": "octicons",
-  "filename": "octicons.min.css",
-  "version": "4.4.0",
+  "filename": "build.css",
+  "version": "8.0.0",
   "description": "GitHub's icon font",
   "license": "MIT",
   "homepage": "https://octicons.github.com/",
