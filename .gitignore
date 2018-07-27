@@ -259,6 +259,7 @@ node_modules/
 /ajax/libs/jquery.ime/1.0.0+20131229
 /ajax/libs/v-mask/1.[0-2].*
 /ajax/libs/typebase.css/0.5
+/ajax/libs/octicons/*-alpha.*
 
 #ignore snapshot tags
 /ajax/libs/*/*snapshot*
