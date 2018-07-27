@@ -1,6 +1,7 @@
 {
   "name": "tui-calendar",
   "filename": "tui-calendar.min.js",
+  "version": "1.6.0",
   "description": "TOAST UI Calendar",
   "keywords": [
     "nhnent",
