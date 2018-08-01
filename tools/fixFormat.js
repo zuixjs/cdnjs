@@ -192,6 +192,7 @@ function fixFormat() {
 
   function fixFilenameField(pkg) {
     if (!pkg.filename) {
+      pkg.filename = "";
       return;
     }
 
