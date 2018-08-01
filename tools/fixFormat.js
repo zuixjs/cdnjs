@@ -26,12 +26,12 @@ function fixFormat() {
     arg = args.slice(2)[0];
     packages = glob.sync('./ajax/libs/' + arg + '/package.json');
   }
-  
+
   if (!packages.length){
     console.log('No libraries were found by given pattern');
     return;
   }
-  
+
   async.each(packages, function (item, callback) {
     var pkg = JSON.parse(fs.readFileSync(item, 'utf8'));
 

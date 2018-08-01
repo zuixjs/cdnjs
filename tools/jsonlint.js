@@ -34,4 +34,3 @@ async.map(jsonfiles, function lintjson(item, cb) {
     console.log("\nAll json parsed without problem!\n".green);
   }
 });
-
