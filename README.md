@@ -1,10 +1,10 @@
 # CDNJS - the best front-end resource CDN for free!
 
-﻿[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/cdnjs/cdnjs/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20label%3AHacktoberfest%20-label%3A%22in%20progress%22%20)
-﻿[![Drone CI](https://ci.cdnjs.com/api/badges/cdnjs/cdnjs/status.svg?branch=master)](https://ci.cdnjs.com/cdnjs/cdnjs)
-﻿[![Dependency Status](https://david-dm.org/cdnjs/cdnjs.svg?theme=shields.io)](https://david-dm.org/cdnjs/cdnjs) [![devDependency Status](https://david-dm.org/cdnjs/cdnjs/dev-status.svg?theme=shields.io)](https://david-dm.org/cdnjs/cdnjs#info=devDependencies)
-﻿[![license](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](https://github.com/cdnjs/cdnjs/blob/master/MIT-LICENSE)
-﻿[![tip for next commit](https://tip4commit.com/projects/919.svg)](https://tip4commit.com/github/cdnjs/cdnjs) [![Bountysource](https://www.bountysource.com/badge/team?team_id=11914&style=bounties_posted)](https://www.bountysource.com/teams/cdnjs/bounties?utm_source=cdnjs&utm_medium=shield&utm_campaign=bounties_posted)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/cdnjs/cdnjs/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20label%3AHacktoberfest%20-label%3A%22in%20progress%22%20)
+[![Drone CI](https://ci.cdnjs.com/api/badges/cdnjs/cdnjs/status.svg?branch=master)](https://ci.cdnjs.com/cdnjs/cdnjs)
+[![Dependency Status](https://david-dm.org/cdnjs/cdnjs.svg?theme=shields.io)](https://david-dm.org/cdnjs/cdnjs) [![devDependency Status](https://david-dm.org/cdnjs/cdnjs/dev-status.svg?theme=shields.io)](https://david-dm.org/cdnjs/cdnjs#info=devDependencies)
+[![license](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](https://github.com/cdnjs/cdnjs/blob/master/MIT-LICENSE)
+[![tip for next commit](https://tip4commit.com/projects/919.svg)](https://tip4commit.com/github/cdnjs/cdnjs) [![Bountysource](https://www.bountysource.com/badge/team?team_id=11914&style=bounties_posted)](https://www.bountysource.com/teams/cdnjs/bounties?utm_source=cdnjs&utm_medium=shield&utm_campaign=bounties_posted)
 [![GetBadges Game](https://cdnjs-cdnjs.getbadges.io/shield/company/cdnjs-cdnjs)](https://cdnjs-cdnjs.getbadges.io/?ref=shield-game)
 
 [![Throughput Graph](https://graphs.waffle.io/cdnjs/cdnjs/throughput.svg)](https://waffle.io/cdnjs/cdnjs/metrics/throughput)
@@ -13,14 +13,14 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [latest version URL support](#latest-version-url-support)
-- [Contributing](#contributing)
-- [API usage](#api-usage)
-- [Extensions, Plugins, Resources](#extensions-plugins-resources)
-- [Contributors](#contributors)
-- [Sponsors](#sponsors)
-- [License](#license)
+* [Introduction](#introduction)
+* [latest version URL support](#latest-version-url-support)
+* [Contributing](#contributing)
+* [API usage](#api-usage)
+* [Extensions, Plugins, Resources](#extensions-plugins-resources)
+* [Contributors](#contributors)
+* [Sponsors](#sponsors)
+* [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -43,9 +43,9 @@ Currently, CDNJS is rated No. 2 ([ref](https://w3techs.com/technologies/overview
 
 Note that we don't support the feature to use `latest` in the URL because of the reasons below:
 
- 1. Your website might break if there are any compatibility issues or bugs coming from upstream. It's not a good idea to use it in the production environment. Both jQuery CDN and Google CDN don't provide this feature.
- 2. The `latest` URL feature also has cache and performance issues. This conflicts with what we are trying to do - make your website load as fast as possible.
- 3. Security issues have become more and more important nowadays. For example, Great Cannon attacked GitHub via malicious JavaScript ([ref1](https://citizenlab.org/2015/04/chinas-great-cannon/), [ref2](https://arstechnica.com/security/2015/04/meet-great-cannon-the-man-in-the-middle-weapon-china-used-on-github/)) during April 2015. One of the techniques to prevent this kind of attack is [Subresource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity). We have been supporting this feature for a long time. The `latest` URL feature, however, totally conflicts with the SRI technique.
+1. Your website might break if there are any compatibility issues or bugs coming from upstream. It's not a good idea to use it in the production environment. Both jQuery CDN and Google CDN don't provide this feature.
+2. The `latest` URL feature also has cache and performance issues. This conflicts with what we are trying to do - make your website load as fast as possible.
+3. Security issues have become more and more important nowadays. For example, Great Cannon attacked GitHub via malicious JavaScript ([ref1](https://citizenlab.org/2015/04/chinas-great-cannon/), [ref2](https://arstechnica.com/security/2015/04/meet-great-cannon-the-man-in-the-middle-weapon-china-used-on-github/)) during April 2015. One of the techniques to prevent this kind of attack is [Subresource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity). We have been supporting this feature for a long time. The `latest` URL feature, however, totally conflicts with the SRI technique.
 
 ## Contributing
 
@@ -54,6 +54,7 @@ To contribute to CDNJS, please refer to [CONTRIBUTING.md](https://github.com/cdn
 **Working on your first Pull Request?** Learn how from this *free* series: [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)
 
 ## API usage
+
 See the [API page](https://cdnjs.com/api) on our website or read: [documents/api.md](https://github.com/cdnjs/cdnjs/blob/master/documents/api.md)
 
 ## Extensions, Plugins, Resources
@@ -63,13 +64,14 @@ See the [API page](https://cdnjs.com/api) on our website or read: [documents/api
 ## Contributors
 
 See each repos' GitHub contributors graph, e.g.
- - [main repo](https://github.com/cdnjs/cdnjs/graphs/contributors)
- - [website and api](https://github.com/cdnjs/new-website/graphs/contributors)
- - [autoupdate tool](https://github.com/cdnjs/autoupdate/graphs/contributors)
- - [atom-extension](https://github.com/cdnjs/atom-extension/graphs/contributors)
- - [tutorials](https://github.com/cdnjs/tutorials/graphs/contributors)
- - [buildScript](https://github.com/cdnjs/buildScript/graphs/contributors)
- - [cdnjs-importer](https://github.com/cdnjs/cdnjs-importer/graphs/contributors)
+
+* [main repo](https://github.com/cdnjs/cdnjs/graphs/contributors)
+* [website and api](https://github.com/cdnjs/new-website/graphs/contributors)
+* [autoupdate tool](https://github.com/cdnjs/autoupdate/graphs/contributors)
+* [atom-extension](https://github.com/cdnjs/atom-extension/graphs/contributors)
+* [tutorials](https://github.com/cdnjs/tutorials/graphs/contributors)
+* [buildScript](https://github.com/cdnjs/buildScript/graphs/contributors)
+* [cdnjs-importer](https://github.com/cdnjs/cdnjs-importer/graphs/contributors)
 
 or [gitstats](https://github.com/cdnjs?utf8=✓&q=gitstats), [git_stats](https://github.com/cdnjs?utf8=✓&q=git_stats)
 
@@ -77,12 +79,13 @@ or [gitstats](https://github.com/cdnjs?utf8=✓&q=gitstats), [git_stats](https:/
 
 CDNJS wouldn't be the success that it is today without our sponsors' kind support. These companies currently support CDNJS:
 
- - [Cloudflare](https://www.cloudflare.com/?utm_source=cdnjs&utm_medium=link&utm_campaign=cdnjs)
- - [DigitalOcean](https://www.digitalocean.com/?utm_source=cdnjs&utm_medium=link&utm_campaign=cdnjs)
- - [Algolia](https://www.algolia.com/?utm_source=cdnjs&utm_medium=link&utm_campaign=cdnjs)
- - [Heroku](https://www.heroku.com/?utm_source=cdnjs&utm_medium=link&utm_campaign=cdnjs)
+* [Cloudflare](https://www.cloudflare.com/?utm_source=cdnjs&utm_medium=link&utm_campaign=cdnjs)
+* [DigitalOcean](https://www.digitalocean.com/?utm_source=cdnjs&utm_medium=link&utm_campaign=cdnjs)
+* [Algolia](https://www.algolia.com/?utm_source=cdnjs&utm_medium=link&utm_campaign=cdnjs)
+* [Heroku](https://www.heroku.com/?utm_source=cdnjs&utm_medium=link&utm_campaign=cdnjs)
 
 If you are interested in becoming a sponsor, please feel free to contact us!
 
 ## License
+
 Each library is released under its own license. This CDNJS repository is published under [MIT license](LICENSE).
