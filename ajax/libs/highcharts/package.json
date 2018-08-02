@@ -18,7 +18,7 @@
   },
   "autoupdate": {
     "source": "git",
-    "target": "git://github.com/highslide-software/highcharts-release.git",
+    "target": "git://github.com/highcharts/highcharts-dist.git",
     "fileMap": [
       {
         "basePath": "",
