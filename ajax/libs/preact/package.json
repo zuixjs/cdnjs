@@ -21,7 +21,7 @@
     {
       "basePath": "dist",
       "files": [
-        "!(*.+(flow|ts)|preact.esm.*)"
+        "!(*.+(flow|ts|mjs|mjs.map)|preact.esm.*)"
       ]
     }
   ],
