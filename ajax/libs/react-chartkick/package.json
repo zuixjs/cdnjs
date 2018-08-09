@@ -2,7 +2,7 @@
   "name": "react-chartkick",
   "description": "Create beautiful JavaScript charts with one line of React",
   "filename": "react-chartkick.min.js",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "license": "MIT",
   "repository": {
     "type": "git",
