@@ -2,7 +2,7 @@
   "name": "react-move",
   "version": "1.6.1",
   "filename": "react-move.js",
-  "description": "Beautifully and deterministically animate anything in React",
+  "description": "Beautiful, data-driven animations for React.",
   "homepage": "https://react-move.js.org/",
   "keywords": [
     "react",
@@ -10,11 +10,17 @@
     "animation",
     "interpolation",
     "move",
-    "time"
+    "time",
+    "resonance",
+    "d3",
+    "svg",
+    "charts",
+    "graphs",
+    "transitions"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/tannerlinsley/react-move.git"
+    "url": "https://github.com/react-tools/react-move.git"
   },
   "license": "MIT",
   "author": "Tanner Linsley <@tannerlinsley>",
