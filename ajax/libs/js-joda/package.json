@@ -20,7 +20,7 @@
     {
       "basePath": "dist",
       "files": [
-        "**/!(*.ts|js-joda.esm.js)"
+        "**/!(*.ts|js-joda.esm.js|*.flow.js)"
       ]
     }
   ]
