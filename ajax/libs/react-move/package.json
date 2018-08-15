@@ -27,9 +27,9 @@
   "npmName": "react-move",
   "npmFileMap": [
     {
-      "basePath": "",
+      "basePath": "dist",
       "files": [
-        "react-move*"
+        "**/*"
       ]
     }
   ]
