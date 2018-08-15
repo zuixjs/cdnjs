@@ -1,7 +1,7 @@
 {
   "name": "react-move",
-  "version": "1.6.1",
-  "filename": "react-move.js",
+  "version": "2.8.0",
+  "filename": "react-move.min.js",
   "description": "Beautiful, data-driven animations for React.",
   "homepage": "https://react-move.js.org/",
   "keywords": [
