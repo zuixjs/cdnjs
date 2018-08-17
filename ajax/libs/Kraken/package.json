@@ -1,7 +1,7 @@
 {
   "name": "Kraken",
   "filename": "js/main.min.js",
-  "version": "8.0.0",
+  "version": "8.0.1",
   "description": "A lightweight front-end boilerplate",
   "author": {
     "name": "Chris Ferdinandi",
