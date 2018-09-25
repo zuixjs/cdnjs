@@ -20,7 +20,7 @@
     "type": "git",
     "url": "git+https://github.com/jonsuh/hamburgers.git"
   },
-  "version": "0.9.3",
+  "version": "1.0.0",
   "npmName": "hamburgers",
   "npmFileMap": [
     {
