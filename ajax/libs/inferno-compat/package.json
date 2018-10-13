@@ -1,7 +1,7 @@
 {
   "name": "inferno-compat",
   "filename": "inferno-compat.min.js",
-  "version": "5.6.1",
+  "version": "6.0.0",
   "license": "MIT",
   "description": "Provides a compatibility with React codebases",
   "author": {
