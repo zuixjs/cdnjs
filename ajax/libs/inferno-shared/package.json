@@ -1,6 +1,6 @@
 {
   "name": "inferno-shared",
-  "version": "5.6.1",
+  "version": "6.0.0",
   "filename": "inferno-shared.min.js",
   "license": "MIT",
   "description": "Helpers functions for Inferno",
