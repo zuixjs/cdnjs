@@ -1,7 +1,7 @@
 {
   "name": "imask",
   "filename": "imask.min.js",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "description": "vanilla javascript input mask",
   "repository": {
     "type": "git",
