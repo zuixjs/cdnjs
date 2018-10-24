@@ -23,7 +23,7 @@
     {
       "basePath": "",
       "files": [
-        "wavedrom*.js",
+        "wavedrom!(.unpkg).js",
         "WaveDrom*.js",
         "skins/*.js"
       ]
