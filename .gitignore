@@ -236,6 +236,7 @@ node_modules/
 /ajax/libs/origamijs/0.0.2/
 /ajax/libs/mobx-react/*-observableprops*/
 /ajax/libs/mobx-react/*-fix*/
+/ajax/libs/react/*-alpha.*[a-z]*/
 /ajax/libs/react-data-grid/*-*/
 /ajax/libs/react-data-grid/*-alpha*/
 /ajax/libs/react-data-grid/*-dm*/
