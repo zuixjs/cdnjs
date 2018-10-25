@@ -21,7 +21,7 @@
     {
       "basePath": "umd",
       "files": [
-        "react-markdown*"
+        "react-markdown*.!(jsnap)"
       ]
     }
   ]
