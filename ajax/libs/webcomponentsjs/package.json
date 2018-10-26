@@ -10,18 +10,15 @@
     "shim"
   ],
   "license": "BSD-3-Clause",
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/webcomponents/webcomponentsjs.git",
-    "fileMap": [
-      {
-        "basePath": "",
-        "files": [
-          "!(gulpfile).+(js|map)"
-        ]
-      }
-    ]
-  },
+  "npmName": "@webcomponents/webcomponentsjs",
+  "npmFileMap": [
+    {
+      "basePath": "",
+      "files": [
+        "!(gulpfile).+(js|map)"
+      ]
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/webcomponents/webcomponentsjs"
