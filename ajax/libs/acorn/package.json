@@ -20,7 +20,7 @@
     {
       "basePath": "dist",
       "files": [
-        "**/!(acorn.d.ts|bin.js)"
+        "**/!(acorn.d.ts|bin.js|*.mjs|*.mjs.map)"
       ]
     }
   ]
