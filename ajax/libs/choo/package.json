@@ -1,7 +1,7 @@
 {
   "name": "choo",
   "filename": "bundle.min.js",
-  "version": "6.13.0",
+  "version": "6.13.1",
   "description": "A 4kb framework for creating sturdy frontend applications",
   "repository": {
     "type": "git",
