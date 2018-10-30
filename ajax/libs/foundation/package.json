@@ -23,7 +23,7 @@
       {
         "basePath": "dist",
         "files": [
-          "**/!(*.ts|npm.js)"
+          "**/!(*.ts|npm.js|foundation.+(es6|esm|cjs).+(js|js.map))"
         ]
       }
     ]
