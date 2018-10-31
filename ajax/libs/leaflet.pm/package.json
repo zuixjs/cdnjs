@@ -26,16 +26,13 @@
   },
   "license": "MIT",
   "homepage": "https://codeofsumit.github.io/leaflet.pm/",
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/codeofsumit/leaflet.pm.git",
-    "fileMap": [
-      {
-        "basePath": "dist",
-        "files": [
-          "**/*"
-        ]
-      }
-    ]
-  }
+  "npmName": "leaflet.pm",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
+    }
+  ]
 }
