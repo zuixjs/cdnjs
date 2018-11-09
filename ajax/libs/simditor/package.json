@@ -1,6 +1,6 @@
 {
   "name": "simditor",
-  "version": "2.3.21",
+  "version": "2.3.22",
   "filename": "lib/simditor.min.js",
   "description": "A simple online editor",
   "keywords": [
