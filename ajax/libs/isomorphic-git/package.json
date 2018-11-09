@@ -1,6 +1,6 @@
 {
   "name": "isomorphic-git",
-  "version": "0.39.3",
+  "version": "0.39.4",
   "filename": "bundle.umd.min.js",
   "description": "A pure JavaScript implementation of git for node and browsers!",
   "repository": {
