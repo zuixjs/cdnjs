@@ -238,7 +238,9 @@ node_modules/
 /ajax/libs/mobx-react/*-observableprops*/
 /ajax/libs/mobx-react/*-fix*/
 /ajax/libs/react/*-alpha.*[a-z]*/
+/ajax/libs/react/0.0.0-*/
 /ajax/libs/react-dom/*-alpha.*[a-z]*/
+/ajax/libs/react-dom/0.0.0-*/
 /ajax/libs/react-data-grid/*-*/
 /ajax/libs/react-data-grid/*-alpha*/
 /ajax/libs/react-data-grid/*-dm*/
