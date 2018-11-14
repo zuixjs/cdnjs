@@ -28,7 +28,7 @@
     {
       "basePath": "build",
       "files": [
-        "!(*.node.js)"
+        "!(*.node.js|*.esm.js)"
       ]
     }
   ],
