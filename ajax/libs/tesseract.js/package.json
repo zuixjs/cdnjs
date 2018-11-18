@@ -1,7 +1,7 @@
 {
   "name": "tesseract.js",
   "filename": "tesseract.min.js",
-  "version": "1.0.10",
+  "version": "1.0.13",
   "description": "Pure Javascript Multilingual OCR",
   "author": "antimatter15",
   "license": "Apache-2.0",
