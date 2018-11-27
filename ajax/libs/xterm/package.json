@@ -15,16 +15,13 @@
   ],
   "author": "SourceLair",
   "license": "MIT",
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/sourcelair/xterm.js.git",
-    "fileMap": [
-      {
-        "basePath": "dist",
-        "files": [
-          "**/*"
-        ]
-      }
-    ]
-  }
+  "npmName": "xterm",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
+    }
+  ]
 }
