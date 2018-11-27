@@ -23,7 +23,7 @@
       {
         "basePath": "",
         "files": [
-          "pagex*"
+          "pagex!(*.test.js)"
         ]
       }
     ]
