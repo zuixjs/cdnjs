@@ -19,7 +19,7 @@
     {
       "basePath": "dist",
       "files": [
-        "**/!(*.flow|test.js)"
+        "**/!(*.flow|test.js|index.js*)"
       ]
     }
   ],
