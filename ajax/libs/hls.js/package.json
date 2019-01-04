@@ -21,6 +21,12 @@
     "url": "git://github.com/video-dev/hls.js"
   },
   "keywords": [
-    "hls.js"
-  ]
+    "hls.js",
+    "video",
+    "streaming",
+    "mediasource",
+    "player"
+  ],
+  "author": "Guillaume du Pontavice <g.du.pontavice@gmail.com>",
+  "homepage": "https://hls-js.netlify.com/demo/"
 }
