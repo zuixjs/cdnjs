@@ -1,7 +1,7 @@
 {
   "name": "pnp-sp-addinhelpers",
   "filename": "sp-addinhelpers.es5.umd.min.js",
-  "version": "1.2.7",
+  "version": "1.2.8",
   "description": "pnp - provides functionality for working within SharePoint add-ins",
   "keywords": [
     "patterns and practices",
