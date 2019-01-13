@@ -2,7 +2,7 @@
   "name": "botui",
   "description": "A JS library to build the UI for your bot",
   "filename": "botui.min.js",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "keywords": [
     "bot",
     "chat",
