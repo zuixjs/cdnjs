@@ -1,6 +1,6 @@
 {
   "name": "6pac-slickgrid",
-  "version": "2.4.1",
+  "version": "2.4.2",
   "description": "A lightning fast JavaScript grid/spreadsheet",
   "filename": "slick.core.min.js",
   "repository": {
