@@ -1,6 +1,6 @@
 {
   "name": "mobx",
-  "version": "5.8.0",
+  "version": "5.9.0",
   "filename": "mobx.min.js",
   "description": "Simple, scalable state management.",
   "repository": {
