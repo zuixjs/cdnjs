@@ -1,6 +1,6 @@
 {
   "name": "inferno-redux",
-  "version": "7.0.5",
+  "version": "7.1.0",
   "filename": "inferno-redux.min.js",
   "license": "MIT",
   "description": "Official Inferno bindings for Redux",
