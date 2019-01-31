@@ -1,7 +1,7 @@
 {
   "name": "three.js",
   "filename": "three.min.js",
-  "version": "100",
+  "version": "101",
   "description": "JavaScript 3D library",
   "homepage": "http://threejs.org/",
   "keywords": [
