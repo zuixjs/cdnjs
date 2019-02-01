@@ -1,6 +1,6 @@
 {
   "name": "forge",
-  "version": "0.7.6",
+  "version": "0.8.0",
   "filename": "forge.min.js",
   "description": "JavaScript implementations of network transports, cryptography, ciphers, PKI, message digests, and various utilities.",
   "author": {
