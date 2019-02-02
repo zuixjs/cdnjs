@@ -1,7 +1,7 @@
 {
   "name": "xterm",
   "filename": "xterm.min.js",
-  "version": "3.10.1",
+  "version": "3.11.0",
   "description": "Full xterm terminal, in your browser",
   "homepage": "https://xtermjs.org/",
   "repository": {
