@@ -2,7 +2,7 @@
   "name": "design-system",
   "filename": "styles/salesforce-lightning-design-system.min.css",
   "description": "Salesforce Lightning Design System",
-  "version": "2.8.1",
+  "version": "2.8.3",
   "author": "Salesforce",
   "licenses": [
     "BSD-3-Clause",
