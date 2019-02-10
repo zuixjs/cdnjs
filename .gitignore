@@ -266,7 +266,7 @@ node_modules/
 /ajax/libs/typebase.css/0.5
 /ajax/libs/octicons/*-alpha.*
 /ajax/libs/octicons/0.0.0-*
-/ajax/libs/octicons/8.4.0-rc.664d0db92
+/ajax/libs/octicons/*-rc.*
 
 #ignore snapshot tags
 /ajax/libs/*/*snapshot*
