@@ -2,7 +2,7 @@
   "name": "redux-promise-middleware",
   "description": "Redux middleware for handling promises and optimistic updates",
   "filename": "redux-promise-middleware.min.js",
-  "version": "6.0.0",
+  "version": "6.0.1",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pburtchaell/redux-promise-middleware.git"
