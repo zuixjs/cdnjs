@@ -1,7 +1,7 @@
 {
   "name": "recharts",
   "filename": "Recharts.min.js",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "React charts",
   "keywords": [
     "react",
