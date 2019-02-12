@@ -1,6 +1,6 @@
 {
   "name": "instantsearch.js",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "filename": "instantsearch.production.min.js",
   "description": "instantsearch.js is a library of widgets to build high performance instant search experiences using Algolia",
   "author": "Algolia <support@algolia.com>",
