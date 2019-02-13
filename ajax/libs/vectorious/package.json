@@ -1,7 +1,7 @@
 {
   "name": "vectorious",
   "filename": "vectorious.min.js",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "description": "A high performance linear algebra library.",
   "repository": {
     "type": "git",
