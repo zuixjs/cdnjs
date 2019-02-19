@@ -1,6 +1,6 @@
 {
   "name": "inferno-devtools",
-  "version": "7.1.7",
+  "version": "7.1.8",
   "filename": "inferno-devtools.min.js",
   "license": "MIT",
   "description": "Provides support for React's Dev Tools for Inferno",
