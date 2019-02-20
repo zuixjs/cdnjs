@@ -1,6 +1,6 @@
 {
   "name": "highland",
-  "version": "2.13.2",
+  "version": "2.13.3",
   "filename": "highland.min.js",
   "description": "The high-level streams library for Node.js and the browser",
   "homepage": "http://highlandjs.org/",
