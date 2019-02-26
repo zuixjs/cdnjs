@@ -15,5 +15,17 @@
     "type": "git",
     "url": "https://github.com/dieulot/instantclick.git"
   },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/dieulot/instantclick.git",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "instantclick*.js"
+        ]
+      }
+    ]
+  },
   "license": "MIT"
 }
