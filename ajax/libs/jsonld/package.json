@@ -6,7 +6,7 @@
   "author": {
     "name": "Digital Bazaar, Inc.",
     "email": "support@digitalbazaar.com",
-    "url": "http://digitalbazaar.com/"
+    "url": "https://digitalbazaar.com/"
   },
   "repository": {
     "type": "git",
@@ -23,9 +23,11 @@
   "npmName": "jsonld",
   "npmFileMap": [
     {
-      "basePath": "js",
+      "basePath": "dist",
       "files": [
-        "jsonld.js"
+        "jsonld.js",
+        "jsonld.min.js",
+        "jsonld.min.js.map"
       ]
     }
   ],
