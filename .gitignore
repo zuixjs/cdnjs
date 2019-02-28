@@ -89,6 +89,7 @@ node_modules/
 /ajax/libs/graphdracula/1.0.1-*
 /ajax/libs/guards/bootstrap-*/
 /ajax/libs/guards/foundation-*/
+/ajax/libs/hls.js/*-canary.*/
 /ajax/libs/Hyphenator/HyphenatorBeta12/
 /ajax/libs/Hyphenator/Version_*
 /ajax/libs/imgareaselect/0.9.11-rc.1/
