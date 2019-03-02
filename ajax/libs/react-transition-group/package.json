@@ -1,6 +1,6 @@
 {
   "name": "react-transition-group",
-  "filename": "react-transition-group.js",
+  "filename": "react-transition-group.min.js",
   "description": "A react component toolset for managing animations",
   "keywords": [
     "react",
@@ -26,5 +26,5 @@
       ]
     }
   ],
-  "version": "2.5.3"
+  "version": "2.6.0"
 }
