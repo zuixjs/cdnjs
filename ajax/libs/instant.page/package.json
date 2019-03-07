@@ -13,7 +13,7 @@
   "author": "Alexandre Dieulot",
   "license": "MIT",
   "homepage": "https://instant.page/",
-  "filename": "instantpage.js",
+  "filename": "instantpage.min.js",
   "npmName": "instant.page",
   "npmFileMap": [
     {
