@@ -14,9 +14,9 @@
     "target": "git://github.com/GoogleChrome/dialog-polyfill.git",
     "fileMap": [
       {
-        "basePath": "",
+        "basePath": "dist",
         "files": [
-          "dialog-polyfill*.js",
+          "dialog-polyfill!(.esm)*.js",
           "dialog-polyfill*.css"
         ]
       }
