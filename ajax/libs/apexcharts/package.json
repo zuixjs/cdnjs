@@ -24,7 +24,7 @@
     {
       "basePath": "dist",
       "files": [
-        "**/*"
+        "**/!(apexcharts.common.js|apexcharts.esm.js)"
       ]
     }
   ]
