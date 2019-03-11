@@ -1,7 +1,7 @@
 {
   "name": "react-select",
   "filename": "react-select.min.js",
-  "version": "2.4.1",
+  "version": "2.4.2",
   "description": "A Select control built with and for ReactJS",
   "author": "Jed Watson",
   "license": "MIT",
