@@ -1,7 +1,7 @@
 {
   "name": "ant-design-pro",
   "filename": "ant-design-pro.min.js",
-  "version": "2.2.1",
+  "version": "2.3.1",
   "description": "An enterprise-class UI design language and React-based implementation",
   "license": "MIT",
   "author": "afc163 <afc163@gmail.com>",
