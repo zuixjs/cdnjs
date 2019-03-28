@@ -1,6 +1,6 @@
 {
   "name": "tensorflow",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "filename": "tf.min.js",
   "description": "An open-source machine learning framework.",
   "homepage": "https://js.tensorflow.org/",
