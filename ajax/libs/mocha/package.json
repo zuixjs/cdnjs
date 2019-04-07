@@ -1,6 +1,6 @@
 {
   "name": "mocha",
-  "version": "6.0.2",
+  "version": "6.1.0",
   "description": "simple, flexible, fun test framework",
   "npmName": "mocha",
   "npmFileMap": [
