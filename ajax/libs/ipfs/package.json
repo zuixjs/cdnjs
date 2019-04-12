@@ -1,6 +1,6 @@
 {
   "name": "ipfs",
-  "version": "0.34.4",
+  "version": "0.35.0",
   "filename": "index.min.js",
   "description": "JavaScript implementation of the IPFS specification",
   "homepage": "https://ipfs.io",
