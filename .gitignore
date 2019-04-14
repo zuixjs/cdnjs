@@ -262,6 +262,7 @@ node_modules/
 /ajax/libs/v-mask/1.[0-2].*
 /ajax/libs/vue-lazyload/0.*
 /ajax/libs/vue-lazyload/1.0.0-*
+/ajax/libs/Vue.Draggable/v.19.2/
 /ajax/libs/wavesurfer.js/1.0.23
 /ajax/libs/wavesurfer.js/1.0.26
 /ajax/libs/wavesurfer.js/marky-boy_2006-01-11/
