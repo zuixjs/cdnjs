@@ -22,7 +22,7 @@
     {
       "basePath": "dist",
       "files": [
-        "**/!(infinitegrid.module.js*)"
+        "**/!(infinitegrid.module.js*|infinitegrid.esm.js*|*.ts)"
       ]
     }
   ]
