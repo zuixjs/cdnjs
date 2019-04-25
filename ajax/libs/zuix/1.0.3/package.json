@@ -1,0 +1,38 @@
+{
+  "name": "zuix",
+  "filename": "zuix.min.js",
+  "version": "1.0.3",
+  "description": "A JavaScript library for creating component-based websites and applications.",
+  "keywords": [
+    "webapp",
+    "bundler",
+    "pwa",
+    "components",
+    "mvc",
+    "dom",
+    "frontend",
+    "modular-web"
+  ],
+  "homepage": "https://zuixjs.org",
+  "author": {
+    "name": "Generoso Martello",
+    "email": "gene@glabs.it",
+    "url": "https://glabs.it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zuixjs/zuix.git"
+  },
+  "npmName": "zuix-dist",
+  "npmFileMap": [
+    {
+      "basePath": "js",
+      "files": [
+        "zuix?(.min).+(js|map)"
+      ]
+    }
+  ],
+  "namespace": "zuix",
+  "license": "Apache-2.0"
+}
+
